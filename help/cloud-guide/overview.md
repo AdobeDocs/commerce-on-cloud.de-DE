@@ -2,9 +2,9 @@
 title: Commerce auf Cloud-Infrastruktur
 description: Erfahren Sie mehr über das Erstellen, Bereitstellen und Verwalten von Commerce in Cloud-Infrastrukturen.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 2cd0f97b89b3a87b40ac36655304b2c1cd11b4b1
+source-git-commit: 10818a862fbba14bdfb3de1e6107d745104e4791
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -61,3 +61,4 @@ Das Handbuch zu Commerce in Cloud-Infrastrukturen setzt voraus, dass Sie über G
 - [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer-Site) - Entwickeln, Anpassen, Integrieren, Erweitern und Verwenden erweiterter Funktionen
 
 - [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
+
