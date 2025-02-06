@@ -3,10 +3,11 @@ title: Cloud Docker-Paket
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud Docker-Paket.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-10-07T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+last-substantial-update: 2025-02-06T00:00:00Z
+exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
+source-git-commit: 7f62dbc7db9924abfe304b46ed62d9577471386d
 workflow-type: tm+mt
-source-wordcount: '3684'
+source-wordcount: '3697'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,14 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v1.4.0 {#latest}
+## v1.4.1 {#latest}
+
+Veröffentlichungsdatum: 6. Februar 2025
+
+- ![neues Symbol](../../assets/new.svg) **PHP 8.4**—Unterstützung für PHP 8.4 hinzugefügt.
+
+
+## v1.4.0
 
 Veröffentlichungsdatum: 7. Oktober 2024
 
