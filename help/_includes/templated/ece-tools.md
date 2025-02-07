@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: 6a686858394e65dfbb665bb76332ee13348dad7e
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # ECE-Tools
 
-**Version**: 2002.2.0
+**Version**: 2002.2.1
 
 Diese Referenz enthält 34 Befehle, die über das `ece-tools` Befehlszeilen-Tool verfügbar sind.
 Die anfängliche Liste wird automatisch mit dem Befehl `ece-tools list` unter Adobe Commerce in der Cloud-Infrastruktur generiert.
@@ -453,7 +453,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ece-tools cloud:config:create <configuration>
 ```
 
-Erstellt eine `.magento.env.yaml` mit der angegebenen Konfiguration der Variablen „build“, „deploy“ und „post-deploy“. Überschreibt eine vorhandene `.magento,.env.yaml`.
+Erstellt eine `.magento.env.yaml` mit der angegebenen Konfiguration der Variablen „build“, „deploy“ und „post-deploy“. Überschreibt eine vorhandene `.magento.env.yaml`.
 
 ### Argumente
 
