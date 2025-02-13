@@ -4,9 +4,9 @@ description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud-Pat
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-02-06T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: 4c8da3e40561a43674906cdf7f461bbcb1066c30
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2347'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,17 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 <!--Add release notes below-->
 
-## v1.1.3 {#latest}
+## v1.1.4 {#latest}
 
+Veröffentlichungsdatum: 13. Februar 2025
+
+- ![neues Symbol](../../assets/new.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update aktualisiert Patches [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+
+## v1.1.3
 
 Veröffentlichungsdatum: 6. Februar 2025
 
 - ![neues Symbol](../../assets/new.svg) **PHP 8.4**—Unterstützung für PHP 8.4.<!-- MCLOUD-13149	 - --> hinzugefügt
-
-
 
 ## v1.1.2
 
@@ -124,7 +127,7 @@ Veröffentlichungsdatum: 11. August 2022
 
 Kritischer Patch für Adobe Commerce 2.4.5:
 
-- **Problem mit Bestellungen über Braintree-**: Dieser Patch löst ein wichtiges Problem, das Administratoren daran hindert, neue Bestellungen oder Neubestellungen aufzugeben.<!-- MCLOUD-9137 -->
+- **Problem mit Bestellungen mit Braintree Payments** - Dieser Patch löst ein wichtiges Problem, das Administratoren daran hindert, neue Bestellungen oder Neubestellungen aufzugeben.<!-- MCLOUD-9137 -->
 
 Siehe [Der Administrator kann keine Bestellung/Neuanordnung erstellen, wenn Braintree Payment aktiviert ist](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
 
@@ -216,7 +219,7 @@ Veröffentlichungsdatum: 14. Oktober 2020
 
 - **Redis-Patches für Adobe Commerce 2.3.0 auf 2.3.5, 2.4.0** - Die Redis-Patches wurden aktualisiert, um das Hinzufügen von Produkten zu einer Kategorie bei der Implementierung eines Level-2-Caches zu unterstützen. <!--MCLOUD-6659-->
 
-- **Braintree-VBE-Patch**: Es wurde ein Problem behoben, das einen Fehler verursachte, wenn ein Administrator versuchte, einen Braintree-Abwicklungsbericht anzuzeigen. <!--MCLOUD-6684-->
+- **Braintree VBE-Patch**: Es wurde ein Problem behoben, das einen Fehler verursachte, wenn ein Administrator versuchte, einen Braintree-Vergleichsbericht anzuzeigen. <!--MCLOUD-6684-->
 
 - Jetzt verwendet der Befehl `ece-patches apply` den Unix-`patch`-Befehl, um Patches anzuwenden, wenn Git nicht auf dem Host-System verfügbar ist. <!--MCLOUD-7069-->
 
@@ -261,7 +264,7 @@ Veröffentlichungsdatum: 12. Mai 2020
 
 - **Verbesserung der Site** - Behebt ein Leistungsproblem mit der `Magento\Framework\App\DeploymentConfig\Reader::load`, bei dem es in regelmäßigen Abständen zu langen Ladezeiten kam, die die Site-Leistung beeinträchtigten. <!--MCLOUD-5650-->
 
-- Die Patch-Zuweisung für Zahlungsmethoden-Patches wurde aktualisiert, um die Zahlungsmodule anstelle des Magento-Basispakets (magento/magento2-base) zu adressieren, sodass die Zahlungsmodule nur angewendet werden, wenn die Zahlungsmodule vorhanden sind.<!--MCLOUD-5666-->
+- Die Patch-Zuweisung für Zahlungsmethoden-Patches wurde aktualisiert, um die Zahlungsmodule anstelle des Magento-Basispakets (magento/magento2-base) auszuwählen, sodass die Zahlungsmodule nur angewendet werden, wenn die Zahlungsmodule vorhanden sind.<!--MCLOUD-5666-->
 
 - Patches wurden aus Gründen der Kompatibilität mit Magento Open Source aktualisiert.<!--MCLOUD-5701-->
 
@@ -287,13 +290,13 @@ Diese Version umfasst die folgenden Patches und wichtigen Fehlerbehebungen:
 
 - **Fehlerbehebung bei der Anwendungsbereitstellung** - Es wurde ein Patch hinzugefügt, um ein Problem zu beheben, das den vollständigen Seiten-Cache während des Bereitstellungsprozesses deaktiviert hat. Dieser Patch gilt für Adobe Commerce 2.3.2 und neuere Versionen.
 
-- **Bereichsparameter für die Async/Bulk-API** - Dieser Patch wurde aktualisiert, um einen Syntaxfehler in der `composer.json`-Datei zu beheben. Dieser Patch gilt für die Magento Open Sourcen 2.3.1 und 2.3.2. Die vollständige Patch-Beschreibung finden Sie auf der Patch-Download-Seite.
+- **Bereichsparameter für die Async/Bulk-API** - Dieser Patch wurde aktualisiert, um einen Syntaxfehler in der `composer.json`-Datei zu beheben. Dieser Patch gilt für Magento Open Source 2.3.1 und 2.3.2. Die vollständige Patch-Beschreibung finden Sie auf der Patch-Download-Seite.
 
 ## v1.0.1
 
 Veröffentlichungsdatum: 6. Februar 2020
 
-Wir haben alle Magento Open Source 2.x Patches von der Seite Software-Downloads in die Version magento/magento-cloud-patches v1.0.1 aufgenommen. Wenn Sie zuvor Patches in Ihr Projekt kopiert haben, entfernen Sie diese, um Konflikte zu vermeiden.
+Wir haben alle Magento Open Source 2.x-Patches von der Seite „Software-Downloads“ in die Version Magento/Magento-Cloud-Patches v1.0.1 aufgenommen. Wenn Sie zuvor Patches in Ihr Projekt kopiert haben, entfernen Sie diese, um Konflikte zu vermeiden.
 
 Diese Version umfasst die folgenden Patches und wichtigen Fehlerbehebungen:
 
@@ -303,9 +306,9 @@ Diese Version umfasst die folgenden Patches und wichtigen Fehlerbehebungen:
 
    - Fügt einen Vorgang _Wiederholen_ hinzu, um Deadlocks bei Aktualisierungen der Daten in der `cron_schedule` zu vermeiden.
 
-- **`magento/magento-cloud-patches` wurde aktualisiert, um alle verfügbaren Patches für Magento Open Source 2.x einzuschließen** - Das Paket „magento/magento-cloud-patches“ wurde aktualisiert, um alle Magento Open Source 2.x-Patches einzuschließen, die auf der Seite „Software-Downloads“ verfügbar sind. Wenn Sie zuvor Magento Open Source-Patches in Ihr Adobe Commerce on Cloud-Infrastrukturprojekt kopiert haben, entfernen Sie diese, um Konflikte zu vermeiden.<!--MAGECLOUD-4606-->
+- **`magento/magento-cloud-patches` wurde aktualisiert, um alle verfügbaren Patches für Magento Open Source 2.x einzuschließen** - Das Paket „magento/magento-cloud-patches“ wurde aktualisiert, um alle Magento Open Source 2.x-Patches einzuschließen, die auf der Seite „Software-Downloads“ verfügbar sind. Wenn Sie zuvor Magento Open Source-Patches in Ihr Adobe Commerce on Cloud-Infrastrukturprojekt kopiert haben, entfernen Sie sie, um Konflikte zu vermeiden.<!--MAGECLOUD-4606-->
 
-- **Fehlerkorrektur für die Elasticsearch-Katalogpaginierung** - Der in magento/magento-cloud-patches v1.0 bereitgestellte Elasticsearch-Katalogpaginierungs-Patch wurde durch eine wirksamere Fehlerbehebung ersetzt.<!--MAGECLOUD-4847-->
+- **Fehlerbehebung bei der Katalogpaginierung in Elasticsearch** - Elasticsearch hat den Katalogpaginierungs-Patch aus Magento/Magento-Cloud-Patches v1.0 durch eine wirksamere Fehlerbehebung ersetzt.<!--MAGECLOUD-4847-->
 
 - **Page Builder-**: In Cloud-Patches für Commerce 1.0.0 wurden Page Builder-Patches gebündelt, um eine bekannte RCE-Schwachstelle (Remote Code Execution) in Page Builder zu beheben. Die erste Fehlerbehebung basiert auf Adobe Commerce 2.3.3. Wir haben diese Patches mit einer stabileren Implementierung aktualisiert, die auf Adobe Commerce 2.3.4 basiert und mehrere Optimierungen zur Behebung des Problems enthält.<!--MAGECLOUD-4884-->
 
@@ -325,4 +328,4 @@ Diese Version umfasst die folgenden Patches und wichtigen Fehlerbehebungen:
 
 - **Abwärtskompatibilität neuer Mail-Schnittstellen**-Behebt ein Abwärtsinkompatibilitätsproblem, das durch die in Adobe Commerce v2.3.3 eingeführte `Magento\Framework\Mail\EmailMessageInterface` PHP-Schnittstelle verursacht wird. Im Rahmen dieses Patches erbt die neue `EmailMessageInterface` von der alten `MessageInterface`, und die Adobe Commerce-Kernmodule werden so zurückgesetzt, dass sie von `MessageInterface` abhängen.<!--MAGECLOUD-4422-->
 
-- **Katalogpaginierung funktioniert nicht in Elasticsearch 6.x** - Behebt ein kritisches Problem mit der Suchergebnisseitenbildung, das Kunden betrifft, die Elasticsearch 6.x als Katalogsuchmaschine verwenden.<!--MAGECLOUD-4448-->
+- **Katalogpaginierung funktioniert nicht in Elasticsearch 6.x** - Behebt ein kritisches Problem bei der Suchergebnisseitenbildung, das sich auf Kundinnen und Kunden auswirkt, die Elasticsearch 6.x als Katalogsuchmaschine verwenden.<!--MAGECLOUD-4448-->
