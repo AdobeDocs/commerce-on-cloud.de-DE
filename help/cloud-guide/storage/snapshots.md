@@ -2,9 +2,10 @@
 title: Backup-Verwaltung
 description: Erfahren Sie, wie Sie manuell eine Sicherung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt erstellen und wiederherstellen.
 feature: Cloud, Paas, Snapshots, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
+source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,10 @@ ht-degree: 0%
 Sie können eine manuelle Sicherung aktiver Starter-Umgebungen jederzeit mithilfe der Schaltfläche **[!UICONTROL Backup]** im [!DNL Cloud Console] oder mithilfe des Befehls `magento-cloud snapshot:create` durchführen.
 
 Ein Backup oder _Snapshot_ ist ein vollständiges Backup von Umgebungsdaten, das alle persistenten Daten aus laufenden Services (MySQL-Datenbank) und alle Dateien umfasst, die auf den bereitgestellten Volumes (var, pub/media, app/etc) gespeichert sind. Der Schnappschuss enthält _nicht_ Code, da der Code bereits im Git-basierten Repository gespeichert ist. Sie können keine Kopie eines Schnappschusses herunterladen.
+
+>[!WARNING]
+>
+>Sicherungen enthalten normalerweise den Inhalt von bereitgestellten Verzeichnissen, einschließlich öffentlicher Webverzeichnisse wie `pub/media`, verschieben jedoch keine Backup-Ausgabedateien in öffentliche Webverzeichnisse wie `pub/media` oder `pub/static`.
 
 Die Backup-/Snapshot-Funktion **nicht** für die Pro Staging- und Produktionsumgebungen, die standardmäßig regelmäßige Backups für die Notfallwiederherstellung erhalten. Weitere Informationen finden Sie unter [Pro Backup &amp; Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery). Im Gegensatz zu den automatischen Live-Backups in den Pro-Staging- und Produktionsumgebungen werden die Backups **nicht** automatisch erstellt. Es liegt _Ihrer_ Verantwortung, manuell ein Backup zu erstellen oder einen Cron-Auftrag einzurichten, um regelmäßig ein Backup Ihrer Starter- oder Pro-Integrationsumgebungen zu erstellen.
 
