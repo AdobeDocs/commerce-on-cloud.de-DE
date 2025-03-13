@@ -2,9 +2,10 @@
 title: Pro-Projekt-Workflow
 description: Erfahren Sie, wie Sie die Pro-Entwicklungs- und Bereitstellungs-Workflows verwenden.
 feature: Cloud, Iaas, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: efe41991-8940-4d5c-a720-80369274bee3
+source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Die folgende Grafik zeigt den Pro-Workflow zum Entwickeln und Bereitstellen , de
 
 ## Entwicklungs-Workflow
 
-Die Integrationsumgebung bietet eine zentrale `integration`-Verzweigung mit dem Code Ihrer Adobe Commerce on Cloud-Infrastruktur. Sie können eine zusätzliche Verzweigung für die aktive Umgebung erstellen. Dies ermöglicht bis zu zwei aktive Verzweigungen, die in Platform as a Service (PaaS)-Containern bereitgestellt werden. Die Anzahl der inaktiven Umgebungen ist unbegrenzt.
+Die Integrationsumgebung bietet eine zentrale `integration`-Verzweigung mit dem Code Ihrer Adobe Commerce on Cloud-Infrastruktur. Sie können eine zusätzliche Verzweigung für die aktive Umgebung erstellen. Dies ermöglicht bis zu zwei aktive Verzweigungen, die in Platform as a Service (PaaS)-Containern bereitgestellt werden. Die Anzahl der inaktiven Umgebungen ist unbegrenzt. Je mehr inaktive Umgebungen vorhanden sind, desto länger dauert es jedoch, bis die Cloud-Konsole geladen ist.
 
 {{enhanced-integration-envs}}
 
