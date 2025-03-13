@@ -2,7 +2,8 @@
 title: Anzeigen und Verwalten von Protokollen
 description: Machen Sie sich mit den in der Cloud-Infrastruktur verfügbaren Protokolldateitypen vertraut und erfahren Sie, wo Sie sie finden.
 last-substantial-update: 2023-05-23T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
+source-git-commit: 7615347cd5b528406c2a0e72be3450350655eeb9
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -208,13 +209,13 @@ Bei Pro-Staging- und Produktionsumgebungen sind die Protokolle „Bereitstellen�
 
 | Protokolldatei | Pro-Staging | Pro Produktion |
 | ------------------- | --------------------------------------------------- | ----------------------------------------------- |
-| **Protokoll bereitstellen** | Nur erster Knoten:<br>`/var/log/platform/<project-ID>_stg/deploy.log` | Nur erster Knoten:<br>`/var/log/platform/<project-ID>/deploy.log` |
-| **Protokoll nach der Bereitstellung** | Nur erster Knoten:<br>`/var/log/platform/<project-ID>_stg/post_deploy.log` | Nur erster Knoten:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
-| **Cron-Protokoll** | Nur erster Knoten:<br>`/var/log/platform/<project-ID>_stg/cron.log` | Nur erster Knoten:<br>`/var/log/platform/<project-ID>/cron.log` |
-| **Nginx-Zugriffsprotokoll** | `/var/log/platform/<project-ID>_stg/access.log` | `/var/log/platform/<project-ID>/access.log` |
-| **Nginx-Fehlerprotokoll** | `/var/log/platform/<project-ID>_stg/error.log` | `/var/log/platform/<project-ID>/error.log` |
-| **PHP-Zugriffsprotokoll** | `/var/log/platform/<project-ID>_stg/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
-| **PHP FPM-Protokoll** | `/var/log/platform/<project-ID>_stg/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
+| **Protokoll bereitstellen** | Nur erster Knoten:<br>`/var/log/platform/<project-ID>_stg*/deploy.log` | Nur erster Knoten:<br>`/var/log/platform/<project-ID>/deploy.log` |
+| **Protokoll nach der Bereitstellung** | Nur erster Knoten:<br>`/var/log/platform/<project-ID>_stg*/post_deploy.log` | Nur erster Knoten:<br>`/var/log/platform/<project-ID>/post_deploy.log` |
+| **Cron-Protokoll** | Nur erster Knoten:<br>`/var/log/platform/<project-ID>_stg*/cron.log` | Nur erster Knoten:<br>`/var/log/platform/<project-ID>/cron.log` |
+| **Nginx-Zugriffsprotokoll** | `/var/log/platform/<project-ID>_stg*/access.log` | `/var/log/platform/<project-ID>/access.log` |
+| **Nginx-Fehlerprotokoll** | `/var/log/platform/<project-ID>_stg*/error.log` | `/var/log/platform/<project-ID>/error.log` |
+| **PHP-Zugriffsprotokoll** | `/var/log/platform/<project-ID>_stg*/php.access.log` | `/var/log/platform/<project-ID>/php.access.log` |
+| **PHP FPM-Protokoll** | `/var/log/platform/<project-ID>_stg*/php5-fpm.log` | `/var/log/platform/<project-ID>/php5-fpm.log` |
 
 ### Archivierte Protokolldateien
 
@@ -234,7 +235,7 @@ Die archivierten Protokolldateien werden immer in dem Verzeichnis gespeichert, i
 
 Da jeder Service in einem separaten Container ausgeführt wird, sind die Service-Protokolle nicht in der Integrationsumgebung verfügbar. Adobe Commerce in der Cloud-Infrastruktur bietet nur in der Integrationsumgebung Zugriff auf den Webserver-Container. Die folgenden Speicherorte für Service-Protokolle sind für die Pro-Produktions- und Staging-Umgebungen vorgesehen:
 
-- **Redis-Protokoll**: `/var/log/platform/<project-ID>_stg/redis-server-<project-ID>_stg.log`
+- **Redis-Protokoll**: `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
 - **Elasticsearch-Protokoll**: `/var/log/elasticsearch/elasticsearch.log`
 - **Java Garbage Collection Log**: `/var/log/elasticsearch/gc.log`
 - **Mail-Protokoll**: `/var/log/mail.log`
