@@ -4,16 +4,17 @@ description: Erfahren Sie, wie Sie SSH-Schlüssel auf Ihr Adobe Commerce in eine
 role: Developer
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
+source-git-commit: c25e5b74ae8105995107860246ecb9ba45910bb1
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
 
 # Sichere Verbindungen zu Remote-Umgebungen
 
-Secure Shell (SSH) ist ein gängiges Protokoll, das verwendet wird, um sich sicher bei Remote-Servern und Systemen anzumelden. Sie können SSH verwenden, um auf Ihre Remote-Umgebungen zuzugreifen, um die Adobe Commerce-Anwendung zu verwalten und auf Remote-Umgebungsprotokolle zuzugreifen. Adobe unterstützt nur sichere FTP (sFTP)-Verbindungen mit Ihrem öffentlichen SSH-Schlüssel. FTP-Verbindungen werden nicht unterstützt.
+Secure Shell (SSH) ist ein gängiges Protokoll, das verwendet wird, um sich sicher bei Remote-Servern und Systemen anzumelden. Sie können SSH verwenden, um auf Ihre Remote-Umgebungen zuzugreifen, um die Adobe Commerce-Anwendung zu verwalten und auf Remote-Umgebungsprotokolle zuzugreifen. Adobe unterstützt nur sichere FTP (sFTP)-Verbindungen, die den öffentlichen SSH-Schlüssel verwenden. FTP-Verbindungen werden nicht unterstützt.
 
 ## Erzeugen eines SSH-Schlüsselpaars
 
@@ -28,7 +29,7 @@ Erstellen Sie auf jedem Computer und Arbeitsbereich ein SSH-Schlüsselpaar, das 
 
 ## Hinzufügen eines öffentlichen SSH-Schlüssels zu Ihrem Konto
 
-Nachdem Sie Ihren öffentlichen SSH-Schlüssel zu Ihrem Adobe Commerce in einem Cloud-Infrastrukturkonto hinzugefügt haben, stellen Sie alle aktiven Umgebungen in Ihrem Konto erneut bereit, um den Schlüssel zu installieren.
+Nachdem Sie Ihren öffentlichen SSH-Schlüssel zu Ihrem Adobe Commerce-Konto in der Cloud-Infrastruktur hinzugefügt oder aktualisiert haben[ stellen Sie „Alle aktiven Umgebungen erneut bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) auf Ihrem Konto bereit, um den Schlüssel zu installieren.
 
 Sie können SSH-Schlüssel zu Ihrem Konto hinzufügen, indem Sie eine der folgenden Methoden verwenden: Cloud-CLI oder [!DNL Cloud Console].
 
