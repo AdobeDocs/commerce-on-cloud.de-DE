@@ -2,9 +2,10 @@
 title: PHP-Einstellungen
 description: Erfahren Sie mehr über die optimalen PHP-Einstellungen für die Konfiguration von Commerce-Anwendungen in der Cloud-Infrastruktur.
 feature: Cloud, Configuration, Extensions
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 83094c16-7407-41fa-ba1c-46b206aa160d
+source-git-commit: 1725741cfab62a2791fe95cfae9ed9dffa352339
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -66,10 +67,16 @@ Diese Einstellungen ermöglichen es PHP-Prozessen, Pfade zu Dateien zwischenzusp
 
 ### Überprüfen der benutzerdefinierten PHP-Einstellungen
 
-Nachdem Sie die `php.ini` Änderungen in Ihre Cloud-Umgebung übertragen haben, können Sie überprüfen, ob die benutzerdefinierte PHP-Konfiguration zu Ihrer Umgebung hinzugefügt wurde. Verwenden Sie beispielsweise SSH, um sich bei der Remote-Umgebung anzumelden und die Datei mit etwas Ähnlichem wie dem folgenden anzuzeigen:
+Nachdem Sie die `php.ini` Änderungen in Ihre Cloud-Umgebung übertragen haben, können Sie überprüfen, ob die benutzerdefinierte PHP-Konfiguration zu Ihrer Umgebung hinzugefügt wurde. Verwenden Sie beispielsweise SSH, um sich bei der Remote-Umgebung anzumelden, PHP-Konfigurationsinformationen anzuzeigen und nach der `register_argc_argv`-Direktive zu filtern:
 
 ```bash
-cat /etc/php/<php-version>/fpm/php.ini
+php -i | grep register_argc_ar
+```
+
+Beispielausgabe:
+
+```text
+register_argc_argv => On => On
 ```
 
 >[!WARNING]
