@@ -1,9 +1,10 @@
 ---
 title: Regionale IP-Adressen
 description: Hier finden Sie eine Liste der IP-Adressen für die AWS- und Azure-Regionen, die von Adobe Commerce in der Cloud-Infrastruktur für Integrationsumgebungen verwendet werden.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1137f5cf-4879-46d7-878c-bf47de7a0e34
+source-git-commit: f2214dd56625847132298892635c7cf738c3d71f
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,9 @@ Die Syntax für die Adressierung der Integrationsumgebungen lautet wie folgt:
 - **Projekt-ID** = Projekt-ID mit 13 Zeichen
 - **Region** = Name der AWS- oder Azure-Region
 
-Sie können den `ping`-Befehl verwenden, um die eingehende IP-Adresse abzurufen:
+Sie können den Befehl `ping` oder `dig` verwenden, um die eingehende IP-Adresse abzurufen:
+
+**Ping**
 
 ```bash
 ping integration-abcd123-abcd78910.us-3.magentosite.cloud
@@ -35,6 +38,18 @@ PING integration-abcd123-abcd78910.us-3.magentosite.cloud (34.210.133.187): 56 d
 Request timeout for icmp_seq 0
 Request timeout for icmp_seq 1
 Request timeout for icmp_seq 2
+```
+
+**DIG**
+
+```bash
+dig +short integration-abcd123-abcd78910.us-3.magentosite.cloud
+```
+
+Beispielantwort
+
+```bash
+34.210.133.187
 ```
 
 Wenn Sie eine Unternehmens-Firewall haben, die ausgehende SSH-Verbindungen blockiert, können Sie die eingehenden IP-Adressen zu Ihrer Zulassungsliste hinzufügen.
