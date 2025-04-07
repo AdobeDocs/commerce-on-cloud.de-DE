@@ -2,11 +2,11 @@
 title: ECE-Tools - Versionshinweise
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools-Paket.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-03T00:00:00Z
+last-substantial-update: 2024-04-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
+source-git-commit: 2522e606aebac79285793cd40428d3e064a3c1db
 workflow-type: tm+mt
-source-wordcount: '3059'
+source-wordcount: '3065'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ Die Versionshinweise umfassen Folgendes:
 
 ## v2002.2.2 {#latest}
 
-Veröffentlichungsdatum: 3. April 2025
+Veröffentlichungsdatum: 7. April 2025
 
-- ![neues Symbol](../../assets/new.svg) **Valkey** - Es wurde Unterstützung für einen neuen Service (Valkey) hinzugefügt, der ein Ersatz für Redis ist.<!-- MCLOUD-13455	 - -->
-- ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5 wurde hinzugefügt. <!-- MCLOUD-13493	 - -->
+- ![neues Symbol](../../assets/new.svg) **Valkey** - Es wurde Unterstützung für einen neuen Service (Valkey) hinzugefügt, der ein Ersatz für Redis ist.&lt;!— MCLOUD-13455 —>
+- ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5 hinzugefügt. &lt;!— MCLOUD-13493 —>
 
 ## v2002.2.1
 
 Veröffentlichungsdatum: 6. Februar 2024
 
-- ![neues Symbol](../../assets/new.svg) **PHP 8.4**—Unterstützung für PHP 8.4.<!-- MCLOUD-13145	 - --> hinzugefügt
-- ![Fix icon](../../assets/fix.svg) **Validator for OpenSearch**-Fixes Der Validator, der eine irreführende Meldung über die falsche Version des Dienstes erzeugt hat.<!-- MCLOUD-13184	 - -->
+- ![neues Symbol](../../assets/new.svg) **PHP 8.4**—Unterstützung für PHP 8.4.<!-- MCLOUD-13145     - --> hinzugefügt
+- ![Fix icon](../../assets/fix.svg) **Validator for OpenSearch**-Fixes Der Validator, der eine irreführende Meldung über die falsche Version des Dienstes erzeugt hat.&lt;!— MCLOUD-13184 —>
 
 
 ## v2002.2.0
