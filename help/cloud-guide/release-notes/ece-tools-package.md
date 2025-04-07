@@ -2,11 +2,11 @@
 title: ECE-Tools - Versionshinweise
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools-Paket.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-02-06T00:00:00Z
+last-substantial-update: 2024-04-03T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 33f89e5c9af7c172ad0592b61343e285b456fc1a
+source-git-commit: 3d5c84890f48a26938b42783b591b876fd2a2fd1
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3059'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,14 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v2002.2.1 {#latest}
+## v2002.2.2 {#latest}
 
+Veröffentlichungsdatum: 3. April 2025
+
+- ![neues Symbol](../../assets/new.svg) **Valkey** - Es wurde Unterstützung für einen neuen Service (Valkey) hinzugefügt, der ein Ersatz für Redis ist.<!-- MCLOUD-13455	 - -->
+- ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5 wurde hinzugefügt. <!-- MCLOUD-13493	 - -->
+
+## v2002.2.1
 
 Veröffentlichungsdatum: 6. Februar 2024
 
@@ -64,7 +70,7 @@ Veröffentlichungsdatum: 8. April 2024
 
 Veröffentlichungsdatum: 16. Januar 2024
 
-- ![Fix icon](../../assets/fix.svg) **Validator for Elasticsearch &amp; OpenSearch** - Der Validator, der eine irreführende Meldung zur Installation eines Suchdienstes bei aktiviertem LiveSearch erzeugt hat, wurde korrigiert.<!-- MCLOUD-10167 -->
+- ![Fix icon](../../assets/fix.svg) **Validator for Elasticsearch &amp; OpenSearch** - Der Validator wurde korrigiert, der eine irreführende Meldung zur Installation eines Suchdiensts bei aktivierter LiveSearch-Funktion ausgab.<!-- MCLOUD-10167 -->
 - ![Fix icon](../../assets/fix.svg) **Bereitstellungswarnung** - Es wurde ein Problem behoben, das zu Bereitstellungswarnungen zu nicht leeren Ordnern führte.<!-- MCLOUD-8958 -->
 
 ## v2002.1.16
@@ -79,7 +85,7 @@ Veröffentlichungsdatum: 31. Juli 2023
 
 - ![Fehlersymbol](../../assets/fix.svg) **Fehlercodes** - Aktualisiertes Fehlercodeschema und Fehlercodedokumentgenerator.
 - ![Fix icon](../../assets/fix.svg) **Validator für benutzerdefiniertes Redis-Modell**-Der Validator für benutzerdefinierte Redis-Backend-Modelle wurde aktualisiert. [Siehe Beispiel für die Cache-Konfiguration](../environment/variables-deploy.md#cache_configuration).
-- ![Fix icon](../../assets/fix.svg) **Validator for RabbitMQ**-Unterstützung für RabbitMQ 3.11 hinzugefügt
+- ![Fix icon](../../assets/fix.svg) **Validator for RabbitMQ**-Hinzugefügte Unterstützung für RabbitMQ 3.11
 - ![Fix-Symbol](../../assets/fix.svg) **Falscher Link korrigiert**-Falscher Link zur Onboarding-Dokumentation in der Willkommens-E-Mail-Vorlage korrigiert.
 
 ## v2002.1.14
@@ -94,7 +100,7 @@ Veröffentlichungsdatum: 10. März 2023
 
 Veröffentlichungsdatum: 27. Oktober 2022
 
-- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O-Ereignisse für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das Framework [Adobe I/O-Ereignisse](https://developer.adobe.com/events/docs/) verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für das [Adobe-App Builder geschrieben ](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O-Ereignisse für Adobe Commerce befinden sich in der Partnervorschau.<!-- CEXT-932 -->
+- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben ](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
 - ![neues Symbol](../../assets/new.svg) **Validator für OPcache-Konfiguration** - Es wurde ein Validator hinzugefügt, um die OPcache-Konfiguration auf ausgeschlossene Pfade zu überprüfen.<!-- MCLOUD-9485 -->
 - ![Fix icon](../../assets/fix.svg) **Es wurde ein Problem mit der GraphQL-Cache-** behoben. Jetzt behält ECE-Tools den GraphQL-`id_salt` in `cache` Konfiguration in der `app/etc/env.php`.<!-- MCLOUD-9486 -->
 
@@ -128,7 +134,7 @@ Veröffentlichungsdatum: 10. März 2022
 - ![fix icon](../../assets/fix.svg) **symfony/process** - Kompatibilität mit symfony/process ^5.3.<!-- MCLOUD-8283 --> hinzugefügt
 
 - ![neues Symbol](../../assets/new.svg) **Verbraucher - Mehrere Prozesse** Es wurde eine `multiple_processes` Option hinzugefügt, mit der Sie die Anzahl der Prozesse angeben können, die für jeden Verbraucher erzeugt werden sollen. Eine Beschreibung der `CRON_CONSUMERS_RUNNER` finden Sie unter [Variablen bereitstellen](../environment/variables-deploy.md#cron_consumers_runner).<!-- MCLOUD-8295 -->
-- ![neues Symbol](../../assets/new.svg) **OpenSearch-Schema und vollständiger Host-Pfad** - Es wurde die Möglichkeit hinzugefügt, ein Elasticsearch-Schema und den vollständigen Host-Pfad zu konfigurieren.
+- ![neues Symbol](../../assets/new.svg) **OpenSearch-Schema und vollständiger Host-Pfad** - Es wurde die Möglichkeit hinzugefügt, ein Elasticsearch-Schema und einen vollständigen Host-Pfad zu konfigurieren.
 - ![Fix-Symbol](../../assets/fix.svg) **AWS S3** - Die Methode zur Aktivierung von AWS S3 wurde geändert.
 - ![Fix icon](../../assets/fix.svg) **Fix Driver_Options Reader** - Es wurde das Lesen der Driver_Options-Konfiguration für die DB-Verbindung aus der `env.php`-Datei durch `ece-tools` für Validatoren hinzugefügt.<!-- MCLOUD-8420 -->
 
@@ -159,13 +165,13 @@ Veröffentlichungsdatum: 20. April 2021
 
 - ![neues Symbol](../../assets/new.svg) **Redis-Authentifizierungsberechtigungen** - Es wurde die Möglichkeit hinzugefügt, während der Bereitstellungsphase Redis-Autorisierungsberechtigungen aus der `relationships`-Eigenschaft zu lesen.<!--MCLOUD-7694-->
 
-- ![neues Symbol](../../assets/new.svg) **Anmeldeinformationen für die Elasticsearch-Autorisierung** - Es wurde die Möglichkeit hinzugefügt, Anmeldeinformationen für die Elasticsearch-Autorisierung während der Bereitstellungsphase aus der `relationships`-Eigenschaft zu lesen.<!--MCLOUD-7695-->
+- ![neues Symbol](../../assets/new.svg) **Elasticsearch-Autorisierungs-**: Es wurde die Möglichkeit hinzugefügt, während der Bereitstellungsphase Elasticsearch-Autorisierungs-Anmeldeinformationen aus der `relationships`-Eigenschaft zu lesen.<!--MCLOUD-7695-->
 
 - ![neues Symbol](../../assets/new.svg) **Dedizierter Sitzungsspeicher-Service** - `redis-session` als zweite Option für die Sitzungsspeicherung hinzugefügt. Sie können den `redis-session`-Dienst verwenden, um Sitzungsinformationen zu speichern, und den `redis`-Dienst für den Cache verwenden, um eine bessere Leistung zu erzielen.<!--MCLOUD-7698-->
 
 - ![neues Symbol](../../assets/new.svg) **Veraltete SPLIT_DB-Meldungen** - Es wurden Validierungswarnungen und kritische Meldungen für die veraltete `SPLIT_DB`-Option für Adobe Commerce 2.4.2 und deren Entfernung in Adobe Commerce 2.5.0 hinzugefügt.<!--MCLOUD-7806-->
 
-- ![Fix-Symbol](../../assets/fix.svg) **Elasticsearch-Version aus Beziehungen** - Service-Validator wurde korrigiert, um die richtige Version des Elasticsearchs aus den `relationships` in Cloud Docker- und Integrationsumgebungen abzurufen.<!--MCLOUD-7572-->
+- ![Fix-Symbol](../../assets/fix.svg) **Elasticsearch-Version aus Beziehungen** - Service-Validator wurde korrigiert, um die richtige Version von Elasticsearch aus den `relationships` in Cloud Docker- und Integrationsumgebungen abzurufen.<!--MCLOUD-7572-->
 
 - ![Fix icon](../../assets/fix.svg) **Flexible Redis-Port-Validierung** - Redis kann jetzt den Port in einer benutzerdefinierten Cache-Verbindung über die `server`-URL validieren. Sie können beispielsweise Ihre Portnummer wie folgt zu Ihrer Server-URL hinzufügen: `server: 'tcp://rfs-store-simple-page-cache:26379'`. Dadurch lassen sich Validierungsfehler vermeiden, bei denen die `port` entweder fehlt oder falsch ist.<!--MCLOUD-7722-->
 
@@ -217,9 +223,9 @@ Veröffentlichungsdatum: 9. November 2020
 
 - ![neues Symbol](../../assets/new.svg) Es wurde eine Suchmaschinenvalidierung hinzugefügt, um sicherzustellen, dass `elasticsearch` für Adobe Commerce auf Cloud-Infrastruktur 2.4 und höher festgelegt ist. Wenn die Validierung fehlschlägt, wird die Bereitstellung mit einer kritischen Fehlermeldung gestoppt, die Fehlerbehebungen für das Problem vorschlägt. Siehe [Kritische Fehler, Bereitstellungsphase](../dev-tools/error-reference.md#deploy-stage).<!--MCLOUD-6937-->
 
-- ![neues Symbol](../../assets/new.svg) Es wurde eine Elasticsearch-Validierung hinzugefügt, um die Kompatibilität zwischen der Elasticsearch Service-Version und der Adobe Commerce-Version zu überprüfen.<!--MCLOUD-7193-->
+- ![neues Symbol](../../assets/new.svg) Es wurde eine Elasticsearch-Validierung hinzugefügt, um die Kompatibilität zwischen der Elasticsearch-Service-Version und der Adobe Commerce-Version zu überprüfen.<!--MCLOUD-7193-->
 
-- ![neues Symbol](../../assets/new.svg) Die Fehlermeldung zur Elasticsearch-Kompatibilität wurde aktualisiert, um die Elasticsearch-Versionen anzuzeigen, die mit dem Adobe Commerce-Elasticsearch-Modul kompatibel sind. Die Fehlermeldung enthält jetzt die spezifischen Versionsnummern, die in Ihrer Cloud-Infrastruktur installiert werden müssen, damit sie mit dem Elasticsearch-Elasticsearch kompatibel sind, das von Ihrer Version von Adobe Commerce verwendet wird. Siehe [Warnfehler, Bereitstellungs-Staging](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->
+- ![neues Symbol](../../assets/new.svg) Die Elasticsearch-Kompatibilitätsfehlermeldung wurde aktualisiert, um die Versionen von Elasticsearch anzuzeigen, die mit dem Adobe Commerce Elasticsearch-Modul kompatibel sind. Die Fehlermeldung enthält jetzt die spezifischen Elasticsearch-Versionen, die in Ihrer Cloud-Infrastruktur installiert werden müssen, damit sie mit dem Elasticsearch-Modul kompatibel sind, das von Ihrer Version von Adobe Commerce verwendet wird. Siehe [Warnfehler, Bereitstellungs-Staging](../dev-tools/error-reference.md#deploy-stage-1).<!--MCLOUD-6698-->
 
 - ![neues Symbol](../../assets/new.svg) Es wurden Warnfehler `2026` und `2027` für die Einstellung der ungültigen `MAGE_MODE`-Umgebungsvariablen hinzugefügt. Der einzige gültige Wert ist `production`. Vor dieser Fehlerbehebung konnte `MAGE_MODE` auf `developer` ohne Bereitstellungsfehler festgelegt werden, um später beim Versuch, in schreibgeschützte Dateien zu schreiben, Fehler zu verursachen. Siehe [Warnfehler](../dev-tools/error-reference.md#warning-errors).<!--MCLOUD-6708-->
 
@@ -253,7 +259,7 @@ Veröffentlichungsdatum: 5. August 2020
 
    - Fehler-Code 102 - Es wurden zusätzliche Prüfungen für Probleme hinzugefügt, die auftreten, wenn die `env.php`-Datei nicht beschreibbar ist <!--MCLOUD-6221-->
 
-- ![neues Symbol](../../assets/new.svg) Die Umgebungsvariable **QUALITY_PATCH** wurde hinzugefügt, um einen oder mehrere Qualitäts-Patches anzugeben, die während des Bereitstellungsprozesses angewendet werden sollen. Siehe [Variablen erstellen](../environment/variables-build.md#quality_patches).<!--MCLOUD-6375-->
+- ![neues Symbol](../../assets/new.svg) Die Umgebungsvariable **QUALITY_PATCHES** wurde hinzugefügt, um einen oder mehrere Qualitäts-Patches anzugeben, die während des Bereitstellungsprozesses angewendet werden sollen. Siehe [Variablen erstellen](../environment/variables-build.md#quality_patches).<!--MCLOUD-6375-->
 
 ## v2002.1.1
 
@@ -293,7 +299,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
 - ![neues Symbol](../../assets/new.svg) **Validierungsverbesserungen**—
 
-   - ![neues Symbol](../../assets/new.svg) **Kompatibilitätsprüfungen für Elasticsearch 7.x**—Aktualisierte Elasticsearch-Validierung für Kompatibilitätsprüfungen für Elasticsearch 7.x-Software.<!--MCLOUD-5542-->
+   - ![neues Symbol](../../assets/new.svg) **Elasticsearch 7.x-Kompatibilitätsprüfungen**—Aktualisierte Elasticsearch-Validierung für Software-Kompatibilitätsprüfungen für Elasticsearch 7.x.<!--MCLOUD-5542-->
 
    - ![neues Symbol](../../assets/new.svg) **Aktualisierte Service-Version und EOL-Validierungsprüfungen**—Aktualisierte Validierung, um installierte Service-Versionen mit Adobe Commerce 2.4 zu überprüfen. Anforderungen.<!--MCLOUD-6144-->
 
