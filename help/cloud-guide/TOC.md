@@ -3,9 +3,9 @@ user-guide-title: Handbuch zu Commerce für Cloud
 user-guide-description: Erfahren Sie, wie Sie die Adobe Commerce-Anwendung in der Cloud-Infrastruktur verwalten.
 product: magento
 feature: Cloud
-source-git-commit: 4e107bb8696c3c7cb76a0a702624aeb754648f70
+source-git-commit: fd7879e8f3c9e1965cf4aa3d99824e577971529d
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 7%
 
 ---
@@ -136,6 +136,7 @@ ht-degree: 7%
       + [OpenSearch](services/opensearch.md)
       + [RabbitMQ](services/rabbitmq.md)
       + [Redis](services/redis.md)
+      + [Tal](services/valkey.md)
 + Fastly Services {#cdn}
    + [Übersicht](cdn/fastly.md)
    + Schnelle Einrichtung von {#setup-fastly}
