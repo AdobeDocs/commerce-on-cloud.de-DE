@@ -2,11 +2,11 @@
 title: ECE-Tools - Versionshinweise
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools-Paket.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-07T00:00:00Z
+last-substantial-update: 2024-04-09T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 2522e606aebac79285793cd40428d3e064a3c1db
+source-git-commit: 933e0c1b8bfbafeb6a477ec7bba7dcf7667dc6ec
 workflow-type: tm+mt
-source-wordcount: '3065'
+source-wordcount: '3092'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,18 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v2002.2.2 {#latest}
+## v2002.2.3 {#latest}
+
+Veröffentlichungsdatum: 9. April 2025
+
+- ![Fix icon](../../assets/fix.svg) **Fix Valkey** Problem mit der benutzerdefinierten Valkey-Konfiguration behoben.<!-- MCLOUD-13569	 - -->
+- ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator für RabbitMQ 4.0.<!-- MCLOUD-13560	 - -->
+
+## v2002.2.2
+
+Veröffentlichungsdatum: 7. April 2025
+
+## v2002.2.2
 
 Veröffentlichungsdatum: 7. April 2025
 
