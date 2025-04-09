@@ -2,7 +2,8 @@
 title: Eigenschaften
 description: Verwenden Sie die Eigenschaftenliste als Verweis, wenn Sie die  [!DNL Commerce]  für den Build und die Bereitstellung in der Cloud-Infrastruktur konfigurieren.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
@@ -54,7 +55,7 @@ Die `build`-Eigenschaft bestimmt standardmäßig, was beim Erstellen des Projekt
 
 ```yaml
 # The toolstack used to build the application.
-type: php:8.3
+type: php:8.4
 build:
     flavor: none
 
@@ -135,7 +136,7 @@ Definiert die persistente Festplattengröße der Anwendung in MB.
 disk: 5120
 ```
 
-Die minimal empfohlene Festplattengröße beträgt 256 MB. Wenn der Fehler `UserError: Error building the project: Disk size may not be smaller than 128MB` angezeigt wird, erhöhen Sie die Größe auf 256 MB.
+Die empfohlene Mindestgröße beträgt 256 MB. Wenn der Fehler `UserError: Error building the project: Disk size may not be smaller than 128MB`angezeigt wird, erhöhen Sie die Größe auf 256 MB.
 
 >[!NOTE]
 >

@@ -2,7 +2,8 @@
 title: Commerce-Version aktualisieren
 description: Erfahren Sie, wie Sie die Adobe Commerce-Version im Cloud-Infrastrukturprojekt aktualisieren.
 feature: Cloud, Upgrade
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
+source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 0%
@@ -64,7 +65,7 @@ Beim Upgrade von einer älteren Version müssen Sie die `config.local.php` migri
 
 ### Überprüfen von Zend Framework Composer-Abhängigkeiten
 
-Beim Upgrade auf **2.3.x oder höher von 2.2.x**, stellen Sie sicher, dass die Abhängigkeiten des Zend-Frameworks zur `autoload`-Eigenschaft der `composer.json`-Datei hinzugefügt wurden, um Laminas zu unterstützen. Dieses Plug-in unterstützt neue Anforderungen für das Zend Framework, das zum Laminas-Projekt migriert wurde. Siehe [Migration von Zend Framework zum Laminas-Projekt](https://community.magento.com/t5/Magento-DevBlog/Migration-of-Zend-Framework-to-the-Laminas-Project/ba-p/443251) auf dem _Magento DevBlog_.
+Beim Upgrade auf **2.3.x oder höher von 2.2.x**, stellen Sie sicher, dass die Abhängigkeiten des Zend-Frameworks zur `autoload`-Eigenschaft der `composer.json`-Datei hinzugefügt wurden, um Laminas zu unterstützen. Dieses Plug-in unterstützt neue Anforderungen für das Zend Framework, das zum Laminas-Projekt migriert wurde. Siehe [Migration von Zend Framework zum Laminas-Projekt](https://community.magento.com/t5/Magento-DevBlog/Migration-of-Zend-Framework-to-the-Laminas-Project/ba-p/443251) im _Magento DevBlog_.
 
 **So überprüfen Sie die `auto-load:psr-4`-Konfiguration**:
 
@@ -123,7 +124,7 @@ Vor dem Upgrade der Anwendung müssen Sie Ihre Projektkonfigurationsdateien aktu
 
 ### .magento.app.yaml
 
-Überprüfen Sie immer die in der Datei [.magento.app.yaml](../application/configure-app-yaml.md) enthaltenen Werte für Ihre installierte Version, da sie steuert, wie Ihre Anwendung die Cloud-Infrastruktur erstellt und bereitstellt. Das folgende Beispiel gilt für Version 2.4.7 und verwendet Composer 2.7.2. Die `build: flavor:`-Eigenschaft wird nicht für Composer 2.x verwendet; siehe [Installieren und Verwenden von Composer 2](../application/properties.md#installing-and-using-composer-2).
+Überprüfen Sie immer die in der Datei [.magento.app.yaml](../application/configure-app-yaml.md) enthaltenen Werte für Ihre installierte Version, da sie steuert, wie Ihre Anwendung die Cloud-Infrastruktur erstellt und bereitstellt. Das folgende Beispiel gilt für Version 2.4.8 und verwendet Composer 2.8.4. Die `build: flavor:`-Eigenschaft wird nicht für Composer 2.x verwendet; siehe [Installieren und Verwenden von Composer 2](../application/properties.md#installing-and-using-composer-2).
 
 **So aktualisieren Sie die `.magento.app.yaml`-Datei**:
 
@@ -134,13 +135,13 @@ Vor dem Upgrade der Anwendung müssen Sie Ihre Projektkonfigurationsdateien aktu
 1. Aktualisieren Sie die PHP-Optionen.
 
    ```yaml
-   type: php:8.3
+   type: php:8.4
    
    build:
        flavor: none
    dependencies:
        php:
-           composer/composer: '2.7.2'
+           composer/composer: '2.8.4'
    ```
 
 1. Ändern Sie die `hooks`-`build` und `deploy`.
@@ -230,7 +231,7 @@ Vor dem Upgrade der Anwendung müssen Sie Ihre Projektkonfigurationsdateien aktu
 
 Es wird empfohlen, vor einem Upgrade eine Sicherungskopie des Projekts zu erstellen. Führen Sie die folgenden Schritte aus, um Ihre Integrations-, Staging- und Produktionsumgebungen zu sichern.
 
-**So sichern Sie die Datenbank und den Code Ihrer Integrationsumgebung**:
+**To back up your integration environment database and code**:
 
 1. Erstellen Sie eine lokale Sicherung der Remote-Datenbank.
 
@@ -363,7 +364,7 @@ Wie unter [Konfigurationsverwaltung](#configuration-management) erwähnt, müsse
 
 ### Erweiterungen aktualisieren
 
-Überprüfen Sie Ihre Erweiterungs- und Modulseiten von Drittanbietern auf Marketplace oder anderen Unternehmens-Sites und überprüfen Sie, ob Adobe Commerce und Adobe Commerce in der Cloud-Infrastruktur unterstützt werden. Wenn Sie Erweiterungen und Module von Drittanbietern aktualisieren müssen, empfiehlt Adobe, in einer neuen Integrationsverzweigung zu arbeiten, wobei Ihre Erweiterungen deaktiviert sind.
+Überprüfen Sie Ihre Erweiterungs- und Modulseiten von Drittanbietern auf Marketplace oder anderen Unternehmens-Sites und überprüfen Sie, ob Adobe Commerce und Adobe Commerce in der Cloud-Infrastruktur unterstützt werden. Wenn Sie Erweiterungen und Module von Drittanbietern aktualisieren müssen, empfiehlt Adobe, eine neue Integrationsverzweigung zu verwenden, bei der die Erweiterungen deaktiviert sind.
 
 **So überprüfen und aktualisieren Sie Ihre Erweiterungen**:
 
