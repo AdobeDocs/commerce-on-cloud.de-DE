@@ -1,10 +1,11 @@
 ---
 title: Caching
-description: Erfahren Sie, wie Sie das Caching für Ihre Adobe Commerce in Cloud-Infrastrukturumgebungen aktivieren.
+description: Learn how to enable caching for your Adobe Commerce on cloud infrastructure environments.
 feature: Cloud, Cache, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
+source-git-commit: a1ed2818cbaf5adf8b673df0ee9b9218e6f700a2
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -54,22 +55,22 @@ http://{default}/path/more/:
         enabled: true
 ```
 
-Im vorherigen Beispiel werden die folgenden Routen zwischengespeichert:
+The preceding example caches the following routes:
 
 - `http://{default}/`
 - `http://{default}/path/more/`
 - `http://{default}/path/more/etc/`
 
-Die folgenden Routen werden **zwischengespeichert**:
+And the following routes are **not** cached:
 
 - `http://{default}/path/`
 - `http://{default}/path/etc/`
 
 >[!NOTE]
 >
->Reguläre Ausdrücke in Routen werden **nicht** unterstützt.
+>Regular expressions in routes are **not** supported.
 
-## Aufbewahrungsfrist im Cache
+## Cache duration
 
 Die Aufbewahrungsfrist im Cache wird durch den Wert der `Cache-Control`-Antwort-Kopfzeile bestimmt. Wenn in der Antwort keine `Cache-Control`-Kopfzeile enthalten ist, wird der `default_ttl` verwendet.
 
@@ -79,7 +80,7 @@ Um zu entscheiden, wie eine Antwort zwischengespeichert werden soll, erstellt Ad
 
 Mit den Parametern `headers` und `cookies` können Sie diesen Cache-Schlüssel ändern.
 
-Der Standardwert für diese Schlüssel lautet:
+The default value for these keys follows:
 
 ```yaml
 cache:
@@ -88,17 +89,17 @@ cache:
     cookies: ["*"]
 ```
 
-## Cache-Attribute
+## Cache attributes
 
 ### `enabled`
 
-Wenn auf `true` gesetzt, aktivieren Sie den Cache für diese Route. Wenn auf `false` gesetzt, deaktivieren Sie den Cache für diese Route.
+When set to `true`, enable the cache for this route. When set to `false`, disable the cache for this route.
 
 ### `headers`
 
-Definiert, von welchen Werten der Cache-Schlüssel abhängen muss.
+Defines on which values the cache key must depend.
 
-Wenn der `headers` beispielsweise der folgende ist:
+For example, if the `headers` key is the following:
 
 ```yaml
 cache:
@@ -126,11 +127,11 @@ Ein Sonderfall liegt vor, wenn der `cookies` den Wert `["*"]` hat. Dieser Wert b
 
 >[!NOTE]
 >
->Sie können keine Platzhalter im Cookie-Namen verwenden. Verwenden Sie entweder einen präzisen Cookie-Namen oder stimmen Sie alle Cookies mit einem Sternchen (`*`) überein. Beispielsweise sind `SESS*` oder `~SESS` derzeit **ungültige** Werte.
+>Sie können keine Platzhalter im Cookie-Namen verwenden. Use either a precise cookie name or match all cookies with an asterisk (`*`). For example, `SESS*` or `~SESS` are currently **not** valid values.
 
-Cookies haben die folgenden Einschränkungen:
+Cookies have the following restrictions:
 
-- Sie können maximal **50 Cookies** im System setzen. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus.
+- There is a set maximum of **50 cookies** in the system. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. To increase the number of cookies to 200, apply the [MDVA-12304 patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) using using the [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Die maximale Cookie-Größe beträgt **4096 Byte**. Andernfalls löst die Anwendung eine `Unable to send the cookie. Size of '%name' is %size bytes` Ausnahme aus.
 
 ### `default_ttl`
