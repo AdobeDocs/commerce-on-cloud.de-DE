@@ -2,11 +2,11 @@
 title: Cloud-Patches für Commerce
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud-Patches-Paket.
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-04-15T00:00:00Z
+last-substantial-update: 2025-04-24T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: cebf68dfc1722a055a6217fa50552116d216d579
+source-git-commit: db8d20cdf999657c059202131111e71faf50b8e9
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2402'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,13 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 <!--Add release notes below-->
 
-## v1.1.5 {#latest}
+## v1.1.6 {#latest}
+
+Veröffentlichungsdatum: 24. April 2025
+
+- ![neues Symbol](../../assets/new.svg) **Aktualisierter Patch für Commerce 2.4.4 auf 2.4.7** - Dies ist ein aktualisierter Patch für [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), der in Version 1.1.4 veröffentlicht wurde<!-- MCLOUD-13240 -->
+
+## v1.1.5
 
 Veröffentlichungsdatum: 15. April 2025
 

@@ -2,11 +2,11 @@
 title: ECE-Tools - Versionshinweise
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools-Paket.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-04-09T00:00:00Z
+last-substantial-update: 2024-04-24T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: 933e0c1b8bfbafeb6a477ec7bba7dcf7667dc6ec
+source-git-commit: dff5792f310382eb97c9595da08faac90e602126
 workflow-type: tm+mt
-source-wordcount: '3092'
+source-wordcount: '3117'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,13 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v2002.2.3 {#latest}
+## v2002.2.4 {#latest}
+
+Veröffentlichungsdatum: 24. April 2025
+
+- ![Fix icon](../../assets/fix.svg) **OpenSearch2 für 2.4.4/2.4.5**—Es wurde ein Problem im Zusammenhang mit der Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5.<!-- MCLOUD-13607 --> behoben
+
+## v2002.2.3
 
 Veröffentlichungsdatum: 9. April 2025
 
