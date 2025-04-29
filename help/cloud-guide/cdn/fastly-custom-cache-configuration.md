@@ -2,9 +2,10 @@
 title: Cache-Konfiguration anpassen
 description: Erfahren Sie, wie Sie die Cache-Konfigurationseinstellungen überprüfen und anpassen können, nachdem die Fastly-Service-Einrichtung abgeschlossen ist.
 feature: Cloud, Configuration, Iaas, Cache
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
+source-git-commit: dcf585e25a4b06ff903642e42e72a71820bad008
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -13,11 +14,11 @@ ht-degree: 0%
 
 Nachdem Sie den Fastly-Service in Ihren Staging- und Produktionsumgebungen eingerichtet und getestet haben, überprüfen und passen Sie die Cache-Konfigurationseinstellungen an. Sie können beispielsweise die Einstellungen aktualisieren, um zu ermöglichen, dass TLS HTTP-Anfragen an Fastly umleitet, die Bereinigungseinstellungen aktualisiert und die Standardauthentifizierung aktiviert, um Ihre Site während der Entwicklung mit einem Passwort zu schützen.
 
-Die folgenden Abschnitte enthalten eine Übersicht und Anweisungen zum Konfigurieren einiger Cache-Einstellungen. Weitere Informationen zu den verfügbaren Konfigurationsoptionen finden Sie in der Dokumentation [Fastly CDN Module for Magento 2](https://github.com/fastly/fastly-magento2/tree/master/Documentation).
+Die folgenden Abschnitte enthalten eine Übersicht und Anweisungen zum Konfigurieren einiger Cache-Einstellungen. Weitere Informationen zu den verfügbaren Konfigurationsoptionen finden Sie in der Dokumentation [Fastly CDN Module for Magento 2](https://github.com/fastly/fastly-magento2/tree/master/Documentation) .
 
 ## TLS erzwingen
 
-Fastly bietet die _Force TLS_-Option zur Weiterleitung unverschlüsselter Anfragen (HTTP) an Fastly. Nachdem Ihre Staging- oder Produktionsumgebung mit einem [gültigen SSL-/TLS-Zertifikat](fastly-configuration.md#provision-ssltls-certificates) bereitgestellt wurde, können Sie die Fastly-Konfiguration für Ihren Store aktualisieren, um die Option TLS erzwingen zu aktivieren. Siehe das Fastly [Force TLS-Handbuch](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) in der Dokumentation _Fastly CDN Module for Magento 2_.
+Fastly bietet die _Force TLS_-Option zur Weiterleitung unverschlüsselter Anfragen (HTTP) an Fastly. Nachdem Ihre Staging- oder Produktionsumgebung mit einem [gültigen SSL-/TLS-Zertifikat](fastly-configuration.md#provision-ssltls-certificates) bereitgestellt wurde, können Sie die Fastly-Konfiguration für Ihren Store aktualisieren, um die Option TLS erzwingen zu aktivieren. Siehe das Fastly [TLS-Handbuch erzwingen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) in der Dokumentation _Fastly CDN Module for Magento 2_.
 
 >[!NOTE]
 >
@@ -30,6 +31,8 @@ Die Fastly-Service-Konfiguration legt einen standardmäßigen Timeout-Zeitraum v
 Um Massenaktionen abzuschließen, die länger als 3 Minuten dauern, ändern Sie den Wert _Admin Path Timeout_, um 503 Fehler zu vermeiden.
 
 >[!NOTE]
+>
+>Wenn Sie im Feld **Benutzerdefinierter Admin-Pfad** unter **Stores** > **Configuration** > **Advanced** > **Admin** > **Admin-Basis-URL** einen benutzerdefinierten Admin-Pfad-Endpunkt angegeben haben, müssen Sie in dieser Umgebung auch die [ADMIN_URL](../environment/variables-admin.md#change-the-admin-url) auf denselben Wert setzen. Wenn die Einstellungen unterschiedlich sind, funktioniert die Zeitüberschreitung nicht.
 >
 >Informationen zum Erweitern von Fastly-Timeout-Parametern für andere als Admin in der Fastly-Benutzeroberfläche finden Sie unter [Erhöhen von Timeouts für lange Aufträge](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-INCREASE-TIMEOUTS-LONG-JOBS.md).
 
