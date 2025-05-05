@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: c82272b1867bf72e800668c9d91f15e53f252223
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '82'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 0%
                 intl<br>
                 libxml<br>
                 mysqli<br>
-                opcache<br>
                 PCNTL<br>
                 pdo_mysql<br>
                 Reflexion<br>
@@ -77,31 +76,18 @@ ht-degree: 0%
                 XmlWriter<br>
             </td>
             <td>
-                GeoIP<br>
-                gmp<br>
                 binär<br>
-                imagick<br>
                 IMAP<br>
-                LDAP<br>
-                mailParse<br>
                 mcrypt<br>
-                msgpack<br>
                 mysqli<br>
-                OAuth<br>
                 pdo_mysql<br>
                 Pro<br>
-                pspell<br>
-                raphf<br>
                 neu kodieren<br>
                 Redis<br>
                 Verkaufsstellen<br>
                 Natrium<br>
-                ssh2<br>
-                Aufgeräumt<br>
-                xdebug<br>
                 xmlrpc<br>
                 XSL<br>
-                YAML<br>
             </td>
         </tr>
     </tbody>
