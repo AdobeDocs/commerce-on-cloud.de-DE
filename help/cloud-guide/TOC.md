@@ -44,7 +44,7 @@ ht-degree: 7%
    + [SendGrid-E-Mail-Service](project/sendgrid.md)
    + [Konsolen-Zweigstellenverwaltung](project/console-branches.md)
    + [Regionale IP-Adressen](project/regional-ip-addresses.md)
-+ {#dev-tools} für Entwickler-Tools
++ für Entwickler-Tools{#dev-tools}
    + [Übersicht](dev-tools/overview.md)
    + Cloud CLI-{#cloud-cli}
       + [CLI-Übersicht](dev-tools/cloud-cli-overview.md)
@@ -163,16 +163,16 @@ ht-degree: 7%
    + [Sitemap und Suchmaschinenroboter](store/robots-sitemap.md)
    + [PayPal-Zahlungsmethoden](store/paypal.md)
    + [Konfigurationsverwaltung](store/store-settings.md)
-+ Site-{#launch} starten
++ Site- starten{#launch}
    + [Übersicht](launch/overview.md)
    + [Checkliste starten](launch/checklist.md)
    + [Launch-Schritte](launch/steps.md)
-+ {#monitor} überwachen
++ überwachen{#monitor}
    + [Leistung](monitor/performance.md)
    + New Relic Service-{#new-relic}
       + [Übersicht über New Relic](monitor/new-relic-service.md)
       + [Konto- und Benutzerverwaltung](monitor/account-management.md)
-      + {#investigate} untersuchen
+      + untersuchen{#investigate}
          + [Richtlinien, Warnhinweise und Workflows](monitor/investigate-performance.md)
          + [Datenaufnahme](monitor/ingest-data.md)
          + [Tracking von Bereitstellungen](monitor/track-deployments.md)

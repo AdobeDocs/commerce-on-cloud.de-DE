@@ -47,7 +47,7 @@ Bei Pro-Projekten bietet die `master`-Verzweigung eine aktive PaaS-Umgebung für
 
 **Einschränkungen:**
 
-- Erstellen **** keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
+- Erstellen **&#x200B;**&#x200B;keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
 
 - Verwenden Sie die `master` nicht für Entwicklungs-, UAT- oder Leistungstests
 

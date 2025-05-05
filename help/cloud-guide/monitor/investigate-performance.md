@@ -88,7 +88,7 @@ Anstatt einen vorhandenen Warnhinweis zu ändern, können Sie eine Warnhinweisri
 
 >[!TIP]
 >
->Weitere Informationen [ Warnhinweisen, Warnhinweisrichtlinien und Workflows finden ](https://docs.newrelic.com/docs/alerts/overview/) in der Dokumentation _2}New Relicunter „Einführung in Warnhinweise“._
+>Weitere Informationen [ Warnhinweisen, Warnhinweisrichtlinien und Workflows finden ](https://docs.newrelic.com/docs/alerts/overview/) in der Dokumentation _2&rbrace;New Relicunter „Einführung in Warnhinweise“._
 
 ## Einrichten eines Workflows für Benachrichtigungen
 

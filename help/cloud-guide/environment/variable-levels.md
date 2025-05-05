@@ -39,7 +39,7 @@ Nachdem Sie projektspezifische Variablen festgelegt haben, müssen Sie die Remot
 
 **So legen Sie Variablen mithilfe der[!DNL Cloud Console]** fest:
 
-1. Klicken Sie in der _[!DNL Cloud Console]_auf das Konfigurationssymbol auf der rechten Seite der Projektnavigation.
+1. Klicken Sie in der _[!DNL Cloud Console]_&#x200B;auf das Konfigurationssymbol auf der rechten Seite der Projektnavigation.
 
    ![Projekt konfigurieren](../../assets/icon-configure.png){width="36"}
 

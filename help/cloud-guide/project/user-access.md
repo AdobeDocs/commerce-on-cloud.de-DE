@@ -146,7 +146,7 @@ Sie können die [[!DNL Cloud Console]](../../get-started/cloud-console.md) verwe
 
 1. Klicken Sie in _Ansicht_ Zugriff **[!UICONTROL Add]** auf.
 
-1. Füllen Sie das _[!UICONTROL Add User]_Formular aus:
+1. Füllen Sie das _[!UICONTROL Add User]_&#x200B;Formular aus:
 
    - Geben Sie die E-Mail-Adresse des Benutzers ein.
 

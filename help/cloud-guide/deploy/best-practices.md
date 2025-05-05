@@ -61,7 +61,7 @@ Lesen Sie diese Best Practices und Überlegungen für Ihren Bereitstellungsproze
 
 - **Überprüfen von Service-Versionen und -Beziehungen und der Möglichkeit, eine Verbindung herzustellen**
 
-  Überprüfen Sie, welche Dienste für Ihr Programm verfügbar sind, und stellen Sie sicher, dass Sie die aktuelle, kompatible Version verwenden. Empfohlene Versionen finden Sie [Service](../services/services-yaml.md#service-relationships)Beziehungen und [](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)Systemanforderungen im _Installationshandbuch_.
+  Überprüfen Sie, welche Dienste für Ihr Programm verfügbar sind, und stellen Sie sicher, dass Sie die aktuelle, kompatible Version verwenden. Empfohlene Versionen finden Sie [Service](../services/services-yaml.md#service-relationships)Beziehungen und [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)Systemanforderungen im _Installationshandbuch_.
 
 - **Testen Sie lokal und in der Integrationsumgebung, bevor Sie sie in der Staging- und Produktionsumgebung bereitstellen**
 

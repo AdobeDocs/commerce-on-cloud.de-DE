@@ -251,6 +251,6 @@ Service-Protokolle werden je nach Protokolltyp für unterschiedliche Zeiträume 
 
 ## Protokolldaten für Pro Produktion und Staging
 
-Verwenden Sie in Pro-Produktions- und Staging-Umgebungen das in Ihr Projekt ](../monitor/log-management.md) [New Relic-Protokollmanagement, um aggregierte Protokolldaten aus allen Protokollen zu verwalten, die mit Ihrem Adobe Commerce in Cloud-Infrastrukturprojekt verknüpft sind.
+Verwenden Sie in Pro-Produktions- und Staging-Umgebungen das in Ihr Projekt [&#128279;](../monitor/log-management.md) New Relic-Protokollmanagement, um aggregierte Protokolldaten aus allen Protokollen zu verwalten, die mit Ihrem Adobe Commerce in Cloud-Infrastrukturprojekt verknüpft sind.
 
 Die Anwendung &quot;New Relic-Protokolle“ bietet ein zentralisiertes Protokollmanagement-Dashboard zur Fehlerbehebung und Überwachung von Adobe Commerce in Cloud-Produktions- und Staging-Umgebungen. Das Dashboard bietet außerdem Zugriff auf Protokolldaten für Fastly CDN, Bildoptimierung und WAF-Services (Web Application Firewall). Siehe [New Relic-Services](../monitor/new-relic-service.md).

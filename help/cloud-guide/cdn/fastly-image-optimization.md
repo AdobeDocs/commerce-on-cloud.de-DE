@@ -78,7 +78,7 @@ Aktivieren Sie Fastly Image Optimization (Fastly IO) über das Admin-Bedienfeld,
 
    - **Filter ändern** - Lassen Sie die Standardeinstellung (`Lancsoz3`) unverändert oder wählen Sie eine Alternative aus. Diese Einstellung gibt den Filter an, der zum Bereitstellen eines Bildes in der Größe verwendet wird. Je nach ausgewähltem Filter kann das skalierte Bild eine höhere oder niedrigere Anzahl von Pixeln aufweisen.
 
-      - `Lanczos3` (Standard) - Liefert die beste Bildqualität. Es erhöht die Fähigkeit, Kanten und lineare Merkmale innerhalb eines Bildes zu erkennen, und verwendet _[!DNL sinc]_Resampling, um die bestmögliche Rekonstruktion zu erzielen.
+      - `Lanczos3` (Standard) - Liefert die beste Bildqualität. Es erhöht die Fähigkeit, Kanten und lineare Merkmale innerhalb eines Bildes zu erkennen, und verwendet _[!DNL sinc]_&#x200B;Resampling, um die bestmögliche Rekonstruktion zu erzielen.
       - `Lanczos2` - Verwendet denselben Filter wie `Lancsoz3`, jedoch mit einer weniger genauen Annäherung an die _[!DNL sinc]_-Neuberechnungsfunktion.
       - `Bicubic` - Hat einen natürlichen Scharfzeichnungseffekt, wenn ein Bild kleiner wird.
       - `Bilinear` - Hat einen natürlichen Glättungseffekt, wenn ein Bild größer wird.

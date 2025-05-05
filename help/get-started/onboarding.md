@@ -48,7 +48,7 @@ Auf der Seite finden Sie einen Status für Adobe Commerce-Komponenten und -Servi
 >
 > Öffnen Sie die neue [!DNL Cloud Console] und zeigen Sie Projekt- und Umgebungsaktivitäten an.
 >
->**Nächster Schritt**: [Melden Sie sich bei der CL[!DNL ]oud-Konsole an](cloud-console.md)
+>**Nächster Schritt**: [Melden Sie sich bei der CLoud-Konsole an](cloud-console.md)
 
 <!-- link definitions -->
 

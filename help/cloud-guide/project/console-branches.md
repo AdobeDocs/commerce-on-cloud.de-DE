@@ -87,7 +87,7 @@ Bevor Sie eine Umgebung löschen können, müssen Sie sie deaktivieren. Sobald e
 
 1. Klicken Sie auf das Symbol Konfigurieren rechts in der oberen Navigationsleiste, um die Umgebungseinstellungen zu öffnen.
 
-1. Scrollen Sie auf der Registerkarte _[!UICONTROL General]_nach unten zum Abschnitt_[!UICONTROL Deactivate environment]_, klicken Sie auf **[!UICONTROL Deactivate environment and delete data]** und befolgen Sie die Anweisungen.
+1. Scrollen Sie auf der Registerkarte _[!UICONTROL General]_&#x200B;nach unten zum Abschnitt&#x200B;_[!UICONTROL Deactivate environment]_, klicken Sie auf **[!UICONTROL Deactivate environment and delete data]** und befolgen Sie die Anweisungen.
 
 ## Synchronisieren einer Umgebung
 
