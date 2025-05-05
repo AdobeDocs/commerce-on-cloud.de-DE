@@ -49,7 +49,7 @@ Obwohl in diesem Abschnitt erläutert wird, wie Sie den Namen und die Version ei
 
 ## Installieren einer Erweiterung
 
-Adobe empfiehlt, in einer Entwicklungsverzweigung zu arbeiten, wenn Sie Ihrer Implementierung eine Erweiterung hinzufügen. Bei der Installation einer Erweiterung wird der Name der Erweiterung (`<VendorName>_<ComponentName>`) automatisch in die [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html)-Datei eingefügt. Es ist nicht erforderlich, die Datei direkt zu bearbeiten.
+Adobe empfiehlt, in einer Entwicklungsverzweigung zu arbeiten, wenn Sie Ihrer Implementierung eine Erweiterung hinzufügen. Bei der Installation einer Erweiterung wird der Name der Erweiterung (`<VendorName>_<ComponentName>`) automatisch in die [`app/etc/config.php`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=de)-Datei eingefügt. Es ist nicht erforderlich, die Datei direkt zu bearbeiten.
 
 **So installieren Sie eine**:
 
@@ -155,7 +155,7 @@ Aktivieren oder deaktivieren Sie niemals eine Erweiterung, während Sie bei den 
 
 ## Aktualisieren einer Erweiterung
 
-Bevor Sie fortfahren, benötigen Sie den Namen des Komponisten und die Version für die Erweiterung. Überprüfen Sie außerdem, ob die Erweiterung mit Ihrem Projekt und der Adobe Commerce-Version kompatibel ist. Überprüfen Sie [ die erforderliche PHP-Version, ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) Sie beginnen.
+Bevor Sie fortfahren, benötigen Sie den Namen des Komponisten und die Version für die Erweiterung. Überprüfen Sie außerdem, ob die Erweiterung mit Ihrem Projekt und der Adobe Commerce-Version kompatibel ist. Überprüfen Sie [ die erforderliche PHP-Version, ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) Sie beginnen.
 
 **Aktualisieren einer Erweiterung**:
 
@@ -189,4 +189,4 @@ Bevor Sie fortfahren, benötigen Sie den Namen des Komponisten und die Version f
    git push origin <branch-names>
    ```
 
-Wenn Fehler auftreten, lesen Sie [Nach Komponentenfehler wiederherstellen](../deploy/recover-failed-deployment.md). Weitere Informationen zur Verwendung von Erweiterungen mit Adobe Commerce finden Sie unter [Erweiterungen](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html) im _Admin-Handbuch_.
+Wenn Fehler auftreten, lesen Sie [Nach Komponentenfehler wiederherstellen](../deploy/recover-failed-deployment.md). Weitere Informationen zur Verwendung von Erweiterungen mit Adobe Commerce finden Sie unter [Erweiterungen](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/extensions.html?lang=de) im _Admin-Handbuch_.

@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Best Practices für die Store-Konfiguration
 
-Detaillierte Informationen zum Konfigurieren Ihres Shops, Ihrer Websites und Websites finden Sie im [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html). Diese Seite bietet Best Practices, hilfreiche Informationen und Richtlinien für die Konfiguration Ihrer Stores, Sites und mehr mit zusätzlichen Inhalten, die im Laufe der Zeit und über Versionen hinweg gepostet werden können.
+Detaillierte Informationen zum Konfigurieren Ihres Shops, Ihrer Websites und Websites finden Sie im [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de). Diese Seite bietet Best Practices, hilfreiche Informationen und Richtlinien für die Konfiguration Ihrer Stores, Sites und mehr mit zusätzlichen Inhalten, die im Laufe der Zeit und über Versionen hinweg gepostet werden können.
 
 ## Marketing-Kampagnen und -Promotions
 
 Diese Informationen sind für Adobe Commerce unter Cloud-Infrastrukturen 2.1.x und 2.2.x hilfreich.
 
-Um Kampagnen und Promotions zu erstellen, erstellen Sie die Optionen und Einstellungen in [Inhalts-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html). Mit dieser Funktion können Sie Ihre Kampagnen erstellen und in der Vorschau anzeigen, bevor sie für den Kundenverkauf veröffentlicht werden. Im Folgenden finden Sie hilfreiche Informationen. Genaue Anweisungen finden Sie im Inhalt des verknüpften Adobe Commerce-Benutzerhandbuchs.
+Um Kampagnen und Promotions zu erstellen, erstellen Sie die Optionen und Einstellungen in [Inhalts-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de). Mit dieser Funktion können Sie Ihre Kampagnen erstellen und in der Vorschau anzeigen, bevor sie für den Kundenverkauf veröffentlicht werden. Im Folgenden finden Sie hilfreiche Informationen. Genaue Anweisungen finden Sie im Inhalt des verknüpften Adobe Commerce-Benutzerhandbuchs.
 
 _Kampagnen_ sind Marketing-Events für saisonale Verkäufe, neue Produktlinien und mehr. Jede Kampagne kann benutzerdefinierte Designs, Inhaltsbausteine, Widgets zur Steuerung und Anzeige von Inhalten und zugehörige Promotions mit Preisregeln enthalten. Da eine Kampagne sehr umfangreich ist, erstellen Sie sie im Content-Staging mit einem Start- und Enddatum.
 
-_Promotions_ bieten Rabatte, einmalige Angebote, Coupons, erstmalige Kaufanreize und mehr. Sie erstellen diese Aktionen als _Preisregeln_ die die Bedingungen, Rabatte und Optionen festlegen, um Kunden zum Kauf zu ermutigen. Sie können Preisregeln für den [Warenkorb](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) oder [Katalog](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html) mit zusätzlichen Optionen für Banner, Belohnungspunkte und mehr erstellen. Sie können Kampagnen für Ihre Werbeaktionen planen und Preisregeln für große Veranstaltungen wie eine neue Produktlinie oder saisonale Verkäufe anwenden.
+_Promotions_ bieten Rabatte, einmalige Angebote, Coupons, erstmalige Kaufanreize und mehr. Sie erstellen diese Aktionen als _Preisregeln_ die die Bedingungen, Rabatte und Optionen festlegen, um Kunden zum Kauf zu ermutigen. Sie können Preisregeln für den [Warenkorb](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=de) oder [Katalog](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html?lang=de) mit zusätzlichen Optionen für Banner, Belohnungspunkte und mehr erstellen. Sie können Kampagnen für Ihre Werbeaktionen planen und Preisregeln für große Veranstaltungen wie eine neue Produktlinie oder saisonale Verkäufe anwenden.
 
 Im Folgenden finden Sie Tipps zum Erstellen, Aktualisieren und Verwalten von Promotions und Kampagnen:
 
@@ -34,7 +34,7 @@ Im Folgenden finden Sie Tipps zum Erstellen, Aktualisieren und Verwalten von Pro
 
 Diese Informationen sind für Adobe Commerce unter Cloud-Infrastrukturen 2.1.x und 2.2.x hilfreich.
 
-In der Regel können Sie [Erweiterte Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) für Produkte im Bereich **Produkte** > **Kataloge** des Administrators festlegen. Führen Sie mit Staging-Inhalten einige zusätzliche Schritte aus, um die Preise zu einer Promotion und Kampagne hinzuzufügen.
+In der Regel können Sie [Erweiterte Preise](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de) für Produkte im Bereich **Produkte** > **Kataloge** des Administrators festlegen. Führen Sie mit Staging-Inhalten einige zusätzliche Schritte aus, um die Preise zu einer Promotion und Kampagne hinzuzufügen.
 
 So bearbeiten Sie erweiterte Preise und aktualisieren das Staging von Inhalten:
 
@@ -47,17 +47,17 @@ So bearbeiten Sie erweiterte Preise und aktualisieren das Staging von Inhalten:
 1. Speichern Sie die Promotion. Eine inaktive erste Kampagne wird erstellt.
 1. Sie können eine Vorschau anzeigen, um den Sonderpreis, den Namen der Promotion, den regulären Preis und den geplanten Datumsbereich für die Kampagne zu überprüfen.
 
-Weitere Schritte können Sie mit den Anweisungen unter &quot;[ für Katalogpreisregeln planen“ ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html). Klicken Sie **Weiter**, um die Schritte zu durchlaufen.
+Weitere Schritte können Sie mit den Anweisungen unter &quot;[ für Katalogpreisregeln planen“ ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html?lang=de). Klicken Sie **Weiter**, um die Schritte zu durchlaufen.
 
 ## Preisregeln
 
 Preisregeln können Logik und Bedingungen enthalten, die so unbegrenzt sind wie Ihre Marketing-Fantasie. Einige beliebte Beispiele sind Buy One Get One Free, Buy One Get One Get One 50% Rabatt, ein $25 Rabatt auf Bestellungen über $100 Dollar und mehr.
 
-Informationen zum Erstellen einer Preisregel finden Sie im [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html).
+Informationen zum Erstellen einer Preisregel finden Sie im [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog-create.html?lang=de).
 
 Im Folgenden finden Sie ein Beispiel für die Erstellung einer Preisregel für einen Rabatt „Nur Erstbestellung“. Für diesen Rabatt empfiehlt sich Folgendes:
 
-* Erstellen Sie eine Preisregel mit einem [Kundensegment](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segment-price-rule) mit einer Bedingung: Gesamtzahl der Bestellungen weniger als 1
+* Erstellen Sie eine Preisregel mit einem [Kundensegment](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/segments/customer-segment-price-rule) mit einer Bedingung: Gesamtzahl der Bestellungen weniger als 1
 * Fügen Sie dieses Kundensegment als Bedingung zur Warenkorbregel hinzu
 * Optional - Fügen Sie Bedingungen und Regeln hinzu, um die Rabatte auf bestimmte SKUs oder Produktkategorien für gezielte Käufe anzuwenden.
 

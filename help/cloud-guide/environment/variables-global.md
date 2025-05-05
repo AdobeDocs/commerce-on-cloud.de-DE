@@ -177,7 +177,7 @@ stage:
 - **Standard**—_Nicht festgelegt_
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
+Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=de)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
 
 - `DENY` - Die Seite kann nicht in einem Frame angezeigt werden.
 - `SAMEORIGIN`-(Die Standardeinstellung für Adobe Commerce.) Die Seite kann nur in einem Frame angezeigt werden, der auf demselben Ursprung wie die Seite selbst liegt.

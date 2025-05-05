@@ -30,7 +30,7 @@ Alle erfassten Daten geben Aufschluss über die Zeit, die mit Aktionen verbracht
 
 >[!TIP]
 >
->Weitere Informationen zur Verwendung dieser Daten zur Fehlerbehebung bei Leistungsproblemen von Anwendungen finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) im _Adobe Commerce Help Center_.
+>Weitere Informationen zur Verwendung dieser Daten zur Fehlerbehebung bei Leistungsproblemen von Anwendungen finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=de) im _Adobe Commerce Help Center_.
 
 ## Überwachen der Leistung mit verwalteten Warnhinweisen
 
@@ -46,7 +46,7 @@ Adobe stellt die Warnhinweisrichtlinie _Managed Alerts for Adobe Commerce_ zur V
 | MariaDB-Abfragelast | NRI | Profi |
 | Redis-Speicher | NRI | Profi |
 
-Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen einen Warnschwellenwert erzeugt, sendet New Relic Warnbenachrichtigungen, damit Sie das Problem proaktiv beheben können. Unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) im _Adobe Commerce-_ finden Sie Details zu Warnschwellen und Schritten zur Fehlerbehebung, um die Probleme zu beheben, die den Warnhinweis ausgelöst haben.
+Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen einen Warnschwellenwert erzeugt, sendet New Relic Warnbenachrichtigungen, damit Sie das Problem proaktiv beheben können. Unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=de) im _Adobe Commerce-_ finden Sie Details zu Warnschwellen und Schritten zur Fehlerbehebung, um die Probleme zu beheben, die den Warnhinweis ausgelöst haben.
 
 >[!TIP]
 >
@@ -76,7 +76,7 @@ Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen 
 
      >[!NOTE]
      >
-     >Wenn die Richtlinie _Verwaltete Warnhinweise für Adobe Commerce_ nicht verfügbar ist, finden Sie weitere Informationen unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) im _Adobe Commerce-Hilfe-Center_.
+     >Wenn die Richtlinie _Verwaltete Warnhinweise für Adobe Commerce_ nicht verfügbar ist, finden Sie weitere Informationen unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=de) im _Adobe Commerce-Hilfe-Center_.
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Alert conditions]** , um die in der Richtlinie definierten Warnhinweisbedingungen zu überprüfen.
 

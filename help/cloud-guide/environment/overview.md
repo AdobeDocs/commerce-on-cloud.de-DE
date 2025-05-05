@@ -27,7 +27,7 @@ Mit den folgenden Konfigurationsdateien können Sie Anwendungseinstellungen, Rou
 
 ## Konfigurationsaktualisierungen für Pro-Umgebungen
 
-Für Adobe Commerce in Cloud Infrastructure Pro Staging- und Produktionsumgebungen können Sie viele Konfigurationsoptionen in Ihrer lokalen Entwicklungsumgebung aktualisieren und die Änderungen übernehmen, um sie auf diese Umgebungen anzuwenden. Sie müssen jedoch [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die folgenden Konfigurationsoptionen zu aktualisieren:
+Für Adobe Commerce in Cloud Infrastructure Pro Staging- und Produktionsumgebungen können Sie viele Konfigurationsoptionen in Ihrer lokalen Entwicklungsumgebung aktualisieren und die Änderungen übernehmen, um sie auf diese Umgebungen anzuwenden. Sie müssen jedoch [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die folgenden Konfigurationsoptionen zu aktualisieren:
 
 - Installieren oder Aktualisieren von Diensten in der `.magento/services.yaml`.
 - Ändern Sie die Konfiguration für die `mounts`- und `disk` in der `.magento.app.yaml`.

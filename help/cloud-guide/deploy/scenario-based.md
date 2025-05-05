@@ -40,7 +40,7 @@ hooks:
 
 >[!NOTE]
 >
->Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
+>Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=de)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
 
 ## Schritte des Überprüfungsszenarios
 

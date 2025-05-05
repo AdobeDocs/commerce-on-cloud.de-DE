@@ -74,7 +74,7 @@ Der folgende benutzerdefinierte VCL-Code-Ausschnitt (JSON-Format) zeigt die Logi
 }
 ```
 
-Bevor [ein benutzerdefiniertes Snippet erstellen](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html#add-the-custom-vcl-snippet) überprüfen Sie in diesem Beispiel die Werte, um festzustellen, ob Sie Änderungen vornehmen müssen. Geben Sie dann jeden Wert in die entsprechenden Felder ein, z. B. `type` in das Feld Typ `content` in das Feld Inhalt .
+Bevor [ein benutzerdefiniertes Snippet erstellen](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=de#add-the-custom-vcl-snippet) überprüfen Sie in diesem Beispiel die Werte, um festzustellen, ob Sie Änderungen vornehmen müssen. Geben Sie dann jeden Wert in die entsprechenden Felder ein, z. B. `type` in das Feld Typ `content` in das Feld Inhalt .
 
 - `name` — Name des VCL-Snippets. In diesem Beispiel `allowlist`.
 

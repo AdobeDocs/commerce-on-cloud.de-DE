@@ -50,7 +50,7 @@ Wenn der WAF-Service aktiviert ist, prüft er den gesamten Web- und Admin-Traffi
 
 Sie können diese Fehlerantwortseite über den Administrator anpassen. Siehe [Anpassen der WAF-](fastly-custom-response.md#customize-the-waf-error-page).
 
-Wenn Ihre Adobe Commerce-Adminseite oder Storefront als Antwort auf eine rechtmäßige URL-Anfrage eine `403 Forbidden` Fehlerseite zurückgibt, senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Kopieren Sie die Referenz-ID aus der Fehlerantwortseite und fügen Sie sie in die Ticketbeschreibung ein.
+Wenn Ihre Adobe Commerce-Adminseite oder Storefront als Antwort auf eine rechtmäßige URL-Anfrage eine `403 Forbidden` Fehlerseite zurückgibt, senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Kopieren Sie die Referenz-ID aus der Fehlerantwortseite und fügen Sie sie in die Ticketbeschreibung ein.
 
 Informationen zur Identifizierung der WAF-Antwort für eine bestimmte Anfrage mithilfe von New Relic finden Sie unter:
 

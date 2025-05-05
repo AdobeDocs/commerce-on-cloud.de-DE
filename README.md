@@ -9,8 +9,8 @@ ht-degree: 0%
 
 Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
 
-- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
-- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html) auf Cloud-Infrastruktur
+- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=de)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=de) auf Cloud-Infrastruktur
 
 ## Adobe Open Source Verhaltenskodex
 
@@ -19,7 +19,7 @@ Siehe den [Beitragende](contributing.md) Artikel.
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Änderungen vornehmen möchten, öffnen Sie den Artikel und klicken Sie auf den **Bearbeiten**-Link, über den Sie zur GitHub-Quelle für den Artikel gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe das allgemeine Handbuch für Mitwirkende an [Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Wenn Sie kleinere Änderungen vornehmen möchten, öffnen Sie den Artikel und klicken Sie auf den **Bearbeiten**-Link, über den Sie zur GitHub-Quelle für den Artikel gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe das allgemeine Handbuch für Mitwirkende an [Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repo einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -35,7 +35,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler eines Adobe-Prod
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im [Handbuch für Mitwirkende an Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokumenten .
+Weitere Informationen finden Sie im [Handbuch für Mitwirkende an Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)Dokumenten .
 
 ## Markdown
 

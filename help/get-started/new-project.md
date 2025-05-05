@@ -31,7 +31,7 @@ Beispiele für Produktions- und Staging-Domains:
 
 Weitere [ zu mehreren oder eindeutigen Domains finden Sie unter](../cloud-guide/store/multiple-sites.md)Einrichten mehrerer Websites oder Stores _im Handbuch zu_ Commerce in Cloud-Infrastrukturen.
 
-Siehe [Mehrere Fastly-Konten und zugewiesene Domains](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}, wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Apex und dieselbe Subdomain verknüpft, die auf Ihrer Adobe Commerce-Site verwendet werden.
+Siehe [Mehrere Fastly-Konten und zugewiesene Domains](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}, wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Apex und dieselbe Subdomain verknüpft, die auf Ihrer Adobe Commerce-Site verwendet werden.
 
 ## Transaktions-E-Mail-Domain
 

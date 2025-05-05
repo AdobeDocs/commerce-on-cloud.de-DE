@@ -104,9 +104,9 @@ Wenn Sie bereit sind, Ihren Store zu konfigurieren, pushen Sie den gesamten Code
 Die besten Informationen zu Konfigurationen finden Sie in der Dokumentation zu Adobe Commerce und den installierten Erweiterungen. Im Folgenden finden Sie einige Links und Ideen, die Ihnen bei den ersten Schritten helfen:
 
 - [Best Practices für die Store-](../store/best-practices.md) für bestimmte Best Practices in der Cloud
-- [Standardkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) für Store-Administratorzugriff, Namen, Sprachen, Währungen, Branding, Sites, Store-Ansichten und mehr
-- [Design](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) für Ihr Aussehen der Site und Stores, einschließlich CSS und Layouts
-- [Systemkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) für Rollen, Tools, Benachrichtigungen und Ihren Verschlüsselungsschlüssel für Ihre Datenbank
+- [Standardkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/store-details) für Store-Administratorzugriff, Namen, Sprachen, Währungen, Branding, Sites, Store-Ansichten und mehr
+- [Design](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/content-menu#design-features) für Ihr Aussehen der Site und Stores, einschließlich CSS und Layouts
+- [Systemkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/guide-overview) für Rollen, Tools, Benachrichtigungen und Ihren Verschlüsselungsschlüssel für Ihre Datenbank
 - Erweiterungseinstellungen anhand ihrer Dokumentation
 
 Über die Store-Einstellungen hinaus können Sie mehrere Sites und Stores, konfigurierte Services und mehr weiter konfigurieren. Siehe [Store konfigurieren](../store/overview.md).
@@ -162,9 +162,9 @@ Wenn Sie Funktionen entwickeln, Erweiterungen hinzufügen und Designs entwerfen,
 
 So exportieren Sie Produktionsdaten als Testdaten zur Verwendung in Staging- und Integrationsumgebungen:
 
-- [Ausführen der Support Utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI-Befehle (empfohlen) beim Exportieren eines geschützten Backups von Kunden- und Speicherdaten mit Ihrem Adobe Commerce-Verschlüsselungsschlüssel
+- [Ausführen der Support Utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) CLI-Befehle (empfohlen) beim Exportieren eines geschützten Backups von Kunden- und Speicherdaten mit Ihrem Adobe Commerce-Verschlüsselungsschlüssel
 
-- [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) Tool zum Generieren und Exportieren von Daten
+- [Datenerfassung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/support#data-collector) Tool zum Generieren und Exportieren von Daten
 
 Informationen zum Migrieren dieser Daten finden Sie unter [Migrieren und Bereitstellen von statischen Dateien und Daten](../deploy/staging-production.md#migrate-static-files).
 
@@ -172,7 +172,7 @@ Informationen zum Migrieren dieser Daten finden Sie unter [Migrieren und Bereits
 
 >[!NOTE]
 >
->Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[ „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
+>Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[ „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
 
 >[!WARNING]
 >

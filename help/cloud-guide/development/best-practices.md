@@ -49,9 +49,9 @@ Befolgen Sie die Best Practices für Builds und die Bereitstellung und verwenden
 
    - Verwenden Sie SSH, um sich beim Remote-Server anzumelden und Folgendes zu überprüfen:
 
-      - Überprüfen Sie den Indexerstatus und indizieren Sie ihn nach Bedarf neu. Siehe [Indexer verwalten](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) im _Konfigurationshandbuch_.
+      - Überprüfen Sie den Indexerstatus und indizieren Sie ihn nach Bedarf neu. Siehe [Indexer verwalten](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de) im _Konfigurationshandbuch_.
 
       - Überprüfen Sie die `cron` und die `cron_schedule` in der Adobe Commerce-Datenbank, um den Cron-Status zu überprüfen, und führen Sie Cron-Aufträge bei Bedarf erneut aus.
-Siehe [Protokollierung](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html#logging) im _Konfigurationshandbuch_.
+Siehe [Protokollierung](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de#logging) im _Konfigurationshandbuch_.
 
    - Führen Sie nach dem Upgrade Benutzerakzeptanztests für Staging- und Produktionsumgebungen durch und beheben Sie alle Probleme im Zusammenhang mit Upgrades von Drittanbietern und benutzerdefinierten Erweiterungen.

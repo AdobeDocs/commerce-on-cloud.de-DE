@@ -20,4 +20,4 @@ ht-degree: 0%
 + [Anmelden bei [!DNL Cloud Console]](cloud-console.md)
 + [Zugriff auf Storefront](access-storefront.md)
 + [Vorbereiten der Entwicklung](prepare-workspace.md)
-+ [Zurück zum Handbuch zur Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html)
++ [Zurück zum Handbuch zur Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=de)

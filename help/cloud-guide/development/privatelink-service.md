@@ -35,7 +35,7 @@ Die PrivateLink-Service-Integration für Adobe Commerce in Cloud-Infrastrukturpr
 - Sie können keine SSH-Verbindungen mit PrivateLink herstellen. Siehe [SSH-Schlüssel aktivieren](secure-connections.md).
 - Die Adobe Commerce-Unterstützung deckt keine Fehlerbehebung bei AWS PrivateLink-Problemen über die anfängliche Aktivierung hinaus ab.
 - Kunden tragen die Kosten für die Verwaltung ihrer eigenen VPC.
-- Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um über einen privaten Azure-Link eine Verbindung zur Cloud-Infrastruktur von Adobe Commerce herzustellen, da der [ „Fastly-Ursprungs-Cloaking“ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html). Diese Einschränkung gilt nicht für AWS PrivateLink.
+- Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um über einen privaten Azure-Link eine Verbindung zur Cloud-Infrastruktur von Adobe Commerce herzustellen, da der [ „Fastly-Ursprungs-Cloaking“ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=de). Diese Einschränkung gilt nicht für AWS PrivateLink.
 - PrivateDNS ist nicht verfügbar.
 
 ## PrivateLink-Verbindungstypen
@@ -202,7 +202,7 @@ Sie können die Telnet-Anwendung verwenden, um die Verbindung zum VPC-Endpunktdi
 
 ## PrivateLink-Konfiguration ändern
 
-[Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um eine vorhandene PrivateLink-Konfiguration zu ändern. Sie können beispielsweise Änderungen wie die folgenden anfordern:
+[Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um eine vorhandene PrivateLink-Konfiguration zu ändern. Sie können beispielsweise Änderungen wie die folgenden anfordern:
 
 - Entfernen Sie die PrivateLink-Verbindung aus der Adobe Commerce in der Cloud-Infrastruktur der Pro-Produktions- oder Staging-Umgebung.
 - Ändern Sie die Kundenkontonummer der Cloud-Plattform für den Zugriff auf den Adobe-Endpunkt-Service.

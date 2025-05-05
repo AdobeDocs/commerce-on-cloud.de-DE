@@ -18,7 +18,7 @@ Benutzer mit administrativem Zugriff auf das Adobe Commerce on Cloud-Infrastrukt
 
 Sie können die Admin-Benutzeranmeldeinformationen während der Commerce-Installation mit den ADMIN-Variablen in der folgenden Tabelle überschreiben.
 
-Wenn Sie die Werte nach der Installation ändern möchten, stellen Sie eine Verbindung mit Ihrer Umgebung her, indem Sie SSH verwenden, und verwenden Sie den Adobe Commerce CLI-[`admin:user`](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html), um die Admin-Benutzeranmeldeinformationen zu erstellen oder zu bearbeiten.
+Wenn Sie die Werte nach der Installation ändern möchten, stellen Sie eine Verbindung mit Ihrer Umgebung her, indem Sie SSH verwenden, und verwenden Sie den Adobe Commerce CLI-[`admin:user`](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=de), um die Admin-Benutzeranmeldeinformationen zu erstellen oder zu bearbeiten.
 
 | Variable | Standard | Beschreibung |
 | -------------- | --------------------------- | ----------- |

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Commerce-Version aktualisieren
 
-Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Bevor Sie Ihr Projekt aktualisieren, lesen Sie [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
+Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Bevor Sie Ihr Projekt aktualisieren, lesen Sie [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
 
 Abhängig von Ihrer Projektkonfiguration können Ihre Upgrade-Aufgaben Folgendes umfassen:
 
@@ -289,15 +289,15 @@ Lesen Sie die [Service-Versionen](../services/services-yaml.md#service-versions)
 
 1. Überprüfen Sie die aktuell angewendeten Patches:
 
-   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
+   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
 
    - Wenn [Quality Patches] in der `.magento.env.yaml`-Datei angewendet wurden, überprüfen Sie, ob diese weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `QUALITY_PATCHES` Abschnitt der `.magento.env.yaml`.
 
-   **Methode 1**: [Überprüfen Sie die entsprechenden Versionen in den Versionshinweisen zu Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Methode 1**: [Überprüfen Sie die entsprechenden Versionen in den Versionshinweisen zu Qualitäts-Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Methode 2**: [Anzeigen verfügbarer Patches und Status](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Methode 2**: [Anzeigen verfügbarer Patches und Status](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Methode 3**: [Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
+   **Methode 3**: [Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)
 
 
 1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.

@@ -185,7 +185,7 @@ stage:
 - **default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 und höher
 
-Passen Sie die [Bereitstellungsstrategie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) für statische Inhalte an. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Passen Sie die [Bereitstellungsstrategie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=de) für statische Inhalte an. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 

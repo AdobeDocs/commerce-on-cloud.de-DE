@@ -61,7 +61,7 @@ Lesen Sie diese Best Practices und Überlegungen für Ihren Bereitstellungsproze
 
 - **Überprüfen von Service-Versionen und -Beziehungen und der Möglichkeit, eine Verbindung herzustellen**
 
-  Überprüfen Sie, welche Dienste für Ihr Programm verfügbar sind, und stellen Sie sicher, dass Sie die aktuelle, kompatible Version verwenden. Empfohlene Versionen finden Sie [Service](../services/services-yaml.md#service-relationships)Beziehungen und [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)Systemanforderungen im _Installationshandbuch_.
+  Überprüfen Sie, welche Dienste für Ihr Programm verfügbar sind, und stellen Sie sicher, dass Sie die aktuelle, kompatible Version verwenden. Empfohlene Versionen finden Sie [Service](../services/services-yaml.md#service-relationships)Beziehungen und [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)Systemanforderungen im _Installationshandbuch_.
 
 - **Testen Sie lokal und in der Integrationsumgebung, bevor Sie sie in der Staging- und Produktionsumgebung bereitstellen**
 
@@ -117,7 +117,7 @@ Diese Phase wird auch `composer install` ausgeführt, um Abhängigkeiten abzuruf
 In dieser Phase werden die Codebasis erstellt und Hooks im `build` Abschnitt von `.magento.app.yaml` ausgeführt. Der standardmäßige Build-Hook ist der `php ./vendor/bin/ece-tools`-Befehl und führt Folgendes aus:
 
 - Wendet Patches in `vendor/magento/ece-patches` und optionale projektspezifische Patches in `m2-hotfixes` an
-- Erstellt den Code und die [Dependency Injection](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary)-Konfiguration (d. h. das `generated/`-Verzeichnis, das `generated/code` und `generated/metapackage` enthält) mithilfe von `bin/magento setup:di:compile` neu.
+- Erstellt den Code und die [Dependency Injection](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary)-Konfiguration (d. h. das `generated/`-Verzeichnis, das `generated/code` und `generated/metapackage` enthält) mithilfe von `bin/magento setup:di:compile` neu.
 - Überprüft, ob die [`app/etc/config.php`](../store/store-settings.md) Datei in der Codebasis vorhanden ist. Adobe Commerce generiert diese Datei automatisch, wenn es sie während der Build-Phase nicht erkennt und eine Liste von Modulen und Erweiterungen enthält. Wenn sie vorhanden ist, wird die Build-Phase wie gewohnt fortgesetzt, komprimiert statische Dateien mithilfe von GZIP und stellt bereit, was die Ausfallzeiten in der Bereitstellungsphase reduziert. Unter [Build-Optionen](../environment/variables-build.md) erfahren Sie, wie Sie die Dateikomprimierung anpassen oder deaktivieren.
 
 >[!WARNING]
@@ -144,7 +144,7 @@ Der Slug umfasst alle Dateien und Ordner **mit Ausnahme der folgenden** Bereitst
 
 ### Phase 4: Bereitstellen von Slugs und Clustern
 
-Ihre Anwendungen und alle [Backend](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary)Services stellen Folgendes bereit:
+Ihre Anwendungen und alle [Backend](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary)Services stellen Folgendes bereit:
 
 - mountet jeden Dienst in einem Container, z. B. Webserver, OpenSearch, [!DNL RabbitMQ]
 - Bereitstellung des Lese-/Schreib-Dateisystems (bereitgestellt in einem hochverfügbaren verteilten Speicherraster)
@@ -170,13 +170,13 @@ Wenn die `app/etc/config.php`-Datei nicht in der Codebasis vorhanden ist, werden
 
 Es gibt zwei Bereitstellungs-Hooks. Der `pre-deploy.php`-Hook schließt die erforderliche Bereinigung und das Abrufen von Ressourcen und Code ab, die im Build-Hook generiert wurden. Der `php ./vendor/bin/ece-tools deploy`-Hook führt eine Reihe von Befehlen und Skripten aus:
 
-- Wenn Adobe Commerce **nicht installiert** wird mit `bin/magento setup:install` installiert, aktualisiert die Bereitstellungskonfiguration, die `app/etc/env.php` und die Datenbank für Ihre angegebene Umgebung, z. B. Redis und Website-URLs. **Wichtig:** Nach Abschluss der [Erstbereitstellung](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html) während des Setups wurde Adobe Commerce in allen Umgebungen installiert und bereitgestellt.
+- Wenn Adobe Commerce **nicht installiert** wird mit `bin/magento setup:install` installiert, aktualisiert die Bereitstellungskonfiguration, die `app/etc/env.php` und die Datenbank für Ihre angegebene Umgebung, z. B. Redis und Website-URLs. **Wichtig:** Nach Abschluss der [Erstbereitstellung](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=de) während des Setups wurde Adobe Commerce in allen Umgebungen installiert und bereitgestellt.
 
 - Wenn Adobe Commerce **installiert ist** führen Sie alle erforderlichen Upgrades durch. Das Bereitstellungsskript wird `bin/magento setup:upgrade` ausgeführt, um das Datenbankschema und die Daten zu aktualisieren (was nach der Aktualisierung der Erweiterung oder des Kern-Codes erforderlich ist) und auch die Bereitstellungskonfiguration, die `app/etc/env.php` und die Datenbank für Ihre Umgebung zu aktualisieren. Schließlich löscht das Bereitstellungsskript den Adobe Commerce-Cache.
 
 - Das Skript generiert optional statischen Webinhalt mithilfe der `magento setup:static-content:deploy`.
 
-- Verwendet Bereiche (`-s` Flag in Build-Skripten) mit der Standardeinstellung `quick` für die Strategie zur Bereitstellung statischer Inhalte. Sie können die Strategie mithilfe der Umgebungsvariablen [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy) anpassen. Weitere Informationen zu diesen Optionen und Funktionen finden Sie unter [Strategien zur Bereitstellung statischer Dateien](../deploy/static-content.md) und `-s`-Flag für [Statische Ansichtsdateien bereitstellen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+- Verwendet Bereiche (`-s` Flag in Build-Skripten) mit der Standardeinstellung `quick` für die Strategie zur Bereitstellung statischer Inhalte. Sie können die Strategie mithilfe der Umgebungsvariablen [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy) anpassen. Weitere Informationen zu diesen Optionen und Funktionen finden Sie unter [Strategien zur Bereitstellung statischer Dateien](../deploy/static-content.md) und `-s`-Flag für [Statische Ansichtsdateien bereitstellen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
 
 >[!NOTE]
 >

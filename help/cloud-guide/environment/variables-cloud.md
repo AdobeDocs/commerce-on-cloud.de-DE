@@ -31,7 +31,7 @@ Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisc
 
 >[!WARNING]
 >
->Um Umgebungsvariablen mithilfe der [[!DNL Cloud Console]](../project/overview.md) zu [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) hinzuzufügen, müssen Sie dem Variablennamen `env:` voranstellen, wie im folgenden Beispiel:
+>Um Umgebungsvariablen mithilfe der [[!DNL Cloud Console]](../project/overview.md) zu [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=de) hinzuzufügen, müssen Sie dem Variablennamen `env:` voranstellen, wie im folgenden Beispiel:
 >
 >![Beispiel für eine Umgebungsvariable](../../assets/set-env-variable-ui.png)
 

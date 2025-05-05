@@ -264,6 +264,6 @@ Wenn Sie die Plug-in-Einträge aus `elasticsearch:` in `.magento/services.yaml` 
 
 In den folgenden Adobe Commerce-Support-Artikeln finden Sie Hilfe bei der Fehlerbehebung bei Elasticsearch-Problemen:
 
-- [Elasticsearch 5 ist konfiguriert, aber die Suchseite wird nicht mit dem Fehler „Felddaten sind deaktiviert…“ geladen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html)
+- [Elasticsearch 5 ist konfiguriert, aber die Suchseite wird nicht mit dem Fehler „Felddaten sind deaktiviert…“ geladen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=de)
 - [Elasticsearch in Adobe Commerce-Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.html)
-- [Elasticsearch-Indexstatus ist `yellow` oder `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html)
+- [Elasticsearch-Indexstatus ist `yellow` oder `red`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.html?lang=de)

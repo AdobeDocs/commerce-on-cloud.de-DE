@@ -137,7 +137,7 @@ Die Wiederherstellungszeiten hängen von der Größe der Datenbank ab:
 
 ## Wiederherstellen eines Snapshots zur Notfallwiederherstellung
 
-Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Rollback-Code
 

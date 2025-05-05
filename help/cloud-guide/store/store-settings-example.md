@@ -56,7 +56,7 @@ In der Integrationsumgebung können Sie sich beim Administrator anmelden, um die
    ![Ändern des Gebietsschemas](../../assets/locale-options.png)
 
 1. Klicken Sie **Konfiguration speichern**.
-1. Wenn Sie dazu aufgefordert werden[ leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Wenn Sie dazu aufgefordert werden[ leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
 1. Melden Sie sich bei der Administratorin bzw. dem Administrator ab.
 
 ## Werte exportieren und config.php auf Ihr lokales System übertragen
@@ -159,7 +159,7 @@ So fügen Sie Konfigurationswerte in der Integrationsumgebung „Admin“ hinzu.
 1. Erweitern Sie im rechten Bereich **JavaScript-Einstellungen**.
 1. Klicken Sie in **Liste &quot;JavaScript-** zusammenführen **auf Ja**.
 1. Klicken Sie **Konfiguration speichern**.
-1. Wenn Sie dazu aufgefordert werden[ leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
+1. Wenn Sie dazu aufgefordert werden[ leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
 1. Melden Sie sich bei der Administratorin bzw. dem Administrator ab.
 
 Wenn Sie den Dump-Befehl erneut ausführen, wird die neue Konfiguration an die Datei angehängt.

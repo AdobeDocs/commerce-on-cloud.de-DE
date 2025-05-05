@@ -43,7 +43,7 @@ Fastly bietet die folgenden Services an, um die Bereitstellung von Inhalten für
 
 - **Origin Cloaking**: Verhindert, dass Traffic die Fastly WAF umgeht, und verbirgt die IP-Adressen Ihrer Original-Server, um sie vor direktem Zugriff und DDoS-Angriffen zu schützen.
 
-  „Origin Cloaking“ ist in Adobe Commerce in Cloud-Infrastruktur-Pro-Produktionsprojekten standardmäßig aktiviert. Um das Origin Cloaking in Adobe Commerce für Cloud-Infrastruktur-Starter-Produktionsprojekte zu aktivieren, reichen Sie ein [Adobe Commerce-Support-Ticket ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Wenn Sie Traffic haben, für den keine Zwischenspeicherung erforderlich ist, können Sie die Fastly-Service-Konfiguration so anpassen, dass Anfragen den Fastly[Cache umgehen können](fastly-vcl-bypass-to-origin.md).
+  „Origin Cloaking“ ist in Adobe Commerce in Cloud-Infrastruktur-Pro-Produktionsprojekten standardmäßig aktiviert. Um das Origin Cloaking in Adobe Commerce für Cloud-Infrastruktur-Starter-Produktionsprojekte zu aktivieren, reichen Sie ein [Adobe Commerce-Support-Ticket ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Wenn Sie Traffic haben, für den keine Zwischenspeicherung erforderlich ist, können Sie die Fastly-Service-Konfiguration so anpassen, dass Anfragen den Fastly[Cache umgehen können](fastly-vcl-bypass-to-origin.md).
 
 - **[Bildoptimierung](fastly-image-optimization.md)** - Lädt die Bildverarbeitung und Größenanpassung auf den Fastly-Service ab, damit Server Bestellungen und Konversionen effizienter verarbeiten können.
 
@@ -69,7 +69,7 @@ Senden Sie ein Adobe Commerce-Support-Ticket, um die Anmeldedaten für das Fastl
 
 **So ändern Sie die Anmeldedaten für das Fastly-API-Token**:
 
-1. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Anfordern neuer Fastly-API-Anmeldeinformationen.
+1. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) Anfordern neuer Fastly-API-Anmeldeinformationen.
 
    Schließen Sie Ihre Adobe Commerce on Cloud Infrastructure-Projekt-ID und die Umgebungen ein, die neue Anmeldeinformationen erfordern.
 
@@ -121,12 +121,12 @@ Der DDOS-Schutz ist in den Fastly CDN-Service integriert. Sobald Sie Fastly Serv
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Überprüfen auf DDoS-Angriffe]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
+[Überprüfen auf DDoS-Angriffe]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=de
 
 [Fastly CDN-Modul für Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Fastly Support-Ticket]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[Sperren von bösartigem Traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
+[Sperren von bösartigem Traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=de
 
 [Arbeiten mit Domains]: https://docs.fastly.com/en/guides/working-with-domains

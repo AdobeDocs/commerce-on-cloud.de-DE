@@ -26,7 +26,7 @@ Durch die Aktualisierung des `enable_smtp`-Eigenschaftswerts [Befehlszeile](#ena
 
 Verwenden Sie den Umschalter **[!UICONTROL Outgoing emails]** in der Ansicht _Umgebung konfigurieren_, um die E-Mail-Unterstützung zu aktivieren oder zu deaktivieren.
 
-Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert oder wieder aktiviert werden müssen, können Sie ein [Adobe Commerce-Support-Ticket senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert oder wieder aktiviert werden müssen, können Sie ein [Adobe Commerce-Support-Ticket senden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >

@@ -38,7 +38,7 @@ Siehe [Benutzerverwaltung](https://docs.newrelic.com/docs/accounts/accounts-bill
 
 >[!NOTE]
 >
->**Pro-Umgebungen** sind für die Verwendung von New Relic-Services vorkonfiguriert und können Anweisungen zum Aktivieren und Verbinden überspringen. Wenn New Relic APM nicht in der Staging- und Produktionsumgebung installiert ist oder New Relic Infrastructure in der Produktionsumgebung nicht verfügbar ist, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Installation anzufordern.
+>**Pro-Umgebungen** sind für die Verwendung von New Relic-Services vorkonfiguriert und können Anweisungen zum Aktivieren und Verbinden überspringen. Wenn New Relic APM nicht in der Staging- und Produktionsumgebung installiert ist oder New Relic Infrastructure in der Produktionsumgebung nicht verfügbar ist, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Installation anzufordern.
 
 Für Starterumgebungen müssen Sie die `.magento.app.yaml` überprüfen, um sicherzustellen, dass der Abschnitt `runtime` die New Relic-Erweiterung enthält. Wenn die Erweiterung nicht konfiguriert wurde, fügen Sie Folgendes hinzu:
 
@@ -58,7 +58,7 @@ Um eine Cloud-Umgebung mit New Relic zu verbinden, fügen Sie den New Relic-Lize
 
 - Für **Starterprojekte** verfügen Sie über einen New Relic-Lizenzschlüssel, der bis zu _drei_ Umgebungen unterstützt. Sie müssen den Schlüssel manuell zu Ihren Umgebungskonfigurationen hinzufügen. Starterumgebungen sind für die Verwendung des New Relic-Service nicht vorab bereitgestellt.
 
-Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den New Relic-Lizenzschlüssel zur Umgebungskonfiguration hinzufügen. Fügen Sie den Schlüssel zu den Staging- und Produktionsumgebungen und einer anderen Umgebung Ihrer Wahl hinzu. Für die Konfiguration ist nur der New Relic-Lizenzschlüssel erforderlich. Informationen zu zusätzlichen Konfigurationsoptionen finden Sie im Thema [New Relic-Berichte](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html) im _Adobe Commerce-Benutzerhandbuch_.
+Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den New Relic-Lizenzschlüssel zur Umgebungskonfiguration hinzufügen. Fügen Sie den Schlüssel zu den Staging- und Produktionsumgebungen und einer anderen Umgebung Ihrer Wahl hinzu. Für die Konfiguration ist nur der New Relic-Lizenzschlüssel erforderlich. Informationen zu zusätzlichen Konfigurationsoptionen finden Sie im Thema [New Relic-Berichte](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html?lang=de) im _Adobe Commerce-Benutzerhandbuch_.
 
 {{redeploy-warning}}
 
@@ -66,7 +66,7 @@ Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den
 >
 >- Anmeldedaten für die Adobe Commerce-Kontoseite oder für die mit Ihrem Projekt verknüpfte New Relic-Lizenz
 >- [Zugriff auf Admin-Ebene](../project/user-access.md) auf die zu konfigurierenden Starter-Umgebungen
->- Anmeldedaten für den Zugriff auf [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) für die Umgebung
+>- Anmeldedaten für den Zugriff auf [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=de) für die Umgebung
 
 **So konfigurieren Sie New Relic für Starter-Umgebungen**:
 
@@ -99,7 +99,7 @@ Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den
      magento-cloud variable:update php:newrelic.license --value <newrelic-license-key>
      ```
 
-   Optional können Sie es über die [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html#step-3%3A-configure-your-store) hinzufügen.
+   Optional können Sie es über die [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html?lang=de#step-3%3A-configure-your-store) hinzufügen.
 
 1. Melden Sie sich bei Ihrem [New Relic-](https://login.newrelic.com/login) an, um sicherzustellen, dass Sie Daten aus der Adobe Commerce-Umgebung anzeigen können. Siehe [Untersuchung der Leistung](investigate-performance.md).
 

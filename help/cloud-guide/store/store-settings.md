@@ -15,14 +15,14 @@ Die Standardkonfigurationen für Ihren Store werden in einem `config.xml` für d
 
 Store-Einstellungen, die auf die Konfigurationen im Abschnitt Admin **Stores** > **Settings** > **Configuration** verweisen, werden je nach Konfigurationstyp in den Bereitstellungskonfigurationsdateien gespeichert:
 
-- `app/etc/config.php` - Konfigurationseinstellungen für Stores, Websites, Module oder Erweiterungen, statische Dateioptimierung und Systemwerte im Zusammenhang mit der Bereitstellung statischer Inhalte. Siehe die [config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html) im _Konfigurationshandbuch_.
-- `app/etc/env.php` - Werte für systemspezifische Überschreibungen und sensible Einstellungen, die _NOT_ in der Quell-Code-Verwaltung gespeichert werden sollen. Siehe [env.php-Referenz](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html) im _Konfigurationshandbuch_.
+- `app/etc/config.php` - Konfigurationseinstellungen für Stores, Websites, Module oder Erweiterungen, statische Dateioptimierung und Systemwerte im Zusammenhang mit der Bereitstellung statischer Inhalte. Siehe die [config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html?lang=de) im _Konfigurationshandbuch_.
+- `app/etc/env.php` - Werte für systemspezifische Überschreibungen und sensible Einstellungen, die _NOT_ in der Quell-Code-Verwaltung gespeichert werden sollen. Siehe [env.php-Referenz](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html?lang=de) im _Konfigurationshandbuch_.
 
 >[!NOTE]
 >
 >Da Adobe Commerce in der Cloud-Infrastruktur nur die Produktions- und Wartungsmodi unterstützt **kann der Abschnitt** Erweitert **>** nicht über Admin aufgerufen werden. Sie müssen über [Umgebungs-Administratorrechte](../project/user-access.md) verfügen, um Konfigurationsverwaltungsaufgaben abzuschließen. Sie können zusätzliche Einstellungen mithilfe von [Umgebungsvariablen](../environment/configure-env-yaml.md) konfigurieren.
 
-Die Konfigurationsverwaltung bietet eine Möglichkeit, mithilfe der Pipeline-Bereitstellung konsistente Speichereinstellungen in Ihren Umgebungen mit minimalen Ausfallzeiten bereitzustellen. Das Adobe Commerce on Cloud Infrastructure-Projekt umfasst den Build-Server, Build- und Bereitstellungsskripte sowie Bereitstellungsumgebungen, die mit Blick auf die [Pipeline-Bereitstellungsstrategie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) entwickelt wurden.
+Die Konfigurationsverwaltung bietet eine Möglichkeit, mithilfe der Pipeline-Bereitstellung konsistente Speichereinstellungen in Ihren Umgebungen mit minimalen Ausfallzeiten bereitzustellen. Das Adobe Commerce on Cloud Infrastructure-Projekt umfasst den Build-Server, Build- und Bereitstellungsskripte sowie Bereitstellungsumgebungen, die mit Blick auf die [Pipeline-Bereitstellungsstrategie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) entwickelt wurden.
 
 ## Außerkraftsetzungsschema der Konfiguration
 
@@ -36,7 +36,7 @@ Zusammenfassend lässt sich sagen, dass Umgebungsvariablen alle anderen Werte ü
 
 >[!TIP]
 >
->Weitere Informationen [ Überschreibungsschema für ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html) Pipeline-Bereitstellung finden Sie _Konfigurationsverwaltung_ im Konfigurationshandbuch.
+>Weitere Informationen [ Überschreibungsschema für ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) Pipeline-Bereitstellung finden Sie _Konfigurationsverwaltung_ im Konfigurationshandbuch.
 
 Wenn dieselbe Einstellung an mehreren Stellen konfiguriert ist, verwendet die Anwendung die folgende Konfigurationshierarchie, um zu bestimmen, welcher Wert auf die Umgebung angewendet werden soll:
 
@@ -69,7 +69,7 @@ Die Daten, die in die `app/etc/config.php`-Datei „geschrieben _werden_ gesperr
 
 Alle sensiblen Konfigurationen werden in die `app/etc/env.php`-Datei exportiert, wenn Sie den Befehl `bin/magento app:config:dump` verwenden. Sie können vertrauliche Werte mithilfe des CLI-Befehls festlegen: `bin/magento config:sensitive:set`. Siehe [Sensitive und umgebungsspezifische Einstellungen](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/) im Handbuch _Commerce PHP Extensions_, um zu erfahren, wie Sie Konfigurationseinstellungen als sensibel oder systemspezifisch festlegen.
 
-Eine Liste der [sensiblen oder systemspezifischen Einstellungen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html) finden Sie im _Konfigurationshandbuch_.
+Eine Liste der [sensiblen oder systemspezifischen Einstellungen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html?lang=de) finden Sie im _Konfigurationshandbuch_.
 
 ### SCD-Leistung
 

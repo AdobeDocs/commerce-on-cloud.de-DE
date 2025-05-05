@@ -15,7 +15,7 @@ ht-degree: 0%
 Sie können die folgenden Services verwenden, um die Leistung Ihrer Cloud-Umgebungen zu überwachen:
 
 - [Statusbenachrichtigungen](../integrations/health-notifications.md) - Eine Integration, die einen Warnhinweis bezüglich Festplattenspeicher in Starter- und Pro-Integrationsumgebungen bereitstellt.
-- [Handbuch zu Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) - Umfassende Überwachung für alle Commerce-Sites, die Protokolldaten aus verschiedenen Quellen kombiniert, um Ihnen dabei zu helfen, die Leistung Ihrer Adobe Commerce-Site besser zu verwalten und Probleme zu diagnostizieren.
+- [Handbuch zu Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=de) - Umfassende Überwachung für alle Commerce-Sites, die Protokolldaten aus verschiedenen Quellen kombiniert, um Ihnen dabei zu helfen, die Leistung Ihrer Adobe Commerce-Site besser zu verwalten und Probleme zu diagnostizieren.
 
 ## New Relic-Service
 

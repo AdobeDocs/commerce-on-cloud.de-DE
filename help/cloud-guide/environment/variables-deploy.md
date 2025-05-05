@@ -62,7 +62,7 @@ stage:
             database: 11
 ```
 
-Im folgenden Beispiel wird die [Redis-Vorabladefunktion](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature) verwendet, wie im _Konfigurationshandbuch_ definiert:
+Im folgenden Beispiel wird die [Redis-Vorabladefunktion](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=de#redis-preload-feature) verwendet, wie im _Konfigurationshandbuch_ definiert:
 
 ```yaml
 stage:
@@ -97,7 +97,7 @@ stage:
 - **default**—`true`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Aktiviert oder deaktiviert [ Bereinigung von (statischen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
+Aktiviert oder deaktiviert [ Bereinigung von (statischen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
 
 - **`true`** - Entfernt alle vorhandenen statischen Inhalte, bevor der aktualisierte statische Inhalt bereitgestellt wird.
 - **`false`** - Die Bereitstellung überschreibt nur vorhandene statische Inhaltsdateien, wenn der generierte Inhalt eine neuere Version enthält.
@@ -156,7 +156,7 @@ stage:
       consumers: []
 ```
 
-Standardmäßig überschreibt der Bereitstellungsprozess alle Einstellungen in der `env.php`. Siehe [Verwalten von Nachrichtenwarteschlangen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) im _Commerce-Konfigurationshandbuch_ für lokale Adobe Commerce.
+Standardmäßig überschreibt der Bereitstellungsprozess alle Einstellungen in der `env.php`. Siehe [Verwalten von Nachrichtenwarteschlangen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html?lang=de) im _Commerce-Konfigurationshandbuch_ für lokale Adobe Commerce.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -186,7 +186,7 @@ stage:
 
 >[!WARNING]
 >
->Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
+>Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html?lang=de#configure-environment).
 
 Wenn Sie die Datenbank ohne Installationsvorgang von einer Umgebung in eine andere verschieben, benötigen Sie die entsprechenden kryptografischen Informationen. Adobe Commerce verwendet den im [!DNL Cloud Console] festgelegten Verschlüsselungsschlüsselwert als `crypt/key` Wert in der `env.php`.
 
@@ -277,7 +277,7 @@ stage:
 
 >[!NOTE]
 >
->In einem Pro-Staging-/Produktions-Cluster mit drei Knoten (oder drei Service-Knoten in [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) sollte die `indices_settings` wie folgt festgelegt werden:
+>In einem Pro-Staging-/Produktions-Cluster mit drei Knoten (oder drei Service-Knoten in [Scaled Architecture](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) sollte die `indices_settings` wie folgt festgelegt werden:
 >
 >```yaml
 >           indices_settings:
@@ -356,7 +356,7 @@ stage:
     LOCK_PROVIDER: "db"
 ```
 
-Siehe [Konfigurieren der Sperre](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html) im _Installationshandbuch_.
+Siehe [Konfigurieren der Sperre](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=de) im _Installationshandbuch_.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
@@ -442,7 +442,7 @@ stage:
 
 >[!NOTE]
 >
->Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
+>Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -581,7 +581,7 @@ stage:
 - **default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 und höher
 
-Ermöglicht die Anpassung der [-Bereitstellungsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Ermöglicht die Anpassung der [-Bereitstellungsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=de) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 

@@ -131,7 +131,7 @@ Ein Sonderfall liegt vor, wenn der `cookies` den Wert `["*"]` hat. Dieser Wert b
 
 Cookies have the following restrictions:
 
-- There is a set maximum of **50 cookies** in the system. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. To increase the number of cookies to 200, apply the [MDVA-12304 patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) using using the [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- There is a set maximum of **50 cookies** in the system. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. To increase the number of cookies to 200, apply the [MDVA-12304 patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=de) using using the [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/tools/quality-patch-tool).
 - Die maximale Cookie-Größe beträgt **4096 Byte**. Andernfalls löst die Anwendung eine `Unable to send the cookie. Size of '%name' is %size bytes` Ausnahme aus.
 
 ### `default_ttl`

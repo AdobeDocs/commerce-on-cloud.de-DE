@@ -19,7 +19,7 @@ In diesem Handbuch wird davon ausgegangen, dass Sie über Grundkenntnisse und Ke
 
 - [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer-Site) - Entwickeln, Anpassen, Integrieren, Erweitern und Verwenden erweiterter Funktionen
 
-- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer Commerce-Projekte
+- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=de) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer Commerce-Projekte
 
 >[!TIP]
 >
