@@ -2,9 +2,10 @@
 title: Einrichten des OpenSearch-Service
 description: Erfahren Sie, wie Sie den OpenSearch-Service für Adobe Commerce in der Cloud-Infrastruktur aktivieren.
 feature: Cloud, Search, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e704ab2a-2f6b-480b-9b36-1e97c406e873
+source-git-commit: 81b8ac7b611f9b8c6fe3011a554786bd2e48aabc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -26,11 +27,11 @@ OpenSearch ermöglicht es Ihnen, Daten aus beliebigen Quellen und Formaten zu su
 
 >[!TIP]
 >
->Adobe empfiehlt, OpenSearch für Ihr Adobe Commerce on Cloud-Infrastrukturprojekt immer einzurichten, auch wenn Sie ein Drittanbieter-Suchwerkzeug für Ihr Adobe Commerce-Programm konfigurieren möchten. Das Einrichten von OpenSearch bietet eine Fallback-Option, wenn das Drittanbieter-Such-Tool fehlschlägt.
+>Adobe empfiehlt, OpenSearch für Ihr Adobe Commerce in Cloud-Infrastrukturprojekt immer einzurichten, auch wenn Sie ein Drittanbieter-Suchwerkzeug für Ihr Adobe Commerce-Programm konfigurieren möchten. Das Einrichten von OpenSearch bietet eine Fallback-Option, wenn das Drittanbieter-Such-Tool fehlschlägt.
 
 **So aktivieren Sie OpenSearch**:
 
-1. Fügen Sie für Starter- und Pro-Integrationsumgebungen den `opensearch`-Service zur `.magento/services.yaml`-Datei mit der entsprechenden Version und zugewiesenem Speicherplatz in MB hinzu. In diesem Fall ist Version 2 geeignet. Die Nebenversion ist nicht erforderlich, da die Cloud-Infrastruktur die neueste Version von OpenSearch verwendet.
+1. Fügen Sie in Integrationsumgebungen den `opensearch`-Service der `.magento/services.yaml`-Datei mit der entsprechenden Version und zugewiesenem Speicherplatz in MB hinzu. In diesem Fall ist Version 2 geeignet. Die Nebenversion ist nicht erforderlich.
 
    ```yaml
    opensearch:
@@ -38,7 +39,7 @@ OpenSearch ermöglicht es Ihnen, Daten aus beliebigen Quellen und Formaten zu su
        disk: 1024
    ```
 
-   Bei Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die OpenSearch-Version in der Staging- und Produktionsumgebung zu ändern.
+   Bei Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die OpenSearch-Version in der Staging- und Produktionsumgebung zu ändern.
 
 1. Legen Sie die `relationships`-Eigenschaft in der `.magento.app.yaml` fest oder überprüfen Sie sie.
 
@@ -91,7 +92,7 @@ Wenn Sie Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt installieren ode
 
 - **Projekt-Upgrade**-Überprüfen Sie, ob der OpenSearch PHP-Client in der neuen Anwendungsversion mit der in der Cloud-Infrastruktur installierten OpenSearch-Service-Version kompatibel ist.
 
-Die Unterstützung der Service-Version und -Kompatibilität hängt von den Versionen ab, die in der Cloud-Infrastruktur getestet und bereitgestellt werden, und unterscheidet sich manchmal von den Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im _Installationshandbuch_ für eine Liste der unterstützten Versionen.
+Die Unterstützung der Service-Version und -Kompatibilität hängt von den Versionen ab, die in der Cloud-Infrastruktur getestet und bereitgestellt werden, und unterscheidet sich manchmal von den Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im _Installationshandbuch_ für eine Liste der unterstützten Versionen.
 
 **So überprüfen Sie die Kompatibilität der OpenSearch-Software**:
 
