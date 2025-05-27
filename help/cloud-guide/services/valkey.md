@@ -2,7 +2,8 @@
 title: Valley-Service einrichten
 description: Erfahren Sie, wie Sie Valkey als Backend-Cache-Lösung für Adobe Commerce in der Cloud-Infrastruktur einrichten und optimieren können.
 feature: Cloud, Cache, Services
-source-git-commit: f73c742cbdbf56ac073802074d5a9cd921591f0f
+exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
+source-git-commit: 242582ea61d0d93725a7f43f2ca834db9e1a7c29
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [Valkey](https://valkey.io) ist eine optionale Backend-Cache-Lösung, die den `Zend Framework Zend_Cache_Backend_File` ersetzt, den Adobe Commerce standardmäßig verwendet.
 
-Siehe [Konfigurieren von Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=de){target="_blank"}  im _Konfigurationshandbuch_.
+Siehe [Konfigurieren von Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} im _Konfigurationshandbuch_.
 
 {{service-instruction}}
 
@@ -59,7 +60,7 @@ Wenn Ihre Valley-Beziehung `valkey` heißt, können Sie mit dem `valkey-cli`-Too
 1. Öffnen Sie einen SSH-Tunnel zu einem Host.
 
    ```bash
-   valkey-cli -h valkeycache.internal
+   valkey-cli -h valkey.internal
    ```
 
 ## Installierte Valley-Version abrufen
@@ -67,7 +68,7 @@ Wenn Ihre Valley-Beziehung `valkey` heißt, können Sie mit dem `valkey-cli`-Too
 Verwenden Sie den folgenden Befehl, um die Valley-Version in einer Integrationsumgebung zu installieren:
 
 ```bash
-valkey-cli -h valkeycache.internal info | grep version
+valkey-cli -h valkey.internal info | grep version
 ```
 
 Antwort:

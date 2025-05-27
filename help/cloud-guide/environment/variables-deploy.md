@@ -4,9 +4,10 @@ description: Siehe die Liste der Umgebungsvariablen, die Aktionen in der Bereits
 feature: Cloud, Configuration, Cache, Deploy, SCD, Storage, Search
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 980ec809-8c68-450a-9db5-29c5674daa16
+source-git-commit: 275a2a5c58b7c5db12f8f31bffed85004e77172f
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2483'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ stage:
             database: 11
 ```
 
-Im folgenden Beispiel wird die [Redis-Vorabladefunktion](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=de#redis-preload-feature) verwendet, wie im _Konfigurationshandbuch_ definiert:
+Im folgenden Beispiel wird die [Redis-Vorabladefunktion](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html#redis-preload-feature) verwendet, wie im _Konfigurationshandbuch_ definiert:
 
 ```yaml
 stage:
@@ -97,7 +98,7 @@ stage:
 - **default**—`true`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Aktiviert oder deaktiviert [ Bereinigung von (statischen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
+Aktiviert oder deaktiviert [ Bereinigung von (statischen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
 
 - **`true`** - Entfernt alle vorhandenen statischen Inhalte, bevor der aktualisierte statische Inhalt bereitgestellt wird.
 - **`false`** - Die Bereitstellung überschreibt nur vorhandene statische Inhaltsdateien, wenn der generierte Inhalt eine neuere Version enthält.
@@ -156,7 +157,7 @@ stage:
       consumers: []
 ```
 
-Standardmäßig überschreibt der Bereitstellungsprozess alle Einstellungen in der `env.php`. Siehe [Verwalten von Nachrichtenwarteschlangen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html?lang=de) im _Commerce-Konfigurationshandbuch_ für lokale Adobe Commerce.
+Standardmäßig überschreibt der Bereitstellungsprozess alle Einstellungen in der `env.php`. Siehe [Verwalten von Nachrichtenwarteschlangen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html) im _Commerce-Konfigurationshandbuch_ für lokale Adobe Commerce.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -186,7 +187,7 @@ stage:
 
 >[!WARNING]
 >
->Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html?lang=de#configure-environment).
+>Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
 
 Wenn Sie die Datenbank ohne Installationsvorgang von einer Umgebung in eine andere verschieben, benötigen Sie die entsprechenden kryptografischen Informationen. Adobe Commerce verwendet den im [!DNL Cloud Console] festgelegten Verschlüsselungsschlüsselwert als `crypt/key` Wert in der `env.php`.
 
@@ -277,7 +278,7 @@ stage:
 
 >[!NOTE]
 >
->In einem Pro-Staging-/Produktions-Cluster mit drei Knoten (oder drei Service-Knoten in [Scaled Architecture](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) sollte die `indices_settings` wie folgt festgelegt werden:
+>In einem Pro-Staging-/Produktions-Cluster mit drei Knoten (oder drei Service-Knoten in [Scaled Architecture](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture#service-tier) sollte die `indices_settings` wie folgt festgelegt werden:
 >
 >```yaml
 >           indices_settings:
@@ -313,10 +314,10 @@ stage:
 - **default**—`false`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Aktiviert und deaktiviert Google Analytics beim Bereitstellen in Staging- und Integrationsumgebungen. Standardmäßig ist &quot;Google Analytics&quot; nur für die Produktionsumgebung aktiviert. Legen Sie diesen Wert auf `true` fest, um Google Analytics in den Staging- und Integrationsumgebungen zu aktivieren.
+Aktiviert und deaktiviert Google Analytics bei der Bereitstellung in Staging- und Integrationsumgebungen. Standardmäßig gilt Google Analytics nur für die Produktionsumgebung. Legen Sie diesen Wert auf `true` fest, um Google Analytics in den Staging- und Integrationsumgebungen zu aktivieren.
 
 - **`true`**: Ermöglicht Google Analytics in Staging- und Integrationsumgebungen.
-- **`false`** - Deaktiviert Google Analytics in Staging- und Integrationsumgebungen.
+- **`false`**: Deaktiviert Google Analytics in Staging- und Integrationsumgebungen.
 
 Fügen Sie die Umgebungsvariable `ENABLE_GOOGLE_ANALYTICS` zum `deploy` in der `.magento.env.yaml` hinzu:
 
@@ -328,7 +329,7 @@ stage:
 
 >[!NOTE]
 >
->Der Bereitstellungsprozess ermöglicht Google Analytics immer in Produktionsumgebungen.
+>Der Bereitstellungsprozess aktiviert Google Analytics immer in Produktionsumgebungen.
 
 ## `FORCE_UPDATE_URLS`
 
@@ -356,7 +357,7 @@ stage:
     LOCK_PROVIDER: "db"
 ```
 
-Siehe [Konfigurieren der Sperre](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=de) im _Installationshandbuch_.
+Siehe [Konfigurieren der Sperre](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html) im _Installationshandbuch_.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
@@ -442,7 +443,7 @@ stage:
 
 >[!NOTE]
 >
->Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
+>Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -451,7 +452,7 @@ stage:
 
 >[!WARNING]
 >
->Aktivieren _diese_ nicht in einem [skalierten ](../architecture/scaled-architecture.md). Dies verursacht Redis-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Als Alternative empfiehlt Adobe, Adobe Commerce 2.3.5 oder höher zu verwenden, eine neue Redis-Backend-Konfiguration zu implementieren und L2-Caching für Redis zu implementieren.
+>Aktivieren _diese_ nicht in einem [skalierten ](../architecture/scaled-architecture.md). Dies verursacht Redis-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Als Alternative empfiehlt Adobe die Verwendung von Adobe Commerce 2.3.5 oder höher, die Implementierung einer neuen Redis-Backend-Konfiguration und die Implementierung des L2-Caching für Redis.
 
 >[!TIP]
 >
@@ -468,6 +469,58 @@ stage:
 In der `.magento.app.yaml`-Datei und in der `services.yaml`-Datei muss ein Redis-Dienst konfiguriert sein.
 
 [ECE-Tools Version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) und höher verwendet fehlertolerantere Einstellungen. Wenn Adobe Commerce keine Daten aus der Redis-Instanz _Slave_ lesen kann, liest es Daten aus der Redis-Instanz _Master_.
+
+Die schreibgeschützte Verbindung ist nicht für die Verwendung in der Integrationsumgebung verfügbar oder wenn Sie die Variable [`CACHE_CONFIGURATION` verwenden](#cache_configuration).
+
+## `VALKEY_BACKEND`
+
+- **default**—`Cm_Cache_Backend_Redis`
+- **Version**—Adobe Commerce 2.8.0 und höher
+
+`VALKEY_BACKEND` gibt die Backend-Modellkonfiguration für den Valley-Cache an.
+
+Adobe Commerce Version 2.8.0 und höher enthält die folgenden Backend-Modelle:
+
+- `Cm_Cache_Backend_Redis`
+- `\Magento\Framework\Cache\Backend\Redis`
+- `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache`
+
+Im folgenden Beispiel wird beschrieben, wie Sie `VALKEY_BACKEND` festlegen:
+
+```yaml
+stage:
+  deploy:
+    VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+```
+
+>[!NOTE]
+>
+>Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Valkey-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
+
+## `VALKEY_USE_SLAVE_CONNECTION`
+
+- **default**—`false`
+- **Version**—Adobe Commerce 2.4.8 und höher
+
+>[!WARNING]
+>
+>Aktivieren _diese_ nicht in einem [skalierten ](../architecture/scaled-architecture.md). Dies verursacht Valley-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Alternativ dazu empfiehlt Adobe die Verwendung von Adobe Commerce 2.4.8 oder höher, die Implementierung einer neuen Valkey-Backend-Konfiguration und die Implementierung von L2-Caching für Valkey.
+
+>[!TIP]
+>
+>Die Variable `VALKEY_USE_SLAVE_CONNECTION` wird nur in Adobe Commerce in Cloud-Infrastruktur-Staging- und Produktions-Pro-Cluster-Umgebungen unterstützt und nicht in Starter-Projekten.
+
+Adobe Commerce kann mehrere Redis-Instanzen asynchron lesen. `VALKEY_USE_SLAVE_CONNECTION` Auf `true` gesetzt, um automatisch eine _schreibgeschützte_ Verbindung zu einer Redis-Instanz zu verwenden und schreibgeschützten Traffic auf einem Nicht-Master-Knoten zu empfangen. Diese Verbindung verbessert die Leistung durch Lastenausgleich, da nur ein Knoten Lese-/Schreib-Traffic verarbeitet. Legen Sie `VALKEY_USE_SLAVE_CONNECTION` auf `false` fest, um ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php`-Datei zu entfernen.
+
+```yaml
+stage:
+  deploy:
+    VALKEY_USE_SLAVE_CONNECTION: true
+```
+
+In der `.magento.app.yaml`-Datei und in der `services.yaml`-Datei muss ein Redis-Dienst konfiguriert sein.
+
+[ECE-Tools Version 2002.0.18](../release-notes/cloud-release-archive.md#v2002018) und höher verwendet fehlertolerantere Einstellungen. Wenn Adobe Commerce keine Daten aus der Valkey-Instanz _Slave_ lesen kann, liest es Daten aus der Redis-Instanz _Master_.
 
 Die schreibgeschützte Verbindung ist nicht für die Verwendung in der Integrationsumgebung verfügbar oder wenn Sie die Variable [`CACHE_CONFIGURATION` verwenden](#cache_configuration).
 
@@ -581,7 +634,7 @@ stage:
 - **default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 und höher
 
-Ermöglicht die Anpassung der [-Bereitstellungsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=de) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
+Ermöglicht die Anpassung der [-Bereitstellungsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 
