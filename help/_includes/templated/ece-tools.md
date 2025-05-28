@@ -1,5 +1,5 @@
 ---
-source-git-commit: 2207508cf769b712705de5d41e0876ed60e5f614
+source-git-commit: 7f2934af84c947046fed3a32c3b6e2937aed418a
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # ECE-Tools
 
-**Version**: 2002.2.4
+**Version**: 2002.2.5
 
 Diese Referenz enthält 34 Befehle, die über das `ece-tools` Befehlszeilen-Tool verfügbar sind.
 Die anfängliche Liste wird automatisch mit dem Befehl `ece-tools list` unter Adobe Commerce in der Cloud-Infrastruktur generiert.
