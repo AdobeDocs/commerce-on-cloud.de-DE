@@ -3,10 +3,10 @@ user-guide-title: Handbuch zu Commerce für Cloud
 user-guide-description: Erfahren Sie, wie Sie die Adobe Commerce-Anwendung in der Cloud-Infrastruktur verwalten.
 product: magento
 feature: Cloud
-source-git-commit: fd7879e8f3c9e1965cf4aa3d99824e577971529d
+source-git-commit: 3347ad0a5fe202cbd80d08b7289c20a1c98ed1e3
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 7%
+source-wordcount: '359'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 7%
 # Commerce auf Cloud-Infrastruktur {#user-guide}
 
 + [Commerce](overview.md)
-+ {#architecture}
++ Architektur {#architecture}
    + [Cloud-Infrastruktur](architecture/cloud-architecture.md)
    + [Sicherheit](architecture/security.md)
    + [Technologie-Stack](architecture/tech-stack.md)
@@ -24,7 +24,7 @@ ht-degree: 7%
    + [Pro-Workflow](architecture/pro-develop-deploy-workflow.md)
    + [Skalierte Architektur](architecture/scaled-architecture.md)
    + [Automatische Skalierung](architecture/autoscaling.md)
-+ [Erste Schritte](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=de)
++ [Erste Schritte](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Versionshinweise {#release-notes}
    + [Cloud-Tools-Suite](release-notes/cloud-tools-suite.md)
    + [ECE-Tools-Paket](release-notes/ece-tools-package.md)
@@ -34,7 +34,7 @@ ht-degree: 7%
    + [Cloud-Pakete](release-notes/cloud-packages.md)
    + [Abwärtsinkompatible Änderungen](release-notes/backward-incompatible-changes.md)
    + [Archiv mit Versionshinweisen](release-notes/cloud-release-archive.md)
-+ Cloud-{#project}
++ Cloud-Projekt {#project}
    + [Projektübersicht](project/overview.md)
    + [Projektstruktur](project/file-structure.md)
    + [Benutzerzugriff](project/user-access.md)
@@ -44,9 +44,9 @@ ht-degree: 7%
    + [SendGrid-E-Mail-Service](project/sendgrid.md)
    + [Konsolen-Zweigstellenverwaltung](project/console-branches.md)
    + [Regionale IP-Adressen](project/regional-ip-addresses.md)
-+ für Entwickler-Tools{#dev-tools}
++ Entwickler-Tools {#dev-tools}
    + [Übersicht](dev-tools/overview.md)
-   + Cloud CLI-{#cloud-cli}
+   + Cloud-CLI {#cloud-cli}
       + [CLI-Übersicht](dev-tools/cloud-cli-overview.md)
       + [CLI-Referenz](dev-tools/cloud-cli-reference.md)
    + [Cloud Docker](dev-tools/cloud-docker.md)
@@ -56,18 +56,18 @@ ht-degree: 7%
       + [Aktualisierung des Pakets ECE-Tools](dev-tools/update-package.md)
       + [CLI-Referenz](dev-tools/ece-tools-cli-reference.md)
       + [Fehlerreferenz](dev-tools/error-reference.md)
-   + Integrations-{#integrations}
+   + Integrationen {#integrations}
       + [Übersicht](integrations/overview.md)
       + [Bitbucket](integrations/bitbucket.md)
       + [GitHub](integrations/github.md)
       + [GitLab](integrations/gitlab.md)
       + [Statusbenachrichtigungen](integrations/health-notifications.md)
-+ {#develop}
++ Entwicklung {#develop}
    + [Übersicht](development/overview.md)
    + [Authentifizierungsschlüssel](development/authentication-keys.md)
    + [CLI-Zweigstellenverwaltung](development/cli-branches.md)
    + [Sichere Verbindungen](development/secure-connections.md)
-   + Bereitstellen von {#deploy}
+   + Bereitstellen {#deploy}
       + [Bereitstellungsprozess](deploy/process.md)
       + [Optimierung](deploy/optimization.md)
       + [Best Practices](deploy/best-practices.md)
@@ -77,7 +77,7 @@ ht-degree: 7%
       + [Intelligente Assistenten](deploy/smart-wizards.md)
       + [Bereitstellung für Staging und Produktion](deploy/staging-production.md)
       + [Wiederherstellung nach Komponentenausfall](deploy/recover-failed-deployment.md)
-   + {#test}
+   + Test {#test}
       + [Testanleitung](test/guidance.md)
       + [Protokolle](test/log-locations.md)
       + [xdebug](test/debug.md)
@@ -87,7 +87,7 @@ ht-degree: 7%
    + [Privater Link-Service](development/privatelink-service.md)
    + [Schutzblock](development/protective-block.md)
    + [Umgebung wiederherstellen](development/restore-environment.md)
-   + {#storage}
+   + Speicherung {#storage}
       + [Verwalten von Festplattenspeicher](storage/manage-disk-space.md)
       + [Abfragen der Profildatenbank](storage/profile-database-queries.md)
       + [Datenbank sichern](storage/database-dump.md)
@@ -96,12 +96,12 @@ ht-degree: 7%
       + [Best Practices](development/best-practices.md)
       + [Commerce-Version aktualisieren](development/commerce-version.md)
       + [Patches anwenden](development/apply-patches.md)
-+ {#configure}
++ Konfiguration {#configure}
    + [Übersicht](environment/overview.md)
-   + {#app}
+   + Anwendung {#app}
       + [Konfigurieren der Anwendungsbereitstellung](application/configure-app-yaml.md)
       + [PHP-Einstellungen](application/php-settings.md)
-      + Eigenschaften-{#properties}
+      + Eigenschaften {#properties}
          + [Anwendungseigenschaften](application/properties.md)
          + [Crons](application/crons-property.md)
          + [Firewall (nur Starter)](application/firewall-property.md)
@@ -110,7 +110,7 @@ ht-degree: 7%
          + [Web](application/web-property.md)
          + [Arbeiter](application/workers-property.md)
       + [Festlegen des Cache für statische Dateien](application/set-cache.md)
-   + {#env}
+   + Umgebung {#env}
       + [Konfigurieren der Umgebungsbereitstellung](environment/configure-env-yaml.md)
       + [Variablenebenen und Optionen](environment/variable-levels.md)
       + Variablen überschreiben {#stage}
@@ -121,7 +121,7 @@ ht-degree: 7%
          + [Build](environment/variables-build.md)
          + [Bereitstellen](environment/variables-deploy.md)
          + [Nach der Bereitstellung](environment/variables-post-deploy.md)
-      + Konfigurieren von {#log}
+      + Konfigurieren von Benachrichtigungen {#log}
          + [Benachrichtigungen](environment/set-up-notifications.md)
          + [Protokoll-Handler](environment/log-handlers.md)
    + Routen {#routes}
@@ -129,7 +129,7 @@ ht-degree: 7%
       + [Caching](routes/caching.md)
       + [Redirects](routes/redirects.md)
       + [Server-seitige Includes](routes/server-side-includes.md)
-   + {#service}
+   + Dienste {#service}
       + [Konfigurieren von Services](services/services-yaml.md)
       + [Elasticsearch](services/elasticsearch.md)
       + [MySQL](services/mysql.md)
@@ -139,13 +139,13 @@ ht-degree: 7%
       + [Tal](services/valkey.md)
 + Fastly Services {#cdn}
    + [Übersicht](cdn/fastly.md)
-   + Schnelle Einrichtung von {#setup-fastly}
+   + Schnelle Einrichtung {#setup-fastly}
       + [Fastly-Services konfigurieren](cdn/fastly-configuration.md)
       + [Cache-Konfiguration anpassen](cdn/fastly-custom-cache-configuration.md)
       + [Anpassen von Fehler- und Wartungsseiten](cdn/fastly-custom-response.md)
    + [Web Application Firewall](cdn/fastly-waf-service.md)
    + [Bildoptimierung](cdn/fastly-image-optimization.md)
-   + Anpassen mit VCL-{#custom-vcl-snippets}
+   + Anpassen mit VCL {#custom-vcl-snippets}
       + [Erste Schritte](cdn/fastly-vcl-custom-snippets.md)
       + [Anforderungen an ein CMS-Backend umleiten](cdn/fastly-vcl-wordpress.md)
       + [Spam für Verweise blockieren](cdn/fastly-vcl-badreferer.md)
@@ -163,16 +163,17 @@ ht-degree: 7%
    + [Sitemap und Suchmaschinenroboter](store/robots-sitemap.md)
    + [PayPal-Zahlungsmethoden](store/paypal.md)
    + [Konfigurationsverwaltung](store/store-settings.md)
-+ Site- starten{#launch}
++ Launch-Site {#launch}
    + [Übersicht](launch/overview.md)
    + [Checkliste starten](launch/checklist.md)
    + [Launch-Schritte](launch/steps.md)
-+ überwachen{#monitor}
++ Standort überwachen {#monitor}
    + [Leistung](monitor/performance.md)
-   + New Relic Service-{#new-relic}
+   + [Betriebstelemetrie](monitor/operational-telemetry.md)
+   + New Relic-Service {#new-relic}
       + [Übersicht über New Relic](monitor/new-relic-service.md)
       + [Konto- und Benutzerverwaltung](monitor/account-management.md)
-      + untersuchen{#investigate}
+      + Untersuchung der Leistung {#investigate}
          + [Richtlinien, Warnhinweise und Workflows](monitor/investigate-performance.md)
          + [Datenaufnahme](monitor/ingest-data.md)
          + [Tracking von Bereitstellungen](monitor/track-deployments.md)
