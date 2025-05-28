@@ -3,9 +3,9 @@ title: Backup-Verwaltung
 description: Erfahren Sie, wie Sie manuell eine Sicherung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt erstellen und wiederherstellen.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b5fa153b4eb0569fd16c78fb7bf47c54222752cd
+source-git-commit: 3efc5478428c4ede9e2106e1cbef8362c525ccd8
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,8 @@ Sie können ein manuelles Backup einer beliebigen aktiven Starter-Umgebung und I
    +---------------------------+----------------------+------------+
    ```
 
+Informationen zum Erstellen eines Datenbank-Dump für eine beliebige Umgebung, einschließlich Staging und Produktion, finden Sie [ Knowledgebase-Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
+
 ## Manuelles Backup wiederherstellen
 
 Sie müssen [Administratorzugriff](../project/user-access.md) auf die Umgebung haben. Sie haben bis zu **sieben Tage**, um _manuelle Sicherung_. Beim Wiederherstellen eines Backups ändert sich der Code der aktuellen Git-Verzweigung nicht. Die Wiederherstellung eines Backups auf diese Weise gilt nicht für Pro-Staging- und Produktionsumgebungen. Siehe [Pro-Backup und Notfall-Wiederherstellung](../architecture/pro-architecture.md#backup-and-disaster-recovery).
@@ -137,7 +139,7 @@ Die Wiederherstellungszeiten hängen von der Größe der Datenbank ab:
 
 ## Wiederherstellen eines Snapshots zur Notfallwiederherstellung
 
-Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Rollback-Code
 
