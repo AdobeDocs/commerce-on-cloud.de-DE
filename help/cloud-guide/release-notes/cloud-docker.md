@@ -304,7 +304,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
       - Hinzugefügte Unterstützung für Elasticsearch 6.8, 7.2, 7.5 und 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
+      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
 
       - Die `--no-es` Option wurde zu den Service-Konfigurationsoptionen für die Generierung der Docker Compose-Konfigurationsdatei hinzugefügt. Verwenden Sie diese Option, um die Elasticsearch-Container-Installation zu überspringen und stattdessen die MySQL-Suche zu verwenden. Diese Option wird nur für Adobe Commerce-Versionen 2.3.5 und früher unterstützt.<!--MCLOUD-3766-->
 
@@ -415,7 +415,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **Es wurde eine Service-Konfigurationsoption hinzugefügt, um den Datenbank-Port für den Host verfügbar zu machen** - Verwenden Sie die `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>`-Option, um den Datenbank-Port für den Host beim Erstellen der `docker-compose.yml`-Datei verfügbar zu machen: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
-   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/) und [](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode/)Produktionsmodus.<!--MAGECLOUD-3996-->
+   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/) und [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode/)Produktionsmodus.<!--MAGECLOUD-3996-->
 
    - ![neues Symbol](../../assets/new.svg) Die Option `--rm` wurde hinzugefügt, um Befehle für die Build- und Bereitstellungs-Container zu `./bin/magento-docker`. Dadurch wird der Container entfernt, nachdem die Aufgabe abgeschlossen ist.<!--MAGECLOUD-4205-->
 
