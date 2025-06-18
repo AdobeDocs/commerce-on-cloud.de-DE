@@ -52,7 +52,7 @@ Um Massenaktionen abzuschließen, die länger als 3 Minuten dauern, ändern Sie 
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Ruft schnell den Admin-Pfad für die Generierung der VCL-Datei aus der `app/etc/env.php`-Konfigurationsdatei ab.
 
@@ -79,7 +79,7 @@ Zu den Bereinigungsoptionen gehören:
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Weitere Informationen finden Sie [den Fastly-Konfigurationsoptionen](https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#further-configuration-options).
 
@@ -105,7 +105,7 @@ Das Fastly-Modul beinhaltet GeoIP-Handhabung, um Besucher automatisch umzuleiten
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 >[!NOTE]
 >
