@@ -3,9 +3,9 @@ title: Cache-Konfiguration anpassen
 description: Erfahren Sie, wie Sie die Cache-Konfigurationseinstellungen überprüfen und anpassen können, nachdem die Fastly-Service-Einrichtung abgeschlossen ist.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: dcf585e25a4b06ff903642e42e72a71820bad008
+source-git-commit: eaa9980c437a9398f0d20d3c27832aecffc78fd9
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,13 @@ Um Massenaktionen abzuschließen, die länger als 3 Minuten dauern, ändern Sie 
 
 1. Legen Sie den Wert **Zeitüberschreitung für Administratorpfad** in Sekunden fest. Dieser Wert darf nicht länger als 10 Minuten (600 Sekunden) sein.
 
+>[!NOTE]
+>
+>Die Konfigurationseinstellung **_Admin-Pfad_** Zeitüberschreitung) kontrolliert keine Zeitüberschreitungswerte außerhalb von Adobe Commerce, z. B. die Zeitüberschreitung bei Fastly WAF. Um den Wert für die Fastly WAF-Zeitüberschreitung anzupassen, müssen Sie ein Adobe-Support-Ticket öffnen, um ihn im Fastly-Service zu aktualisieren.
+
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Ruft schnell den Admin-Pfad für die Generierung der VCL-Datei aus der `app/etc/env.php`-Konfigurationsdatei ab.
 
@@ -75,7 +79,7 @@ Zu den Bereinigungsoptionen gehören:
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Weitere Informationen finden Sie [den Fastly-Konfigurationsoptionen](https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#further-configuration-options).
 
@@ -101,7 +105,7 @@ Das Fastly-Modul beinhaltet GeoIP-Handhabung, um Besucher automatisch umzuleiten
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 >[!NOTE]
 >
@@ -181,7 +185,7 @@ Sowohl für Starter- als auch für Pro-Projekte können Sie die Option [!UICONTR
 
 - Rufen Sie für Startprojekte die Projekt-URL auf der Registerkarte [!UICONTROL Domains] im [!DNL Cloud Console] auf, um Ihre Projekt-URL hinzuzufügen.
 
-- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
+- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
 
 **Verwaltung der Fastly-Domain-Konfiguration über den Administrator**:
 
