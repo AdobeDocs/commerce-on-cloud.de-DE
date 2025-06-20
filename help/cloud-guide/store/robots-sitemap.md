@@ -2,9 +2,10 @@
 title: Hinzufügen von Sitemap- und Suchmaschinenrobotern
 description: Erfahren Sie, wie Sie in der Cloud-Infrastruktur Sitemap- und Suchmaschinenroboter zu Adobe Commerce hinzufügen.
 feature: Cloud, Configuration, Search, Site Navigation
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 060dc1f5-0e44-494e-9ade-00cd274e84bc
+source-git-commit: 8626364ec7bcaaa0e17a3380ec0b9b73110c4574
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -48,7 +49,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 
 >[!NOTE]
 >
->Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [ Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
+>Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [ Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
 
 ## Umschreiben mit Fastly VCL-Snippet
 
@@ -116,12 +117,19 @@ In der `sitemap`-Admin-Konfiguration müssen Sie den Speicherort der Datei mithi
 
 ### Konfigurieren der Indizierung nach Suchmaschine
 
-Um `robots.txt` Anpassungen in der Produktion zu aktivieren, müssen Sie die Option **Indizierung durch Suchmaschinen ist aktiviert für`<environment-name>`** in Ihren Projekteinstellungen aktivieren.
+Um `robots.txt` Anpassungen in der Produktionsumgebung zu aktivieren, müssen Sie die Option **Indizierung durch Suchmaschinen ist aktiviert für`<environment-name>`** in Ihren Projekteinstellungen in der Cloud-Konsole:
 
 ![Verwenden der [!DNL Cloud Console] zum Verwalten von Umgebungen](../../assets/robots-indexing-by-search-engine.png)
+
+Sie können auch die Magento-Cloud-CLI verwenden, um diese Einstellung zu aktualisieren:
+
+```bash
+magento-cloud environment:info -p <project_id> -e production restrict_robots false
+```
 
 >[!NOTE]
 >
 >- Die Indizierung durch Suchmaschinen kann nur in der Produktion aktiviert werden, nicht aber in einer der niedrigeren Umgebungen.
 >
->- Wenn Sie PWA Studio Auf die Zulassungsliste setztest verwenden und nicht auf Ihre konfigurierte `robots.txt` zugreifen können, fügen Sie `robots.txt` zur [Front Name](https://github.com/magento/magento2-upward-connector#front-name-allowlist) unter **Stores** > Configuration > **General** > **Web** > UPWARD PWA Configuration hinzu.
+>- Wenn Sie PWA Studio Auf die Zulassungsliste setzen verwenden und nicht auf Ihre konfigurierte `robots.txt` zugreifen können, fügen Sie `robots.txt` zur [Frontname](https://github.com/magento/magento2-upward-connector#front-name-allowlist) unter **Stores** > Configuration > **General** > **Web** > UPWARD PWA Configuration hinzu.
+
