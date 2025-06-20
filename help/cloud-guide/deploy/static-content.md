@@ -2,9 +2,10 @@
 title: Statische Inhaltsbereitstellung
 description: Erfahren Sie mehr über Strategien zur Bereitstellung von statischen Inhalten wie Bildern, Skripten und CSS in Adobe Commerce in Cloud-Infrastrukturprojekten.
 feature: Cloud, Build, Deploy, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8f30cae7-a3a0-4ce4-9c73-d52649ef4d7a
+source-git-commit: 325b7584daa38ad788905a6124e6d037cf679332
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Sie können Bundling und Minimierung verwenden, um optimierte JavaScript- und HT
 
 ### Inhalt minimieren
 
-Sie können die Ladezeit der SCD während des Bereitstellungsprozesses verbessern, wenn Sie die statischen Ansichtsdateien im `var/view_preprocessed`-Verzeichnis überspringen und auf Anfrage _minimierte_ HTML generieren. Sie können dies aktivieren, indem Sie die globale Umgebungsvariable [SKIP_HTML_MINIFICATION](../environment/variables-global.md#skiphtmlminification) auf `true` in der `.magento.env.yaml`-Datei festlegen.
+Sie können die Ladezeit der SCD während des Bereitstellungsprozesses verbessern, wenn Sie die statischen Ansichtsdateien im `var/view_preprocessed`-Verzeichnis überspringen und auf Anfrage _minimierte_ HTML generieren. Sie können dies aktivieren, indem Sie die globale Umgebungsvariable [SKIP_HTML_MINIFICATION](../environment/variables-global.md#skiphtmlminification) auf `true` in der `.magento.env.yaml` festlegen.
 
 >[!NOTE]
 >
@@ -29,7 +30,7 @@ Sie können **mehr** Bereitstellungszeit und Speicherplatz sparen, indem Sie die
 
 ## Auswählen einer Bereitstellungsstrategie
 
-Die Bereitstellungsstrategien unterscheiden sich je nachdem, ob Sie statische Inhalte während der _Build_-Phase, der _Bereitstellungs_-Phase oder _On-Demand-_ generieren. Wie im folgenden Diagramm dargestellt, ist das Generieren statischer Inhalte während der Bereitstellungsphase die am wenigsten optimale Wahl. Selbst bei minimiertem HTML muss jede Inhaltsdatei in das bereitgestellte `~/pub/static`-Verzeichnis kopiert werden, was lange dauern kann. Die Erstellung statischer Inhalte nach Bedarf scheint die optimale Wahl zu sein. Wenn die Inhaltsdatei jedoch zum Zeitpunkt der Anforderung nicht im Cache vorhanden ist, wird sie generiert, was dem Benutzererlebnis eine Ladezeit hinzufügt. Daher ist die Generierung statischer Inhalte während der Build-Phase die optimalste.
+Die Bereitstellungsstrategien unterscheiden sich je nachdem, ob Sie statische Inhalte während der _Build_-Phase, der _Bereitstellungs_-Phase oder _On-Demand-_ generieren. Wie im folgenden Diagramm dargestellt, ist das Generieren statischer Inhalte während der Bereitstellungsphase die am wenigsten optimale Wahl. Selbst bei minimierter HTML muss jede Inhaltsdatei in das bereitgestellte `~/pub/static`-Verzeichnis kopiert werden, was lange dauern kann. Die Erstellung statischer Inhalte nach Bedarf scheint die optimale Wahl zu sein. Wenn die Inhaltsdatei jedoch zum Zeitpunkt der Anforderung nicht im Cache vorhanden ist, wird sie generiert, was dem Benutzererlebnis eine Ladezeit hinzufügt. Daher ist die Generierung statischer Inhalte während der Build-Phase die optimalste.
 
 ![SCD-Lastvergleich](../../assets/scd-load-times.png)
 
@@ -38,6 +39,11 @@ Die Bereitstellungsstrategien unterscheiden sich je nachdem, ob Sie statische In
 Das Generieren von statischem Inhalt während der Build-Phase mit minimiertem HTML ist die optimale Konfiguration für [**Bereitstellungen ohne Ausfallzeiten**, ](reduce-downtime.md) auch als **Idealzustand“**. Anstatt Dateien auf ein gemountetes Laufwerk zu kopieren, wird ein Symlink aus dem `./init/pub/static` Verzeichnis erstellt.
 
 Zum Generieren statischer Inhalte ist Zugriff auf Designs und Gebietsschemata erforderlich. Adobe Commerce speichert Designs im Dateisystem, auf das während der Build-Phase zugegriffen werden kann. Adobe Commerce speichert jedoch Gebietsschemata in der Datenbank. Die Datenbank _während_ Erstellungsphase nicht verfügbar. Um den statischen Inhalt während der Build-Phase zu generieren, müssen Sie den `config:dump`-Befehl im `ece-tools`-Paket verwenden, um Gebietsschemata in das Dateisystem zu verschieben. Es liest die Gebietsschemata und speichert sie in der `app/etc/config.php`.
+
+>[!NOTE]
+>Nachdem Sie den `config:dump`-Befehl im `ece-tools`-Paket ausgeführt haben, werden die Konfigurationen, die in der `config.php`-Datei abgelegt werden [im Admin-Dashboard gesperrt (ausgegraut)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). Die einzige Möglichkeit, diese Konfigurationen in Admin zu aktualisieren, besteht darin, sie lokal aus der Datei zu löschen und das Projekt erneut bereitzustellen.
+>>Darüber hinaus sollten Sie jedes Mal, wenn Sie Ihrer Instanz eine neue Store-/Store-Gruppe/-Website hinzufügen, daran denken, den `config:dump`-Befehl auszuführen, um sicherzustellen, dass die Datenbank synchronisiert ist. Sie können auch [welche Konfigurationen ausgegeben werden sollen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in der `config.php`-Datei auswählen.
+>>Wenn Sie die Konfiguration der Store-/Store-Gruppe/Website aus der `config.php` löschen, da die Felder ausgegraut sind, diesen Schritt jedoch nicht ausführen, werden die neuen Entitäten, die nicht gedumpt wurden, bei der nächsten Bereitstellung aus der Datenbank gelöscht.
 
 **So konfigurieren Sie Ihr Projekt für die Generierung von SCD beim Build**:
 
