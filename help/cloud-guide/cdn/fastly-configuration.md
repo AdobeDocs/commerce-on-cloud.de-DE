@@ -2,9 +2,10 @@
 title: Fastly-Services konfigurieren
 description: Erfahren Sie, wie Sie Fastly Services für Ihr Adobe Commerce-Projekt einrichten und konfigurieren.
 feature: Cloud, Configuration, Iaas, Cache, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
+source-git-commit: 184f961a39611ea14dc96648b16644742407badc
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1968'
 ht-degree: 0%
 
 ---
@@ -31,15 +32,17 @@ Führen Sie die folgenden Schritte aus, um Fastly früh in Ihrem Site-Entwicklun
 >
 >Nachdem Sie die anfängliche Fastly-Konfiguration aktiviert und überprüft haben, können Sie die Konfiguration anpassen. Sie können beispielsweise zusätzliche Optionen wie Bildoptimierung, Edge-Module und benutzerdefinierten VCL-Code aktivieren. Siehe [Anpassen der Cache-Konfiguration](fastly-custom-cache-configuration.md).
 
-## Abrufen von Fastly-Anmeldedaten
-
 Während der Projektbereitstellung fügt Adobe Ihr Projekt zum [Fastly Service-Konto](fastly.md#fastly-service-account-and-credentials) für Adobe Commerce in der Cloud-Infrastruktur hinzu und erstellt Fastly-Kontoanmeldeinformationen für die Starter `master`- und Pro-Staging- und Produktionsumgebungen. Jede Umgebung verfügt über eindeutige Anmeldeinformationen.
 
-Sie benötigen die Fastly-Anmeldedaten, um Fastly CDN-Services vom Administrator zu konfigurieren und Fastly-API-Anfragen zu senden.
+Sie benötigen die Fastly-Anmeldedaten, um Fastly CDN-Services über den Adobe Commerce-Administrator zu konfigurieren und Fastly-API-Anfragen zu senden.
 
->[!NOTE]
->
->Mit Adobe Commerce in der Cloud-Infrastruktur können Sie nicht direkt auf Fastly Admin zugreifen. Verwenden Sie den Administrator, um die Fastly-Konfiguration für Ihre Umgebungen zu überprüfen und zu aktualisieren. Wenn Sie ein Problem nicht mit den Fastly-Funktionen in Admin beheben können, reichen Sie ein [Adobe Commerce-Support-Ticket ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
+## Fastly Admin Dashboard Access
+
+Mit Adobe Commerce in der Cloud-Infrastruktur können Sie nicht direkt auf das Fastly Admin Dashboard zugreifen.
+
+Sie müssen Adobe Commerce Admin verwenden, um die Fastly-Konfiguration für Ihre Umgebungen zu überprüfen und zu aktualisieren. Wenn Sie ein Problem nicht mit den Fastly-Funktionen in Admin beheben können, reichen Sie ein [Adobe Commerce-Support-Ticket ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
+## Abrufen von Fastly-Anmeldedaten
 
 Verwenden Sie die folgenden Methoden, um die Fastly-Service-ID und das API-Token für Ihre Umgebung zu finden und zu speichern:
 
@@ -63,7 +66,7 @@ Die Methode zum Anzeigen von Anmeldeinformationen unterscheidet sich bei Pro- un
 
 >[!NOTE]
 >
->Wenn Sie die Fastly-Anmeldedaten für die Staging- oder Produktionsumgebungen nicht finden können, wenden Sie sich an Ihren technischen Berater für Adobe-Kunden (CTA).
+>Wenn Sie die Fastly-Anmeldedaten für die Staging- oder Produktionsumgebungen nicht finden können, wenden Sie sich an Ihren technischen Adobe-Kundenberater (CTA).
 
 ## Schnelles Caching aktivieren
 
@@ -103,7 +106,7 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    >[!NOTE]
    >
-   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die [Fastly-Anmeldedaten (Service-ID und API-Token) von Adobe](#get-fastly-credentials) bereitgestellt von Adobe.
+   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Adobe Verwenden Sie stattdessen die von [ bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
 
 1. Klicken Sie **Testanmeldeinformationen**.
 
@@ -129,19 +132,19 @@ Laden Sie nach dem Aktivieren des Fastly-Moduls den Standard[VCL-Code](https://g
 
 1. Klicken Sie im Abschnitt _Fastly_ auf **VCL in Fastly hochladen** wie in der folgenden Abbildung dargestellt.
 
-   ![Laden Sie eine Magento VCL auf Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
+   ![Laden Sie eine Magento-VCL in Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
 
 1. Aktualisieren Sie nach Abschluss des Uploads den Cache entsprechend der Benachrichtigung oben auf der Seite.
 
 ## Bereitstellen von SSL-/TLS-Zertifikaten
 
-Adobe bietet ein Domain-validiertes Let&#39;s Encrypt SSL/TLS-Zertifikat, um sicheren HTTPS-Traffic von Fastly zu bedienen. Adobe stellt ein Zertifikat für jede Pro-Produktions-, Staging- und Starter-Produktionsumgebung bereit, um alle Domains in dieser Umgebung zu sichern. Ausführliche Informationen zum bereitgestellten Zertifikat finden Sie unter [Adobe von SSL (TLS)-Zertifikaten für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=de).
+Adobe stellt ein Domain-validiertes Let&#39;s Encrypt SSL/TLS-Zertifikat zur Verfügung, das sicheren HTTPS-Traffic von Fastly bereitstellt. Adobe stellt ein Zertifikat für jede Pro-Produktions-, Staging- und Starter-Produktionsumgebung bereit, um alle Domains in dieser Umgebung zu sichern. Ausführliche Informationen zum bereitgestellten Zertifikat finden Sie unter [Adobe SSL (TLS)-Zertifikate für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html).
 
 >[!NOTE]
 >
->Sie können Ihr eigenes TLS- oder SSL-Zertifikat bereitstellen, anstatt das von Adobe bereitgestellte Let&#39;s Encrypt-Zertifikat zu verwenden. Dieser Prozess erfordert jedoch zusätzliche Arbeit bei der Einrichtung und Wartung. Um diese Option auszuwählen, reichen Sie ein Adobe Commerce-Support-Ticket ein oder arbeiten Sie mit Adobe, um benutzerdefinierte, gehostete Zertifikate zu Ihrer Adobe Commerce in Cloud-Infrastrukturumgebungen hinzuzufügen.
+>Sie können Ihr eigenes TLS- oder SSL-Zertifikat bereitstellen, anstatt das von Adobe bereitgestellte Let&#39;s Encrypt-Zertifikat zu verwenden. Dieser Prozess erfordert jedoch zusätzliche Arbeit bei der Einrichtung und Wartung. Um diese Option auszuwählen, reichen Sie ein Adobe Commerce-Support-Ticket ein oder arbeiten Sie mit Adobe zusammen, um Ihrer Adobe Commerce in Cloud-Infrastrukturumgebungen benutzerdefinierte, gehostete Zertifikate hinzuzufügen.
 
-Um die SSL/TLS-Zertifikate für Adobe Commerce-Umgebungen zu aktivieren, führt die Adobe-Automatisierung die folgenden Schritte aus:
+Um die SSL-/TLS-Zertifikate für Adobe Commerce-Umgebungen zu aktivieren, führt Adobe Automation die folgenden Schritte aus:
 
 - Validiert den Domain-Besitz
 - Stellt ein SSL-/TLS-Zertifikat zur Verschlüsselung bereit, das die angegebenen Top-Level- und Subdomains für Ihre Stores abdeckt
@@ -187,7 +190,7 @@ Aktualisieren Sie Ihre DNS-Konfiguration, um Traffic von Ihren Store-URLs zum Fa
 
 - Aktivieren Sie das Fastly-Modul.
 - Laden Sie den Standard-Fastly-VCL-Code hoch.
-- Stellen Sie eine Liste der Top-Level- und Subdomains für jede Umgebung zum Adobe bereit oder senden Sie ein Adobe Commerce-Support-Ticket.
+- Geben Sie eine Liste der Top-Level- und Subdomains für jede Umgebung an Adobe weiter oder senden Sie ein Adobe Commerce-Support-Ticket.
 - Warten Sie auf die Bestätigung, dass die angegebenen Domains zu Ihren Cloud-Umgebungen hinzugefügt wurden.
 - Fügen Sie bei Einstiegsprojekten die Domains zu Ihrer Fastly-Service-Konfiguration hinzu. Siehe [Verwalten von Domains](fastly-custom-cache-configuration.md#manage-domains).
 - Informationen zum Aktualisieren der DNS-Konfiguration finden Sie bei Ihrer [DNS-](https://lookup.icann.org/)) nach der richtigen Methode für Ihren Domain-Dienst.
@@ -219,7 +222,7 @@ Aktualisieren Sie Ihre DNS-Konfiguration, um Traffic von Ihren Store-URLs zum Fa
 
    >[!NOTE]
    >
-   >Die ACME-Challenge-Datensätze in diesem Beispiel sind Platzhalter, die nicht für die Bereitstellung Ihrer Adobe Commerce-Staging- und Produktions-Sites vorgesehen sind. Holen Sie sich die richtigen Informationen zu ACME Challenge-Einträgen für Ihr Projekt, indem Sie sich an Adobe wenden.
+   >Die ACME-Challenge-Datensätze in diesem Beispiel sind Platzhalter, die nicht für die Bereitstellung Ihrer Adobe Commerce-Staging- und Produktions-Sites vorgesehen sind. Erhalten Sie die richtigen Datensatzinformationen für die ACME-Herausforderung für Ihr Projekt, indem Sie sich an Adobe wenden.
 
    Nach dem Hinzufügen der CNAME-Einträge validiert Adobe die Domains und stellt das SSL-/TLS-Zertifikat für die Umgebung bereit. Wenn Sie die DNS-Konfiguration aktualisieren, um Traffic von diesen Domains zum Fastly-Service zu leiten, lädt Adobe das Zertifikat in die Umgebung hoch.
 
@@ -239,7 +242,7 @@ Aktualisieren Sie Ihre DNS-Konfiguration, um Traffic von Ihren Store-URLs zum Fa
 
    >[!NOTE]
    >
-   >Als Alternative zur Verwendung der Cloud-CLI können Sie die Basis-URL von [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=de) aktualisieren
+   >Als Alternative zur Verwendung der Cloud-CLI können Sie die Basis-URL von [Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) aktualisieren
 
 1. Starten Sie den Webbrowser neu.
 
@@ -314,4 +317,4 @@ Nachdem Sie die Fastly-Services auf der Staging-Site überprüft haben, wiederho
 
 >[!TIP]
 >
-> Wenn Sie Probleme mit Fastly-Services in Ihren Adobe Commerce-Umgebungen haben, finden Sie weitere Informationen im [Adobe Commerce Fastly-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html?lang=de).
+> Wenn Sie Probleme mit Fastly-Services in Ihren Adobe Commerce-Umgebungen haben, finden Sie weitere Informationen im [Adobe Commerce Fastly-](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter.html).
