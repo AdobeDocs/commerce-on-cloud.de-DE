@@ -42,8 +42,8 @@ Zum Generieren statischer Inhalte ist Zugriff auf Designs und Gebietsschemata er
 
 >[!NOTE]
 >Nachdem Sie den `config:dump`-Befehl im `ece-tools`-Paket ausgeführt haben, werden die Konfigurationen, die in der `config.php`-Datei abgelegt werden [im Admin-Dashboard gesperrt (ausgegraut)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin). Die einzige Möglichkeit, diese Konfigurationen in Admin zu aktualisieren, besteht darin, sie lokal aus der Datei zu löschen und das Projekt erneut bereitzustellen.
->>Darüber hinaus sollten Sie jedes Mal, wenn Sie Ihrer Instanz eine neue Store-/Store-Gruppe/-Website hinzufügen, daran denken, den `config:dump`-Befehl auszuführen, um sicherzustellen, dass die Datenbank synchronisiert ist. Sie können auch [welche Konfigurationen ausgegeben werden sollen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in der `config.php`-Datei auswählen.
->>Wenn Sie die Konfiguration der Store-/Store-Gruppe/Website aus der `config.php` löschen, da die Felder ausgegraut sind, diesen Schritt jedoch nicht ausführen, werden die neuen Entitäten, die nicht gedumpt wurden, bei der nächsten Bereitstellung aus der Datenbank gelöscht.
+>&#x200B;>Darüber hinaus sollten Sie jedes Mal, wenn Sie Ihrer Instanz eine neue Store-/Store-Gruppe/-Website hinzufügen, daran denken, den `config:dump`-Befehl auszuführen, um sicherzustellen, dass die Datenbank synchronisiert ist. Sie können auch [welche Konfigurationen ausgegeben werden sollen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in der `config.php`-Datei auswählen.
+>&#x200B;>Wenn Sie die Konfiguration der Store-/Store-Gruppe/Website aus der `config.php` löschen, da die Felder ausgegraut sind, diesen Schritt jedoch nicht ausführen, werden die neuen Entitäten, die nicht gedumpt wurden, bei der nächsten Bereitstellung aus der Datenbank gelöscht.
 
 **So konfigurieren Sie Ihr Projekt für die Generierung von SCD beim Build**:
 
