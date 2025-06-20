@@ -43,7 +43,7 @@ Als Teil des Abonnements für Adobe Commerce auf Cloud-Infrastruktur stellt Adob
 
 >[!NOTE]
 >
->Wenn Sie Ihr eigenes SSL-Zertifikat mit erweiterter Validierung für Ihr Unternehmen bereitstellen möchten, anstatt das Zertifikat „Let&#39;s Encrypt“ zu verwenden, wenden Sie sich an Ihren CTA oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>Wenn Sie Ihr eigenes SSL-Zertifikat mit erweiterter Validierung für Ihr Unternehmen bereitstellen möchten, anstatt das Zertifikat „Let&#39;s Encrypt“ zu verwenden, wenden Sie sich an Ihren CTA oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
 
 ## Einrichten des Sicherheits-Scan-Tools
 
@@ -69,7 +69,7 @@ Mit dem Sicherheits-Scan-Tool können Sie Ihre Store-Websites regelmäßig über
 >
 >Adobe empfiehlt, das Sicherheits-Scan-Tool gegenüber anderen Drittanbieter-Tools zu verwenden, um während der Ermittlungen die beste Servicequalität zu gewährleisten.
 
-Informationen [ Einrichten und Verwenden des Sicherheits](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)Scan-Tools finden Sie im Benutzerhandbuch. Normalerweise verwenden Sie dieses Tool, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen.
+Informationen [ Einrichten und Verwenden des Sicherheits](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan)Scan-Tools finden Sie im Benutzerhandbuch. Normalerweise verwenden Sie dieses Tool, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen.
 
 Jede Site, die Sie durchsuchen, muss über die Registerkarte Sicherheitsprüfung registriert werden. Während des Registrierungsprozesses müssen Sie den Haftungsausschluss akzeptieren, bevor Sie mit dem Scannen beginnen können. Sie steuern sowohl den Zeitplan als auch die Autorisierung des Benutzers, nach Abschluss jeder Überprüfung Benachrichtigungen zu erhalten. Sie können die Suche für ein bestimmtes, wiederkehrendes Datum und eine bestimmte Uhrzeit planen oder bei Bedarf eine Suche ausführen.
 
