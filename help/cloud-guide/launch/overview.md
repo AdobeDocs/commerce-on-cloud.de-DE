@@ -1,9 +1,10 @@
 ---
 title: Site-Launch
 description: Erfahren Sie, wie Sie mit der Vorbereitung des Site-Launches beginnen.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
+source-git-commit: 38ac38d4edd0f317155d0d4537021a29a21d5761
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -38,11 +39,11 @@ Sie benötigen die folgenden Informationen und Ressourcen, um sich auf den Site-
 
 - SSL-/TLS-Zertifikat
 
-Im Rahmen des Adobe Commerce on Cloud Infrastructure-Abonnements stellt Adobe ein Domain-validiertes SSL-/TLS-Zertifikat bereit, das von Let&#39;s Encrypt ausgestellt wird. Jede Pro Production, Staging- und Starter Production (`master`)-Umgebung verfügt über ein eindeutiges Zertifikat, das alle Domains und Subdomains in dieser Umgebung abdeckt. Diese Zertifikate werden automatisch bereitgestellt und auf Ihre Site hochgeladen, nachdem Sie Ihre DNS-Konfiguration für die Entwicklung und Produktion aktualisiert haben. Siehe [Bereitstellen von SSL-/TLS-](../cdn/fastly-configuration.md#provision-ssltls-certificates).
+Als Teil des Abonnements für Adobe Commerce auf Cloud-Infrastruktur stellt Adobe ein Domain-validiertes SSL-/TLS-Zertifikat bereit, das von Let&#39;s Encrypt ausgestellt wird. Jede Pro Production, Staging- und Starter Production (`master`)-Umgebung verfügt über ein eindeutiges Zertifikat, das alle Domains und Subdomains in dieser Umgebung abdeckt. Diese Zertifikate werden automatisch bereitgestellt und auf Ihre Site hochgeladen, nachdem Sie Ihre DNS-Konfiguration für die Entwicklung und Produktion aktualisiert haben. Siehe [Bereitstellen von SSL-/TLS-](../cdn/fastly-configuration.md#provision-ssltls-certificates).
 
 >[!NOTE]
 >
->Wenn Sie Ihr eigenes SSL-Zertifikat mit erweiterter Validierung für Ihr Unternehmen bereitstellen möchten, anstatt das Zertifikat „Let&#39;s Encrypt“ zu verwenden, wenden Sie sich an Ihren CTA oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
+>Wenn Sie Ihr eigenes SSL-Zertifikat mit erweiterter Validierung für Ihr Unternehmen bereitstellen möchten, anstatt das Zertifikat „Let&#39;s Encrypt“ zu verwenden, wenden Sie sich an Ihren CTA oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Einrichten des Sicherheits-Scan-Tools
 
@@ -64,7 +65,11 @@ Mit dem Sicherheits-Scan-Tool können Sie Ihre Store-Websites regelmäßig über
 
 - Empfangen von Sicherheitsaktualisierungen und Site-spezifischen Benachrichtigungen
 
-Informationen [ Einrichten und Verwenden des Sicherheits](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan)Scan-Tools finden Sie im Benutzerhandbuch. Normalerweise verwenden Sie dieses Tool, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen.
+>[!NOTE]
+>
+>Adobe empfiehlt, das Sicherheits-Scan-Tool gegenüber anderen Drittanbieter-Tools zu verwenden, um während der Ermittlungen die beste Servicequalität zu gewährleisten.
+
+Informationen [ Einrichten und Verwenden des Sicherheits](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)Scan-Tools finden Sie im Benutzerhandbuch. Normalerweise verwenden Sie dieses Tool, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen.
 
 Jede Site, die Sie durchsuchen, muss über die Registerkarte Sicherheitsprüfung registriert werden. Während des Registrierungsprozesses müssen Sie den Haftungsausschluss akzeptieren, bevor Sie mit dem Scannen beginnen können. Sie steuern sowohl den Zeitplan als auch die Autorisierung des Benutzers, nach Abschluss jeder Überprüfung Benachrichtigungen zu erhalten. Sie können die Suche für ein bestimmtes, wiederkehrendes Datum und eine bestimmte Uhrzeit planen oder bei Bedarf eine Suche ausführen.
 
@@ -79,7 +84,7 @@ Visbot/2.0 (+http://www.visvo.com/en/webmasters.jsp;bot@visvo.com)
 
 ## Site scannen
 
-1. Zugriff auf Ihr [Commerce Marketplace-Konto](https://account.magento.com/customer/account/login).
+1. Greifen Sie auf Ihr [Commerce Marketplace-Konto zu](https://account.magento.com/customer/account/login).
 
 1. Klicken Sie auf die Registerkarte Sicherheitsprüfung und wählen Sie **Zu Sicherheitsprüfung wechseln**.
 
