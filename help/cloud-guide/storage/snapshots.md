@@ -30,7 +30,7 @@ Sie können ein manuelles Backup einer beliebigen aktiven Starter-Umgebung und I
 >
 >Sie können eine Sicherung des Codes direkt auf Pro-Produktions- und Staging-Clustern erstellen, indem Sie den folgenden Befehl im Terminal ausführen - passen Sie ihn für alle Ordner/Pfade an, die Sie ein-/ausschließen möchten:
 >
-```bash
+>```bash
 >mkdir -p var/support
 >/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
 >```
