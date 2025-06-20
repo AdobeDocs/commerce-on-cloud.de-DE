@@ -2,9 +2,10 @@
 title: Verwalten von Festplattenspeicher
 description: Erfahren Sie, wie Sie den Speicherplatz mithilfe der Befehlszeilenschnittstelle verwalten.
 feature: Cloud, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
+source-git-commit: b8cabaad4b7805858563cecbe5ffc2fdb9aeac58
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ _„Unsere Überwachung hat festgestellt, dass der Dateispeicher in Ihrem Cluste
 
 >[!TIP]
 >
->Es wird empfohlen, Ihre Speicherkapazität regelmäßig zu überwachen und sie deutlich unter 90 % zu halten, um diese automatischen Erhöhungen zu vermeiden. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden.
+>Adobe empfiehlt, die Speicherkapazität regelmäßig zu überwachen und unter 90 % zu halten, um diese automatischen Erhöhungen zu vermeiden. Nach der Zuweisung ist die Speichererhöhung für Pro-Staging und Produktion dauerhaft und kann nicht rückgängig gemacht werden.
 
 ## Integrationsumgebung überprüfen
 
@@ -131,7 +132,7 @@ Zwei [Konfigurationsdateien](../environment/overview.md) steuern die Zuordnung v
 
 >[!IMPORTANT]
 >
->Bei Pro-Produktions- und Staging-Umgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um die Speicherplatzzuweisung zu ändern. Eine Vergrößerung der Pro-Produktions- und Staging-Umgebungen kann nur in bestimmten Intervallen erfolgen. Abhängig von Ihrer aktuellen Speicherplatznutzung empfiehlt der Support daher möglicherweise, die Speicherplatzzuweisung um mindestens 10 GB zu erhöhen. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden. Speicher kann nicht neu zugewiesen oder zwischen Ressourcen umverteilt werden. Um mehr Dateispeicherplatz hinzuzufügen, reduzieren Sie den für MySQL zugewiesenen Speicherplatz.
+>Bei Pro-Produktions- und Staging-Umgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um die Speicherplatzzuweisung zu ändern. Eine Vergrößerung der Pro-Produktions- und Staging-Umgebungen kann nur in bestimmten Intervallen erfolgen. Abhängig von Ihrer aktuellen Speicherplatznutzung empfiehlt der Support daher möglicherweise, die Speicherplatzzuweisung um mindestens 10 GB zu erhöhen. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden. Speicher kann nicht neu zugewiesen oder zwischen Ressourcen umverteilt werden. Um mehr Dateispeicherplatz hinzuzufügen, reduzieren Sie den für MySQL zugewiesenen Speicherplatz.
 
 ### Anwendungsspeicherplatz
 
@@ -187,7 +188,7 @@ Die `.magento/services.yaml`-Datei steuert den für jeden Dienst verfügbaren Sp
 
 ## Überwachen des Festplattenspeichers
 
-In Pro-Produktionsumgebungen können Sie den Festplattenspeicher und andere Leistungsindikatoren mithilfe der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot; für New Relic überwachen. Weitere Informationen finden Sie unter [Überwachen der Leistung mit verwalteten Warnhinweisen](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Weitere Anleitungen finden Sie unter [Best Practices zum Beheben von Problemen mit der Datenbankleistung](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de).
+In Pro-Produktionsumgebungen können Sie den Festplattenspeicher und andere Leistungsindikatoren mithilfe der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot; für New Relic überwachen. Weitere Informationen finden Sie unter [Überwachen der Leistung mit verwalteten Warnhinweisen](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Weitere Anleitungen finden Sie unter [Best Practices zum Beheben von Problemen mit der Datenbankleistung](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
 
 ## Kein Platz übrig
 
