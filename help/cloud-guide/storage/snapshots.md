@@ -3,9 +3,9 @@ title: Backup-Verwaltung
 description: Erfahren Sie, wie Sie manuell eine Sicherung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt erstellen und wiederherstellen.
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
-source-git-commit: b9bbbb9b83ed995951feaa9391015f02a9661206
+source-git-commit: 13cb5e3231c2173d5687aec3e4e64ecc154ee962
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,18 @@ Die Backup-/Snapshot-Funktion **nicht** für die Pro Staging- und Produktionsumg
 
 Sie können ein manuelles Backup einer beliebigen aktiven Starter-Umgebung und Integration Pro-Umgebung aus der [!DNL Cloud Console] erstellen oder einen Snapshot aus der Cloud-CLI erstellen. Sie müssen über eine [Administratorrolle](../project/user-access.md) für die Umgebung verfügen.
 
+>[!NOTE]
+>
+>Sie können eine Sicherung des Codes direkt auf Pro-Produktions- und Staging-Clustern erstellen, indem Sie den folgenden Befehl im Terminal ausführen - passen Sie ihn für alle Ordner/Pfade an, die Sie ein-/ausschließen möchten:
+>
+```bash
+>mkdir -p var/support
+>/usr/bin/nice -n 15 /bin/tar -czhf var/support/code-$(date +"%Y%m%d%H%M%p").tar.gz app bin composer.* dev lib pub/*.php pub/errors setup vendor --exclude='pub/media'
+>```
+
 **So erstellen Sie eine Datenbank-Sicherung der Pro-Umgebung**:
-Informationen zum Erstellen eines Datenbank-Dump einer beliebigen Pro-Umgebung, einschließlich Staging und Produktion, finden Sie [ Knowledgebase-Artikel ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
+
+Informationen zum Erstellen eines Datenbank-Dump einer beliebigen Pro-Umgebung, einschließlich Staging und Produktion, finden Sie [ Knowledgebase-Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
 
 **So erstellen Sie eine Sicherung einer beliebigen Starter-Umgebung mit dem[!DNL Cloud Console]**:
 
@@ -140,10 +150,15 @@ Die Wiederherstellungszeiten hängen von der Größe der Datenbank ab:
 
 ## Wiederherstellen eines Snapshots zur Notfallwiederherstellung
 
-Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Rollback-Code
 
 Backups und Momentaufnahmen enthalten _keine_ Kopie Ihres Codes. Ihr Code ist bereits im Git-basierten Repository gespeichert, sodass Sie Git-basierte Befehle verwenden können, um Code zurückzusetzen (oder zurückzusetzen). Verwenden Sie beispielsweise `git log --oneline`, um durch frühere Commits zu scrollen; verwenden Sie dann [`git revert`](https://git-scm.com/docs/git-revert), um Code aus einem bestimmten Commit wiederherzustellen.
 
 Außerdem können Sie Code in einer (inaktiven _Verzweigung_. Verwenden Sie Git-Befehle, um eine Verzweigung zu erstellen, anstatt `magento-cloud` Befehle zu verwenden. Siehe Informationen zu [Git-](../dev-tools/cloud-cli-overview.md#git-commands)) im Thema Cloud-CLI .
+
+## Verwandte Informationen
+
+- [Datenbank sichern](database-dump.md)
+- [Backup und Disaster Recovery](../architecture/pro-architecture.md#backup-and-disaster-recovery) für Pro-Produktions- und Staging-Cluster
