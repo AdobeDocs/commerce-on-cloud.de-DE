@@ -63,7 +63,7 @@ Damit SendGrid in Ihrem Namen Transaktions-E-Mails aus Pro-Produktions- oder Sta
 
 >[!TIP]
 >
->Stellen Sie sicher, dass Sie die **[!UICONTROLSStore-E-Mail]** Adressen) mit der richtigen Domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** konfigurieren. Die Domain-Authentifizierung wird für die E-Mail-Adresse des Absenders durchgeführt. Wenn die Standardeinstellung (`example.com`) konfiguriert ist, werden die E-Mails von `example.com` durch Sendgrid blockiert.
+>Stellen Sie sicher, dass Sie die **[!UICONTROL SStore-E-Mail]** Adressen) mit der richtigen Domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** konfigurieren. Die Domain-Authentifizierung wird für die E-Mail-Adresse des Absenders durchgeführt. Wenn die Standardeinstellung (`example.com`) konfiguriert ist, werden die E-Mails von `example.com` durch Sendgrid blockiert.
 
 **So aktivieren Sie die Domain-**:
 
