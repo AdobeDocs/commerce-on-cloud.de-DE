@@ -2,18 +2,23 @@
 title: Keine Ausfallzeiten bei der Bereitstellung
 description: Erfahren Sie, wie Sie bei der Bereitstellung von Adobe Commerce in Cloud-Infrastrukturprojekten die Ausfallzeiten insgesamt reduzieren können.
 feature: Cloud, Deploy, SCD, Themes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: c216c5e9-d787-4428-b67a-b6aee814ded5
+source-git-commit: b831bc5bce0f76ec8972b3578c500508dd4d7d41
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # Keine Ausfallzeiten bei der Bereitstellung
 
-Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während [_Bereitstellungsphase im_-](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#production-mode) aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Wie lange sich Ihre Produktions-Site im Wartungsmodus befindet, hängt von der Größe der Site, der Anzahl der während der Bereitstellung vorgenommenen Änderungen und der Konfiguration für die Bereitstellung statischer Inhalte ab. Es ist möglich, Ihr Projekt so zu konfigurieren, dass es mit einem **Ausfallzeiteffekt bereitgestellt**.
+Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während [_Bereitstellungsphase im_-](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Wie lange sich Ihre Produktions-Site im Wartungsmodus befindet, hängt von der Größe der Site, der Anzahl der während der Bereitstellung vorgenommenen Änderungen und der Konfiguration für die Bereitstellung statischer Inhalte ab. Es ist möglich, Ihr Projekt so zu konfigurieren, dass es mit einem **Ausfallzeiteffekt bereitgestellt**.
 
 Während des Bereitstellungsprozesses stehen alle Verbindungen für bis zu 5 Minuten in der Warteschlange, wobei alle aktiven Sitzungen und ausstehenden Aktionen beibehalten werden, z. B. das Hinzufügen zum Warenkorb oder der Checkout. Nach der Bereitstellung wird die Warteschlange freigegeben und die Verbindungen werden ohne Unterbrechung fortgesetzt. Um diese _Verbindung zu Ihrem Vorteil_ halten und die Bereitstellung auf _null_ Ausfallzeiten zu reduzieren, müssen Sie Ihr Projekt so konfigurieren, dass es die effizienteste Bereitstellungsstrategie verwendet.
+
+>[!NOTE]
+>
+>Um sicherzustellen, dass Ihr Cloud-Projekt optimal konfiguriert ist, um Bereitstellungsausfälle zu minimieren, verwenden Sie den [Smart Wizard](smart-wizards.md). Der intelligente Assistent überprüft Ihre aktuelle Einrichtung und führt Sie durch empfohlene Konfigurationsanpassungen, um Best Practices für Bereitstellungen ohne Ausfallzeiten zu ermöglichen.
 
 Führen Sie die folgenden Schritte aus, um die Zeit zu reduzieren, die Ihr Store für die Bereitstellung eines Updates für die Produktion benötigt:
 
