@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: 9166b44ae53e8cfc6b8022730a6b91406ba696c0
 workflow-type: tm+mt
 source-wordcount: '13341'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Stellen Sie keine interaktiven Fragen; akzeptieren Sie Standardwerte. Entspricht
 ## `clear-cache`
 
 ```bash
-magento-cloud magento-cloud cc
+magento-cloud cc
 ```
 
 Löschen des CLI-Cache
@@ -72,7 +72,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ## `decode`
 
 ```bash
-magento-cloud magento-cloud decode [-P|--property PROPERTY] [--] <value>
+magento-cloud decode [-P|--property PROPERTY] [--] <value>
 ```
 
 Eine codierte Zeichenfolge wie MAGENTO_CLOUD_VARIABLES decodieren
@@ -99,7 +99,7 @@ Die Eigenschaft, die innerhalb der Variablen angezeigt werden soll
 ## `docs`
 
 ```bash
-magento-cloud magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
+magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
 ```
 
 Öffnen der Onlinedokumentation
@@ -134,7 +134,7 @@ Ausgabe der URL an stdout
 ## `help`
 
 ```bash
-magento-cloud magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 Zeigt Hilfe zu einem Befehl an
@@ -181,7 +181,7 @@ So geben Sie die Raw-Befehlshilfe aus
 ## `list`
 
 ```bash
-magento-cloud magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
 Führt Befehle auf
@@ -246,7 +246,7 @@ Alle Befehle anzeigen, einschließlich ausgeblendeter Befehle
 ## `multi`
 
 ```bash
-magento-cloud magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 Ausführen eines Befehls für mehrere Projekte
@@ -297,7 +297,7 @@ Kehrt die Reihenfolge der Projektoptionen um
 ## `web`
 
 ```bash
-magento-cloud magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 Öffnen Sie das Projekt in der Web-Benutzeroberfläche
@@ -335,7 +335,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `activity:cancel`
 
 ```bash
-magento-cloud magento-cloud activity:cancel [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 Abbrechen einer Aktivität
@@ -387,7 +387,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `activity:get`
 
 ```bash
-magento-cloud magento-cloud activity:get [-P|--property PROPERTY] [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 Anzeigen detaillierter Informationen zu einer einzelnen Aktivität
@@ -493,7 +493,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `activity:list`
 
 ```bash
-magento-cloud magento-cloud activities [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud activities [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 Abrufen einer Liste von Aktivitäten für eine Umgebung oder ein Projekt
@@ -600,7 +600,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `activity:log`
 
 ```bash
-magento-cloud magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 Protokoll einer Aktivität anzeigen
@@ -693,7 +693,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `app:config-get`
 
 ```bash
-magento-cloud magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Anzeigen der Konfiguration einer App
@@ -743,7 +743,7 @@ Der Name der Remote-Anwendung
 ## `app:list`
 
 ```bash
-magento-cloud magento-cloud apps [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 Auflisten von Apps im Projekt
@@ -803,7 +803,7 @@ Tabellenüberschrift nicht ausgeben
 ## `auth:api-token-login`
 
 ```bash
-magento-cloud magento-cloud auth:api-token-login
+magento-cloud auth:api-token-login
 ```
 
 Melden Sie sich mit einem API-Token bei Magento Cloud an
@@ -829,7 +829,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ## `auth:browser-login`
 
 ```bash
-magento-cloud magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
+magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
 ```
 
 Anmelden bei Magento Cloud über einen Browser
@@ -878,7 +878,7 @@ Ausgabe der URL an stdout
 ## `auth:info`
 
 ```bash
-magento-cloud magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 Kontoinformationen anzeigen
@@ -938,7 +938,7 @@ Tabellenüberschrift nicht ausgeben
 ## `auth:logout`
 
 ```bash
-magento-cloud magento-cloud logout [-a|--all] [--other]
+magento-cloud logout [-a|--all] [--other]
 ```
 
 Abmelden von Magento Cloud
@@ -965,7 +965,7 @@ Von anderen lokalen Sitzungen abmelden
 ## `blackfire:setup`
 
 ```bash
-magento-cloud magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 Einrichten der Blackfire.io-Integration für das Projekt
@@ -1010,7 +1010,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `certificate:add`
 
 ```bash
-magento-cloud magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 Hinzufügen eines SSL-Zertifikats zum Projekt
@@ -1062,7 +1062,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `certificate:delete`
 
 ```bash
-magento-cloud magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 Löschen eines Zertifikats aus dem Projekt
@@ -1103,7 +1103,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `certificate:get`
 
 ```bash
-magento-cloud magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 Anzeigen eines Zertifikats
@@ -1143,7 +1143,7 @@ Die Projekt-ID oder URL
 ## `certificate:list`
 
 ```bash
-magento-cloud magento-cloud certificates [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud certificates [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 Auflisten von Projektzertifikaten
@@ -1250,7 +1250,7 @@ Die Projekt-ID oder URL
 ## `commit:get`
 
 ```bash
-magento-cloud magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 Commit-Details anzeigen
@@ -1259,7 +1259,7 @@ Commit-Details anzeigen
 
 #### `commit`
 
-Der Commit SHA. Dies akzeptiert auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits.
+Der Commit SHA. Hierbei können auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits akzeptiert werden.
 
 - Standard: `HEAD`
 
@@ -1296,7 +1296,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `commit:list`
 
 ```bash
-magento-cloud magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 Commits auflisten
@@ -1305,7 +1305,7 @@ Commits auflisten
 
 #### `commit`
 
-Der erste Git-Commit SHA. Dies akzeptiert auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits.
+Der erste Git-Commit SHA. Hierbei können auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits akzeptiert werden.
 
 ### Optionen
 
@@ -1362,7 +1362,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `db:dump`
 
 ```bash
-magento-cloud magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Erstellen eines lokalen Speicherauszugs der Remote-Datenbank
@@ -1471,7 +1471,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `db:size`
 
 ```bash
-magento-cloud magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Schätzen der Festplattenauslastung einer Datenbank
@@ -1555,7 +1555,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `db:sql`
 
 ```bash
-magento-cloud magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 SQL auf Remote-Datenbank ausführen
@@ -1617,7 +1617,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `domain:add`
 
 ```bash
-magento-cloud magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [--attach ATTACH] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 Hinzufügen einer neuen Domain zum Projekt
@@ -1689,7 +1689,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `domain:delete`
 
 ```bash
-magento-cloud magento-cloud domain:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 Löschen einer Domain aus dem Projekt
@@ -1736,7 +1736,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `domain:get`
 
 ```bash
-magento-cloud magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<name>]
 ```
 
 Anzeigen detaillierter Informationen für eine Domain
@@ -1801,7 +1801,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `domain:list`
 
 ```bash
-magento-cloud magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 Abrufen einer Liste aller Domains
@@ -1847,7 +1847,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `domain:update`
 
 ```bash
-magento-cloud magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 Aktualisieren einer Domain
@@ -1913,7 +1913,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:activate`
 
 ```bash
-magento-cloud magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 Aktivieren einer Umgebung
@@ -1967,7 +1967,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:branch`
 
 ```bash
-magento-cloud magento-cloud branch [--title TITLE] [--type TYPE] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>] [<parent>]
 ```
 
 Verzweigen einer Umgebung
@@ -2036,7 +2036,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:checkout`
 
 ```bash
-magento-cloud magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
+magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
 ```
 
 Auschecken einer Umgebung
@@ -2061,7 +2061,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `environment:delete`
 
 ```bash
-magento-cloud magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [--allow-delete-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [--allow-delete-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 Löschen einer oder mehrerer Umgebungen
@@ -2180,7 +2180,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:http-access`
 
 ```bash
-magento-cloud magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 Aktualisieren der HTTP-Zugriffseinstellungen für eine Umgebung
@@ -2239,7 +2239,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:info`
 
 ```bash
-magento-cloud magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 Lesen oder Festlegen von Eigenschaften für eine Umgebung
@@ -2324,7 +2324,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:init`
 
 ```bash
-magento-cloud magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 Initialisieren einer Umgebung aus einem öffentlichen Git-Repository
@@ -2377,7 +2377,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:list`
 
 ```bash
-magento-cloud magento-cloud environments [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud environments [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 Abrufen einer Liste von Umgebungen
@@ -2459,7 +2459,7 @@ Die Projekt-ID oder URL
 ## `environment:logs`
 
 ```bash
-magento-cloud magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 Lesen der Protokolle einer Umgebung
@@ -2522,7 +2522,7 @@ Eine Instanz-ID
 ## `environment:merge`
 
 ```bash
-magento-cloud magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 Zusammenführen einer Umgebung
@@ -2571,7 +2571,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:pause`
 
 ```bash
-magento-cloud magento-cloud environment:pause [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud environment:pause [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 Pausieren einer Umgebung
@@ -2616,7 +2616,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:push`
 
 ```bash
-magento-cloud magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 Code in eine Umgebung pushen
@@ -2722,7 +2722,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `environment:redeploy`
 
 ```bash
-magento-cloud magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 Erneutes Bereitstellen einer Umgebung
@@ -2761,7 +2761,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:relationships`
 
 ```bash
-magento-cloud magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 Beziehungen einer Umgebung anzeigen
@@ -2817,7 +2817,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `environment:resume`
 
 ```bash
-magento-cloud magento-cloud environment:resume [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud environment:resume [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 Ausgesetzte Umgebung fortsetzen
@@ -2856,7 +2856,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:scp`
 
 ```bash
-magento-cloud magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 Kopieren von Dateien in eine und aus einer Umgebung mithilfe von scp
@@ -2921,7 +2921,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `environment:ssh`
 
 ```bash
-magento-cloud magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 SSH zur aktuellen Umgebung
@@ -2993,7 +2993,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `environment:synchronize`
 
 ```bash
-magento-cloud magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 Synchronisieren des Codes einer Umgebung und/oder der Daten der übergeordneten Umgebung
@@ -3057,7 +3057,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `environment:url`
 
 ```bash
-magento-cloud magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 Abrufen der öffentlichen URLs einer Umgebung
@@ -3102,7 +3102,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `environment:xdebug`
 
 ```bash
-magento-cloud magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Öffnen eines Tunnels zu Xdebug in der Umgebung
@@ -3158,7 +3158,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `integration:activity:get`
 
 ```bash
-magento-cloud magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 Anzeigen detaillierter Informationen zu einer einzelnen Integrationsaktivität
@@ -3228,7 +3228,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `integration:activity:list`
 
 ```bash
-magento-cloud magento-cloud int:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud int:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 Abrufen einer Liste von Aktivitäten für eine Integration
@@ -3334,7 +3334,7 @@ Die Projekt-ID oder URL
 ## `integration:activity:log`
 
 ```bash
-magento-cloud magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 Protokoll einer Integrationsaktivität anzeigen
@@ -3384,7 +3384,7 @@ Die Projekt-ID oder URL
 ## `integration:add`
 
 ```bash
-magento-cloud magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--resources-init RESOURCES-INIT] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--resources-init RESOURCES-INIT] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 Hinzufügen einer Integration zum Projekt
@@ -3702,7 +3702,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `integration:delete`
 
 ```bash
-magento-cloud magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 Löschen einer Integration aus einem Projekt
@@ -3741,7 +3741,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `integration:get`
 
 ```bash
-magento-cloud magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 Anzeigen von Details einer Integration
@@ -3793,7 +3793,7 @@ Die Projekt-ID oder URL
 ## `integration:list`
 
 ```bash
-magento-cloud magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 Liste der Projektintegrationen anzeigen
@@ -3833,7 +3833,7 @@ Die Projekt-ID oder URL
 ## `integration:update`
 
 ```bash
-magento-cloud magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--resources-init RESOURCES-INIT] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--resources-init RESOURCES-INIT] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 Aktualisieren einer Integration
@@ -4157,7 +4157,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `integration:validate`
 
 ```bash
-magento-cloud magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 Bestehende Integration überprüfen
@@ -4194,7 +4194,7 @@ Die Projekt-ID oder URL
 ## `local:build`
 
 ```bash
-magento-cloud magento-cloud build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
+magento-cloud build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
 ```
 
 Aktuelles Projekt lokal erstellen
@@ -4319,7 +4319,7 @@ Drush: Sperrdatei erstellen oder aktualisieren (nur verfügbar mit Drush Version
 ## `local:dir`
 
 ```bash
-magento-cloud magento-cloud dir [<subdir>]
+magento-cloud dir [<subdir>]
 ```
 
 Lokalen Projektstamm suchen
@@ -4338,7 +4338,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ## `metrics:all`
 
 ```bash
-magento-cloud magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud metrics [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 BETA : Anzeigen von CPU-, Datenträger- und Arbeitsspeichermetriken für eine Umgebung
@@ -4437,7 +4437,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `metrics:cpu`
 
 ```bash
-magento-cloud magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 BETA - Anzeige der CPU-Nutzung einer Umgebung
@@ -4529,7 +4529,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `metrics:disk-usage`
 
 ```bash
-magento-cloud magento-cloud disk [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [--tmp] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud disk [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [--tmp] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 Anzeigen der Festplattenauslastung einer Umgebung
@@ -4635,7 +4635,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `metrics:memory`
 
 ```bash
-magento-cloud magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud mem [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 BETA Anzeigen der Speichernutzung einer Umgebung
@@ -4734,7 +4734,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `mount:download`
 
 ```bash
-magento-cloud magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Dateien von einem Mount herunterladen, mithilfe von rsync
@@ -4837,7 +4837,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `mount:list`
 
 ```bash
-magento-cloud magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 Erstellt eine Liste der Reittiere
@@ -4915,7 +4915,7 @@ Eine Instanz-ID
 ## `mount:size`
 
 ```bash
-magento-cloud magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 Überprüfen der Festplattenauslastung der Bereitstellungen
@@ -5008,7 +5008,7 @@ Eine Instanz-ID
 ## `mount:upload`
 
 ```bash
-magento-cloud magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Dateien mithilfe von rsync auf ein Mount hochladen
@@ -5097,7 +5097,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `operation:list`
 
 ```bash
-magento-cloud magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 BETA-Listenlaufzeitvorgänge für eine Umgebung
@@ -5162,7 +5162,7 @@ Tabellenüberschrift nicht ausgeben
 ## `operation:run`
 
 ```bash
-magento-cloud magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
+magento-cloud operation:run [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-W|--no-wait] [--wait] [--] [<operation>]
 ```
 
 BETA - Ausführen eines Vorgangs in der Umgebung
@@ -5219,7 +5219,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `project:clear-build-cache`
 
 ```bash
-magento-cloud magento-cloud project:clear-build-cache [-p|--project PROJECT]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 Löschen des Build-Cache eines Projekts
@@ -5238,7 +5238,7 @@ Die Projekt-ID oder URL
 ## `project:get`
 
 ```bash
-magento-cloud magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 Lokales Klonen eines Projekts
@@ -5293,7 +5293,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `project:info`
 
 ```bash
-magento-cloud magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 Lesen oder Festlegen von Eigenschaften für ein Projekt
@@ -5372,7 +5372,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `project:list`
 
 ```bash
-magento-cloud magento-cloud projects [--pipe] [--region REGION] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud projects [--pipe] [--region REGION] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 Abrufen einer Liste aller aktiven Projekte
@@ -5472,7 +5472,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `project:set-remote`
 
 ```bash
-magento-cloud magento-cloud set-remote [<project>]
+magento-cloud set-remote [<project>]
 ```
 
 Festlegen des Remote-Projekts für das aktuelle Git-Repository
@@ -5491,7 +5491,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ## `repo:cat`
 
 ```bash
-magento-cloud magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 Lesen einer Datei im Projekt-Repository
@@ -5510,7 +5510,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--commit`, `-c`
 
-Der Commit SHA. Dies akzeptiert auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits.
+Der Commit SHA. Hierbei können auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits akzeptiert werden.
 
 - Erfordert einen Wert
 
@@ -5530,7 +5530,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `repo:ls`
 
 ```bash
-magento-cloud magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 Auflisten der Dateien im Projekt-Repository
@@ -5568,7 +5568,7 @@ Stilausgabe ähnlich wie „git-tree“
 
 #### `--commit`, `-c`
 
-Der Commit SHA. Dies akzeptiert auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits.
+Der Commit SHA. Hierbei können auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits akzeptiert werden.
 
 - Erfordert einen Wert
 
@@ -5588,7 +5588,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `repo:read`
 
 ```bash
-magento-cloud magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 Lesen eines Verzeichnisses oder einer Datei im Projekt-Repository
@@ -5605,7 +5605,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--commit`, `-c`
 
-Der Commit SHA. Dies akzeptiert auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits.
+Der Commit SHA. Hierbei können auch die Suffixe &quot;HEAD&quot; und „Caret“ (^) oder „Tilde“ (~) für übergeordnete Commits akzeptiert werden.
 
 - Erfordert einen Wert
 
@@ -5625,7 +5625,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `route:get`
 
 ```bash
-magento-cloud magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 Anzeigen detaillierter Informationen zu einer Route
@@ -5701,7 +5701,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `route:list`
 
 ```bash
-magento-cloud magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 Auflisten aller Routen für eine Umgebung
@@ -5760,7 +5760,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `self:install`
 
 ```bash
-magento-cloud magento-cloud self:install [--shell-type SHELL-TYPE]
+magento-cloud self:install [--shell-type SHELL-TYPE]
 ```
 
 Installieren oder Aktualisieren von CLI-Konfigurationsdateien
@@ -5784,7 +5784,7 @@ Der Shell-Typ für die automatische Vervollständigung (bash oder zsh)
 ## `self:update`
 
 ```bash
-magento-cloud magento-cloud update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
+magento-cloud update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
 ```
 
 Aktualisieren der CLI auf die neueste Version
@@ -5830,7 +5830,7 @@ Ein Timeout für die Versionsüberprüfung
 ## `service:list`
 
 ```bash
-magento-cloud magento-cloud services [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 Auflisten der Services im Projekt
@@ -5890,7 +5890,7 @@ Tabellenüberschrift nicht ausgeben
 ## `service:mongo:dump`
 
 ```bash
-magento-cloud magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Erstellen eines binären Archiv-Dump von Daten aus MongoDB
@@ -5953,7 +5953,7 @@ Der Name der Remote-Anwendung
 ## `service:mongo:export`
 
 ```bash
-magento-cloud magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Exportieren von Daten aus MongoDB
@@ -6022,7 +6022,7 @@ Der Name der Remote-Anwendung
 ## `service:mongo:restore`
 
 ```bash
-magento-cloud magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Wiederherstellen eines binären Archiv-Dump von Daten in MongoDB
@@ -6071,7 +6071,7 @@ Der Name der Remote-Anwendung
 ## `service:mongo:shell`
 
 ```bash
-magento-cloud magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Verwenden der MongoDB-Shell
@@ -6120,7 +6120,7 @@ Der Name der Remote-Anwendung
 ## `service:redis-cli`
 
 ```bash
-magento-cloud magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 Zugriff auf die Redis-CLI
@@ -6169,7 +6169,7 @@ Der Name der Remote-Anwendung
 ## `snapshot:create`
 
 ```bash
-magento-cloud magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 Erstellen eines Snapshots einer Umgebung
@@ -6221,7 +6221,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `snapshot:delete`
 
 ```bash
-magento-cloud magento-cloud snapshot:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud snapshot:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 Löschen eines Umgebungs-Snapshots
@@ -6266,7 +6266,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `snapshot:get`
 
 ```bash
-magento-cloud magento-cloud snapshot:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud snapshot:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 Umgebungsschnappschuss anzeigen
@@ -6310,7 +6310,7 @@ Das Datumsformat (als PHP-Datumsformat-String)
 ## `snapshot:list`
 
 ```bash
-magento-cloud magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 Auflisten der verfügbaren Momentaufnahmen einer Umgebung
@@ -6363,7 +6363,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `snapshot:restore`
 
 ```bash
-magento-cloud magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 Wiederherstellen eines Umgebungsschnappschusses
@@ -6420,7 +6420,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `source-operation:list`
 
 ```bash
-magento-cloud magento-cloud source-ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud source-ops [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 Auflisten von Quellvorgängen für eine Umgebung
@@ -6473,7 +6473,7 @@ Tabellenüberschrift nicht ausgeben
 ## `source-operation:run`
 
 ```bash
-magento-cloud magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<operation>]
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<operation>]
 ```
 
 Ausführen eines Quellvorgangs
@@ -6525,7 +6525,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `ssh-cert:load`
 
 ```bash
-magento-cloud magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
+magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 ```
 
 Erstellen eines SSH-Zertifikats
@@ -6577,7 +6577,7 @@ Aktualisierung des Zertifikats erzwingen
 ## `ssh-key:add`
 
 ```bash
-magento-cloud magento-cloud ssh-key:add [--name NAME] [--] [<path>]
+magento-cloud ssh-key:add [--name NAME] [--] [<path>]
 ```
 
 Neuen SSH-Schlüssel hinzufügen
@@ -6612,7 +6612,7 @@ Ein Name zur Identifizierung des Schlüssels
 ## `ssh-key:delete`
 
 ```bash
-magento-cloud magento-cloud ssh-key:delete [<id>]
+magento-cloud ssh-key:delete [<id>]
 ```
 
 SSH-Schlüssel löschen
@@ -6641,7 +6641,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ## `ssh-key:list`
 
 ```bash
-magento-cloud magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 Abrufen einer Liste von SSH-Schlüsseln in Ihrem Konto
@@ -6685,7 +6685,7 @@ Tabellenüberschrift nicht ausgeben
 ## `subscription:info`
 
 ```bash
-magento-cloud magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 Lesen oder Ändern von Abonnementeigenschaften
@@ -6749,7 +6749,7 @@ Die Projekt-ID oder URL
 ## `tunnel:close`
 
 ```bash
-magento-cloud magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 SSH-Tunnel schließen
@@ -6787,7 +6787,7 @@ Der Name der Remote-Anwendung
 ## `tunnel:info`
 
 ```bash
-magento-cloud magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 Beziehungsinformationen für SSH-Tunnel anzeigen
@@ -6831,7 +6831,7 @@ Der Name der Remote-Anwendung
 ## `tunnel:list`
 
 ```bash
-magento-cloud magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 SSH-Tunnel auflisten
@@ -6890,7 +6890,7 @@ Tabellenüberschrift nicht ausgeben
 ## `tunnel:open`
 
 ```bash
-magento-cloud magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 SSH-Tunnel für die Beziehungen einer App öffnen
@@ -6947,7 +6947,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `tunnel:single`
 
 ```bash
-magento-cloud magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 Öffnen eines einzelnen SSH-Tunnels zu einer App-Beziehung
@@ -7003,7 +7003,7 @@ Eine zu verwendende SSH-Identität (privater Schlüssel)
 ## `user:add`
 
 ```bash
-magento-cloud magento-cloud user:add [-r|--role ROLE] [--force-invite] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [--force-invite] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 Hinzufügen eines Benutzers zum Projekt
@@ -7056,7 +7056,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `user:delete`
 
 ```bash
-magento-cloud magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 Löschen eines Benutzers aus dem Projekt
@@ -7097,7 +7097,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `user:get`
 
 ```bash
-magento-cloud magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 Benutzerrolle(n) anzeigen
@@ -7161,7 +7161,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `user:list`
 
 ```bash
-magento-cloud magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 Auflisten der Projektbenutzer
@@ -7201,7 +7201,7 @@ Die Projekt-ID oder URL
 ## `user:update`
 
 ```bash
-magento-cloud magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 Benutzerrolle(n) in einem Projekt aktualisieren
@@ -7247,7 +7247,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `variable:create`
 
 ```bash
-magento-cloud magento-cloud variable:create [-u|--update] [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-u|--update] [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 Erstellen einer Variablen
@@ -7365,7 +7365,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `variable:delete`
 
 ```bash
-magento-cloud magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 Löschen einer Variablen
@@ -7418,7 +7418,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `variable:get`
 
 ```bash
-magento-cloud magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 Anzeigen einer Variablen
@@ -7489,7 +7489,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `variable:list`
 
 ```bash
-magento-cloud magento-cloud variables [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud variables [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 Listenvariablen
@@ -7541,7 +7541,7 @@ Die Umgebungskennung. &quot;.“ verwenden , um die Standardumgebung des Projekt
 ## `variable:update`
 
 ```bash
-magento-cloud magento-cloud variable:update [--allow-no-change] [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [--allow-no-change] [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 Aktualisieren einer Variablen
@@ -7648,7 +7648,7 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 ## `worker:list`
 
 ```bash
-magento-cloud magento-cloud workers [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 Abrufen einer Liste aller bereitgestellten Worker
