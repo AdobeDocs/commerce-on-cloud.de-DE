@@ -3,9 +3,9 @@ title: Valley-Service einrichten
 description: Erfahren Sie, wie Sie Valkey als Backend-Cache-Lösung für Adobe Commerce in der Cloud-Infrastruktur einrichten und optimieren können.
 feature: Cloud, Cache, Services
 exl-id: f8933e0d-a308-4c75-8547-cb26ab6df947
-source-git-commit: 242582ea61d0d93725a7f43f2ca834db9e1a7c29
+source-git-commit: cf2e659267445603b3f5eaf877f4eb7ac0c1b54c
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Valkey](https://valkey.io) ist eine optionale Backend-Cache-Lösung, die den `Zend Framework Zend_Cache_Backend_File` ersetzt, den Adobe Commerce standardmäßig verwendet.
 
-Siehe [Konfigurieren von Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html?lang=de){target="_blank"} im _Konfigurationshandbuch_.
+Siehe [Konfigurieren von Valkey](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/valkey/config-valkey.html){target="_blank"} im _Konfigurationshandbuch_.
 
 {{service-instruction}}
 
-**So aktivieren Sie Valkey**:
+**Um Redis durch Valkey zu ersetzen, aktualisieren Sie die Konfiguration in den folgenden drei Dateien**:
 
 1. Fügen Sie den erforderlichen Namen und den erforderlichen Typ zur `.magento/services.yaml` hinzu.
 
@@ -41,10 +41,19 @@ Siehe [Konfigurieren von Valkey](https://experienceleague.adobe.com/docs/commerc
        valkey: "cache:valkey"
    ```
 
+1. Konfigurieren Sie `.magento.env.yaml` wie folgt:.
+
+   ```yaml
+    stage:
+        deploy:
+        VALKEY_USE_SLAVE_CONNECTION: true
+        VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+   ```
+
 1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.
 
    ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
+   git add .magento/services.yaml .magento.app.yaml .magento.env.yaml && git commit -m "Enable valkey service" && git push origin <branch-name>
    ```
 
 1. [Überprüfen Sie die Service-Beziehungen](services-yaml.md#service-relationships).
