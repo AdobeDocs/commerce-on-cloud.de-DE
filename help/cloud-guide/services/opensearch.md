@@ -39,7 +39,7 @@ OpenSearch ermöglicht es Ihnen, Daten aus beliebigen Quellen und Formaten zu su
        disk: 1024
    ```
 
-   Bei Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die OpenSearch-Version in der Staging- und Produktionsumgebung zu ändern.
+   Bei Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die OpenSearch-Version in der Staging- und Produktionsumgebung zu ändern.
 
 1. Legen Sie die `relationships`-Eigenschaft in der `.magento.app.yaml` fest oder überprüfen Sie sie.
 
@@ -92,7 +92,7 @@ Wenn Sie Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt installieren ode
 
 - **Projekt-Upgrade**-Überprüfen Sie, ob der OpenSearch PHP-Client in der neuen Anwendungsversion mit der in der Cloud-Infrastruktur installierten OpenSearch-Service-Version kompatibel ist.
 
-Die Unterstützung der Service-Version und -Kompatibilität hängt von den Versionen ab, die in der Cloud-Infrastruktur getestet und bereitgestellt werden, und unterscheidet sich manchmal von den Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im _Installationshandbuch_ für eine Liste der unterstützten Versionen.
+Die Unterstützung der Service-Version und -Kompatibilität hängt von den Versionen ab, die in der Cloud-Infrastruktur getestet und bereitgestellt werden, und unterscheidet sich manchmal von den Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im _Installationshandbuch_ für eine Liste der unterstützten Versionen.
 
 **So überprüfen Sie die Kompatibilität der OpenSearch-Software**:
 
@@ -184,7 +184,7 @@ Optional können Sie Plug-ins für OpenSearch hinzufügen, indem Sie den `config
 
 >[!NOTE]
 >
->Dies gilt nur für Integrations- und Starter-Umgebungen. Um die Plug-ins in einem Pro Staging- oder Produktions-Cluster zu installieren[ senden Sie eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Dies gilt nur für Integrations- und Starter-Umgebungen. Um die Plug-ins in einem Pro Staging- oder Produktions-Cluster zu installieren[ senden Sie eine Support-Anfrage](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 
 ```yaml
@@ -208,7 +208,7 @@ Wenn Sie die Plug-in-Einträge aus dem Abschnitt `opensearch:` der `.magento/ser
 
 >[!NOTE]
 >
->Diese Änderung gilt nur für Integrations- und Starter-Umgebungen. Sie müssen [ein Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) um das Plug-in in einem Pro Staging- oder Produktions-Cluster zu entfernen.
+>Diese Änderung gilt nur für Integrations- und Starter-Umgebungen. Sie müssen [ein Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) um das Plug-in in einem Pro Staging- oder Produktions-Cluster zu entfernen.
 
 1. Entfernen Sie die OpenSearch-Plug-in-Einträge aus Ihrer `.magento/services.yaml`.
 1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.
