@@ -3,9 +3,9 @@ title: Cache-Konfiguration anpassen
 description: Erfahren Sie, wie Sie die Cache-Konfigurationseinstellungen überprüfen und anpassen können, nachdem die Fastly-Service-Einrichtung abgeschlossen ist.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: eaa9980c437a9398f0d20d3c27832aecffc78fd9
+source-git-commit: 551a00932165dd1c0a876b8151ba14752ceac802
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Um Massenaktionen abzuschließen, die länger als 3 Minuten dauern, ändern Sie 
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Ruft schnell den Admin-Pfad für die Generierung der VCL-Datei aus der `app/etc/env.php`-Konfigurationsdatei ab.
 
@@ -79,7 +79,7 @@ Zu den Bereinigungsoptionen gehören:
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Weitere Informationen finden Sie [den Fastly-Konfigurationsoptionen](https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#further-configuration-options).
 
@@ -105,7 +105,7 @@ Das Fastly-Modul beinhaltet GeoIP-Handhabung, um Besucher automatisch umzuleiten
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 >[!NOTE]
 >
@@ -161,13 +161,15 @@ Weitere Informationen finden Sie im [Handbuch zu Backend-Einstellungen](https://
 
 ## Einfache Authentifizierung
 
-Die einfache Authentifizierung ist eine Funktion zum Schutz aller Seiten und Assets auf Ihrer Site
-mit einem Benutzernamen und einem Kennwort. Die **von Basic** nicht empfohlen
-Authentifizierung in der Produktionsumgebung. Sie können ihn im Staging konfigurieren
-um Ihre Site während des Entwicklungsprozesses zu schützen. Siehe [Standardauthentifizierungshandbuch“ in ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) Dokumentation zum Fastly CDN-Modul.
+Die einfache Authentifizierung ist eine Funktion, um jede Seite und jedes Asset auf Ihrer Site mit einem Benutzernamen und einem Kennwort zu schützen.
 
-Wenn Sie Benutzerzugriff hinzufügen und die Standardauthentifizierung für das Staging aktivieren, können Sie weiterhin
-Greifen Sie auf den Administrator zu, ohne dass zusätzliche Anmeldeinformationen erforderlich sind.
+Adobe **empfiehlt** die Standardauthentifizierung in Ihrer Produktionsumgebung nicht zu aktivieren. Sie können ihn im Staging konfigurieren, um Ihre Site während des Entwicklungsprozesses zu schützen. Siehe [Standardauthentifizierungshandbuch“ in ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) Dokumentation zum Fastly CDN-Modul.
+
+Wenn Sie Benutzerzugriff hinzufügen und die einfache Authentifizierung in der Staging-Umgebung aktivieren, können Sie weiterhin auf den Administrator zugreifen, ohne zusätzliche Anmeldeinformationen zu benötigen.
+
+>[!NOTE]
+>
+>Überprüfen **nicht** ob [!UICONTROL Enable HTTP access control] in der Cloud-Konsole für eine Umgebung aktiviert ist, in der Fastly aktiviert ist (z. B. Staging- oder Nicht-Live-Produktionsumgebungen). Wenn die Zugriffssteuerung auf diese Weise konfiguriert ist, können Benutzer, die zuvor Zugriff auf die Website hatten, möglicherweise weiterhin auf die Website zugreifen, wenn ihre Anmeldeinformationen von Fastly zwischengespeichert bleiben, auch nachdem ihr Zugriff widerrufen wurde.
 
 ## Erstellen benutzerdefinierter VCL-Snippets
 
@@ -185,7 +187,7 @@ Sowohl für Starter- als auch für Pro-Projekte können Sie die Option [!UICONTR
 
 - Rufen Sie für Startprojekte die Projekt-URL auf der Registerkarte [!UICONTROL Domains] im [!DNL Cloud Console] auf, um Ihre Projekt-URL hinzuzufügen.
 
-- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
+- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
 
 **Verwaltung der Fastly-Domain-Konfiguration über den Administrator**:
 
