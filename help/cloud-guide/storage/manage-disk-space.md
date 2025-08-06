@@ -3,9 +3,9 @@ title: Verwalten von Festplattenspeicher
 description: Erfahren Sie, wie Sie den Speicherplatz mithilfe der Befehlszeilenschnittstelle verwalten.
 feature: Cloud, Storage
 exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
-source-git-commit: b8cabaad4b7805858563cecbe5ffc2fdb9aeac58
+source-git-commit: 45d5a54bfd02fe9e61ca92789689dabf634d4bbe
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,8 @@ Zwei [Konfigurationsdateien](../environment/overview.md) steuern die Zuordnung v
 
 >[!IMPORTANT]
 >
->Bei Pro-Produktions- und Staging-Umgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um die Speicherplatzzuweisung zu ändern. Eine Vergrößerung der Pro-Produktions- und Staging-Umgebungen kann nur in bestimmten Intervallen erfolgen. Abhängig von Ihrer aktuellen Speicherplatznutzung empfiehlt der Support daher möglicherweise, die Speicherplatzzuweisung um mindestens 10 GB zu erhöhen. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden. Speicher kann nicht neu zugewiesen oder zwischen Ressourcen umverteilt werden. Um mehr Dateispeicherplatz hinzuzufügen, reduzieren Sie den für MySQL zugewiesenen Speicherplatz.
+>- Bei Pro-Produktions- und Staging-Umgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um die Speicherplatzzuweisung zu ändern. Eine Vergrößerung der Pro-Produktions- und Staging-Umgebungen kann nur in bestimmten Intervallen erfolgen. Abhängig von Ihrer aktuellen Speicherplatznutzung empfiehlt der Support daher möglicherweise, die Speicherplatzzuweisung um mindestens 10 GB zu erhöhen. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden. Speicher kann nicht neu zugewiesen oder zwischen Ressourcen umverteilt werden. Um mehr Dateispeicherplatz hinzuzufügen, reduzieren Sie den für MySQL zugewiesenen Speicherplatz.
+>- Pro-Produktions- und Staging-Umgebungen, die auf AWS gehostet werden, haben eine [obligatorische Abklingzeit von 6 Stunden](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) die für Speicherplatzerhöhungen gilt. Nachdem der Speicherplatz auf einer Bereitstellung erhöht wurde, müssen Sie 6 Stunden warten, bevor der Speicherplatz auf dieser Bereitstellung wieder erhöht werden kann.
 
 ### Anwendungsspeicherplatz
 
@@ -188,7 +189,7 @@ Die `.magento/services.yaml`-Datei steuert den für jeden Dienst verfügbaren Sp
 
 ## Überwachen des Festplattenspeichers
 
-In Pro-Produktionsumgebungen können Sie den Festplattenspeicher und andere Leistungsindikatoren mithilfe der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot; für New Relic überwachen. Weitere Informationen finden Sie unter [Überwachen der Leistung mit verwalteten Warnhinweisen](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Weitere Anleitungen finden Sie unter [Best Practices zum Beheben von Problemen mit der Datenbankleistung](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de).
+In Pro-Produktionsumgebungen können Sie den Festplattenspeicher und andere Leistungsindikatoren mithilfe der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot; für New Relic überwachen. Weitere Informationen finden Sie unter [Überwachen der Leistung mit verwalteten Warnhinweisen](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Weitere Anleitungen finden Sie unter [Best Practices zum Beheben von Problemen mit der Datenbankleistung](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
 
 ## Kein Platz übrig
 
