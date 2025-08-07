@@ -2,11 +2,11 @@
 title: ECE-Tools - Versionshinweise
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools-Paket.
 recommendations: noDisplay, catalog
-last-substantial-update: 2024-06-03T00:00:00Z
+last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: e447e19d89edeaec84314c52b377f3712e0f0400
+source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
 workflow-type: tm+mt
-source-wordcount: '3185'
+source-wordcount: '3269'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Das Paket [ece-tools](https://github.com/magento/ece-tools) besteht aus einer Re
 
 >[!NOTE]
 >
->Informationen [ Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter ](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
+>Informationen [ Aktualisierung auf die neueste Version des ](../dev-tools/update-package.md)-Pakets finden Sie unter `ece-tools`Aktualisieren der ECE-Tools“.
 
 Das `ece-tools`-Paket verwendet die folgende Versionssequenz: `200<major>.<minor>.<patch>`
 
@@ -28,20 +28,34 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v2002.2.6 {#latest}
+## v2002.2.7 {#latest}
+
+Veröffentlichungsdatum: 7. August 2025
+
+- ![fix icon](../../assets/fix.svg) **PHP 8.4 fixes**-added type compatibility.<!-- MCLOUD-13965 -->
+- ![fix icon](../../assets/fix.svg) **EOL validator**-Updated End of Life (EOL) services dates.<!-- MCLOUD-13929 -->
+- ![neues Symbol](../../assets/new.svg) **Valkey**-Hinzugefügte PHP 8.2- und PHP 8.3-Funktionstests.<!-- MCLOUD-13610 -->
+- ![fix icon](../../assets/fix.svg) **Valkey validator**-Die ECE-Tools-Warnmeldung wurde behoben.<!-- MCLOUD-13896 -->
+- ![fix icon](../../assets/fix.svg) **ECE-Tools**-Hinzugefügte Verbesserungen bei Unit-Tests.<!-- MCLOUD-13838 -->
+- ![neues Symbol](../../assets/new.svg) **Validator für Dienste**-Hinzugefügte neue Versionen unterstützen OpenSearch, MariaDB und PHP.<!-- MCLOUD-13923 -->
+- ![neues Symbol](../../assets/new.svg) **OpenSearch3**-Unterstützung für OpenSearch3.<!-- MCLOUD-13763 --> hinzugefügt
+- ![Fix icon](../../assets/fix.svg) **OpenSearch-Unterstützung für 2.4.4-p7/p12-** Validator-Skript aktualisiert.<!-- MCLOUD-13945 -->
+- ![neues Symbol](../../assets/new.svg) **OpenSearch3-Tests**-Funktionstests hinzugefügt.<!-- MCLOUD-13769 -->
+
+## v2002.2.6
 
 Veröffentlichungsdatum: 3. Juni 2025
 
-- ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Kompatibilität mit 2.4.8**-Aktualisierte Drittanbieterbibliotheken für bessere Kompatibilität mit 2.4.8<!-- MCLOUD-13707	 - -->
+- ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Kompatibilität mit 2.4.8**-Aktualisierte Drittanbieterbibliotheken für bessere Kompatibilität mit 2.4.8<!-- MCLOUD-13707 -->
 
 ## v2002.2.5
 
 Veröffentlichungsdatum: 27. Mai 2025
 
-- ![neues Symbol](../../assets/new.svg) **Kompatibilität mit Extended Valkey**-Kompatibilität mit Extended Valkey in Adobe Commerce.<!-- MCLOUD-13595	 - -->
-- ![Fix icon](../../assets/fix.svg) **Aktualisierter RabbitMQ-Validator**-Aktualisierter Validator für RabbitMQ.<!-- MCLOUD-13589	 - -->
-- ![Fix icon](../../assets/fix.svg) **Aktualisierter MariaDB-Validator**-Aktualisierter ECE-Tools-Validator für MariaDB 10.11.<!-- MCLOUD-13593	 - -->
-- ![fix icon](../../assets/fix.svg) **Extended Opensearch2 compatibility**-made Opensearch2 kompatibel mit den neuesten 2.4.4 Versionen.<!-- MCLOUD-13710	 - -->
+- ![neues Symbol](../../assets/new.svg) **Kompatibilität mit Extended Valkey**-Kompatibilität mit Extended Valkey in Adobe Commerce.<!-- MCLOUD-13595 -->
+- ![Fix icon](../../assets/fix.svg) **Aktualisierter RabbitMQ-Validator**-Aktualisierter Validator für RabbitMQ.<!-- MCLOUD-13589 -->
+- ![Fix icon](../../assets/fix.svg) **Aktualisierter MariaDB-Validator**-Aktualisierter ECE-Tools-Validator für MariaDB 10.11.<!-- MCLOUD-13593 -->
+- ![fix icon](../../assets/fix.svg) **Extended Opensearch2 compatibility**-made Opensearch2 kompatibel mit den neuesten 2.4.4 Versionen.<!-- MCLOUD-13710 -->
 
 ## v2002.2.4
 
@@ -53,8 +67,8 @@ Veröffentlichungsdatum: 24. April 2025
 
 Veröffentlichungsdatum: 9. April 2025
 
-- ![Fix icon](../../assets/fix.svg) **Fix Valkey** Problem mit der benutzerdefinierten Valkey-Konfiguration behoben.<!-- MCLOUD-13569	 - -->
-- ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator für RabbitMQ 4.0.<!-- MCLOUD-13560	 - -->
+- ![Fix icon](../../assets/fix.svg) **Fix Valkey** Problem mit der benutzerdefinierten Valkey-Konfiguration behoben.<!-- MCLOUD-13569 -->
+- ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator für RabbitMQ 4.0.<!-- MCLOUD-13560 -->
 
 ## v2002.2.2
 
@@ -64,16 +78,15 @@ Veröffentlichungsdatum: 7. April 2025
 
 Veröffentlichungsdatum: 7. April 2025
 
-- ![neues Symbol](../../assets/new.svg) **Valkey** - Es wurde Unterstützung für einen neuen Service (Valkey) hinzugefügt, der ein Ersatz für Redis ist.&lt;!— MCLOUD-13455 —>
-- ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5 hinzugefügt. &lt;!— MCLOUD-13493 —>
+- ![neues Symbol](../../assets/new.svg) **Valkey** - Es wurde Unterstützung für einen neuen Service (Valkey) hinzugefügt, der ein Ersatz für Redis ist.<!-- MCLOUD-13455 -->
+- ![fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5.<!-- MCLOUD-13493 --> hinzugefügt
 
 ## v2002.2.1
 
 Veröffentlichungsdatum: 6. Februar 2024
 
-- ![neues Symbol](../../assets/new.svg) **PHP 8.4**—Unterstützung für PHP 8.4.<!-- MCLOUD-13145     - --> hinzugefügt
-- ![Fix icon](../../assets/fix.svg) **Validator for OpenSearch**-Fixes Der Validator, der eine irreführende Meldung über die falsche Version des Dienstes erzeugt hat.&lt;!— MCLOUD-13184 —>
-
+- ![neues Symbol](../../assets/new.svg) **PHP 8.4**—Unterstützung für PHP 8.4.<!-- MCLOUD-13145 --> hinzugefügt
+- ![Fix icon](../../assets/fix.svg) **Validator for OpenSearch**-Fixes Der Validator, der eine irreführende Meldung über die falsche Version des Dienstes erzeugt hat.<!-- MCLOUD-13184 -->
 
 ## v2002.2.0
 
@@ -231,7 +244,7 @@ Veröffentlichungsdatum: 1. Februar 2021
 
 - ![Fix icon](../../assets/fix.svg) **MariaDB 10.3 validation**—Behobene Validierung von MariaDB 10.3 für Adobe Commerce 2.3.6-p1.<!--MCLOUD-7416-->
 
-- ![Fix icon](../../assets/fix.svg) **Cache:flush-Protokollierung** - Verbesserte Protokolleinträge, um den Beginn und das Ende des `cache:flush` anzugeben.<!--MCLOUD-7503-->
+- ![Fix icon](../../assets/fix.svg) **Cache:flush Protokollierung** - Verbesserte Protokolleinträge, um den Beginn und das Ende des `cache:flush` anzugeben.<!--MCLOUD-7503-->
 
 ## v2002.1.4
 
