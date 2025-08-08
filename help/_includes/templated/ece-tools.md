@@ -1,13 +1,13 @@
 ---
-source-git-commit: 7f2934af84c947046fed3a32c3b6e2937aed418a
+source-git-commit: 69b764a03e6c272498e57645dca40d29c4e79626
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
 # ECE-Tools
 
-**Version**: 2002.2.5
+**Version**: 2002.2.7
 
 Diese Referenz enthält 34 Befehle, die über das `ece-tools` Befehlszeilen-Tool verfügbar sind.
 Die anfängliche Liste wird automatisch mit dem Befehl `ece-tools list` unter Adobe Commerce in der Cloud-Infrastruktur generiert.
@@ -25,9 +25,16 @@ Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird,
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-#### `--quiet`, `-q`
+#### `--silent`
 
 Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+#### `--quiet`, `-q`
+
+Es werden nur Fehler angezeigt. Alle anderen Ausgaben werden unterdrückt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -56,7 +63,6 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 Negieren Sie die Option &quot;—ansi“
 
-- Standard: `false`
 - Akzeptiert keinen Wert
 
 #### `--no-interaction`, `-n`
@@ -401,7 +407,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ece-tools backup:restore [-f|--force] [--file [FILE]]
 ```
 
-Stellen Sie wichtige Konfigurationsdateien wieder her. Führen Sie backup:list aus, um die Liste der Backup-Dateien anzuzeigen.
+Stellen Sie wichtige Konfigurationsdateien wieder her. Backup ausführen:list um die Liste der Backup-Dateien anzuzeigen.
 
 ### Optionen
 
