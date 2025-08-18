@@ -3,9 +3,9 @@ title: Pro-Projekt-Workflow
 description: Erfahren Sie, wie Sie die Pro-Entwicklungs- und Bereitstellungs-Workflows verwenden.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: b4905acf71e4cb71eb369cb6d4bb3abe9ada4e9d
+source-git-commit: 8aacac9ae721bc98cbe29e67ddf23d784e478e55
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,20 @@ Das Pro-Projekt umfasst ein einzelnes Git-Repository mit einer globalen `master`
 
 ![Pro Umgebungsliste](../../assets/pro-environments.png)
 
-Diese Umgebungen sind `read-only` und akzeptieren bereitgestellte Code-Änderungen von Verzweigungen, die aus Ihrem lokalen Arbeitsbereich gepusht werden. Siehe [Pro Architektur](pro-architecture.md) für einen vollständigen Überblick über die Pro-Umgebungen. Siehe [[!DNL Cloud Console]](../project/overview.md#cloud-console) für einen Überblick über die Liste der Pro-Umgebungen in der Projektansicht.
+Diese Umgebungen sind `read-only` und akzeptieren bereitgestellte Code-Änderungen aus Verzweigungen, die nur aus Ihrem lokalen Arbeitsbereich gepusht werden.
 
 Die folgende Grafik zeigt den Pro-Workflow zum Entwickeln und Bereitstellen , der einen einfachen, Git-verzweigenden Ansatz verwendet. Sie [ Code ](#development-workflow) einer aktiven Verzweigung auf Grundlage der `integration`-Umgebung entwickeln, indem Sie Code-Änderungen _pushen_ und _abrufen_ auf und von Ihrer entfernten, aktiven Verzweigung aus. Sie stellen verifizierten Code bereit _indem Sie die_-Verzweigung mit der Basisverzweigung zusammenführen, wodurch ein automatisierter [Build- und Bereitstellungs](#deployment-workflow)-Prozess für diese Umgebung aktiviert wird.
 
 ![Allgemeine Ansicht des Entwicklungs-Workflows der Pro-Architektur](../../assets/pro-dev-workflow.png)
+
+Da die Umgebung schreibgeschützt ist, können Sie Code-Änderungen nicht direkt in der Cloud-Umgebung vornehmen. Wenn Sie versuchen, `composer install` auszuführen, um Module zu installieren, wird eine Fehlermeldung angezeigt, z. B.:
+
+```bash
+file_put_contents(...): Failed to open stream: Read-only file system  
+The disk hosting /app/<cluster_ID> is full
+```
+
+Weitere Informationen finden Sie unter [Pro Architektur](pro-architecture.md) für einen Überblick über Pro-Umgebungen und unter [[!DNL Cloud Console]](../project/overview.md#cloud-console) für einen Überblick über die Liste der Pro-Umgebungen in der Projektansicht.
 
 ## Entwicklungs-Workflow
 
