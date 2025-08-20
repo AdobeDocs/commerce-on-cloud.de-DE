@@ -3,7 +3,7 @@ title: Erste Schritte mit benutzerdefinierten VCL-Snippets
 description: Erfahren Sie mehr über die Verwendung von Sprachcodeausschnitten in Varnish Control, um die Fastly-Service-Konfiguration für Adobe Commerce anzupassen.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-source-git-commit: 71fb8f5b3f32553d8b247de44fea29b1bb945584
+source-git-commit: a51946f65ccd606cde6fbb4278f625a49ae42dad
 workflow-type: tm+mt
 source-wordcount: '2037'
 ht-degree: 0%
@@ -108,6 +108,20 @@ Die folgenden Beispiele zeigen, wie Sie benutzerdefinierte VCL-Snippets vom Admi
 - [Benutzerdefinierte VCL für IP-Zulassungsliste](fastly-vcl-allowlist.md)
 - [Benutzerdefinierte VCL für IP-Blockierungsliste](fastly-vcl-blocking.md)
 - [Fastly-Cache umgehen](fastly-vcl-bypass-to-origin.md)
+
+## Snippets, die im Commerce-Admin nicht angezeigt/geändert werden können
+
+Einige Snippets können nicht direkt in der Admin von Commerce angezeigt oder geändert werden. Beispiel: [dynamische Snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Im Abschnitt Benutzerdefinierte VCL-Snippets werden keine Snippets angezeigt, die vom Cloud-Support-Team direkt zum [Fastly-Management-Dashboard“ hinzugefügt ](fastly.md#fastly-service-account-and-credentials).
+
+
+**So beobachten Sie die vom Cloud-Support-Team hinzugefügten Snippets:**
+
+1. Navigieren Sie zum Abschnitt **Tools**.
+
+1. Klicken Sie **Alle Versionen auflisten** neben _Versionsverlauf_.
+
+1. Klicken Sie auf das Augensymbol neben der entsprechenden VCL-Version, um die vorhandenen Snippets anzuzeigen.
+
 
 ## Verwalten von VCL mithilfe der API
 
@@ -270,6 +284,7 @@ Nachdem Sie ein benutzerdefiniertes VCL-Snippet hinzugefügt haben, fügt Fastly
    curl -H "Fastly-Key: $FASTLY_API_TOKEN" https://api.fastly.com/service/$FASTLY_SERVICE_ID/version/$FASTLY_EDIT_VERSION/activate -X PUT
    ```
 
+
 ## API-Schnellreferenz für VCL-Snippets
 
 Diese API-Anfragebeispiele verwenden exportierte Umgebungsvariablen, um die Anmeldeinformationen bereitzustellen, mit denen sich Fastly authentifizieren kann. Weitere Informationen zu diesen Befehlen finden Sie in der [Fastly-API-Referenz](https://docs.fastly.com/api/config#vcl).
@@ -317,16 +332,3 @@ Diese API-Anfragebeispiele verwenden exportierte Umgebungsvariablen, um die Anme
 - **Überschreiben von Werten im [Standard-VCL-Code von Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets)**
 
   Erstellen Sie einen Ausschnitt mit aktualisierten Werten und weisen Sie `100` Priorität zu.
-
-## Snippets, die im Commerce-Admin nicht angezeigt/geändert werden können
-
-Einige Snippets können nicht direkt in der Admin von Commerce angezeigt oder geändert werden. Beispiel: [dynamische Snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Im Abschnitt Benutzerdefinierte VCL-Snippets werden keine Snippets angezeigt, die vom Cloud-Support-Team direkt zum [Fastly-Management-Dashboard“ hinzugefügt ](fastly.md#fastly-service-account-and-credentials).
-
-
-**So beobachten Sie die vom Cloud-Support-Team hinzugefügten Snippets:**
-
-1. Navigieren Sie zum Abschnitt **Tools**.
-
-1. Klicken Sie **Alle Versionen auflisten** neben _Versionsverlauf_.
-
-1. Klicken Sie auf das Augensymbol neben der entsprechenden VCL-Version, um die vorhandenen Snippets anzuzeigen.
