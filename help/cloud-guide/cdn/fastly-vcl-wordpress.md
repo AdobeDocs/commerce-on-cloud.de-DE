@@ -2,7 +2,8 @@
 title: Anforderungen an ein CMS-Backend umleiten
 description: Erfahren Sie, wie Sie eingehende Anfragen von einem Adobe Commerce-Store mithilfe des Fastly-Edge-Moduls auf eine separate WordPress-Site umleiten können.
 feature: Cloud, Configuration, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ef024c68-395b-4d47-9362-a8404a93dbbe
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -45,6 +46,8 @@ Verwenden Sie die Fastly Edge-Module, um benutzerdefinierten VCL-Code vom Admin 
 
    - Konfigurieren Sie das Edge-Modul _Sonstige CMS/Backend_ Integration, um das Umschreiben von URLs von Adobe Commerce in das WordPress-Backend zu verarbeiten.
 
-     Detaillierte Anweisungen finden Sie unter [Fastly Edge Modules - Other CMS/Backend Integration](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in der Dokumentation _Fastly CDN Module for Magento 2_ .
+     Detaillierte Anweisungen finden Sie unter [Fastly Edge Modules - Other CMS/Backend Integration](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/Edge-Modules/EDGE-MODULE-OTHER-CMS-INTEGRATION.md) in der Dokumentation _Fastly CDN Module for Magento 2_.
 
 1. Nach dem Aktualisieren der Fastly-Service-Konfiguration testen Sie Ihren Adobe Commerce-Store, um sicherzustellen, dass die angegebenen URL-Anfragen für WordPress korrekt umgeleitet werden.
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->

@@ -1,52 +1,133 @@
 ---
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 0%
+source-wordcount: '685'
+ht-degree: 1%
 
 ---
 # Adobe Commerce auf Cloud-Infrastruktur
 
 Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
 
-- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/overview.html?lang=de)
-- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=de) auf Cloud-Infrastruktur
+- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
 
-## Adobe Open Source Verhaltenskodex
+## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Adobe Open Source Code of Conduct](code-of-conduct.md) oder den [.NET Foundation Code of Conduct](https://dotnetfoundation.org/about/policies/code-of-conduct) übernommen.
-Siehe den [Beitragende](contributing.md) Artikel.
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
+
+## Über Ihre Beiträge zu Adobe-Inhalten
+
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+
+Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Änderungen vornehmen möchten, öffnen Sie den Artikel und klicken Sie auf den **Bearbeiten**-Link, über den Sie zur GitHub-Quelle für den Artikel gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe das allgemeine Handbuch für Mitwirkende an [Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen.
 
-Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repo einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
+Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repository eingeben, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
 ### Wichtige Änderungen oder neue Artikel von Community-Mitgliedern
 
-Wenn Sie Teil der Adobe-Community sind und einen Artikel erstellen oder wichtige Änderungen vornehmen möchten, senden Sie ein Problem auf der Registerkarte „Probleme“, um eine Konversation mit dem Dokumentations-Team zu beginnen. Sobald Sie sich auf einen Plan geeinigt haben, arbeiten Sie mit einem Mitarbeiter zusammen, um den Inhalt zu erstellen und zu platzieren.
+Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wichtige Änderungen vornehmen möchten, verwenden Sie im Git-Repository die Registerkarte „Probleme“, um ein Problem zu senden und eine Konversation mit dem Dokumentations-Team zu beginnen. Nachdem Sie sich auf einen Plan geeinigt haben, müssen Sie mit einem Mitarbeiter zusammenarbeiten, um diese neuen Inhalte durch eine Kombination von Arbeiten in den öffentlichen und privaten Repositorys einzubringen.
 
-### Wesentliche Veränderungen durch Adobe-Mitarbeiter
+### Wesentliche Veränderungen durch Adobe Mitarbeiter
 
-Wenn Sie technischer Redakteur, Programmmanager oder Entwickler eines Adobe-Produktteams sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, verwenden Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs`.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
 
 ## Tools und Einrichtung
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im [Handbuch für Mitwirkende an Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)Dokumenten .
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)
 
-## Markdown
+## Verwenden von Markdown zum Formatieren des Themas
 
 Alle Artikel in diesem Repository verwenden GitHub-Markdown. Wenn Sie mit Markdown nicht vertraut sind, lesen Sie:
 
 - [Markdown-Grundlagen](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [Druckbare Markdown-Anleitung](https://docs.github.com/en/get-started/quickstart/git-cheatsheet)
+- [Druckbare Markdown-Anleitung](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-## Bezeichnungen
+## Vorlagen
 
-Im öffentlichen Repository werden Pull-Anforderungen automatisierte Kennzeichnungen zugewiesen, damit wir den Workflow für Pull-Anforderungen verwalten und Sie über den Status Ihrer Pull-Anforderung informieren können:
+Bei einigen Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte Inhalte zu generieren. Anwendungsfälle für diesen Ansatz sind:
 
-- **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
-- **ready-to-merge**: Bereit zur Überprüfung durch das Überprüfungs-Team für Pull-Anforderungen.
+- Veröffentlichen großer Mengen programmgesteuert generierter Inhalte
+- Bereitstellung einer zentralen Datenquelle für Kunden über mehrere Systeme hinweg, die maschinenlesbare Dateiformate wie YAML für die Integration benötigen (z. B. Cloud-CLI-Tools, Service-Konfigurationen)
+
+Beispiele für vorlagenbasierte Inhalte sind unter anderem:
+
+- [Cloud-CLI-Referenz](help/templated/cloud-cli-ref.md)
+- [Cloud-Pakete](help/templated/cloud-packages.md)
+- [ECE-Tools-Referenz](help/templated/ece-tools.md)
+- [PHP-Erweiterungen für die Cloud](help/templated/php-extensions-cloud.md)
+
+### Vorlageninhalt generieren
+
+Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen Produktverfügbarkeit und Systemanforderungen hinzufügen. Die Pflege aller anderen vorlagenbasierten Inhalte wird entweder automatisiert oder von einem dedizierten Team-Mitglied verwaltet. Diese Anweisungen sind für die meisten Autoren gedacht.
+
+>**HINWEIS:**
+>
+>- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
+
+Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
+
+- `_jekyll` - Enthält vorlagenbasierte Themen und erforderliche Assets
+- `_jekyll/_data` - Enthält die maschinenlesbaren Dateiformate, die zum Rendern von Vorlagen verwendet werden
+- `_jekyll/templated` - Enthält HTML-basierte Vorlagendateien, die die Liquid Templating-Sprache verwenden
+- `help/_includes/templated` - Enthält die generierte Ausgabe für Vorlageninhalte `.md` Dateiformat, damit sie in Experience League-Themen veröffentlicht werden können. Das Renderskript schreibt die generierte Ausgabe automatisch in dieses Verzeichnis für Sie
+
+So aktualisieren Sie Vorlageninhalte:
+
+1. Öffnen Sie in Ihrem Texteditor eine Datendatei im `_jekyll/_data`. Beispiel:
+
+   - [Cloud-CLI-Referenz](help/templated/cloud-cli-ref.md): `_jekyll/_data/cloud-cli-ref.yaml`
+   - [Cloud-Pakete](help/templated/cloud-packages.md): `_jekyll/_data/cloud-packages.yaml`
+   - [ECE-Werkzeugreferenz](help/templated/ece-tools.md): `_jekyll/_data/ece-tools.yaml`
+
+2. Verwenden Sie die vorhandene YAML-Struktur, um Einträge zu erstellen.
+
+3. Navigieren Sie zum `_jekyll`.
+
+   ```bash
+   cd _jekyll
+   ```
+
+4. Generieren von Vorlageninhalten und Schreiben der Ausgabe in das `help/_includes/templated`.
+
+   ```bash
+   rake render
+   ```
+
+   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren.
+
+5. Navigieren Sie zurück zum `root`.
+
+   ```bash
+   cd ..
+   ```
+
+6. Stellen Sie sicher, dass die erwarteten `help/_includes/templated` geändert wurden.
+
+   ```bash
+   git status
+   ```
+
+   Es sollte eine Ausgabe ähnlich der folgenden angezeigt werden:
+
+   ```bash
+   modified:   _data/cloud-cli-ref.yaml
+   modified:   help/_includes/templated/cloud-cli-ref.md
+   ```
+
+7. Übertragen Sie Ihre Änderungen.
+
+   ```bash
+   git add .
+   git commit -m "descriptive message of the intended commit"
+   git push
+   ```
+
+In der Jekyll-Dokumentation finden Sie weitere Details zu [Datendateien](https://jekyllrb.com/docs/datafiles), [Flüssigkeitsfiltern](https://jekyllrb.com/docs/liquid/filters/) und anderen Funktionen.

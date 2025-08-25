@@ -2,7 +2,8 @@
 title: Spam für Verweise blockieren
 description: Blockieren Sie Empfehlungs-Spam auf Ihrer Site mit dem Fastly Edge-Wörterbuch und einem benutzerdefinierten VCL-Snippet.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
+source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 0%
@@ -79,7 +80,7 @@ Bevor Sie einen Ausschnitt basierend auf diesem Beispiel erstellen, überprüfen
 
 - `dynamic` - Wert 0 zeigt einen [regulären Ausschnitt](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) an, der für die Fastly-Konfiguration in die versionierte VCL hochgeladen werden soll.
 
-- `priority` - Bestimmt, wann der VCL-Snippet ausgeführt wird. Die Priorität `5` darin, diesen Code vor einem der standardmäßigen Magento-VCL-Snippets (`magentomodule_*`) auszuführen, denen eine Priorität von 50 zugewiesen wurde. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
+- `priority` - Bestimmt, wann der VCL-Snippet ausgeführt wird. Die Priorität `5` darin, diesen Code-Ausschnitt auszuführen, bevor einem der standardmäßigen Magento VCL-Ausschnitte (`magentomodule_*`) eine Priorität von 50 zugewiesen wird. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
 
 - `type` - Gibt einen Speicherort an, an dem der Ausschnitt in die VCL-Version eingefügt werden soll. In diesem Beispiel ist der VCL-Ausschnitt ein `recv`. Wenn der Ausschnitt in die VCL-Version eingefügt wird, wird er der `vcl_recv`-Unterroutine, unterhalb des standardmäßigen Fastly-VCL-Codes und über allen Objekten hinzugefügt.
 
@@ -135,3 +136,5 @@ Validiert die aktualisierte VCL-Version während des Upload-Prozesses schnell. W
 {{$include /help/_includes/vcl-snippet-modify.md}}
 
 {{$include /help/_includes/vcl-snippet-delete.md}}
+
+<!-- Last updated from includes: 2025-01-27 17:16:28 -->
