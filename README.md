@@ -9,8 +9,8 @@ ht-degree: 1%
 
 Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
 
-- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
+- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
 
 ## Adobe Open Source-Verhaltenskodex
 
@@ -18,7 +18,7 @@ Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
-Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
@@ -40,7 +40,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction)
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
