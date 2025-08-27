@@ -1,7 +1,7 @@
 ---
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+source-git-commit: f75dbbc9726ff21a648b1bb3d8f06cb45a5d6b08
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,28 @@ Dieses Verzeichnis enthält Aufgabendefinitionen für die Aufgabe nach Funktione
 
 ## Dateiorganisation
 
+### `adobe-docs-tasks.rake`
+
+Enthält allgemeine Anforderungen, freigegebene Funktionen und nicht mit Namespace versehene Aufgaben für Adobe Commerce in Experience League Dokumentations-Repository-Rake-Aufgaben:
+
+- `whatsnew` - Daten für Nachrichtenübersicht generieren (Standard: seit der letzten Aktualisierung)
+- `render` - Rendern von Vorlagendateien und Verwalten von Includes
+
 ### `includes.rake`
 
-Enthält alle Include-bezogenen RAKE-Aufgaben unter dem `:includes`-Namespace:
+Enthält im `:includes`-Namespace organisierte Include-Verwaltungsaufgaben:
 
-- `includes:maintain_relationships` - Erkennen und Verwalten von Include-Beziehungen
+- `includes:maintain_relationships` - Erkennen und Verwalten von Include-Beziehungen in Markdown-Dateien
 - `includes:maintain_timestamps` - Hinzufügen/Aktualisieren von Zeitstempeln basierend auf eingeschlossenen Dateiänderungen
 - `includes:maintain_all` - Führen Sie beide Vorgänge nacheinander aus.
+- `includes:unused` - Nicht verwendete Include-Dateien suchen
+
+### `images.rake`
+
+Enthält Bildverwaltungsaufgaben, die im Namespace `:images` organisiert sind:
+
+- `images:optimize` - Optimieren von Bildern in geänderten, nicht komprimierten Dateien
+- `images:unused`: Suchen nach nicht verwendeten Bildern im Projekt
 
 ## Funktionsweise
 
