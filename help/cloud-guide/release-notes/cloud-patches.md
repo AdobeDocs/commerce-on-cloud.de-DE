@@ -4,9 +4,9 @@ description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud-Pat
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: 09d392bb527699403d0b9537ea3c71e189bc0cf4
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,13 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 <!--Add release notes below-->
 
-## v1.1.10 {#latest}
+## v1.1.11 {#latest}
+
+Veröffentlichungsdatum: 9. September 2025
+
+- ![Fix icon](../../assets/fix.svg) **WebAPI**-Fix für CVE-2025-54236.<!-- MCLOUD-14016 -->
+
+## v1.1.10
 
 Veröffentlichungsdatum: 7. August 2025
 
@@ -52,13 +58,13 @@ Veröffentlichungsdatum: 3. Juni 2025
 
 Veröffentlichungsdatum: 5. Mai 2025
 
-- ![neues Symbol](../../assets/new.svg) **Aktualisierter Patch für Commerce 2.4.4 auf 2.4.8** - Dies ist ein aktualisierter Patch für [CVE-2025-24434](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), der in Version 1.1.7 veröffentlicht wurde<!-- MCLOUD-13619 -->
+- ![neues Symbol](../../assets/new.svg) **Aktualisierter Patch für Commerce 2.4.4 auf 2.4.8** - Dies ist ein aktualisierter Patch für [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch), der in Version 1.1.7 veröffentlicht wurde<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
 Veröffentlichungsdatum: 24. April 2025
 
-- ![neues Symbol](../../assets/new.svg) **Aktualisierter Patch für Commerce 2.4.4 auf 2.4.7** - Dies ist ein aktualisierter Patch für [CVE-2025-24434](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), der in Version 1.1.4 veröffentlicht wurde<!-- MCLOUD-13240 -->
+- ![neues Symbol](../../assets/new.svg) **Aktualisierter Patch für Commerce 2.4.4 auf 2.4.7** - Dies ist ein aktualisierter Patch für [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08), der in Version 1.1.4 veröffentlicht wurde<!-- MCLOUD-13240 -->
 
 ## v1.1.5
 
@@ -70,7 +76,7 @@ Veröffentlichungsdatum: 15. April 2025
 
 Veröffentlichungsdatum: 13. Februar 2025
 
-- ![neues Symbol](../../assets/new.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update aktualisiert Patches [CVE-2025-24434](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
+- ![neues Symbol](../../assets/new.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update aktualisiert Patches [CVE-2025-24434](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).<!-- MCLOUD-13240	 - -->
 
 ## v1.1.3
 
@@ -82,13 +88,13 @@ Veröffentlichungsdatum: 6. Februar 2025
 
 Veröffentlichungsdatum: 5. November 2024
 
-- ![Fix-Symbol](../../assets/fix.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update behebt eine [CVE-2024-45115](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) Sicherheitslücke für Adobe Commerce bei der Verwendung des B2B-Moduls.<!-- MCLOUD-12980 - -->
+- ![Fix-Symbol](../../assets/fix.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update behebt eine [CVE-2024-45115](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73) Sicherheitslücke für Adobe Commerce bei der Verwendung des B2B-Moduls.<!-- MCLOUD-12980 - -->
 
 ## v1.1.1
 
 Veröffentlichungsdatum: 5. November 2024
 
-- ![Fix icon](../../assets/fix.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update behebt eine kritische [CVE-2024-34102](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting-Schwachstelle.<!-- MCLOUD-12980 - -->
+- ![Fix icon](../../assets/fix.svg) **Patch für Commerce 2.4.4 bis 2.4.7 hinzugefügt** - Dieses Update behebt eine kritische [CVE-2024-34102](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102?lang=en) CosmicSting-Schwachstelle.<!-- MCLOUD-12980 - -->
 
 ## v1.1.0
 
@@ -166,7 +172,7 @@ Kritischer Patch für Adobe Commerce 2.4.5:
 
 - **Problem mit Bestellungen mit Braintree Payments** - Dieser Patch löst ein wichtiges Problem, das Administratoren daran hindert, neue Bestellungen oder Neubestellungen aufzugeben.<!-- MCLOUD-9137 -->
 
-Siehe [Der Administrator kann keine Bestellung/Neuanordnung erstellen, wenn Braintree Payment aktiviert ist](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html?lang=de).
+Siehe [Der Administrator kann keine Bestellung/Neuanordnung erstellen, wenn Braintree Payment aktiviert ist](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.html).
 
 ## v1.0.17
 
@@ -182,7 +188,7 @@ Kritischer Patch für Adobe Commerce 2.3.3-p1 und neuere Versionen:
 
 Patches wurden aktualisiert, um eine **kritische** Sicherheitslücke zu beheben, die zu einer nicht authentifizierten Ausführung von Remote-Code führt.<!-- MCLOUD-8479 -->
 
-Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/de/security/products/magento/apsb22-12.html).
+Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -199,7 +205,7 @@ Kritischer Patch für Adobe Commerce 2.3.3-p1 und neuere Versionen:
 
 Es wurde ein Patch hinzugefügt, um eine **kritische** Sicherheitslücke zu beheben, die zu einer nicht authentifizierten Ausführung von Remote-Code führte.<!-- MCLOUD-8461 -->
 
-Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/de/security/products/magento/apsb22-12.html).
+Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -215,7 +221,7 @@ Veröffentlichungsdatum: 12. August 2021
 
 Kritischer Patch für Adobe Commerce 2.4.3 und 2.3.7-p1:
 
-- **Problem mit API-Ratenbegrenzung** - Dieser Patch korrigiert ein standardmäßiges Ratenlimit, das Web-APIs daran hinderte, Anfragen mit mehr als 20 Elementen in einem Array zu verarbeiten. Dieser Patch erhöht den Standardwert des Ratenlimits. Siehe die Versionshinweise zu Adobe Commerce [2.4.3](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
+- **Problem mit API-Ratenbegrenzung** - Dieser Patch korrigiert ein standardmäßiges Ratenlimit, das Web-APIs daran hinderte, Anfragen mit mehr als 20 Elementen in einem Array zu verarbeiten. Dieser Patch erhöht den Standardwert des Ratenlimits. Siehe die Versionshinweise zu Adobe Commerce [2.4.3](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3#apply-mc-43048__set_rate_limits__243patch-to-address-issue-with-api-rate-limiting).<!-- MC-43048 -->
 
 ## v1.0.11
 
