@@ -1,27 +1,30 @@
 ---
 title: Cloud-CLI
 description: Erfahren Sie mehr über die Magento-Cloud-CLI und wie sie Ihnen bei der Verwaltung lokaler Entwicklungsumgebungen für Ihr Adobe Commerce on Cloud-Infrastrukturprojekt hilft.
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 71a705f2-8672-4125-b539-b7b1621f2f64
+source-git-commit: 82d89f442792baec995dd0be40f2a49cba168f76
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
 
-
 # Cloud-CLI
 
-Mit dem `magento-cloud` CLI-Tool können Entwickler und Systemadministratoren Cloud-Projekte und -Umgebungen verwalten, Routinen ausführen und Automatisierungsaufgaben lokal ausführen. Die `magento-cloud` CLI erweitert die Funktionen und Möglichkeiten der [[!DNL Cloud Console]](../../get-started/cloud-console.md). Nachdem Sie die `magento-cloud` CLI auf Ihrer lokalen Workstation installiert haben, können Sie sie zur Verwaltung Ihrer Adobe Commerce in Cloud Infrastructure Starter- und Pro-Integrationsumgebungen verwenden.
+Die `magento-cloud` CLI ist ein Befehlszeilen-Tool, mit dem Entwickelnde und Systemadministratoren Adobe Commerce auf Cloud-Infrastrukturprojekten und -Umgebungen von ihrer lokalen Workstation aus verwalten können.
+
+Dieses Tool erweitert die Funktionalität der [[!DNL Cloud Console]](../../get-started/cloud-console.md) durch zusätzliche Automatisierungsfunktionen und direkten Zugriff auf Projektverwaltungsfunktionen. Nachdem Sie das Tool lokal installiert haben, können Sie es für die Verwaltung von Starter- und Pro-Integrationsumgebungen verwenden.
 
 >[!NOTE]
 >
->Dies ist ein lokales Tool und kann nicht mit dieser Methode in der Cloud-Umgebung installiert werden (die schreibgeschützt ist). Module können nur über den Bereitstellungs-Workflow (**) in der Cloud-Umgebung installiert**
->- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>Dies ist ein lokales Tool und wird nur auf Unix-basierten Betriebssystemen unterstützt. Windows wird nicht unterstützt. Es kann nicht mit der auf dieser Seite beschriebenen Methode in der Cloud-Umgebung installiert werden (die schreibgeschützt ist). Module können nur über einen der folgenden (Bereitstellungs **Workflows) in der Cloud** Umgebung installiert werden.
+>
+>- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **So installieren Sie die `magento-cloud` CLI**:
 
-1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de) über _Schreibzugriff_ verfügt.
+1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) über _Schreibzugriff_ verfügt.
 
 1. Installieren Sie `magento-cloud` CLI.
 
@@ -61,7 +64,7 @@ Mit dem `magento-cloud` CLI-Tool können Entwickler und Systemadministratoren Cl
 
 ## Allgemeine Befehle
 
-Adobe hat diese Befehle für die Verwaltung von Cloud-Integrationsumgebungen entwickelt und empfiehlt, die `magento-cloud` CLI in einem Projektverzeichnis auszuführen, damit Sie den `-p <project-ID>`-Parameter weglassen können.
+Adobe hat diese Befehle für die Verwaltung von Cloud-Integrationsumgebungen entworfen und empfiehlt, die `magento-cloud` CLI in einem Projektverzeichnis auszuführen, damit Sie den `-p <project-ID>` Parameter weglassen können.
 
 Die folgende Liste der häufig verwendeten `magento-cloud` CLI-Befehle enthält nur die erforderlichen Optionen. Sie können die `--help`-Option mit jedem Befehl verwenden, um weitere Informationen anzuzeigen.
 
@@ -134,7 +137,7 @@ Die folgenden Schritte zeigen, wie Sie die CLI- und Git-Befehle synonym zur Verw
 
 1. Wechseln Sie auf Ihrer lokalen Workstation in Ihr Projektverzeichnis.
 
-1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de).
+1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Melden Sie sich bei Ihrem Projekt an.
 
