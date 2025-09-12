@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Klarstellung der unterstützten Betriebssysteme für <code class="language-plaintext highlighter-rouge">magento-cloud</code> CLI-Tool <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">Installation</a>.</p>
+      <td><p>Klarstellung der unterstützten Betriebssysteme für <code class="language-plaintext highlighter-rouge">magento-cloud</code> CLI-Tool <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">Installation</a>.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Versionshinweise</a> für das Cloud-Patches-Paket v1.1.11 wurde hinzugefügt.</p>
+      <td><p>Das <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Versionshinweise</a> für das Cloud-Patches-Paket v1.1.11 wurde hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.7 aktualisiert.</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.7 aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -89,7 +89,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurden <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise</a> für Cloud-Komponenten, Docker, Patches und das ECE-Tool-Paket hinzugefügt.</p>
+      <td><p>Es wurden <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise</a> für Cloud-Komponenten, Docker, Patches und das ECE-Tool-Paket hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -111,7 +111,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Hinweis zur obligatorischen 6-stündigen Abklingzeit nach dem <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space">Speicherplatz steigt</a> für auf AWS gehostete Projekte hinzugefügt.</p>
+      <td><p>Es wurde ein Hinweis zur obligatorischen 6-stündigen Abklingzeit nach dem <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space">Speicherplatz steigt</a> für auf AWS gehostete Projekte hinzugefügt.</p>
 </td>
       <td>
         Technisch
@@ -133,7 +133,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurden zusätzliche Informationen zur <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">einfachen Authentifizierung</a> in Fastly hinzugefügt.</p>
+      <td><p>Es wurden zusätzliche Informationen zur <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">einfachen Authentifizierung</a> in Fastly hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -155,7 +155,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurden fehlende <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/valkey">Konfigurations</a>-Details für den Valkey-Service hinzugefügt.</p>
+      <td><p>Es wurden fehlende <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/valkey">Konfigurations</a>-Details für den Valkey-Service hinzugefügt.</p>
 </td>
       <td>
         Technisch
@@ -177,7 +177,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Entfernte <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">Upgrade-</a>) für Commerce-Versionen, die das Ende der Unterstützung erreicht haben und Verwirrung verursachten.</p>
+      <td><p>Entfernte <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version">Upgrade-</a>) für Commerce-Versionen, die das Ende der Unterstützung erreicht haben und Verwirrung verursachten.</p>
 </td>
       <td>
         Größere Aktualisierung, Feedback
