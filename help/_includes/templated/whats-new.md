@@ -1,8 +1,8 @@
 ---
-source-git-commit: f985bfc32040919a992b82b56e2f1a58370b3834
+source-git-commit: 988b07b827c32c94a8cb2d30abb7e73fec71c4a0
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 4%
+source-wordcount: '128'
+ht-degree: 3%
 
 ---
 # Neue Vorlage
@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Klarstellung der unterstützten Betriebssysteme für <code class="language-plaintext highlighter-rouge">magento-cloud</code> CLI-Tool <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">Installation</a>.</p>
+      <td><p>Klarstellung der unterstützten Betriebssysteme für <code class="language-plaintext highlighter-rouge">magento-cloud</code> CLI-Tool <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview">Installation</a>.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Versionshinweise</a> für das Cloud-Patches-Paket v1.1.11 wurde hinzugefügt.</p>
+      <td><p>Das <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Versionshinweise</a> für das Cloud-Patches-Paket v1.1.11 wurde hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.7 aktualisiert.</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.7 aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -89,7 +89,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurden <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise</a> für Cloud-Komponenten, Docker, Patches und das ECE-Tool-Paket hinzugefügt.</p>
+      <td><p>Es wurden <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise</a> für Cloud-Komponenten, Docker, Patches und das ECE-Tool-Paket hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -111,34 +111,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Hinweis zur obligatorischen 6-stündigen Abklingzeit nach dem <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space">Speicherplatz steigt</a> für auf AWS gehostete Projekte hinzugefügt.</p>
+      <td><p>Es wurde ein Hinweis zur obligatorischen 6-stündigen Abklingzeit nach dem <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space">Speicherplatz steigt</a> für auf AWS gehostete Projekte hinzugefügt.</p>
 </td>
       <td>
         Technisch
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/a04d056377da4fec9a54503d959f90ebf605de41">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;1. August 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurden zusätzliche Informationen zur <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration">einfachen Authentifizierung</a> in Fastly hinzugefügt.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/6d949fbbab631e633ba27641a48829d74856fcaa">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
