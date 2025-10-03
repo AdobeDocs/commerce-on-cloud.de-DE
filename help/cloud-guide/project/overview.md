@@ -2,9 +2,10 @@
 title: Cloud-Infrastrukturprojekt
 description: Lesen Sie einen Überblick über die Adobe Commerce in Cloud [!DNL Cloud Console] Infrastruktur und erfahren Sie, wie Sie auf die Kontoeinstellungen zugreifen können.
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
+source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Das Adobe Commerce on Cloud-Infrastrukturprojekt umfasst den gesamten Code in Git-Verzweigungen, zugehörigen Umgebungen und Skripten zur Bereitstellung der [!DNL Commerce]. Umgebungen enthalten Dienste zur Unterstützung der [!DNL Commerce], einschließlich einer Datenbank, eines Webservers und eines Caching-Servers.
 
-Adobe bietet eine [!DNL Cloud Console] und Entwickler-Tools, um alle Aspekte Ihres Projekts vollständig zu verwalten. Als Kontoinhaber haben Sie vollen Zugriff auf alle Umgebungen.
+Adobe bietet eine [!DNL Cloud Console] und Entwickler-Tools zur vollständigen Verwaltung aller Aspekte Ihres Projekts. Als Kontoinhaber haben Sie vollen Zugriff auf alle Umgebungen.
 
 ## [!DNL Cloud Console]
 
@@ -42,11 +43,11 @@ Die Projektübersicht zeigt, sofern keine Umgebung ausgewählt ist, eine Zusamme
 
 Und in der Hauptprojektübersicht:
 
-- Die Ansicht Umgebungen zeigt eine Listen- oder Baumstrukturansicht von ![aktiven Verzweigungen](../../assets/icon-active.png){width="32"} (active) and ![inactive branch](../../assets/icon-inactive.png){width="32"} (inaktiven) Umgebungen.
+- Die Ansicht Umgebungen zeigt eine Liste oder Baumstrukturansicht der Umgebungen ![aktive Verzweigung](../../assets/icon-active.png){width="32"} (aktiv) und ![inaktive Verzweigung](../../assets/icon-inactive.png){width="32"} (inaktiv) an.
 - [Aktivitäts-Stream](activity-stream.md) zeigt laufende, ausstehende und aktuelle Aktivitäten für das Projekt an.
 <!-- - Apps & Services—Shows a topology of service containers -->
 
-Bei **Starter**-Projekten gibt es eine Hierarchie von Verzweigungen, die von `master` (Produktion) beginnt. Jede Verzweigung, die Sie erstellen, wird als untergeordnete Elemente der `master` Verzweigung angezeigt. Adobe empfiehlt, eine `staging` Verzweigung zu erstellen und dann eine `integration` Verzweigung für die Entwicklung zu erstellen. Siehe [Starter-Architektur](../architecture/starter-architecture.md).
+Bei **Starter**-Projekten gibt es eine Hierarchie von Verzweigungen, die von `master` (Produktion) beginnt. Jede Verzweigung, die Sie erstellen, wird als untergeordnete Elemente der `master` Verzweigung angezeigt. Adobe empfiehlt, zunächst eine `staging` Verzweigung und dann eine `integration` Verzweigung für die Entwicklung zu erstellen. Siehe [Starter-Architektur](../architecture/starter-architecture.md).
 
 Für **Pro** gibt es eine Hierarchie von Verzweigungen, die von `production` bis `staging` bis `integration` reicht. Das ![Dediziertes Symbol](../../assets/icon-dedicated.png){width="32"} zeigt an, dass die Verzweigung in einer dedizierten Umgebung bereitgestellt wird. Alle Verzweigungen, die Sie erstellen, werden als untergeordnete Elemente des `integration` Zweigs angezeigt. Siehe [Pro-Architektur](../architecture/pro-architecture.md).
 
@@ -140,7 +141,7 @@ Klicken Sie auf **[!UICONTROL Environments]** und wählen Sie eine bestimmte Umg
 
 >[!WARNING]
 >
->**VERWENDEN SIE** HTTP-Zugriffssteuerungs-Methode zum Schützen von Pro-Staging- und Produktionsumgebungen. Dadurch wird die Fastly-Zwischenspeicherung unterbrochen. Verwenden Sie stattdessen die Funktion [Blockierung](../cdn/fastly-vcl-blocking.md), die im Fastly CDN für Adobe Commerce verfügbar ist.
+>**VERWENDEN SIE** HTTP-Zugriffssteuerungs-Methode zum Schützen von Pro-Staging- und Produktionsumgebungen. Dadurch wird die Fastly-Zwischenspeicherung unterbrochen. Verwenden Sie stattdessen die Funktion [Blockieren](../cdn/fastly-vcl-blocking.md), die im Fastly CDN für Adobe Commerce verfügbar ist, um den Zugriff zu blockieren oder die Zugriffssteuerung mit [Fastly Basic Auth](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) zu implementieren.
 
 ## Fastly und New Relic Anmeldedaten
 
