@@ -18,7 +18,7 @@ Die folgenden Abschnitte enthalten eine Übersicht und Anweisungen zum Konfiguri
 
 >[!IMPORTANT]
 >
->Die verfügbaren Admin-Optionen zum Konfigurieren des Fastly-Caches hängen davon ab, welche Version des Fastly CDN-Moduls für Magento 2 installiert ist. Adobe empfiehlt, [ Fastly-Modul ](fastly-configuration.md#upgrade) Ihre Staging- und Produktionsumgebungen auf die neueste Version zu aktualisieren. Die neuesten Informationen finden Sie in den [Versionshinweisen für das Fastly CDN for Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
+>Die verfügbaren Admin-Optionen zum Konfigurieren des Fastly-Caches hängen davon ab, welche Version des Fastly CDN-Moduls für Magento 2 installiert ist. Adobe empfiehlt, [&#x200B; Fastly-Modul &#x200B;](fastly-configuration.md#upgrade) Ihre Staging- und Produktionsumgebungen auf die neueste Version zu aktualisieren. Die neuesten Informationen finden Sie in den [Versionshinweisen für das Fastly CDN for Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## TLS erzwingen
 
@@ -56,7 +56,7 @@ Um Massenaktionen abzuschließen, die länger als 3 Minuten dauern, ändern Sie 
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Ruft schnell den Admin-Pfad für die Generierung der VCL-Datei aus der `app/etc/env.php`-Konfigurationsdatei ab.
 
@@ -83,7 +83,7 @@ Zu den Bereinigungsoptionen gehören:
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Weitere Informationen finden Sie [den Fastly-Konfigurationsoptionen](https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#further-configuration-options).
 
@@ -109,7 +109,7 @@ Das Fastly-Modul beinhaltet GeoIP-Handhabung, um Besucher automatisch umzuleiten
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Weitere Informationen finden Sie im [Handbuch zu Backend-Einstellungen](https://
 
 Die einfache Authentifizierung ist eine Funktion, um jede Seite und jedes Asset auf Ihrer Site mit einem Benutzernamen und einem Kennwort zu schützen.
 
-Adobe **empfiehlt** die Standardauthentifizierung in Ihrer Produktionsumgebung nicht zu aktivieren. Sie können ihn im Staging konfigurieren, um Ihre Site während des Entwicklungsprozesses zu schützen. Siehe [Standardauthentifizierungshandbuch“ in ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) Dokumentation zum Fastly CDN-Modul.
+Adobe **empfiehlt** die Standardauthentifizierung in Ihrer Produktionsumgebung nicht zu aktivieren. Sie können ihn im Staging konfigurieren, um Ihre Site während des Entwicklungsprozesses zu schützen. Siehe [Standardauthentifizierungshandbuch“ in &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BASIC-AUTH.md) Dokumentation zum Fastly CDN-Modul.
 
 Wenn Sie Benutzerzugriff hinzufügen und die einfache Authentifizierung in der Staging-Umgebung aktivieren, können Sie weiterhin auf den Administrator zugreifen, ohne zusätzliche Anmeldeinformationen zu benötigen.
 

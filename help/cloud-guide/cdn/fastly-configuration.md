@@ -124,7 +124,7 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    >[!NOTE]
    >
-   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Adobe Verwenden Sie stattdessen die von [ bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
+   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Adobe Verwenden Sie stattdessen die von [&#x200B; bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
 
 1. Klicken Sie **Testanmeldeinformationen**.
 
@@ -296,7 +296,7 @@ Wenn die Kopfzeilen nicht die richtigen Werte aufweisen, finden Sie unter [Beheb
 ## Upgrade des Fastly-Moduls
 
 Fastly aktualisiert das Fastly CDN für Magento 2-Modul, um Probleme zu beheben, die Leistung zu steigern und neue Funktionen bereitzustellen.
-Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [ Version ](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
+Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [&#x200B; Version &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
 
 Die neuesten Informationen zu Modulversionen und -aktualisierungen finden Sie in den [Versionshinweisen für das Fastly CDN for Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md) auf GitHub.
 
