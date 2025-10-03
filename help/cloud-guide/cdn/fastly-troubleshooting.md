@@ -2,7 +2,8 @@
 title: Schnelle Fehlerbehebung
 description: Erfahren Sie, wie Sie Probleme mit dem Fastly CDN-Modul und den Services für Adobe Commerce beheben und verwalten können.
 feature: Cloud, Configuration, Cache, Services
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 69954ef9-9ece-411e-934e-814a56542290
+source-git-commit: f496a4a96936558e6808b3ce74eac32dfdb9db19
 workflow-type: tm+mt
 source-wordcount: '1834'
 ht-degree: 0%
@@ -41,9 +42,9 @@ Verwenden Sie die folgende Liste, um Probleme im Zusammenhang mit der Fastly-Ser
 
 - **Die obere Navigation funktioniert nicht** - Die obere Navigation beruht auf der Edge Side Includes (ESI)-Verarbeitung, die aktiviert wird, wenn Sie die standardmäßigen Magento Fastly-VCL-Snippets hochladen. Wenn die Navigation nicht funktioniert, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
 
-- **Geo-location/GeoIP funktioniert nicht** - Die standardmäßigen Magento-Fastly-VCL-Snippets hängen den Ländercode an die URL an. Wenn der Länder-Code nicht funktioniert, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Website erneut.
+- **Geo-location/GeoIP funktioniert nicht** - Die standardmäßigen Magento Fastly-VCL-Snippets hängen den Länder-Code an die URL an. Wenn der Länder-Code nicht funktioniert, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Website erneut.
 
-- **Seiten werden nicht zwischengespeichert** - Standardmäßig speichert Fastly Seiten nicht mit dem `Set-Cookies`-Header zwischen. Adobe Commerce setzt Cookies auch auf zwischenspeicherbaren Seiten (TTL > 0). Die standardmäßige Magento Fastly-VCL entfernt diese Cookies auf zwischenspeicherbaren Seiten. Wenn Seiten nicht zwischengespeichert werden, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
+- **Seiten werden nicht zwischengespeichert** - Standardmäßig speichert Fastly Seiten nicht mit dem `Set-Cookies`-Header zwischen. Adobe Commerce setzt Cookies auch auf zwischenspeicherbaren Seiten (TTL > 0). Die standardmäßige Magento Fastly-VCL streicht diese Cookies auf zwischenspeicherbaren Seiten. Wenn Seiten nicht zwischengespeichert werden, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
 
   Dieses Problem kann auch auftreten, wenn ein Seitenblock in einer Vorlage als nicht Cache-fähig markiert ist. In diesem Fall ist das Problem höchstwahrscheinlich auf ein Drittanbietermodul oder eine Erweiterung zurückzuführen, das bzw. die die Adobe Commerce-Kopfzeilen blockiert oder entfernt. Informationen zum Beheben des Problems finden Sie unter [X-Cache enthält nur MISS, keinen HIT](#x-cache-contains-only-miss-no-hit).
 
@@ -153,7 +154,7 @@ Fastly API-Anfragen werden über die Fastly-Erweiterung weitergeleitet, um eine 
 1. Überprüfen Sie in der Antwort die [Kopfzeilen](#check-cache-hit-and-miss-response-headers), um sicherzustellen, dass Fastly funktioniert. In der Antwort sollten die folgenden eindeutigen Kopfzeilen angezeigt werden:
 
    ```http
-   < Fastly-Magento-VCL-Uploaded: yes
+   < Fastly-Magento-VCL-Uploaded: 1.2.222
    < X-Cache: HIT, MISS
    ```
 
@@ -242,7 +243,7 @@ Verwenden Sie basierend auf dem zurückgegebenen Status die folgenden Anweisunge
 
   Wenn Sie [Konfigurationsverwaltung](../store/store-settings.md#configure-store) verwenden, überprüfen Sie den Status des Fastly CDN-Moduls in der `app/etc/config.php`-Konfigurationsdatei, bevor Sie Änderungen in die Produktions- oder Staging-Umgebung pushen.
 
-  Wenn das Modul in der `config.php`-Datei nicht aktiviert (`Fastly_CDN => 0`) ist, löschen Sie die Datei und führen Sie den folgenden Befehl aus, um `config.php` mit den neuesten Konfigurationseinstellungen zu aktualisieren.
+  Wenn das Modul in der `Fastly_CDN => 0`-Datei nicht aktiviert (`config.php`) ist, löschen Sie die Datei und führen Sie den folgenden Befehl aus, um `config.php` mit den neuesten Konfigurationseinstellungen zu aktualisieren.
 
   ```bash
   bin/magento magento-cloud:scd-dump
@@ -278,7 +279,7 @@ Wenn das Problem weiterhin besteht, wird diese Kopfzeile wahrscheinlich von eine
 
 1. Klicken Sie auf **System** > **Tools** > **Cache-Verwaltung**.
 
-1. Klicken Sie auf **Leeren des Magento-Cache**.
+1. Klicken Sie **Magento-Cache leeren**.
 
 1. Führen Sie die folgenden Schritte für jede Erweiterung aus, die möglicherweise Probleme mit Fastly-Kopfzeilen verursacht:
 

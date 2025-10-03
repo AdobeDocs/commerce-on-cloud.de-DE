@@ -3,9 +3,9 @@ title: Cache-Konfiguration anpassen
 description: Erfahren Sie, wie Sie die Cache-Konfigurationseinstellungen überprüfen und anpassen können, nachdem die Fastly-Service-Einrichtung abgeschlossen ist.
 feature: Cloud, Configuration, Iaas, Cache
 exl-id: f6901931-7b3f-40a8-9514-168c6243cc43
-source-git-commit: 551a00932165dd1c0a876b8151ba14752ceac802
+source-git-commit: a2f5e2f67c7739302a87eaa27df25a62fca1acb7
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1995'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 Nachdem Sie den Fastly-Service in Ihren Staging- und Produktionsumgebungen eingerichtet und getestet haben, überprüfen und passen Sie die Cache-Konfigurationseinstellungen an. Sie können beispielsweise die Einstellungen aktualisieren, um zu ermöglichen, dass TLS HTTP-Anfragen an Fastly umleitet, die Bereinigungseinstellungen aktualisiert und die Standardauthentifizierung aktiviert, um Ihre Site während der Entwicklung mit einem Passwort zu schützen.
 
-Die folgenden Abschnitte enthalten eine Übersicht und Anweisungen zum Konfigurieren einiger Cache-Einstellungen. Weitere Informationen zu den verfügbaren Konfigurationsoptionen finden Sie in der Dokumentation [Fastly CDN Module for Magento 2](https://github.com/fastly/fastly-magento2/tree/master/Documentation) .
+Die folgenden Abschnitte enthalten eine Übersicht und Anweisungen zum Konfigurieren einiger Cache-Einstellungen.
+
+>[!IMPORTANT]
+>
+>Die verfügbaren Admin-Optionen zum Konfigurieren des Fastly-Caches hängen davon ab, welche Version des Fastly CDN-Moduls für Magento 2 installiert ist. Adobe empfiehlt, [ Fastly-Modul ](fastly-configuration.md#upgrade) Ihre Staging- und Produktionsumgebungen auf die neueste Version zu aktualisieren. Die neuesten Informationen finden Sie in den [Versionshinweisen für das Fastly CDN for Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md).
 
 ## TLS erzwingen
 
@@ -52,7 +56,7 @@ Um Massenaktionen abzuschließen, die länger als 3 Minuten dauern, ändern Sie 
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Ruft schnell den Admin-Pfad für die Generierung der VCL-Datei aus der `app/etc/env.php`-Konfigurationsdatei ab.
 
@@ -79,7 +83,7 @@ Zu den Bereinigungsoptionen gehören:
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 Weitere Informationen finden Sie [den Fastly-Konfigurationsoptionen](https://github.com/fastly/fastly-magento2/blob/21b61c8189971275589219d418332798efc7db41/Documentation/CONFIGURATION.md#further-configuration-options).
 
@@ -105,7 +109,7 @@ Das Fastly-Modul beinhaltet GeoIP-Handhabung, um Besucher automatisch umzuleiten
 
 1. Klicken **oben auf** Seite auf „Konfiguration speichern“.
 
-1. Wählen Sie nach dem Neuladen der Seite **&#x200B;**&#x200B;Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
+1. Wählen Sie nach dem Neuladen der Seite **** Abschnitt _Fastly-Konfiguration_ die Option VCL in Fastly hochladen aus.
 
 >[!NOTE]
 >
@@ -187,7 +191,7 @@ Sowohl für Starter- als auch für Pro-Projekte können Sie die Option [!UICONTR
 
 - Rufen Sie für Startprojekte die Projekt-URL auf der Registerkarte [!UICONTROL Domains] im [!DNL Cloud Console] auf, um Ihre Projekt-URL hinzuzufügen.
 
-- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
+- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
 
 **Verwaltung der Fastly-Domain-Konfiguration über den Administrator**:
 
