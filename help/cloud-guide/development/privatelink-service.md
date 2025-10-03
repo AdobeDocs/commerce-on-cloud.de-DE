@@ -2,9 +2,10 @@
 title: Privater Link-Service
 description: Erfahren Sie, wie Sie mit dem PrivateLink-Service eine sichere Verbindung zwischen einer privaten Cloud und der Adobe Commerce-Cloud-Plattform in derselben Region herstellen.
 feature: Cloud, Iaas, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
+source-git-commit: 0e7f268de078bd9840358b66606a60b2a2225764
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -15,18 +16,18 @@ Adobe Commerce in der Cloud-Infrastruktur unterstützt die Integration mit dem S
 
 >[!TIP]
 >
->PrivateLink eignet sich am besten zum Schützen von Verbindungen für Nicht-HTTP(S)-Integrationen, wie z. B. Datenbank- oder Dateiübertragungen. Wenn Sie beabsichtigen, Ihr Programm mit Adobe Commerce-APIs zu integrieren, finden Sie weitere Informationen unter Erstellen eines [Adobe](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)API-Mesh in _API-Mesh für Adobe Developer App Builder_.
+>PrivateLink eignet sich am besten zum Schützen von Verbindungen für Nicht-HTTP(S)-Integrationen, wie z. B. Datenbank- oder Dateiübertragungen. Wenn Sie beabsichtigen, Ihr Programm mit Adobe Commerce-APIs zu integrieren, finden Sie weitere Informationen unter Erstellen eines [Adobe](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)API-Meshs in _API-Mesh für Adobe Developer App Builder_.
 
 ## Funktionen und Support
 
 Die PrivateLink-Service-Integration für Adobe Commerce in Cloud-Infrastrukturprojekten umfasst die folgenden Funktionen und Unterstützung:
 
-- Eine sichere Verbindung zwischen einer Virtual Private Cloud (VPC) des Kunden und der Adobe VPC auf derselben Cloud-Plattform (AWS oder Azure) in derselben Cloud-Region.
-- Unterstützung für unidirektionale oder bidirektionale Kommunikation zwischen Endpunktdiensten, die auf Adobe und Kunden-VPCs verfügbar sind.
+- Eine sichere Verbindung zwischen einer Virtual Private Cloud (VPC) des Kunden und der Adobe VPC auf derselben Cloud-Plattform (AWS oder Azure) innerhalb derselben Cloud-Region.
+- Unterstützung für unidirektionale oder bidirektionale Kommunikation zwischen Endpunkt-Services, die bei Adobe und Kunden-VPCs verfügbar sind.
 - Service-Aktivierung:
 
    - Öffnen der erforderlichen Ports in der Adobe Commerce in der Cloud-Infrastrukturumgebung
-   - Herstellen der anfänglichen Verbindung zwischen dem Kunden und Adobe-VPCs
+   - Herstellen der anfänglichen Verbindung zwischen dem Kunden und Adobe VPCs
    - Fehlerbehebung bei Verbindungsproblemen während der Aktivierung
 
 ## Einschränkungen
@@ -35,7 +36,9 @@ Die PrivateLink-Service-Integration für Adobe Commerce in Cloud-Infrastrukturpr
 - Sie können keine SSH-Verbindungen mit PrivateLink herstellen. Siehe [SSH-Schlüssel aktivieren](secure-connections.md).
 - Die Adobe Commerce-Unterstützung deckt keine Fehlerbehebung bei AWS PrivateLink-Problemen über die anfängliche Aktivierung hinaus ab.
 - Kunden tragen die Kosten für die Verwaltung ihrer eigenen VPC.
-- Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um über einen privaten Azure-Link eine Verbindung zur Cloud-Infrastruktur von Adobe Commerce herzustellen, da der [ „Fastly-Ursprungs-Cloaking“ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=de). Diese Einschränkung gilt nicht für AWS PrivateLink.
+- **HTTPS-Protokoll (Port 443)-Unterstützung durch Plattform:**
+   - **Azure Private Link**: Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um in der Cloud-Infrastruktur eine Verbindung zu Adobe Commerce herzustellen, da der Ursprung [ Cloaking ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html) ist.
+   - **AWS PrivateLink**: Verbindungen mit dem HTTPS-Protokoll (Port 443) werden unterstützt.
 - PrivateDNS ist nicht verfügbar.
 
 ## PrivateLink-Verbindungstypen
@@ -49,8 +52,8 @@ Wählen Sie einen der PrivateLink-Verbindungstypen aus, die für Ihre Adobe Comm
 - **Unidirektional PrivateLink**-Wählen Sie diese Konfiguration, um Daten sicher aus einem Adobe Commerce im Cloud-Infrastrukturspeicher abzurufen.
 - **Bidirektionaler PrivateLink**-Wählen Sie diese Konfiguration, um sichere Verbindungen zu und von Systemen außerhalb der Adobe Commerce in der Cloud-Infrastrukturumgebung herzustellen. Die bidirektionale Option erfordert zwei Verbindungen:
 
-   - Eine Verbindung zwischen dem Kunden-VPC und dem Adobe-VPC
-   - Eine Verbindung zwischen der Adobe-VPC und der Kunden-VPC
+   - Eine Verbindung zwischen der VPC des Kunden und der VPC von Adobe
+   - Eine Verbindung zwischen der Adobe VPC und der Kunden-VPC
 
 >[!TIP]
 >
@@ -106,7 +109,7 @@ Im folgenden Workflow wird der Aktivierungsprozess für die PrivateLink-Integrat
 
 1. **Kunde** reicht ein Support-Ticket ein, um die Aktivierung von PrivateLink mit der Betreffzeile `PrivateLink support for <company>` anzufordern. Schließen Sie die [Daten, die für die Aktivierung erforderlich sind](#prerequisites) in das Ticket ein. Adobe verwendet das Support-Ticket, um die Kommunikation während des Aktivierungsprozesses zu koordinieren.
 
-1. **Adobe** Ermöglicht dem Kundenkonto den Zugriff auf den Endpunkt-Service in der Adobe-VPC.
+1. **Adobe** Ermöglicht den Zugriff des Kundenkontos auf den Endpunkt-Service in Adobe VPC.
 
    - Aktualisieren Sie die Konfiguration des Adobe-Endpunkt-Service, um Anfragen zu akzeptieren, die vom AWS- oder Azure-Kundenkonto initiiert wurden.
    - Aktualisieren Sie das Support-Ticket, um den Service-Namen für den Adobe VPC-Endpunkt anzugeben, mit dem eine Verbindung hergestellt werden soll, z. B. `com.amazonaws.vpce.<cloud-region>.vpce-svc-<service-id>`.
@@ -123,18 +126,18 @@ Im folgenden Workflow wird der Aktivierungsprozess für die PrivateLink-Integrat
 1. Zusätzliche Schritte zum Aktivieren bidirektionaler Verbindungen:
 
    - **Adobe** stellt den Adobe-Kontoprinzipal (Stammbenutzer für AWS- oder Azure-Konto) bereit und fordert Zugriff auf den VPC-Endpunktdienst des Kunden an.
-   - **Kunde** Ermöglicht den Adobe-Zugriff auf den Endpunkt-Service in der Kunden-VPC. Dabei wird davon ausgegangen, dass der Prinzipal des Adobe-Kontos Zugriff auf `arn:aws:iam::402592597372:root` hat, wie zuvor in der Voraussetzung **Endpoint Service-Zugriff erteilt** beschrieben.
+   - **Kunde** Ermöglicht Adobe den Zugriff auf den Endpunkt-Service in der Kunden-VPC. Dabei wird davon ausgegangen, dass der Adobe-Kontoprinzipal Zugriff auf `arn:aws:iam::402592597372:root` hat, wie zuvor in der Voraussetzung **Endpoint Service-Zugriff erteilt** beschrieben.
 
       - Aktualisieren Sie die Konfiguration des Kundenendpunkt-Service, um Anfragen zu akzeptieren, die vom Adobe-Konto initiiert werden. Anweisungen finden Sie in der Dokumentation zur Cloud-Plattform:
 
          - Informationen zu AWS finden Sie [Hinzufügen und Entfernen von Berechtigungen für Ihren Endpunkt-Service].
          - Informationen zu Azure finden Sie unter [Verwalten einer privaten Endpunktverbindung]
 
-      - Geben Sie Adobe den Namen des Endpunkt-Services für die Kunden-VPC an.
+      - Geben Sie Adobe den Namen des Endpunkt-Services für die Kunden-VPC.
 
-   - **Adobe** fügt den Kundenendpunkt-Service zum Adobe-Plattformkonto (AWS oder Azure) hinzu, über das eine Verbindungsanfrage an den VPC-Kunden Trigger wird.
+   - **Adobe** fügt den Kundenendpunkt-Service zum Adobe-Plattformkonto (AWS Trigger oder Azure) hinzu, über das eine Verbindungsanfrage an VPC des Kunden gesendet wird.
    - **Kunde** genehmigt die Verbindungsanfrage von Adobe, um die Einrichtung abzuschließen.
-   - **Kunde** [überprüft die Verbindung](#test-vpc-endpoint-service-connection) über die Adobe-VPC.
+   - **Kunde** [überprüft die Verbindung](#test-vpc-endpoint-service-connection) über die Adobe VPC.
 
 ## Testen der VPC Endpoint Service-Verbindung
 
@@ -163,7 +166,7 @@ Sie können die Telnet-Anwendung verwenden, um die Verbindung zum VPC-Endpunktdi
    Beispiel für eine erfolgreiche Antwort:
 
    ```
-   * Rebuilt URL to: telnet://vpce-007ffnb9qkcnjgult-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce.amazonaws.com:80
+   * Rebuilt URL to: telnet://vpce-007ffnb9qkcnjgult-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce. amazonaws.com:80
    * Connected to vpce-0088d56482571241d-yfhmywqh.vpce-svc-083cqvm2ta3rxqat5v.us-east-1.vpce. amazonaws.com (191.210.82.246) port 80 (#0)
    ```
 
@@ -202,11 +205,11 @@ Sie können die Telnet-Anwendung verwenden, um die Verbindung zum VPC-Endpunktdi
 
 ## PrivateLink-Konfiguration ändern
 
-[Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um eine vorhandene PrivateLink-Konfiguration zu ändern. Sie können beispielsweise Änderungen wie die folgenden anfordern:
+[Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um eine vorhandene PrivateLink-Konfiguration zu ändern. Sie können beispielsweise Änderungen wie die folgenden anfordern:
 
 - Entfernen Sie die PrivateLink-Verbindung aus der Adobe Commerce in der Cloud-Infrastruktur der Pro-Produktions- oder Staging-Umgebung.
-- Ändern Sie die Kundenkontonummer der Cloud-Plattform für den Zugriff auf den Adobe-Endpunkt-Service.
-- Hinzufügen oder Entfernen von PrivateLink-Verbindungen von der Adobe-VPC zu anderen Endpunkt-Services, die in der VPC-Kundenumgebung verfügbar sind.
+- Ändern Sie die Kontonummer der Cloud-Plattform des Kunden für den Zugriff auf den Adobe-Endpunktdienst.
+- Hinzufügen oder Entfernen von PrivateLink-Verbindungen von der Adobe VPC zu anderen Endpunkt-Services, die in der VPC-Kundenumgebung verfügbar sind.
 
 ## Einrichten für bidirektionale PrivateLink-Verbindungen
 
