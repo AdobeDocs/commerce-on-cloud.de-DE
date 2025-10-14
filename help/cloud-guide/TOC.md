@@ -3,9 +3,9 @@ user-guide-title: Handbuch zu Commerce für Cloud
 user-guide-description: Erfahren Sie, wie Sie die Adobe Commerce-Anwendung in der Cloud-Infrastruktur verwalten.
 product: magento
 feature: Cloud
-source-git-commit: 3347ad0a5fe202cbd80d08b7289c20a1c98ed1e3
+source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 8%
    + [Pro-Workflow](architecture/pro-develop-deploy-workflow.md)
    + [Skalierte Architektur](architecture/scaled-architecture.md)
    + [Automatische Skalierung](architecture/autoscaling.md)
-+ [Erste Schritte](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=de)
++ [Erste Schritte](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Versionshinweise {#release-notes}
    + [Cloud-Tools-Suite](release-notes/cloud-tools-suite.md)
    + [ECE-Tools-Paket](release-notes/ece-tools-package.md)
@@ -45,7 +45,7 @@ ht-degree: 8%
    + [Konsolen-Zweigstellenverwaltung](project/console-branches.md)
    + [Regionale IP-Adressen](project/regional-ip-addresses.md)
 + Entwickler-Tools {#dev-tools}
-   + [Übersicht](dev-tools/overview.md)
+   + [Überblick](dev-tools/overview.md)
    + Cloud-CLI {#cloud-cli}
       + [CLI-Übersicht](dev-tools/cloud-cli-overview.md)
       + [CLI-Referenz](dev-tools/cloud-cli-reference.md)
@@ -57,13 +57,13 @@ ht-degree: 8%
       + [CLI-Referenz](dev-tools/ece-tools-cli-reference.md)
       + [Fehlerreferenz](dev-tools/error-reference.md)
    + Integrationen {#integrations}
-      + [Übersicht](integrations/overview.md)
+      + [Überblick](integrations/overview.md)
       + [Bitbucket](integrations/bitbucket.md)
       + [GitHub](integrations/github.md)
       + [GitLab](integrations/gitlab.md)
       + [Statusbenachrichtigungen](integrations/health-notifications.md)
 + Entwicklung {#develop}
-   + [Übersicht](development/overview.md)
+   + [Überblick](development/overview.md)
    + [Authentifizierungsschlüssel](development/authentication-keys.md)
    + [CLI-Zweigstellenverwaltung](development/cli-branches.md)
    + [Sichere Verbindungen](development/secure-connections.md)
@@ -97,7 +97,7 @@ ht-degree: 8%
       + [Commerce-Version aktualisieren](development/commerce-version.md)
       + [Patches anwenden](development/apply-patches.md)
 + Konfiguration {#configure}
-   + [Übersicht](environment/overview.md)
+   + [Überblick](environment/overview.md)
    + Anwendung {#app}
       + [Konfigurieren der Anwendungsbereitstellung](application/configure-app-yaml.md)
       + [PHP-Einstellungen](application/php-settings.md)
@@ -131,6 +131,7 @@ ht-degree: 8%
       + [Server-seitige Includes](routes/server-side-includes.md)
    + Dienste {#service}
       + [Konfigurieren von Services](services/services-yaml.md)
+      + [ActiveMQ](services/activemq.md)
       + [Elasticsearch](services/elasticsearch.md)
       + [MySQL](services/mysql.md)
       + [OpenSearch](services/opensearch.md)
@@ -138,7 +139,7 @@ ht-degree: 8%
       + [Redis](services/redis.md)
       + [Tal](services/valkey.md)
 + Fastly Services {#cdn}
-   + [Übersicht](cdn/fastly.md)
+   + [Überblick](cdn/fastly.md)
    + Schnelle Einrichtung {#setup-fastly}
       + [Fastly-Services konfigurieren](cdn/fastly-configuration.md)
       + [Cache-Konfiguration anpassen](cdn/fastly-custom-cache-configuration.md)
@@ -154,7 +155,7 @@ ht-degree: 8%
       + [Fastly-Cache umgehen](cdn/fastly-vcl-bypass-to-origin.md)
    + [Schnelle Fehlerbehebung](cdn/fastly-troubleshooting.md)
 + Store-Einstellungen {#configure-store}
-   + [Übersicht](store/overview.md)
+   + [Überblick](store/overview.md)
    + [Best Practices](store/best-practices.md)
    + [Benutzerdefiniertes Design](store/custom-theme.md)
    + [Erweiterungen](store/extensions.md)
@@ -164,7 +165,7 @@ ht-degree: 8%
    + [PayPal-Zahlungsmethoden](store/paypal.md)
    + [Konfigurationsverwaltung](store/store-settings.md)
 + Launch-Site {#launch}
-   + [Übersicht](launch/overview.md)
+   + [Überblick](launch/overview.md)
    + [Checkliste starten](launch/checklist.md)
    + [Launch-Schritte](launch/steps.md)
 + Standort überwachen {#monitor}
