@@ -34,4 +34,4 @@ Beachten Sie die folgenden Testtypen als Best Practice vor dem Start der Site:
 
 >[!WARNING]
 >
->Kunden sind nicht berechtigt, Sicherheitsbewertungen der AWS-Infrastruktur oder der AWS-Services selbst durchzuführen. Wenn Sie bei einem der AWS-Services in Ihrer Sicherheitsbewertung ein Sicherheitsproblem feststellen, wenden Sie sich [ an AWS Security](mailto:aws-security@amazon.com). Siehe [AWS-Kundenrichtlinien für Penetrationstests](https://aws.amazon.com/security/penetration-testing/).
+>Kunden sind nicht berechtigt, Sicherheitsbewertungen der AWS-Infrastruktur oder der AWS-Services selbst durchzuführen. Wenn Sie bei einem der AWS-Services in Ihrer Sicherheitsbewertung ein Sicherheitsproblem feststellen, wenden Sie sich [&#x200B; an AWS Security](mailto:aws-security@amazon.com). Siehe [AWS-Kundenrichtlinien für Penetrationstests](https://aws.amazon.com/security/penetration-testing/).

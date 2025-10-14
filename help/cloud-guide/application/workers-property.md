@@ -17,7 +17,7 @@ Sie können einen Worker definieren, der unabhängig von der Web-Instanz ausgef�
 
 Worker können nur mit Pro-Staging- und Produktionsumgebungen verwendet werden. Pro-Integrations- und Starter-Umgebungen können die Variable [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) verwenden.
 
-Um einen Worker in Pro-Staging oder Produktion zu konfigurieren, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) und geben Sie die folgenden Informationen ein:
+Um einen Worker in Pro-Staging oder Produktion zu konfigurieren, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) und geben Sie die folgenden Informationen ein:
 
 - Projekt-ID
 - Umgebungs-ID
@@ -48,7 +48,7 @@ Die `commands.start` ist erforderlich, um Befehle mit dem Worker-Programm zu sta
 
 Definitionen für die Eigenschaften `size`, `relationships`, `access`, `disk` und `mount` sowie `variables` werden von einem Worker geerbt, es sei denn, sie werden explizit überschrieben.
 
-Die folgenden Eigenschaften werden am häufigsten verwendet, um Einstellungen [ oberster Ebene zu ](properties.md):
+Die folgenden Eigenschaften werden am häufigsten verwendet, um Einstellungen [&#x200B; oberster Ebene zu &#x200B;](properties.md):
 
 - `size`: Weniger Ressourcen für einen einzelnen Hintergrundprozess zuweisen
 - `variables` - Weist die Anwendung an, anders auszuführen

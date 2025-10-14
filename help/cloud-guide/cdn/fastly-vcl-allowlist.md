@@ -87,13 +87,13 @@ Bevor [ein benutzerdefiniertes Snippet erstellen](https://experienceleague.adobe
 
   Wenn die URL für Ihren Administrator geändert wurde, ersetzen Sie den Beispielwert `/admin` durch die URL für Ihre Umgebung. Beispiel: `/company-admin`.
 
-Im Code-Beispiel ist die Bedingung `!req.http.Fastly-FF` bei der Verwendung von &quot;[&quot; ](fastly-custom-cache-configuration.md#configure-back-ends-and-origin-shielding). Diesen Code nicht entfernen oder bearbeiten.
+Im Code-Beispiel ist die Bedingung `!req.http.Fastly-FF` bei der Verwendung von &quot;[&quot; &#x200B;](fastly-custom-cache-configuration.md#configure-back-ends-and-origin-shielding). Diesen Code nicht entfernen oder bearbeiten.
 
 Nachdem Sie den Code für Ihre Umgebung überprüft und aktualisiert haben, verwenden Sie eine der folgenden Methoden, um das benutzerdefinierte VCL-Snippet zu Ihrer Fastly-Service-Konfiguration hinzuzufügen:
 
-- [Fügen Sie das benutzerdefinierte VCL-Snippet von der Admin ](#add-the-custom-vcl-snippet). Diese Methode wird empfohlen, wenn Sie auf Admin zugreifen können. (Erfordert [Fastly CDN-Modul für Magento 2 Version 1.2.58](fastly-configuration.md#upgrade) oder höher.)
+- [Fügen Sie das benutzerdefinierte VCL-Snippet von der Admin &#x200B;](#add-the-custom-vcl-snippet). Diese Methode wird empfohlen, wenn Sie auf Admin zugreifen können. (Erfordert [Fastly CDN-Modul für Magento 2 Version 1.2.58](fastly-configuration.md#upgrade) oder höher.)
 
-- Speichern Sie das JSON-Code-Beispiel in einer Datei (z. B. `allowlist.json`) und [ Sie es mithilfe der Fastly-API ](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Verwenden Sie diese Methode, wenn Sie nicht auf Admin zugreifen können.
+- Speichern Sie das JSON-Code-Beispiel in einer Datei (z. B. `allowlist.json`) und [&#x200B; Sie es mithilfe der Fastly-API &#x200B;](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Verwenden Sie diese Methode, wenn Sie nicht auf Admin zugreifen können.
 
 ## Hinzufügen des benutzerdefinierten VCL-Snippets
 

@@ -71,7 +71,7 @@ Wenn Sie feststellen, dass der WAF legitime Anfragen blockiert, sind diese häuf
 
 Der standardmäßige WAF-Service, der von Fastly unterstützt wird, unterstützt die folgenden Funktionen nicht:
 
-- Schutz vor Malware oder Bot-Schutz - Erwägen Sie [ Verwendung von ](./fastly-vcl-allowlist.md) oder Drittanbieterdiensten.
+- Schutz vor Malware oder Bot-Schutz - Erwägen Sie [&#x200B; Verwendung von &#x200B;](./fastly-vcl-allowlist.md) oder Drittanbieterdiensten.
 - Ratenbegrenzung - Siehe [Ratenbegrenzung](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in der Fastly-Dokumentation oder [Ratenbegrenzung](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) im Sicherheitsabschnitt _Commerce Web API_.
 - Konfigurieren eines Protokollierungsendpunkts für den Kunden - Siehe [PrivateLink-](../development/privatelink-service.md)) als Alternative.
 

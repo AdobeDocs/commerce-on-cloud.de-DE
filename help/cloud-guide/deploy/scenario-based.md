@@ -218,7 +218,7 @@ hooks:
 
 >[!TIP]
 >
->Sie können die [Standardszenarien](https://github.com/magento/ece-tools/tree/2002.1/scenario) und [Standardschrittkonfiguration) ](https://github.com/magento/ece-tools/tree/2002.1/src/Step) GitHub-Repository von `ece-tools` überprüfen, um zu bestimmen, welche Szenarien und Schritte für die Erstellung, Bereitstellung und Nachbereitstellung Ihres Projekts angepasst werden sollen.
+>Sie können die [Standardszenarien](https://github.com/magento/ece-tools/tree/2002.1/scenario) und [Standardschrittkonfiguration) &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/src/Step) GitHub-Repository von `ece-tools` überprüfen, um zu bestimmen, welche Szenarien und Schritte für die Erstellung, Bereitstellung und Nachbereitstellung Ihres Projekts angepasst werden sollen.
 
 ## Hinzufügen eines benutzerdefinierten Moduls zum Erweitern von `ece-tools`
 

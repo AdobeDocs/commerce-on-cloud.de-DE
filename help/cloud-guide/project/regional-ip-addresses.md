@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Regionale IP-Adressen
 
-In den folgenden Tabellen sind die ein- und ausgehenden IP-Adressen aufgeführt, die von Adobe Commerce in Cloud-Infrastrukturen [Integrationsumgebungen) verwendet ](../architecture/pro-architecture.md#integration-environment). Diese IP-Adressen sind stabil, können sich jedoch ändern. Adobe benachrichtigt Kunden, bevor IP-Adressänderungen vorgenommen werden.
+In den folgenden Tabellen sind die ein- und ausgehenden IP-Adressen aufgeführt, die von Adobe Commerce in Cloud-Infrastrukturen [Integrationsumgebungen) verwendet &#x200B;](../architecture/pro-architecture.md#integration-environment). Diese IP-Adressen sind stabil, können sich jedoch ändern. Adobe benachrichtigt Kunden, bevor IP-Adressänderungen vorgenommen werden.
 
 Die Syntax für die Adressierung der Integrationsumgebungen lautet wie folgt:
 

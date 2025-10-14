@@ -25,7 +25,7 @@ Wir empfehlen dringend Tests in der Integrations-, Staging- und Produktionsumgeb
 
 - Integrationsumgebungen unterstützen nicht alle Services, die in der Staging- und Produktionsumgebung verfügbar sind, z. B. Fastly und New Relic.
 
-- [Testen Sie ](../test/guidance.md) Site vollständig mit verschiedenen Tools in der Staging-Umgebung auf Auslastung, Belastung, Leistung und Site-Assets.
+- [Testen Sie &#x200B;](../test/guidance.md) Site vollständig mit verschiedenen Tools in der Staging-Umgebung auf Auslastung, Belastung, Leistung und Site-Assets.
 
 - Da in Integrationsumgebungen möglicherweise nur Datenbanken mit Testdaten gefüllt sind, die nicht mit einer produktionsähnlichen Umgebung übereinstimmen, können beim Testen in Staging- oder Produktionsumgebungen zusätzliche Fehler oder unerwartetes Verhalten auftreten.
 
@@ -69,7 +69,7 @@ Mit dem Sicherheits-Scan-Tool können Sie Ihre Store-Websites regelmäßig über
 >
 >Adobe empfiehlt, das Sicherheits-Scan-Tool gegenüber anderen Drittanbieter-Tools zu verwenden, um während der Ermittlungen die beste Servicequalität zu gewährleisten.
 
-Informationen [ Einrichten und Verwenden des Sicherheits](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan)Scan-Tools finden Sie im Benutzerhandbuch. Normalerweise verwenden Sie dieses Tool, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen.
+Informationen [&#x200B; Einrichten und Verwenden des Sicherheits](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan)Scan-Tools finden Sie im Benutzerhandbuch. Normalerweise verwenden Sie dieses Tool, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen.
 
 Jede Site, die Sie durchsuchen, muss über die Registerkarte Sicherheitsprüfung registriert werden. Während des Registrierungsprozesses müssen Sie den Haftungsausschluss akzeptieren, bevor Sie mit dem Scannen beginnen können. Sie steuern sowohl den Zeitplan als auch die Autorisierung des Benutzers, nach Abschluss jeder Überprüfung Benachrichtigungen zu erhalten. Sie können die Suche für ein bestimmtes, wiederkehrendes Datum und eine bestimmte Uhrzeit planen oder bei Bedarf eine Suche ausführen.
 

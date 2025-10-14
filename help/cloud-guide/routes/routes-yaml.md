@@ -314,7 +314,7 @@ Magento Cloud Routes:
 
 ## Umleitungen und Caching
 
-Wie unter [Umleitungen](redirects.md) ausführlicher erläutert, können Sie komplexe Umleitungsregeln wie _partielle Umleitungen_ verwalten und Regeln für routenbasierte [Caching) ](caching.md):
+Wie unter [Umleitungen](redirects.md) ausführlicher erläutert, können Sie komplexe Umleitungsregeln wie _partielle Umleitungen_ verwalten und Regeln für routenbasierte [Caching) &#x200B;](caching.md):
 
 ```yaml
 https://www.{default}/:

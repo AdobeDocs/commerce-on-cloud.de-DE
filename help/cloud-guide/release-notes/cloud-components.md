@@ -67,7 +67,7 @@ Veröffentlichungsdatum: 10. März 2023
 
 Veröffentlichungsdatum: 13. September 2022
 
-- ![Fix icon](../../assets/fix.svg) **Errors on warmup** - Es wurde ein Problem behoben, bei dem versucht wurde, [warmup](../environment/variables-post-deploy.md#warm_up_pages) auszuführen, wenn die Sichtbarkeit der Seite in der Admin-[**&#x200B;** auf ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure)Nicht sichtbareingestellt war, was zu `ERROR: Warming up failed: <link to page>` Fehlern im Bereitstellungsprotokoll führte.<!-- MCLOUD-9134 -->
+- ![Fix icon](../../assets/fix.svg) **Errors on warmup** - Es wurde ein Problem behoben, bei dem versucht wurde, [warmup](../environment/variables-post-deploy.md#warm_up_pages) auszuführen, wenn die Sichtbarkeit der Seite in der Admin-[**&#x200B;** auf &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure)Nicht sichtbareingestellt war, was zu `ERROR: Warming up failed: <link to page>` Fehlern im Bereitstellungsprotokoll führte.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
@@ -133,7 +133,7 @@ Veröffentlichungsdatum: 27. Februar 2020
 
 Veröffentlichungsdatum: 6. Februar 2020
 
-- ![neues Symbol](../../assets/new.svg) Die Funktionalität der `WARM_UP_PAGES` Umgebungsvariablen wurde erweitert, um das Vorausfüllen des Cache für bestimmte Produktseiten zu unterstützen. Eine ausführliche Beschreibung der [ finden Sie ](../environment/variables-post-deploy.md#warm_up_pages) Thema „Variablen nach der Bereitstellung“<!--MAGECLOUD-4444-->
+- ![neues Symbol](../../assets/new.svg) Die Funktionalität der `WARM_UP_PAGES` Umgebungsvariablen wurde erweitert, um das Vorausfüllen des Cache für bestimmte Produktseiten zu unterstützen. Eine ausführliche Beschreibung der [&#x200B; finden Sie &#x200B;](../environment/variables-post-deploy.md#warm_up_pages) Thema „Variablen nach der Bereitstellung“<!--MAGECLOUD-4444-->
 
 - ![Fix-Symbol](../../assets/fix.svg) Es wurde ein Problem behoben, bei dem eine ungültige Speicher-URL dazu führte, dass der Hook nach der Bereitstellung fehlschlug, wenn die `WARM_UP_PAGES`-Funktion zum Auffüllen des Caches verwendet wurde. Dieses Problem trat nur auf, wenn die URL-Neuschreibungen deaktiviert waren.<!-- MAGECLOUD-4094 -->
 

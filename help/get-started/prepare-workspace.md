@@ -49,7 +49,7 @@ Bevor Sie einen Arbeitsbereich einrichten, stellen Sie die folgenden Schlüssel 
 
 ## Projekt-Code
 
-Eine sichere Verbindung ist für die Interaktion mit den Remote-Umgebungen unerlässlich. Melden Sie sich bei einem [ Projekt bei an  [!DNL Cloud Console]](https://console.adobecommerce.com) klicken Sie auf **[!UICONTROL No SSH key]**. Dieses Symbol befindet sich rechts neben dem Befehlsfeld und ist sichtbar, wenn das Projekt keinen SSH-Schlüssel enthält. Siehe [Sichere Verbindungen](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account)
+Eine sichere Verbindung ist für die Interaktion mit den Remote-Umgebungen unerlässlich. Melden Sie sich bei einem [&#x200B; Projekt bei an  [!DNL Cloud Console]](https://console.adobecommerce.com) klicken Sie auf **[!UICONTROL No SSH key]**. Dieses Symbol befindet sich rechts neben dem Befehlsfeld und ist sichtbar, wenn das Projekt keinen SSH-Schlüssel enthält. Siehe [Sichere Verbindungen](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account)
 
 **So klonen Sie Ihre Codebasis auf Ihrer lokalen Workstation**:
 

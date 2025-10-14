@@ -37,7 +37,7 @@ Sie können ein manuelles Backup einer beliebigen aktiven Starter-Umgebung und I
 
 **So erstellen Sie eine Datenbank-Sicherung der Pro-Umgebung**:
 
-Informationen zum Erstellen eines Datenbank-Dump einer beliebigen Pro-Umgebung, einschließlich Staging und Produktion, finden Sie [ Knowledgebase-Artikel ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
+Informationen zum Erstellen eines Datenbank-Dump einer beliebigen Pro-Umgebung, einschließlich Staging und Produktion, finden Sie [&#x200B; Knowledgebase-Artikel &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
 
 **So erstellen Sie eine Sicherung einer beliebigen Starter-Umgebung mit dem[!DNL Cloud Console]**:
 
@@ -150,7 +150,7 @@ Die Wiederherstellungszeiten hängen von der Größe der Datenbank ab:
 
 ## Wiederherstellen eines Snapshots zur Notfallwiederherstellung
 
-Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [&#x200B; Sie den Datenbank-Dump direkt vom Server &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Rollback-Code
 

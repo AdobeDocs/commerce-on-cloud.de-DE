@@ -91,7 +91,7 @@ hooks:
         composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
 ```
 
-Weitere Informationen [ Composer finden Sie ](../development/overview.md#required-packages)Erforderliche Pakete“.
+Weitere Informationen [&#x200B; Composer finden Sie &#x200B;](../development/overview.md#required-packages)Erforderliche Pakete“.
 
 ## `dependencies`
 

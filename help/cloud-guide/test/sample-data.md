@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Wenn Sie beim Entwickeln Ihres Stores Beispieldaten benötigen, können Sie Beispieldaten installieren. Diese Daten simulieren einen aktiven Adobe Commerce-Store mit Kunden, Produkten und anderen Daten. Diese Beispieldaten funktionieren am besten mit einer neuen Vorlageninstallation von Adobe Commerce auf der Cloud-Infrastruktur.
 
-Installieren Sie als Best Practice Beispieldaten in Entwicklungs- und Integrationsumgebungen. Wenn Sie Beispieldaten in der Staging- oder Produktionsumgebung verwenden, müssen Sie [ Informationen ](#reset-or-uninstall-sample-data) Produkte vor der Live-Schaltung entfernen.
+Installieren Sie als Best Practice Beispieldaten in Entwicklungs- und Integrationsumgebungen. Wenn Sie Beispieldaten in der Staging- oder Produktionsumgebung verwenden, müssen Sie [&#x200B; Informationen &#x200B;](#reset-or-uninstall-sample-data) Produkte vor der Live-Schaltung entfernen.
 
 ## Installieren von Beispieldaten
 

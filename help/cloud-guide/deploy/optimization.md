@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Optimieren der Bereitstellung
 
-Die Site-Leistung kann während des Bereitstellungsprozesses beeinträchtigt sein. Wie lange sich eine Site im Wartungsmodus befindet, wenn sie auf einer Produktions-Site bereitgestellt wird, hängt von vielen Faktoren ab, z. B. der Umgebungskonfiguration und der Menge an Inhalten, die eine Site enthält. Die erste Best Practice für die Optimierung Ihrer Cloud-Bereitstellung besteht darin[ ein Upgrade durchzuführen, um `ece-tools`](../dev-tools/install-package.md) für die Vorteile der Paketfunktionen zu verwenden, z. B. Befehle zum Erstellen eines Backups der Datenbank und zum Überprüfen der Umgebungskonfiguration.
+Die Site-Leistung kann während des Bereitstellungsprozesses beeinträchtigt sein. Wie lange sich eine Site im Wartungsmodus befindet, wenn sie auf einer Produktions-Site bereitgestellt wird, hängt von vielen Faktoren ab, z. B. der Umgebungskonfiguration und der Menge an Inhalten, die eine Site enthält. Die erste Best Practice für die Optimierung Ihrer Cloud-Bereitstellung besteht darin[&#x200B; ein Upgrade durchzuführen, um `ece-tools`](../dev-tools/install-package.md) für die Vorteile der Paketfunktionen zu verwenden, z. B. Befehle zum Erstellen eines Backups der Datenbank und zum Überprüfen der Umgebungskonfiguration.
 
 Die folgenden Themen können Ihnen dabei helfen, besser zu verstehen, wie Sie den Bereitstellungsprozess optimieren können:
 

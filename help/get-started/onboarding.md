@@ -28,7 +28,7 @@ Der Lizenzinhaber kann Benutzerkonten hinzufügen, um Zugriff auf Code zu gewäh
 
 ### Benutzerregistrierung
 
-Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen hinzufügen. Wenn Sie einen neuen Benutzer haben, bitten Sie ihn, sich [für ein Konto ](https://account.magento.com/customer/account/login/)) anzumelden und die mit seinem Kontoprofil verknüpfte E-Mail-Adresse anzugeben.
+Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen hinzufügen. Wenn Sie einen neuen Benutzer haben, bitten Sie ihn, sich [für ein Konto &#x200B;](https://account.magento.com/customer/account/login/)) anzumelden und die mit seinem Kontoprofil verknüpfte E-Mail-Adresse anzugeben.
 
 ### Zugriff auf freigegebenes Konto
 

@@ -36,7 +36,7 @@ Zusammenfassend lässt sich sagen, dass Umgebungsvariablen alle anderen Werte ü
 
 >[!TIP]
 >
->Weitere Informationen [ Überschreibungsschema für ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) Pipeline-Bereitstellung finden Sie _Konfigurationsverwaltung_ im Konfigurationshandbuch.
+>Weitere Informationen [&#x200B; Überschreibungsschema für &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) Pipeline-Bereitstellung finden Sie _Konfigurationsverwaltung_ im Konfigurationshandbuch.
 
 Wenn dieselbe Einstellung an mehreren Stellen konfiguriert ist, verwendet die Anwendung die folgende Konfigurationshierarchie, um zu bestimmen, welcher Wert auf die Umgebung angewendet werden soll:
 

@@ -168,7 +168,7 @@ Ihr Adobe Commerce in Cloud-Infrastrukturprojekt kann Code aus einem privaten Gi
 
 Um Ihrem privaten GitHub-Repository einen Bereitstellungsschlüssel hinzuzufügen, müssen Sie der Administrator dieses Repositorys sein. Mit GitHub können Sie einen Bereitstellungsschlüssel nur für ein Repository verwenden.
 
-Wenn Sie es vorziehen, dass Ihr Projekt auf mehrere Repositorys zugreift, können Sie einen SSH-Schlüssel an ein automatisiertes Benutzerkonto anhängen. Da dieses Konto nicht von einem Menschen verwendet wird, wird es als &quot;[&quot; ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Fügen Sie das Computerkonto als Mitarbeiter hinzu oder fügen Sie den Computerbenutzer einem Team mit Zugriff auf die Repositorys hinzu.
+Wenn Sie es vorziehen, dass Ihr Projekt auf mehrere Repositorys zugreift, können Sie einen SSH-Schlüssel an ein automatisiertes Benutzerkonto anhängen. Da dieses Konto nicht von einem Menschen verwendet wird, wird es als &quot;[&quot; &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Fügen Sie das Computerkonto als Mitarbeiter hinzu oder fügen Sie den Computerbenutzer einem Team mit Zugriff auf die Repositorys hinzu.
 
 >[!INFO]
 >

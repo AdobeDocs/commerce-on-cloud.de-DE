@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Automatische Skalierung
 
-Die automatische Skalierung fügt der Cloud-Infrastruktur automatisch Ressourcen hinzu oder entfernt diese, um eine optimale Leistung und angemessene Kosten zu gewährleisten. Diese Funktion ist derzeit nur für Projekte verfügbar, die mit einer [skalierten Architektur“ konfiguriert ](scaled-architecture.md).
+Die automatische Skalierung fügt der Cloud-Infrastruktur automatisch Ressourcen hinzu oder entfernt diese, um eine optimale Leistung und angemessene Kosten zu gewährleisten. Diese Funktion ist derzeit nur für Projekte verfügbar, die mit einer [skalierten Architektur“ konfiguriert &#x200B;](scaled-architecture.md).
 
 ## Webserver-Knoten
 
@@ -58,7 +58,7 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Automatische Skalierung aktivieren
 
-Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren oder zu deaktivieren [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
+Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren oder zu deaktivieren [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
 
 - **Kontaktgrund**: Infrastrukturänderungsanfrage
 - **Adobe Commerce-Infrastruktur-Kontaktgrund**: Andere Infrastrukturänderungsanfrage

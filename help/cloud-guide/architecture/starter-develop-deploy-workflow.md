@@ -42,7 +42,7 @@ Sie haben auch einige optionale Schritte, mit denen Sie Ihren Code entwickeln un
 - [Installieren von Beispieldaten](#optional-install-sample-data) in Ihrem Store
 - [Abrufen von Produktionsspeicherdaten](#optional-pull-production-data) bis zu Umgebungen
 
-Bei diesem Prozess wird davon ausgegangen, dass Sie Ihren [lokalen Entwicklerarbeitsbereich“ eingerichtet ](../development/overview.md).
+Bei diesem Prozess wird davon ausgegangen, dass Sie Ihren [lokalen Entwicklerarbeitsbereich“ eingerichtet &#x200B;](../development/overview.md).
 
 ### Klonen und Verzweigen
 
@@ -158,7 +158,7 @@ Wenn Sie beim Entwickeln Ihres Stores Beispieldaten benötigen, können Sie Beis
 
 Fügen Sie alle Ihre Produkte, Kataloge, Site-Inhalte usw. direkt zur `production` hinzu. Durch Hinzufügen dieser Daten zur Produktionsumgebung können Sie Ihren Kunden aktualisierte Preise, Coupons, Lagerbestände, Verkaufsankündigungen, Informationen über zukünftige Angebote und mehr bereitstellen. Diese Daten enthalten keine Erweiterungskonfigurationen, die Sie in Ihrer lokalen Entwicklungsverzweigung konfigurieren.
 
-Wenn Sie Funktionen entwickeln, Erweiterungen hinzufügen und Designs entwerfen, ist es hilfreich, mit echten Daten zu arbeiten. Sie können jederzeit aus [ Produktionsumgebung einen Datenbank-Dump ](../storage/database-dump.md) und diesen bei Bedarf in Ihre Staging- und Integrationsumgebungen pushen.
+Wenn Sie Funktionen entwickeln, Erweiterungen hinzufügen und Designs entwerfen, ist es hilfreich, mit echten Daten zu arbeiten. Sie können jederzeit aus [&#x200B; Produktionsumgebung einen Datenbank-Dump &#x200B;](../storage/database-dump.md) und diesen bei Bedarf in Ihre Staging- und Integrationsumgebungen pushen.
 
 So exportieren Sie Produktionsdaten als Testdaten zur Verwendung in Staging- und Integrationsumgebungen:
 
@@ -172,7 +172,7 @@ Informationen zum Migrieren dieser Daten finden Sie unter [Migrieren und Bereits
 
 >[!NOTE]
 >
->Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[ „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
+>Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[&#x200B; „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
 
 >[!WARNING]
 >

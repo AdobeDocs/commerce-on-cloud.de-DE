@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Best Practices für die Bereitstellung
 
-Skripte erstellen und bereitstellen, die beim Zusammenführen von Code in einer Remote-Umgebung aktiviert werden. Diese Skripte verwenden Umgebungs[Konfigurationsdateien ](../environment/overview.md) Anwendungs-Code, um eine Cloud-Infrastruktur mit entsprechenden Daten und Services bereitzustellen. Außerdem werden diese Skripte zum Installieren oder Aktualisieren des Adobe Commerce-Programms, von Drittanbieterdiensten und benutzerdefinierten Erweiterungen in der Cloud-Umgebung verwendet.
+Skripte erstellen und bereitstellen, die beim Zusammenführen von Code in einer Remote-Umgebung aktiviert werden. Diese Skripte verwenden Umgebungs[Konfigurationsdateien &#x200B;](../environment/overview.md) Anwendungs-Code, um eine Cloud-Infrastruktur mit entsprechenden Daten und Services bereitzustellen. Außerdem werden diese Skripte zum Installieren oder Aktualisieren des Adobe Commerce-Programms, von Drittanbieterdiensten und benutzerdefinierten Erweiterungen in der Cloud-Umgebung verwendet.
 
 Der Build- und Bereitstellungsprozess unterscheidet sich für jeden Plan geringfügig:
 
@@ -29,7 +29,7 @@ Wenn Sie externe GitHub-Repositorys verwenden, wird das Vorgangslog in der GitHu
 >
 >In Integrationsumgebungen können Sie die Bereitstellungsprotokolle nicht über die [!DNL Cloud Console] anzeigen. Diese Funktion ist nur für Produktions- und Staging-Umgebungen verfügbar. Sie können jedoch Protokolle für jede Phase der Bereitstellung in jeder Umgebung mithilfe der Protokolle [Erstellen und Bereitstellen](../test/log-locations.md#build-and-deploy-logs) anzeigen. Informationen zur Fehlerbehebung finden Sie unter [Bereitstellungsfehlerreferenz](../dev-tools/error-reference.md).
 
-Sie können &quot;[ mit New Relic&quot; aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und die Leistung zwischen Bereitstellungen zu analysieren.
+Sie können &quot;[&#x200B; mit New Relic&quot; aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und die Leistung zwischen Bereitstellungen zu analysieren.
 
 ## Best Practices für Builds und die Bereitstellung
 
@@ -79,7 +79,7 @@ Lesen Sie diese Best Practices und Überlegungen für Ihren Bereitstellungsproze
 
   Führen Sie vor der Bereitstellung in der Produktion die folgenden Aufgaben aus:
 
-   - Stellen Sie sicher, dass Sie mit „SSH“ eine Verbindung zu allen drei Knoten in [ Produktionsumgebung ](../development/secure-connections.md) können.
+   - Stellen Sie sicher, dass Sie mit „SSH“ eine Verbindung zu allen drei Knoten in [&#x200B; Produktionsumgebung &#x200B;](../development/secure-connections.md) können.
 
    - Stellen Sie sicher, dass die Indexer auf _Planmäßig aktualisieren_ eingestellt sind. Siehe [Indizierungsmodi](https://developer.adobe.com/commerce/php/development/components/indexing/) im _Entwicklerhandbuch für Erweiterungen_.
 
@@ -95,7 +95,7 @@ Die folgenden Phasen treten in Ihrer lokalen Entwicklungsumgebung und der Integr
 
 ### Phase 1: Validierung von Code und Konfiguration
 
-Beim erstmaligen Einrichten eines Projekts ([ Cloud-Infrastrukturvorlage](https://github.com/magento/magento-cloud) stellt eine Grundlage für die Code-Dateien bereit. Dieses Code-Repository wird in Ihr Projekt als `master` geklont.
+Beim erstmaligen Einrichten eines Projekts ([&#x200B; Cloud-Infrastrukturvorlage](https://github.com/magento/magento-cloud) stellt eine Grundlage für die Code-Dateien bereit. Dieses Code-Repository wird in Ihr Projekt als `master` geklont.
 
 - **Für**: `master` Verzweigung ist Ihre Produktionsumgebung.
 - **Für Pro** - `master` beginnt als Ursprungsverzweigung für die Integrationsumgebung.

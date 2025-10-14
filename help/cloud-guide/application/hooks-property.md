@@ -17,7 +17,7 @@ Verwenden Sie den Abschnitt `hooks` , um Shell-Befehle während der Build-, Bere
 
 - **`deploy`**: Ausführen von Befehlen _nach_ Verpacken und Bereitstellen der Anwendung. An dieser Stelle können Sie auf andere Dienste zugreifen. Da der standardmäßige `php ./vendor/bin/ece-tools`-Befehl das `app/etc` an den richtigen Speicherort kopiert, müssen Sie (_)_ Bereitstellungsbefehl benutzerdefinierte Befehle hinzufügen, um Fehler bei benutzerdefinierten Befehlen zu vermeiden.
 
-- **`post_deploy`** - Führt Befehle aus _nachdem_ Anwendung bereitgestellt wurde und _danach_ beginnt der Container Verbindungen zu akzeptieren. Der `post_deploy`-Hook löscht den Cache und lädt den Cache vorab (erwärmt). Sie können die Liste der Seiten mithilfe der `WARM_UP_PAGES` Variable im [Phase nach der Bereitstellung“ ](../environment/variables-post-deploy.md). Dies ist zwar nicht erforderlich, funktioniert aber zusammen mit der Umgebungsvariablen `SCD_ON_DEMAND` .
+- **`post_deploy`** - Führt Befehle aus _nachdem_ Anwendung bereitgestellt wurde und _danach_ beginnt der Container Verbindungen zu akzeptieren. Der `post_deploy`-Hook löscht den Cache und lädt den Cache vorab (erwärmt). Sie können die Liste der Seiten mithilfe der `WARM_UP_PAGES` Variable im [Phase nach der Bereitstellung“ &#x200B;](../environment/variables-post-deploy.md). Dies ist zwar nicht erforderlich, funktioniert aber zusammen mit der Umgebungsvariablen `SCD_ON_DEMAND` .
 
 Das folgende Beispiel zeigt die Standardkonfiguration in der `.magento.app.yaml`. Fügen Sie CLI-Befehle unter den Abschnitten `build`, `deploy` oder `post_deploy` (_)_ `ece-tools` Befehl hinzu:
 

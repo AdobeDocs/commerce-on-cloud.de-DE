@@ -27,7 +27,7 @@ Fehlermeldungen werden nach einer der Bereitstellungsphasen kategorisiert: Erste
 
 - **Fehlercode**: Die von Adobe Commerce zugewiesene Kennung für die Fehlermeldung
 - **Staging**: Gibt an, ob der Fehler während der Build-, Bereitstellungs- oder Nach-Bereitstellungsphase aufgetreten ist
-- **Schritt**: Gibt den Schritt im Bereitstellungsszenario an, der den Fehler zurückgeben kann. Wenn die _Schritt_-Spalte leer ist, handelt es sich bei dem Fehler um einen allgemeinen Fehler, der in mehreren Schritten oder bei Vorab-Verarbeitungsvorgängen zurückgegeben werden kann. Weitere [ zu den Schritten ](../deploy/scenario-based.md) Erstellen, Bereitstellen und Nachbereitstellen finden Sie unter „Szenariobasierte Bereitstellung“.
+- **Schritt**: Gibt den Schritt im Bereitstellungsszenario an, der den Fehler zurückgeben kann. Wenn die _Schritt_-Spalte leer ist, handelt es sich bei dem Fehler um einen allgemeinen Fehler, der in mehreren Schritten oder bei Vorab-Verarbeitungsvorgängen zurückgegeben werden kann. Weitere [&#x200B; zu den Schritten &#x200B;](../deploy/scenario-based.md) Erstellen, Bereitstellen und Nachbereitstellen finden Sie unter „Szenariobasierte Bereitstellung“.
 - **Vorschlag**: Bietet Anleitungen zur Fehlerbehebung und Fehlerbehebung
 - **Titel (Fehlerbeschreibung)**: Eine Beschreibung, die die Ursache des Fehlers zusammenfasst
 - **Typ**: Gibt an, ob der Fehler ein kritischer Fehler oder eine Warnung ist

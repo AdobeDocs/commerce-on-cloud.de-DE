@@ -197,7 +197,7 @@ Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commer
 
 ## Elasticsearch-Service neu starten
 
-Wenn Sie den [Elasticsearch ](https://www.elastic.co)-Service neu starten müssen, wenden Sie sich an den Adobe Commerce-Support.
+Wenn Sie den [Elasticsearch &#x200B;](https://www.elastic.co)-Service neu starten müssen, wenden Sie sich an den Adobe Commerce-Support.
 
 ## Zusätzliche Suchkonfiguration
 

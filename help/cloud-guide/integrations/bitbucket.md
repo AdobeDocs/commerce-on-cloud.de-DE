@@ -169,7 +169,7 @@ Um Ereignisse - z. B. eine Push-Benachrichtigung - mit Ihrem Cloud Git-Server zu
 
 1. Überprüfen Sie den Webhook, bevor Sie fortfahren.
 
-   Wenn der Hook aktiv ist, überspringen Sie die verbleibenden Schritte und [ Sie die Integration ](#test-the-integration). Der Hook sollte einen Namen ähnlich **&quot;Adobe Commerce on Cloud Infrastructure &lt;project_id>&quot;** und ein Hook-URL-Format ähnlich `https://<zone>.magento.cloud/api/projects/<project_id>/integrations/<id>/hook` haben.
+   Wenn der Hook aktiv ist, überspringen Sie die verbleibenden Schritte und [&#x200B; Sie die Integration &#x200B;](#test-the-integration). Der Hook sollte einen Namen ähnlich **&quot;Adobe Commerce on Cloud Infrastructure &lt;project_id>&quot;** und ein Hook-URL-Format ähnlich `https://<zone>.magento.cloud/api/projects/<project_id>/integrations/<id>/hook` haben.
 
 1. Klicken Sie **Webhook hinzufügen**.
 

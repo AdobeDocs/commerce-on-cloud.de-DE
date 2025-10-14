@@ -75,7 +75,7 @@ Siehe [Patches anwenden](../development/apply-patches.md).
 - **default**—`6`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Gibt an[ welche GZIP](https://www.gnu.org/software/gzip)-Komprimierungsstufe (`0` zu `9`) beim Komprimieren statischer Inhalte verwendet werden soll; `0` deaktiviert die Komprimierung.
+Gibt an[&#x200B; welche GZIP](https://www.gnu.org/software/gzip)-Komprimierungsstufe (`0` zu `9`) beim Komprimieren statischer Inhalte verwendet werden soll; `0` deaktiviert die Komprimierung.
 
 ```yaml
 stage:

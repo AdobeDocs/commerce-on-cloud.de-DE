@@ -57,7 +57,7 @@ In früheren ECE-Tools-Versionen konnten Sie die `m2-ece-build` und `m2-ece-depl
 
 ## Änderungen an Cloud-Patches
 
-- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=de) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patchkonflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie manuell heruntergeladen und zu Ihrem Projekt hinzugefügt haben.
+- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=de) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patchkonflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie manuell heruntergeladen und zu Ihrem Projekt hinzugefügt haben.
 
 - **Befehl zum Anwenden von Patches wurde aktualisiert**-Der Befehl zum Anwenden von Patches wurde aus dem `vendor/bin/ece-tools` in das `vendor/bin/ece-patches`-Verzeichnis verschoben. Wenn Sie diesen Befehl verwenden, um Patches manuell anzuwenden, verwenden Sie den neuen Pfad.
 

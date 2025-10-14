@@ -155,7 +155,7 @@ Aktivieren oder deaktivieren Sie niemals eine Erweiterung, während Sie bei den 
 
 ## Aktualisieren einer Erweiterung
 
-Bevor Sie fortfahren, benötigen Sie den Namen des Komponisten und die Version für die Erweiterung. Überprüfen Sie außerdem, ob die Erweiterung mit Ihrem Projekt und der Adobe Commerce-Version kompatibel ist. Überprüfen Sie [ die erforderliche PHP-Version, ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) Sie beginnen.
+Bevor Sie fortfahren, benötigen Sie den Namen des Komponisten und die Version für die Erweiterung. Überprüfen Sie außerdem, ob die Erweiterung mit Ihrem Projekt und der Adobe Commerce-Version kompatibel ist. Überprüfen Sie [&#x200B; die erforderliche PHP-Version, &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) Sie beginnen.
 
 **Aktualisieren einer Erweiterung**:
 

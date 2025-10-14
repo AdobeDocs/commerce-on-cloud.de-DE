@@ -18,12 +18,12 @@ In der folgenden Tabelle werden die in einem Cloud-Projekt enthaltenen Dateien b
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml` | Konfigurationsdatei, die `www` zur Apex-Domain und `php` Anwendung umleitet, um HTTP bereitzustellen. Siehe [Konfigurieren von Routen](../routes/routes-yaml.md). |
 | `/.magento/services.yaml` | Eine Konfigurationsdatei, die eine MySQL-Instanz (MariaDB), Redis und OpenSearch oder ein Elasticsearch definiert. Siehe [Konfigurieren von Services](../services/services-yaml.md). |
-| `/app` | Der `code` Ordner wird für benutzerdefinierte Module verwendet. Der Ordner `design` wird für [benutzerdefinierte Designs“ ](../store/custom-theme.md). Der Ordner `etc` enthält Konfigurationsdateien für das Programm. |
+| `/app` | Der `code` Ordner wird für benutzerdefinierte Module verwendet. Der Ordner `design` wird für [benutzerdefinierte Designs“ &#x200B;](../store/custom-theme.md). Der Ordner `etc` enthält Konfigurationsdateien für das Programm. |
 | `/m2-hotfixes` | Wird für benutzerdefinierte Patches verwendet. |
 | `/update` | Ein vom Support-Modul verwendeter Service-Ordner. |
 | `.gitignore` | Geben Sie an, welche Dateien und Verzeichnisse ignoriert werden sollen. Siehe [`.gitignore` Referenz](#ignoring-files). |
 | `.magento.app.yaml` | Eine Konfigurationsdatei, die die Eigenschaften zum Erstellen der Anwendung definiert. Siehe [Konfigurieren einer Anwendung](../application/configure-app-yaml.md). |
-| `.magento.env.yaml` | Konfigurationsdatei für die Build-, Bereitstellungs- und Nachbereitstellungsphasen. Das `ece-tools`-Paket enthält ein Beispiel für diese Datei. Siehe [Konfigurieren von ](../environment/configure-env-yaml.md). |
+| `.magento.env.yaml` | Konfigurationsdatei für die Build-, Bereitstellungs- und Nachbereitstellungsphasen. Das `ece-tools`-Paket enthält ein Beispiel für diese Datei. Siehe [Konfigurieren von &#x200B;](../environment/configure-env-yaml.md). |
 | `composer.json` | Ruft Adobe Commerce und die Konfigurationsskripte zur Vorbereitung der Anwendung ab. Siehe [Erforderliche Pakete](../development/overview.md#required-packages). |
 | `composer.lock` | Speichert Versionsabhängigkeiten für jedes Paket. Siehe [Erforderliche Pakete](../development/overview.md#required-packages). |
 | `magento-vars.php` | Wird zum Definieren von [mehreren Stores](../store/multiple-sites.md) und Sites mithilfe von Variablen verwendet. |
@@ -59,7 +59,7 @@ Die Remote-Integrations-, Staging- und Produktionsumgebungen sind schreibgeschü
 
 ## Dateien ignorieren
 
-Es gibt eine `.gitignore`-Basisdatei mit dem Projekt-Repository von Adobe Commerce in der Cloud-Infrastruktur. Sehen Sie sich die neueste [.gitignore-Datei im Magento-Cloud-Repository ](https://github.com/magento/magento-cloud/blob/master/.gitignore). Um eine Datei hinzuzufügen, die sich in der `.gitignore` befindet, können Sie die Option `-f` (force) beim Staging eines Commits verwenden:
+Es gibt eine `.gitignore`-Basisdatei mit dem Projekt-Repository von Adobe Commerce in der Cloud-Infrastruktur. Sehen Sie sich die neueste [.gitignore-Datei im Magento-Cloud-Repository &#x200B;](https://github.com/magento/magento-cloud/blob/master/.gitignore). Um eine Datei hinzuzufügen, die sich in der `.gitignore` befindet, können Sie die Option `-f` (force) beim Staging eines Commits verwenden:
 
 ```bash
 git add <path/filename> -f
@@ -80,7 +80,7 @@ Sie können die folgenden Schritte verwenden, um die Struktur eines vorhandenen 
    }
    ```
 
-1. Fügen Sie die für die Basisvorlage entworfene `.gitignore` hinzu. Wenn Sie beispielsweise die `.gitignore` für die Vorlage Version 2.2.6 benötigen, verwenden Sie die Datei [.gitignore für ](https://github.com/magento/magento-cloud/blob/2.2.6/.gitignore).2.6. als Referenz.
+1. Fügen Sie die für die Basisvorlage entworfene `.gitignore` hinzu. Wenn Sie beispielsweise die `.gitignore` für die Vorlage Version 2.2.6 benötigen, verwenden Sie die Datei [.gitignore für &#x200B;](https://github.com/magento/magento-cloud/blob/2.2.6/.gitignore).2.6. als Referenz.
 
 1. Löschen Sie den Git-Cache.
 

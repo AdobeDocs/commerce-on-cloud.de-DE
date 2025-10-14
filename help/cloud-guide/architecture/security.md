@@ -70,7 +70,7 @@ Die vollständige Code-Basis wird mit diesen Tools alle zwei Wochen gescannt. Ku
 
 Kunden müssen sicherstellen, dass diese Patches innerhalb von 30 Tagen nach der Veröffentlichung gemäß den PCI-Richtlinien auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Security Scan Tool](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Dienst, der auf jeder beliebigen Adobe Commerce-Version ausgeführt werden kann.
 
-Um Sicherheitsforscher dazu zu ermutigen, Sicherheitslücken zu identifizieren und zu melden, [ Adobe Commerce zusätzlich zu internen Tests ein ](https://hackerone.com/magento)Bug-Bounty-Programm“. Des Weiteren wird dem Kunden der vollständige Quellcode des Programms zur eigenen Überprüfung, falls gewünscht, bereitgestellt.
+Um Sicherheitsforscher dazu zu ermutigen, Sicherheitslücken zu identifizieren und zu melden, [&#x200B; Adobe Commerce zusätzlich zu internen Tests ein &#x200B;](https://hackerone.com/magento)Bug-Bounty-Programm“. Des Weiteren wird dem Kunden der vollständige Quellcode des Programms zur eigenen Überprüfung, falls gewünscht, bereitgestellt.
 
 ## Schreibgeschütztes Dateisystem
 
@@ -82,7 +82,7 @@ Die einzige Möglichkeit, ausführbaren Code in die Managed Services-Produktions
 
 ## Protokollierung
 
-Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Betriebssystem-, Anwendungs- und Datenbankprotokolle werden auf den Produktions-Servern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce [Project Web Interface) ](../project/overview.md). Alle Support-Zugriffe werden protokolliert und Support-Sitzungen aufgezeichnet.
+Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Betriebssystem-, Anwendungs- und Datenbankprotokolle werden auf den Produktions-Servern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce [Project Web Interface) &#x200B;](../project/overview.md). Alle Support-Zugriffe werden protokolliert und Support-Sitzungen aufgezeichnet.
 
 Siehe [Protokolle anzeigen und verwalten](../test/log-locations.md).
 
@@ -108,7 +108,7 @@ Die DSGVO fordert, dass alle personenbezogenen Daten (wie Namen, Rasse und Gebur
 
 >[!NOTE]
 >
->Diese Seite bietet einen allgemeinen Überblick darüber, was im Rahmen der DSGVO zu beachten ist. Einzelheiten zur Speicherung _[personenbezogenen Daten durch Adobe Commerce finden Sie ](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/overview)_ „Sicherheits- und Compliance-Handbuch“. Um zu bestimmen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Diese Seite bietet einen allgemeinen Überblick darüber, was im Rahmen der DSGVO zu beachten ist. Einzelheiten zur Speicherung _[personenbezogenen Daten durch Adobe Commerce finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/overview)_ „Sicherheits- und Compliance-Handbuch“. Um zu bestimmen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Backups
 

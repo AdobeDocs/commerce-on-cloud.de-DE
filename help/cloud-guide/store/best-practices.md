@@ -47,7 +47,7 @@ So bearbeiten Sie erweiterte Preise und aktualisieren das Staging von Inhalten:
 1. Speichern Sie die Promotion. Eine inaktive erste Kampagne wird erstellt.
 1. Sie können eine Vorschau anzeigen, um den Sonderpreis, den Namen der Promotion, den regulären Preis und den geplanten Datumsbereich für die Kampagne zu überprüfen.
 
-Weitere Schritte können Sie mit den Anweisungen unter &quot;[ für Katalogpreisregeln planen“ ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html?lang=de). Klicken Sie **Weiter**, um die Schritte zu durchlaufen.
+Weitere Schritte können Sie mit den Anweisungen unter &quot;[&#x200B; für Katalogpreisregeln planen“ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rule-catalog-scheduled-changes.html?lang=de). Klicken Sie **Weiter**, um die Schritte zu durchlaufen.
 
 ## Preisregeln
 

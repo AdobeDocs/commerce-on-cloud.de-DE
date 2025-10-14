@@ -111,7 +111,7 @@ Die folgenden Beispiele zeigen, wie Sie benutzerdefinierte VCL-Snippets vom Admi
 
 ## Snippets, die im Commerce-Admin nicht angezeigt/geändert werden können
 
-Einige Snippets können nicht direkt in der Admin von Commerce angezeigt oder geändert werden. Beispiel: [dynamische Snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Im Abschnitt Benutzerdefinierte VCL-Snippets werden keine Snippets angezeigt, die vom Cloud-Support-Team direkt zum [Fastly-Management-Dashboard“ hinzugefügt ](fastly.md#fastly-service-account-and-credentials).
+Einige Snippets können nicht direkt in der Admin von Commerce angezeigt oder geändert werden. Beispiel: [dynamische Snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Im Abschnitt Benutzerdefinierte VCL-Snippets werden keine Snippets angezeigt, die vom Cloud-Support-Team direkt zum [Fastly-Management-Dashboard“ hinzugefügt &#x200B;](fastly.md#fastly-service-account-and-credentials).
 
 
 **So beobachten Sie die vom Cloud-Support-Team hinzugefügten Snippets:**
@@ -246,7 +246,7 @@ Die Werte umfassen:
 
 - `dynamic` - Gibt an, ob es sich um einen [regulären Ausschnitt](https://docs.fastly.com/en/guides/about-vcl-snippets) oder einen [dynamischen Ausschnitt](https://docs.fastly.com/guides/vcl-snippets/using-dynamic-vcl-snippets) handelt.
 
-- `type` () - Gibt den Ort an, an dem das erzeugte Snippet eingefügt werden soll, z. B. `init` (über den Unterprogrammen) und `recv` (innerhalb der Unterprogramme). Informationen zu [ Werten finden Sie unter ](https://docs.fastly.com/api/config#snippet)Fastly VCL-Snippet-Objektwerte .
+- `type` () - Gibt den Ort an, an dem das erzeugte Snippet eingefügt werden soll, z. B. `init` (über den Unterprogrammen) und `recv` (innerhalb der Unterprogramme). Informationen zu [&#x200B; Werten finden Sie unter &#x200B;](https://docs.fastly.com/api/config#snippet)Fastly VCL-Snippet-Objektwerte .
 
 - `priority` - Ein Wert von `1` bis `100`, der bestimmt, wann der benutzerdefinierte VCL-Code ausgeführt wird. Benutzerdefinierte VCL-Ausschnitte mit niedrigeren Werten werden zuerst ausgeführt.
 

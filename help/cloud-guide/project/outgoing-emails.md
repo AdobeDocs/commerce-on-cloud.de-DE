@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Sie können ausgehende E-Mails für Integrations- (und nur für Starter-Umgebungen) über die [!DNL Cloud Console] oder die Befehlszeile aktivieren und deaktivieren. Aktivieren Sie ausgehende E-Mails, um E-Mails zur Zwei-Faktor-Authentifizierung oder zum Zurücksetzen des Passworts für Benutzer von Cloud-Projekten zu senden.
 
-Ausgehende E-Mails sind standardmäßig in Produktions- und Staging-Umgebungen (nur Pro) aktiviert. Die **[!UICONTROL Enable outgoing emails]** kann jedoch unabhängig vom Status in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile) ](#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
+Ausgehende E-Mails sind standardmäßig in Produktions- und Staging-Umgebungen (nur Pro) aktiviert. Die **[!UICONTROL Enable outgoing emails]** kann jedoch unabhängig vom Status in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile) &#x200B;](#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
 
 Durch die Aktualisierung des `enable_smtp`-Eigenschaftswerts [Befehlszeile](#enable-emails-in-the-cli) ändert sich auch der [!UICONTROL Enable outgoing emails] für diese Umgebung in der Cloud-Konsole.
 

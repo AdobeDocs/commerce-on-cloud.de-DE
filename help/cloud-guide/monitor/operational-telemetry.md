@@ -25,4 +25,4 @@ Kunden, die auf operative Telemetriedaten zugreifen oder den Service deaktiviere
 
 >[!NOTE]
 >
->Weitere Informationen [ Service finden ](https://www.aem.live/docs/operational-telemetry) unter „Betriebstelemetrie“.
+>Weitere Informationen [&#x200B; Service finden &#x200B;](https://www.aem.live/docs/operational-telemetry) unter „Betriebstelemetrie“.

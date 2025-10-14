@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Variablen nach der Bereitstellung
 
-Die folgenden _nach der Bereitstellung_ Variablen steuern Aktionen in der Phase nach der Bereitstellung und können Werte von den „globalen Variablen[ erben und ](variables-global.md). Fügen Sie diese Variablen in den `post-deploy` Schritt der `.magento.env.yaml` ein:
+Die folgenden _nach der Bereitstellung_ Variablen steuern Aktionen in der Phase nach der Bereitstellung und können Werte von den „globalen Variablen[&#x200B; erben und &#x200B;](variables-global.md). Fügen Sie diese Variablen in den `post-deploy` Schritt der `.magento.env.yaml` ein:
 
 ```yaml
 stage:

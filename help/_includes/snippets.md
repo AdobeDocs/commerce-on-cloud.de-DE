@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Projekte, die vor dem 5. Juni 2020 bereitgestellt wurden, wiesen mehrere kleinere Integrationsumgebungen auf. Wenn Sie eine größere Integrationsumgebung für Tests und Entwicklung benötigen, fordern Sie ein Upgrade auf die erweiterte Integrationsumgebung an. Weitere Informationen finden Sie [ Artikel ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=de)Integrationsumgebungsanfrage“ im _Adobe Commerce_ Center.
+>Projekte, die vor dem 5. Juni 2020 bereitgestellt wurden, wiesen mehrere kleinere Integrationsumgebungen auf. Wenn Sie eine größere Integrationsumgebung für Tests und Entwicklung benötigen, fordern Sie ein Upgrade auf die erweiterte Integrationsumgebung an. Weitere Informationen finden Sie [&#x200B; Artikel &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=de)Integrationsumgebungsanfrage“ im _Adobe Commerce_ Center.
 
 ## Zusammenführungsoptionen {#merge-options}
 
@@ -38,7 +38,7 @@ Legen Sie die Option `_merge` auf einen der folgenden Werte fest:
 
 >[!WARNING]
 >
->Einige **Pro-Projekte** benötigen ein Support-Ticket, um die Routenkonfiguration in der `routes.yaml`-Datei und die Cron-Konfiguration in der `.magento.app.yaml`-Datei zu aktualisieren. Adobe empfiehlt, YAML-Konfigurationsdateien in einer Integrationsumgebung zu aktualisieren und zu testen und dann Änderungen in der Staging-Umgebung bereitzustellen. Wenn Ihre Änderungen nach der erneuten Bereitstellung nicht auf Staging-Sites angewendet werden und es keine entsprechenden Fehlermeldungen im Protokoll gibt, **Sie** MÜSSEN[ ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), das die versuchten Konfigurationsänderungen beschreibt. Schließen Sie alle aktualisierten YAML-Konfigurationsdateien in das Ticket ein.
+>Einige **Pro-Projekte** benötigen ein Support-Ticket, um die Routenkonfiguration in der `routes.yaml`-Datei und die Cron-Konfiguration in der `.magento.app.yaml`-Datei zu aktualisieren. Adobe empfiehlt, YAML-Konfigurationsdateien in einer Integrationsumgebung zu aktualisieren und zu testen und dann Änderungen in der Staging-Umgebung bereitzustellen. Wenn Ihre Änderungen nach der erneuten Bereitstellung nicht auf Staging-Sites angewendet werden und es keine entsprechenden Fehlermeldungen im Protokoll gibt, **Sie** MÜSSEN[&#x200B; ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), das die versuchten Konfigurationsänderungen beschreibt. Schließen Sie alle aktualisierten YAML-Konfigurationsdateien in das Ticket ein.
 
 ## Pro Services-Support {#pro-update-service}
 
@@ -56,9 +56,9 @@ Legen Sie die Option `_merge` auf einen der folgenden Werte fest:
 
 >[!TIP]
 >
->In Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um eine bestimmte Sicherung abzurufen, in der Datum, Uhrzeit und Zeitzone des Tickets angegeben sind.
+>In Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um eine bestimmte Sicherung abzurufen, in der Datum, Uhrzeit und Zeitzone des Tickets angegeben sind.
 >
->Adobe stellt **Umgebungen** einer automatischen Sicherung wieder her. Siehe [Wiederherstellen eines DB-Snapshots aus der Staging- oder ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=de)), um Hilfe bei der Auswahl einer Methode zum Wiederherstellen eines Staging- oder Produktions-Snapshots zu erhalten.
+>Adobe stellt **Umgebungen** einer automatischen Sicherung wieder her. Siehe [Wiederherstellen eines DB-Snapshots aus der Staging- oder &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production.html?lang=de)), um Hilfe bei der Auswahl einer Methode zum Wiederherstellen eines Staging- oder Produktions-Snapshots zu erhalten.
 
 ## Warnung zur erneuten Bereitstellung {#redeploy-warning}
 
@@ -114,7 +114,7 @@ Verwenden Sie die folgenden Anweisungen für die Einrichtung des Services in Pro
 
 >[!NOTE]
 >
->Wenn Sie eine Version von Adobe Commerce in der Cloud-Infrastruktur verwenden, die nicht das `ece-tools` enthält, müssen Sie ein [einmaliges Upgrade“ ](/help/cloud-guide/dev-tools/install-package.md) Ihr Cloud-Projekt durchführen, um veraltete Pakete zu entfernen. Wenn Sie das `ece-tools` derzeit verwenden und aktualisieren müssen, finden Sie weitere Informationen unter [Aktualisieren des ECE-Tools-Pakets](/help/cloud-guide/dev-tools/update-package.md).
+>Wenn Sie eine Version von Adobe Commerce in der Cloud-Infrastruktur verwenden, die nicht das `ece-tools` enthält, müssen Sie ein [einmaliges Upgrade“ &#x200B;](/help/cloud-guide/dev-tools/install-package.md) Ihr Cloud-Projekt durchführen, um veraltete Pakete zu entfernen. Wenn Sie das `ece-tools` derzeit verwenden und aktualisieren müssen, finden Sie weitere Informationen unter [Aktualisieren des ECE-Tools-Pakets](/help/cloud-guide/dev-tools/update-package.md).
 
 ## Upgrade-Tipp {#upgrade-tip}
 

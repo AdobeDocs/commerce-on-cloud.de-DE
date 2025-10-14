@@ -49,7 +49,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 
 >[!NOTE]
 >
->Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [ Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
+>Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [&#x200B; Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
 
 ## Umschreiben mit Fastly VCL-Snippet
 

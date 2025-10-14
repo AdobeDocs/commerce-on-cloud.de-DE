@@ -85,7 +85,7 @@ stage:
 
 Aktivieren der Generierung statischer Inhalte auf Anfrage eines Benutzers (SCD). Statische Inhalte bei Bedarf eignen sich ideal für den Entwicklungs- und Test-Workflow, da sie die Bereitstellungszeit verkürzen.
 
-Vorausfüllen des Cache mithilfe des [`post_deploy` Hooks ](../application/hooks-property.md) die Ausfallzeit der Site. Der Cache-Warming ist nur für Pro-Projekte verfügbar, die Staging- und Produktionsumgebungen im [!DNL Cloud Console] enthalten, sowie für Starter-Projekte. Fügen Sie die Umgebungsvariable `SCD_ON_DEMAND` zum `global` in der `.magento.env.yaml` hinzu:
+Vorausfüllen des Cache mithilfe des [`post_deploy` Hooks &#x200B;](../application/hooks-property.md) die Ausfallzeit der Site. Der Cache-Warming ist nur für Pro-Projekte verfügbar, die Staging- und Produktionsumgebungen im [!DNL Cloud Console] enthalten, sowie für Starter-Projekte. Fügen Sie die Umgebungsvariable `SCD_ON_DEMAND` zum `global` in der `.magento.env.yaml` hinzu:
 
 ```yaml
 stage:

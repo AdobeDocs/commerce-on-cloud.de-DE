@@ -36,7 +36,7 @@ Die Bereitstellungsstrategien unterscheiden sich je nachdem, ob Sie statische In
 
 ### Festlegen der SCD beim Build
 
-Das Generieren von statischem Inhalt während der Build-Phase mit minimiertem HTML ist die optimale Konfiguration für [**Bereitstellungen ohne Ausfallzeiten**, ](reduce-downtime.md) auch als **Idealzustand“**. Anstatt Dateien auf ein gemountetes Laufwerk zu kopieren, wird ein Symlink aus dem `./init/pub/static` Verzeichnis erstellt.
+Das Generieren von statischem Inhalt während der Build-Phase mit minimiertem HTML ist die optimale Konfiguration für [**Bereitstellungen ohne Ausfallzeiten**, &#x200B;](reduce-downtime.md) auch als **Idealzustand“**. Anstatt Dateien auf ein gemountetes Laufwerk zu kopieren, wird ein Symlink aus dem `./init/pub/static` Verzeichnis erstellt.
 
 Zum Generieren statischer Inhalte ist Zugriff auf Designs und Gebietsschemata erforderlich. Adobe Commerce speichert Designs im Dateisystem, auf das während der Build-Phase zugegriffen werden kann. Adobe Commerce speichert jedoch Gebietsschemata in der Datenbank. Die Datenbank _während_ Erstellungsphase nicht verfügbar. Um den statischen Inhalt während der Build-Phase zu generieren, müssen Sie den `config:dump`-Befehl im `ece-tools`-Paket verwenden, um Gebietsschemata in das Dateisystem zu verschieben. Es liest die Gebietsschemata und speichert sie in der `app/etc/config.php`.
 
@@ -62,7 +62,7 @@ Zum Generieren statischer Inhalte ist Zugriff auf Designs und Gebietsschemata er
    - [SKIP_SCD](../environment/variables-build.md#skip_scd) beim Build-Schritt ist `false`
    - [SCD_STRATEGY](../environment/variables-build.md#scd_strategy) ist `compact`
 
-1. Überprüfen Sie die Konfiguration [ Hooks „Nach der Bereitstellung](../application/hooks-property.md) in der `.magento.app.yaml`.
+1. Überprüfen Sie die Konfiguration [&#x200B; Hooks „Nach der Bereitstellung](../application/hooks-property.md) in der `.magento.app.yaml`.
 
 1. Überprüfen Sie Ihre Einstellungen, indem Sie den [Smart-Assistenten für den idealen Status](smart-wizards.md) ausführen.
 
@@ -72,9 +72,9 @@ Zum Generieren statischer Inhalte ist Zugriff auf Designs und Gebietsschemata er
 
 ### SCD bei Bedarf einstellen
 
-Die Erstellung von SCD on demand ist optimal für einen Entwicklungs-Workflow in der Integrationsumgebung. Dadurch wird die Bereitstellungszeit verkürzt, sodass Sie Ihre Implementierungen schnell überprüfen und Integrationstests ausführen können. Aktivieren Sie [ Umgebungsvariable SCD_ON_DEMAND](../environment/variables-global.md#scdondemand) im globalen Schritt der `.magento.env.yaml`. Die Variable SCD_ON_DEMAND überschreibt alle anderen Konfigurationen im Zusammenhang mit SCD und löscht vorhandene Inhalte aus dem `~/pub/static`.
+Die Erstellung von SCD on demand ist optimal für einen Entwicklungs-Workflow in der Integrationsumgebung. Dadurch wird die Bereitstellungszeit verkürzt, sodass Sie Ihre Implementierungen schnell überprüfen und Integrationstests ausführen können. Aktivieren Sie [&#x200B; Umgebungsvariable SCD_ON_DEMAND](../environment/variables-global.md#scdondemand) im globalen Schritt der `.magento.env.yaml`. Die Variable SCD_ON_DEMAND überschreibt alle anderen Konfigurationen im Zusammenhang mit SCD und löscht vorhandene Inhalte aus dem `~/pub/static`.
 
-Bei Verwendung der SCD-On-Demand-Strategie ist es hilfreich, den Cache vorab mit Seiten zu laden, die Sie erwarten, z. B. die -Startseite. Fügen Sie Ihre Liste der erwarteten Seiten in [ Umgebungsvariablen WARM_UP_PAGES](../environment/variables-post-deploy.md#warmuppages) in der Phase nach der Bereitstellung der `.magento.env.yaml` hinzu.
+Bei Verwendung der SCD-On-Demand-Strategie ist es hilfreich, den Cache vorab mit Seiten zu laden, die Sie erwarten, z. B. die -Startseite. Fügen Sie Ihre Liste der erwarteten Seiten in [&#x200B; Umgebungsvariablen WARM_UP_PAGES](../environment/variables-post-deploy.md#warmuppages) in der Phase nach der Bereitstellung der `.magento.env.yaml` hinzu.
 
 >[!WARNING]
 >

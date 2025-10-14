@@ -29,7 +29,7 @@ Der SendGrid SMTP-Proxy ist nicht für die Verwendung als Allzweck-E-Mail-Server
 
 Sie können ausgehende E-Mails für jede Umgebung über die Cloud-Konsole oder die Befehlszeile aktivieren oder deaktivieren.
 
-Ausgehende E-Mails sind in Pro-Produktions- und Staging-Umgebungen standardmäßig aktiviert. [!UICONTROL Outgoing emails] können jedoch in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile“ ](outgoing-emails.md#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). Sie können ausgehende E-Mails für Integrations- und Staging-Umgebungen aktivieren, um E-Mails zur Zwei-Faktor-Authentifizierung oder zum Zurücksetzen des Passworts für Benutzer von Cloud-Projekten zu senden. Siehe [Konfigurieren von E-Mails zum ](outgoing-emails.md).
+Ausgehende E-Mails sind in Pro-Produktions- und Staging-Umgebungen standardmäßig aktiviert. [!UICONTROL Outgoing emails] können jedoch in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile“ &#x200B;](outgoing-emails.md#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). Sie können ausgehende E-Mails für Integrations- und Staging-Umgebungen aktivieren, um E-Mails zur Zwei-Faktor-Authentifizierung oder zum Zurücksetzen des Passworts für Benutzer von Cloud-Projekten zu senden. Siehe [Konfigurieren von E-Mails zum &#x200B;](outgoing-emails.md).
 
 Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert oder wieder aktiviert werden müssen, können Sie ein [Adobe Commerce-Support-Ticket senden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
@@ -41,7 +41,7 @@ Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert 
 
 Alle Cloud-Projekte werden unter einem zentralen Konto verwaltet, sodass nur der Support Zugriff auf das SendGrid-Dashboard hat. SendGrid stellt keine Funktionen zur Einschränkung von Unterkonten bereit.
 
-Um in den Aktivitätsprotokollen den Versandstatus oder eine Liste der E-Mail-Adressen, an die keine Zustellung, Ablehnung oder Blockierung erfolgt, einzusehen, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Das Support-Team **kann** Aktivitätsprotokolle abrufen, die älter als 30 Tage sind.
+Um in den Aktivitätsprotokollen den Versandstatus oder eine Liste der E-Mail-Adressen, an die keine Zustellung, Ablehnung oder Blockierung erfolgt, einzusehen, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Das Support-Team **kann** Aktivitätsprotokolle abrufen, die älter als 30 Tage sind.
 
 Fügen Sie Ihrer Anfrage nach Möglichkeit die folgenden Informationen hinzu:
 
@@ -144,6 +144,6 @@ Eine E-Mail-Unterdrückungsliste ist eine Liste von Empfängern, an die keine E-
 
 Um zu verhindern, dass E-Mails überhaupt an den Spam-Ordner gesendet werden, folgen Sie dem Artikel zu Best Practices von [Why Are My Emails Going to Spam?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
 
-Wenn einige Empfänger Ihre E-Mails nicht erhalten, können [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um eine Überprüfung der Unterdrückungslisten anzufordern und die Empfänger bei Bedarf zu entfernen.
+Wenn einige Empfänger Ihre E-Mails nicht erhalten, können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um eine Überprüfung der Unterdrückungslisten anzufordern und die Empfänger bei Bedarf zu entfernen.
 
 Weitere Informationen finden Sie unter [Was ist eine Unterdrückungsliste?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)

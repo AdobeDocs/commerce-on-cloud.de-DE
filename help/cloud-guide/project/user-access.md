@@ -38,7 +38,7 @@ Sie können Benutzer hinzufügen und Rollen mithilfe der `magento-cloud` CLI ode
 
 **Voraussetzungen:**
 
-- Ein registrierter Benutzer mit einer Adobe ID. Ein Benutzer muss [sich für ein Adobe-Konto ](https://account.adobe.com) und dann [sein Cloud-Konto initialisieren](https://console.adobecommerce.com) bevor Sie ihn zu einem Cloud-Projekt hinzufügen können.
+- Ein registrierter Benutzer mit einer Adobe ID. Ein Benutzer muss [sich für ein Adobe-Konto &#x200B;](https://account.adobe.com) und dann [sein Cloud-Konto initialisieren](https://console.adobecommerce.com) bevor Sie ihn zu einem Cloud-Projekt hinzufügen können.
 - Ein Benutzer mit der Rolle **Admin** kann keine Benutzer mit der `magento-cloud` CLI verwalten. Nur Benutzer mit der Rolle **Kontoinhaber** können Benutzer verwalten.
 
 >[!ENDSHADEBOX]

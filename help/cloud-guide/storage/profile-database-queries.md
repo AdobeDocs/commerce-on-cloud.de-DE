@@ -15,7 +15,7 @@ Beim Schreiben in eine Datenbank kann die Profilerstellung hilfreich sein, um di
 
 **So aktivieren Sie die Profilerstellung für Datenbankabfragen**:
 
-1. [Melden Sie sich bei der Datenbank ](../services/mysql.md#connect-to-the-database).
+1. [Melden Sie sich bei der Datenbank &#x200B;](../services/mysql.md#connect-to-the-database).
 
 1. Aktivieren Sie die Profilerstellung.
 
