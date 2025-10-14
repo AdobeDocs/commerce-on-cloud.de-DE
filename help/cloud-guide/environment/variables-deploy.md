@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Variablen bereitstellen
 
-Die folgenden _deploy_-Variablen steuern Aktionen in der Bereitstellungsphase und können Werte von den (globalen [) ](variables-global.md) und überschreiben. Fügen Sie diese Variablen in den `deploy` Schritt der `.magento.env.yaml` ein:
+Die folgenden _deploy_-Variablen steuern Aktionen in der Bereitstellungsphase und können Werte von den (globalen [) &#x200B;](variables-global.md) und überschreiben. Fügen Sie diese Variablen in den `deploy` Schritt der `.magento.env.yaml` ein:
 
 ```yaml
 stage:
@@ -98,7 +98,7 @@ stage:
 - **default**—`true`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Aktiviert oder deaktiviert [ Bereinigung von (statischen ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
+Aktiviert oder deaktiviert [&#x200B; Bereinigung von (statischen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
 
 - **`true`** - Entfernt alle vorhandenen statischen Inhalte, bevor der aktualisierte statische Inhalt bereitgestellt wird.
 - **`false`** - Die Bereitstellung überschreibt nur vorhandene statische Inhaltsdateien, wenn der generierte Inhalt eine neuere Version enthält.
@@ -187,7 +187,7 @@ stage:
 
 >[!WARNING]
 >
->Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und ](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
+>Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html#configure-environment).
 
 Wenn Sie die Datenbank ohne Installationsvorgang von einer Umgebung in eine andere verschieben, benötigen Sie die entsprechenden kryptografischen Informationen. Adobe Commerce verwendet den im [!DNL Cloud Console] festgelegten Verschlüsselungsschlüsselwert als `crypt/key` Wert in der `env.php`.
 
@@ -465,7 +465,7 @@ stage:
 
 >[!WARNING]
 >
->Aktivieren _diese_ nicht in einem [skalierten ](../architecture/scaled-architecture.md). Dies verursacht Redis-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Als Alternative empfiehlt Adobe die Verwendung von Adobe Commerce 2.3.5 oder höher, die Implementierung einer neuen Redis-Backend-Konfiguration und die Implementierung des L2-Caching für Redis.
+>Aktivieren _diese_ nicht in einem [skalierten &#x200B;](../architecture/scaled-architecture.md). Dies verursacht Redis-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Als Alternative empfiehlt Adobe die Verwendung von Adobe Commerce 2.3.5 oder höher, die Implementierung einer neuen Redis-Backend-Konfiguration und die Implementierung des L2-Caching für Redis.
 
 >[!TIP]
 >
@@ -518,7 +518,7 @@ stage:
 
 >[!WARNING]
 >
->Aktivieren _diese_ nicht in einem [skalierten ](../architecture/scaled-architecture.md). Dies verursacht Valley-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Alternativ dazu empfiehlt Adobe die Verwendung von Adobe Commerce 2.4.8 oder höher, die Implementierung einer neuen Valkey-Backend-Konfiguration und die Implementierung von L2-Caching für Valkey.
+>Aktivieren _diese_ nicht in einem [skalierten &#x200B;](../architecture/scaled-architecture.md). Dies verursacht Valley-Verbindungsfehler. Redis-Slaves sind immer noch aktiv, werden aber nicht für Redis-Lesevorgänge verwendet. Alternativ dazu empfiehlt Adobe die Verwendung von Adobe Commerce 2.4.8 oder höher, die Implementierung einer neuen Valkey-Backend-Konfiguration und die Implementierung von L2-Caching für Valkey.
 
 >[!TIP]
 >
@@ -563,7 +563,7 @@ stage:
 - **default**—`4`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Gibt an[ welche GZIP](https://www.gnu.org/software/gzip)-Komprimierungsstufe (`0` zu `9`) beim Komprimieren statischer Inhalte verwendet werden soll; `0` deaktiviert die Komprimierung.
+Gibt an[&#x200B; welche GZIP](https://www.gnu.org/software/gzip)-Komprimierungsstufe (`0` zu `9`) beim Komprimieren statischer Inhalte verwendet werden soll; `0` deaktiviert die Komprimierung.
 
 ```yaml
 stage:
@@ -648,7 +648,7 @@ stage:
 - **default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 und höher
 
-Ermöglicht die Anpassung der [-Bereitstellungsstrategie ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
+Ermöglicht die Anpassung der [-Bereitstellungsstrategie &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 

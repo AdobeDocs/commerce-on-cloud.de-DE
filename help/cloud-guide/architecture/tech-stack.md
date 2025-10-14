@@ -31,4 +31,4 @@ Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale
 
 Monolithische Anwendungen sind ressourcenintensiv, schwer skalierbar und schnell zu bedienen. Mit der Cloud-Infrastruktur erhalten Commerce-Kunden beispiellosen Zugriff auf SaaS-basierte Microservices, die reich, intelligent und leistungsstark sind. Siehe [Unterstützte Software und Services](cloud-architecture.md#supported-software-and-services).
 
-Verwenden Sie das [Commerce-Handbuch „Erste ](../../get-started/overview.md)&quot;, um Ihr neues Cloud-Programm einzurichten und mit der Verwaltung Ihres [!DNL Commerce]-Programms in einer Cloud-nativen Umgebung zu beginnen.
+Verwenden Sie das [Commerce-Handbuch „Erste &#x200B;](../../get-started/overview.md)&quot;, um Ihr neues Cloud-Programm einzurichten und mit der Verwaltung Ihres [!DNL Commerce]-Programms in einer Cloud-nativen Umgebung zu beginnen.
