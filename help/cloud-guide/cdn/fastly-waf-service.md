@@ -26,7 +26,7 @@ Der WAF-Service bietet die folgenden Vorteile:
 
 >[!TIP]
 >
->Weitere Informationen zur Aufrechterhaltung der PCI-Compliance für Ihre Adobe Commerce in Cloud-Infrastrukturspeichern finden Sie unter [PCI-Compliance](https://business.adobe.com/products/magento/pci-compliance.html).
+>Weitere Informationen zur Aufrechterhaltung der PCI-Compliance für Ihre Adobe Commerce in Cloud-Infrastrukturspeichern finden Sie unter [PCI-Compliance](https://business.adobe.com/de/products/magento/pci-compliance.html).
 
 ## Aktivieren der WAF
 
