@@ -3,7 +3,7 @@ title: Anzeigen und Verwalten von Protokollen
 description: Machen Sie sich mit den in der Cloud-Infrastruktur verfügbaren Protokolldateitypen vertraut und erfahren Sie, wo Sie sie finden.
 last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: 731cc36816afdb5374269e871d337e056a71c050
+source-git-commit: afdc6f2b72d53199634faff7f30fd87ff3b31f3f
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 0%
@@ -77,13 +77,13 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >[!TIP]
 >
 >Für Pro Staging- und Pro-Produktionsumgebungen sind automatische Protokollrotation, -komprimierung und -entfernung für Protokolldateien mit festem Dateinamen aktiviert. Jeder Protokolldateityp hat ein rotierendes Muster und eine rotierende Lebensdauer.
->&#x200B;>Ausführliche Informationen zur Protokollrotation der Umgebung und zur Lebensdauer komprimierter Protokolle finden Sie in: `/etc/logrotate.conf` und `/etc/logrotate.d/<various>`.
->&#x200B;>Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
+>Ausführliche Informationen zur Protokollrotation der Umgebung und zur Lebensdauer komprimierter Protokolle finden Sie in: `/etc/logrotate.conf` und `/etc/logrotate.d/<various>`.
+>Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
 
 >[!TIP]
 >
 >Die Protokollrotation kann in Pro Integration-Umgebungen nicht konfiguriert werden.
->&#x200B;>Für die Pro-Integration müssen Sie eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](../application/crons-property.md), um das Skript nach Bedarf auszuführen.
+>Für die Pro-Integration müssen Sie eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](../application/crons-property.md), um das Skript nach Bedarf auszuführen.
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=de).
+Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Anwendungsprotokolle
 
@@ -219,7 +219,7 @@ Bei Pro-Staging- und Produktionsumgebungen sind die Protokolle „Bereitstellen�
 
 ### Archivierte Protokolldateien
 
-Die Anwendungsprotokolle werden einmal täglich komprimiert und archiviert und standardmäßig **365 Tage** (für Pro-Staging- und Produktions-Cluster) - und die Protokollrotation ist nicht in allen Integrations-/Starter-Umgebungen verfügbar. Die komprimierten Protokolle werden mit einer eindeutigen ID benannt, die dem -`Number of Days Ago + 1` entspricht. In Pro-Produktionsumgebungen wird beispielsweise ein PHP-Zugriffsprotokoll für 21 Tage gespeichert und wie folgt benannt:
+Die Anwendungsprotokolle werden einmal täglich komprimiert und archiviert und standardmäßig **30 Tage** (für Pro-Staging- und Produktions-Cluster) - und die Protokollrotation ist nicht in allen Integrations-/Starter-Umgebungen verfügbar. Die komprimierten Protokolle werden mit einer eindeutigen ID benannt, die dem -`Number of Days Ago + 1` entspricht. In Pro-Produktionsumgebungen wird beispielsweise ein PHP-Zugriffsprotokoll für 21 Tage gespeichert und wie folgt benannt:
 
 ```
 /var/log/platform/<project-ID>/php.access.log.22.gz
@@ -227,7 +227,7 @@ Die Anwendungsprotokolle werden einmal täglich komprimiert und archiviert und s
 
 Die archivierten Protokolldateien werden immer in dem Verzeichnis gespeichert, in dem sich die Originaldatei vor der Komprimierung befand.
 
-Sie können [ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support), um Änderungen an Ihrer Protokollaufbewahrungsdauer oder Ihrer Protokollkonfiguration anzufordern. Sie können die Aufbewahrungsdauer auf maximal 365 Tage erhöhen, sie reduzieren, um das Speicherkontingent zu erhalten, oder zusätzliche Protokollpfade zur logrotate-Konfiguration hinzufügen. Diese Änderungen sind für Pro-Staging- und Produktions-Cluster verfügbar.
+Sie können [ein Support-Ticket ](https://experienceleague.adobe.com/home?support-tab=home#support), um Änderungen an Ihrer Protokollaufbewahrungsdauer oder Ihrer Protokollkonfiguration anzufordern. Sie können die Aufbewahrungsdauer auf maximal 365 Tage erhöhen, sie reduzieren, um das Speicherkontingent zu erhalten, oder zusätzliche Protokollpfade zur logrotate-Konfiguration hinzufügen. Diese Änderungen sind für Pro-Staging- und Produktions-Cluster verfügbar.
 
 Wenn Sie beispielsweise einen benutzerdefinierten Pfad erstellen, um Protokolle im `var/log/mymodule`-Verzeichnis zu speichern, können Sie eine Protokollrotation für diesen Pfad anfordern. Die aktuelle Infrastruktur erfordert jedoch konsistente Dateinamen für Adobe, um die Protokollrotation ordnungsgemäß zu konfigurieren. Adobe empfiehlt, die Protokollnamen konsistent zu halten, um Konfigurationsprobleme zu vermeiden.
 
@@ -255,6 +255,6 @@ Service-Protokolle werden je nach Protokolltyp für unterschiedliche Zeiträume 
 
 ## Protokolldaten für Pro Produktion und Staging
 
-Verwenden Sie in Pro-Produktions- und Staging-Umgebungen das in Ihr Projekt [&#128279;](../monitor/log-management.md) New Relic-Protokollmanagement, um aggregierte Protokolldaten aus allen Protokollen zu verwalten, die mit Ihrem Adobe Commerce in Cloud-Infrastrukturprojekt verknüpft sind.
+Verwenden Sie in Pro-Produktions- und Staging-Umgebungen das in Ihr Projekt [ ](../monitor/log-management.md)New Relic-Protokollmanagement, um aggregierte Protokolldaten aus allen Protokollen zu verwalten, die mit Ihrem Adobe Commerce in Cloud-Infrastrukturprojekt verknüpft sind.
 
 Die Anwendung &quot;New Relic-Protokolle“ bietet ein zentralisiertes Protokollmanagement-Dashboard zur Fehlerbehebung und Überwachung von Adobe Commerce in Cloud-Produktions- und Staging-Umgebungen. Das Dashboard bietet außerdem Zugriff auf Protokolldaten für Fastly CDN, Bildoptimierung und WAF-Services (Web Application Firewall). Siehe [New Relic-Services](../monitor/new-relic-service.md).
