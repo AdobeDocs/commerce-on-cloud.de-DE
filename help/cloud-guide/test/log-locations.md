@@ -109,7 +109,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Für Pro Staging- und Pro-Produktionsumgebungen sind automatische Protokollrotation, -komprimierung und -entfernung für Protokolldateien mit festem Dateinamen aktiviert. Jeder Protokolldateityp hat ein rotierendes Muster und eine rotierende Lebensdauer.
 >Ausführliche Informationen zur Protokollrotation der Umgebung und zur Lebensdauer komprimierter Protokolle finden Sie in: `/etc/logrotate.conf` und `/etc/logrotate.d/<various>`.
->Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
+>Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
 
 >[!TIP]
 >
@@ -220,7 +220,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=de).
 
 ## Anwendungsprotokolle
 
@@ -258,7 +258,7 @@ Die Anwendungsprotokolle werden einmal täglich komprimiert und archiviert und s
 
 Die archivierten Protokolldateien werden immer in dem Verzeichnis gespeichert, in dem sich die Originaldatei vor der Komprimierung befand.
 
-Sie können [ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support), um Änderungen an Ihrer Protokollaufbewahrungsdauer oder Ihrer Protokollkonfiguration anzufordern. Sie können die Aufbewahrungsdauer auf maximal 365 Tage erhöhen, sie reduzieren, um das Speicherkontingent zu erhalten, oder zusätzliche Protokollpfade zur logrotate-Konfiguration hinzufügen. Diese Änderungen sind für Pro-Staging- und Produktions-Cluster verfügbar.
+Sie können [ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support), um Änderungen an Ihrer Protokollaufbewahrungsdauer oder Ihrer Protokollkonfiguration anzufordern. Sie können die Aufbewahrungsdauer auf maximal 365 Tage erhöhen, sie reduzieren, um das Speicherkontingent zu erhalten, oder zusätzliche Protokollpfade zur logrotate-Konfiguration hinzufügen. Diese Änderungen sind für Pro-Staging- und Produktions-Cluster verfügbar.
 
 Wenn Sie beispielsweise einen benutzerdefinierten Pfad erstellen, um Protokolle im `var/log/mymodule`-Verzeichnis zu speichern, können Sie eine Protokollrotation für diesen Pfad anfordern. Die aktuelle Infrastruktur erfordert jedoch konsistente Dateinamen für Adobe, um die Protokollrotation ordnungsgemäß zu konfigurieren. Adobe empfiehlt, die Protokollnamen konsistent zu halten, um Konfigurationsprobleme zu vermeiden.
 
