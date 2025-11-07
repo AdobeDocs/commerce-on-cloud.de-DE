@@ -42,7 +42,7 @@ Die Cloud-Infrastruktur unterstützt und stellt die folgenden Services bereit:
 >
 >Nach dem Upgrade auf eine neue Version von RabbitMQ sollten Sie eine vollständige Bereitstellung in Trigger nehmen, um sicherzustellen, dass Ihre benutzerdefinierten Nachrichtenwarteschlangen in RabbitMQ neu erstellt werden.
 
-Sie können Standardversionen und Datenträgerwerte in der aktuellen ([-`services.yaml`) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Das folgende Beispiel zeigt die `mysql`-, `redis`-, `opensearch`- oder `elasticsearch`-, `rabbitmq`- und `activemq-artemis`-Services, die in der `services.yaml`-Konfigurationsdatei definiert sind:
+Sie können Standardversionen und Datenträgerwerte in der aktuellen ([-`services.yaml`) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Das folgende Beispiel zeigt die `mysql`-, `redis`-, `opensearch`- oder `elasticsearch`-, `rabbitmq`- und `activemq-artemis`-Services, die in der `services.yaml`-Konfigurationsdatei definiert sind:
 
 ```yaml
 mysql:
@@ -189,7 +189,7 @@ Während des Bereitstellungsprozesses überprüft das `ece-tools`-Paket die inst
 - Wenn eine Service-Version innerhalb von drei Monaten nach dem Ende der Nutzungsdauer veröffentlicht wird, wird im Bereitstellungsprotokoll eine Benachrichtigung angezeigt.
 - Wenn das Ende der Nutzungsdauer in der Vergangenheit liegt, wird eine Warnmeldung angezeigt.
 
-Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der [-Datei `eol.yaml`ece-tools“ eingesehen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der [-Datei `eol.yaml`ece-tools“ eingesehen &#x200B;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Zu OpenSearch migrieren
 
