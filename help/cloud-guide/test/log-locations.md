@@ -3,9 +3,9 @@ title: Anzeigen und Verwalten von Protokollen
 description: Machen Sie sich mit den in der Cloud-Infrastruktur verfügbaren Protokolldateitypen vertraut und erfahren Sie, wo Sie sie finden.
 last-substantial-update: 2023-05-23T00:00:00Z
 exl-id: f0bb8830-8010-4764-ac23-d63d62dc0117
-source-git-commit: afdc6f2b72d53199634faff7f30fd87ff3b31f3f
+source-git-commit: 445c5162f9d3436d9e5fe3df41af47189e344cfd
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,37 @@ Systemprotokolle werden an den folgenden Speicherorten gespeichert:
 Der Wert von `<project-ID>` hängt vom Projekt ab und davon, ob es sich um eine Staging- oder eine Produktionsumgebung handelt. Bei einer Projekt-ID von `yw1unoukjcawe` wird beispielsweise der Benutzer der Staging-Umgebung `yw1unoukjcawe_stg` und der Benutzer der Produktionsumgebung `yw1unoukjcawe`.
 
 Unter Verwendung dieses Beispiels lautet das Bereitstellungsprotokoll: `/var/log/platform/yw1unoukjcawe_stg/deploy.log`
+
+### Suchen nach bestimmten Fehlerprotokolleinträgen
+
+Wenn ein Fehler mit einer bestimmten Protokolldatensatznummer auftritt (z. B. `475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9`), können Sie den Datensatz suchen, indem Sie Remote-Umgebungsprotokolle des Commerce-Anwendungsservers mit den folgenden Methoden abfragen:
+
+>[!NOTE]
+>
+>Anweisungen für den Zugriff auf Remote-Umgebungsprotokolle für Ihre Commerce-Anwendung mithilfe von Secure Shell (SSH) finden Sie unter [Sichere Verbindungen zu Remote-Umgebungen](../development/secure-connections.md).
+
+#### Methode 1: Suche mit grep
+
+```bash
+# Search for the specific error record in all log files
+magento-cloud ssh -e <environment-ID> "grep -r '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/"
+
+# Search in specific log files
+magento-cloud ssh -e <environment-ID> "grep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' /var/log/exception.log"
+```
+
+#### Methode 2: In archivierten Protokollen suchen
+
+Wenn der Fehler in der Vergangenheit aufgetreten ist, überprüfen Sie die archivierten Protokolldateien:
+
+```bash
+# Search in compressed log files
+magento-cloud ssh -e <environment-ID> "find /var/log -name '*.gz' -exec zgrep '475a3bca674d3bbc77b35973d028e6da1cbee7404888bfb113daffc6b2f4a7b9' {} \;"
+```
+
+#### Methode 3: Verwenden von New Relic (Pro-Umgebungen)
+
+Verwenden Sie für Pro-Produktions- und Staging-Umgebungen New Relic-Protokolle, um nach bestimmten Fehlerdatensätzen zu suchen. Weitere Informationen finden Sie unter [New Relic-Protokollverwaltung](../monitor/log-management.md).
 
 ### Remote-Umgebungsprotokolle anzeigen
 
@@ -78,7 +109,7 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >
 >Für Pro Staging- und Pro-Produktionsumgebungen sind automatische Protokollrotation, -komprimierung und -entfernung für Protokolldateien mit festem Dateinamen aktiviert. Jeder Protokolldateityp hat ein rotierendes Muster und eine rotierende Lebensdauer.
 >Ausführliche Informationen zur Protokollrotation der Umgebung und zur Lebensdauer komprimierter Protokolle finden Sie in: `/etc/logrotate.conf` und `/etc/logrotate.d/<various>`.
->Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
+>Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
 
 >[!TIP]
 >
@@ -143,7 +174,7 @@ Beispielantwort:
 ```
 Reading log file projectID-branchname-ID--mymagento@ssh.zone.magento.cloud:/var/log/'deploy.log'
 
-[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\n''.
+[2023-04-24 18:58:03.080678] Launching command 'b'php ./vendor/bin/ece-tools run scenario/deploy.xml\\n''.
 
 [2023-04-24T18:58:04.129888+00:00] INFO: Starting scenario(s): scenario/deploy.xml (magento/ece-tools version: 2002.1.14, magento/magento2-base version: 2.4.6)
 [2023-04-24T18:58:04.364714+00:00] NOTICE: Starting pre-deploy.
@@ -189,7 +220,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=de).
+Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
 
 ## Anwendungsprotokolle
 
@@ -227,7 +258,7 @@ Die Anwendungsprotokolle werden einmal täglich komprimiert und archiviert und s
 
 Die archivierten Protokolldateien werden immer in dem Verzeichnis gespeichert, in dem sich die Originaldatei vor der Komprimierung befand.
 
-Sie können [ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support), um Änderungen an Ihrer Protokollaufbewahrungsdauer oder Ihrer Protokollkonfiguration anzufordern. Sie können die Aufbewahrungsdauer auf maximal 365 Tage erhöhen, sie reduzieren, um das Speicherkontingent zu erhalten, oder zusätzliche Protokollpfade zur logrotate-Konfiguration hinzufügen. Diese Änderungen sind für Pro-Staging- und Produktions-Cluster verfügbar.
+Sie können [ein Support-Ticket ](https://experienceleague.adobe.com/home?support-tab=home#support), um Änderungen an Ihrer Protokollaufbewahrungsdauer oder Ihrer Protokollkonfiguration anzufordern. Sie können die Aufbewahrungsdauer auf maximal 365 Tage erhöhen, sie reduzieren, um das Speicherkontingent zu erhalten, oder zusätzliche Protokollpfade zur logrotate-Konfiguration hinzufügen. Diese Änderungen sind für Pro-Staging- und Produktions-Cluster verfügbar.
 
 Wenn Sie beispielsweise einen benutzerdefinierten Pfad erstellen, um Protokolle im `var/log/mymodule`-Verzeichnis zu speichern, können Sie eine Protokollrotation für diesen Pfad anfordern. Die aktuelle Infrastruktur erfordert jedoch konsistente Dateinamen für Adobe, um die Protokollrotation ordnungsgemäß zu konfigurieren. Adobe empfiehlt, die Protokollnamen konsistent zu halten, um Konfigurationsprobleme zu vermeiden.
 
@@ -255,6 +286,6 @@ Service-Protokolle werden je nach Protokolltyp für unterschiedliche Zeiträume 
 
 ## Protokolldaten für Pro Produktion und Staging
 
-Verwenden Sie in Pro-Produktions- und Staging-Umgebungen das in Ihr Projekt [&#x200B; &#x200B;](../monitor/log-management.md)New Relic-Protokollmanagement, um aggregierte Protokolldaten aus allen Protokollen zu verwalten, die mit Ihrem Adobe Commerce in Cloud-Infrastrukturprojekt verknüpft sind.
+Verwenden Sie in Pro-Produktions- und Staging-Umgebungen das in Ihr Projekt [ ](../monitor/log-management.md)New Relic-Protokollmanagement, um aggregierte Protokolldaten aus allen Protokollen zu verwalten, die mit Ihrem Adobe Commerce in Cloud-Infrastrukturprojekt verknüpft sind.
 
 Die Anwendung &quot;New Relic-Protokolle“ bietet ein zentralisiertes Protokollmanagement-Dashboard zur Fehlerbehebung und Überwachung von Adobe Commerce in Cloud-Produktions- und Staging-Umgebungen. Das Dashboard bietet außerdem Zugriff auf Protokolldaten für Fastly CDN, Bildoptimierung und WAF-Services (Web Application Firewall). Siehe [New Relic-Services](../monitor/new-relic-service.md).
