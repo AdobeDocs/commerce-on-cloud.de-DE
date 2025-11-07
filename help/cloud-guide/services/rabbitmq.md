@@ -3,16 +3,16 @@ title: Einrichten des RabbitMQ-Service
 description: Erfahren Sie, wie Sie den RabbitMQ-Service aktivieren, um Nachrichtenwarteschlangen für Adobe Commerce in der Cloud-Infrastruktur zu verwalten.
 feature: Cloud, Services
 exl-id: 64af1dfa-e3f0-4404-a352-659ca47c1121
-source-git-commit: 2df119f1c09b92e45ae30544e5c2ee0e0d21834c
+source-git-commit: 76a9721767cbd4328347311cc308810f0f7914c0
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
 
 # Einrichten [!DNL RabbitMQ] Services
 
-Das [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=de) ist ein System in Adobe Commerce, das es einem [Modul](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#module) ermöglicht, Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten.
+Das [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) ist ein System in Adobe Commerce, das es einem [Modul](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) ermöglicht, Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten.
 
 Der MQF verwendet [RabbitMQ](https://www.rabbitmq.com/) als Messaging-Broker, der eine skalierbare Plattform für das Senden und Empfangen von Nachrichten bietet. Sie enthält auch einen Mechanismus zum Speichern nicht zugestellter Nachrichten. [!DNL RabbitMQ] basiert auf der Spezifikation des Advanced Message Queuing Protocol (AMQP) 0.9.1.
 
@@ -149,3 +149,11 @@ Wenn Sie sich bei Ihrem PHP-Container anmelden, geben Sie einen beliebigen `amqp
 ### Verbinden von Ihrer PHP-Anwendung
 
 Um RabbitMQ mit Ihrer PHP-Anwendung zu verbinden, fügen Sie Ihrer Quellstruktur eine PHP-Bibliothek hinzu.
+
+## Fehlerbehebung beim [!DNL RabbitMQ]-Service
+
+Siehe [Verbindung zu RabbitMQ in Adobe Commerce Cloud nicht möglich](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+
+## Aktualisieren des [!DNL RabbitMQ]
+
+Aktualisierungsanweisungen finden Sie unter [Service-Version ändern](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
