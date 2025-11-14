@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Aufbewahrungsfrist für archivierte Protokolldateien für Commerce in Cloud-Projekten beträgt jetzt 30 Tage. Siehe <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Anzeigen und Verwalten von Protokollen</a> im Handbuch zu Commerce in Cloud Manager.</p>
+      <td><p>Die Aufbewahrungsfrist für archivierte Protokolldateien für Commerce in Cloud-Projekten beträgt jetzt 30 Tage. Siehe <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/test/log-locations">Anzeigen und Verwalten von Protokollen</a> im Handbuch zu Commerce in Cloud Manager.</p>
 </td>
       <td>
         Technisches Feedback
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.8.</p>
+      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.8.</p>
 </td>
       <td>
         Technisch
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference">CLI-Referenz</a> nach der Cloud-CLI-Version v1.47.0.</p>
+      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference">CLI-Referenz</a> nach der Cloud-CLI-Version v1.47.0.</p>
 </td>
       <td>
         Technisch
