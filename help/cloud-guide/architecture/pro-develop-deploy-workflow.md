@@ -22,7 +22,7 @@ Das Pro-Projekt umfasst ein einzelnes Git-Repository mit einer globalen `master`
 
 Diese Umgebungen sind `read-only` und akzeptieren bereitgestellte Code-Änderungen aus Verzweigungen, die nur aus Ihrem lokalen Arbeitsbereich gepusht werden.
 
-Die folgende Grafik zeigt den Pro-Workflow zum Entwickeln und Bereitstellen , der einen einfachen, Git-verzweigenden Ansatz verwendet. Sie [ Code ](#development-workflow) einer aktiven Verzweigung auf Grundlage der `integration`-Umgebung entwickeln, indem Sie Code-Änderungen _pushen_ und _abrufen_ auf und von Ihrer entfernten, aktiven Verzweigung aus. Sie stellen verifizierten Code bereit _indem Sie die_-Verzweigung mit der Basisverzweigung zusammenführen, wodurch ein automatisierter [Build- und Bereitstellungs](#deployment-workflow)-Prozess für diese Umgebung aktiviert wird.
+Die folgende Grafik zeigt den Pro-Workflow zum Entwickeln und Bereitstellen , der einen einfachen, Git-verzweigenden Ansatz verwendet. Sie [&#x200B; Code &#x200B;](#development-workflow) einer aktiven Verzweigung auf Grundlage der `integration`-Umgebung entwickeln, indem Sie Code-Änderungen _pushen_ und _abrufen_ auf und von Ihrer entfernten, aktiven Verzweigung aus. Sie stellen verifizierten Code bereit _indem Sie die_-Verzweigung mit der Basisverzweigung zusammenführen, wodurch ein automatisierter [Build- und Bereitstellungs](#deployment-workflow)-Prozess für diese Umgebung aktiviert wird.
 
 ![Allgemeine Ansicht des Entwicklungs-Workflows der Pro-Architektur](../../assets/pro-dev-workflow.png)
 
