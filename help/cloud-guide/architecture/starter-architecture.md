@@ -2,9 +2,10 @@
 title: Starter-Architektur
 description: Erfahren Sie mehr über die von der Starter-Architektur unterstützten Umgebungen.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 2f16cc60-b5f7-4331-b80e-43042a3f9b8f
+source-git-commit: 2236d0b853e2f2b8d1bafcbefaa7c23ebd5d26b3
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,9 @@ Ihre Starterarchitektur für die Adobe Commerce auf Cloud-Infrastruktur unterst�
 
 Alle Umgebungen befinden sich in PaaS-Containern (Platform as a Service). Diese Container werden in stark eingeschränkten Containern auf einem Raster von Servern bereitgestellt. Diese Umgebungen sind schreibgeschützt und akzeptieren bereitgestellte Code-Änderungen von Verzweigungen, die aus Ihrem lokalen Arbeitsbereich gepusht werden. Jede Umgebung stellt eine Datenbank und einen Webserver bereit.
 
-Sie können eine beliebige Entwicklungs- und Verzweigungsmethode verwenden. Wenn Sie anfänglichen Zugriff auf Ihr Projekt erhalten, erstellen Sie eine `staging` Umgebung aus der `master`. Erstellen Sie dann die `integration` durch Verzweigen von `staging`.
+>[!NOTE]
+>
+>Es ist nicht möglich, die Berechtigungen für schreibgeschützte Ordner in einer der Starter-Umgebungen zu ändern. Diese Einschränkung schützt die Integrität und Sicherheit der Anwendung. Ordnerberechtigungen auf diesen schreibgeschützten Dateisystemen können nicht geändert werden - auch der Support kann sie nicht ändern. Alle Änderungen müssen von einer Verzweigung in Ihrer lokalen Entwicklungsumgebung vorgenommen und in die Anwendungsumgebung übertragen werden. Sie können eine beliebige Entwicklungs- und Verzweigungsmethode verwenden. Wenn Sie anfänglichen Zugriff auf Ihr Projekt erhalten, erstellen Sie eine `staging` Umgebung aus der `master`. Erstellen Sie dann die `integration` durch Verzweigen von `staging`.
 
 ## Starter-Umgebungsarchitektur
 
@@ -33,7 +36,7 @@ Adobe empfiehlt, das Testen vollständig in der `staging`-Verzweigung durchzufü
 
 ## Staging-Umgebung
 
-Adobe empfiehlt, von `master` aus eine Verzweigung mit dem Namen `staging` zu erstellen. Die `staging` stellt Code in der Staging-Umgebung bereit, um eine Vorproduktionsumgebung zum Testen von Code, Modulen und Erweiterungen, Zahlungs-Gateways, Versand, Produktdaten und vielem mehr bereitzustellen. Diese Umgebung stellt die Konfiguration für alle Services bereit, die mit der Produktionsumgebung übereinstimmen, einschließlich Fastly, New Relic APM und Suche.
+Adobe empfiehlt, von `staging` aus eine Verzweigung mit dem Namen `master` zu erstellen. Die `staging` stellt Code in der Staging-Umgebung bereit, um eine Vorproduktionsumgebung zum Testen von Code, Modulen und Erweiterungen, Zahlungs-Gateways, Versand, Produktdaten und vielem mehr bereitzustellen. Diese Umgebung stellt die Konfiguration für alle Services bereit, die mit der Produktionsumgebung übereinstimmen, einschließlich Fastly, New Relic APM und Suche.
 
 Weitere Abschnitte in diesem Handbuch enthalten Anweisungen für die Bereitstellung von endgültigem Code und das Testen von Interaktionen auf Produktionsebene in einer sicheren Staging-Umgebung. Um eine optimale Leistung und Funktionstests zu erzielen, replizieren Sie Ihre Datenbank in die Staging-Umgebung.
 

@@ -3,9 +3,9 @@ title: Pro-Projekt-Workflow
 description: Erfahren Sie, wie Sie die Pro-Entwicklungs- und Bereitstellungs-Workflows verwenden.
 feature: Cloud, Iaas, Paas
 exl-id: efe41991-8940-4d5c-a720-80369274bee3
-source-git-commit: edff4efe0af54542321e887defc27dc96e6ae7f6
+source-git-commit: 7758ca69fc8232a8e1798c536410dc028c87fee6
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Das Pro-Projekt umfasst ein einzelnes Git-Repository mit einer globalen `master`
 
 Diese Umgebungen sind `read-only` und akzeptieren bereitgestellte Code-Änderungen aus Verzweigungen, die nur aus Ihrem lokalen Arbeitsbereich gepusht werden.
 
-Die folgende Grafik zeigt den Pro-Workflow zum Entwickeln und Bereitstellen , der einen einfachen, Git-verzweigenden Ansatz verwendet. Sie [&#x200B; Code &#x200B;](#development-workflow) einer aktiven Verzweigung auf Grundlage der `integration`-Umgebung entwickeln, indem Sie Code-Änderungen _pushen_ und _abrufen_ auf und von Ihrer entfernten, aktiven Verzweigung aus. Sie stellen verifizierten Code bereit _indem Sie die_-Verzweigung mit der Basisverzweigung zusammenführen, wodurch ein automatisierter [Build- und Bereitstellungs](#deployment-workflow)-Prozess für diese Umgebung aktiviert wird.
+Die folgende Grafik zeigt den Pro-Workflow zum Entwickeln und Bereitstellen , der einen einfachen, Git-verzweigenden Ansatz verwendet. Sie [ Code ](#development-workflow) einer aktiven Verzweigung auf Grundlage der `integration`-Umgebung entwickeln, indem Sie Code-Änderungen _pushen_ und _abrufen_ auf und von Ihrer entfernten, aktiven Verzweigung aus. Sie stellen verifizierten Code bereit _indem Sie die_-Verzweigung mit der Basisverzweigung zusammenführen, wodurch ein automatisierter [Build- und Bereitstellungs](#deployment-workflow)-Prozess für diese Umgebung aktiviert wird.
 
 ![Allgemeine Ansicht des Entwicklungs-Workflows der Pro-Architektur](../../assets/pro-dev-workflow.png)
 
@@ -35,7 +35,7 @@ The disk hosting /app/<cluster_ID> is full
 
 >[!NOTE]
 >
->Diese Einschränkung schützt die Integrität und Sicherheit der Anwendung. Ordnerberechtigungen auf diesen schreibgeschützten Dateisystemen können nicht geändert werden - auch der Support kann sie nicht ändern. Alle Änderungen müssen von einer Verzweigung in Ihrer lokalen Entwicklungsumgebung vorgenommen und in die Anwendungsumgebung übertragen werden. Weitere Informationen finden Sie unter [Pro Architektur](pro-architecture.md) für einen Überblick über Pro-Umgebungen und unter [[!DNL Cloud Console]](../project/overview.md#cloud-console) für einen Überblick über die Liste der Pro-Umgebungen in der Projektansicht.
+>Es ist nicht möglich, die Berechtigungen für schreibgeschützte Ordner in einer der Pro-Umgebungen zu ändern. Diese Einschränkung schützt die Integrität und Sicherheit der Anwendung. Ordnerberechtigungen auf diesen schreibgeschützten Dateisystemen können nicht geändert werden - auch der Support kann sie nicht ändern. Alle Änderungen müssen von einer Verzweigung in Ihrer lokalen Entwicklungsumgebung vorgenommen und in die Anwendungsumgebung übertragen werden. Weitere Informationen finden Sie unter [Pro Architektur](pro-architecture.md) für einen Überblick über Pro-Umgebungen und unter [[!DNL Cloud Console]](../project/overview.md#cloud-console) für einen Überblick über die Liste der Pro-Umgebungen in der Projektansicht.
 
 ## Entwicklungs-Workflow
 
