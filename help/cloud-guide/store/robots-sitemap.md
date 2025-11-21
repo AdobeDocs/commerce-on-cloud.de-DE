@@ -3,9 +3,9 @@ title: Hinzufügen von Sitemap- und Suchmaschinenrobotern
 description: Erfahren Sie, wie Sie in der Cloud-Infrastruktur Sitemap- und Suchmaschinenroboter zu Adobe Commerce hinzufügen.
 feature: Cloud, Configuration, Search, Site Navigation
 exl-id: 060dc1f5-0e44-494e-9ade-00cd274e84bc
-source-git-commit: 8626364ec7bcaaa0e17a3380ec0b9b73110c4574
+source-git-commit: 1ecb820d55faa78e369d63996f11cd4d1d554e26
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 **So fügen Sie der `robots.txt` Inhalt hinzu**:
 
 1. Zugriff auf Admin.
-1. Klicken Sie _Menü_ Inhalt **im Abschnitt _Design_ auf** Konfiguration“.
+1. Klicken Sie _Menü_ Inhalt **im Abschnitt** Design _auf_ Konfiguration“.
 1. Klicken Sie in _Ansicht_ Design-Konfiguration **für** Website in der Spalte _Aktion_ auf Bearbeiten.
 1. Klicken Sie in der Ansicht _Hauptwebsite_ auf **Suchmaschinenroboter**.
 1. Aktualisieren Sie das Feld **Benutzerdefinierte Anweisung von robots.txt bearbeiten**.
@@ -49,7 +49,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 
 >[!NOTE]
 >
->Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [&#x200B; Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
+>Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [ Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
 
 ## Umschreiben mit Fastly VCL-Snippet
 
@@ -117,9 +117,16 @@ In der `sitemap`-Admin-Konfiguration müssen Sie den Speicherort der Datei mithi
 
 ### Konfigurieren der Indizierung nach Suchmaschine
 
-Um `robots.txt` Anpassungen in der Produktionsumgebung zu aktivieren, müssen Sie die Option **Indizierung durch Suchmaschinen ist aktiviert für`<environment-name>`** in Ihren Projekteinstellungen in der Cloud-Konsole:
+Um `robots.txt` Anpassungen in der Produktionsumgebung zu aktivieren, aktivieren Sie die Indizierung durch Suchmaschinen für die Option `<environment-name>`** in den Projekteinstellungen in der Cloud-Konsole:
 
-![Verwenden der [!DNL Cloud Console] zum Verwalten von Umgebungen](../../assets/robots-indexing-by-search-engine.png)
+- Legacy Cloud Console - Die URL folgt dem Muster `https://<region-id>.magento.cloud/projects/<project_id>`
+- Adobe Cloud Console: Die URL folgt dem Muster ``https://console.adobecommerce.com/<username>/<project_id>``
+
+1. Stellen Sie die Einstellung [!UICONTROL Indexing by search engines] auf **Ein**.
+
+   ![Verwenden der [!DNL Cloud Console] zum Verwalten von Umgebungen](../../assets/robots-indexing-by-search-engine.png)
+
+1. Deaktivieren Sie die [!UICONTROL Hide from search engines].
 
 Sie können auch die Magento-Cloud-CLI verwenden, um diese Einstellung zu aktualisieren:
 
