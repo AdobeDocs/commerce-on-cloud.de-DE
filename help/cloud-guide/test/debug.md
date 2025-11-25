@@ -99,7 +99,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
 
 1. [Optional] Konfigurieren Sie die folgenden Einstellungen für die neue Server-Konfiguration. Siehe [Kein Debugserver konfiguriert](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured) in der Dokumentation _PHPStorm_.
 
-   - **Name** - Geben Sie denselben Host-Namen ein. Dieser Wert muss mit dem Wert für die Variable `PHP_IDE_CONFIG` in [Debug CLI-Befehlen) übereinstimmen, ](#debug-cli-commands) CLI zum Debuggen zu verwenden.
+   - **Name** - Geben Sie denselben Host-Namen ein. Dieser Wert muss mit dem Wert für die Variable `PHP_IDE_CONFIG` in [Debug CLI-Befehlen) übereinstimmen, &#x200B;](#debug-cli-commands) CLI zum Debuggen zu verwenden.
    - **Host** - Geben Sie den Host-Namen ein.
    - **port** - Geben Sie `443` ein.
    - **Debugger** - Wählen Sie `Xdebug` aus.
@@ -197,7 +197,7 @@ Ordnen Sie die `XDEBUG` Verbindung vom Server Ihrem lokalen System zu. Um jede A
 
 #### Port-Weiterleitung unter Windows
 
-Um die Port Forwarding (SSH-Tunneling) unter Windows einzurichten, müssen Sie Ihre Windows-Terminalanwendung konfigurieren. In diesem Beispiel wird die Erstellung eines SSH-Tunnels mit &quot;[&quot; ](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Sie können auch andere Anwendungen wie Cygwin verwenden. Weitere Informationen zu anderen Anwendungen finden Sie in der mit diesen Anwendungen bereitgestellten Anbieterdokumentation.
+Um die Port Forwarding (SSH-Tunneling) unter Windows einzurichten, müssen Sie Ihre Windows-Terminalanwendung konfigurieren. In diesem Beispiel wird die Erstellung eines SSH-Tunnels mit &quot;[&quot; &#x200B;](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Sie können auch andere Anwendungen wie Cygwin verwenden. Weitere Informationen zu anderen Anwendungen finden Sie in der mit diesen Anwendungen bereitgestellten Anbieterdokumentation.
 
 **So richten Sie einen SSH-Tunnel unter Windows mit Putty ein**:
 

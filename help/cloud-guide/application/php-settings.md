@@ -21,7 +21,7 @@ type: php:<version>
 
 >[!TIP]
 >
->Wenn Sie auf PHP 8.1 und höher aktualisieren, entfernen Sie JSON aus der [`runtime: extensions:`-Eigenschaft ](properties.md#runtime) der `.magento.app.yaml`-Datei und stellen Sie erneut bereit. Die JSON-Erweiterung wird seit PHP 8.0 in der Cloud-Umgebung installiert.
+>Wenn Sie auf PHP 8.1 und höher aktualisieren, entfernen Sie JSON aus der [`runtime: extensions:`-Eigenschaft &#x200B;](properties.md#runtime) der `.magento.app.yaml`-Datei und stellen Sie erneut bereit. Die JSON-Erweiterung wird seit PHP 8.0 in der Cloud-Umgebung installiert.
 
 ## Konfigurieren von PHP
 
