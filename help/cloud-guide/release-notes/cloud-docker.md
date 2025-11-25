@@ -5,7 +5,7 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: 16d5577da8841c2f65f9b5298beaa7fb84a1ab47
+source-git-commit: bbf11023474cb6ac6b3b881c40897c3260542de9
 workflow-type: tm+mt
 source-wordcount: '3806'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Veröffentlichungsdatum: 7. August 2025
 
 Veröffentlichungsdatum: 3. Juni 2025
 
-- ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Kompatibilität mit 2.4.8**-Aktualisierte Drittanbieterbibliotheken für bessere Kompatibilität mit 2.4.8<!-- MCLOUD-13707	 - -->
+- ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Kompatibilität mit 2.4.8**-Aktualisierte Drittanbieterbibliotheken für bessere Kompatibilität mit 2.4.8<!-- MCLOUD-13707- -->
 
 ## v1.4.2
 
@@ -87,7 +87,7 @@ Veröffentlichungsdatum: 8. April 2024
 Veröffentlichungsdatum: 31. Juli 2023
 
 - ![neues Symbol](../../assets/new.svg) **Neue Service-Version hinzugefügt**—OpenSearch 2.5.
-- ![neues Symbol](../../assets/new.svg) **Composer-Cache aktivieren** - Jetzt können Sie die Docker-Konfiguration erweitern, um Composer beim Starten des Docker-Containers das Löschen des Cache zu aktivieren. Siehe [Erweitern der Docker-Konfiguration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/extend-docker-configuration/) im Handbuch _Cloud Docker for Commerce_.
+- ![neues Symbol](../../assets/new.svg) **Composer-Cache aktivieren** - Jetzt können Sie die Docker-Konfiguration erweitern, um Composer beim Starten des Docker-Containers das Löschen des Cache zu aktivieren. Siehe [Erweitern der Docker-Konfiguration](https://developer.adobe.com/commerce/cloud-tools/docker/configure) im Handbuch _Cloud Docker for Commerce_.
 
 ## v1.3.5
 
@@ -140,7 +140,7 @@ Veröffentlichungsdatum: 10. März 2022
 
 Veröffentlichungsdatum: 25. Oktober 2021
 
-- ![Fix icon](../../assets/fix.svg) **Workflow zum Verbessern des Entwicklermodus** - Zuvor mussten Sie den Modus im Build- und Bereitstellungsschritt angeben. Jetzt bestimmt die Option `--mode` im `build` Schritt den Modus im späteren `deploy`. Das Festlegen des Modus nach der Bereitstellung ist nicht mehr erforderlich. Siehe [Entwicklermodus](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/).<!-- ACMP-1086 -->
+- ![Fix icon](../../assets/fix.svg) **Workflow zum Verbessern des Entwicklermodus** - Zuvor mussten Sie den Modus im Build- und Bereitstellungsschritt angeben. Jetzt bestimmt die Option `--mode` im `build` Schritt den Modus im späteren `deploy`. Das Festlegen des Modus nach der Bereitstellung ist nicht mehr erforderlich. Siehe [Entwicklermodus](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode).<!-- ACMP-1086 -->
 - ![Fix icon](../../assets/fix.svg) **Verbesserungen für schreibgeschützte Dateisysteme**—<!-- ACMP-1106 -->
    - Fehlerkorrektur - Der PHP-Container für die Mail-Konfiguration wird jetzt gestartet.
    - Kann Umgebungsvariablen in INI-Dateien verwenden.
@@ -152,7 +152,7 @@ Veröffentlichungsdatum: 25. Oktober 2021
 
 Veröffentlichungsdatum: 29. Juli 2021
 
-- ![neues Symbol](../../assets/new.svg) **Neuer `Zookeeper`-Container** - Ein [ZooKeeper-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#zookeeper-container) wurde hinzugefügt, um die Sperranbieterkonfiguration für Projekte zu verwalten, die nicht in Adobe Commerce in der Cloud-Infrastruktur bereitgestellt werden.<!--MCLOUD-8000-->
+- ![neues Symbol](../../assets/new.svg) **Neuer `Zookeeper`-Container** - Ein [ZooKeeper-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#zookeeper-container) wurde hinzugefügt, um die Sperranbieterkonfiguration für Projekte zu verwalten, die nicht in Adobe Commerce in der Cloud-Infrastruktur bereitgestellt werden.<!--MCLOUD-8000-->
 
 - ![neues Symbol](../../assets/new.svg) **Unterstützung für Composer 2.0.** hinzugefügt - Composer Version 2.0 zur Composer-Konfigurationsdatei hinzugefügt, um Upgrades von Composer 1.0 zu unterstützen, das sich dem Ende des Lebenszyklus nähert.<!--MCLOUD-8003-->
 
@@ -163,7 +163,7 @@ Veröffentlichungsdatum: 14. Juni 2021
 - ![neues Symbol](../../assets/new.svg) **Hinzugefügt PHP 8.0**—PHP wurde auf Version 8.0 aktualisiert, sodass Sie alle neuen Funktionen und Optimierungen nutzen können, die PHP 8.0 enthält.<!--MCLOUD-7941-->
 - ![neues Symbol](../../assets/new.svg) **Aktualisiert auf Varnish 6.6 und Elasticsearch 7.11.** - Die folgenden Links enthalten Versionsinformationen zu [Varnish Cache 6.6](https://varnish-cache.org/releases/rel6.6.0.html#rel6-6-0) und Elasticsearch 7.11.2.<!--MCLOUD-7921-->
 - ![neues Symbol](../../assets/new.svg) **Hinzugefügte `ioncube` Erweiterung für PHP 7.4 Image**—Die `ioncube` Erweiterung wurde dem PHP 7.4 Image erneut hinzugefügt, nachdem sie ursprünglich vom PHP 7.3 auf PHP 7.4 Upgrade ausgeschlossen worden war. *[Eingegeben von mattskr](https://github.com/magento/magento-cloud-docker/pull/314).*<!--PR #314-->
-- ![neues Symbol](../../assets/new.svg) **Es wurde eine Dateisynchronisierungsoption hinzugefügt:`manual-native`** - Die `manual-native` Dateisynchronisierungsoption bietet manuelle Kontrolle über die Synchronisierung, was die beste Leistung für macOS- und Windows-Umgebungen bietet. Erfahren Sie mehr über die Verwendung der `manual-native`-Option [Entwicklermodus](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/) und [Synchronisieren von Daten in einer Docker-](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data/#file-synchronization-options))<!--MCLOUD-7977-->
+- ![neues Symbol](../../assets/new.svg) **Es wurde eine Dateisynchronisierungsoption hinzugefügt:`manual-native`** - Die `manual-native` Dateisynchronisierungsoption bietet manuelle Kontrolle über die Synchronisierung, was die beste Leistung für macOS- und Windows-Umgebungen bietet. Erfahren Sie mehr über die Verwendung der `manual-native`-Option [Entwicklermodus](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode) und [Synchronisieren von Daten in einer Docker-](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data#file-synchronization-options))<!--MCLOUD-7977-->
 - ![neues Symbol](../../assets/new.svg) **Löschungen von Volumes aus `up`- und `down`-Befehlen wurden entfernt** - Die `--volume` Option wurde aus den `bin/magento-docker up`- und `bin/magento-docker down`-Befehlen entfernt und durch den neuen `bin/magento-docker init`-Befehl mit einer Datenverlustwarnung ersetzt. Durch diese Änderung wird ein versehentlicher Datenverlust verhindert. *[Eingegeben von joeshelton-wagento](https://github.com/magento/magento-cloud-docker/pull/319).*<!--PR #319-->
 - ![Fix icon](../../assets/fix.svg) **Der `CN` für das generierte Zertifikat wurde aktualisiert** - Der hartcodierte `CN` wurde aus der Dockerdatei entfernt. Dieser Wert hat einen Zertifikatfehler (`NET::ERR_CERT_INVALID`) erstellt, der dazu geführt hat, dass die Option `--host` für den `ece-docker build:compose`-Befehl ignoriert wurde.<!--MCLOUD-7934-->
 
@@ -229,33 +229,33 @@ Veröffentlichungsdatum: 9. November 2020
 
       - Es wurde Unterstützung für Elasticsearch 7.9 zur Kompatibilität mit kommenden Adobe Commerce-Versionen hinzugefügt.<!--MCLOUD-7190-->
 
-      - **Elasticsearch-Plug-in**-Konfiguration - Es wurde Unterstützung hinzugefügt, um die Elasticsearch-Plug-in-Konfigurationsinformationen aus der `services.yaml`-Datei zum Generieren der `docker-compose.yaml`-Datei für eine Cloud Docker-Umgebung für Commerce zu verwenden. Siehe [Elasticsearch-Plug-ins](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-plugins).<!--MCLOUD-2789-->
+      - **Elasticsearch-Plug-in**-Konfiguration - Es wurde Unterstützung hinzugefügt, um die Elasticsearch-Plug-in-Konfigurationsinformationen aus der `services.yaml`-Datei zum Generieren der `docker-compose.yaml`-Datei für eine Cloud Docker-Umgebung für Commerce zu verwenden. Siehe [Elasticsearch-Plug-ins](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-plugins).<!--MCLOUD-2789-->
 
       - **Unterstützung für Elasticsearch-Plug**—Folgende Elasticsearch-Plug-ins werden jetzt unterstützt: `analysis-icu`, `analysis-phonetic`, `analysis-stempel` und `analysis-nori`. Die Plug-ins `analysis-icu` und `analysis-phonetic` werden standardmäßig installiert. Sie können die `analysis-stempel` und `analysis-nori`-Plug-ins nach Bedarf hinzufügen oder entfernen.<!--MCLOUD-2789-->
 
    - ![neues Symbol](../../assets/new.svg) **CLI-Container**
 
-      - **Befehle in Docker-PHP-Containern ausführen** - Jetzt können Sie die Cloud Docker-CLI verwenden, um Befehle in PHP-Containern in Ihrer Docker-Umgebung auszuführen, ohne PHP auf dem Host installieren zu müssen. Der folgende Befehl erstellt beispielsweise die Konfiguration: `./bin/magento-docker php 7.3 vendor/bin/ece-docker build:compose`. Siehe [Cloud Docker-CLI](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference/#cloud-docker-cli). [Fehlerbehebung eingereicht von G Arvind von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/209).<!--MCLOUD-5982-->
+      - **Befehle in Docker-PHP-Containern ausführen** - Jetzt können Sie die Cloud Docker-CLI verwenden, um Befehle in PHP-Containern in Ihrer Docker-Umgebung auszuführen, ohne PHP auf dem Host installieren zu müssen. Der folgende Befehl erstellt beispielsweise die Konfiguration: `./bin/magento-docker php 7.3 vendor/bin/ece-docker build:compose`. Siehe [Cloud Docker-CLI](https://developer.adobe.com/commerce/cloud-tools/docker/quick-reference#cloud-docker-cli). [Fehlerbehebung eingereicht von G Arvind von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/209).<!--MCLOUD-5982-->
 
       - OpenSSH-Client zu PHP CLI-Containern hinzugefügt. Jetzt können Sie die ssh-agent-Weiterleitung für Composer verwenden, wenn die `composer.json`-Datei private Git-Repositorys enthält, für die ein ssh-Client Composer-Befehle verwenden muss.<!--MCLOUD-6008-->
 
-   - ![Fix icon](../../assets/fix.svg) **TLS-Container** - Jetzt basiert der [TLS-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#tls-container) auf dem `https://hub.docker.com/r/magento/magento-cloud-docker-nginx` Docker-Image anstelle des CentOS-Images. Durch diese Änderung werden Probleme behoben, die beim Senden von HTTPS-Anfragen zwischen Containern in der Cloud Docker-Umgebung zu Fehlern führten.<!--MCLOUD-6469-->
+   - ![Fix icon](../../assets/fix.svg) **TLS-Container** - Jetzt basiert der [TLS-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#tls-container) auf dem `https://hub.docker.com/r/magento/magento-cloud-docker-nginx` Docker-Image anstelle des CentOS-Images. Durch diese Änderung werden Probleme behoben, die beim Senden von HTTPS-Anfragen zwischen Containern in der Cloud Docker-Umgebung zu Fehlern führten.<!--MCLOUD-6469-->
 
-   - ![neues Symbol](../../assets/new.svg) **Test-Container** - Es wurde ein Test-Container für Anwendungstests hinzugefügt und die `--with-test`-Option zum Docker-`build:compose`-Befehl hinzugefügt, um den Container nur beim Testen in der Docker-Umgebung zu erstellen. Siehe [Anwendungstests](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/).<!--MCLOUD-6394-->
+   - ![neues Symbol](../../assets/new.svg) **Test-Container** - Es wurde ein Test-Container für Anwendungstests hinzugefügt und die `--with-test`-Option zum Docker-`build:compose`-Befehl hinzugefügt, um den Container nur beim Testen in der Docker-Umgebung zu erstellen. Siehe [Anwendungstests](https://developer.adobe.com/commerce/cloud-tools/docker/test-application-testing).<!--MCLOUD-6394-->
 
    - ![Neues Symbol](../../assets/new.svg) **FPM-XDEBUG-Container**
 
-      - ![neues Symbol](../../assets/new.svg) **Konfigurieren von Xdebug unter Linux** - Dem `--set-docker-host`-Befehl wurde die Option `ece-docker build:compose` hinzugefügt, um den `host.docker.internal` im Xdebug-Container zu konfigurieren. Diese Option ist erforderlich, um Xdebug auf Linux-Systemen verwenden zu können. Siehe [Konfigurieren von Xdebug für Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).<!--MCLOUD-6430-->
+      - ![neues Symbol](../../assets/new.svg) **Konfigurieren von Xdebug unter Linux** - Dem `--set-docker-host`-Befehl wurde die Option `ece-docker build:compose` hinzugefügt, um den `host.docker.internal` im Xdebug-Container zu konfigurieren. Diese Option ist erforderlich, um Xdebug auf Linux-Systemen verwenden zu können. Siehe [Konfigurieren von Xdebug für Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug).<!--MCLOUD-6430-->
 
       - ![Fix icon](../../assets/fix.svg) Die Xdebug-Variablenkonfiguration für den Docker-EINSTIEGSPUNKT wurde korrigiert, um `uninitialized "with_xdebug" variable` Fehler in den Protokollen zu beheben. [Fehlerbehebung eingereicht von Florent Olivaud](https://github.com/magento/magento-cloud-docker/pull/218)<!--MCLOUD-6043-->
 
 - ![neues Symbol](../../assets/new.svg) **Docker-Konfigurationsänderungen**
 
-   - **MailHog-**: Jetzt können Sie die folgenden `ece-docker build:compose`-Befehlsoptionen verwenden, um MailHog zu deaktivieren und Ports anzugeben: `--no-mailhog`, `--mailhog-http-port` und `--mailhog-smtp-port`. Siehe [Einrichten von E-Mails](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
+   - **MailHog-**: Jetzt können Sie die folgenden `ece-docker build:compose`-Befehlsoptionen verwenden, um MailHog zu deaktivieren und Ports anzugeben: `--no-mailhog`, `--mailhog-http-port` und `--mailhog-smtp-port`. Siehe [Einrichten von E-Mails](https://developer.adobe.com/commerce/cloud-tools/docker/configure#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
 
    - Für Cloud Docker für Commerce 1.2.0 und höher stellt Adobe jetzt Docker-Images für jede Patch-Version bereit, und der Docker-Konfigurationsgenerator erstellt die Docker-Konfiguration mit einer angegebenen Patch-Version, anstatt die neueste zu verwenden. Zuvor erstellte der Docker-Konfigurations-Generator die Konfiguration mit der neuesten Patch-Version, was das mit einer früheren Version erstellte Cloud Docker für Commerce-Umgebungen beschädigen könnte.<!--MCLOUD-7093-->
 
-   - **Angeben benutzerdefinierter Bilder und Versionen in der benutzerdefinierten Cloud-Docker-Konfiguration** - Der `build:custom:compose`-Befehl wurde mit Optionen zum Angeben benutzerdefinierter Bilder und Versionen beim Generieren einer benutzerdefinierten Docker Compose-Konfigurationsdatei (`docker-compose.yaml`) aktualisiert. Siehe [Erstellen einer benutzerdefinierten Docker-Compose-Konfiguration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/custom-docker-compose/). <!--MCLOUD-7089-->
+   - **Angeben benutzerdefinierter Bilder und Versionen in der benutzerdefinierten Cloud-Docker-Konfiguration** - Der `build:custom:compose`-Befehl wurde mit Optionen zum Angeben benutzerdefinierter Bilder und Versionen beim Generieren einer benutzerdefinierten Docker Compose-Konfigurationsdatei (`docker-compose.yaml`) aktualisiert. Siehe [Erstellen einer benutzerdefinierten Docker-Compose-Konfiguration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/custom-docker-compose). <!--MCLOUD-7089-->
 
    - Die Docker-Host-Konfiguration wurde aktualisiert, um Port 443 anzuzeigen, damit der Zugriff auf Adobe Commerce (`https://magento2.docker`) von allen CLI-Containern aus ermöglicht wird. Sie können den Standard-Port ändern, indem Sie die Option `--tls-port` hinzufügen, wenn Sie die Docker-Konfigurationsdatei generieren.<!--MCLOUD-6806-->
 
@@ -298,11 +298,11 @@ Veröffentlichungsdatum: 25. Juni 2020
 
 - ![neues Symbol](../../assets/new.svg) **Unterstützung für die Bereitstellung von Adobe Commerce und Magento Open Source** - Jetzt können Sie Cloud Docker für Commerce verwenden, um eine lokale Entwicklungsumgebung für Projekte bereitzustellen, die nicht in Adobe Commerce auf der Cloud-Infrastruktur gehostet werden.<!--MCLOUD-5667-->
 
-- ![neues Symbol](../../assets/new.svg) **Blackfire.io-Unterstützung**—Es wurde Unterstützung für die Verwendung der [Blackfire.io-Erweiterung](https://developer.adobe.com/commerce/cloud-tools/docker/test/blackfire/) für automatisierte Leistungstests hinzugefügt. [Fehlerbehebung eingereicht von Adarsh Manickam von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/202)<!--MCLOUD-5857-->
+- ![neues Symbol](../../assets/new.svg) **Blackfire.io-Unterstützung**—Es wurde Unterstützung für die Verwendung der [Blackfire.io-Erweiterung](https://developer.adobe.com/commerce/cloud-tools/docker/test/blackfire) für automatisierte Leistungstests hinzugefügt. [Fehlerbehebung eingereicht von Adarsh Manickam von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/202)<!--MCLOUD-5857-->
 
 - ![neues Symbol](../../assets/new.svg) **Container-Aktualisierungen**
 
-   - **Varnish** - Jetzt ist Varnish der Standard-Cache, wenn Sie Adobe Commerce in einer Cloud Docker-Umgebung mit einer unterstützten Version der Cloud-Anwendungsvorlage bereitstellen. Siehe [Lackbehälter](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#varnish-container).<!--MCLOUD-2634-->
+   - **Varnish** - Jetzt ist Varnish der Standard-Cache, wenn Sie Adobe Commerce in einer Cloud Docker-Umgebung mit einer unterstützten Version der Cloud-Anwendungsvorlage bereitstellen. Siehe [Lackbehälter](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#varnish-container).<!--MCLOUD-2634-->
 
    - Es wurde die `--no-varnish` Option zum Überspringen der Installation des Varnish-Service hinzugefügt, wenn Sie die Cloud Docker-Konfigurationsdatei generieren.<!--MCLOUD-2634-->
 
@@ -316,7 +316,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
       - Es wurde Unterstützung für PHP 7.4 hinzugefügt [Fix eingereicht von Mohanela Murugan von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/198)<!--MCLOUD-198-->
 
-      - Es wurde die Möglichkeit hinzugefügt, eine `php.ini`-Datei in das Stammverzeichnis des Projekts in die Cloud Docker-Umgebung zu kopieren und benutzerdefinierte PHP-Einstellungen auf die PHP-FPM- und CLI-Container anzuwenden. Siehe [PHP-Einstellungen anpassen](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#customize-php-settings). [Fehlerbehebung eingereicht von Mathew Beane von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/130).<!--MCLOUD-6012-->
+      - Es wurde die Möglichkeit hinzugefügt, eine `php.ini`-Datei in das Stammverzeichnis des Projekts in die Cloud Docker-Umgebung zu kopieren und benutzerdefinierte PHP-Einstellungen auf die PHP-FPM- und CLI-Container anzuwenden. Siehe [PHP-Einstellungen anpassen](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#customize-php-settings). [Fehlerbehebung eingereicht von Mathew Beane von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/130).<!--MCLOUD-6012-->
 
       - Eine Container-Konsistenzprüfung wurde hinzugefügt. [Fehlerbehebung eingereicht von Visanth Sampath von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/188).<!--MCLOUD-5752-->
 
@@ -326,11 +326,11 @@ Veröffentlichungsdatum: 25. Juni 2020
 
       - Hinzugefügte Unterstützung für Elasticsearch 6.8, 7.2, 7.5 und 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
+      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
 
       - Die `--no-es` Option wurde zu den Service-Konfigurationsoptionen für die Generierung der Docker Compose-Konfigurationsdatei hinzugefügt. Verwenden Sie diese Option, um die Elasticsearch-Container-Installation zu überspringen und stattdessen die MySQL-Suche zu verwenden. Diese Option wird nur für Adobe Commerce-Versionen 2.3.5 und früher unterstützt.<!--MCLOUD-3766-->
 
-   - ![neues Symbol](../../assets/new.svg) **FPM-XDEBUG-Container** - Es wurde eine Service-Konfigurationsoption hinzugefügt, um Xdebug zum Debugging von PHP in Ihrer Cloud Docker-Umgebung zu installieren und zu konfigurieren. Siehe [Konfigurieren von xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).<!--MCLOUD-4098-->
+   - ![neues Symbol](../../assets/new.svg) **FPM-XDEBUG-Container** - Es wurde eine Service-Konfigurationsoption hinzugefügt, um Xdebug zum Debugging von PHP in Ihrer Cloud Docker-Umgebung zu installieren und zu konfigurieren. Siehe [Konfigurieren von xdebug](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug).<!--MCLOUD-4098-->
 
 - ![neues Symbol](../../assets/new.svg) **Docker-Konfigurationsänderungen**
 
@@ -351,11 +351,11 @@ Veröffentlichungsdatum: 25. Juni 2020
 | Redis-Cache löschen | `bin/magento-docker flush-redis` |
 | Lackcache löschen | `bin/magento-docker flush-varnish` |
 | Standardinstallation des Lackes überspringen | `.vendor/bin/ece-docker build:compose --no-varnish`<!--MCLOUD-2634--> |
-| [Anpassen der Elasticsearch-Optionen](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059--> |
-| [Elasticsearch-Konfiguration entfernen](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766--> |
+| [Anpassen der Elasticsearch-Optionen](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --es-env-var`<!--MCLOUD-3059--> |
+| [Elasticsearch-Konfiguration entfernen](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) | `.vendor/bin/ece-docker build:compose --no-es`<!--MCLOUD-3766--> |
 | Konfigurieren des DB-Containers mit MySQL Version 5.6 oder 5.7 | `./vendor/bin/ece-docker build:compose --db <mysql-version-number> --db-image mysql`<!--MCLOUD-5691--> |
 | Benutzerdefinierte Basis-URL angeben | `./vendor/bin/ece-docker build:compose --host=<hostname> --port=<port-number>`<!--MCLOUD-3063--> |
-| [Container für die Xdebug-Konfiguration hinzufügen](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/) | `.vendor/bin/ece-docker build:compose --mode developer --sync-engine native --with-xdebug`<!--MCLOUD-4098--> |
+| [Container für die Xdebug-Konfiguration hinzufügen](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug) | `.vendor/bin/ece-docker build:compose --mode developer --sync-engine native --with-xdebug`<!--MCLOUD-4098--> |
 
 - ![fix icon](../../assets/fix.svg) Die Konfiguration der Synchronisation mutagener Dateien wurde korrigiert, um zu verhindern, dass mutagen veraltete Sitzungen erstellt. [Fehlerbehebung eingereicht von Mathew Beane von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/127).<!--MCLOUD-6010-->
 
@@ -391,11 +391,11 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![Neues Symbol](../../assets/new.svg) **Web-Container**—
 
-      - ![neues Symbol](../../assets/new.svg) **NGINX-Konfiguration anpassen** - Es wurde die Möglichkeit hinzugefügt, eine benutzerdefinierte `nginx.conf` in der Cloud Docker für Commerce-Umgebung zu mounten. Siehe [Web-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#web-container).<!--MAGECLOUD-4204-->
+      - ![neues Symbol](../../assets/new.svg) **NGINX-Konfiguration anpassen** - Es wurde die Möglichkeit hinzugefügt, eine benutzerdefinierte `nginx.conf` in der Cloud Docker für Commerce-Umgebung zu mounten. Siehe [Web-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#web-container).<!--MAGECLOUD-4204-->
 
       - ![neues Symbol](../../assets/new.svg) **Automatisch generierte NGINX-Zertifikate** - Die Docker-Konfigurationsdatei enthält jetzt die Konfiguration zum automatischen Generieren von NGINX-Zertifikaten für den Web-Container.<!--MAGECLOUD-4258-->
 
-   - ![neues Symbol](../../assets/new.svg) **Neuer Selenium-Container** - Ein [Selenium-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#selenium-container) wurde hinzugefügt, um Adobe Commerce-Anwendungstests mithilfe des Magento Functional Testing Framework (MFTF) zu unterstützen.<!--MAGECLOUD-4040-->
+   - ![neues Symbol](../../assets/new.svg) **Neuer Selenium-Container** - Ein [Selenium-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#selenium-container) wurde hinzugefügt, um Adobe Commerce-Anwendungstests mithilfe des Magento Functional Testing Framework (MFTF) zu unterstützen.<!--MAGECLOUD-4040-->
 
    - ![neues Symbol](../../assets/new.svg) Unterstützung der **[!DNL RabbitMQ]-** - Die [!DNL RabbitMQ]-Container-Konfiguration wurde aktualisiert, um [!DNL RabbitMQ] Version 3.8 zu unterstützen.<!--MAGECLOUD-4674-->
 
@@ -403,7 +403,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **TLS-Container**—
 
-      - ![neues Symbol](../../assets/new.svg) **Das Container-Basisbild wurde aktualisiert, um das offizielle Bild zu verwenden**—Das [Cloud TLS-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#tls-container)-Bild basiert jetzt auf dem offiziellen `debian:jessie` Docker-Bild.—<!--MAGECLOUD-4163-->
+      - ![neues Symbol](../../assets/new.svg) **Das Container-Basisbild wurde aktualisiert, um das offizielle Bild zu verwenden**—Das [Cloud TLS-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#tls-container)-Bild basiert jetzt auf dem offiziellen `debian:jessie` Docker-Bild.—<!--MAGECLOUD-4163-->
 
       - ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für den [Pound TLS Termination Proxy]** hinzugefügt - Die [Pound-Konfigurationsdatei](https://github.com/magento/magento-cloud-docker/blob/1.0/images/tls/) fügt die folgenden ENV-Variablen hinzu, um die Docker-Konfiguration für den TLS-Container anzupassen:
 
@@ -415,7 +415,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![Neues Symbol](../../assets/new.svg) **Lackcontainer**—
 
-      - ![neues Symbol](../../assets/new.svg) **Das Container-Basisbild wurde aktualisiert, um das offizielle Bild zu verwenden**—Der [Cloud-Lackierungs-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service/#varnish-container) basiert jetzt auf dem offiziellen `centos` Docker-Bild.<!--MAGECLOUD-4163-->
+      - ![neues Symbol](../../assets/new.svg) **Das Container-Basisbild wurde aktualisiert, um das offizielle Bild zu verwenden**—Der [Cloud-Lackierungs-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#varnish-container) basiert jetzt auf dem offiziellen `centos` Docker-Bild.<!--MAGECLOUD-4163-->
 
       - ![neues Symbol](../../assets/new.svg) **Verbesserte standardmäßige Zeitüberschreitungskonfiguration**-`.first_byte_timeout` und `.between_bytes_timeout`-Konfiguration zum Lackierungs-Container hinzugefügt. Beide Zeitüberschreitungswerte sind standardmäßig auf `300s` (5 Minuten) eingestellt. [Fehlerbehebung eingereicht von Mathew Beane von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/78)<!--MAGECLOUD-4460-->
 
@@ -427,7 +427,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **Unterstützung für den Netzwerk-Bridge-Modus** - Es wurde Unterstützung für den Netzwerk-Bridge-Modus hinzugefügt, um Verbindungen zwischen Docker-Containern über das lokale Netzwerk zu aktivieren.<!--MAGECLOUD-4165-->
 
-   - ![neues Symbol](../../assets/new.svg) **Cron-Container standardmäßig deaktiviert** - Um die Leistung zu verbessern, ist der Cron-Container beim Erstellen der Docker-Umgebung nicht mehr standardmäßig konfiguriert. Sie können die `--with-cron`-Option im Docker-Build-Befehl verwenden, um Ihrer Umgebung einen Cron-Container hinzuzufügen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs/).<!--MAGECLOUD-5181-->
+   - ![neues Symbol](../../assets/new.svg) **Cron-Container standardmäßig deaktiviert** - Um die Leistung zu verbessern, ist der Cron-Container beim Erstellen der Docker-Umgebung nicht mehr standardmäßig konfiguriert. Sie können die `--with-cron`-Option im Docker-Build-Befehl verwenden, um Ihrer Umgebung einen Cron-Container hinzuzufügen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure#manage-cron-jobs).<!--MAGECLOUD-5181-->
 
    - ![neues Symbol](../../assets/new.svg) **Beenden der Synchronisierung großer Backup-Dateien** - Es wurden DB-Dumps und Archivdateien - ZIP, SQL, GZ und BZ2 - zur Ausschlussliste in den `dist/docker-sync.yml` und `dist/mutagen.sh` Dateien hinzugefügt. Das Synchronisieren großer Dateien (>1 GB) kann zu Inaktivität führen, und Backup-Dateien müssen normalerweise nicht synchronisiert werden, da sie neu generiert werden können.<!--MAGECLOUD-3979-->
 
@@ -437,13 +437,13 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **Es wurde eine Service-Konfigurationsoption hinzugefügt, um den Datenbank-Port für den Host verfügbar zu machen** - Verwenden Sie die `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>`-Option, um den Datenbank-Port für den Host beim Erstellen der `docker-compose.yml`-Datei verfügbar zu machen: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
-   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/developer-mode/) und [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode/)Produktionsmodus.<!--MAGECLOUD-3996-->
+   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) und [](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
 
    - ![neues Symbol](../../assets/new.svg) Die Option `--rm` wurde hinzugefügt, um Befehle für die Build- und Bereitstellungs-Container zu `./bin/magento-docker`. Dadurch wird der Container entfernt, nachdem die Aufgabe abgeschlossen ist.<!--MAGECLOUD-4205-->
 
    - ![neues Symbol](../../assets/new.svg) **Aktualisierungen `build:compose` Befehls**—
 
-      - ![neues Symbol](../../assets/new.svg) Dem `--sync-engine="native"`-Befehl wurde die Option `docker-build` hinzugefügt, um die Dateisynchronisierung zu deaktivieren, wenn Sie die Docker Compose-Konfigurationsdatei im Entwicklermodus generieren. Verwenden Sie diese Option bei der Entwicklung auf Linux-Systemen, für die keine Dateisynchronisierung für die lokale Docker-Entwicklung erforderlich ist. Siehe [Synchronisieren von Daten in der Docker-Umgebung](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data/).<!--MCLOUD-3231, MCLOUD-3890-->
+      - ![neues Symbol](../../assets/new.svg) Dem `--sync-engine="native"`-Befehl wurde die Option `docker-build` hinzugefügt, um die Dateisynchronisierung zu deaktivieren, wenn Sie die Docker Compose-Konfigurationsdatei im Entwicklermodus generieren. Verwenden Sie diese Option bei der Entwicklung auf Linux-Systemen, für die keine Dateisynchronisierung für die lokale Docker-Entwicklung erforderlich ist. Siehe [Synchronisieren von Daten in der Docker-Umgebung](https://developer.adobe.com/commerce/cloud-tools/docker/setup/synchronize-data).<!--MCLOUD-3231, MCLOUD-3890-->
 
    - ![neues Symbol](../../assets/new.svg) Die Standardeinstellung für die Dateisynchronisierung wurde von `docker-sync` in `native` geändert. [Fehlerbehebung eingereicht von Mathew Beane von Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/124).<!--MAGECLOUD-5066-->
 

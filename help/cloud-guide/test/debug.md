@@ -1,7 +1,8 @@
 ---
 title: Konfigurieren Sie [!DNL Xdebug]
 description: Erfahren Sie, wie Sie die Xdebug-Erweiterung konfigurieren, um Ihre Adobe Commerce bei der Projektentwicklung für die Cloud-Infrastruktur zu debuggen.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
+source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Sie können [!DNL Xdebug] so konfigurieren, dass es in der Cloud Docker-Umgebung für das lokale Debugging ausgeführt wird, ohne die Projektkonfiguration für Adobe Commerce in der Cloud-Infrastruktur zu ändern. Siehe [Konfigurieren von Xdebug für Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug/).
+>Sie können [!DNL Xdebug] so konfigurieren, dass es in der Cloud Docker-Umgebung für das lokale Debugging ausgeführt wird, ohne die Projektkonfiguration für Adobe Commerce in der Cloud-Infrastruktur zu ändern. Siehe [Konfigurieren von Xdebug für Docker](https://developer.adobe.com/commerce/cloud-tools/docker/test/configure-xdebug).
 
 Um [!DNL Xdebug] zu aktivieren, müssen Sie eine Datei in Ihrem Git-Repository konfigurieren, Ihre IDE konfigurieren und die Port-Weiterleitung einrichten. Einige Einstellungen können in der `magento.app.yaml`-Datei konfiguriert werden. Übertragen Sie die Git-Änderungen nach der Bearbeitung in alle Starter-Umgebungen und Pro-Integrationsumgebungen, um [!DNL Xdebug] zu aktivieren. [!DNL Xdebug] ist bereits in Pro Staging- und Produktionsumgebungen verfügbar.
 
@@ -35,7 +36,7 @@ Gehen Sie wie folgt vor, um [!DNL Xdebug] zu konfigurieren:
 
 ### Erste Schritte mit einer Verzweigung
 
-Um [!DNL Xdebug] hinzuzufügen, empfiehlt Adobe, in [einer Entwicklungsverzweigung“ &#x200B;](../dev-tools/cloud-cli-overview.md#create-an-environment-branch) arbeiten.
+Zum Hinzufügen von [!DNL Xdebug] empfiehlt Adobe die Arbeit in [einer Entwicklungsverzweigung](../dev-tools/cloud-cli-overview.md#create-an-environment-branch).
 
 ### Aktivieren von Xdebug in Ihrer Umgebung
 
@@ -98,7 +99,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
 
 1. [Optional] Konfigurieren Sie die folgenden Einstellungen für die neue Server-Konfiguration. Siehe [Kein Debugserver konfiguriert](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured) in der Dokumentation _PHPStorm_.
 
-   - **Name** - Geben Sie denselben Host-Namen ein. Dieser Wert muss mit dem Wert für die Variable `PHP_IDE_CONFIG` in [Debug CLI-Befehlen) übereinstimmen, &#x200B;](#debug-cli-commands) CLI zum Debuggen zu verwenden.
+   - **Name** - Geben Sie denselben Host-Namen ein. Dieser Wert muss mit dem Wert für die Variable `PHP_IDE_CONFIG` in [Debug CLI-Befehlen) übereinstimmen, ](#debug-cli-commands) CLI zum Debuggen zu verwenden.
    - **Host** - Geben Sie den Host-Namen ein.
    - **port** - Geben Sie `443` ein.
    - **Debugger** - Wählen Sie `Xdebug` aus.
@@ -113,7 +114,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
       - Produktion: `/app/<project_code>/`
       - Staging: `/app/<project_code>_stg/`
 
-1. Ändern Sie den [!DNL Xdebug] Port in `9000,9003` oder Sie können ihn im Bedienfeld **PHP** > **Debug** > **Xdebug** > **Debug Port** auf nur `9000` beschränken.
+1. Ändern Sie den [!DNL Xdebug] Port in `9000,9003` oder Sie können ihn im Bedienfeld `9000`PHP **>** Debug **>** Xdebug **>** Debug Port **auf nur** beschränken.
 
 1. Klicken Sie **Apply**.
 
@@ -196,7 +197,7 @@ Ordnen Sie die `XDEBUG` Verbindung vom Server Ihrem lokalen System zu. Um jede A
 
 #### Port-Weiterleitung unter Windows
 
-Um die Port Forwarding (SSH-Tunneling) unter Windows einzurichten, müssen Sie Ihre Windows-Terminalanwendung konfigurieren. In diesem Beispiel wird die Erstellung eines SSH-Tunnels mit &quot;[&quot; &#x200B;](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Sie können auch andere Anwendungen wie Cygwin verwenden. Weitere Informationen zu anderen Anwendungen finden Sie in der mit diesen Anwendungen bereitgestellten Anbieterdokumentation.
+Um die Port Forwarding (SSH-Tunneling) unter Windows einzurichten, müssen Sie Ihre Windows-Terminalanwendung konfigurieren. In diesem Beispiel wird die Erstellung eines SSH-Tunnels mit &quot;[&quot; ](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Sie können auch andere Anwendungen wie Cygwin verwenden. Weitere Informationen zu anderen Anwendungen finden Sie in der mit diesen Anwendungen bereitgestellten Anbieterdokumentation.
 
 **So richten Sie einen SSH-Tunnel unter Windows mit Putty ein**:
 
@@ -327,7 +328,7 @@ Dies ist eine Demonstration der verwendeten Konfigurationen sowie eine Demonstra
 
    >[!NOTE]
    >
-   >Die von `POST` Anforderungen übergebenen `XDEBUG_SESSION_START` werden nicht unterstützt.
+   >Die von `XDEBUG_SESSION_START` Anforderungen übergebenen `POST` werden nicht unterstützt.
 
 ## Debuggen von CLI-Befehlen
 

@@ -3,7 +3,8 @@ title: Abwärtsinkompatible Änderungen
 description: Erfahren Sie mehr über die Abwärtskompatibilität beim Upgrade vorhandener Cloud-Projekte.
 feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
+source-git-commit: de50fda78c28a57d76e5c0a4d5dac0f8d4d844a0
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 0%
@@ -57,7 +58,7 @@ In früheren ECE-Tools-Versionen konnten Sie die `m2-ece-build` und `m2-ece-depl
 
 ## Änderungen an Cloud-Patches
 
-- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=de) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patchkonflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie manuell heruntergeladen und zu Ihrem Projekt hinzugefügt haben.
+- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patch-Konflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie heruntergeladen und Ihrem Projekt manuell hinzugefügt haben.
 
 - **Befehl zum Anwenden von Patches wurde aktualisiert**-Der Befehl zum Anwenden von Patches wurde aus dem `vendor/bin/ece-tools` in das `vendor/bin/ece-patches`-Verzeichnis verschoben. Wenn Sie diesen Befehl verwenden, um Patches manuell anzuwenden, verwenden Sie den neuen Pfad.
 
@@ -83,7 +84,7 @@ In früheren ECE-Tools-Versionen konnten Sie die `m2-ece-build` und `m2-ece-depl
 
    - **Aktualisieren der Cloud-Docker-**-Wir haben den Pfad zur Befehlsdatei von `./bin/docker` in `./bin/magento-docker` umbenannt. Aktualisieren Sie Ihre Skripte und Befehle, um den neuen Pfad zu verwenden.
 
-   - **Cron-Container ist nicht mehr in der standardmäßigen Docker-Konfiguration enthalten**-Jetzt müssen Sie die `--with-cron`-Option zum `ece-docker build:compose`-Befehl hinzufügen, um den Cron-Container in die Docker-Umgebungskonfiguration aufzunehmen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs/) im Handbuch _Cloud Docker for Commerce_.
+   - **Cron-Container ist nicht mehr in der standardmäßigen Docker-Konfiguration enthalten**-Jetzt müssen Sie die `--with-cron`-Option zum `ece-docker build:compose`-Befehl hinzufügen, um den Cron-Container in die Docker-Umgebungskonfiguration aufzunehmen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) im Handbuch _Cloud Docker for Commerce_.
 
      Skripte, die zuvor Container mit Cron-Aufträgen generiert haben, sind jetzt ohne den Cron-Container.
 
