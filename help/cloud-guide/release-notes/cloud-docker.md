@@ -5,7 +5,7 @@ feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: bbf11023474cb6ac6b3b881c40897c3260542de9
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '3806'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Veröffentlichungsdatum: 8. April 2024
 Veröffentlichungsdatum: 31. Juli 2023
 
 - ![neues Symbol](../../assets/new.svg) **Neue Service-Version hinzugefügt**—OpenSearch 2.5.
-- ![neues Symbol](../../assets/new.svg) **Composer-Cache aktivieren** - Jetzt können Sie die Docker-Konfiguration erweitern, um Composer beim Starten des Docker-Containers das Löschen des Cache zu aktivieren. Siehe [Erweitern der Docker-Konfiguration](https://developer.adobe.com/commerce/cloud-tools/docker/configure) im Handbuch _Cloud Docker for Commerce_.
+- ![neues Symbol](../../assets/new.svg) **Composer-Cache aktivieren** - Jetzt können Sie die Docker-Konfiguration erweitern, um Composer beim Starten des Docker-Containers das Löschen des Cache zu aktivieren. Siehe [Erweitern der Docker-Konfiguration](https://developer.adobe.com/commerce/cloud-tools/docker/configure/) im Handbuch _Cloud Docker for Commerce_.
 
 ## v1.3.5
 
@@ -241,7 +241,7 @@ Veröffentlichungsdatum: 9. November 2020
 
    - ![Fix icon](../../assets/fix.svg) **TLS-Container** - Jetzt basiert der [TLS-Container](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#tls-container) auf dem `https://hub.docker.com/r/magento/magento-cloud-docker-nginx` Docker-Image anstelle des CentOS-Images. Durch diese Änderung werden Probleme behoben, die beim Senden von HTTPS-Anfragen zwischen Containern in der Cloud Docker-Umgebung zu Fehlern führten.<!--MCLOUD-6469-->
 
-   - ![neues Symbol](../../assets/new.svg) **Test-Container** - Es wurde ein Test-Container für Anwendungstests hinzugefügt und die `--with-test`-Option zum Docker-`build:compose`-Befehl hinzugefügt, um den Container nur beim Testen in der Docker-Umgebung zu erstellen. Siehe [Anwendungstests](https://developer.adobe.com/commerce/cloud-tools/docker/test-application-testing).<!--MCLOUD-6394-->
+   - ![neues Symbol](../../assets/new.svg) **Test-Container** - Es wurde ein Test-Container für Anwendungstests hinzugefügt und die `--with-test`-Option zum Docker-`build:compose`-Befehl hinzugefügt, um den Container nur beim Testen in der Docker-Umgebung zu erstellen. Siehe [Anwendungstests](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing).<!--MCLOUD-6394-->
 
    - ![Neues Symbol](../../assets/new.svg) **FPM-XDEBUG-Container**
 
@@ -251,7 +251,7 @@ Veröffentlichungsdatum: 9. November 2020
 
 - ![neues Symbol](../../assets/new.svg) **Docker-Konfigurationsänderungen**
 
-   - **MailHog-**: Jetzt können Sie die folgenden `ece-docker build:compose`-Befehlsoptionen verwenden, um MailHog zu deaktivieren und Ports anzugeben: `--no-mailhog`, `--mailhog-http-port` und `--mailhog-smtp-port`. Siehe [Einrichten von E-Mails](https://developer.adobe.com/commerce/cloud-tools/docker/configure#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
+   - **MailHog-**: Jetzt können Sie die folgenden `ece-docker build:compose`-Befehlsoptionen verwenden, um MailHog zu deaktivieren und Ports anzugeben: `--no-mailhog`, `--mailhog-http-port` und `--mailhog-smtp-port`. Siehe [Einrichten von E-Mails](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#set-up-email).<!--MCLOUD-6898, MCLOUD-6660-->
 
    - Für Cloud Docker für Commerce 1.2.0 und höher stellt Adobe jetzt Docker-Images für jede Patch-Version bereit, und der Docker-Konfigurationsgenerator erstellt die Docker-Konfiguration mit einer angegebenen Patch-Version, anstatt die neueste zu verwenden. Zuvor erstellte der Docker-Konfigurations-Generator die Konfiguration mit der neuesten Patch-Version, was das mit einer früheren Version erstellte Cloud Docker für Commerce-Umgebungen beschädigen könnte.<!--MCLOUD-7093-->
 
@@ -326,7 +326,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
       - Hinzugefügte Unterstützung für Elasticsearch 6.8, 7.2, 7.5 und 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
+      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
 
       - Die `--no-es` Option wurde zu den Service-Konfigurationsoptionen für die Generierung der Docker Compose-Konfigurationsdatei hinzugefügt. Verwenden Sie diese Option, um die Elasticsearch-Container-Installation zu überspringen und stattdessen die MySQL-Suche zu verwenden. Diese Option wird nur für Adobe Commerce-Versionen 2.3.5 und früher unterstützt.<!--MCLOUD-3766-->
 
@@ -427,7 +427,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **Unterstützung für den Netzwerk-Bridge-Modus** - Es wurde Unterstützung für den Netzwerk-Bridge-Modus hinzugefügt, um Verbindungen zwischen Docker-Containern über das lokale Netzwerk zu aktivieren.<!--MAGECLOUD-4165-->
 
-   - ![neues Symbol](../../assets/new.svg) **Cron-Container standardmäßig deaktiviert** - Um die Leistung zu verbessern, ist der Cron-Container beim Erstellen der Docker-Umgebung nicht mehr standardmäßig konfiguriert. Sie können die `--with-cron`-Option im Docker-Build-Befehl verwenden, um Ihrer Umgebung einen Cron-Container hinzuzufügen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure#manage-cron-jobs).<!--MAGECLOUD-5181-->
+   - ![neues Symbol](../../assets/new.svg) **Cron-Container standardmäßig deaktiviert** - Um die Leistung zu verbessern, ist der Cron-Container beim Erstellen der Docker-Umgebung nicht mehr standardmäßig konfiguriert. Sie können die `--with-cron`-Option im Docker-Build-Befehl verwenden, um Ihrer Umgebung einen Cron-Container hinzuzufügen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure/#manage-cron-jobs).<!--MAGECLOUD-5181-->
 
    - ![neues Symbol](../../assets/new.svg) **Beenden der Synchronisierung großer Backup-Dateien** - Es wurden DB-Dumps und Archivdateien - ZIP, SQL, GZ und BZ2 - zur Ausschlussliste in den `dist/docker-sync.yml` und `dist/mutagen.sh` Dateien hinzugefügt. Das Synchronisieren großer Dateien (>1 GB) kann zu Inaktivität führen, und Backup-Dateien müssen normalerweise nicht synchronisiert werden, da sie neu generiert werden können.<!--MAGECLOUD-3979-->
 
@@ -437,7 +437,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **Es wurde eine Service-Konfigurationsoption hinzugefügt, um den Datenbank-Port für den Host verfügbar zu machen** - Verwenden Sie die `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>`-Option, um den Datenbank-Port für den Host beim Erstellen der `docker-compose.yml`-Datei verfügbar zu machen: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
-   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) und [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
+   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) und [](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
 
    - ![neues Symbol](../../assets/new.svg) Die Option `--rm` wurde hinzugefügt, um Befehle für die Build- und Bereitstellungs-Container zu `./bin/magento-docker`. Dadurch wird der Container entfernt, nachdem die Aufgabe abgeschlossen ist.<!--MAGECLOUD-4205-->
 

@@ -1,7 +1,8 @@
 ---
 title: Staging- und Produktionstests
 description: Erfahren Sie, wie Sie in Staging- und Produktionsumgebungen testen können.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 39625c97-5eb0-4039-ac5f-ddaeb43156de
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 0%
@@ -211,7 +212,7 @@ Um optimale Ergebnisse zu erzielen, verwenden Sie die folgenden Tools:
 
 ## Funktionstests
 
-Sie können das Magento Functional Testing Framework (MFTF) verwenden, um Funktionstests für Adobe Commerce über die Cloud Docker-Umgebung abzuschließen. Siehe [Anwendungstests](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/) im Handbuch _Cloud Docker für Commerce_.
+Sie können das Magento Functional Testing Framework (MFTF) verwenden, um Funktionstests für Adobe Commerce über die Cloud Docker-Umgebung abzuschließen. Siehe [Anwendungstests](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing) im Handbuch _Cloud Docker für Commerce_.
 
 ## Einrichten des Sicherheits-Scan-Tools
 

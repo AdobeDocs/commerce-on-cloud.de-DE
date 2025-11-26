@@ -6,7 +6,7 @@ feature: Cloud, Install
 topic: Development
 last-substantial-update: 2024-02-06T00:00:00Z
 exl-id: 14fb0b41-1c3a-4abc-8726-cea16ab00ba8
-source-git-commit: de50fda78c28a57d76e5c0a4d5dac0f8d4d844a0
+source-git-commit: 0d84d29c470a098c7238b6ca7cc9538463dda695
 workflow-type: tm+mt
 source-wordcount: '560'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Composer installiert die erforderlichen Bibliotheken und Abhängigkeiten für Ih
 
 {style="table-layout:auto"}
 
-Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch &#x200B;](../deploy/process.md#build-phase-build-phase).
+Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch ](../deploy/process.md#build-phase-build-phase).
 
 ### Cloud-Metapaket
 
@@ -59,7 +59,7 @@ Die Hauptpakete dieses Metapakets sind die folgenden:
 - **Vendor/magento/product-enterprise-edition**: Dieses Metapaket erfordert Anwendungskomponenten, einschließlich Module, Frameworks, Designs und mehr.
 - **provider/fastly2/magento2**: Dieses Modul verwaltet das Fastly CDN und die Services für die Pro Staging- und Produktions- und Starter-Produktionsumgebungen. Siehe [Fastly Services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **Vendor/magento/module-paypal-on-boarding** - Dieses Modul ermöglicht den PayPal-Bezahlungs-Gateway-Checkout durch die Verbindung mit Ihrem PayPal-Händlerkonto. Siehe [PayPal-Onboarding-Tool](../store/paypal.md).
-- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die &#x200B;](../monitor/operational-telemetry.md) (Operational Telemetry).
+- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die ](../monitor/operational-telemetry.md) (Operational Telemetry).
 
 >[!TIP]
 >
@@ -69,7 +69,7 @@ Die Hauptpakete dieses Metapakets sind die folgenden:
 
 Sie können das Tool Cloud Docker für Commerce verwenden, um die Adobe Commerce in Cloud-Infrastrukturproduktions- und -Entwicklungsumgebungen für die lokale Entwicklung zu emulieren. Cloud Docker für Commerce erfordert keine lokale Installation von PHP und Composer.
 
-- [Lokale Entwicklung mit Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup) auf der Adobe Developer-Site
+- [Lokale Entwicklung mit Cloud Docker](https://developer.adobe.com/commerce/cloud-tools/docker/setup/) auf der Adobe Developer-Site
 - [Docker-Architektur und allgemeine Befehle](../dev-tools/cloud-docker.md)
 - [Versionshinweise zu Cloud Docker](../release-notes/cloud-docker.md)
 
