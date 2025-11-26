@@ -37,7 +37,7 @@ Composer installiert die erforderlichen Bibliotheken und Abhängigkeiten für Ih
 
 {style="table-layout:auto"}
 
-Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch ](../deploy/process.md#build-phase-build-phase).
+Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch &#x200B;](../deploy/process.md#build-phase-build-phase).
 
 ### Cloud-Metapaket
 
@@ -59,7 +59,7 @@ Die Hauptpakete dieses Metapakets sind die folgenden:
 - **Vendor/magento/product-enterprise-edition**: Dieses Metapaket erfordert Anwendungskomponenten, einschließlich Module, Frameworks, Designs und mehr.
 - **provider/fastly2/magento2**: Dieses Modul verwaltet das Fastly CDN und die Services für die Pro Staging- und Produktions- und Starter-Produktionsumgebungen. Siehe [Fastly Services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **Vendor/magento/module-paypal-on-boarding** - Dieses Modul ermöglicht den PayPal-Bezahlungs-Gateway-Checkout durch die Verbindung mit Ihrem PayPal-Händlerkonto. Siehe [PayPal-Onboarding-Tool](../store/paypal.md).
-- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die ](../monitor/operational-telemetry.md) (Operational Telemetry).
+- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die &#x200B;](../monitor/operational-telemetry.md) (Operational Telemetry).
 
 >[!TIP]
 >
