@@ -38,7 +38,7 @@ Du bist gut zu gehen!
 ## Code-Überprüfungen
 
 Alle Einreichungen sollten in Form von Pull-Anfragen erfolgen und müssen überprüft werden
-durch Projektverantwortliche. Lesen [ Dokumentation zu Pull Requests von GitHub](https://docs.github.com/articles/about-pull-requests/)
+durch Projektverantwortliche. Lesen [&#x200B; Dokumentation zu Pull Requests von GitHub](https://docs.github.com/articles/about-pull-requests/)
 Weitere Informationen zum Senden von Pull-Anforderungen finden Sie unter.
 
 Befolgen Sie abschließend die [Vorlage für Pull-Anfragen](PULL_REQUEST_TEMPLATE.md) wenn
@@ -59,7 +59,7 @@ Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. S
 
 ## Neue Highlights
 
-Wenn Ihre Änderungen neue Themen, wichtige Aktualisierungen oder Korrekturen mit sich bringen, die hervorgehoben werden müssen, können Sie direkt im Hauptteil Ihrer Pull[Anfrage eine kurze Beschreibung ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) Abschnitt „Neue Funktionen“ hinzufügen.
+Wenn Ihre Änderungen neue Themen, wichtige Aktualisierungen oder Korrekturen mit sich bringen, die hervorgehoben werden müssen, können Sie direkt im Hauptteil Ihrer Pull[Anfrage eine kurze Beschreibung &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) Abschnitt „Neue Funktionen“ hinzufügen.
 
 So fügen Sie eine Hervorhebung Neue Funktionen hinzu:
 
