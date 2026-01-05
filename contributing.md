@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+source-git-commit: 305df8acb8c41369b34e2c20d9c7df6824222931
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 3%
+source-wordcount: '559'
+ht-degree: 1%
 
 ---
 # Beiträge
@@ -19,7 +19,7 @@ Von Ihnen wird erwartet, dass Sie diesen Kodex einhalten. Bitte melden Sie inakz
 
 ## Dokumentation zum Contributor Guide
 
-Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
+Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Haben Sie eine Frage?
 
@@ -30,21 +30,19 @@ Konsens über die Projektausrichtung und Problemlösungen in Problem-Threads
 ## Lizenzvereinbarung für Mitarbeiter
 
 Alle Drittanbieter-Beiträge zu diesem Projekt müssen von einem unterzeichneten Mitwirkenden begleitet werden
-Lizenzvereinbarung. Dadurch erhält Adobe die Erlaubnis, Ihre Beiträge zu verteilen
+Lizenzvereinbarung. Dadurch erhält Adobe die Berechtigung, Ihre Beiträge zu verteilen
 als Teil des Projekts. [Unterschreiben Sie unsere Lizenzvereinbarung für Mitwirkende](https://opensource.adobe.com/cla.html). Sie
-Sie müssen nur einmal eine Adobe-Lizenzvereinbarung für Mitarbeiter einreichen. Wenn Sie also bereits eine einreichen,
+Sie müssen nur einmal eine Adobe-Lizenzvereinbarung für Mitwirkende übermitteln. Wenn Sie also bereits eine gesendet haben,
 Du bist gut zu gehen!
 
 ## Code-Überprüfungen
 
 Alle Einreichungen sollten in Form von Pull-Anfragen erfolgen und müssen überprüft werden
-durch Projektverantwortliche. Lesen [&#x200B; Dokumentation zu Pull Requests von GitHub](https://docs.github.com/articles/about-pull-requests/)
+durch Projektverantwortliche. Lesen [ Dokumentation zu Pull Requests von GitHub](https://docs.github.com/articles/about-pull-requests/)
 Weitere Informationen zum Senden von Pull-Anforderungen finden Sie unter.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Befolgen Sie abschließend die [Vorlage für Pull-Anfragen](PULL_REQUEST_TEMPLATE.md) wenn
+Senden einer Pull-Anfrage!
 
 ## Von den Mitwirkenden zu den Verantwortlichen
 
@@ -57,4 +55,52 @@ Wenden Sie sich an bestehende Verantwortliche, um darüber zu sprechen.
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsfachleute gesendet](https://helpx.adobe.com/de/security/alertus.html)
+Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsfachleute gesendet](https://helpx.adobe.com/security/alertus.html)
+
+## Neue Highlights
+
+Wenn Ihre Änderungen neue Themen, wichtige Aktualisierungen oder Korrekturen mit sich bringen, die hervorgehoben werden müssen, können Sie direkt im Hauptteil Ihrer Pull[Anfrage eine kurze Beschreibung ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new) Abschnitt „Neue Funktionen“ hinzufügen.
+
+So fügen Sie eine Hervorhebung Neue Funktionen hinzu:
+
+1. Fügen Sie das `whatsnew`-Tag mit der entsprechenden Beschreibung am Ende in den Textkörper Ihrer Pull-Anfrage ein. Die Beschreibung sollte Kontext über die Änderung und einen Link zum Zielthema oder zu den Zielthemen enthalten. Verwenden Sie das folgende Format (Code-Blockanführungszeichen dienen nur der Darstellung, schließen Sie sie nicht in Ihren Pull-Anfragetext ein):
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/target-topic.html).
+   ```
+
+   Oder wenn es mehrere Themen gibt:
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/third-target-topic.html).
+   ```
+
+   Sie können auch Listen für mehrere Highlights verwenden:
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/second-topic.html).
+   ```
+
+1. Fügen Sie unterstützte Beschriftungen hinzu, die den Typ der Änderung angeben. Unterstützte Kennzeichnungen enthalten Kennzeichnungen für jeden Änderungstyp, z. B.:
+
+   - `new-topic` - für neue Themen
+   - `major-update` - Für umfangreiche Aktualisierungen, die erhebliche Änderungen an Inhalt, Struktur oder Funktionalität enthalten können
+   - `technical` - für technische Änderungen, die nicht als wichtige Updates gelten, aber dennoch beachtet werden müssen
+
+**Wichtig:**
+
+1. Der `whatsnew` Teil muss vom `whatsnew`-Tag beginnen und sich ganz am Ende des Pull-Anfragetexts befinden.
+1. Die Beschreibungen der Änderungen müssen funktionierende Links enthalten. Bitte vergewissern Sie sich, dass die Links korrekt sind und zu den gewünschten Themen führen. Wenn das Thema neu ist, überprüfen Sie, ob die Links funktionieren, nachdem Sie die Pull-Anfrage zusammengeführt und das neue Thema veröffentlicht haben. Es ist in Ordnung, die Links zu beheben, nachdem die Pull-Anfrage zusammengeführt wurde.
+
+Suchen Sie beispielsweise in geschlossenen Pull-Anfragen im Repository, um zu sehen, wie vorhandene Highlights formatiert sind, und vergleichen Sie sie mit dem Abschnitt [Neue Funktionen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview#whats-new), um zu sehen, wie sie in der Dokumentation angezeigt werden.
