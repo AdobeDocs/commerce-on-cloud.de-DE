@@ -1,7 +1,7 @@
 ---
-source-git-commit: b151aac666510594751937e80dc3d9db4ede41b7
+source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -9,16 +9,16 @@ ht-degree: 1%
 
 Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
 
-- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
-- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
+- [Handbuch zu Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
-Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction).
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
@@ -40,7 +40,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#x200B; Dokumenten .](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -70,7 +70,7 @@ Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabel
 >**HINWEIS:**
 >
 >- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
->- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
 
 Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
@@ -101,7 +101,7 @@ So aktualisieren Sie Vorlageninhalte:
    bundle exec rake render
    ```
 
-   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren. Die RAKE-Aufgaben werden vom `adobe-comdox-exl-rake-tasks` gem bereitgestellt, um die Wartung in allen Dokumentations-Repositorys von Adobe Commerce zu verbessern.
+   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren. Kernaufgaben und -abhängigkeiten (Jekyll, Rake, Bildoptimierung) werden vom `adobe-comdox-exl-rake-tasks` gem bereitgestellt, um die Wartungsfreundlichkeit in allen Dokumentations-Repositorys von Adobe Commerce zu verbessern. Benutzerdefinierte Aufgaben, die für dieses Repository spezifisch sind, werden in der `Rakefile` implementiert.
 
 5. Navigieren Sie zurück zum `root`.
 
