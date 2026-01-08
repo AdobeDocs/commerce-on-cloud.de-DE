@@ -14,7 +14,7 @@ Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud I
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
@@ -40,7 +40,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#x200B; Dokumenten .](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -70,7 +70,7 @@ Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabel
 >**HINWEIS:**
 >
 >- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
->- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
 
 Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
