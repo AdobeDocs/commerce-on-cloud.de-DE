@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: c5e52c70c121aa3650acfba8a98b743834a95428
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 4%
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 # Neue Vorlage
@@ -11,7 +11,7 @@ ht-degree: 4%
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
 
-### &#x200B;17. November 2025
+### &#x200B;13. Januar 2026
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,20 +23,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisiert die <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Cloud-Patches 1.1.12</a> um die Fehlerbehebung für „Der Checkout schlägt fehl, wenn die JS-Minimierung und -Bündelung aktiviert sind: Problem.</p>
+      <td><p>Die Version der Beispiele unter „Einrichten des <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">-Service</a> wurde aktualisiert.</p>
 </td>
       <td>
-        Technisch
+        Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/d07be1a20fa95e2a79534e364e7620a2f856fc0d">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.9.</p>
-</td>
-      <td>
-        Technisch
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/5f088df3e7bc35cc1d7fa93d06b5fa9968802572">verpflichten</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/f5d325dbb14e5e524c89b41c4d5b82383b5b1ac7">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
