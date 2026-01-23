@@ -2,9 +2,10 @@
 title: Bereitstellung für Staging und Produktion
 description: Erfahren Sie, wie Sie Ihren Adobe Commerce auf Cloud-Infrastruktur-Code in den Staging- und Produktionsumgebungen bereitstellen, um ihn weiter zu testen.
 feature: Cloud, Console, Deploy, SCD, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
+source-git-commit: fe634412c6de8325faa36c07e9769cde0eb76c48
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Wenn Sie bereit sind, Ihren Store bereitzustellen, müssen Sie die Bereitstellun
 >
 >Adobe empfiehlt, vor der Bereitstellung ein [Backup](../storage/snapshots.md) der Umgebung zu erstellen.
 
-Außerdem können Sie &quot;[&#x200B; mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
+Außerdem können Sie &quot;[ mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
 
 ## Starter-Bereitstellungsfluss
 
@@ -35,7 +36,7 @@ Ausführliche Informationen zum Prozess finden Sie unter [Workflow für Entwickl
 
 ## Bereitstellen von Code für das Staging
 
-Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) &#x200B;](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
+Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) ](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
 
 ### Bereitstellen von Code mit dem [!DNL Cloud Console]
 
@@ -139,7 +140,7 @@ Die Cloud-CLI stellt Befehle zum Bereitstellen von Code bereit. Sie benötigen S
 
 ## Statische Dateien migrieren
 
-[Statische Dateien](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary) werden in `mounts` gespeichert. Es gibt zwei Methoden zum Migrieren von Dateien von einem Quell-Bereitstellungs-Speicherort, wie z. B. Ihrer lokalen Umgebung, zu einem Ziel-Bereitstellungs-Speicherort. Bei beiden Methoden wird das Dienstprogramm `rsync` verwendet, aber Adobe empfiehlt die Verwendung der `magento-cloud` CLI zum Verschieben von Dateien zwischen der lokalen und der Remote-Umgebung. Adobe empfiehlt die Verwendung der `rsync`-Methode beim Verschieben von Dateien von einer Remote-Quelle an einen anderen Remote-Speicherort.
+[Statische Dateien](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) werden in `mounts` gespeichert. Es gibt zwei Methoden zum Migrieren von Dateien von einem Quell-Bereitstellungs-Speicherort, wie z. B. Ihrer lokalen Umgebung, zu einem Ziel-Bereitstellungs-Speicherort. Bei beiden Methoden wird das Dienstprogramm `rsync` verwendet, Adobe empfiehlt jedoch die Verwendung der `magento-cloud` CLI zum Verschieben von Dateien zwischen der lokalen und der Remote-Umgebung. Außerdem empfiehlt Adobe die Verwendung der `rsync`-Methode beim Verschieben von Dateien von einer Remote-Quelle an einen anderen Remote-Speicherort.
 
 ### Migrieren von Dateien mithilfe der CLI
 
@@ -245,7 +246,7 @@ Siehe [rsync](https://linux.die.net/man/1/rsync)-Hilfe.
 >
 >Die Datenbank der Integrationsumgebung dient ausschließlich Entwicklungstests und kann Daten enthalten, die nicht in die Staging- und Produktionsumgebung migriert werden sollen.
 
-Bei kontinuierlichen Integrationsbereitstellungen wird vom Adobe **nicht empfohlen** Daten von Integration zu Staging und Produktion zu migrieren. Sie können Testdaten bestehen oder wichtige Daten überschreiben. Alle wichtigen Konfigurationen werden mit der [Konfigurationsdatei](../store/store-settings.md) und `setup:upgrade` Befehl während der Erstellung und Bereitstellung übergeben.
+Bei kontinuierlichen Integrationsbereitstellungen wird von Adobe **nicht empfohlen** Daten von Integration zu Staging und Produktion zu migrieren. Sie können Testdaten bestehen oder wichtige Daten überschreiben. Alle wichtigen Konfigurationen werden mit der [Konfigurationsdatei](../store/store-settings.md) und `setup:upgrade` Befehl während der Erstellung und Bereitstellung übergeben.
 
 >[!ENDSHADEBOX]
 
@@ -319,16 +320,10 @@ Beim Importieren von Daten müssen Sie eine Datenbank ablegen und erstellen.
    drop database main;
    ```
 
-   Für die Produktion:
+   Für Produktions- und Staging-Umgebungen:
 
    ```shell
-   drop database <cluster-id>;
-   ```
-
-   Für das Staging:
-
-   ```shell
-   drop database <cluster-ID_stg>;
+   drop database <database_name>;
    ```
 
 1. Datenbank neu erstellen.
