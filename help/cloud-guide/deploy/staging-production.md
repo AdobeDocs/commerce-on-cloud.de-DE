@@ -20,7 +20,7 @@ Wenn Sie bereit sind, Ihren Store bereitzustellen, müssen Sie die Bereitstellun
 >
 >Adobe empfiehlt, vor der Bereitstellung ein [Backup](../storage/snapshots.md) der Umgebung zu erstellen.
 
-Außerdem können Sie &quot;[ mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
+Außerdem können Sie &quot;[&#x200B; mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
 
 ## Starter-Bereitstellungsfluss
 
@@ -36,7 +36,7 @@ Ausführliche Informationen zum Prozess finden Sie unter [Workflow für Entwickl
 
 ## Bereitstellen von Code für das Staging
 
-Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) ](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
+Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) &#x200B;](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
 
 ### Bereitstellen von Code mit dem [!DNL Cloud Console]
 
