@@ -140,7 +140,7 @@ Die Cloud-CLI stellt Befehle zum Bereitstellen von Code bereit. Sie benötigen S
 
 ## Statische Dateien migrieren
 
-[Statische Dateien](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) werden in `mounts` gespeichert. Es gibt zwei Methoden zum Migrieren von Dateien von einem Quell-Bereitstellungs-Speicherort, wie z. B. Ihrer lokalen Umgebung, zu einem Ziel-Bereitstellungs-Speicherort. Bei beiden Methoden wird das Dienstprogramm `rsync` verwendet, Adobe empfiehlt jedoch die Verwendung der `magento-cloud` CLI zum Verschieben von Dateien zwischen der lokalen und der Remote-Umgebung. Außerdem empfiehlt Adobe die Verwendung der `rsync`-Methode beim Verschieben von Dateien von einer Remote-Quelle an einen anderen Remote-Speicherort.
+[Statische Dateien](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary) werden in `mounts` gespeichert. Es gibt zwei Methoden zum Migrieren von Dateien von einem Quell-Bereitstellungs-Speicherort, wie z. B. Ihrer lokalen Umgebung, zu einem Ziel-Bereitstellungs-Speicherort. Bei beiden Methoden wird das Dienstprogramm `rsync` verwendet, Adobe empfiehlt jedoch die Verwendung der `magento-cloud` CLI zum Verschieben von Dateien zwischen der lokalen und der Remote-Umgebung. Außerdem empfiehlt Adobe die Verwendung der `rsync`-Methode beim Verschieben von Dateien von einer Remote-Quelle an einen anderen Remote-Speicherort.
 
 ### Migrieren von Dateien mithilfe der CLI
 
