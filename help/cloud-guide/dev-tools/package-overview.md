@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ECE-Tools-Paket
 
-Das [!DNL ECE-Tools] Paket besteht aus einer Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung der [!DNL Commerce] Anwendung entwickelt wurden. Das `ece-tools` vereinfacht viele Prozesse, z. B. die Verwaltung von Cron-Aufträgen, die Überprüfung der Projektkonfiguration und die Anwendung von Adobe-Patches und Hotfixes. Sie können das [Open-Source-Code-Repository  [!DNL ECE-Tools]  GitHub anzeigen und zu ihm ](https://github.com/magento/ece-tools).
+Das [!DNL ECE-Tools] Paket besteht aus einer Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung der [!DNL Commerce] Anwendung entwickelt wurden. Das `ece-tools` vereinfacht viele Prozesse, z. B. die Verwaltung von Cron-Aufträgen, die Überprüfung der Projektkonfiguration und die Anwendung von Adobe-Patches und Hotfixes. Sie können das [Open-Source-Code-Repository  [!DNL ECE-Tools]  GitHub anzeigen und zu ihm &#x200B;](https://github.com/magento/ece-tools).
 
 {{ece-tools-package}}
 

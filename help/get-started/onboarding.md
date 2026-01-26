@@ -29,7 +29,7 @@ Der Lizenzinhaber kann Benutzerkonten hinzufügen, um Zugriff auf Code zu gewäh
 
 ### Benutzerregistrierung
 
-Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen hinzufügen. Wenn Sie einen neuen Benutzer haben, bitten Sie ihn, sich [für ein Konto ](https://account.magento.com/customer/account/login/)) anzumelden und die mit seinem Kontoprofil verknüpfte E-Mail-Adresse anzugeben.
+Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen hinzufügen. Wenn Sie einen neuen Benutzer haben, bitten Sie ihn, sich [für ein Konto &#x200B;](https://account.magento.com/customer/account/login/)) anzumelden und die mit seinem Kontoprofil verknüpfte E-Mail-Adresse anzugeben.
 
 ### Zugriff auf freigegebenes Konto
 
@@ -49,5 +49,5 @@ Auf der Seite finden Sie einen Status für Adobe Commerce-Komponenten und -Servi
 >
 > Öffnen Sie die neue [!DNL Cloud Console] und zeigen Sie Projekt- und Umgebungsaktivitäten an.
 >
->**Nächster Schritt**: [Melden Sie sich bei der CL[!DNL ]oud-Konsole an](cloud-console.md)
+>**Nächster Schritt**: [Melden Sie sich bei der CLoud-Konsole an](cloud-console.md)
 
