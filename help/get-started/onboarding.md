@@ -21,7 +21,7 @@ Um Ihr Projekt schnell integrieren zu können, damit Sie mit der Entwicklung Ihr
 
 ## Für ein Cloud-Konto anmelden
 
-Wenn Sie kein Adobe Commerce auf Cloud-Infrastruktur-Konto haben, wenden Sie sich an [Vertrieb](https://business.adobe.com/products/magento/get-demo.html). Wenn Sie sich anmelden, erstellt Adobe Ihr Konto und sendet Ihnen eine Begrüßungs-E-Mail, die Anweisungen für den Zugriff auf die Projektoberfläche enthält. Die E-Mail enthält einen Link, über den Sie sich bei Ihrem Konto anmelden und das ursprüngliche Projekt einrichten können.
+Wenn Sie kein Adobe Commerce auf Cloud-Infrastruktur-Konto haben, wenden Sie sich an [Vertrieb](https://business.adobe.com/de/products/magento/get-demo.html). Wenn Sie sich anmelden, erstellt Adobe Ihr Konto und sendet Ihnen eine Begrüßungs-E-Mail, die Anweisungen für den Zugriff auf die Projektoberfläche enthält. Die E-Mail enthält einen Link, über den Sie sich bei Ihrem Konto anmelden und das ursprüngliche Projekt einrichten können.
 
 ## Zugreifen auf Projekte und Hinzufügen von Benutzern
 
@@ -33,7 +33,7 @@ Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrast
 
 ### Zugriff auf freigegebenes Konto
 
-Der Lizenzinhaber kann den gemeinsamen Zugriff für das Konto einrichten. Durch den gemeinsamen Zugriff können vertrauenswürdige Mitarbeiter und Dienstleister das Hilfezentrum verwenden, um Support-Tickets für Ihre Adobe Commerce in Cloud-Infrastrukturprojekten zu senden und zu verfolgen. Anweisungen zum Einrichten finden Sie im Artikel [Freigegebener Zugriff](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) im Hilfe-Center.
+Der Lizenzinhaber kann den gemeinsamen Zugriff für das Konto einrichten. Durch den gemeinsamen Zugriff können vertrauenswürdige Mitarbeiter und Dienstleister das Hilfezentrum verwenden, um Support-Tickets für Ihre Adobe Commerce in Cloud-Infrastrukturprojekten zu senden und zu verfolgen. Anweisungen zum Einrichten finden Sie im Artikel [Freigegebener Zugriff](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#shared-access) im Hilfe-Center.
 
 ### [!DNL Cloud Console]
 
