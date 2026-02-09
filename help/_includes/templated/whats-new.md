@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die folgenden Informationen zum Origin Cloaking wurden der <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly">Fastly Services-Übersicht</a> hinzugefügt.<br />- Definition und Traffic-Fluss<br />- Aktivierungsstatus (in allen Cloud-Projekten seit 2021 aktiviert) Beispiele für blockierte Ursprungs-URL<br />- REST-API-Nutzungsbeispiele</p>
+      <td><p>Die folgenden Informationen zum Origin Cloaking wurden der <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly">Fastly Services-Übersicht</a> hinzugefügt.<br />- Definition und Traffic-Fluss<br />- Aktivierungsstatus (in allen Cloud-Projekten seit 2021 aktiviert) Beispiele für blockierte Ursprungs-URL<br />- REST-API-Nutzungsbeispiele</p>
 </td>
       <td>
         Technisch
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Version der Beispiele unter „Einrichten des <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">-Service</a> wurde aktualisiert.</p>
+      <td><p>Die Version der Beispiele unter „Einrichten des <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/opensearch">-Service</a> wurde aktualisiert.</p>
 </td>
       <td>
         Feedback
