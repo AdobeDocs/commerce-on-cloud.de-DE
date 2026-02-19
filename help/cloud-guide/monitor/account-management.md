@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn Adobe Ihr Cloud-Infrastrukturprojekt bereitstellt, erhält der Lizenzinhaber eine E-Mail von New Relic mit Anmeldeinformationen und Anweisungen für den Zugriff auf das New Relic-Konto. Wenn Sie die E-Mail nicht erhalten haben, setzen Sie das New Relic-Kennwort mithilfe der E-Mail-Adresse des Lizenzinhabers zurück.
 
-Wenn der Lizenzinhaber geändert wurde und der neue Lizenzinhaber derzeit keinen Zugriff auf New Relic hat, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Wenn der Lizenzinhaber geändert wurde und der neue Lizenzinhaber derzeit keinen Zugriff auf New Relic hat, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Benutzerzugriff verwalten (Administratorrolle)
 
@@ -41,7 +41,7 @@ Siehe [Benutzerverwaltung](https://docs.newrelic.com/docs/accounts/accounts-bill
 
 >[!NOTE]
 >
->**Pro-Umgebungen** sind für die Verwendung von New Relic-Services vorkonfiguriert und können Anweisungen zum Aktivieren und Verbinden überspringen. Wenn New Relic APM nicht in der Staging- und Produktionsumgebung installiert ist oder New Relic Infrastructure in der Produktionsumgebung nicht verfügbar ist, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Installation anzufordern.
+>**Pro-Umgebungen** sind für die Verwendung von New Relic-Services vorkonfiguriert und können Anweisungen zum Aktivieren und Verbinden überspringen. Wenn New Relic APM nicht in der Staging- und Produktionsumgebung installiert ist oder New Relic Infrastructure in der Produktionsumgebung nicht verfügbar ist, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Installation anzufordern.
 
 Für Starterumgebungen müssen Sie die `.magento.app.yaml` überprüfen, um sicherzustellen, dass der Abschnitt `runtime` die New Relic-Erweiterung enthält. Wenn die Erweiterung nicht konfiguriert wurde, fügen Sie Folgendes hinzu:
 
@@ -146,6 +146,6 @@ So ändern Sie den New Relic-Kontoinhaber für Ihr Adobe Commerce in Cloud-Infra
 
 2. **Fügen Sie zuerst den Benutzer**, wenn er sich noch nicht in Ihrem Konto befindet. Siehe [Benutzer hinzufügen und aktualisieren](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#add-users) in der Dokumentation zu New Relic.
 
-3. **Benötigen Sie Hilfe?** Wenn kein bestehender Eigentümer oder Administrator behilflich sein kann, kann jeder Adobe Commerce-Benutzer mit Zugriff auf das [Adobe Commerce-Partnerkonto ](https://account.newrelic.com/accounts/1311131/users) Benutzer in Ihrem Namen hinzufügen.
+3. **Benötigen Sie Hilfe?** Wenn kein bestehender Eigentümer oder Administrator behilflich sein kann, kann jeder Adobe Commerce-Benutzer mit Zugriff auf das [Adobe Commerce-Partnerkonto &#x200B;](https://account.newrelic.com/accounts/1311131/users) Benutzer in Ihrem Namen hinzufügen.
 
 Weitere Informationen finden Sie in der Übersicht über den [New Relic-Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
