@@ -91,7 +91,7 @@ Wenn Sie bereit sind, Ihre Site zu starten, müssen Sie die DNS-Konfiguration ak
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **HINWEIS**: Sie können die Basis-URL auch über den Administrator aktualisieren. Siehe [Store-URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html) im _Handbuch zu Adobe Commerce Stores und Kauferlebnissen_.
+   **HINWEIS**: Sie können die Basis-URL auch über den Administrator aktualisieren. Siehe [Store-URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=de) im _Handbuch zu Adobe Commerce Stores und Kauferlebnissen_.
 
 1. Warten Sie einige Minuten, bis die Site aktualisiert wird.
 
@@ -105,7 +105,7 @@ Im Folgenden werden Änderungen und Prüfungen empfohlen:
 
 - [Ausgehende E-Mail-Tests abgeschlossen](../project/outgoing-emails.md)
 
-- [Sichere Konfiguration für Admin-Anmeldedaten und Basis-Admin-URL](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [Sichere Konfiguration für Admin-Anmeldedaten und Basis-Admin-URL](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-admin)
 
 - [Alle Bilder für das Web optimieren](../cdn/fastly-image-optimization.md)
 
@@ -137,9 +137,9 @@ Sie können auch mit den folgenden Drittanbieteroptionen testen:
 
 - [Einrichten der Sicherheitsprüfung](overview.md#set-up-the-security-scan-tool)
 
-- [Sichere Konfiguration für Admin-Benutzer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-admin)
+- [Sichere Konfiguration für Admin-Benutzer](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-admin)
 
-- [Sichere Konfiguration für Admin-URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
+- [Sichere Konfiguration für Admin-URL](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-urls#use-a-custom-admin-url)
 
 - [Entfernen Sie alle Benutzer, die nicht mehr im Adobe Commerce on Cloud-Infrastrukturprojekt vorhanden sind.](../project/user-access.md)
 
