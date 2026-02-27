@@ -15,13 +15,13 @@ Laden Sie vor der Bereitstellung in der Produktionsumgebung die [Launch-Checklis
 
 ## Vollständiger Test in der Produktion
 
-Unter [Testen ](../test/staging-and-production.md) Bereitstellung“ können Sie alle Aspekte Ihrer Sites, Stores und Umgebungen testen. Zu diesen Tests gehören die schnelle Verifizierung, Benutzerakzeptanztests (UAT) und Leistungstests.
+Unter [Testen &#x200B;](../test/staging-and-production.md) Bereitstellung“ können Sie alle Aspekte Ihrer Sites, Stores und Umgebungen testen. Zu diesen Tests gehören die schnelle Verifizierung, Benutzerakzeptanztests (UAT) und Leistungstests.
 
 ## TLS und Fastly
 
 Adobe stellt für jede Umgebung ein SSL-/TLS-Zertifikat zum Verschlüsseln bereit. Dieses Zertifikat ist für Fastly erforderlich, um sicheren Traffic über HTTPS bereitzustellen.
 
-Um dieses Zertifikat verwenden zu können, müssen Sie Ihre DNS-Konfiguration aktualisieren, damit Adobe die Domain-Validierung abschließen und das Zertifikat auf Ihre Umgebung anwenden kann. Jede Umgebung verfügt über ein eindeutiges Zertifikat, das die Domains für die Adobe Commerce auf Cloud-Infrastruktur-Sites abdeckt, die in dieser Umgebung bereitgestellt werden. Es wird empfohlen, die Konfigurationsaktualisierungen während des [Schnell einrichten“-Prozesses abzuschließen und ](../cdn/fastly-configuration.md).
+Um dieses Zertifikat verwenden zu können, müssen Sie Ihre DNS-Konfiguration aktualisieren, damit Adobe die Domain-Validierung abschließen und das Zertifikat auf Ihre Umgebung anwenden kann. Jede Umgebung verfügt über ein eindeutiges Zertifikat, das die Domains für die Adobe Commerce auf Cloud-Infrastruktur-Sites abdeckt, die in dieser Umgebung bereitgestellt werden. Es wird empfohlen, die Konfigurationsaktualisierungen während des [Schnell einrichten“-Prozesses abzuschließen und &#x200B;](../cdn/fastly-configuration.md).
 
 ## DNS-Konfiguration mit Produktionseinstellungen aktualisieren
 
@@ -33,7 +33,7 @@ Wenn Sie bereit sind, Ihre Site zu starten, müssen Sie die DNS-Konfiguration ak
 
 - Die Konfiguration der Produktionsumgebung wurde mit allen erforderlichen Domains aktualisiert
 
-  In der Regel fügen Sie gemeinsam mit Ihrem technischen Kundenberater alle Domains und Subdomains der obersten Ebene hinzu, die für Ihre Stores erforderlich sind. Um die Domains für Ihre Produktionsumgebung hinzuzufügen oder zu ändern, [ Sie ein Adobe Commerce-Support-Ticket ](https://support.magento.com/hc/en-us/articles/360019088251). Warten Sie auf die Bestätigung, dass Ihre Projektkonfiguration aktualisiert wurde.
+  In der Regel fügen Sie gemeinsam mit Ihrem technischen Kundenberater alle Domains und Subdomains der obersten Ebene hinzu, die für Ihre Stores erforderlich sind. Um die Domains für Ihre Produktionsumgebung hinzuzufügen oder zu ändern, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://support.magento.com/hc/en-us/articles/360019088251). Warten Sie auf die Bestätigung, dass Ihre Projektkonfiguration aktualisiert wurde.
 
   Bei Ausgangsprojekten müssen Sie die Domains zu Ihrem Projekt hinzufügen. Siehe [Verwalten von Domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).
 
