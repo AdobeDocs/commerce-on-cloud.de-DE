@@ -3,9 +3,9 @@ user-guide-title: Handbuch zu Commerce für Cloud
 user-guide-description: Erfahren Sie, wie Sie die Adobe Commerce-Anwendung in der Cloud-Infrastruktur verwalten.
 product: magento
 feature: Cloud
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 2311b8e5c0216c01d0189c8f8e669dcddfcd1dcc
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '387'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 8%
    + [Pro-Workflow](architecture/pro-develop-deploy-workflow.md)
    + [Skalierte Architektur](architecture/scaled-architecture.md)
    + [Automatische Skalierung](architecture/autoscaling.md)
-+ [Erste Schritte](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html?lang=de)
++ [Erste Schritte](https://experienceleague.adobe.com/docs/commerce-on-cloud/start/overview.html)
 + Versionshinweise {#release-notes}
    + [Cloud-Tools-Suite](release-notes/cloud-tools-suite.md)
    + [ECE-Tools-Paket](release-notes/ece-tools-package.md)
@@ -89,6 +89,7 @@ ht-degree: 8%
    + [Umgebung wiederherstellen](development/restore-environment.md)
    + Speicherung {#storage}
       + [Verwalten von Festplattenspeicher](storage/manage-disk-space.md)
+      + [Überprüfen des Speicherplatzlimits für Adobe Commerce in der Cloud-Infrastruktur](storage/check-disk-space-limit-on-cloud.md)
       + [Abfragen der Profildatenbank](storage/profile-database-queries.md)
       + [Datenbank sichern](storage/database-dump.md)
       + [Backup-Verwaltung](storage/snapshots.md)
