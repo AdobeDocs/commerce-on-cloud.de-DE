@@ -20,5 +20,5 @@ So überprüfen Sie, wie viel Speicherplatz Sie für jede Adobe Commerce in der 
 
 ## Verwandtes Lesen
 
-[Verwalten des Festplattenspeichers](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) in unserer Entwicklerdokumentation.
+[Verwalten des Festplattenspeichers](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space?lang=en) in unserer Entwicklerdokumentation.
 
