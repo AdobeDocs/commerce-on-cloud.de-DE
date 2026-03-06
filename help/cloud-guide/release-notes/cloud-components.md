@@ -4,9 +4,9 @@ description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud-Kom
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 34aec593-e2ea-4060-a6b9-6f4cb95a11c0
-source-git-commit: b90959335c91dd0631d270ebb522524cf1db6ff0
+source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,13 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v1.1.3 {#latest}
+## v1.1.4 {#latest}
+
+Veröffentlichungsdatum: 5. März 2026
+
+- ![neues Symbol](../../assets/new.svg) **PHP 8.5**—Unterstützung für PHP 8.5.<!-- MCLOUD-14182--> hinzugefügt
+
+## v1.1.3
 
 Veröffentlichungsdatum: 7. August 2025
 
@@ -67,7 +73,7 @@ Veröffentlichungsdatum: 10. März 2023
 
 Veröffentlichungsdatum: 13. September 2022
 
-- ![Fix icon](../../assets/fix.svg) **Errors on warmup** - Es wurde ein Problem behoben, bei dem versucht wurde, [warmup](../environment/variables-post-deploy.md#warm_up_pages) auszuführen, wenn die Sichtbarkeit der Seite in der Admin-[**&#x200B;** auf &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure)Nicht sichtbareingestellt war, was zu `ERROR: Warming up failed: <link to page>` Fehlern im Bereitstellungsprotokoll führte.<!-- MCLOUD-9134 -->
+- ![Fix icon](../../assets/fix.svg) **Errors on warmup** - Es wurde ein Problem behoben, bei dem versucht wurde, [warmup](../environment/variables-post-deploy.md#warm_up_pages) auszuführen, wenn die Sichtbarkeit der Seite in der Admin-**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product#simple-product-csv-file-structure) auf[** Nicht sichtbareingestellt war, was zu `ERROR: Warming up failed: <link to page>` Fehlern im Bereitstellungsprotokoll führte.<!-- MCLOUD-9134 -->
 
 ## v1.0.11
 
@@ -133,7 +139,7 @@ Veröffentlichungsdatum: 27. Februar 2020
 
 Veröffentlichungsdatum: 6. Februar 2020
 
-- ![neues Symbol](../../assets/new.svg) Die Funktionalität der `WARM_UP_PAGES` Umgebungsvariablen wurde erweitert, um das Vorausfüllen des Cache für bestimmte Produktseiten zu unterstützen. Eine ausführliche Beschreibung der [&#x200B; finden Sie &#x200B;](../environment/variables-post-deploy.md#warm_up_pages) Thema „Variablen nach der Bereitstellung“<!--MAGECLOUD-4444-->
+- ![neues Symbol](../../assets/new.svg) Die Funktionalität der `WARM_UP_PAGES` Umgebungsvariablen wurde erweitert, um das Vorausfüllen des Cache für bestimmte Produktseiten zu unterstützen. Eine ausführliche Beschreibung der [ finden Sie ](../environment/variables-post-deploy.md#warm_up_pages) Thema „Variablen nach der Bereitstellung“<!--MAGECLOUD-4444-->
 
 - ![Fix-Symbol](../../assets/fix.svg) Es wurde ein Problem behoben, bei dem eine ungültige Speicher-URL dazu führte, dass der Hook nach der Bereitstellung fehlschlug, wenn die `WARM_UP_PAGES`-Funktion zum Auffüllen des Caches verwendet wurde. Dieses Problem trat nur auf, wenn die URL-Neuschreibungen deaktiviert waren.<!-- MAGECLOUD-4094 -->
 
