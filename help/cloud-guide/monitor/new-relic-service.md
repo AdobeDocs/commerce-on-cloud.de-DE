@@ -3,9 +3,10 @@ title: New Relic-Service
 description: Erfahren Sie mehr über den New Relic-Service, der mit Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt verfügbar ist.
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 10966241-311d-4b68-804d-4c9569bf933d
+source-git-commit: 3784e7b2ddc8f6ae20fd2c6fd557f2408d870cf2
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -23,6 +24,8 @@ Die folgenden New Relic-Funktionen sind für die Verwendung mit Produktions- und
 >[!INFO]
 >
 >Andere New Relic-Funktionen sind in Adobe Commerce-Projekten nicht verfügbar.
+>
+>Adobe Commerce on Cloud-Kunden können Daten von externen Servern nicht direkt in ihr bereitgestelltes New Relic-Konto integrieren oder senden. Der New Relic-Service ist auf die Überwachung der Commerce Cloud-Anwendungsumgebung beschränkt. Nur Drittanbieter-Services, die vom Programm selbst aufgerufen werden (z. B. externe APIs oder Services, die während der Laufzeit aufgerufen werden), können in New Relic verfolgt und überwacht werden.
 
 ## NEW RELIC APM
 
