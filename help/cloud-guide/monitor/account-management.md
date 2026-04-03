@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie auf Ihr New Relic-Konto zugreifen und den Zug
 feature: Cloud, Observability
 role: Admin
 exl-id: 7aeedd12-7a81-47eb-a82f-3079e16ecb06
-source-git-commit: 558c645e353e38ce8455ef17e1d0e9fa99b22c6e
+source-git-commit: 83fde1f9771c0b3c7ad557233d76dfff91fa7a6c
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn Adobe Ihr Cloud-Infrastrukturprojekt bereitstellt, erhält der Lizenzinhaber eine E-Mail von New Relic mit Anmeldeinformationen und Anweisungen für den Zugriff auf das New Relic-Konto. Wenn Sie die E-Mail nicht erhalten haben, setzen Sie das New Relic-Kennwort mithilfe der E-Mail-Adresse des Lizenzinhabers zurück.
 
-Wenn der Lizenzinhaber geändert wurde und der neue Lizenzinhaber derzeit keinen Zugriff auf New Relic hat, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
+Wenn der Lizenzinhaber geändert wurde und der neue Lizenzinhaber derzeit keinen Zugriff auf New Relic hat, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Benutzerzugriff verwalten (Administratorrolle)
 
@@ -31,7 +31,7 @@ Wenn der Lizenzinhaber geändert wurde und der neue Lizenzinhaber derzeit keinen
 
 1. Klicken Sie auf **[!UICONTROL Administration]** und wählen Sie eine der folgenden Optionen aus der Liste aus:
 
-   - **[!UICONTROL User management]** Sie einen Benutzer hinzufügen und aktive Benutzer und ausstehende Einladungen verwalten.
+   - **[!UICONTROL User management]** Sie Benutzer hinzufügen, aktive Benutzer und ausstehende Einladungen verwalten und Benutzer entfernen oder deaktivieren, die den Zugriff nicht mehr benötigen, z. B. Benutzer, die Ihr Unternehmen verlassen haben.
 
    - **[!UICONTROL Access management]** zum Verwalten von Benutzergruppen, Rollen und Konten.
 
@@ -41,7 +41,7 @@ Siehe [Benutzerverwaltung](https://docs.newrelic.com/docs/accounts/accounts-bill
 
 >[!NOTE]
 >
->**Pro-Umgebungen** sind für die Verwendung von New Relic-Services vorkonfiguriert und können Anweisungen zum Aktivieren und Verbinden überspringen. Wenn New Relic APM nicht in der Staging- und Produktionsumgebung installiert ist oder New Relic Infrastructure in der Produktionsumgebung nicht verfügbar ist, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Installation anzufordern.
+>**Pro-Umgebungen** sind für die Verwendung von New Relic-Services vorkonfiguriert und können Anweisungen zum Aktivieren und Verbinden überspringen. Wenn New Relic APM nicht in der Staging- und Produktionsumgebung installiert ist oder New Relic Infrastructure in der Produktionsumgebung nicht verfügbar ist, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Installation anzufordern.
 
 Für Starterumgebungen müssen Sie die `.magento.app.yaml` überprüfen, um sicherzustellen, dass der Abschnitt `runtime` die New Relic-Erweiterung enthält. Wenn die Erweiterung nicht konfiguriert wurde, fügen Sie Folgendes hinzu:
 
@@ -61,7 +61,7 @@ Um eine Cloud-Umgebung mit New Relic zu verbinden, fügen Sie den New Relic-Lize
 
 - Für **Starterprojekte** verfügen Sie über einen New Relic-Lizenzschlüssel, der bis zu _drei_ Umgebungen unterstützt. Sie müssen den Schlüssel manuell zu Ihren Umgebungskonfigurationen hinzufügen. Starterumgebungen sind für die Verwendung des New Relic-Service nicht vorab bereitgestellt.
 
-Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den New Relic-Lizenzschlüssel zur Umgebungskonfiguration hinzufügen. Fügen Sie den Schlüssel zu den Staging- und Produktionsumgebungen und einer anderen Umgebung Ihrer Wahl hinzu. Für die Konfiguration ist nur der New Relic-Lizenzschlüssel erforderlich. Informationen zu zusätzlichen Konfigurationsoptionen finden Sie im Thema [New Relic-Berichte](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html?lang=de) im _Adobe Commerce-Benutzerhandbuch_.
+Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den New Relic-Lizenzschlüssel zur Umgebungskonfiguration hinzufügen. Fügen Sie den Schlüssel zu den Staging- und Produktionsumgebungen und einer anderen Umgebung Ihrer Wahl hinzu. Für die Konfiguration ist nur der New Relic-Lizenzschlüssel erforderlich. Informationen zu zusätzlichen Konfigurationsoptionen finden Sie im Thema [New Relic-Berichte](https://experienceleague.adobe.com/docs/commerce-admin/config/general/new-relic-reporting.html) im _Adobe Commerce-Benutzerhandbuch_.
 
 {{redeploy-warning}}
 
@@ -69,7 +69,7 @@ Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den
 >
 >- Anmeldedaten für die Adobe Commerce-Kontoseite oder für die mit Ihrem Projekt verknüpfte New Relic-Lizenz
 >- [Zugriff auf Admin-Ebene](../project/user-access.md) auf die zu konfigurierenden Starter-Umgebungen
->- Anmeldedaten für den Zugriff auf [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=de) für die Umgebung
+>- Anmeldedaten für den Zugriff auf [Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) für die Umgebung
 
 **So konfigurieren Sie New Relic für Starter-Umgebungen**:
 
@@ -102,7 +102,7 @@ Aktivieren Sie für Einstiegsumgebungen die New Relic-Integration, indem Sie den
      magento-cloud variable:update php:newrelic.license --value <newrelic-license-key>
      ```
 
-   Optional können Sie es über die [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html?lang=de#step-3%3A-configure-your-store) hinzufügen.
+   Optional können Sie es über die [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/reporting/new-relic-reporting.html#step-3%3A-configure-your-store) hinzufügen.
 
 1. Melden Sie sich bei Ihrem [New Relic-](https://login.newrelic.com/login) an, um sicherzustellen, dass Sie Daten aus der Adobe Commerce-Umgebung anzeigen können. Siehe [Untersuchung der Leistung](investigate-performance.md).
 
@@ -146,6 +146,6 @@ So ändern Sie den New Relic-Kontoinhaber für Ihr Adobe Commerce in Cloud-Infra
 
 2. **Fügen Sie zuerst den Benutzer**, wenn er sich noch nicht in Ihrem Konto befindet. Siehe [Benutzer hinzufügen und aktualisieren](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-management-ui-and-tasks/#add-users) in der Dokumentation zu New Relic.
 
-3. **Benötigen Sie Hilfe?** Wenn kein bestehender Eigentümer oder Administrator behilflich sein kann, kann jeder Adobe Commerce-Benutzer mit Zugriff auf das [Adobe Commerce-Partnerkonto &#x200B;](https://account.newrelic.com/accounts/1311131/users) Benutzer in Ihrem Namen hinzufügen.
+3. **Benötigen Sie Hilfe?** Wenn kein bestehender Eigentümer oder Administrator behilflich sein kann, kann jeder Adobe Commerce-Benutzer mit Zugriff auf das [Adobe Commerce](https://account.newrelic.com/accounts/1311131/users)Partnerkonto Benutzer in Ihrem Namen hinzufügen.
 
-Weitere Informationen finden Sie in der Übersicht über den [New Relic-Service](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
+Weitere Informationen finden Sie in der Übersicht über den [New Relic-Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service).
