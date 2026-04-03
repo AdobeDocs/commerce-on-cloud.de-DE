@@ -39,7 +39,7 @@ Die Cloud-Infrastruktur unterstützt und stellt die folgenden Services bereit:
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->Sie müssen [RabbitMQ sequenziell zwischen verfügbaren Versionen aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) Sie können beispielsweise von 3.9 nicht direkt auf 4.1 aktualisieren
+>Sie müssen [RabbitMQ sequenziell zwischen verfügbaren Versionen aktualisieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) Sie können beispielsweise von 3.9 nicht direkt auf 4.1 aktualisieren
 >
 >Nach dem Upgrade auf eine neue Version von RabbitMQ sollten Sie eine vollständige Bereitstellung in Trigger nehmen, um sicherzustellen, dass Ihre benutzerdefinierten Nachrichtenwarteschlangen in RabbitMQ neu erstellt werden.
 
@@ -181,7 +181,7 @@ Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAG
 
 ## Service-Versionen
 
-Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Versionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt und getestet werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
+Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Versionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt und getestet werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
 
 ### Software-EOL-Prüfungen
 
