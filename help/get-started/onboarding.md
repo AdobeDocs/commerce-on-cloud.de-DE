@@ -41,7 +41,7 @@ Sie können die [[!DNL Cloud Console]](cloud-console.md) verwenden, um Ihr Proje
 
 ## Status „Für Adobe anmelden“
 
-Erhalten Sie Updates zu Adobe Commerce in Cloud-Infrastrukturplattformumgebungen und zugehörigen Services von der [Statusseite](https://status.adobe.com/products/503473).
+Erhalten Sie Updates zu Adobe Commerce in Cloud-Infrastrukturplattformumgebungen und zugehörigen Services von der [Statusseite](https://status.adobe.com/de/products/503473).
 
 Auf der Seite finden Sie einen Status für Adobe Commerce-Komponenten und -Services sowie Benachrichtigungen zu Vorfallsberichten, Service-Upgrades, geplanten Ausfällen und geplanten Wartungsarbeiten. Jeder, der an Ihrem Projekt arbeitet, kann die Adobe Commerce-Status-Website abonnieren, um Ereignisbenachrichtigungen und -aktualisierungen per E-Mail oder Slack zu erhalten. Sie können Ihr Adobe-Statusabonnement anpassen, um bestimmte Produkte nach Regionen und Ereignissen zu verfolgen.
 
