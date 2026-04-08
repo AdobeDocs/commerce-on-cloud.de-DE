@@ -4,9 +4,9 @@ description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: d31037e9afa4223165b208d5eb7714103a1d3e87
+source-git-commit: b3d634838e562ceba4221a69e87eda377d8f9363
 workflow-type: tm+mt
-source-wordcount: '3491'
+source-wordcount: '3485'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Das Paket [ece-tools](https://github.com/magento/ece-tools) besteht aus einer Re
 
 >[!NOTE]
 >
->Informationen [&#x200B; Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter &#x200B;](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
+>Informationen [ Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter ](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
 
 Das `ece-tools`-Paket verwendet die folgende Versionssequenz: `200<major>.<minor>.<patch>`
 
@@ -85,18 +85,14 @@ Veröffentlichungsdatum: 27. Mai 2025
 
 Veröffentlichungsdatum: 24. April 2025
 
-- ![Fix icon](../../assets/fix.svg) **OpenSearch2 für 2.4.4/2.4.5**—Es wurde ein Problem im Zusammenhang mit der Unterstützung für `opensearch2` in Adobe Commerce-Versionen 2.4.4/2.4.5.<!-- MCLOUD-13607 --> behoben
+- ![Fix icon](../../assets/fix.svg) **Opensearch2 for 2.4.4/2.4.5**—Es wurde ein Problem im Zusammenhang mit der Unterstützung für `opensearch2` in den Adobe Commerce-Versionen 2.4.4/2.4.5 behoben. <!-- MCLOUD-13607 -->
 
 ## v2002.2.3
 
 Veröffentlichungsdatum: 9. April 2025
 
-- ![Fix icon](../../assets/fix.svg) **Fix Valkey** Problem mit der benutzerdefinierten Valkey-Konfiguration behoben.<!-- MCLOUD-13569 -->
-- ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator für RabbitMQ 4.0.<!-- MCLOUD-13560 -->
-
-## v2002.2.2
-
-Veröffentlichungsdatum: 7. April 2025
+- ![Fix icon](../../assets/fix.svg) **Fix Valkey** Problem mit der benutzerdefinierten Wertkonfiguration behoben. <!-- MCLOUD-13569 -->
+- ![fix icon](../../assets/fix.svg) **Fix validator**-Fixed validator für RabbitMQ 4.0. <!-- MCLOUD-13560 -->
 
 ## v2002.2.2
 
@@ -153,7 +149,7 @@ Veröffentlichungsdatum: 16. Oktober 2023
 Veröffentlichungsdatum: 31. Juli 2023
 
 - ![Fehlersymbol](../../assets/fix.svg) **Fehlercodes** - Aktualisiertes Fehlercodeschema und Fehlercodedokumentgenerator.
-- ![Fix icon](../../assets/fix.svg) **Validator für benutzerdefiniertes Redis-Modell**-Der Validator für benutzerdefinierte Redis-Backend-Modelle wurde aktualisiert. [Siehe das Beispiel für die Cache-Konfiguration](../environment/variables-deploy.md#cache_configuration).
+- ![Fix icon](../../assets/fix.svg) **Validator für benutzerdefiniertes Redis-Modell**-Der Validator für benutzerdefinierte Redis-Backend-Modelle wurde aktualisiert. [Siehe Beispiel für die Cache-Konfiguration](../environment/variables-deploy.md#cache_configuration).
 - ![Fix icon](../../assets/fix.svg) **Validator for RabbitMQ**-Hinzugefügte Unterstützung für RabbitMQ 3.11
 - ![Fix-Symbol](../../assets/fix.svg) **Falscher Link korrigiert**-Falscher Link zur Onboarding-Dokumentation in der Willkommens-E-Mail-Vorlage korrigiert.
 
@@ -169,7 +165,7 @@ Veröffentlichungsdatum: 10. März 2023
 
 Veröffentlichungsdatum: 27. Oktober 2022
 
-- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben &#x200B;](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
+- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben ](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
 - ![neues Symbol](../../assets/new.svg) **Validator für OPcache-Konfiguration** - Es wurde ein Validator hinzugefügt, um die OPcache-Konfiguration auf ausgeschlossene Pfade zu überprüfen.<!-- MCLOUD-9485 -->
 - ![Fix icon](../../assets/fix.svg) **Es wurde ein Problem mit der GraphQL-Cache-** behoben. Jetzt behält ECE-Tools den GraphQL-`id_salt` in `cache` Konfiguration in der `app/etc/env.php`.<!-- MCLOUD-9486 -->
 
@@ -352,7 +348,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
 - ![neues Symbol](../../assets/new.svg) **Aktualisierungen von Umgebungsvariablen**—
 
-   - ![neues Symbol](../../assets/new.svg) Die Variable **SCD_USE_BALER** wurde hinzugefügt, um das Ballenmodul für die JavaScript-Bündelung während des Build-Prozesses von Adobe Commerce in der Cloud-Infrastruktur zu aktivieren. Weitere Informationen finden Sie in der Beschreibung der [&#x200B; im Abschnitt &#x200B;](../environment/variables-build.md#scd_use_baler)Build-Variablen<!-- MCLOUD-3456, MCLOUD-3457-->
+   - ![neues Symbol](../../assets/new.svg) Die Variable **SCD_USE_BALER** wurde hinzugefügt, um das Ballenmodul für die JavaScript-Bündelung während des Build-Prozesses von Adobe Commerce in der Cloud-Infrastruktur zu aktivieren. Weitere Informationen finden Sie in der Beschreibung der [ im Abschnitt ](../environment/variables-build.md#scd_use_baler)Build-Variablen<!-- MCLOUD-3456, MCLOUD-3457-->
 
    - ![neues Symbol](../../assets/new.svg) Die Umgebungsvariable **REDIS_BACKEND** wurde hinzugefügt, um das Redis-Backend-Modell für den Redis-Cache für Adobe Commerce 2.3.5 oder höher zu konfigurieren. Weitere Informationen finden Sie in der Beschreibung der Variablen [Variablen bereitstellen](../environment/variables-deploy.md#redis_backend).<!--MCLOUD-5721, MCLOUD-5865-->
 
