@@ -2,9 +2,10 @@
 title: Web-Eigenschaft
 description: Siehe Beispiele zum Konfigurieren der Web-Eigenschaft in der Konfigurationsdatei  [!DNL Commerce] .application.
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 6ecf6fb5-57a8-435c-8de3-f66dc56837fe
+source-git-commit: 94a7748348ba590bb4fed740df658c5bac4c31e9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -31,12 +32,16 @@ Sie können Ihre `locations` mithilfe der folgenden Schlüsselwerte für jeden `
 | `rules` | Überschreibungen für einen Speicherort angeben. Verwenden Sie einen regulären Ausdruck, um eine Anfrage abzugleichen. Wenn eine eingehende Anfrage mit der Regel übereinstimmt, wird die reguläre Verarbeitung der Anfrage durch die in der Regel verwendeten Schlüssel überschrieben. |
 | `passthru` | Legen Sie die URL fest, die verwendet wird, falls eine statische Datei oder PHP-Datei nicht gefunden werden kann. Normalerweise ist diese URL der Frontleiter für Ihre Anwendungen, z. B. `/index.php` oder `/app.php`. |
 | `root` | Legen Sie den Pfad relativ zum Stamm der Anwendung fest, die im Web verfügbar gemacht wird. Das öffentliche Verzeichnis (Speicherort &quot;/„) für ein Cloud-Projekt ist standardmäßig auf „pub“ festgelegt. |
-| `scripts` | Laden von Skripten an diesem Speicherort zulassen. Legen Sie den Wert auf `true` fest, um Skripte zuzulassen. |
+| `scripts` | Laden von Skripten an diesem Speicherort zulassen. Legen Sie den Wert auf `true` fest, um Skripte zuzulassen. Für `pub/media`- und `pub/static`-Verzeichnisse ist die Standardkonfiguration auf `scripts: false` festgelegt, um die Ausführung hochgeladener Dateien zu verhindern. |
+
+>[!IMPORTANT]
+>
+>**Sicherheitshinweis:** Die standardmäßige `web`-Eigenschaftskonfiguration für Adobe Commerce on Cloud legt `scripts: false` für Medienspeicherorte fest, um die Ausführung hochgeladener Dateien zu verhindern. Überschreiben Sie diese Einstellung nur, wenn Sie die Auswirkungen auf die Sicherheit Ihrer Implementierung vollständig verstehen.
 
 Die Standardkonfiguration ermöglicht Folgendes:
 
 - Vom Stammpfad (`/`) aus kann nur auf Web und Medien zugegriffen werden
-- Über die `~/pub/static`- und `~/pub/media` kann auf jede Datei zugegriffen werden
+- Über die `~/pub/media`- und `~/pub/static` kann auf jede Datei zugegriffen werden
 
 Das folgende Beispiel zeigt die Standardkonfiguration in der Datei `.magento.app.yaml` für eine Reihe von Speicherorten, auf die über das Web zugegriffen werden kann und die mit einem Eintrag in der Eigenschaft [`mounts` verknüpft sind](properties.md#mounts):
 
