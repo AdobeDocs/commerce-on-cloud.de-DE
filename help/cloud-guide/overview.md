@@ -2,7 +2,7 @@
 title: Commerce auf Cloud-Infrastruktur
 description: Erfahren Sie mehr über die Erstellung, Bereitstellung und Verwaltung von Commerce in Cloud-Infrastrukturen.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 603e8365fb20c90e9d54cb8c809cc51b5cd0ce9a
+source-git-commit: 7bbda734fbaccca9366c11b03e38b30513908cfe
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Adobe Commerce on Cloud Infrastructure bietet eine automatisierte Hosting-Plattf
 
 >[!NOTE]
 >
->Weitere Informationen zur Sicherheit finden Sie unter [Checkliste für den Sicherheitsstart](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Weitere Informationen zur Sicherheit finden Sie unter [Checkliste für den Sicherheitsstart](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Sehen Sie sich den [Technologie-Stack](architecture/tech-stack.md) im Detail an oder erfahren Sie mehr über bestimmte Funktionen und unterstützte Produkte in [Cloud-Architektur für Commerce](architecture/cloud-architecture.md).
 
@@ -48,7 +48,7 @@ In den folgenden Abschnitten finden Sie Details zu den verschiedenen Regionen vo
 
 ## Azure-Regionen
 
-![Diagramm mit Azure-Regionen](../assets/azure-regions.svg){zoomable="yes"}
+![Abbildung mit Azure-Regionen](../assets/azure-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -60,9 +60,9 @@ Das Handbuch zu Commerce in Cloud-Infrastrukturen setzt voraus, dass Sie über G
 
 - [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer-Site) - Entwickeln, Anpassen, Integrieren, Erweitern und Verwenden erweiterter Funktionen
 
-- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html?lang=de) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
+- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
 
-<!-- Last updated from includes: 2026-02-27 23:49:32 -->
+<!-- Last updated from includes: 2026-04-19 20:38:08 -->
