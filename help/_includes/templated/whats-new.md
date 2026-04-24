@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
+      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
 </td>
       <td>
         Technisches Feedback
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> Version 2002.2.10.</p>
+      <td><p><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">ECE-Tools</a> Version 2002.2.10.</p>
 </td>
       <td>
         Technisch
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Klarstellung zum Ändern <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url"> Admin-URL </a> Adobe Commerce in Cloud im Gegensatz zu On-Premise hinzugefügt.</p>
+      <td><p>Klarstellung zum Ändern <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin#change-the-admin-url"> Admin-URL </a> Adobe Commerce in Cloud im Gegensatz zu On-Premise hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung, Feedback
@@ -89,7 +89,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Added documentation for <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">checking the disk space limit for Adobe Commerce on Cloud projects</a> from the Cloud Console.</p>
+      <td><p>Added documentation for <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/check-disk-space-limit-on-cloud">checking the disk space limit for Adobe Commerce on Cloud projects</a> from the Cloud Console.</p>
 </td>
       <td>
         New topic, technical
@@ -111,7 +111,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist">Launch checklist</a> for Commerce on cloud projects to add Fastly AAAA records to the DNS configuration instructions.</p>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/launch/checklist">Launch checklist</a> for Commerce on cloud projects to add Fastly AAAA records to the DNS configuration instructions.</p>
 </td>
       <td>
         Feedback
