@@ -3,22 +3,24 @@ title: Commerce-Version aktualisieren
 description: Erfahren Sie, wie Sie die Adobe Commerce-Version in der Cloud-Infrastrukturumgebung aktualisieren.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-source-git-commit: fe1da39c1d00d74d3f116423e06d11cefd3c2659
+source-git-commit: 770b0cbb98fccc1bb2d6791297b98e186c38fea3
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
 
 # Commerce-Version aktualisieren
 
-Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [&#x200B; Abschnitt &quot;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
+Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [ Abschnitt &quot;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
 
 Je nach Umgebungstyp (Entwicklung, Staging oder Produktion) können Ihre Upgrade-Aufgaben Folgendes umfassen:
 
-- Aktualisieren Sie die `.magento/services.yaml` mit neuen Versionen für MariaDB (MySQL), OpenSearch, RabbitMQ und Redis, um die Kompatibilität mit neuen Adobe Commerce-Versionen zu gewährleisten. Bei Pro-Projekten müssen Sie ein Adobe Commerce-Support-Ticket einreichen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren.
-- Aktualisieren Sie die `.magento.app.yaml` Datei mit neuen Einstellungen für Erweiterungspunkte und Umgebungsvariablen.
 - Aktualisieren Sie Erweiterungen von Drittanbietern auf die neueste unterstützte Version.
+- Bei Pro-Projekten müssen Sie ein Adobe Commerce-Support-Ticket einreichen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren.
+- Für Entwicklungs-/Integrations-/PR-Verzweigungen:
+   - Aktualisieren Sie die `.magento/services.yaml` mit neuen Versionen für MariaDB (MySQL), OpenSearch, RabbitMQ und Redis, um die Kompatibilität mit neuen Adobe Commerce-Versionen zu gewährleisten.
+   - Aktualisieren Sie die `.magento.app.yaml` Datei mit neuen Einstellungen für Erweiterungspunkte und Umgebungsvariablen.
 
 {{upgrade-tip}}
 
@@ -34,7 +36,7 @@ Vor dem Upgrade der Anwendung müssen Sie Ihre Projektkonfigurationsdateien aktu
 
 So aktualisieren Sie die `composer.json` für Adobe Commerce Version 2.4.4 und höher**:
 
-1. Fügen Sie dem `allow-plugins` Abschnitt die folgenden `config` hinzu:
+1. Fügen Sie dem `config` Abschnitt die folgenden `allow-plugins` hinzu:
 
    ```json
    "config": {
@@ -128,7 +130,7 @@ Lesen Sie die [Service-Versionen](../services/services-yaml.md#service-versions)
    composer require-commerce magento/product-enterprise-edition 2.4.8 --no-update
    ```
 
-1. Wenn Sie B2B verwenden, aktualisieren Sie Ihre `composer.json` mit der [unterstützten Version](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability#adobe-authored-extensions) für Commerce.
+1. Wenn Sie B2B verwenden, aktualisieren Sie Ihre `composer.json` mit der [unterstützten Version](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#adobe-authored-extensions) für Commerce.
 
    ```bash
    composer require-commerce magento/extension-b2b 1.5.2 --no-update
@@ -142,15 +144,15 @@ Lesen Sie die [Service-Versionen](../services/services-yaml.md#service-versions)
 
 1. Überprüfen Sie die aktuell angewendeten Patches:
 
-   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
+   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
 
    - Wenn [Quality Patches] in der `.magento.env.yaml`-Datei angewendet wurden, überprüfen Sie, ob diese weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `QUALITY_PATCHES` Abschnitt der `.magento.env.yaml`.
 
-   **Methode 1**: [Überprüfen Sie die entsprechenden Versionen in den Versionshinweisen zu Qualitäts-Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+   **Methode 1**: [Überprüfen Sie die entsprechenden Versionen in den Versionshinweisen zu Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 
-   **Methode 2**: [Anzeigen verfügbarer Patches und Status](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+   **Methode 2**: [Anzeigen verfügbarer Patches und Status](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 
-   **Methode 3**: [Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)
+   **Methode 3**: [Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=en)
 
 
 1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.
@@ -229,7 +231,7 @@ Exception printing is disabled by default for security reasons.
 
 1. Öffnen Sie die `./app/var/report/<error number>`.
 
-1. [Überprüfen Sie die &#x200B;](../test/log-locations.md) und ermitteln Sie die Ursache des Problems.
+1. [Überprüfen Sie die ](../test/log-locations.md) und ermitteln Sie die Ursache des Problems.
 
 1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.
 
