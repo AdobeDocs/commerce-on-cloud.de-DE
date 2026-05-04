@@ -3,13 +3,13 @@ title: Anmelden bei [!DNL Cloud Console]
 description: Erfahren Sie mehr über  [!DNL Cloud Console]  für Adobe Commerce in der Cloud-Infrastruktur.
 recommendations: noDisplay, catalog
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 4c68508a-f25a-457b-be6d-36dc8ac428f1
+source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Anmelden bei [!DNL Cloud Console]
 
@@ -43,8 +43,10 @@ Die neuen oder verbesserten Funktionen lauten wie folgt:
 | [Projektliste](../cloud-guide/project/overview.md#cloud-console) | Die Ansicht _Alle Projekte_ listet alle Projekte auf, für die Sie über Zugriffsberechtigungen verfügen. Sie können auf **[!UICONTROL Show filters]** klicken und Ihre Projektliste nach Typ, Region oder Plan filtern. |
 | [Optionen für die variable Sichtbarkeit](../cloud-guide/environment/variable-levels.md) | Begrenzen der Sichtbarkeit einer Variablen auf Projektebene oder Umgebungsebene während des Builds oder der Laufzeit. |
 
-<!-- The following are features yet to be activated:
-| **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | -->
+<!--
+The following are features yet to be activated:
+| **Apps and services topology** | The Apps & Services topology is visible on Project and Environment views. This interactive diagram allows you to select a service and view the relationship details, such as name, type, version, port, and more. Click **[!UICONTROL View details]** to access the overview and configuration panel for each service. | 
+-->
 
 ## Konsolenfragen
 

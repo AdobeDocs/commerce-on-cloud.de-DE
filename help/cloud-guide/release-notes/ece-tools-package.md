@@ -4,7 +4,7 @@ description: Hier finden Sie eine Liste der neuesten Verbesserungen am ECE-Tools
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00Z
 exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
-source-git-commit: b3d634838e562ceba4221a69e87eda377d8f9363
+source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
 workflow-type: tm+mt
 source-wordcount: '3485'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Das Paket [ece-tools](https://github.com/magento/ece-tools) besteht aus einer Re
 
 >[!NOTE]
 >
->Informationen [&#x200B; Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter &#x200B;](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
+>Informationen [ Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter ](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
 
 Das `ece-tools`-Paket verwendet die folgende Versionssequenz: `200<major>.<minor>.<patch>`
 
@@ -165,7 +165,7 @@ Veröffentlichungsdatum: 10. März 2023
 
 Veröffentlichungsdatum: 27. Oktober 2022
 
-- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben &#x200B;](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
+- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben ](https://developer.adobe.com/app-builder/docs/overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
 - ![neues Symbol](../../assets/new.svg) **Validator für OPcache-Konfiguration** - Es wurde ein Validator hinzugefügt, um die OPcache-Konfiguration auf ausgeschlossene Pfade zu überprüfen.<!-- MCLOUD-9485 -->
 - ![Fix icon](../../assets/fix.svg) **Es wurde ein Problem mit der GraphQL-Cache-** behoben. Jetzt behält ECE-Tools den GraphQL-`id_salt` in `cache` Konfiguration in der `app/etc/env.php`.<!-- MCLOUD-9486 -->
 
@@ -256,7 +256,9 @@ Veröffentlichungsdatum: 1. Februar 2021
 
 - ![neues Symbol](../../assets/new.svg) **Neue SCD_NO_PARENT-Umgebungsvariable** - Die `SCD_NO_PARENT` Umgebungsvariable (für Adobe Commerce >=2.4.2) wurde hinzugefügt, um die Erstellung von statischem Inhalt für übergeordnete Designs zu verwalten.<!--MCLOUD-7284-->
 
-- ![fix icon](../../assets/fix.svg) **Speicherbeschränkungen und Befehle** - Es wurde ein Problem behoben, bei dem `php vendor/bin/ece-tools` Befehle nicht funktionierten, wenn die Größe der `cloud.log`-Datei das PHP-Speicherlimit überschritt. Anstatt die gesamte `cloud.log`-Datei in den Speicher zu lesen, lesen wir jetzt nur noch eine kleinere Teilmenge von Daten aus der Protokolldatei.<!--MCLOUD-7275--><!--MCLOUD-7400-->
+- ![fix icon](../../assets/fix.svg) **Speicherbeschränkungen und Befehle** - Es wurde ein Problem behoben, bei dem `php vendor/bin/ece-tools` Befehle nicht funktionierten, wenn die Größe der `cloud.log`-Datei das PHP-Speicherlimit überschritt. Anstatt die gesamte `cloud.log`-Datei in den Speicher einzulesen, lesen wir jetzt nur noch eine kleinere Teilmenge von Daten aus der Protokolldatei.
+  <!--MCLOUD-7275-->
+  <!--MCLOUD-7400-->
 
 - ![Fix icon](../../assets/fix.svg) **Benutzerdefinierte Datenbankverbindungen** - Es wurde ein `.magento.env.yaml`-Konfigurationsproblem behoben, bei dem benutzerdefinierte Datenbankverbindungen, die für `DATABASE_CONFIGURATION` definiert wurden, nicht verwendet wurden. Die Verbindungseinstellungen wurden `app/etc/env.php` nicht hinzugefügt.<!--MCLOUD-7426-->
 
@@ -348,7 +350,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
 - ![neues Symbol](../../assets/new.svg) **Aktualisierungen von Umgebungsvariablen**—
 
-   - ![neues Symbol](../../assets/new.svg) Die Variable **SCD_USE_BALER** wurde hinzugefügt, um das Ballenmodul für die JavaScript-Bündelung während des Build-Prozesses von Adobe Commerce in der Cloud-Infrastruktur zu aktivieren. Weitere Informationen finden Sie in der Beschreibung der [&#x200B; im Abschnitt &#x200B;](../environment/variables-build.md#scd_use_baler)Build-Variablen<!-- MCLOUD-3456, MCLOUD-3457-->
+   - ![neues Symbol](../../assets/new.svg) Die Variable **SCD_USE_BALER** wurde hinzugefügt, um das Ballenmodul für die JavaScript-Bündelung während des Build-Prozesses von Adobe Commerce in der Cloud-Infrastruktur zu aktivieren. Weitere Informationen finden Sie in der Beschreibung der [ im Abschnitt ](../environment/variables-build.md#scd_use_baler)Build-Variablen<!-- MCLOUD-3456, MCLOUD-3457-->
 
    - ![neues Symbol](../../assets/new.svg) Die Umgebungsvariable **REDIS_BACKEND** wurde hinzugefügt, um das Redis-Backend-Modell für den Redis-Cache für Adobe Commerce 2.3.5 oder höher zu konfigurieren. Weitere Informationen finden Sie in der Beschreibung der Variablen [Variablen bereitstellen](../environment/variables-deploy.md#redis_backend).<!--MCLOUD-5721, MCLOUD-5865-->
 
@@ -422,7 +424,7 @@ Veröffentlichungsdatum: 6. Februar 2020
 
 >[!NOTE]
 >
->Bevor Sie auf die ECE-Tools-Version 2002.1.0 aktualisieren, überprüfen Sie [rückwärts   Inkompatible Änderungen](backward-incompatible-changes.md) um mehr über Änderungen zu erfahren, die Folgendes erfordern können   Aktualisieren Sie Adobe Commerce in der Cloud-Infrastruktur-Projektkonfiguration oder -prozesse.
+>Bevor Sie auf die ECE-Tools-Version 2002.1.0 aktualisieren, lesen Sie die [abwärtsinkompatiblen Änderungen](backward-incompatible-changes.md), um mehr über Änderungen zu erfahren, die möglicherweise erfordern, dass Sie die Projektkonfiguration oder -prozesse für Adobe Commerce in Cloud-Infrastrukturen aktualisieren.
 
 - ![neues Symbol](../../assets/new.svg) **Service-Updates**—
 

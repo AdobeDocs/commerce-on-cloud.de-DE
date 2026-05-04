@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über den New Relic-Service, der mit Ihrem Adobe 
 feature: Cloud, Observability
 last-substantial-update: 2023-09-06T00:00:00Z
 exl-id: 10966241-311d-4b68-804d-4c9569bf933d
-source-git-commit: 3784e7b2ddc8f6ae20fd2c6fd557f2408d870cf2
+source-git-commit: 1114b6001bd171bdb41423df697c7b168ae6fe19
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Die folgenden New Relic-Funktionen sind für die Verwendung mit Produktions- und
 - **Überwachung von Datenbankabfragen** - Suchen und Überwachen von Datenbankabfragen, die die Leistung beeinträchtigen.
 - **App Map** - Alle Anwendungsabhängigkeiten auf Ihrer Site, Erweiterungen und externen Services anzeigen.
 - **[!DNL Apdex]Scores** - Evaluieren Sie die Leistung und erstellen Sie Warnhinweise, die Probleme identifizieren und Sie benachrichtigen, wenn sie auftreten, z. B. die Performance der Site, die durch einen Flash-Verkauf oder ein Web-Ereignis beeinträchtigt wird. Siehe [Apdex-Score](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction/).
-- **Verwaltete Warnhinweise für Adobe Commerce**-Verwenden Sie diese Warnhinweisrichtlinie für New Relic, um die Anwendungs- und Infrastrukturleistung auf der Grundlage von Best Practices der Branche zu überwachen. Siehe [Überwachen der Leistung mit der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot;](investigate-performance.md/#monitor-performance-with-managed-alerts).
+- **Verwaltete Warnhinweise für Adobe Commerce**-Verwenden Sie diese Warnhinweisrichtlinie für New Relic, um die Anwendungs- und Infrastrukturleistung auf der Grundlage von Best Practices der Branche zu überwachen. Siehe [Überwachen der Leistung mit der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot;](investigate-performance.md#monitor-performance-with-managed-alerts).
 - **Bereitstellungen verfolgen** - Überwachen Sie Bereitstellungsereignisse und analysieren Sie die Auswirkungen der Bereitstellung auf die Gesamtleistung. Siehe [Verfolgen von Bereitstellungen](track-deployments.md).
 
 Ihr Adobe Commerce on Cloud Infrastructure-Projekt enthält die Software für den New Relic APM-Service zusammen mit einem Lizenzschlüssel. Sie müssen keine zusätzliche Software erwerben oder installieren.

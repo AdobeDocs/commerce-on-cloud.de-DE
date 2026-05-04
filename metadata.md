@@ -3,17 +3,19 @@ cloud: Experience Cloud
 type: Documentation
 solution-title: Commerce
 solution: Commerce
+landing-page-name: commerce
+landing-page-breadcrumb-title: Commerce
 feature-set: Commerce
 role: Admin, Developer
 topic: Commerce, Development
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-on-cloud.de-DE
+git-repo: https://github.com/AdobeDocs/commerce-on-cloud.en
 description: Handbücher zu Adobe Commerce in Cloud-Infrastrukturen
 index: true
-badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: cb478d1f34e68784b3d7e9fe69bee62fcda00a60
+badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+source-git-commit: bdbb6e21c8d7af1c2726382333ec5184b87ac7b7
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
