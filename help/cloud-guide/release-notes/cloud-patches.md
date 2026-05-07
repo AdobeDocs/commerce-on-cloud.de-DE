@@ -23,7 +23,7 @@ Das Paket Cloud-Patches für Commerce ist eine Abhängigkeit für das Paket ECE-
 
 >[!NOTE]
 >
->Anweisungen [ Anwenden von Patches auf ](../development/apply-patches.md) Projekte finden Sie unter „Anwenden von Patches“.
+>Anweisungen [&#x200B; Anwenden von Patches auf &#x200B;](../development/apply-patches.md) Projekte finden Sie unter „Anwenden von Patches“.
 
 Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz: `<major>.<minor>.<patch>`
 
@@ -35,7 +35,7 @@ Veröffentlichungsdatum: 6. Mai 2026
 
 - ![Fix-Symbol](../../assets/fix.svg) **Sichtbarkeit der Patch-Version**-Sichtbarkeit der Cloud-Patch-Version in Cloud-Umgebungen.<!--MCLOUD-14221 -->
 - ![fix icon](../../assets/fix.svg) **PHPUnit cleanup**-Fixed PHPUnit Hinweise<!--MCLOUD-14717 -->
-- ![neues Symbol ](../../assets/new.svg)**Kosmetische Korrekturen** - Es wurden kosmetische Verbesserungen hinzugefügt.<!--MCLOUD-14686 -->
+- ![neues Symbol &#x200B;](../../assets/new.svg)**Kosmetische Korrekturen** - Es wurden kosmetische Verbesserungen hinzugefügt.<!--MCLOUD-14686 -->
 
 ## v1.1.13
 
