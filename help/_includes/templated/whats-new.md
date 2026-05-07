@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
+      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
 </td>
       <td>
         Technisches Feedback

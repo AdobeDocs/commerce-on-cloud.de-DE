@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # PHP-Einstellungen
 
-Sie können auswählen, welche [Version von PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in Ihrer `.magento.app.yaml`-Datei ausgeführt werden soll:
+Sie können auswählen, welche [Version von PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) in Ihrer `.magento.app.yaml`-Datei ausgeführt werden soll:
 
 ```yaml
 name: mymagento
@@ -63,7 +63,7 @@ Diese Einstellungen ermöglichen es PHP-Prozessen, Pfade zu Dateien zwischenzusp
 
 >[!NOTE]
 >
->Eine Liste der empfohlenen PHP-Konfigurationseinstellungen finden Sie unter [Erforderliche PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html) im _Installationshandbuch_.
+>Eine Liste der empfohlenen PHP-Konfigurationseinstellungen finden Sie unter [Erforderliche PHP](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=de) im _Installationshandbuch_.
 
 ### Überprüfen der benutzerdefinierten PHP-Einstellungen
 
@@ -118,7 +118,7 @@ Die folgende Tabelle zeigt die unterstützten PHP-Erweiterungen bei der Bereitst
 
 {{$include /help/_includes/templated/php-extensions-cloud.md}}
 
-Die PHP-Modulvoraussetzungen sind an die Adobe Commerce-Version gebunden. Siehe [PHP-](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html).
+Die PHP-Modulvoraussetzungen sind an die Adobe Commerce-Version gebunden. Siehe [PHP-](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/php-settings.html?lang=de).
 
 ### Unterstützung von Erweiterungen
 
@@ -136,7 +136,7 @@ sourceguardian.restrict_unencoded = "1"
 
 Siehe [.5 der SourceGuardian-Dokumentation](https://sourceguardian.com/demofiles/files/SourceGuardian%20for%20Linux%20User%20Manual.pdf). _Dies ist ein Link zu einer PDF_.
 
-[Senden Sie ein Adobe Commerce Support Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um Hilfe bei der Installation dieser PHP-Erweiterungen in allen Produktionsumgebungen und Pro-Staging-Umgebungen zu erhalten. Fügen Sie Ihre aktualisierte `.magento/services.yaml`-Datei, `.magento.app.yaml`-Datei mit der aktualisierten PHP-Version und alle weiteren PHP-Erweiterungen ein. Bei Änderungen an einer Live-Produktionsumgebung müssen Sie mindestens 48 Stunden im Voraus angeben. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert.
+[Senden Sie ein Adobe Commerce Support Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um Hilfe bei der Installation dieser PHP-Erweiterungen in allen Produktionsumgebungen und Pro-Staging-Umgebungen zu erhalten. Fügen Sie Ihre aktualisierte `.magento/services.yaml`-Datei, `.magento.app.yaml`-Datei mit der aktualisierten PHP-Version und alle weiteren PHP-Erweiterungen ein. Bei Änderungen an einer Live-Produktionsumgebung müssen Sie mindestens 48 Stunden im Voraus angeben. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert.
 
 >[!WARNING]
 >
