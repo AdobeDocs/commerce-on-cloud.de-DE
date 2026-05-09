@@ -1,8 +1,8 @@
 ---
-source-git-commit: eff03e0955ae067eb509c7d49eb59f64b3bb1c6a
+source-git-commit: c9cda29e48eea075467e48c7284b5ef4156e7176
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 3%
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 # Neue Vorlage
@@ -10,6 +10,58 @@ ht-degree: 3%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;7. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aktualisierungen - Versionshinweise in der gesamten Dokumentation zu Cloud-Tools, um aktuelle Versionshinweise, Kompatibilitätsaktualisierungen und Fehlerbehebungen widerzuspiegeln. Siehe <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise für Commerce Cloud Tools Suite</a>.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/812482f88f6ab6400c77b6ec36db73956dd3f202">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.11 aktualisiert.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/6db7cbfa2edc1e177d1db3047f2574fae4485b63">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;5. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions">PHP-Einstellungen</a> wurden aktualisiert, um LDAP unter optionalen PHP-Erweiterungen aufzulisten und zu beachten, dass LDAP und ähnliche Erweiterungen umgebungsspezifisch sind (z. B. nicht Self-Service auf Pro Staging/Production).</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/3546f15b4e1d4e192177064c3c72652d8ae7b5cb">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;10. April 2026
 
@@ -23,7 +75,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
+      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
 </td>
       <td>
         Technisches Feedback
