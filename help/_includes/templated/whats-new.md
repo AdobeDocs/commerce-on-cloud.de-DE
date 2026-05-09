@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierungen - Versionshinweise in der gesamten Dokumentation zu Cloud-Tools, um aktuelle Versionshinweise, Kompatibilitätsaktualisierungen und Fehlerbehebungen widerzuspiegeln. Siehe <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise für Commerce Cloud Tools Suite</a>.</p>
+      <td><p>Aktualisierungen - Versionshinweise in der gesamten Dokumentation zu Cloud-Tools, um aktuelle Versionshinweise, Kompatibilitätsaktualisierungen und Fehlerbehebungen widerzuspiegeln. Siehe <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite">Versionshinweise für Commerce Cloud Tools Suite</a>.</p>
 </td>
       <td>
         Technisch
@@ -31,7 +31,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/812482f88f6ab6400c77b6ec36db73956dd3f202">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.11 aktualisiert.</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/error-reference">Fehlermeldungen</a> wurden nach der Veröffentlichung von ECE-Tools, v2002.2.11 aktualisiert.</p>
 </td>
       <td>
         Technisch
@@ -53,7 +53,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions">PHP-Einstellungen</a> wurden aktualisiert, um LDAP unter optionalen PHP-Erweiterungen aufzulisten und zu beachten, dass LDAP und ähnliche Erweiterungen umgebungsspezifisch sind (z. B. nicht Self-Service auf Pro Staging/Production).</p>
+      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions">PHP-Einstellungen</a> wurden aktualisiert, um LDAP unter optionalen PHP-Erweiterungen aufzulisten und zu beachten, dass LDAP und ähnliche Erweiterungen umgebungsspezifisch sind (z. B. nicht Self-Service auf Pro Staging/Production).</p>
 </td>
       <td>
         Technisch
@@ -75,7 +75,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
+      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
 </td>
       <td>
         Technisches Feedback
