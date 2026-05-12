@@ -1,7 +1,7 @@
 ---
-source-git-commit: bd353c3d100dee7fd0a1846b582a8af44448ff1b
+source-git-commit: 30d2462df80a252519fcaa90e225c219d4ead2f1
 workflow-type: tm+mt
-source-wordcount: '3168'
+source-wordcount: '3177'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,18 @@ Adobe Commerce in der Cloud-Infrastruktur verwendet Composer, um PHP-Pakete zu v
 
 Die `composer.json`-Datei deklariert die Liste der Pakete, während die `composer.lock`-Datei eine vollständige Liste der Pakete speichert (eine Vollversion jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Installation von Adobe Commerce verwendet werden.
 
-Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und behandelt die erforderlichen Pakete in Adobe Commerce auf Cloud Infrastructure 2.4.8-p1.
+Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und behandelt die erforderlichen Pakete in Adobe Commerce auf Cloud-Infrastruktur 2.4.9-p2.
 
 ## Abhängigkeiten
 
-`magento/magento-cloud-metapackage 2.4.8-p1` weist die folgenden Abhängigkeiten auf:
+`magento/magento-cloud-metapackage 2.4.9-p2` weist die folgenden Abhängigkeiten auf:
 
 ```config
+aem/rum: ^1.0.4
 fastly/magento2: ^1.2.34
 magento/ece-tools: ^2002.2.0
 magento/module-paypal-on-boarding: ~100.5.0
-magento/product-enterprise-edition: >=2.4.8 <2.4.9
+magento/product-enterprise-edition: >=2.4.9 <2.4.10
 ```
 
 ## Drittanbieterlizenzen
@@ -94,6 +95,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>AWS SDK für PHP - Verwenden von Amazon Web Services in Ihrem PHP-Projekt</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/giggsey/libphonenumber-for-php.git">giggsey/libphonenumber-for-php</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Eine Bibliothek zum Parsen, Formatieren, Speichern und Validieren internationaler Telefonnummern, ein PHP-Port der libphonenumber von Google.</td>
   </tr>
   <tr>
     <td>
@@ -209,17 +217,10 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/firebase/php-jwt.git">Firebase/php-jwt</a>
+      <a href="https://github.com/googleapis/php-jwt.git">Firebase/php-jwt</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine einfache Bibliothek zum Codieren und Decodieren von JSON Web Tokens (JWT) in PHP. Sollte der aktuellen Spezifikation entsprechen.</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-captcha.git">laminas/laminas-captcha</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Generieren und Validieren von CAPTCHAs mit Fillets, Bildern, ReCAPTCHA und mehr</td>
   </tr>
   <tr>
     <td>
@@ -234,13 +235,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>Stellt eine auf verschachtelten Objekteigenschaften basierende Benutzeroberfläche für den Zugriff auf diese Konfigurationsdaten im Anwendungscode bereit</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-di.git">laminas/laminas-di</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Automatisierte Injektion von Abhängigkeiten für PSR-11-Container</td>
   </tr>
   <tr>
     <td>
@@ -307,13 +301,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mvc.git">LAMINAS/LAMINAS-MVC</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Die ereignisgesteuerte MVC-Schicht von Laminas, einschließlich MVC-Anwendungen, Controller und Plug-ins</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
     </td>
     <td>Bibliothek</td>
@@ -328,20 +315,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-router.git">laminas/laminas-router</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Flexibles Routing-System für HTTP- und Konsolenanwendungen</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-server.git">LAMINAS/LAMINAS-SERVER</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Erstellen von Reflection-basierten RPC-Servern</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-servicemanager.git">laminas/laminas-serviceManager</a>
     </td>
     <td>Bibliothek</td>
@@ -353,13 +326,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>Objektorientierte Schnittstelle zu PHP-Sitzungen und -Speicher</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-soap.git">laminas/laminas-soap</a>
-    </td>
-    <td>Bibliothek</td>
-    <td></td>
   </tr>
   <tr>
     <td>
@@ -419,6 +385,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-db/phpdb.git">php-db/phpdb</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Implementierungen von Datenbankabstraktionsebenen, SQL-Abstraktionen, Ergebnissatzabstraktionen sowie RowDataGateway- und TableDataGateway-Implementierungen</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/phpfui/recaptcha.git">phpfui/reCAPTCHA</a>
     </td>
     <td>Bibliothek</td>
@@ -458,27 +431,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Magento-Modul</td>
     <td>Zend_Cache-Backend mit Redis mit voller Unterstützung für Tags.</td>
-  </tr>
-  </tbody>
-</table>
-
-### ISC
-
-<table>
-  <thead>
-    <tr>
-      <th>-Name</th>
-      <th>Typ</th>
-      <th>Beschreibung</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <a href="https://github.com/paragonie/sodium_compat.git">Paragonie/Natrium_compat</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Reine PHP-Implementierung von libnati; verwendet die PHP-Erweiterung, falls vorhanden</td>
   </tr>
   </tbody>
 </table>
@@ -535,6 +487,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>Arithmetische Bibliothek mit beliebiger Genauigkeit</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/brick/phonenumber.git">Stein/Telefonnummer</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Telefonnummernbibliothek</td>
   </tr>
   <tr>
     <td>
@@ -675,6 +634,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>Unterstützung für eine größere Auswahl an PHP-Versionen für ocramius/proxy-manager</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/giggsey/Locale.git">giggsey/locale</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Für libphonenumber-for-php benötigte Gebietsschema-Funktionen</td>
   </tr>
   <tr>
     <td>
@@ -839,7 +805,7 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/CssXPath.git">phpgt/cssxpath</a>
+      <a href="https://github.com/phpgt/CssXPath.git">phpgt/cssxpath</a>
     </td>
     <td>Bibliothek</td>
     <td>Konvertieren von CSS-Selektoren in XPath-Abfragen.</td>
@@ -871,6 +837,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>PHP Secure Communications Library - Pure-PHP-Implementierungen von RSA, AES, SSH2, SFTP, X.509 etc.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/predis/predis.git">predis/predis</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Ein flexibler und funktionsreicher Redis/Valley Client für PHP.</td>
   </tr>
   <tr>
     <td>
@@ -1014,6 +987,20 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/cache.git">symfony/cache</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Bietet erweiterte Implementierungen von PSR-6, PSR-16 (und Tags)</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/cache-contracts.git">symfony/cache-Contracts</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Allgemeine Abstraktionen im Zusammenhang mit der Zwischenspeicherung</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/clock.git">symfony/uhr</a>
     </td>
     <td>Bibliothek</td>
@@ -1088,13 +1075,6 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </td>
     <td>Bibliothek</td>
     <td>Findet Dateien und Verzeichnisse über eine intuitive, flüssige Oberfläche</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/http-client.git">symfony/http-client</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Bietet leistungsstarke Methoden zum synchronen oder asynchronen Abrufen von HTTP-Ressourcen</td>
   </tr>
   <tr>
     <td>
@@ -1294,6 +1274,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/thecodingmachine/safe.git">TheCodingMachine/Safe</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>PHP-Kernfunktionen, die Ausnahmen auslösen, anstatt bei einem Fehler FALSE zurückzugeben</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/web-token/jwt-framework.git">Web-Token/JWT-Framework</a>
     </td>
     <td>symfony-bundle</td>
@@ -1432,6 +1419,13 @@ magento/product-enterprise-edition: >=2.4.8 <2.4.9
     </tr>
   </thead>
   <tbody>
+  <tr>
+    <td>
+      AEM/RUM
+    </td>
+    <td>Magento2-Modul</td>
+    <td>Nicht zutreffend</td>
+  </tr>
   <tr>
     <td>
       paypal/module-braintree-core
