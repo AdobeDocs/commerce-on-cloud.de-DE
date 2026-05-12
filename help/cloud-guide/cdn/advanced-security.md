@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Advanced Security] ist ein Produkt, das mit [!DNL Adobe Commerce on Cloud Infrastructure] zusammenarbeitet, um Ihren Online-Store schnell, verfügbar und sicher zu halten. Dies kann dazu beitragen, den Umsatz zu schützen, Ausfallzeiten zu reduzieren und das Vertrauen der Kunden bei Spitzen-Traffic-Ereignissen und automatisierten Angriffen aufrechtzuerhalten.
 
-[!DNL Adobe Commerce on Cloud Infrastructure] umfasst einen integrierten [Layer 3- und 4-DDoS-](./fastly.md#ddos-protection) und eine [Web Application Firewall (WAF)](./fastly-waf-service.md). Unter dem [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) sind die Erkennung von Layer 7-DDoS, der Bot-Schutz und das proaktive Sperren von IP-Adressen Händlerpflichten, auf die [!DNL Adobe Commerce Advanced Security] eingehen soll.
+[!DNL Adobe Commerce on Cloud Infrastructure] umfasst einen integrierten [Layer 3- und 4-DDoS-](./fastly.md#ddos-protection) und eine [Web Application Firewall (WAF)](./fastly-waf-service.md). Unter dem [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility) sind die Erkennung von Layer 7-DDoS, der Bot-Schutz und das proaktive Sperren von IP-Adressen Händlerpflichten, auf die [!DNL Adobe Commerce Advanced Security] eingehen soll.
 
 [!DNL Advanced Security] erweitert den Schutz der Storefront durch Fastly-gestützte Edge-Sicherheitsfunktionen, die Bot-Management, erweiterte Ratenbegrenzung und Layer 7 DDoS-Schutz als Teil einer einheitlichen Edge-Plattform bieten, die Skalierung, Leistung und Sicherheit am Netzwerk-Edge kombiniert.
 
@@ -141,7 +141,7 @@ Die folgenden Szenarien lassen sich am besten mit alternativen Schutzmaßnahmen 
 - **Compliance-Tools** - PCI-Scanning, SOC-Compliance-Reporting und Tools für die Prüfung von Vorschriften.
 - **Härtung auf Anwendungsebene** - Token-basierte API-Authentifizierung, Normalisierung von Abfrageparametern und Entwurf einer Caching-Strategie.
 
-Einen vollständigen Überblick über die Zuständigkeiten für Adobe und die Kundensicherheit finden Sie unter [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
+Einen vollständigen Überblick über die Zuständigkeiten für Adobe und die Kundensicherheit finden Sie unter [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility).
 
 ## Häufige Angriffsmuster und Schutzmechanismen
 
@@ -179,7 +179,7 @@ Das folgende WAF-Verhalten gilt für alle [!DNL Adobe Commerce on Cloud Infrastr
 
 1. Wenden Sie sich an Ihr Adobe-Kundenbetreuerteam oder den Adobe-Vertriebsmitarbeiter, um die [!DNL Advanced Security] für Ihr Projekt zu besprechen.
 
-1. Nach dem Kauf von [!DNL Advanced Security] [ein Adobe Commerce Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um [!DNL Advanced Security] Aktivierung anzufordern. Geben Sie Ihre [!DNL Adobe Commerce on Cloud Infrastructure] Projekt-ID und die Umgebungen an, die aktiviert werden müssen (z. B. Produktion und Staging).
+1. Nach dem Kauf von [!DNL Advanced Security] [ein Adobe Commerce Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um [!DNL Advanced Security] Aktivierung anzufordern. Geben Sie Ihre [!DNL Adobe Commerce on Cloud Infrastructure] Projekt-ID und die Umgebungen an, die aktiviert werden müssen (z. B. Produktion und Staging).
 
 1. Adobe aktiviert [!DNL Advanced Security] für Ihren Fastly-Service und konfiguriert die anfänglichen Schutzrichtlinien. Die Aktivierung wird in der Regel innerhalb weniger Werktage nach der Ticketübermittlung abgeschlossen.
 
@@ -187,7 +187,7 @@ Das folgende WAF-Verhalten gilt für alle [!DNL Adobe Commerce on Cloud Infrastr
 
 >[!NOTE]
 >
->Konfigurationsänderungen an [!DNL Advanced Security] erfordern derzeit [Senden eines Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant.
+>Konfigurationsänderungen an [!DNL Advanced Security] erfordern derzeit [Senden eines Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant.
 
 ## Einschränkungen
 
