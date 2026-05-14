@@ -5,7 +5,7 @@ user-guide-title: Handbuch zu Commerce für Cloud
 user-guide-description: Erfahren Sie, wie Sie die Adobe Commerce-Anwendung in der Cloud-Infrastruktur verwalten.
 product: magento
 feature: Cloud
-source-git-commit: 5475b65cb9606b200ff6ac3096ed0d0cf3168cf9
+source-git-commit: 6f70f167bbd29c6a83f4feaf14e5b642cd39e87f
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 8%
@@ -35,7 +35,7 @@ ht-degree: 8%
    + [Cloud-Komponenten](release-notes/cloud-components.md)
    + [Cloud-Pakete](release-notes/cloud-packages.md)
    + [Abwärtsinkompatible Änderungen](release-notes/backward-incompatible-changes.md)
-   + [Archiv mit Versionshinweisen](release-notes/cloud-release-archive.md)
+   + {hide-from-toc}[Archiv mit Versionshinweisen](release-notes/cloud-release-archive.md)
 + Cloud-Projekt {#project}
    + [Projektübersicht](project/overview.md)
    + [Projektstruktur](project/file-structure.md)
