@@ -1,10 +1,170 @@
 ---
-source-git-commit: 4b4971c0194e458dd38a46f3fbf51f0a730e3606
+source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
 workflow-type: tm+mt
-source-wordcount: '7'
+source-wordcount: '916'
 ht-degree: 0%
 
 ---
-# ARCHIVIERT
+# Adobe Commerce auf Cloud-Infrastruktur
 
-Dieses Repository wurde nach <https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.de-DE> migriert.
+Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
+
+- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
+
+## Adobe Open Source-Verhaltenskodex
+
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
+
+## Über Ihre Beiträge zu Adobe-Inhalten
+
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction).
+
+Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
+
+### Geringfügige Änderungen
+
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen.
+
+Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repository eingeben, werden von den Adobe-Nutzungsbedingungen abgedeckt.
+
+### Wichtige Änderungen oder neue Artikel von Community-Mitgliedern
+
+Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wichtige Änderungen vornehmen möchten, verwenden Sie im Git-Repository die Registerkarte „Probleme“, um ein Problem zu senden und eine Konversation mit dem Dokumentations-Team zu beginnen. Nachdem Sie sich auf einen Plan geeinigt haben, müssen Sie mit einem Mitarbeiter zusammenarbeiten, um diese neuen Inhalte durch eine Kombination von Arbeiten in den öffentlichen und privaten Repositorys einzubringen.
+
+### Wesentliche Veränderungen durch Adobe Mitarbeiter
+
+Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
+
+## Tools und Einrichtung
+
+Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
+
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction) Dokumenten .
+
+## Verwenden von Markdown zum Formatieren des Themas
+
+Alle Artikel in diesem Repository verwenden GitHub-Markdown. Wenn Sie mit Markdown nicht vertraut sind, lesen Sie:
+
+- [Markdown-Grundlagen](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [Druckbare Markdown-Anleitung](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+## Vorlagen
+
+Bei einigen Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte Inhalte zu generieren. Anwendungsfälle für diesen Ansatz sind:
+
+- Veröffentlichen großer Mengen programmgesteuert generierter Inhalte
+- Bereitstellung einer zentralen Datenquelle für Kunden über mehrere Systeme hinweg, die maschinenlesbare Dateiformate wie YAML für die Integration benötigen (z. B. Cloud-CLI-Tools, Service-Konfigurationen)
+
+Beispiele für vorlagenbasierte Inhalte sind unter anderem:
+
+- [Cloud-CLI-Referenz](help/templated/cloud-cli-ref.md)
+- [Cloud-Pakete](help/templated/cloud-packages.md)
+- [ECE-Tools-Referenz](help/templated/ece-tools.md)
+- [PHP-Erweiterungen für die Cloud](help/templated/php-extensions-cloud.md)
+
+### Vorlageninhalt generieren
+
+Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen Produktverfügbarkeit und Systemanforderungen hinzufügen. Die Pflege aller anderen vorlagenbasierten Inhalte wird entweder automatisiert oder von einem dedizierten Team-Mitglied verwaltet. Diese Anweisungen sind für die meisten Autoren gedacht.
+
+>**HINWEIS:**
+>
+>- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
+
+Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
+
+- `_jekyll` - Enthält vorlagenbasierte Themen und erforderliche Assets
+- `_jekyll/_data` - Enthält die maschinenlesbaren Dateiformate, die zum Rendern von Vorlagen verwendet werden
+- `_jekyll/templated` - Enthält HTML-basierte Vorlagendateien, die die Liquid Templating-Sprache verwenden
+- `help/_includes/templated` - Enthält die generierte Ausgabe für Vorlageninhalte `.md` Dateiformat, damit sie in Experience League-Themen veröffentlicht werden können. Das Renderskript schreibt die generierte Ausgabe automatisch in dieses Verzeichnis für Sie
+
+So aktualisieren Sie Vorlageninhalte:
+
+1. Öffnen Sie in Ihrem Texteditor eine Datendatei im `_jekyll/_data`. Beispiel:
+
+   - [Cloud-CLI-Referenz](help/templated/cloud-cli-ref.md): `_jekyll/_data/cloud-cli-ref.yaml`
+   - [Cloud-Pakete](help/templated/cloud-packages.md): `_jekyll/_data/cloud-packages.yaml`
+   - [ECE-Werkzeugreferenz](help/templated/ece-tools.md): `_jekyll/_data/ece-tools.yaml`
+
+2. Verwenden Sie die vorhandene YAML-Struktur, um Einträge zu erstellen.
+
+3. Navigieren Sie zum `_jekyll`.
+
+   ```bash
+   cd _jekyll
+   ```
+
+4. Generieren von Vorlageninhalten und Schreiben der Ausgabe in das `help/_includes/templated`.
+
+   ```bash
+   bundle exec rake render
+   ```
+
+   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren. Kernaufgaben und -abhängigkeiten (Jekyll, Rake, Bildoptimierung) werden vom `adobe-comdox-exl-rake-tasks` gem bereitgestellt, um die Wartungsfreundlichkeit in allen Dokumentations-Repositorys von Adobe Commerce zu verbessern. Benutzerdefinierte Aufgaben, die für dieses Repository spezifisch sind, werden in der `Rakefile` implementiert.
+
+5. Navigieren Sie zurück zum `root`.
+
+   ```bash
+   cd ..
+   ```
+
+6. Stellen Sie sicher, dass die erwarteten `help/_includes/templated` geändert wurden.
+
+   ```bash
+   git status
+   ```
+
+   Es sollte eine Ausgabe ähnlich der folgenden angezeigt werden:
+
+   ```bash
+   modified:   _data/cloud-cli-ref.yaml
+   modified:   help/_includes/templated/cloud-cli-ref.md
+   ```
+
+7. Übertragen Sie Ihre Änderungen.
+
+   ```bash
+   git add .
+   git commit -m "descriptive message of the intended commit"
+   git push
+   ```
+
+In der Jekyll-Dokumentation finden Sie weitere Details zu [Datendateien](https://jekyllrb.com/docs/datafiles), [Flüssigkeitsfiltern](https://jekyllrb.com/docs/liquid/filters/) und anderen Funktionen.
+
+## Verfügbare Rake-Aufgaben
+
+Dieses Repository verwendet RAKE-Aufgaben, die vom `adobe-comdox-exl-rake-tasks`-Gem bereitgestellt werden. Um alle verfügbaren Aufgaben anzuzeigen, führen Sie Folgendes aus:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
+
+## Pre-commit-Hooks für die Bildoptimierung
+
+Dieses Repository enthält automatisierte Hooks zur Vorabbestätigung, mit denen Bilder vor dem Commit optimiert werden. **Alle Mitwirkenden sollten diese Erweiterungspunkte aktivieren** um eine konsistente Bildoptimierung und eine reduzierte Repository-Größe sicherzustellen.
+
+### Schnelleinrichtung
+
+Führen Sie nach dem Klonen des Repositorys Folgendes aus:
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### Was die Haken tun
+
+- Gestaffelte Bilddateien automatisch erkennen (PNG, JPG, JPEG, GIF, SVG)
+- `image_optim` ausführen, um Bilder zu komprimieren und zu optimieren
+- Optimierte Bilder automatisch neu inszenieren
+- Sicherstellen, dass alle übergebenen Bilder ordnungsgemäß optimiert sind
+
+### Vorteile
+
+- Verringerte Repository-Größe
+- Schnelleres Laden von Seiten für die Dokumentation
+- Konsistente Bildqualität für alle Mitwirkenden
+- Keine manuelle Optimierung erforderlich
+
+Detaillierte Setup-Anweisungen, Fehlerbehebung und Konfiguration finden Sie unter [`.githooks/README.md`](.githooks/README.md).
