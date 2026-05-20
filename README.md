@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8cbda8ca194c5e5865073c9eb08e061cfecb5ace
+source-git-commit: 55206749cd121ef6d6139a71af6ff905d4109859
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
@@ -9,16 +9,16 @@ ht-degree: 0%
 
 Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
 
-- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
-- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
+- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
-Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction).
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
@@ -34,13 +34,13 @@ Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wi
 
 ### Wesentliche Veränderungen durch Adobe Mitarbeiter
 
-Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en` verwenden.
 
 ## Tools und Einrichtung
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction) Dokumenten .
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) Dokumenten .[
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -70,7 +70,7 @@ Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabel
 >**HINWEIS:**
 >
 >- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
->- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
 
 Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
