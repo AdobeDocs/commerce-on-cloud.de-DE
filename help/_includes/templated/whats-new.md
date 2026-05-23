@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Advanced Security</a>-Angebot für Adobe Commerce in der Cloud-Infrastruktur wurde hinzugefügt.</p>
+      <td><p>Das <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Advanced Security</a>-Angebot für Adobe Commerce in der Cloud-Infrastruktur wurde hinzugefügt.</p>
 </td>
       <td>
         Neues Thema
