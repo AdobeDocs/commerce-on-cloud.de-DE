@@ -1,5 +1,5 @@
 ---
-source-git-commit: e22b5b3508105aa17d397ac299df12f07004383f
+source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code class="language-plaintext highlighter-rouge">scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
+      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code>scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
 </td>
       <td>
         Technisches Feedback
