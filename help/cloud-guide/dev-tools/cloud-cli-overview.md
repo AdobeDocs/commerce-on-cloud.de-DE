@@ -19,12 +19,12 @@ Dieses Tool erweitert die Funktionalität der [[!DNL Cloud Console]](../../get-s
 >
 >Dies ist ein lokales Tool und wird nur auf Unix-basierten Betriebssystemen unterstützt. Windows wird nicht unterstützt. Es kann nicht mit der auf dieser Seite beschriebenen Methode in der Cloud-Umgebung installiert werden (die schreibgeschützt ist). Module können nur über einen der folgenden (Bereitstellungs **Workflows) in der Cloud** Umgebung installiert werden.
 >
->- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **So installieren Sie die `magento-cloud` CLI**:
 
-1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) über _Schreibzugriff_ verfügt.
+1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de) über _Schreibzugriff_ verfügt.
 
 1. Installieren Sie `magento-cloud` CLI.
 
@@ -137,7 +137,7 @@ Die folgenden Schritte zeigen, wie Sie die CLI- und Git-Befehle synonym zur Verw
 
 1. Wechseln Sie auf Ihrer lokalen Workstation in Ihr Projektverzeichnis.
 
-1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
+1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de).
 
 1. Melden Sie sich bei Ihrem Projekt an.
 
