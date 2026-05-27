@@ -1,10 +1,11 @@
 ---
 title: Sicherheit der Cloud-Infrastruktur
-description: Erfahren Sie, wie Adobe Adobe Commerce in der Cloud-Infrastruktur sicher hält.
+description: Erfahren Sie, wie Adobe die Sicherheit von Adobe Commerce in der Cloud-Infrastruktur gewährleistet.
 feature: Cloud, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ae934401-2c32-427a-8162-98df9a047cd4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ Die Adobe Commerce-Anwendung unterstützt keine Verschlüsselung oder Verschlüs
 
 ## Endpunkterkennung und -reaktion
 
-[!DNL CrowdStrike Falcon] wird ein leichtgewichtiger Endpoint Detection and Response (EDR)-Agent der nächsten Generation auf allen Endpunkten (einschließlich Servern) innerhalb von Adobe installiert. EDR-Agenten schützen Adobe-Daten und -Systeme durch kontinuierliche Überwachung und Erfassung in Echtzeit, was eine schnelle Identifizierung und Reaktion bei Bedrohungen ermöglicht.
+[!DNL CrowdStrike Falcon] wird ein leichtgewichtiger Endpoint Detection and Response (EDR)-Agent der nächsten Generation auf allen Endpunkten (einschließlich Servern) in Adobe installiert. EDR-Agenten schützen Adobe-Daten und -Systeme durch kontinuierliche Überwachung und Erfassung in Echtzeit, was eine schnelle Identifizierung und Reaktion bei Bedrohungen ermöglicht.
 
 ## Penetrationstest
 
@@ -66,11 +67,11 @@ Adobe testet den Kern-Anwendungs-Code regelmäßig auf Sicherheitslücken. Patch
 - OWASPZAP
 - undSqlMap
 
-Die vollständige Code-Basis wird mit diesen Tools alle zwei Wochen gescannt. Kunden werden über Sicherheits-Patches per E-Mail, Benachrichtigungen in der Anwendung und im [Sicherheitscenter](https://helpx.adobe.com/de/security.html) benachrichtigt.
+Die vollständige Code-Basis wird mit diesen Tools alle zwei Wochen gescannt. Kunden werden über Sicherheits-Patches per E-Mail, Benachrichtigungen in der Anwendung und im [Sicherheitscenter](https://helpx.adobe.com/security.html) benachrichtigt.
 
-Kunden müssen sicherstellen, dass diese Patches innerhalb von 30 Tagen nach der Veröffentlichung gemäß den PCI-Richtlinien auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Security Scan Tool](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Dienst, der auf jeder beliebigen Adobe Commerce-Version ausgeführt werden kann.
+Kunden müssen sicherstellen, dass diese Patches innerhalb von 30 Tagen nach der Veröffentlichung gemäß den PCI-Richtlinien auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Tool zur Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Dienst, der auf jeder beliebigen Adobe Commerce-Version ausgeführt werden kann.
 
-Um Sicherheitsforscher dazu zu ermutigen, Sicherheitslücken zu identifizieren und zu melden, [&#x200B; Adobe Commerce zusätzlich zu internen Tests ein &#x200B;](https://hackerone.com/magento)Bug-Bounty-Programm“. Des Weiteren wird dem Kunden der vollständige Quellcode des Programms zur eigenen Überprüfung, falls gewünscht, bereitgestellt.
+Um Sicherheitsforscher dazu zu ermutigen, Sicherheitslücken zu identifizieren und zu melden, [ Adobe Commerce zusätzlich zu internen Tests ein ](https://hackerone.com/magento)Bug-Bounty-Programm“. Des Weiteren wird dem Kunden der vollständige Quellcode des Programms zur eigenen Überprüfung, falls gewünscht, bereitgestellt.
 
 ## Schreibgeschütztes Dateisystem
 
@@ -82,7 +83,7 @@ Die einzige Möglichkeit, ausführbaren Code in die Managed Services-Produktions
 
 ## Protokollierung
 
-Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Betriebssystem-, Anwendungs- und Datenbankprotokolle werden auf den Produktions-Servern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce [Project Web Interface) &#x200B;](../project/overview.md). Alle Support-Zugriffe werden protokolliert und Support-Sitzungen aufgezeichnet.
+Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Betriebssystem-, Anwendungs- und Datenbankprotokolle werden auf den Produktions-Servern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce [Project Web Interface) ](../project/overview.md). Alle Support-Zugriffe werden protokolliert und Support-Sitzungen aufgezeichnet.
 
 Siehe [Protokolle anzeigen und verwalten](../test/log-locations.md).
 
@@ -108,7 +109,7 @@ Die DSGVO fordert, dass alle personenbezogenen Daten (wie Namen, Rasse und Gebur
 
 >[!NOTE]
 >
->Diese Seite bietet einen allgemeinen Überblick darüber, was im Rahmen der DSGVO zu beachten ist. Einzelheiten zur Speicherung _[personenbezogenen Daten durch Adobe Commerce finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/overview)_ „Sicherheits- und Compliance-Handbuch“. Um zu bestimmen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Diese Seite bietet einen allgemeinen Überblick darüber, was im Rahmen der DSGVO zu beachten ist. Einzelheiten zur Speicherung _[personenbezogenen Daten durch Adobe Commerce finden Sie ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ „Sicherheits- und Compliance-Handbuch“. Um zu bestimmen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Backups
 

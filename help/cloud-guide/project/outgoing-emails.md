@@ -1,9 +1,10 @@
 ---
 title: Ausgehende E-Mails konfigurieren
 description: Erfahren Sie, wie Sie ausgehende E-Mails für Adobe Commerce in der Cloud-Infrastruktur aktivieren.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 616e287b-960a-4933-916e-37896ee6b533
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Sie können ausgehende E-Mails für Integrations- (und nur für Starter-Umgebungen) über die [!DNL Cloud Console] oder die Befehlszeile aktivieren und deaktivieren. Aktivieren Sie ausgehende E-Mails, um E-Mails zur Zwei-Faktor-Authentifizierung oder zum Zurücksetzen des Passworts für Benutzer von Cloud-Projekten zu senden.
 
-Ausgehende E-Mails sind standardmäßig in Produktions- und Staging-Umgebungen (nur Pro) aktiviert. Die **[!UICONTROL Enable outgoing emails]** kann jedoch unabhängig vom Status in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile) &#x200B;](#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
+Ausgehende E-Mails sind standardmäßig in Produktions- und Staging-Umgebungen (nur Pro) aktiviert. Die **[!UICONTROL Enable outgoing emails]** kann jedoch unabhängig vom Status in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile) ](#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console).
 
 Durch die Aktualisierung des `enable_smtp`-Eigenschaftswerts [Befehlszeile](#enable-emails-in-the-cli) ändert sich auch der [!UICONTROL Enable outgoing emails] für diese Umgebung in der Cloud-Konsole.
 
@@ -26,7 +27,7 @@ Durch die Aktualisierung des `enable_smtp`-Eigenschaftswerts [Befehlszeile](#ena
 
 Verwenden Sie den Umschalter **[!UICONTROL Outgoing emails]** in der Ansicht _Umgebung konfigurieren_, um die E-Mail-Unterstützung zu aktivieren oder zu deaktivieren.
 
-Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert oder wieder aktiviert werden müssen, können Sie ein [Adobe Commerce-Support-Ticket senden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert oder wieder aktiviert werden müssen, können Sie ein [Adobe Commerce-Support-Ticket senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 >[!TIP]
 >

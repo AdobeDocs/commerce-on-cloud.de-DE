@@ -3,9 +3,10 @@ title: New Relic-Überwachung
 description: Erfahren Sie, wie Sie auf Ihr New Relic-Dashboard zugreifen und Daten aus Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt analysieren können.
 feature: Cloud, Observability
 topic: Performance
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: b9d806c4-f659-4e10-8dcb-b320a61de5e1
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -30,11 +31,11 @@ Alle erfassten Daten geben Aufschluss über die Zeit, die mit Aktionen verbracht
 
 >[!TIP]
 >
->Weitere Informationen zur Verwendung dieser Daten zur Fehlerbehebung bei Leistungsproblemen von Anwendungen finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=de) im _Adobe Commerce Help Center_.
+>Weitere Informationen zur Verwendung dieser Daten zur Fehlerbehebung bei Leistungsproblemen von Anwendungen finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) im _Adobe Commerce Help Center_.
 
 ## Überwachen der Leistung mit verwalteten Warnhinweisen
 
-Adobe stellt die Warnhinweisrichtlinie _Managed Alerts for Adobe Commerce_ zur Verfolgung von Leistungsmetriken bereit. Die Richtlinie umfasst eine Sammlung von Warnhinweisen, die Schwellenwerte und Trigger-Warnungen festlegen, sowie kritische Benachrichtigungen, wenn Infrastruktur- oder Anwendungsprobleme die Site-Performance beeinträchtigen. Die Richtlinie verfolgt die folgenden Metriken in Produktionsumgebungen:
+Adobe bietet die _Warnhinweisrichtlinie für Adobe Commerce_, um Leistungsmetriken zu verfolgen. Die Richtlinie umfasst eine Sammlung von Warnhinweisen, die Schwellenwerte und Trigger-Warnungen festlegen, sowie kritische Benachrichtigungen, wenn Infrastruktur- oder Anwendungsprobleme die Site-Performance beeinträchtigen. Die Richtlinie verfolgt die folgenden Metriken in Produktionsumgebungen:
 
 | Metrik | Datenerfassung | Verfügbarkeit |
 |:-------------------|:----------------|:----------------|
@@ -46,7 +47,7 @@ Adobe stellt die Warnhinweisrichtlinie _Managed Alerts for Adobe Commerce_ zur V
 | MariaDB-Abfragelast | NRI | Profi |
 | Redis-Speicher | NRI | Profi |
 
-Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen einen Warnschwellenwert erzeugt, sendet New Relic Warnbenachrichtigungen, damit Sie das Problem proaktiv beheben können. Unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=de) im _Adobe Commerce-_ finden Sie Details zu Warnschwellen und Schritten zur Fehlerbehebung, um die Probleme zu beheben, die den Warnhinweis ausgelöst haben.
+Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen einen Warnschwellenwert erzeugt, sendet New Relic Warnbenachrichtigungen, damit Sie das Problem proaktiv beheben können. Unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) im _Adobe Commerce-_ finden Sie Details zu Warnschwellen und Schritten zur Fehlerbehebung, um die Probleme zu beheben, die den Warnhinweis ausgelöst haben.
 
 >[!TIP]
 >
@@ -76,7 +77,7 @@ Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen 
 
      >[!NOTE]
      >
-     >Wenn die Richtlinie _Verwaltete Warnhinweise für Adobe Commerce_ nicht verfügbar ist, finden Sie weitere Informationen unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=de) im _Adobe Commerce-Hilfe-Center_.
+     >Wenn die Richtlinie _Verwaltete Warnhinweise für Adobe Commerce_ nicht verfügbar ist, finden Sie weitere Informationen unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) im _Adobe Commerce-Hilfe-Center_.
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Alert conditions]** , um die in der Richtlinie definierten Warnhinweisbedingungen zu überprüfen.
 
@@ -88,7 +89,7 @@ Anstatt einen vorhandenen Warnhinweis zu ändern, können Sie eine Warnhinweisri
 
 >[!TIP]
 >
->Weitere Informationen [&#x200B; Warnhinweisen, Warnhinweisrichtlinien und Workflows finden &#x200B;](https://docs.newrelic.com/docs/alerts/overview/) in der Dokumentation _2&rbrace;New Relicunter „Einführung in Warnhinweise“._
+>Weitere Informationen [ Warnhinweisen, Warnhinweisrichtlinien und Workflows finden ](https://docs.newrelic.com/docs/alerts/overview/) in der Dokumentation _2}New Relicunter „Einführung in Warnhinweise“._
 
 ## Einrichten eines Workflows für Benachrichtigungen
 
@@ -124,4 +125,4 @@ Siehe die New Relic-Dokumentation zu [Workflows](https://docs.newrelic.com/docs/
 
 >[!WARNING]
 >
->Die Warnhinweise in der Richtlinie Verwaltete Warnhinweise für Adobe Commerce verfügen über standardmäßige Workflows, die Adobe-Teams benachrichtigen, die Kunden von Adobe Commerce in Cloud-Infrastrukturen unterstützen. Ändern Sie nicht die Konfiguration für diese Standardkanäle und entfernen Sie keine ihnen zugewiesenen Warnmeldungsrichtlinien.
+>Die Warnhinweise in der Richtlinie Verwaltete Warnhinweise für Adobe Commerce verfügen über standardmäßige Workflows, um Adobe-Teams, die Adobe Commerce unterstützen, über Kunden mit Cloud-Infrastruktur zu benachrichtigen. Ändern Sie nicht die Konfiguration für diese Standardkanäle und entfernen Sie keine ihnen zugewiesenen Warnmeldungsrichtlinien.

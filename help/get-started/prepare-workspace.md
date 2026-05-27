@@ -2,9 +2,10 @@
 title: Vorbereiten der Entwicklung
 description: Sammeln Sie Anmeldeinformationen und erfahren Sie mehr über die Tools, die zum Einrichten eines Entwicklungsarbeitsbereichs für die Verwendung mit Ihrem Commerce in einem Cloud-Infrastrukturprojekt verfügbar sind.
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: adb7f74f-8007-4f23-bc07-46b0f7d0ebd9
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Bevor Sie einen Arbeitsbereich einrichten, stellen Sie die folgenden Schlüssel 
 
 - **Adobe Commerce-Verschlüsselungsschlüssel**
 
-  Wenn Sie nur ein vorhandenes System importieren, erfassen Sie den Verschlüsselungsschlüssel, der zum Schutz Ihres Zugriffs und Ihrer Daten für die Datenbank verwendet wird. Weitere Informationen zu diesem Schlüssel finden Sie unter [Beheben von Problemen mit dem Verschlüsselungsschlüssel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html?lang=de)
+  Wenn Sie nur ein vorhandenes System importieren, erfassen Sie den Verschlüsselungsschlüssel, der zum Schutz Ihres Zugriffs und Ihrer Daten für die Datenbank verwendet wird. Weitere Informationen zu diesem Schlüssel finden Sie unter [Beheben von Problemen mit dem Verschlüsselungsschlüssel](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.html)
 
 ## Entwickler-Tools
 
@@ -40,7 +41,7 @@ Bevor Sie einen Arbeitsbereich einrichten, stellen Sie die folgenden Schlüssel 
   Optional können Sie die Docker-Umgebung verwenden, um die Commerce in der Cloud-Infrastruktur `integration` -Umgebung für die lokale Entwicklung zu emulieren. Es gibt drei wesentliche Komponenten: eine Adobe Commerce v2-Vorlage, Docker Compose und `ece-tools`.
 
    - [Docker-Architektur und allgemeine Befehle](../cloud-guide/dev-tools/cloud-docker.md)
-   - [Launch Docker-Entwicklungsumgebung](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
+   - [Docker-Entwicklungsumgebung starten](https://developer.adobe.com/commerce/cloud-tools/docker/setup/)
    - [ECE-Tools-Paket](../cloud-guide/dev-tools/package-overview.md)
 
 - **Integrieren von Git-basierten Services**
@@ -49,7 +50,7 @@ Bevor Sie einen Arbeitsbereich einrichten, stellen Sie die folgenden Schlüssel 
 
 ## Projekt-Code
 
-Eine sichere Verbindung ist für die Interaktion mit den Remote-Umgebungen unerlässlich. Melden Sie sich bei einem [&#x200B; Projekt bei an  [!DNL Cloud Console]](https://console.adobecommerce.com) klicken Sie auf **[!UICONTROL No SSH key]**. Dieses Symbol befindet sich rechts neben dem Befehlsfeld und ist sichtbar, wenn das Projekt keinen SSH-Schlüssel enthält. Siehe [Sichere Verbindungen](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account)
+Eine sichere Verbindung ist für die Interaktion mit den Remote-Umgebungen unerlässlich. Melden Sie sich bei einem [ Projekt bei an  [!DNL Cloud Console]](https://console.adobecommerce.com) klicken Sie auf **[!UICONTROL No SSH key]**. Dieses Symbol befindet sich rechts neben dem Befehlsfeld und ist sichtbar, wenn das Projekt keinen SSH-Schlüssel enthält. Siehe [Sichere Verbindungen](../cloud-guide/development/secure-connections.md#add-an-ssh-public-key-to-your-account)
 
 **So klonen Sie Ihre Codebasis auf Ihrer lokalen Workstation**:
 
@@ -65,4 +66,4 @@ Eine sichere Verbindung ist für die Interaktion mit den Remote-Umgebungen unerl
 
 >[!TIP]
 >
->Adobe stellt Ihre ursprüngliche Projektumgebung mithilfe eines Vorlagen-Repositorys bereit, das Paketanweisungen für eine bestimmte Version von Adobe Commerce enthält. Lesen Sie das Thema [Projektdateistruktur](../cloud-guide/project/file-structure.md) und erfahren Sie mehr über wichtige Projektdateien und Cloud-Vorlagen.
+>Adobe stellt Ihre anfängliche Projektumgebung mithilfe eines Vorlagen-Repositorys bereit, das Paketanweisungen für eine bestimmte Version von Adobe Commerce enthält. Lesen Sie das Thema [Projektdateistruktur](../cloud-guide/project/file-structure.md) und erfahren Sie mehr über wichtige Projektdateien und Cloud-Vorlagen.
