@@ -87,7 +87,7 @@ https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 
 - **Eindeutige ID** = 7 zufällige alphanumerische Zeichen
 - **Projekt-ID** = Projekt-ID mit 13 Zeichen
-- **Region** = Name der Region AWS oder Azure, siehe &quot;[ IP-Adressen](regional-ip-addresses.md)
+- **Region** = Name der Region AWS oder Azure, siehe &quot;[&#x200B; IP-Adressen](regional-ip-addresses.md)
 
 Die Pro-Produktions- und Staging-Umgebungen umfassen drei Knoten, auf die Sie über die folgenden Links zugreifen können:
 
@@ -134,7 +134,7 @@ Klicken Sie auf **[!UICONTROL Environments]** und wählen Sie eine bestimmte Umg
 |           | **Vor Suchmaschinen ausblenden**: Blockieren Sie Suchmaschinen-Indexer und Crawler-Ordner von der Website. |
 |           | **HTTP-Zugriffssteuerung**: Aktivieren Sie die Sicherheitskonfiguration für den [!DNL Cloud Console] mithilfe einer Anmelde- und IP-Adresszugriffssteuerung. |
 |           | Status ist `active` oder `inactive`. Der Großteil Ihrer Arbeit befindet sich in einer aktiven Umgebung. Sie können die Umgebung deaktivieren oder löschen. |
-| Variablen | Anzeigen, Erstellen und Verwalten von [Variablen auf ](../environment/variable-levels.md) zur Laufzeit. |
+| Variablen | Anzeigen, Erstellen und Verwalten von [Variablen auf &#x200B;](../environment/variable-levels.md) zur Laufzeit. |
 | Domains | Zeigen Sie eine Liste der [konfigurierten Routen](../routes/routes-yaml.md) an. |
 
 {style="table-layout:auto"}
