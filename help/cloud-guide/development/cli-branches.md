@@ -3,9 +3,10 @@ title: Verwalten von Verzweigungen mit der CLI
 description: Erfahren Sie, wie Sie die Umgebungsverzweigungen für Adobe Commerce in der Cloud-Infrastruktur mithilfe der Cloud-CLI verwalten.
 role: Developer
 feature: Cloud, Install
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: d67e8802-8137-451f-b468-8b788afb01ea
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Die folgenden Anweisungen verwenden eine Kombination aus `magento-cloud` CLI- un
 
 **So klonen Sie ein Projekt `master` eine Umgebung**:
 
-1. Melden Sie sich bei Ihrer lokalen Workstation mit einem Konto [Dateisystemeigentümer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de) an.
+1. Melden Sie sich bei Ihrer lokalen Workstation mit einem Konto [Dateisystemeigentümer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) an.
 
 1. Wechseln Sie zum Verzeichnis Webserver oder virtueller Host _docroot_.
 
@@ -86,7 +87,7 @@ Die folgenden Anweisungen verwenden eine Kombination aus `magento-cloud` CLI- un
 
 Nachdem Sie Ihr Projekt geklont und die Konfiguration des Adobe Commerce-Administratorkontos aktualisiert haben, können Sie eine Verzweigung für die Entwicklung erstellen. Wie bereits erwähnt, müssen Sie eine Umgebung mit dem Befehl `magento-cloud environment:branch <branch-name>` oder dem [!DNL Cloud Console] erstellen, damit die Umgebung _aktiv_ wird.
 
-- Erwägen [&#x200B; zunächst](../architecture/starter-develop-deploy-workflow.md#clone-and-branch) eine Verzweigung für `staging` zu erstellen und dann eine Entwicklungsverzweigung basierend auf der `staging` Verzweigung zu erstellen.
+- Erwägen [ zunächst](../architecture/starter-develop-deploy-workflow.md#clone-and-branch) eine Verzweigung für `staging` zu erstellen und dann eine Entwicklungsverzweigung basierend auf der `staging` Verzweigung zu erstellen.
 - Erstellen Sie für [Pro](../architecture/pro-develop-deploy-workflow.md#development-workflow) Entwicklungsverzweigungen basierend auf der `Integration`.
 
 **So erstellen Sie eine**:

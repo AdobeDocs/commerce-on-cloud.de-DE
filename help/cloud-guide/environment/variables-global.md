@@ -4,9 +4,10 @@ description: Siehe die Liste der Umgebungsvariablen, die Aktionen im Bereitstell
 feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -85,7 +86,7 @@ stage:
 
 Aktivieren der Generierung statischer Inhalte auf Anfrage eines Benutzers (SCD). Statische Inhalte bei Bedarf eignen sich ideal für den Entwicklungs- und Test-Workflow, da sie die Bereitstellungszeit verkürzen.
 
-Vorausfüllen des Cache mithilfe des [`post_deploy` Hooks &#x200B;](../application/hooks-property.md) die Ausfallzeit der Site. Der Cache-Warming ist nur für Pro-Projekte verfügbar, die Staging- und Produktionsumgebungen im [!DNL Cloud Console] enthalten, sowie für Starter-Projekte. Fügen Sie die Umgebungsvariable `SCD_ON_DEMAND` zum `global` in der `.magento.env.yaml` hinzu:
+Vorausfüllen des Cache mithilfe des [`post_deploy` Hooks ](../application/hooks-property.md) die Ausfallzeit der Site. Der Cache-Warming ist nur für Pro-Projekte verfügbar, die Staging- und Produktionsumgebungen im [!DNL Cloud Console] enthalten, sowie für Starter-Projekte. Fügen Sie die Umgebungsvariable `SCD_ON_DEMAND` zum `global` in der `.magento.env.yaml` hinzu:
 
 ```yaml
 stage:
@@ -162,7 +163,7 @@ stage:
 Aktiviert oder deaktiviert das Kopieren von statischen Ansichtsdateien in das `<magento_root>/init/` am Ende des Erstellungsvorgangs. Wenn auf `true` festgelegt, werden die Dateien nicht kopiert und eine HTML-Minimierung ist auf Anfrage verfügbar. Legen Sie diesen Wert auf `true` fest, um Ausfallzeiten bei der Bereitstellung in Staging- und Produktionsumgebungen zu reduzieren.
 
 - **`false`** - Kopiert den `view_preprocessed` Ordner am Ende der Build-Phase in den `<magento_root>/init/` Ordner und stellt den Ordner im `<magento_root>/var` zu Beginn der Bereitstellungsphase wieder her.
-- **`true`** - Aktiviert die On-Demand-HTML-Minimierung; kopiert _nicht_ die `<magento_root>var/view_preprocessed` am Ende der Erstellungsphase in das `<magento_root>/init/`.
+- **`true`** - Aktiviert die On-Demand-Minimierung von HTML _kopiert_ die `<magento_root>var/view_preprocessed` am Ende der Erstellungsphase nicht in das `<magento_root>/init/`.
 
 Fügen Sie die Umgebungsvariable `SKIP_HTML_MINIFICATION` zum `global` in der `.magento.env.yaml` hinzu:
 
@@ -177,7 +178,7 @@ stage:
 - **Standard**—_Nicht festgelegt_
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=de)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
+Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
 
 - `DENY` - Die Seite kann nicht in einem Frame angezeigt werden.
 - `SAMEORIGIN`-(Die Standardeinstellung für Adobe Commerce.) Die Seite kann nur in einem Frame angezeigt werden, der auf demselben Ursprung wie die Seite selbst liegt.

@@ -3,9 +3,10 @@ title: Verzweigungen mit dem  [!DNL Cloud Console] verwalten
 description: Erfahren Sie, wie Sie die Umgebungszweige für Adobe Commerce in der Cloud-Infrastruktur mit dem  [!DNL Cloud Console].
 role: Developer
 feature: Cloud, Install
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -31,9 +32,9 @@ Die Verzweigungsstrategie verwendet einen gängigen Git-Workflow, bei dem Sie Co
 - Erstellen Sie zunächst eine `staging` Verzweigung aus der `master` Verzweigung und dann eine Verzweigung aus `staging` für die Entwicklung.
 - Erstellen Sie für Pro eine Entwicklungsverzweigung aus der `Integration`.
 
-Ihr Konto unterstützt eine begrenzte Anzahl von ![aktiven](../../assets/icon-active.png){width="32"} (active) and an unlimited number of ![inactive branch](../../assets/icon-inactive.png){width="32"} (inaktiven) Entwicklungszweigen. Verwalten Sie aktive und inaktive Verzweigungen, indem Sie eine Verzweigung nur mit der [!DNL Cloud Console] oder der Cloud-CLI hinzufügen oder löschen. Bevor Sie eine Verzweigung löschen können, deaktivieren Sie die Verzweigung, die in der Liste _Umgebungen_ als &quot;_&quot;_ bleibt. Sie können die Verzweigung später erneut aktivieren oder [die Verzweigung löschen](../dev-tools/cloud-cli-overview.md#) in den Umgebungseinstellungen oder über die Cloud-CLI.
+Ihr Konto unterstützt eine begrenzte Anzahl von ![aktiven](../../assets/icon-active.png){width="32"} (aktiven) und eine unbegrenzte Anzahl von ![inaktiven](../../assets/icon-inactive.png){width="32"} (inaktiven) Entwicklungszweigen. Verwalten Sie aktive und inaktive Verzweigungen, indem Sie eine Verzweigung nur mit der [!DNL Cloud Console] oder der Cloud-CLI hinzufügen oder löschen. Bevor Sie eine Verzweigung löschen können, deaktivieren Sie die Verzweigung, die in der Liste _Umgebungen_ als &quot;_&quot;_ bleibt. Sie können die Verzweigung später erneut aktivieren oder [die Verzweigung löschen](../dev-tools/cloud-cli-overview.md#) in den Umgebungseinstellungen oder über die Cloud-CLI.
 
-Wenn Sie zusätzliche aktive Umgebungen für die Entwicklung benötigen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) ein.
+Wenn Sie zusätzliche aktive Umgebungen für die Entwicklung benötigen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ein.
 
 **So fügen Sie eine Verzweigung**:
 
@@ -67,7 +68,7 @@ Wenn Sie zusätzliche aktive Umgebungen für die Entwicklung benötigen, reichen
 
 ## Erstellen einer inaktiven Verzweigung
 
-Sie können keine inaktive Verzweigung über die Adobe Commerce Cloud-Konsole oder die CLI erstellen. Wenn Sie eine inaktive Verzweigung erstellen möchten, erstellen Sie sie im Git-Repository und drücken Sie die Option `environment.Parent` im Befehl .
+Sie können keine inaktive Verzweigung über die Adobe Commerce Cloud-Konsole oder CLI erstellen. Wenn Sie eine inaktive Verzweigung erstellen möchten, erstellen Sie sie im Git-Repository und drücken Sie die Option `environment.Parent` im Befehl .
 
 ```bash
 git push -o "environment.Parent=<parent branch>" <origin> <branch>
@@ -87,7 +88,7 @@ Bevor Sie eine Umgebung löschen können, müssen Sie sie deaktivieren. Sobald e
 
 1. Klicken Sie auf das Symbol Konfigurieren rechts in der oberen Navigationsleiste, um die Umgebungseinstellungen zu öffnen.
 
-1. Scrollen Sie auf der Registerkarte _[!UICONTROL General]_&#x200B;nach unten zum Abschnitt&#x200B;_[!UICONTROL Deactivate environment]_, klicken Sie auf **[!UICONTROL Deactivate environment and delete data]** und befolgen Sie die Anweisungen.
+1. Scrollen Sie auf der Registerkarte _[!UICONTROL General]_nach unten zum Abschnitt_[!UICONTROL Deactivate environment]_, klicken Sie auf **[!UICONTROL Deactivate environment and delete data]** und befolgen Sie die Anweisungen.
 
 ## Synchronisieren einer Umgebung
 
@@ -134,7 +135,7 @@ Das Zusammenführen einer Umgebung (oder Verzweigung) entspricht dem `git push o
 
 1. Klicken Sie **Zusammenführen** und bestätigen Sie die Aktion.
 
-## Protokolle anzeigen
+## Anzeigen von Protokollen
 
 Über die [!DNL Cloud Console] können Sie verschiedene Protokolle für Umgebungen überprüfen, einschließlich des Verlaufs von Erstellung, Bereitstellung und Bereitstellung.
 
@@ -168,7 +169,7 @@ Ihr Adobe Commerce in Cloud-Infrastrukturprojekt kann Code aus einem privaten Gi
 
 Um Ihrem privaten GitHub-Repository einen Bereitstellungsschlüssel hinzuzufügen, müssen Sie der Administrator dieses Repositorys sein. Mit GitHub können Sie einen Bereitstellungsschlüssel nur für ein Repository verwenden.
 
-Wenn Sie es vorziehen, dass Ihr Projekt auf mehrere Repositorys zugreift, können Sie einen SSH-Schlüssel an ein automatisiertes Benutzerkonto anhängen. Da dieses Konto nicht von einem Menschen verwendet wird, wird es als &quot;[&quot; &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Fügen Sie das Computerkonto als Mitarbeiter hinzu oder fügen Sie den Computerbenutzer einem Team mit Zugriff auf die Repositorys hinzu.
+Wenn Sie es vorziehen, dass Ihr Projekt auf mehrere Repositorys zugreift, können Sie einen SSH-Schlüssel an ein automatisiertes Benutzerkonto anhängen. Da dieses Konto nicht von einem Menschen verwendet wird, wird es als &quot;[&quot; ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Fügen Sie das Computerkonto als Mitarbeiter hinzu oder fügen Sie den Computerbenutzer einem Team mit Zugriff auf die Repositorys hinzu.
 
 >[!INFO]
 >
