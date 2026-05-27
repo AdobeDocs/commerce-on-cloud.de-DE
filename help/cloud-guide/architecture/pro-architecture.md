@@ -48,7 +48,7 @@ Bei Pro-Projekten bietet die `master`-Verzweigung eine aktive PaaS-Umgebung für
 
 **Einschränkungen:**
 
-- Erstellen **** keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
+- Erstellen **&#x200B;**&#x200B;keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
 
 - Verwenden Sie die `master` nicht für Entwicklungs-, UAT- oder Leistungstests
 
@@ -177,7 +177,7 @@ Adobe Commerce in Cloud-Infrastrukturen verwenden eine Hochverfügbarkeitsarchit
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [ Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
+>Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [&#x200B; Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
 
 {{pro-backups}}
 
@@ -211,4 +211,4 @@ Die Größe des Pro-Clusters und _Compute_-Konfigurationen variieren je nach aus
 
 Die redundante Architektur ermöglicht eine Hochskalierung der Adobe-Cloud-Infrastruktur ohne Ausfallzeiten. Beim Hochskalieren rotiert jede der drei Instanzen, um die Kapazität zu aktualisieren, ohne den Site-Betrieb zu beeinträchtigen. Sie können beispielsweise zusätzliche Webserver zu einem vorhandenen Cluster hinzufügen, wenn die Einschränkung auf PHP-Ebene statt auf Datenbankebene erfolgt. Dies bietet _horizontale Skalierung_ um die vertikale Skalierung zu ergänzen, die durch zusätzliche CPUs auf Datenbankebene bereitgestellt wird. Siehe [Skalierte Architektur](scaled-architecture.md).
 
-Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) im _Commerce-Hilfezentrum_.
+Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) im _Commerce-Hilfezentrum_.
