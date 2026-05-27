@@ -8,7 +8,7 @@ topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
 source-git-commit: c972d9f2029499cf53edc334c1d9a40b155a991d
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Sie können Benutzer hinzufügen und Rollen mithilfe der `magento-cloud` CLI ode
 
 **Voraussetzungen:**
 
-- Ein registrierter Benutzer mit einer Adobe ID. Ein Benutzer muss [sich für ein Adobe-Konto &#x200B;](https://account.adobe.com) und dann sein [Cloud-Konto](https://console.adobecommerce.com) initialisieren, indem er [https://console.adobecommerce.com](https://console.adobecommerce.com) aufruft, bevor er sie einem Cloud-Projekt hinzufügen kann.
+- Ein registrierter Benutzer mit einer Adobe ID. Ein Benutzer muss [sich für ein Adobe-Konto ](https://account.adobe.com) und dann sein [Cloud-Konto](https://console.adobecommerce.com) initialisieren, indem er [https://console.adobecommerce.com](https://console.adobecommerce.com) aufruft, bevor er sie einem Cloud-Projekt hinzufügen kann.
 - Ein Benutzer mit der Rolle **Admin** kann keine Benutzer mit der `magento-cloud` CLI verwalten. Nur Benutzer mit der Rolle **Kontoinhaber** können Benutzer verwalten.
 
 >[!ENDSHADEBOX]
@@ -147,7 +147,7 @@ Sie können die [[!DNL Cloud Console]](../../get-started/cloud-console.md) verwe
 
 1. Klicken Sie in _Ansicht_ Zugriff **[!UICONTROL Add]** auf.
 
-1. Füllen Sie das _[!UICONTROL Add User]_&#x200B;Formular aus:
+1. Füllen Sie das _[!UICONTROL Add User]_Formular aus:
 
    - Geben Sie die E-Mail-Adresse des Benutzers ein.
 
@@ -232,7 +232,7 @@ Anweisungen zur Installation der Authentifizierungsanwendung und zur Aktivierung
 
      >[!WARNING]
      >
-     >Wenn Sie den Zugriff auf ein Konto bei TFA verlieren und nicht über die Liste der Wiederherstellungs-Codes verfügen, müssen Sie sich an Ihren Projektadministrator wenden oder [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die TFA-Anwendung zurückzusetzen.
+     >Wenn Sie den Zugriff auf ein Konto bei TFA verlieren und nicht über die Liste der Wiederherstellungs-Codes verfügen, müssen Sie sich an Ihren Projektadministrator wenden oder [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die TFA-Anwendung zurückzusetzen.
 
 1. Klicken Sie nach Abschluss der TFA-Einrichtung auf **Speichern**, um Ihr Konto zu aktualisieren.
 

@@ -4,16 +4,17 @@ description: Erfahren Sie mehr über Integrationsoptionen von Drittanbietern fü
 role: Developer
 feature: Cloud, Integration
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 97c5f70d-1465-46c9-bb33-98897262c5ef
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
 
 # Integrationen - Übersicht
 
-Integrationen sind für die Verwendung externer Services nützlich, z. B. für Git-Hosting oder Slack-Bots, und für die Pflege Ihrer aktuellen Entwicklungsprozesse, z. B. die Verwendung der Pull-Request-Funktion für die Code-Überprüfung in GitHub. Sie können Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt die folgenden Integrationen hinzufügen:
+Integrationen sind nützlich für die Verwendung externer Services - wie Git-Hosting oder Slack-Bots - und die Pflege Ihrer aktuellen Entwicklungsprozesse, wie z. B. die Verwendung der Code-Überprüfungs-Pull-Anforderungsfunktion in GitHub. Sie können Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt die folgenden Integrationen hinzufügen:
 
 ![Integrationen](/help/assets/integrations.png)
 
@@ -65,7 +66,7 @@ Beispielantwort:
 
 ## Commerce-Webhooks
 
-Sie können Commerce-Webhooks in Ihrem Cloud-Projekt mit der globalen [ENABLE_WEBHOOKS“ &#x200B;](../environment/variables-global.md#enable_webhooks). Commerce-Webhooks senden als Reaktion auf Commerce-generierte Ereignisse Anfragen an einen externen Server. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks) wird diese Funktion ausführlich beschrieben.
+Sie können Commerce-Webhooks in Ihrem Cloud-Projekt mit der globalen [ENABLE_WEBHOOKS“ ](../environment/variables-global.md#enable_webhooks). Commerce-Webhooks senden als Reaktion auf Commerce-generierte Ereignisse Anfragen an einen externen Server. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks) wird diese Funktion ausführlich beschrieben.
 
 ## Allgemeine Webhooks
 

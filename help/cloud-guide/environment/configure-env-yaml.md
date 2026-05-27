@@ -3,9 +3,10 @@ title: Umgebung konfigurieren
 description: Erfahren Sie, wie Sie mithilfe von Umgebungsvariablen Aktionen für alle Commerce in Cloud-Infrastrukturumgebungen konfigurieren, erstellen und bereitstellen, einschließlich Pro Staging und Produktion.
 feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Die `.magento.env.yaml`-Datei enthält zwei Abschnitte: `stage` und `log`. Im Ab
 
 ### Umgebungsvariablen
 
-Das `ece-tools` legt Werte in der `env.php` anhand von Werten aus [Cloud-Variablen](variables-cloud.md), in der [!DNL Cloud Console] festgelegten Variablen und der `.magento.env.yaml`-Konfigurationsdatei fest. Die Umgebungsvariablen in der `.magento.env.yaml`-Datei passen die Cloud-Umgebung an, indem sie Ihre bestehende Commerce-Konfiguration überschreiben. Wenn ein Standardwert `Not Set` ist, ergreift das `ece-tools`-Paket die Aktion **NO** und verwendet den [!DNL Commerce] Standardwert oder den Wert aus der Konfiguration MAGENTO_CLOUD_RELATIONSHIPS . Wenn der Standardwert festgelegt ist, setzt das `ece-tools`-Paket diesen Standardwert.
+Das `ece-tools` legt Werte in der `env.php` anhand von Werten aus [Cloud-Variablen](variables-cloud.md), in der [!DNL Cloud Console] festgelegten Variablen und der `.magento.env.yaml`-Konfigurationsdatei fest. Die Umgebungsvariablen in der `.magento.env.yaml`-Datei passen die Cloud-Umgebung an, indem sie Ihre bestehende Commerce-Konfiguration überschreiben. Wenn ein Standardwert `Not Set` ist, führt das `ece-tools` die Aktion **NEIN** durch und verwendet den [!DNL Commerce] oder den Wert aus der Konfiguration &quot;MAGENTO_CLOUD_RELATIONSHIPS“. Wenn der Standardwert festgelegt ist, setzt das `ece-tools`-Paket diesen Standardwert.
 
 Die folgenden Themen enthalten detaillierte Definitionen aller Variablen, die Sie in der `.magento.env.yaml`-Datei verwenden können, z. B. ob ein Standardwert festgelegt ist oder nicht:
 

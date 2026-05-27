@@ -2,9 +2,10 @@
 title: Variablenebenen und Optionen
 description: Erfahren Sie mehr über die verschiedenen Variablenebenen und Optionen, die beim Anpassen Ihrer Laufzeitumgebung des Adobe Commerce in Cloud-Infrastrukturprojekts verwendet werden.
 feature: Cloud, Configuration, Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 6761cb45-9c8d-4a4e-940f-d62e0e15dcb4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ Nachdem Sie projektspezifische Variablen festgelegt haben, müssen Sie die Remot
 
 **So legen Sie Variablen mithilfe der[!DNL Cloud Console]** fest:
 
-1. Klicken Sie in der _[!DNL Cloud Console]_&#x200B;auf das Konfigurationssymbol auf der rechten Seite der Projektnavigation.
+1. Klicken Sie in der _[!DNL Cloud Console]_auf das Konfigurationssymbol auf der rechten Seite der Projektnavigation.
 
    ![Projekt konfigurieren](../../assets/icon-configure.png){width="36"}
 
