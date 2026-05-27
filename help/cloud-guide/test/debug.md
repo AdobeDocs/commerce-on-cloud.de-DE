@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Xdebug-Erweiterung konfigurieren, um Ihre
 exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
 source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
 
 1. [Optional] Konfigurieren Sie die folgenden Einstellungen für die neue Server-Konfiguration. Siehe [Kein Debugserver konfiguriert](https://www.jetbrains.com/help/phpstorm/troubleshooting-php-debugging.html#no-debug-server-is-configured) in der Dokumentation _PHPStorm_.
 
-   - **Name** - Geben Sie denselben Host-Namen ein. Dieser Wert muss mit dem Wert für die Variable `PHP_IDE_CONFIG` in [Debug CLI-Befehlen) übereinstimmen, &#x200B;](#debug-cli-commands) CLI zum Debuggen zu verwenden.
+   - **Name** - Geben Sie denselben Host-Namen ein. Dieser Wert muss mit dem Wert für die Variable `PHP_IDE_CONFIG` in [Debug CLI-Befehlen) übereinstimmen, ](#debug-cli-commands) CLI zum Debuggen zu verwenden.
    - **Host** - Geben Sie den Host-Namen ein.
    - **port** - Geben Sie `443` ein.
    - **Debugger** - Wählen Sie `Xdebug` aus.
@@ -114,7 +114,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
       - Produktion: `/app/<project_code>/`
       - Staging: `/app/<project_code>_stg/`
 
-1. Ändern Sie den [!DNL Xdebug] Port in `9000,9003` oder Sie können ihn im Bedienfeld `9000`PHP **>** Debug **>** Xdebug **>** Debug Port **auf nur** beschränken.
+1. Ändern Sie den [!DNL Xdebug] Port in `9000,9003` oder Sie können ihn im Bedienfeld **PHP** > **Debug** > **Xdebug** > **Debug Port** auf nur `9000` beschränken.
 
 1. Klicken Sie **Apply**.
 
@@ -143,7 +143,7 @@ Dadurch verfügt die Anwendung über die richtigen Debug-Einstellungen, um die A
 
 Ordnen Sie die `XDEBUG` Verbindung vom Server Ihrem lokalen System zu. Um jede Art von Debugging durchzuführen, müssen Sie Port 9000 von Ihrem Adobe Commerce auf dem Cloud-Infrastrukturserver an Ihren lokalen Computer weiterleiten. Siehe einen der folgenden Abschnitte:
 
-- [Port-Weiterleitung auf Mac oder UNIX](#port-forwarding-on-mac-or-unix)
+- [Port-Weiterleitung auf Mac oder UNIX®](#port-forwarding-on-mac-or-unix)
 - [Port-Weiterleitung unter Windows](#port-forwarding-on-windows)
 
 #### Port-Weiterleitung auf Mac oder UNIX®
@@ -197,7 +197,7 @@ Ordnen Sie die `XDEBUG` Verbindung vom Server Ihrem lokalen System zu. Um jede A
 
 #### Port-Weiterleitung unter Windows
 
-Um die Port Forwarding (SSH-Tunneling) unter Windows einzurichten, müssen Sie Ihre Windows-Terminalanwendung konfigurieren. In diesem Beispiel wird die Erstellung eines SSH-Tunnels mit &quot;[&quot; &#x200B;](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Sie können auch andere Anwendungen wie Cygwin verwenden. Weitere Informationen zu anderen Anwendungen finden Sie in der mit diesen Anwendungen bereitgestellten Anbieterdokumentation.
+Um die Port Forwarding (SSH-Tunneling) unter Windows einzurichten, müssen Sie Ihre Windows-Terminalanwendung konfigurieren. In diesem Beispiel wird die Erstellung eines SSH-Tunnels mit &quot;[&quot; ](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Sie können auch andere Anwendungen wie Cygwin verwenden. Weitere Informationen zu anderen Anwendungen finden Sie in der mit diesen Anwendungen bereitgestellten Anbieterdokumentation.
 
 **So richten Sie einen SSH-Tunnel unter Windows mit Putty ein**:
 
@@ -328,7 +328,7 @@ Dies ist eine Demonstration der verwendeten Konfigurationen sowie eine Demonstra
 
    >[!NOTE]
    >
-   >Die von `XDEBUG_SESSION_START` Anforderungen übergebenen `POST` werden nicht unterstützt.
+   >Die von `POST` Anforderungen übergebenen `XDEBUG_SESSION_START` werden nicht unterstützt.
 
 ## Debuggen von CLI-Befehlen
 

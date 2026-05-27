@@ -2,9 +2,10 @@
 title: Skalierte Architektur
 description: Erfahren Sie mehr über die Split-Tier-Architektur und deren Skalierung zur Erfüllung der Anforderungen.
 feature: Cloud, Auto Scaling, Iaas, Logs
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 45c0cf14-99e6-4643-88f0-98ebcdb3a98c
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,10 @@
 title: Aktivitäts-Stream
 description: Erfahren Sie, wie Sie den Aktivitäts-Stream in der - oder  [!DNL Cloud Console]  Cloud-CLI für Adobe Commerce in der Cloud-Infrastruktur lesen.
 last-substantial-update: 2024-02-06T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 1acac76e-b088-44ad-9c93-ea27b686b6b4
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ In der Hauptansicht jeder Umgebung wird eine **Aktivität** Liste historischer E
 
 ![Aktivitätstypen](../../assets/activity-types.svg){width="500" align="center"}
 
-## Protokolle anzeigen
+## Anzeigen von Protokollen
 
 Klicken Sie in der Liste Aktivität auf das Statussymbol einer Aktivität, um das Protokoll anzuzeigen. Alternativ können Sie auf das Menü ![Mehr](../../assets/icon-more.png){width="32"} (_mehr_) klicken, um auf weitere Optionen zur Verwaltung der Aktivität zuzugreifen. Im Folgenden sehen Sie ein kurzes Protokoll zur Erstellung eines Backups. Sie können [die Cloud-CLI verwenden](#activity-stream-with-cloud-cli) um dasselbe Protokoll anzuzeigen.
 

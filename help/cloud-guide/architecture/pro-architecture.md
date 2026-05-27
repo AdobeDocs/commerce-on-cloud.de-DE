@@ -3,9 +3,10 @@ title: Pro Architektur
 description: Erfahren Sie mehr über die von der Pro-Architektur unterstützten Umgebungen.
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Die folgende Tabelle fasst die Unterschiede zwischen Umgebungen zusammen:
 
 >[!NOTE]
 >
->Adobe stellt das Tool Cloud Docker für Commerce zum Bereitstellen in einer lokalen Cloud Docker-Umgebung bereit, damit Sie Adobe Commerce-Projekte entwickeln und testen können. Siehe [Docker-](../dev-tools/cloud-docker.md).
+>Adobe stellt das Cloud Docker für Commerce-Tool zur Bereitstellung in einer lokalen Cloud Docker-Umgebung bereit, damit Sie Adobe Commerce-Projekte entwickeln und testen können. Siehe [Docker-](../dev-tools/cloud-docker.md).
 
 ## Umgebungsarchitektur
 
@@ -47,7 +48,7 @@ Bei Pro-Projekten bietet die `master`-Verzweigung eine aktive PaaS-Umgebung für
 
 **Einschränkungen:**
 
-- Erstellen **&#x200B;**&#x200B;keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
+- Erstellen **** keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
 
 - Verwenden Sie die `master` nicht für Entwicklungs-, UAT- oder Leistungstests
 
@@ -176,15 +177,15 @@ Adobe Commerce in Cloud-Infrastrukturen verwenden eine Hochverfügbarkeitsarchit
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [&#x200B; Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
+>Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [ Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
 
 {{pro-backups}}
 
-Mithilfe von CLI **Befehlen können Sie eine** manuelle Sicherung) der Datenbank für Ihre Staging- und Produktionsumgebungen erstellen. Siehe [Datenbank sichern](../storage/database-dump.md). Für `integration` Umgebungen empfiehlt Adobe, als ersten Schritt nach dem Zugriff auf Ihr Adobe Commerce on Cloud-Infrastrukturprojekt und vor der Anwendung größerer Änderungen ein Backup zu erstellen. Siehe [Backup-Verwaltung](../storage/snapshots.md).
+Mithilfe von CLI **Befehlen können Sie eine** manuelle Sicherung) der Datenbank für Ihre Staging- und Produktionsumgebungen erstellen. Siehe [Datenbank sichern](../storage/database-dump.md). Für `integration` Umgebungen empfiehlt Adobe die Erstellung eines Backups als ersten Schritt nach dem Zugriff auf Ihr Adobe Commerce in Cloud-Infrastrukturprojekt und vor der Anwendung größerer Änderungen. Siehe [Backup-Verwaltung](../storage/snapshots.md).
 
 ### Wiederherstellungspunkt-Ziel
 
-Wenden Sie sich an Ihren Adobe Customer Success Manager, um weitere Informationen zur Wiederherstellungspunkt-Zielzeit bis zur letzten Sicherung zu erhalten. Die Häufigkeit der Backups hängt vom Backup-Zeitplan Ihres Plans und der Anzahl der Änderungen ab, die in den Speicher-Service geschrieben werden sollen.
+Wenden Sie sich an Ihren Adobe Customer Success Manager, um weitere Informationen zum Zeitpunkt der letzten Sicherung zu erhalten. Die Häufigkeit der Backups hängt vom Backup-Zeitplan Ihres Plans und der Anzahl der Änderungen ab, die in den Speicher-Service geschrieben werden sollen.
 
 ### Aufbewahrungsrichtlinie
 
@@ -196,7 +197,7 @@ Adobe behält automatische Sicherungen gemäß der folgenden Datenaufbewahrungsr
 | Tage 4 bis 7 | Ein Backup pro Tag |
 | Wochen 2 bis 6 | Ein Backup pro Woche |
 | Wochen 8 bis 12 | Eine Sicherung alle zwei Wochen |
-| 3. bis 5. Monat | Ein Backup pro Monat |
+| &#x200B;3. bis 5. Monat | Ein Backup pro Monat |
 
 Diese Richtlinie kann je nach Cloud-Infrastrukturplan variieren.
 
@@ -206,8 +207,8 @@ RTO hängt von der Größe des Speichers ab. Bei großen EBS-Volumes dauert die 
 
 ## Pro Cluster-Skalierung
 
-Die Größe des Pro-Clusters und _Compute_-Konfigurationen variieren je nach ausgewähltem Cloud-Anbieter (AWS, Azure), Region und Service-Abhängigkeiten. Die Adobe-Cloud-Infrastruktur kann Pro-Cluster skalieren, um Traffic-Erwartungen und Service-Anforderungen bei sich ändernden Anforderungen zu berücksichtigen.
+Die Größe des Pro-Clusters und _Compute_-Konfigurationen variieren je nach ausgewähltem Cloud-Anbieter (AWS, Azure), Region und Service-Abhängigkeiten. Die Cloud-Infrastruktur von Adobe kann Pro-Cluster skalieren, um Traffic-Erwartungen und Service-Anforderungen bei sich ändernden Anforderungen zu berücksichtigen.
 
 Die redundante Architektur ermöglicht eine Hochskalierung der Adobe-Cloud-Infrastruktur ohne Ausfallzeiten. Beim Hochskalieren rotiert jede der drei Instanzen, um die Kapazität zu aktualisieren, ohne den Site-Betrieb zu beeinträchtigen. Sie können beispielsweise zusätzliche Webserver zu einem vorhandenen Cluster hinzufügen, wenn die Einschränkung auf PHP-Ebene statt auf Datenbankebene erfolgt. Dies bietet _horizontale Skalierung_ um die vertikale Skalierung zu ergänzen, die durch zusätzliche CPUs auf Datenbankebene bereitgestellt wird. Siehe [Skalierte Architektur](scaled-architecture.md).
 
-Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=de) im _Commerce-Hilfezentrum_.
+Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) im _Commerce-Hilfezentrum_.
