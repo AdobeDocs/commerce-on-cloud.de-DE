@@ -1,11 +1,12 @@
 ---
 title: Bereitstellung von Commerce in Cloud Manager
-description: Erfahren Sie, wie Sie einen technischen Berater für Adobe-Kunden vorbereiten, um Ihr Adobe Commerce-on-Cloud-Infrastrukturprojekt bereitzustellen.
+description: Erfahren Sie, wie Sie einen technischen Kundenberater von Adobe für die Bereitstellung Ihres Adobe Commerce in Cloud-Infrastrukturprojekts vorbereiten.
 recommendations: noDisplay, catalog
 role: Admin
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 77e8c9fb-8c4a-4c98-adbc-e57871c5bdbc
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 Beginnen wir mit der Initialisierung Ihres Commerce-Projekts in der Cloud-Infrastruktur!
 
-Bevor Adobe Ihre Commerce in Cloud-Projektumgebungen bereitstellt, sollten Sie die folgenden Strategien in Betracht ziehen und Antworten für Ihre erste Beratung mit Ihrem Adobe-Account-Team vorbereiten. Verwenden Sie die folgenden Abschnitte als Checkliste, um Sie bei der Vorbereitung Ihres Gesprächs mit einem technischen Kundenberater für die Bereitstellung eines Cloud-Projekts zu unterstützen:
+Bevor Adobe Ihre Commerce in Cloud-Projektumgebungen bereitstellt, sollten Sie die folgenden Strategien in Betracht ziehen und Antworten für Ihre erste Beratung mit Ihrem Adobe Account Team vorbereiten. Verwenden Sie die folgenden Abschnitte als Checkliste, um Sie bei der Vorbereitung Ihres Gesprächs mit einem technischen Kundenberater für die Bereitstellung eines Cloud-Projekts zu unterstützen:
 
 ## Domain-Definition
 
@@ -59,7 +60,7 @@ Siehe [Verwalten von Festplattenspeicher](../cloud-guide/storage/manage-disk-spa
 
 **Frage 4**: _Welche Cloud Service-Region liegt am bequemsten in Ihrer Nähe?_
 
-Wählen Sie entweder Amazon Web Services (AWS) oder Microsoft Azure as a Service (IaaS) als Grundlage für Ihre Adobe Commerce on Cloud Infrastructure Pro-Projekte. Jeder Dienstleister ist in mehreren Regionen tätig und bietet mehrere Verfügbarkeitszonen. Wählen Sie eine Region aus, die Ihrem Standort entspricht, und reduzieren Sie das Latenzpotenzial und die höheren Kosten.
+Wählen Sie entweder Amazon Web Services (AWS) oder Microsoft Azure as a Service (IaaS) für Ihre Adobe Commerce on Cloud Infrastructure Pro-Projekte. Jeder Dienstleister ist in mehreren Regionen tätig und bietet mehrere Verfügbarkeitszonen. Wählen Sie eine Region aus, die Ihrem Standort entspricht, und reduzieren Sie das Latenzpotenzial und die höheren Kosten.
 
 Siehe [Karte der Cloud-Regionen von Adobe Commerce](../cloud-guide/overview.md).
 
@@ -67,7 +68,7 @@ Siehe [Karte der Cloud-Regionen von Adobe Commerce](../cloud-guide/overview.md).
 
 **Frage 5**: _Benötigen Sie einen PrivateLink-Service? Wenn ja, in welcher Region ist die PrivateLink-Verbindung?_
 
-Adobe Commerce in der Cloud-Infrastruktur unterstützt die Integration mit dem AWS PrivateLink- oder Azure Private Link-Service. Obwohl dieser Service optional ist, wird PrivateLink verwendet, um eine sichere, private Kommunikation zwischen Cloud-Infrastrukturumgebungen mit Services und Anwendungen herzustellen, die auf externen Systemen gehostet werden.
+Adobe Commerce in Cloud-Infrastrukturen unterstützt die Integration mit AWS PrivateLink oder Azure Private Link. Obwohl dieser Service optional ist, wird PrivateLink verwendet, um eine sichere, private Kommunikation zwischen Cloud-Infrastrukturumgebungen mit Services und Anwendungen herzustellen, die auf externen Systemen gehostet werden.
 
 Es ist wichtig, Ihre Cloud Service-Strategie (AWS oder Azure) zu berücksichtigen, damit die Adobe Commerce-Instanz in derselben Region zugänglich ist. Siehe [PrivateLink-](../cloud-guide/development/privatelink-service.md) im Handbuch _Commerce on Cloud Infrastructure_, um weitere Informationen zur regionalen Barrierefreiheit zu erhalten.
 

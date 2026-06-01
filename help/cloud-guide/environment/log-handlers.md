@@ -3,16 +3,17 @@ title: Protokoll-Handler
 description: Erfahren Sie, wie Sie Protokoll-Handler für Adobe Commerce in der Cloud-Infrastruktur konfigurieren.
 feature: Cloud, Logs, Configuration
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 0d7fb653-468b-432c-9830-582b0fed8512
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
 # Protokoll-Handler
 
-Sie können Protokoll-Handler konfigurieren, um Nachrichten an einen Remote-Protokollierungsserver zu senden. Ein Protokoll-Handler überträgt Build- und Bereitstellungsprotokolle auf andere Systeme, ähnlich wie Sie Protokolle per Push an Slack und E-Mail senden. Sie können einen _syslog_-Handler aktivieren, der sich ideal für die Protokollierung von Meldungen im Zusammenhang mit Hardware eignet, oder einen Graulog Extended Log Format (GELF)-Handler, der sich ideal für die Protokollierung von Meldungen aus Software-Anwendungen eignet.
+Sie können Protokoll-Handler konfigurieren, um Nachrichten an einen Remote-Protokollierungsserver zu senden. Ein Protokoll-Handler überträgt Build- und Bereitstellungsprotokolle an andere Systeme, ähnlich wie Sie Protokolle an Slack und E-Mails senden. Sie können einen _syslog_-Handler aktivieren, der sich ideal für die Protokollierung von Meldungen im Zusammenhang mit Hardware eignet, oder einen Graulog Extended Log Format (GELF)-Handler, der sich ideal für die Protokollierung von Meldungen aus Software-Anwendungen eignet.
 
 Im folgenden Beispiel werden diese beiden Handler konfiguriert, indem die Konfiguration zur `.magento.env.yaml`-Datei hinzugefügt wird. Die Werte für die minimale Protokollierungsebene (`min_level`) finden Sie unter [Protokollierungsebenen](#log-levels).
 

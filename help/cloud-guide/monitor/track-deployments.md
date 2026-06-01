@@ -4,9 +4,10 @@ description: Erfahren Sie, wie Sie New Relic konfigurieren, um Bereitstellungen 
 feature: Cloud, Deploy, Observability
 topic: Performance
 last-substantial-update: 2023-10-12T00:00:00Z
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3344314e-bed5-4b98-a2a1-a3a97f61ac85
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---

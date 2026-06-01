@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Cache, Services
 exl-id: 69954ef9-9ece-411e-934e-814a56542290
 source-git-commit: f496a4a96936558e6808b3ce74eac32dfdb9db19
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -243,7 +243,7 @@ Verwenden Sie basierend auf dem zurückgegebenen Status die folgenden Anweisunge
 
   Wenn Sie [Konfigurationsverwaltung](../store/store-settings.md#configure-store) verwenden, überprüfen Sie den Status des Fastly CDN-Moduls in der `app/etc/config.php`-Konfigurationsdatei, bevor Sie Änderungen in die Produktions- oder Staging-Umgebung pushen.
 
-  Wenn das Modul in der `Fastly_CDN => 0`-Datei nicht aktiviert (`config.php`) ist, löschen Sie die Datei und führen Sie den folgenden Befehl aus, um `config.php` mit den neuesten Konfigurationseinstellungen zu aktualisieren.
+  Wenn das Modul in der `config.php`-Datei nicht aktiviert (`Fastly_CDN => 0`) ist, löschen Sie die Datei und führen Sie den folgenden Befehl aus, um `config.php` mit den neuesten Konfigurationseinstellungen zu aktualisieren.
 
   ```bash
   bin/magento magento-cloud:scd-dump

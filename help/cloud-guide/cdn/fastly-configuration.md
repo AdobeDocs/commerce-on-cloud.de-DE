@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 source-git-commit: cfb9aa37ddb4220aa9ce0b2e876c99bcdd40ae5a
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    >[!NOTE]
    >
-   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Adobe Verwenden Sie stattdessen die von [&#x200B; bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
+   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die von [&#x200B; bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
 
 1. Klicken Sie **Testanmeldeinformationen**.
 

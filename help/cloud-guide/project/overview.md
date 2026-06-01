@@ -5,7 +5,7 @@ last-substantial-update: 2024-02-06T00:00:00Z
 exl-id: 8eed04c7-6469-45a4-aa89-dc594c977264
 source-git-commit: 00b1b6578c226a304697963d17ba349ea17da260
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ https://<branch>-<unique-ID>-<project-ID>.<region>.magentosite.cloud/
 
 - **Eindeutige ID** = 7 zufällige alphanumerische Zeichen
 - **Projekt-ID** = Projekt-ID mit 13 Zeichen
-- **Region** = Name der AWS- oder Azure-Region, siehe &quot;[&#x200B; IP-Adressen](regional-ip-addresses.md)
+- **Region** = Name der Region AWS oder Azure, siehe &quot;[&#x200B; IP-Adressen](regional-ip-addresses.md)
 
 Die Pro-Produktions- und Staging-Umgebungen umfassen drei Knoten, auf die Sie über die folgenden Links zugreifen können:
 
@@ -131,7 +131,7 @@ Klicken Sie auf **[!UICONTROL Environments]** und wählen Sie eine bestimmte Umg
 | --------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | Allgemein | Konfigurieren von Anzeigename, Umgebungstyp und übergeordneter Umgebung.<br>Umschalten zwischen Umgebungseinstellungen: |
 |           | **Ausgehende E-Mails aktivieren**: Senden Sie [ausgehende E-Mails](outgoing-emails.md) aus der Umgebung mithilfe des SMTP-Protokolls. |
-|           | **Vor Suchmaschinen verstecken**: Blockieren Sie Suchmaschinen-Indexer und -Crawler von der Website. |
+|           | **Vor Suchmaschinen ausblenden**: Blockieren Sie Suchmaschinen-Indexer und Crawler-Ordner von der Website. |
 |           | **HTTP-Zugriffssteuerung**: Aktivieren Sie die Sicherheitskonfiguration für den [!DNL Cloud Console] mithilfe einer Anmelde- und IP-Adresszugriffssteuerung. |
 |           | Status ist `active` oder `inactive`. Der Großteil Ihrer Arbeit befindet sich in einer aktiven Umgebung. Sie können die Umgebung deaktivieren oder löschen. |
 | Variablen | Anzeigen, Erstellen und Verwalten von [Variablen auf &#x200B;](../environment/variable-levels.md) zur Laufzeit. |

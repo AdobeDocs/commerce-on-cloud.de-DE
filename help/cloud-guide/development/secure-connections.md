@@ -7,7 +7,7 @@ topic: Security
 exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
 source-git-commit: 9c0b4bea11abb2ce5644556ab3dadd361f8ff449
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Erstellen Sie auf jedem Computer und Arbeitsbereich ein SSH-Schlüsselpaar, das 
 
 >[!CAUTION]
 >
->**Geben Sie niemals Ihren privaten Schlüssel frei.** Fügen Sie es nicht einem Ticket hinzu, kopieren Sie es nicht in einen Chat oder fügen Sie es E-Mails hinzu.
+>**Geben Sie Ihren privaten Schlüssel nie frei.** Fügen Sie es nicht einem Ticket hinzu, kopieren Sie es nicht in einen Chat oder fügen Sie es E-Mails hinzu.
 
 ## Hinzufügen eines öffentlichen SSH-Schlüssels zu Ihrem Konto
 

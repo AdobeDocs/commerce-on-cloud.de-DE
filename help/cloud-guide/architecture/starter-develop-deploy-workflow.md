@@ -2,9 +2,10 @@
 title: Projekt-Workflow starten
 description: Erfahren Sie, wie Sie die anfänglichen Entwicklungs- und Bereitstellungs-Workflows verwenden.
 feature: Cloud, Paas
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 75d170b6-1ec2-4099-82c8-5c4df3442843
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---

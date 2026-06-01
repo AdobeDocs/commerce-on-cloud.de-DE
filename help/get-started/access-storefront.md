@@ -2,9 +2,10 @@
 title: Zugriff auf das Commerce Admin Panel
 description: Erfahren Sie, wie Sie auf Ihr Commerce Admin-Bedienfeld zugreifen können.
 recommendations: noDisplay, catalog
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 827417b0-9048-44d8-8c82-07befba476c7
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Sie können eine Kennwortänderungsanfrage mit einer der folgenden Methoden send
 
 - Suchen Sie die Begrüßungs-E-Mail, die an die E-Mail-Adresse des Lizenzinhabers gesendet wurde, und folgen Sie dem Link, um Ihr Kennwort zu ändern.
 
-- Kopieren Sie die Store-URL aus dem [[!DNL Cloud Console]](../cloud-guide/project/overview.md) in einen Browser. Hängen Sie dann `/admin` an das Ende der URL an, um die Anmeldeseite zu öffnen. Klicken Sie auf **Kennwort vergessen?** Link zum Senden einer Anforderung zur Passwortänderung an die E-Mail-Adresse des Lizenzinhabers.
+- Kopieren Sie die Store-URL aus dem [[!DNL Cloud Console]](../cloud-guide/project/overview.md) in einen Browser. Hängen Sie dann `/admin` an das Ende der URL an, um die Anmeldeseite zu öffnen. Klicken Sie auf **Kennwort vergessen?** , um eine Passwortänderungsanfrage an die E-Mail-Adresse des Lizenzinhabers zu senden.
 
 Nachdem Sie die Kennwortänderungsanfrage gesendet haben, überprüfen Sie Ihre E-Mail auf die Benachrichtigung zum Zurücksetzen des Kennworts. Wenn Sie die E-Mail nicht erhalten, überprüfen Sie Ihren Spam-Ordner.
 

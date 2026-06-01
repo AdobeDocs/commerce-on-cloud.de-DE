@@ -2,9 +2,10 @@
 title: Best Practices für die Store-Konfiguration
 description: Lesen Sie die Best Practices für die Konfiguration Ihres Stores in Adobe Commerce in der Cloud-Infrastruktur.
 feature: Cloud, Best Practices
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ae7da73b-f874-4623-bf29-821ee0a00eb9
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---

@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
 exl-id: 429b6762-0b01-438b-a962-35376306895b
 source-git-commit: 0300930577959631a2331997ebb104381136f240
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ mywebsite.com/rest/default/V1/inventory/source-items
 #### Auswirkungen auf das Verhalten von Services
 
 - **Ausgehende IP-Adressen ändern sich nicht.**
-- **REST-APIs sind davon nicht betroffen.** Fastly speichert API-Aufrufe nicht zwischen.
+- **REST-APIs sind nicht betroffen.** Fastly speichert keine API-Aufrufe zwischen.
 - **Bereitstellungen und Ausfallzeiten sind davon nicht betroffen.**
 - Wenn ein Projekt über mehrere Staging-Umgebungen **, gelten die ursprünglichen** für alle.
 

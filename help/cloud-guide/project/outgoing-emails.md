@@ -1,9 +1,10 @@
 ---
 title: Ausgehende E-Mails konfigurieren
 description: Erfahren Sie, wie Sie ausgehende E-Mails für Adobe Commerce in der Cloud-Infrastruktur aktivieren.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 616e287b-960a-4933-916e-37896ee6b533
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---

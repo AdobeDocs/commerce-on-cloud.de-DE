@@ -3,9 +3,10 @@ title: New Relic-Überwachung
 description: Erfahren Sie, wie Sie auf Ihr New Relic-Dashboard zugreifen und Daten aus Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt analysieren können.
 feature: Cloud, Observability
 topic: Performance
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: b9d806c4-f659-4e10-8dcb-b320a61de5e1
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Alle erfassten Daten geben Aufschluss über die Zeit, die mit Aktionen verbracht
 
 ## Überwachen der Leistung mit verwalteten Warnhinweisen
 
-Adobe stellt die Warnhinweisrichtlinie _Managed Alerts for Adobe Commerce_ zur Verfolgung von Leistungsmetriken bereit. Die Richtlinie umfasst eine Sammlung von Warnhinweisen, die Schwellenwerte und Trigger-Warnungen festlegen, sowie kritische Benachrichtigungen, wenn Infrastruktur- oder Anwendungsprobleme die Site-Performance beeinträchtigen. Die Richtlinie verfolgt die folgenden Metriken in Produktionsumgebungen:
+Adobe bietet die _Warnhinweisrichtlinie für Adobe Commerce_, um Leistungsmetriken zu verfolgen. Die Richtlinie umfasst eine Sammlung von Warnhinweisen, die Schwellenwerte und Trigger-Warnungen festlegen, sowie kritische Benachrichtigungen, wenn Infrastruktur- oder Anwendungsprobleme die Site-Performance beeinträchtigen. Die Richtlinie verfolgt die folgenden Metriken in Produktionsumgebungen:
 
 | Metrik | Datenerfassung | Verfügbarkeit |
 |:-------------------|:----------------|:----------------|
@@ -124,4 +125,4 @@ Siehe die New Relic-Dokumentation zu [Workflows](https://docs.newrelic.com/docs/
 
 >[!WARNING]
 >
->Die Warnhinweise in der Richtlinie Verwaltete Warnhinweise für Adobe Commerce verfügen über standardmäßige Workflows, die Adobe-Teams benachrichtigen, die Kunden von Adobe Commerce in Cloud-Infrastrukturen unterstützen. Ändern Sie nicht die Konfiguration für diese Standardkanäle und entfernen Sie keine ihnen zugewiesenen Warnmeldungsrichtlinien.
+>Die Warnhinweise in der Richtlinie Verwaltete Warnhinweise für Adobe Commerce verfügen über standardmäßige Workflows, um Adobe-Teams, die Adobe Commerce unterstützen, über Kunden mit Cloud-Infrastruktur zu benachrichtigen. Ändern Sie nicht die Konfiguration für diese Standardkanäle und entfernen Sie keine ihnen zugewiesenen Warnmeldungsrichtlinien.

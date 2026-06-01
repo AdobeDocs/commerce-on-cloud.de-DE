@@ -72,8 +72,7 @@ Wenn Sie bereit sind, Ihre Site zu starten, müssen Sie die DNS-Konfiguration ak
 
 >[!IMPORTANT]
 >
->Die DNS-Anweisungen in [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**Abschnitt 2.4**) geben Folgendes an:
->_Ein CNAME-Eintrag darf nicht gleichzeitig mit anderen Daten vorhanden sein. Mit anderen Worten: Wenn suzy.podunk.xx ein Alias für sue.podunk.xx ist, können Sie nicht auch einen MX-Eintrag für suzy.podunk.edu, einen A-Eintrag oder sogar einen TXT-Eintrag haben._
+>Die DNS-Anweisungen in [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**Abschnitt 2.4**) geben Folgendes an:>_Ein CNAME-Eintrag darf nicht gleichzeitig mit anderen Daten vorhanden sein. Mit anderen Worten: Wenn suzy.podunk.xx ein Alias für sue.podunk.xx ist, können Sie nicht auch einen MX-Eintrag für suzy.podunk.edu, einen A-Eintrag oder sogar einen TXT-Eintrag haben._
 >
 >Aus diesem Grund sollten DNS-Einträge für Subdomains vom Typ `CNAME` und für Apex-Domains (Root-Domains) vom Typ `A` sein. Wenn Sie diese Regel verwerfen, kann es zu Störungen des E-Mail-Service oder der DNS-Verbreitung kommen, da Sie die Möglichkeit verlieren, andere Datensätze wie MX oder NS hinzuzufügen. Einige DNS-Anbieter umgehen dies möglicherweise, indem sie interne Anpassungen verwenden, aber die Befolgung des Standards gewährleistet Stabilität und Flexibilität (z. B. den Wechsel des DNS-Anbieters).
 

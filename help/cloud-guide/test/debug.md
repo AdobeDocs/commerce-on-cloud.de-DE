@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Xdebug-Erweiterung konfigurieren, um Ihre
 exl-id: 32857c9c-4a49-4337-9c15-a6e46c328df7
 source-git-commit: d48b1844305e72b7b4a37568f2358f3aa4cf2e24
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
       - Produktion: `/app/<project_code>/`
       - Staging: `/app/<project_code>_stg/`
 
-1. Ändern Sie den [!DNL Xdebug] Port in `9000,9003` oder Sie können ihn im Bedienfeld `9000`PHP **>** Debug **>** Xdebug **>** Debug Port **auf nur** beschränken.
+1. Ändern Sie den [!DNL Xdebug] Port in `9000,9003` oder Sie können ihn im Bedienfeld **PHP** > **Debug** > **Xdebug** > **Debug Port** auf nur `9000` beschränken.
 
 1. Klicken Sie **Apply**.
 
@@ -143,7 +143,7 @@ Dadurch verfügt die Anwendung über die richtigen Debug-Einstellungen, um die A
 
 Ordnen Sie die `XDEBUG` Verbindung vom Server Ihrem lokalen System zu. Um jede Art von Debugging durchzuführen, müssen Sie Port 9000 von Ihrem Adobe Commerce auf dem Cloud-Infrastrukturserver an Ihren lokalen Computer weiterleiten. Siehe einen der folgenden Abschnitte:
 
-- [Port-Weiterleitung auf Mac oder UNIX](#port-forwarding-on-mac-or-unix)
+- [Port-Weiterleitung auf Mac oder UNIX®](#port-forwarding-on-mac-or-unix)
 - [Port-Weiterleitung unter Windows](#port-forwarding-on-windows)
 
 #### Port-Weiterleitung auf Mac oder UNIX®
@@ -328,7 +328,7 @@ Dies ist eine Demonstration der verwendeten Konfigurationen sowie eine Demonstra
 
    >[!NOTE]
    >
-   >Die von `XDEBUG_SESSION_START` Anforderungen übergebenen `POST` werden nicht unterstützt.
+   >Die von `POST` Anforderungen übergebenen `XDEBUG_SESSION_START` werden nicht unterstützt.
 
 ## Debuggen von CLI-Befehlen
 

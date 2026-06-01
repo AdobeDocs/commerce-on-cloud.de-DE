@@ -5,7 +5,7 @@ feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
 source-git-commit: 1cea1cdebf3aba2a1b43f305a61ca6b55e3b9d08
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Definiert die persistente Festplattengröße der Anwendung in MB.
 disk: 5120
 ```
 
-Die empfohlene Mindestgröße beträgt 256 MB. Wenn der Fehler `UserError: Error building the project: Disk size may not be smaller than 128MB`angezeigt wird, erhöhen Sie die Größe auf 256 MB.
+Die minimal empfohlene Festplattengröße beträgt 256 MB. Wenn der Fehler `UserError: Error building the project: Disk size may not be smaller than 128MB` angezeigt wird, erhöhen Sie die Größe auf 256 MB.
 
 >[!NOTE]
 >

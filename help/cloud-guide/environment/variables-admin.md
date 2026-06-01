@@ -38,7 +38,7 @@ Verwenden Sie die folgende Umgebungsvariable, um den Zugriff auf Ihre Admin-Benu
 
 ### Admin-URL ändern
 
-Standardmäßig ist die URL für [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin.html?lang=de) auf *&lt;domain_name>/admin* festgelegt. Aus Sicherheitsgründen empfiehlt Adobe, sie in eine eindeutige, benutzerdefinierte Admin-URL zu ändern, die nicht einfach zu erraten ist.
+Standardmäßig ist die URL [Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin.html?lang=de) auf *&lt;domain_name>/admin* festgelegt. Aus Sicherheitsgründen empfiehlt Adobe, sie in eine eindeutige, benutzerdefinierte Admin-URL zu ändern, die nicht einfach zu erraten ist.
 
 **In [!DNL Adobe Commerce] auf der Cloud** Infrastruktur müssen Sie die Admin-URL mithilfe der `ADMIN_URL` Umgebungsvariablen in der ([!DNL Cloud Console] oder [!DNL Cloud CLI]) ändern. Das Ändern der Einstellung über die [!DNL Admin] gilt nur für lokale Installationen. Bei On-Premise-Installationen folgen Sie [Benutzerdefinierte Admin-URL verwenden](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=de#use-a-custom-admin-url).
 

@@ -2,9 +2,10 @@
 title: Bitbucket-Integration
 description: Erfahren Sie, wie Sie Ihr Adobe Commerce in ein Cloud-Infrastrukturprojekt mit Bitbucket integrieren.
 feature: Cloud, Integration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 903c3064-1821-4f86-a468-4f0ccefb9b77
+source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
