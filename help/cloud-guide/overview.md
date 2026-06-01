@@ -2,7 +2,7 @@
 title: Commerce auf Cloud-Infrastruktur
 description: Erfahren Sie mehr über die Erstellung, Bereitstellung und Verwaltung von Commerce in Cloud-Infrastrukturen.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
-source-git-commit: 8abce85f5a2ed22e344e1489c592ac12415568d8
+source-git-commit: 37505db0488204c40ca37356c4d496bba73c537f
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -40,7 +40,7 @@ In den folgenden Abschnitten finden Sie Details zu den verschiedenen Regionen vo
 
 ## AWS-Regionen
 
-![Abbildung mit AWS-Regionen](../assets/aws-regions.svg){zoomable="yes"}
+![Abbildung mit AWS-Regionen](../assets/aws-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ In den folgenden Abschnitten finden Sie Details zu den verschiedenen Regionen vo
 
 ## Azure-Regionen
 
-![Abbildung mit Azure-Regionen](../assets/azure-regions.svg){zoomable="yes"}
+![Abbildung mit Azure-Regionen](../assets/azure-regions.png){zoomable="yes"}
 
 >[!NOTE]
 >

@@ -3,9 +3,9 @@ title: Technologie-Stack
 description: Weitere Informationen finden Sie im Technologie-Stack, der die Commerce on Cloud-Infrastruktur bildet.
 feature: Cloud, Iaas, Paas
 exl-id: 3fac1ab7-6440-4bf9-8169-9fadf51d70dd
-source-git-commit: 5fc2082ca2aae8a1466821075c01ce756ba382cc
+source-git-commit: 77d316fd53e477a2b45277db503ea8e5ede78930
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale Ebenen vor, wie unten dargestellt:
 
-![Cloud-Stack](../../assets/CloudStack.svg)
+![Cloud-Stack](../../assets/CloudStack.png)
 
-1. [**Cloud-Infrastruktur**](pro-architecture.md): Wählen Sie entweder Amazon Web Services (AWS) oder Microsoft Azure als Infrastructure as a Service (IaaS)-Grundlage für Ihre Adobe Commerce in Cloud Infrastructure Pro-Projekten.
+1. [**Cloud-Infrastruktur**](pro-architecture.md): Wählen Sie entweder Amazon Web Services (AWS) oder Microsoft Azure as a Service (IaaS) als Grundlage für Ihre Adobe Commerce in Cloud Infrastructure Pro-Projekten.
 
    Adobe analysiert routinemäßig die Nutzung Ihrer Virtual Compute Resource (vCPU) und weist automatisch Ressourcen zu, um Ihre langfristige Nutzung zu optimieren und das Risiko einer Überschreitung Ihrer maximalen jährlichen vCPU-Tagegelder zu minimieren. Wenn Sie für bestimmte Zeiträume einen erhöhten Site-Traffic erwarten, müssen Sie weiterhin ein Support-Ticket öffnen, um [eine temporäre Aktualisierung anzufordern](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=de).
 
