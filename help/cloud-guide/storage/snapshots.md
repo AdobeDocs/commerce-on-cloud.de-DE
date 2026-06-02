@@ -4,9 +4,13 @@ description: Erfahren Sie, wie Sie manuell eine Sicherung für Ihr Adobe Commerc
 feature: Cloud, Paas, Snapshots, Storage
 exl-id: e73a57e7-e56c-42b4-aa7b-2960673a7b68
 TQID: https://experienceleague.adobe.com/UHzlr5FQsXz6FEDpwWzYE5JxThIHAMXI-MKM-7DF2P0
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 865
@@ -41,7 +45,7 @@ Sie können ein manuelles Backup einer beliebigen aktiven Starter-Umgebung und I
 
 **So erstellen Sie eine Datenbank-Sicherung der Pro-Umgebung**:
 
-Informationen zum Erstellen eines Datenbank-Dump einer beliebigen Pro-Umgebung, einschließlich Staging und Produktion, finden Sie [ Knowledgebase-Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
+Informationen zum Erstellen eines Datenbank-Dump einer beliebigen Pro-Umgebung, einschließlich Staging und Produktion, finden Sie [&#x200B; Knowledgebase-Artikel &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud) Erstellen eines Datenbank-Dump .
 
 **So erstellen Sie eine Sicherung einer beliebigen Starter-Umgebung mit dem[!DNL Cloud Console]**:
 
@@ -154,7 +158,7 @@ Die Wiederherstellungszeiten hängen von der Größe der Datenbank ab:
 
 ## Wiederherstellen eines Snapshots zur Notfallwiederherstellung
 
-Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [ Sie den Datenbank-Dump direkt vom Server ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+Um den Snapshot für die Notfallwiederherstellung in Pro-Staging- und Produktionsumgebungen wiederherzustellen, [&#x200B; Sie den Datenbank-Dump direkt vom Server &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Rollback-Code
 

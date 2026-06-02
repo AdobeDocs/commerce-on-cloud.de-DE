@@ -5,9 +5,12 @@ role: Admin
 recommendations: noDisplay, catalog
 exl-id: 9b48212a-2560-4090-b483-a8b04471de95
 TQID: https://experienceleague.adobe.com/y1WQfRLHOhgyZfCISQEsIRju7g79oq-ikJH1Tl7z420
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 517
@@ -33,7 +36,7 @@ Der Lizenzinhaber kann Benutzerkonten hinzufügen, um Zugriff auf Code zu gewäh
 
 ### Benutzerregistrierung
 
-Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen hinzufügen. Wenn Sie einen neuen Benutzer haben, bitten Sie ihn, sich [für ein Konto ](https://account.magento.com/customer/account/login/)) anzumelden und die mit seinem Kontoprofil verknüpfte E-Mail-Adresse anzugeben.
+Sie können nur registrierte Benutzende zu Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen hinzufügen. Wenn Sie einen neuen Benutzer haben, bitten Sie ihn, sich [für ein Konto &#x200B;](https://account.magento.com/customer/account/login/)) anzumelden und die mit seinem Kontoprofil verknüpfte E-Mail-Adresse anzugeben.
 
 ### Zugriff auf freigegebenes Konto
 
@@ -53,5 +56,5 @@ Auf der Seite finden Sie einen Status für Adobe Commerce-Komponenten und -Servi
 >
 > Öffnen Sie die neue [!DNL Cloud Console] und zeigen Sie Projekt- und Umgebungsaktivitäten an.
 >
->**Nächster Schritt**: [Melden Sie sich bei der CL[!DNL ]oud-Konsole an](cloud-console.md)
+>**Nächster Schritt**: [Melden Sie sich bei der CLoud-Konsole an](cloud-console.md)
 

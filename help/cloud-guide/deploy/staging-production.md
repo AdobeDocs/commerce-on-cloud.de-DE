@@ -4,11 +4,20 @@ description: Erfahren Sie, wie Sie Ihren Adobe Commerce auf Cloud-Infrastruktur-
 feature: Cloud, Console, Deploy, SCD, Storage
 exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
 TQID: https://experienceleague.adobe.com/SJZ2BuPEe6QsgkPyODiZx6118qd6vxh72r3nVuPrLnM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: b01a71b7-d17a-42b2-a9ac-af4b8d9d2ef5
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: b01a71b7-d17a-42b2-a9ac-af4b8d9d2ef5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1374
@@ -26,7 +35,7 @@ Wenn Sie bereit sind, Ihren Store bereitzustellen, müssen Sie die Bereitstellun
 >
 >Adobe empfiehlt, vor der Bereitstellung ein [Backup](../storage/snapshots.md) der Umgebung zu erstellen.
 
-Außerdem können Sie &quot;[ mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
+Außerdem können Sie &quot;[&#x200B; mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
 
 ## Starter-Bereitstellungsfluss
 
@@ -42,7 +51,7 @@ Ausführliche Informationen zum Prozess finden Sie unter [Workflow für Entwickl
 
 ## Bereitstellen von Code für das Staging
 
-Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) ](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
+Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) &#x200B;](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
 
 ### Bereitstellen von Code mit dem [!DNL Cloud Console]
 

@@ -4,10 +4,18 @@ description: Erfahren Sie, wie Sie Probleme mit dem Fastly CDN-Modul und den Ser
 feature: Cloud, Configuration, Cache, Services
 exl-id: 69954ef9-9ece-411e-934e-814a56542290
 TQID: https://experienceleague.adobe.com/2TJ-5byRz5seZ1tpd4FXjZ6JfeaqtKs6ZQlv81Lkr7c
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1911
@@ -45,11 +53,11 @@ Verwenden Sie die folgende Liste, um Probleme im Zusammenhang mit der Fastly-Ser
 
 - **Das Menü „Store“ wird nicht angezeigt oder**. Möglicherweise verwenden Sie einen Link oder einen temporären Link direkt zum ursprünglichen Server, anstatt die Live-Site-URL zu verwenden, oder Sie haben `-H "host:URL"` in einem [cURL-Befehl verwendet](#check-live-site-through-fastly). Wenn Sie Fastly auf den Ursprungs-Server umgehen, funktioniert das Hauptmenü nicht und es werden falsche Kopfzeilen angezeigt, die das Caching auf der Browser-Seite ermöglichen.
 
-- **Die obere Navigation funktioniert nicht** - Die obere Navigation beruht auf der Edge Side Includes (ESI)-Verarbeitung, die aktiviert wird, wenn Sie die standardmäßigen Magento Fastly-VCL-Snippets hochladen. Wenn die Navigation nicht funktioniert, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
+- **Die obere Navigation funktioniert nicht** - Die obere Navigation beruht auf der Edge Side Includes (ESI)-Verarbeitung, die aktiviert wird, wenn Sie die standardmäßigen Magento Fastly-VCL-Snippets hochladen. Wenn die Navigation nicht funktioniert, laden [&#x200B; die Fastly-VCL hoch &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
 
-- **Geo-location/GeoIP funktioniert nicht** - Die standardmäßigen Magento Fastly-VCL-Snippets hängen den Länder-Code an die URL an. Wenn der Länder-Code nicht funktioniert, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Website erneut.
+- **Geo-location/GeoIP funktioniert nicht** - Die standardmäßigen Magento Fastly-VCL-Snippets hängen den Länder-Code an die URL an. Wenn der Länder-Code nicht funktioniert, laden [&#x200B; die Fastly-VCL hoch &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Website erneut.
 
-- **Seiten werden nicht zwischengespeichert** - Standardmäßig speichert Fastly Seiten nicht mit dem `Set-Cookies`-Header zwischen. Adobe Commerce setzt Cookies auch auf zwischenspeicherbaren Seiten (TTL > 0). Die standardmäßige Magento Fastly-VCL streicht diese Cookies auf zwischenspeicherbaren Seiten. Wenn Seiten nicht zwischengespeichert werden, laden [ die Fastly-VCL hoch ](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
+- **Seiten werden nicht zwischengespeichert** - Standardmäßig speichert Fastly Seiten nicht mit dem `Set-Cookies`-Header zwischen. Adobe Commerce setzt Cookies auch auf zwischenspeicherbaren Seiten (TTL > 0). Die standardmäßige Magento Fastly-VCL streicht diese Cookies auf zwischenspeicherbaren Seiten. Wenn Seiten nicht zwischengespeichert werden, laden [&#x200B; die Fastly-VCL hoch &#x200B;](fastly-configuration.md#upload-vcl-to-fastly) überprüfen Sie die Site erneut.
 
   Dieses Problem kann auch auftreten, wenn ein Seitenblock in einer Vorlage als nicht Cache-fähig markiert ist. In diesem Fall ist das Problem höchstwahrscheinlich auf ein Drittanbietermodul oder eine Erweiterung zurückzuführen, das bzw. die die Adobe Commerce-Kopfzeilen blockiert oder entfernt. Informationen zum Beheben des Problems finden Sie unter [X-Cache enthält nur MISS, keinen HIT](#x-cache-contains-only-miss-no-hit).
 
@@ -64,7 +72,7 @@ Verwenden Sie die folgende Liste, um Probleme im Zusammenhang mit der Fastly-Ser
    - Ungültige Fastly-Anmeldeinformationen in der Fastly-Service-Konfiguration für die Adobe Commerce in der Cloud-Infrastrukturprojektumgebung
    - Ungültiger Code in einem benutzerdefinierten VCL-Code
 
-  Informationen zum Beheben des Problems finden Sie unter [Fehler beim Bereinigen des Fastly-Cache in ](https://support.magento.com/hc/en-us/articles/115001853194-Error-purging-Fastly-cache-on-Cloud-The-purge-request-was-not-processed-successfully-) Cloud“ im Adobe Commerce-Hilfezentrum.
+  Informationen zum Beheben des Problems finden Sie unter [Fehler beim Bereinigen des Fastly-Cache in &#x200B;](https://support.magento.com/hc/en-us/articles/115001853194-Error-purging-Fastly-cache-on-Cloud-The-purge-request-was-not-processed-successfully-) Cloud“ im Adobe Commerce-Hilfezentrum.
 
 ## 503 Fehler von Fastly
 
@@ -94,7 +102,7 @@ Wenn Sie einen 503-Fehler erhalten, überprüfen Sie das Fehlerprotokoll für di
 
   Durchsuchen Sie das Protokoll nach HTTP-200-Antworten nach der URL, die den 503-Fehler zurückgegeben hat. Wenn Sie die Antwort 200 finden, bedeutet dies, dass Adobe Commerce die Seite fehlerfrei zurückgegeben hat. Dies deutet darauf hin, dass das Problem möglicherweise nach dem Intervall aufgetreten ist, das den in der Fastly-Service-Konfiguration festgelegten `first_byte_timeout` überschreitet.
 
-Wenn ein 503-Fehler auftritt, gibt Fastly den Grund auf der Fehler- und Wartungsseite zurück. Möglicherweise wird der Grund nicht angezeigt, wenn Sie Code für eine [benutzerdefinierte Antwortseite“ ](fastly-custom-response.md). Um den Ursachen-Code auf der Standardfehlerseite anzuzeigen, können Sie den HTML-Code für die benutzerdefinierte Fehlerseite entfernen.
+Wenn ein 503-Fehler auftritt, gibt Fastly den Grund auf der Fehler- und Wartungsseite zurück. Möglicherweise wird der Grund nicht angezeigt, wenn Sie Code für eine [benutzerdefinierte Antwortseite“ &#x200B;](fastly-custom-response.md). Um den Ursachen-Code auf der Standardfehlerseite anzuzeigen, können Sie den HTML-Code für die benutzerdefinierte Fehlerseite entfernen.
 
 **So überprüfen Sie die Fehlerseite von Fastly 503**:
 
@@ -234,7 +242,7 @@ Dieser Abschnitt enthält Vorschläge zur Behebung von Fehlern, die beim Überpr
 
 #### Fastly-Modul ist nicht aktiviert
 
-Wenn das Fastly-Modul nicht aktiviert ist (`Fastly-Module-Enabled: no`) oder die Kopfzeile fehlt, [verwenden Sie SSH, um sich ](../development/secure-connections.md#connect-to-a-remote-environment) Projekt anzumelden. Führen Sie dann den folgenden Befehl aus, um den Modulstatus zu überprüfen.
+Wenn das Fastly-Modul nicht aktiviert ist (`Fastly-Module-Enabled: no`) oder die Kopfzeile fehlt, [verwenden Sie SSH, um sich &#x200B;](../development/secure-connections.md#connect-to-a-remote-environment) Projekt anzumelden. Führen Sie dann den folgenden Befehl aus, um den Modulstatus zu überprüfen.
 
 ```bash
 php bin/magento module:status Fastly_Cdn
@@ -264,7 +272,7 @@ Wenn die `X-Cache`-Kopfzeile `HIT` (`HIT, HIT` oder `HIT, MISS`) enthält, bedeu
 
 Wenn die `X-Cache`-Kopfzeile `MISS, MISS` ist und keine `HIT` enthält, führen Sie den `curl` erneut aus, um sicherzustellen, dass die Seite nicht kürzlich aus dem Cache gelöscht wurde.
 
-Wenn Sie dasselbe Ergebnis erhalten, verwenden Sie die [`curl` Befehle ](#check-live-site-through-fastly) überprüfen Sie die [Antwort-Header](#check-cache-hit-and-miss-response-headers):
+Wenn Sie dasselbe Ergebnis erhalten, verwenden Sie die [`curl` Befehle &#x200B;](#check-live-site-through-fastly) überprüfen Sie die [Antwort-Header](#check-cache-hit-and-miss-response-headers):
 
 - `Pragma` ist `cache`
 - `X-Magento-Tags` vorhanden

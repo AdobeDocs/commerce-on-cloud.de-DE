@@ -4,10 +4,17 @@ description: Erfahren Sie, wie Sie die Adobe Commerce-Version in der Cloud-Infra
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
 TQID: https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1020
@@ -17,7 +24,7 @@ ht-degree: 0%
 
 # Commerce-Version aktualisieren
 
-Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [ Abschnitt &quot;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
+Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [&#x200B; Abschnitt &quot;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
 
 Je nach Umgebungstyp (Entwicklung, Staging oder Produktion) können Ihre Upgrade-Aufgaben Folgendes umfassen:
 
@@ -149,7 +156,7 @@ Lesen Sie die [Service-Versionen](../services/services-yaml.md#service-versions)
 
 1. Überprüfen Sie die aktuell angewendeten Patches:
 
-   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
+   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
 
    - Wenn [Quality Patches] in der `.magento.env.yaml`-Datei angewendet wurden, überprüfen Sie, ob diese weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `QUALITY_PATCHES` Abschnitt der `.magento.env.yaml`.
 
@@ -236,7 +243,7 @@ Exception printing is disabled by default for security reasons.
 
 1. Öffnen Sie die `./app/var/report/<error number>`.
 
-1. [Überprüfen Sie die ](../test/log-locations.md) und ermitteln Sie die Ursache des Problems.
+1. [Überprüfen Sie die &#x200B;](../test/log-locations.md) und ermitteln Sie die Ursache des Problems.
 
 1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.
 

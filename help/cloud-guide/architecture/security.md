@@ -4,11 +4,25 @@ description: Erfahren Sie, wie Adobe die Sicherheit von Adobe Commerce in der Cl
 feature: Cloud, Security
 exl-id: ae934401-2c32-427a-8162-98df9a047cd4
 TQID: https://experienceleague.adobe.com/3qXIdZWVJ-jxSodN8YGSzE2TOvMzlMKXHgRizgLVoHk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2: id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7id: f2261633-201d-46c5-8a66-999e70527a83id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2:
+  - id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1724
@@ -77,7 +91,7 @@ Die vollständige Code-Basis wird mit diesen Tools alle zwei Wochen gescannt. Ku
 
 Kunden müssen sicherstellen, dass diese Patches innerhalb von 30 Tagen nach der Veröffentlichung gemäß den PCI-Richtlinien auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Tool zur Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Dienst, der auf jeder beliebigen Adobe Commerce-Version ausgeführt werden kann.
 
-Um Sicherheitsforscher dazu zu ermutigen, Sicherheitslücken zu identifizieren und zu melden, [ Adobe Commerce zusätzlich zu internen Tests ein ](https://hackerone.com/magento)Bug-Bounty-Programm“. Des Weiteren wird dem Kunden der vollständige Quellcode des Programms zur eigenen Überprüfung, falls gewünscht, bereitgestellt.
+Um Sicherheitsforscher dazu zu ermutigen, Sicherheitslücken zu identifizieren und zu melden, [&#x200B; Adobe Commerce zusätzlich zu internen Tests ein &#x200B;](https://hackerone.com/magento)Bug-Bounty-Programm“. Des Weiteren wird dem Kunden der vollständige Quellcode des Programms zur eigenen Überprüfung, falls gewünscht, bereitgestellt.
 
 ## Schreibgeschütztes Dateisystem
 
@@ -89,7 +103,7 @@ Die einzige Möglichkeit, ausführbaren Code in die Managed Services-Produktions
 
 ## Protokollierung
 
-Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Betriebssystem-, Anwendungs- und Datenbankprotokolle werden auf den Produktions-Servern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce [Project Web Interface) ](../project/overview.md). Alle Support-Zugriffe werden protokolliert und Support-Sitzungen aufgezeichnet.
+Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Betriebssystem-, Anwendungs- und Datenbankprotokolle werden auf den Produktions-Servern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce [Project Web Interface) &#x200B;](../project/overview.md). Alle Support-Zugriffe werden protokolliert und Support-Sitzungen aufgezeichnet.
 
 Siehe [Protokolle anzeigen und verwalten](../test/log-locations.md).
 
@@ -115,7 +129,7 @@ Die DSGVO fordert, dass alle personenbezogenen Daten (wie Namen, Rasse und Gebur
 
 >[!NOTE]
 >
->Diese Seite bietet einen allgemeinen Überblick darüber, was im Rahmen der DSGVO zu beachten ist. Einzelheiten zur Speicherung _[personenbezogenen Daten durch Adobe Commerce finden Sie ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ „Sicherheits- und Compliance-Handbuch“. Um zu bestimmen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Diese Seite bietet einen allgemeinen Überblick darüber, was im Rahmen der DSGVO zu beachten ist. Einzelheiten zur Speicherung _[personenbezogenen Daten durch Adobe Commerce finden Sie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)_ „Sicherheits- und Compliance-Handbuch“. Um zu bestimmen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Backups
 

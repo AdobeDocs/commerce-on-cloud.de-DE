@@ -3,10 +3,18 @@ title: Checkliste starten
 description: Überprüfen Sie die Checklisten-Elemente für den Site-Launch.
 exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
 TQID: https://experienceleague.adobe.com/-27J2-qKGpa71AJliIomIC7heTbTelOnFf960NODt0E
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1155
@@ -20,13 +28,13 @@ Laden Sie vor der Bereitstellung in der Produktionsumgebung die [Launch-Checklis
 
 ## Vollständiger Test in der Produktion
 
-Unter [Testen ](../test/staging-and-production.md) Bereitstellung“ können Sie alle Aspekte Ihrer Sites, Stores und Umgebungen testen. Zu diesen Tests gehören die schnelle Verifizierung, Benutzerakzeptanztests (UAT) und Leistungstests.
+Unter [Testen &#x200B;](../test/staging-and-production.md) Bereitstellung“ können Sie alle Aspekte Ihrer Sites, Stores und Umgebungen testen. Zu diesen Tests gehören die schnelle Verifizierung, Benutzerakzeptanztests (UAT) und Leistungstests.
 
 ## TLS und Fastly
 
 Adobe stellt für jede Umgebung ein SSL-/TLS-Zertifikat zum Verschlüsseln bereit. Dieses Zertifikat ist für Fastly erforderlich, um sicheren Traffic über HTTPS bereitzustellen.
 
-Um dieses Zertifikat verwenden zu können, müssen Sie Ihre DNS-Konfiguration aktualisieren, damit Adobe die Domain-Validierung abschließen und das Zertifikat auf Ihre Umgebung anwenden kann. Jede Umgebung verfügt über ein eindeutiges Zertifikat, das die Domains für die Adobe Commerce auf Cloud-Infrastruktur-Sites abdeckt, die in dieser Umgebung bereitgestellt werden. Es wird empfohlen, die Konfigurationsaktualisierungen während des [Schnell einrichten“-Prozesses abzuschließen und ](../cdn/fastly-configuration.md).
+Um dieses Zertifikat verwenden zu können, müssen Sie Ihre DNS-Konfiguration aktualisieren, damit Adobe die Domain-Validierung abschließen und das Zertifikat auf Ihre Umgebung anwenden kann. Jede Umgebung verfügt über ein eindeutiges Zertifikat, das die Domains für die Adobe Commerce auf Cloud-Infrastruktur-Sites abdeckt, die in dieser Umgebung bereitgestellt werden. Es wird empfohlen, die Konfigurationsaktualisierungen während des [Schnell einrichten“-Prozesses abzuschließen und &#x200B;](../cdn/fastly-configuration.md).
 
 ## DNS-Konfiguration mit Produktionseinstellungen aktualisieren
 
@@ -38,7 +46,7 @@ Wenn Sie bereit sind, Ihre Site zu starten, müssen Sie die DNS-Konfiguration ak
 
 - Die Konfiguration der Produktionsumgebung wurde mit allen erforderlichen Domains aktualisiert
 
-  In der Regel fügen Sie gemeinsam mit Ihrem technischen Kundenberater alle Domains und Subdomains der obersten Ebene hinzu, die für Ihre Stores erforderlich sind. Um die Domains für Ihre Produktionsumgebung hinzuzufügen oder zu ändern, [ Sie ein Adobe Commerce-Support-Ticket ](https://support.magento.com/hc/en-us/articles/360019088251). Warten Sie auf die Bestätigung, dass Ihre Projektkonfiguration aktualisiert wurde.
+  In der Regel fügen Sie gemeinsam mit Ihrem technischen Kundenberater alle Domains und Subdomains der obersten Ebene hinzu, die für Ihre Stores erforderlich sind. Um die Domains für Ihre Produktionsumgebung hinzuzufügen oder zu ändern, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://support.magento.com/hc/en-us/articles/360019088251). Warten Sie auf die Bestätigung, dass Ihre Projektkonfiguration aktualisiert wurde.
 
   Bei Ausgangsprojekten müssen Sie die Domains zu Ihrem Projekt hinzufügen. Siehe [Verwalten von Domains](../cdn/fastly-custom-cache-configuration.md#manage-domains).
 

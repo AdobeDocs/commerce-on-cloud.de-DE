@@ -3,10 +3,18 @@ title: SendGrid-E-Mail-Service
 description: Erfahren Sie mehr über den SendGrid-E-Mail-Service für Adobe Commerce in der Cloud-Infrastruktur und wie Sie Ihre DNS-Konfiguration testen können.
 exl-id: 06236068-df32-468f-99ec-c379984be136
 TQID: https://experienceleague.adobe.com/I4giHpOngkQ0KZYBXZoGJGBXLWme2fxE39uIOGnON-k
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: beb7a3c1-66ab-4786-b879-7621375b3c40id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1702
@@ -34,7 +42,7 @@ Der SendGrid SMTP-Proxy ist nicht für die Verwendung als Allzweck-E-Mail-Server
 
 Sie können ausgehende E-Mails für jede Umgebung über die Cloud-Konsole oder die Befehlszeile aktivieren oder deaktivieren.
 
-Ausgehende E-Mails sind in Pro-Produktions- und Staging-Umgebungen standardmäßig aktiviert. [!UICONTROL Outgoing emails] können jedoch in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile“ ](outgoing-emails.md#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). Sie können ausgehende E-Mails für Integrations- und Staging-Umgebungen aktivieren, um E-Mails zur Zwei-Faktor-Authentifizierung oder zum Zurücksetzen des Passworts für Benutzer von Cloud-Projekten zu senden. Siehe [Konfigurieren von E-Mails zum ](outgoing-emails.md).
+Ausgehende E-Mails sind in Pro-Produktions- und Staging-Umgebungen standardmäßig aktiviert. [!UICONTROL Outgoing emails] können jedoch in den Umgebungseinstellungen deaktiviert erscheinen, bis Sie die `enable_smtp`-Eigenschaft über die [Befehlszeile“ &#x200B;](outgoing-emails.md#enable-emails-in-the-cli) die [Cloud Console](outgoing-emails.md#enable-emails-in-the-cloud-console). Sie können ausgehende E-Mails für Integrations- und Staging-Umgebungen aktivieren, um E-Mails zur Zwei-Faktor-Authentifizierung oder zum Zurücksetzen des Passworts für Benutzer von Cloud-Projekten zu senden. Siehe [Konfigurieren von E-Mails zum &#x200B;](outgoing-emails.md).
 
 Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert oder wieder aktiviert werden müssen, können Sie ein [Adobe Commerce-Support-Ticket senden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
@@ -46,7 +54,7 @@ Wenn ausgehende E-Mails in Pro-Produktions- oder Staging-Umgebungen deaktiviert 
 
 Alle Cloud-Projekte werden unter einem zentralen Konto verwaltet, sodass nur der Support Zugriff auf das SendGrid-Dashboard hat. SendGrid stellt keine Funktionen zur Einschränkung von Unterkonten bereit.
 
-Um in den Aktivitätsprotokollen den Versandstatus oder eine Liste der E-Mail-Adressen, an die keine Zustellung, Ablehnung oder Blockierung erfolgt, einzusehen, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Das Support-Team **kann** Aktivitätsprotokolle abrufen, die älter als 30 Tage sind.
+Um in den Aktivitätsprotokollen den Versandstatus oder eine Liste der E-Mail-Adressen, an die keine Zustellung, Ablehnung oder Blockierung erfolgt, einzusehen, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket). Das Support-Team **kann** Aktivitätsprotokolle abrufen, die älter als 30 Tage sind.
 
 Fügen Sie Ihrer Anfrage nach Möglichkeit die folgenden Informationen hinzu:
 
@@ -60,7 +68,7 @@ Um Ihre E-Mail-Versandeinstellungen besser zu verwalten, verwenden Sie Ihren eig
 >
 >Wenn Sie Ihr eigenes SendGrid-Konto verwenden, erhalten Sie keine SendGrid-Unterstützung mehr über Adobe.
 >
->Um Ihren proprietären SendGrid-Service zu aktivieren oder einen vorhandenen API-Schlüssel zu aktualisieren, [ Sie (ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)) den API-Schlüssel für Ihr SendGrid-Konto ein.
+>Um Ihren proprietären SendGrid-Service zu aktivieren oder einen vorhandenen API-Schlüssel zu aktualisieren, [&#x200B; Sie (ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)) den API-Schlüssel für Ihr SendGrid-Konto ein.
 
 ## DomainKeys Identified Mail (DKIM)
 
@@ -80,7 +88,7 @@ Damit SendGrid in Ihrem Namen Transaktions-E-Mails aus Pro-Produktions- oder Sta
 
 >[!TIP]
 >
->Stellen Sie sicher, dass Sie die **[!UICONTROLSStore-E-Mail]** Adressen) mit der richtigen Domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** konfigurieren. Die Domain-Authentifizierung wird für die E-Mail-Adresse des Absenders durchgeführt. Wenn die Standardeinstellung (`example.com`) konfiguriert ist, werden die E-Mails von `example.com` durch Sendgrid blockiert.
+>Stellen Sie sicher, dass Sie die **[!UICONTROL SStore-E-Mail]** Adressen) mit der richtigen Domain in **[!UICONTROL Stores > Configuration > General > Store Email Addresses]** konfigurieren. Die Domain-Authentifizierung wird für die E-Mail-Adresse des Absenders durchgeführt. Wenn die Standardeinstellung (`example.com`) konfiguriert ist, werden die E-Mails von `example.com` durch Sendgrid blockiert.
 
 **So aktivieren Sie die Domain-**:
 
@@ -165,6 +173,6 @@ Eine E-Mail-Unterdrückungsliste ist eine Liste von Empfängern, an die keine E-
 
 Um zu verhindern, dass E-Mails überhaupt an den Spam-Ordner gesendet werden, folgen Sie dem Artikel zu Best Practices von [Why Are My Emails Going to Spam?](https://sendgrid.com/en-us/blog/10-tips-to-keep-email-out-of-the-spam-folder).
 
-Wenn einige Empfänger Ihre E-Mails nicht erhalten, können [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um eine Überprüfung der Unterdrückungslisten anzufordern und die Empfänger bei Bedarf zu entfernen.
+Wenn einige Empfänger Ihre E-Mails nicht erhalten, können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket), um eine Überprüfung der Unterdrückungslisten anzufordern und die Empfänger bei Bedarf zu entfernen.
 
 Weitere Informationen finden Sie unter [Was ist eine Unterdrückungsliste?](https://sendgrid.com/en-us/blog/what-is-a-suppression-list)

@@ -5,11 +5,18 @@ role: Developer
 feature: Cloud, Install
 exl-id: 2c254586-b670-4dd7-8f82-edcc139e9800
 TQID: https://experienceleague.adobe.com/-9EfBaTgSBPQa6HspiaqngBtwURAeUGlNP9hREcXrQQ
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1638
@@ -94,7 +101,7 @@ Bevor Sie eine Umgebung löschen können, müssen Sie sie deaktivieren. Sobald e
 
 1. Klicken Sie auf das Symbol Konfigurieren rechts in der oberen Navigationsleiste, um die Umgebungseinstellungen zu öffnen.
 
-1. Scrollen Sie auf der Registerkarte _[!UICONTROL General]_nach unten zum Abschnitt_[!UICONTROL Deactivate environment]_, klicken Sie auf **[!UICONTROL Deactivate environment and delete data]** und befolgen Sie die Anweisungen.
+1. Scrollen Sie auf der Registerkarte _[!UICONTROL General]_&#x200B;nach unten zum Abschnitt&#x200B;_[!UICONTROL Deactivate environment]_, klicken Sie auf **[!UICONTROL Deactivate environment and delete data]** und befolgen Sie die Anweisungen.
 
 ## Synchronisieren einer Umgebung
 
@@ -175,7 +182,7 @@ Ihr Adobe Commerce in Cloud-Infrastrukturprojekt kann Code aus einem privaten Gi
 
 Um Ihrem privaten GitHub-Repository einen Bereitstellungsschlüssel hinzuzufügen, müssen Sie der Administrator dieses Repositorys sein. Mit GitHub können Sie einen Bereitstellungsschlüssel nur für ein Repository verwenden.
 
-Wenn Sie es vorziehen, dass Ihr Projekt auf mehrere Repositorys zugreift, können Sie einen SSH-Schlüssel an ein automatisiertes Benutzerkonto anhängen. Da dieses Konto nicht von einem Menschen verwendet wird, wird es als &quot;[&quot; ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Fügen Sie das Computerkonto als Mitarbeiter hinzu oder fügen Sie den Computerbenutzer einem Team mit Zugriff auf die Repositorys hinzu.
+Wenn Sie es vorziehen, dass Ihr Projekt auf mehrere Repositorys zugreift, können Sie einen SSH-Schlüssel an ein automatisiertes Benutzerkonto anhängen. Da dieses Konto nicht von einem Menschen verwendet wird, wird es als &quot;[&quot; &#x200B;](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys). Fügen Sie das Computerkonto als Mitarbeiter hinzu oder fügen Sie den Computerbenutzer einem Team mit Zugriff auf die Repositorys hinzu.
 
 >[!INFO]
 >

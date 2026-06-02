@@ -4,10 +4,16 @@ description: Erfahren Sie, wie Sie Services konfigurieren, die von Adobe Commerc
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
 TQID: https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 1136
@@ -48,7 +54,7 @@ Die Cloud-Infrastruktur unterstützt und stellt die folgenden Services bereit:
 >
 >Nach dem Upgrade auf eine neue Version von RabbitMQ sollten Sie eine vollständige Bereitstellung in Trigger nehmen, um sicherzustellen, dass Ihre benutzerdefinierten Nachrichtenwarteschlangen in RabbitMQ neu erstellt werden.
 
-Sie können Standardversionen und Datenträgerwerte in der aktuellen ([-`services.yaml`) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Das folgende Beispiel zeigt die `mysql`-, `redis`-, `opensearch`- oder `elasticsearch`-, `rabbitmq`- und `activemq-artemis`-Services, die in der `services.yaml`-Konfigurationsdatei definiert sind:
+Sie können Standardversionen und Datenträgerwerte in der aktuellen ([-`services.yaml`) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Das folgende Beispiel zeigt die `mysql`-, `redis`-, `opensearch`- oder `elasticsearch`-, `rabbitmq`- und `activemq-artemis`-Services, die in der `services.yaml`-Konfigurationsdatei definiert sind:
 
 ```yaml
 mysql:
@@ -195,7 +201,7 @@ Während des Bereitstellungsprozesses überprüft das `ece-tools`-Paket die inst
 - Wenn eine Service-Version innerhalb von drei Monaten nach dem Ende der Nutzungsdauer veröffentlicht wird, wird im Bereitstellungsprotokoll eine Benachrichtigung angezeigt.
 - Wenn das Ende der Nutzungsdauer in der Vergangenheit liegt, wird eine Warnmeldung angezeigt.
 
-Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen &#x200B;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Zu OpenSearch migrieren
 

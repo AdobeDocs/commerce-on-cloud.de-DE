@@ -5,10 +5,15 @@ feature: Cloud, Auto Scaling
 topic: Architecture
 exl-id: 11bfde40-79d1-4d51-9233-150c4cfb80fd
 TQID: https://experienceleague.adobe.com/uL--0lHHJ-4SN3BkFU8reAefWhpMQOLBRVG7fX3jTM8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
 source-wordcount: 605
@@ -18,7 +23,7 @@ ht-degree: 0%
 
 # Automatische Skalierung
 
-Die automatische Skalierung fügt der Cloud-Infrastruktur automatisch Ressourcen hinzu oder entfernt diese, um eine optimale Leistung und angemessene Kosten zu gewährleisten. Diese Funktion ist derzeit nur für Projekte verfügbar, die mit einer [skalierten Architektur“ konfiguriert ](scaled-architecture.md).
+Die automatische Skalierung fügt der Cloud-Infrastruktur automatisch Ressourcen hinzu oder entfernt diese, um eine optimale Leistung und angemessene Kosten zu gewährleisten. Diese Funktion ist derzeit nur für Projekte verfügbar, die mit einer [skalierten Architektur“ konfiguriert &#x200B;](scaled-architecture.md).
 
 ## Webserver-Knoten
 
@@ -38,7 +43,7 @@ Mit dem [New Relic-Service](../monitor/new-relic-service.md) können Sie bestimm
 >[!TIP]
 >
 >Eine Referenz zum Erstellen von Abfragen finden Sie unter [NRQL-Syntax, -Klauseln und -Funktionen](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/) in der _New Relic_-Dokumentation.
->Verwenden Sie Ihre Abfragen, um ein [New Relic-Dashboard zu ](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
+>Verwenden Sie Ihre Abfragen, um ein [New Relic-Dashboard zu &#x200B;](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
 
 ### Host-Anzahl
 
@@ -64,7 +69,7 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Automatische Skalierung aktivieren
 
-Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren oder zu deaktivieren [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
+Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren oder zu deaktivieren [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
 
 - **Kontaktgrund**: Infrastrukturänderungsanfrage
 - **Adobe Commerce-Infrastruktur-Kontaktgrund**: Andere Infrastrukturänderungsanfrage
