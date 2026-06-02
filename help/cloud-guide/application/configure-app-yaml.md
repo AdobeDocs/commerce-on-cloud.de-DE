@@ -2,9 +2,18 @@
 title: Konfigurieren der Anwendungsbereitstellung
 description: Erfahren Sie, wie Sie die Eigenschaften in der Anwendungskonfigurationsdatei konfigurieren, die steuern, wie  [!DNL Commerce]  Anwendung die Cloud-Umgebung erstellt und bereitstellt.
 feature: Cloud, Configuration, Build, Deploy
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 47dcb13f-8873-495d-956f-08a5e04844d9
+TQID: https://experienceleague.adobe.com/LCTu-HeJCO1pp9trlZ7h74CxSQtyBr5SDmYP9DgCtkU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: 190
 ht-degree: 0%
 
 ---

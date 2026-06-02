@@ -1,11 +1,19 @@
 ---
 title: Caching
-description: Learn how to enable caching for your Adobe Commerce on cloud infrastructure environments.
+description: Erfahren Sie, wie Sie das Caching für Ihre Adobe Commerce in Cloud-Infrastrukturumgebungen aktivieren.
 feature: Cloud, Cache, Routes
 exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
-source-git-commit: a1ed2818cbaf5adf8b673df0ee9b9218e6f700a2
+TQID: https://experienceleague.adobe.com/dCr0px-0XWXIznsg1w8tUnBaAeXvanY1h-mwiu6GfzU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: 430
 ht-degree: 0%
 
 ---
@@ -55,22 +63,22 @@ http://{default}/path/more/:
         enabled: true
 ```
 
-The preceding example caches the following routes:
+Im vorherigen Beispiel werden die folgenden Routen zwischengespeichert:
 
 - `http://{default}/`
 - `http://{default}/path/more/`
 - `http://{default}/path/more/etc/`
 
-And the following routes are **not** cached:
+Die folgenden Routen werden **zwischengespeichert**:
 
 - `http://{default}/path/`
 - `http://{default}/path/etc/`
 
 >[!NOTE]
 >
->Regular expressions in routes are **not** supported.
+>Reguläre Ausdrücke in Routen werden **nicht** unterstützt.
 
-## Cache duration
+## Aufbewahrungsfrist im Cache
 
 Die Aufbewahrungsfrist im Cache wird durch den Wert der `Cache-Control`-Antwort-Kopfzeile bestimmt. Wenn in der Antwort keine `Cache-Control`-Kopfzeile enthalten ist, wird der `default_ttl` verwendet.
 
@@ -80,7 +88,7 @@ Um zu entscheiden, wie eine Antwort zwischengespeichert werden soll, erstellt Ad
 
 Mit den Parametern `headers` und `cookies` können Sie diesen Cache-Schlüssel ändern.
 
-The default value for these keys follows:
+Der Standardwert für diese Schlüssel lautet:
 
 ```yaml
 cache:
@@ -89,17 +97,17 @@ cache:
     cookies: ["*"]
 ```
 
-## Cache attributes
+## Cache-Attribute
 
 ### `enabled`
 
-When set to `true`, enable the cache for this route. When set to `false`, disable the cache for this route.
+Wenn auf `true` gesetzt, aktivieren Sie den Cache für diese Route. Wenn auf `false` gesetzt, deaktivieren Sie den Cache für diese Route.
 
 ### `headers`
 
-Defines on which values the cache key must depend.
+Definiert, von welchen Werten der Cache-Schlüssel abhängen muss.
 
-For example, if the `headers` key is the following:
+Wenn der `headers` beispielsweise der folgende ist:
 
 ```yaml
 cache:
@@ -127,11 +135,11 @@ Ein Sonderfall liegt vor, wenn der `cookies` den Wert `["*"]` hat. Dieser Wert b
 
 >[!NOTE]
 >
->Sie können keine Platzhalter im Cookie-Namen verwenden. Use either a precise cookie name or match all cookies with an asterisk (`*`). For example, `SESS*` or `~SESS` are currently **not** valid values.
+>Sie können keine Platzhalter im Cookie-Namen verwenden. Verwenden Sie entweder einen präzisen Cookie-Namen oder stimmen Sie alle Cookies mit einem Sternchen (`*`) überein. Beispielsweise sind `SESS*` oder `~SESS` derzeit **ungültige** Werte.
 
-Cookies have the following restrictions:
+Cookies haben die folgenden Einschränkungen:
 
-- There is a set maximum of **50 cookies** in the system. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. To increase the number of cookies to 200, apply the [MDVA-12304 patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=de) using using the [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/tools/quality-patch-tool).
+- Im System sind maximal **50 Cookies** festgelegt. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. Um die Anzahl der Cookies auf 200 zu erhöhen, wenden Sie den [MDVA-12304-Patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=de) mithilfe des [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/tools/quality-patch-tool) an.
 - Die maximale Cookie-Größe beträgt **4096 Byte**. Andernfalls löst die Anwendung eine `Unable to send the cookie. Size of '%name' is %size bytes` Ausnahme aus.
 
 ### `default_ttl`

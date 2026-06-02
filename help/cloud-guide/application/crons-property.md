@@ -2,9 +2,20 @@
 title: Crons-Eigenschaft
 description: Siehe Beispiele zum Konfigurieren der Eigenschaft „crons“ in der Konfigurationsdatei  [!DNL Commerce] application“.
 feature: Cloud, Configuration
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: ff176cb1-5b6c-48a0-ad3c-56cc1d606c97
+TQID: https://experienceleague.adobe.com/E7qXe1VmZezG9AqJ2rchTUmbTibU0pNaGdqb00MkcXo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: 1172
 ht-degree: 0%
 
 ---
@@ -86,8 +97,8 @@ Adobe Commerce verwendet einen Ausdruck mit fünf Werten für eine `crons` (Spez
 
 Einige Beispiele:
 
-- `00 */3 * * *` wird alle drei Stunden in der ersten Minute ausgeführt (12:00 Uhr, 3:00 Uhr, 6:00 Uhr)
-- `20 */8 * * *` wird alle 8 Stunden um Minute 20 ausgeführt (12:20 Uhr, 8:20 Uhr, 16:20 Uhr)
+- `00 */3 * * *` wird alle drei Stunden in der ersten Minute ausgeführt (:00, 3:00, 6 :00)
+- `20 */8 * * *` wird alle 8 Stunden um 20 Uhr (:20, :20, 16 :20) ausgeführt
 - `00 00 * * *` läuft einmal täglich um Mitternacht
 - `00 * * * 1` läuft einmal pro Woche am Montag um Mitternacht.
 
@@ -197,6 +208,6 @@ Sie können Informationen zur Cron-Verarbeitung für jede Umgebung in den Protok
 
 In den folgenden Adobe Commerce-Support-Artikeln finden Sie Hilfe bei der Fehlerbehebung bei Problemen im Zusammenhang mit Cron:
 
-- [Cron-Aufgaben sperren Aufgaben von anderen Gruppen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=de)
+- [Cron-Aufgaben Sperren von Aufgaben aus anderen Gruppen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=de)
 
-- [Setzt hängengebliebene Cron-Aufträge manuell in der Cloud zurück](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=de)
+- [Setzt blockierte Cron-Aufträge manuell in der Cloud zurück](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/reset-stuck-magento-cron-jobs-manually-on-cloud.html?lang=de)

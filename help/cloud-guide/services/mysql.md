@@ -2,9 +2,21 @@
 title: Einrichten des MySQL-Service
 description: Erfahren Sie, wie Sie den MySQL-Service für die persistente Datenspeicherung mit Adobe Commerce in der Cloud-Infrastruktur verwalten.
 feature: Cloud, Services, Storage
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 37b893ef-43cf-466b-9d18-ee3b80fdf2d8
+TQID: https://experienceleague.adobe.com/xPikS7qhOEhhWDRuUYBJEqL7EUPObzPDxJEZ4xjKkuE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: 921
 ht-degree: 1%
 
 ---
@@ -127,7 +139,7 @@ Im vorherigen Beispiel bietet der `admin`-Endpunkt Zugriff auf die `main`-Datenb
 
 - Der `admin` hat die volle Kontrolle über die Datenbank.
 - Der `reporter` Benutzer hat nur SELECT-Berechtigungen.
-- Der `importer` hat die Berechtigungen SELECT, INSERT, UPDATE und DELETE.
+- Der `importer` Benutzer hat die Berechtigungen SELECT, INSERT, UPDATE und DELETE.
 
 Fügen Sie die im obigen Beispiel definierten Endpunkte zur `relationships` der `.magento.app.yaml` hinzu. Beispiel:
 
@@ -152,7 +164,7 @@ Für den direkten Zugriff auf die MariaDB-Datenbank müssen Sie ein SSH verwende
    magento-cloud ssh
    ```
 
-1. Rufen Sie die MySQL-Anmeldedaten aus den `database`- und `type`-Eigenschaften in der Variablen [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships) ab.
+1. Abrufen der MySQL-Anmeldeinformationen aus den `database`- und `type`-Eigenschaften in der Variablen [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships).
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp

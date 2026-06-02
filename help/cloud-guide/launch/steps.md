@@ -1,9 +1,20 @@
 ---
 title: Launch-Schritte
 description: Erfahren Sie, wie Sie den Site-Launch abschließen.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: e7a3cd6b-32de-4fd0-9fbd-da8299e77114
+TQID: https://experienceleague.adobe.com/Nl8YFJUZUkxtsm0eqBgJklsTysKuUE31PkEDsJmvBMU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: 347
 ht-degree: 0%
 
 ---
@@ -12,7 +23,7 @@ ht-degree: 0%
 
 Nach dem Testen und Abschließen der Launch-Checkliste können Sie die letzten Schritte für den Launch starten. Zu diesen Schritten gehören das Eingeben von Tickets, der Zugriff auf die Transferseite und schließlich das Testen Ihres Stores, wenn er live ist.
 
-Adobe-Support-Mitarbeiter arbeiten mit Ihnen durch den Prozess, prüfen den Status und helfen Ihnen, wenn Fragen oder Probleme auftreten. Alle Probleme sollten mit Tickets verfolgt werden, um am besten zu erfassen, was passiert ist und wie es gelöst wurde. Wenn Sie mit kontinuierlichen Iterationen beginnen, um Aktualisierungen für Ihren gestarteten Store bereitzustellen, können ähnliche Probleme erneut auftreten. Diese Tickets können dabei helfen, die Probleme zu identifizieren und Ihre Bereitstellungsaufgaben anzupassen.
+Die Support-Mitarbeiter von Adobe unterstützen Sie während des gesamten Prozesses, prüfen den Status und helfen Ihnen bei Fragen oder Problemen. Alle Probleme sollten mit Tickets verfolgt werden, um am besten zu erfassen, was passiert ist und wie es gelöst wurde. Wenn Sie mit kontinuierlichen Iterationen beginnen, um Aktualisierungen für Ihren gestarteten Store bereitzustellen, können ähnliche Probleme erneut auftreten. Diese Tickets können dabei helfen, die Probleme zu identifizieren und Ihre Bereitstellungsaufgaben anzupassen.
 
 ## Adobe kontaktieren, um Ihre Site zu starten
 
@@ -38,6 +49,6 @@ Führen Sie einige UAT-Tests in Ihrem Live-Store durch, um zu bestätigen, dass 
 
 ## Nach dem Launch
 
-Adobe überprüft und überwacht die Website, um sicherzustellen, dass alle Services und der Zugriff grün sind. Wir stehen Ihnen nach Bedarf zur Verfügung, um alles durchzugehen und zu überprüfen, ob alle Systemprotokolle, Dienste, Caching und Funktionen so funktionieren, wie Sie und Ihre Kunden es benötigen.
+Adobe überprüft und überwacht die Site, um sicherzustellen, dass alle Services und der Zugriff grün dargestellt werden. Wir stehen Ihnen nach Bedarf zur Verfügung, um alles durchzugehen und zu überprüfen, ob alle Systemprotokolle, Dienste, Caching und Funktionen so funktionieren, wie Sie und Ihre Kunden es benötigen.
 
 Wenn Probleme auftreten, erstellen und verfolgen Sie Probleme mit dem Support. Geben Sie so viele Informationen wie möglich ein, einschließlich Datum/Uhrzeit, spezifischer Funktionen mit einem Problem, Symptome und seltsames Verhalten, Erweiterungen und mehr. Wir untersuchen die Protokolle, das Problem und arbeiten mit Ihnen zusammen, um das Problem so schnell wie möglich zu beheben.

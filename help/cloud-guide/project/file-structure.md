@@ -1,9 +1,21 @@
 ---
 title: Projektstruktur
 description: Erfahren Sie mehr über die Dateistruktur und Projektvorlagen für Adobe Commerce in Cloud-Infrastrukturen.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 364e40e4-a5b3-4d23-b86d-74fc0696ac19
+TQID: https://experienceleague.adobe.com/B6fTvmHLFa5THSgLKsjl1smPC8ekPdXB9A-vyqFVwG8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: 473
 ht-degree: 0%
 
 ---
@@ -17,7 +29,7 @@ In der folgenden Tabelle werden die in einem Cloud-Projekt enthaltenen Dateien b
 | Datei | Beschreibung |
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml` | Konfigurationsdatei, die `www` zur Apex-Domain und `php` Anwendung umleitet, um HTTP bereitzustellen. Siehe [Konfigurieren von Routen](../routes/routes-yaml.md). |
-| `/.magento/services.yaml` | Eine Konfigurationsdatei, die eine MySQL-Instanz (MariaDB), Redis und OpenSearch oder ein Elasticsearch definiert. Siehe [Konfigurieren von Services](../services/services-yaml.md). |
+| `/.magento/services.yaml` | Eine Konfigurationsdatei, die eine MySQL-Instanz (MariaDB), Redis und OpenSearch oder Elasticsearch definiert. Siehe [Konfigurieren von Services](../services/services-yaml.md). |
 | `/app` | Der `code` Ordner wird für benutzerdefinierte Module verwendet. Der Ordner `design` wird für [benutzerdefinierte Designs“ &#x200B;](../store/custom-theme.md). Der Ordner `etc` enthält Konfigurationsdateien für das Programm. |
 | `/m2-hotfixes` | Wird für benutzerdefinierte Patches verwendet. |
 | `/update` | Ein vom Support-Modul verwendeter Service-Ordner. |

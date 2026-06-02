@@ -3,9 +3,20 @@ title: Automatische Skalierung
 description: Erfahren Sie, wie Adobe Commerce in der Cloud-Infrastruktur skaliert werden kann, um Ressourcenanforderungen zu erfüllen.
 feature: Cloud, Auto Scaling
 topic: Architecture
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 11bfde40-79d1-4d51-9233-150c4cfb80fd
+TQID: https://experienceleague.adobe.com/uL--0lHHJ-4SN3BkFU8reAefWhpMQOLBRVG7fX3jTM8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -32,7 +43,7 @@ Mit dem [New Relic-Service](../monitor/new-relic-service.md) können Sie bestimm
 >[!TIP]
 >
 >Eine Referenz zum Erstellen von Abfragen finden Sie unter [NRQL-Syntax, -Klauseln und -Funktionen](https://docs.newrelic.com/docs/query-your-data/nrql-new-relic-query-language/get-started/nrql-syntax-clauses-functions/) in der _New Relic_-Dokumentation.
->Mit Ihren Abfragen können Sie ein [New Relic-Dashboard erstellen](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
+>Verwenden Sie Ihre Abfragen, um ein [New Relic-Dashboard zu &#x200B;](https://docs.newrelic.com/docs/query-your-data/explore-query-data/dashboards/introduction-dashboards/).
 
 ### Host-Anzahl
 
@@ -65,11 +76,11 @@ Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastruk
 
 >[!IMPORTANT]
 >
->Die Funktion zur automatischen Skalierung erfasst unerwartete Ereignisse. Selbst wenn die automatische Skalierung aktiviert ist, empfiehlt Adobe, mit dem [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) fortzufahren, falls Sie ein bevorstehendes Ereignis erwarten.
+>Die Funktion zur automatischen Skalierung erfasst unerwartete Ereignisse. Selbst wenn die automatische Skalierung aktiviert ist, empfiehlt Adobe, mit dem [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) fortzufahren, wenn Sie ein bevorstehendes Ereignis erwarten.
 
 ### Belastungstests
 
-Adobe ermöglicht zunächst die automatische Skalierung in Ihrem Cloud-Projekt _Staging_-Cluster. Nachdem Sie Belastungstests in Ihrer Umgebung durchgeführt und abgeschlossen haben, ermöglicht Adobe dann die automatische Skalierung auf Ihrem Produktions-Cluster. Anleitungen für Belastungstests finden Sie unter [Leistungstests](../launch/checklist.md#performance-testing).
+Adobe ermöglicht zunächst die automatische Skalierung in Ihrem Cloud-Projekt _Staging_-Cluster. Nachdem Sie Lasttests in Ihrer Umgebung durchgeführt und abgeschlossen haben, aktiviert Adobe die automatische Skalierung auf Ihrem Produktions-Cluster. Anleitungen für Belastungstests finden Sie unter [Leistungstests](../launch/checklist.md#performance-testing).
 
 ### IP-Zulassungsliste
 
@@ -79,4 +90,4 @@ Beispiel:
 
 - Wenn die Zulassungsliste die IP-Adressen für Ihre Service-Knoten (1, 2 und 3) enthält, ist keine Aktion erforderlich.
 - Enthält die Zulassungsliste die IP-Adressen für Ihre Dienstknoten (1, 2 und 3) und Webknoten (4, 5 und 6) - in diesem Fall alle sechs Knoten - dann ist keine Aktion erforderlich.
-- Wenn die Zulassungsliste auf die Zulassungsliste setzte die IP-Adressen _nur_ für Ihre Web-Knoten (4, 5 und 6) enthält, müssen Sie die Datei aktualisieren, um die IP-Adressen für die Service-Knoten einzuschließen.
+- Wenn die Zulassungsliste die IP-Adressen _nur_ für Ihre Web-Knoten (4, 5 und 6) enthält, müssen Sie die Datei aktualisieren, um die IP-Adressen für die Service-Knoten einzuschließen.
