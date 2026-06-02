@@ -5,9 +5,14 @@ feature: Cloud, Configuration, Build, Deploy, Eventing, Logs, SCD
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 1f1ef6db-6836-4f71-b1e4-3629352d7e74
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/2aBPh7We4-KqoUVDfd4B-ZNWoaUVO-3mWVbqErdgyoQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: 774
 ht-degree: 0%
 
 ---
@@ -86,7 +91,7 @@ stage:
 
 Aktivieren der Generierung statischer Inhalte auf Anfrage eines Benutzers (SCD). Statische Inhalte bei Bedarf eignen sich ideal für den Entwicklungs- und Test-Workflow, da sie die Bereitstellungszeit verkürzen.
 
-Vorausfüllen des Cache mithilfe des [`post_deploy` Hooks &#x200B;](../application/hooks-property.md) die Ausfallzeit der Site. Der Cache-Warming ist nur für Pro-Projekte verfügbar, die Staging- und Produktionsumgebungen im [!DNL Cloud Console] enthalten, sowie für Starter-Projekte. Fügen Sie die Umgebungsvariable `SCD_ON_DEMAND` zum `global` in der `.magento.env.yaml` hinzu:
+Vorausfüllen des Cache mithilfe des [`post_deploy` Hooks ](../application/hooks-property.md) die Ausfallzeit der Site. Der Cache-Warming ist nur für Pro-Projekte verfügbar, die Staging- und Produktionsumgebungen im [!DNL Cloud Console] enthalten, sowie für Starter-Projekte. Fügen Sie die Umgebungsvariable `SCD_ON_DEMAND` zum `global` in der `.magento.env.yaml` hinzu:
 
 ```yaml
 stage:
@@ -178,7 +183,7 @@ stage:
 - **Standard**—_Nicht festgelegt_
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=de)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
+Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
 
 - `DENY` - Die Seite kann nicht in einem Frame angezeigt werden.
 - `SAMEORIGIN`-(Die Standardeinstellung für Adobe Commerce.) Die Seite kann nur in einem Frame angezeigt werden, der auf demselben Ursprung wie die Seite selbst liegt.

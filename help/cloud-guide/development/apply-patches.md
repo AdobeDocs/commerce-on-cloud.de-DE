@@ -2,9 +2,13 @@
 title: Patches anwenden
 description: Erfahren Sie, wie Sie Patches im Infrastrukturprojekt "Adobe Commerce on Cloud“ anwenden.
 feature: Cloud, Upgrade
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
+TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: 910
 ht-degree: 0%
 
 ---
@@ -14,15 +18,15 @@ ht-degree: 0%
 [Cloud-Patches für Commerce](https://github.com/magento/magento-cloud-patches) und das [Quality Patches Tool](https://github.com/magento/quality-patches) stellen Patches für Ihre installierte Adobe Commerce-Anwendung bereit.
 
 - Das Paket Cloud-Patches für Commerce stellt erforderliche Patches mit wichtigen Fehlerbehebungen bereit
-- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=de#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
+- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
 
-Siehe [Verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im _Handbuch der Commerce Operations Tools_ um eine vollständige Liste der veröffentlichten Patches zu erhalten.
+Siehe [Verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im _Handbuch der Commerce Operations Tools_ um eine vollständige Liste der veröffentlichten Patches zu erhalten.
 
 Beide Pakete verbessern die Integration aller Adobe Commerce-Versionen in Cloud-Umgebungen und unterstützen die schnelle Bereitstellung wichtiger, optionaler und benutzerdefinierter Fehlerbehebungen. Sie können diese Pakete verwenden, um allgemeine Informationen über alle individuellen Patches, die für Commerce verfügbar sind, anzuwenden, wiederherzustellen und anzuzeigen.
 
 >[!TIP]
 >
->Sie können das [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) und Cloud-Patches für Commerce als eigenständige Pakete für Magento Open Source- und Adobe Commerce-Projekte verwenden. Es wird empfohlen, für Nicht-Cloud-Projekte das Quality Patches Tool zu verwenden.
+>Sie können das [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) und Cloud-Patches für Commerce als eigenständige Pakete für Magento Open Source- und Adobe Commerce-Projekte verwenden. Es wird empfohlen, für Nicht-Cloud-Projekte das Quality Patches Tool zu verwenden.
 
 Wenn Sie Änderungen in der Remote-Umgebung bereitstellen, verwendet das `ece-tools`-Paket `magento/magento-cloud-patches` und `magento/quality-patches`, um nach ausstehenden Patches zu suchen, und wendet sie automatisch in der folgenden Reihenfolge an:
 
@@ -91,7 +95,7 @@ Magento 2 Enterprise Edition, version 2.3.5.0
 Die Statustabelle enthält die folgenden Arten von Informationen:
 
 - **Typ**:
-   - `Optional` - Alle Patches aus dem Quality Patches Tool und dem Cloud-Patches-Paket sind für Adobe Commerce- und Magento Open Source-Installationen optional. Für Adobe Commerce in der Cloud-Infrastruktur sind alle Patches optional.
+   - `Optional`: Alle Patches aus dem Quality Patches Tool und dem Cloud-Patches-Paket sind für Adobe Commerce- und Magento Open Source-Installationen optional. Für Adobe Commerce in der Cloud-Infrastruktur sind alle Patches optional.
    - `Required`: Alle Patches aus dem Cloud-Paket Patches für Commerce sind für Cloud-Kunden erforderlich.
    - `Deprecated` - Der einzelne Patch wird als veraltet markiert und wir empfehlen, ihn rückgängig zu machen, wenn Sie ihn angewendet haben. Nachdem Sie einen veralteten Patch rückgängig gemacht haben, wird er nicht mehr in der Statustabelle angezeigt.
    - `Custom` - Alle Patches aus dem Verzeichnis &#39;m2-hotfixes&#39;.
@@ -112,7 +116,7 @@ Sie können Patches manuell in einer lokalen Umgebung anwenden und sie vor der B
 
 **So wenden Sie einzelne Patches in einer lokalen Entwicklungsumgebung**:
 
-1. Fügen Sie die Variable „QUALITY_PATCH&quot; zur `.magento.env.yaml` hinzu und listen Sie die erforderlichen Patches darunter auf.
+1. Fügen Sie die Variable „QUALITY_PATCHES“ zur `.magento.env.yaml`-Datei hinzu und listen Sie darunter die erforderlichen Patches auf.
 
    ```yaml
    stage:

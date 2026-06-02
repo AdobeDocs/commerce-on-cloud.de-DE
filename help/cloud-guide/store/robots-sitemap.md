@@ -3,9 +3,13 @@ title: Hinzufügen von Sitemap- und Suchmaschinenrobotern
 description: Erfahren Sie, wie Sie in der Cloud-Infrastruktur Sitemap- und Suchmaschinenroboter zu Adobe Commerce hinzufügen.
 feature: Cloud, Configuration, Search, Site Navigation
 exl-id: 060dc1f5-0e44-494e-9ade-00cd274e84bc
-source-git-commit: 1d52481fb6874f3a9ba14b0ff4fe39dc7d564938
+TQID: https://experienceleague.adobe.com/Nve-76Ow3rv0PrGEUVTSfr3eyJcw8IFj9bbpS10HnNY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -40,7 +44,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 **So fügen Sie der `robots.txt` Inhalt hinzu**:
 
 1. Zugriff auf Admin.
-1. Klicken Sie _Menü_ Inhalt **im Abschnitt** Design _auf_ Konfiguration“.
+1. Klicken Sie _Menü_ Inhalt **im Abschnitt _Design_ auf** Konfiguration“.
 1. Klicken Sie in _Ansicht_ Design-Konfiguration **für** Website in der Spalte _Aktion_ auf Bearbeiten.
 1. Klicken Sie in der Ansicht _Hauptwebsite_ auf **Suchmaschinenroboter**.
 1. Aktualisieren Sie das Feld **Benutzerdefinierte Anweisung von robots.txt bearbeiten**.
@@ -49,7 +53,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 
 >[!NOTE]
 >
->Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [&#x200B; Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
+>Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [ Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
 
 ## Umschreiben mit Fastly VCL-Snippet
 
@@ -139,5 +143,5 @@ Um `robots.txt` Anpassungen in der Produktionsumgebung zu aktivieren, aktivieren
 >
 >- Die Indizierung durch Suchmaschinen kann nur in der Produktion aktiviert werden, nicht aber in einer der niedrigeren Umgebungen.
 >
->- Wenn Sie PWA Studio Auf die Zulassungsliste setzen verwenden und nicht auf Ihre konfigurierte `robots.txt` zugreifen können, fügen Sie `robots.txt` zur [Frontname](https://github.com/magento/magento2-upward-connector#front-name-allowlist) unter **Stores** > Configuration > **General** > **Web** > UPWARD PWA Configuration hinzu.
+>- Wenn Sie PWA Studio verwenden und nicht auf Ihre konfigurierte `robots.txt` zugreifen können, fügen Sie `robots.txt` zur [Frontname](https://github.com/magento/magento2-upward-connector#front-name-allowlist) unter **Stores** > Configuration > **General** > **Web** > UPWARD PWA Configuration hinzu.
 

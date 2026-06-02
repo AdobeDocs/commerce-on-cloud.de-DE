@@ -1,16 +1,21 @@
 ---
 title: Zweite Staging-Umgebung
 description: Erfahren Sie mehr über die Vorteile und Einsatzmöglichkeiten einer zweiten Staging-Umgebung für parallele Tests, die Isolierung von Problemen, die Versionskontrolle und mehr.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 300019bd-07cb-4efb-8740-a49a5a3cf01b
+TQID: https://experienceleague.adobe.com/GFIisldCx779874WoAb0gmXHlE52dN-3COiIsfYDYCU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: 719
 ht-degree: 0%
 
 ---
 
 # Zweite Staging-Umgebung
 
-In der Adobe Commerce Cloud-Infrastruktur stellt die Staging-Umgebung umfassende Tests und Validierungen in einer Umgebung sicher, die der Produktionsumgebung entspricht. In dieser Umgebung können Sie Fehler sicher identifizieren und beheben und gleichzeitig sicherstellen, dass alle neuen Funktionen oder Änderungen nahtlos integriert werden, bevor sie sich auf Ihre Live-Site auswirken.
+In der Cloud-Infrastruktur von Adobe Commerce stellt die Staging-Umgebung umfassende Tests und Validierungen in einer Umgebung sicher, die der Produktionsumgebung entspricht. In dieser Umgebung können Sie Fehler sicher identifizieren und beheben und gleichzeitig sicherstellen, dass alle neuen Funktionen oder Änderungen nahtlos integriert werden, bevor sie sich auf Ihre Live-Site auswirken.
 
 Einige Projekte erfordern einen komplexeren Entwicklungs-Workflow. Um diese Anforderung zu erfüllen, bietet Adobe eine zusätzliche Staging-Umgebung als Add-on-Option für Ihre Cloud-Infrastruktur. Zwei Staging-Umgebungen sind für komplexe Projekte und die gleichzeitige Zusammenarbeit zwischen Teams von Vorteil.
 

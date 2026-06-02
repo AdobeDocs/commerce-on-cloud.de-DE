@@ -2,16 +2,21 @@
 title: Server-seitige Includes
 description: Erfahren Sie, wie Sie Server-seitige Includes mit Adobe Commerce in der Cloud-Infrastruktur verwenden.
 feature: Cloud, Routes
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 826a9c9a-d082-4ec4-8fd2-00ca357522ab
+TQID: https://experienceleague.adobe.com/iLal9p5QiG4U0sHrskzFV8buCCVWZAa3FLixND0Nw24
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: 182
 ht-degree: 0%
 
 ---
 
 # Server-seitige Includes
 
-[Server-seitige Includes](https://nginx.org/en/docs/http/ngx_http_ssi_module.html) (SSI) sind Anweisungen zum HTML von Seiten, die auf dem Server ausgewertet werden, während die Seiten gerendert werden. Mit SSI können Sie dynamisch generierte Inhalte zu einer bestehenden HTML-Seite hinzufügen, ohne die gesamte Seite zu bedienen.
+[Server-seitige Includes](https://nginx.org/en/docs/http/ngx_http_ssi_module.html) (SSI) sind Anweisungen in HTML-Seiten, die auf dem Server ausgewertet werden, während die Seiten gerendert werden. Mit SSI können Sie dynamisch generierte Inhalte zu einer bestehenden HTML-Seite hinzufügen, ohne die gesamte Seite zu bedienen.
 
 Sie können SSI für jede Route in Ihrem `.magento/routes.yaml` aktivieren oder deaktivieren; Beispiel:
 
@@ -30,7 +35,7 @@ Sie können SSI für jede Route in Ihrem `.magento/routes.yaml` aktivieren oder 
             enabled: true
 ```
 
-SSI ermöglicht es Ihnen, in Ihre HTML-Antwort-Anweisungen einzuschließen, die bewirken, dass der Server Teile der HTML ausfüllt und dabei alle vorhandenen [Caching-Konfiguration](caching.md) berücksichtigt.
+Mit SSI können Sie in Ihre HTML-Antwort-Anweisungen einfügen, die bewirken, dass der Server Teile der HTML ausfüllt und dabei alle vorhandenen (Caching[Konfigurationen ](caching.md).
 
 Das folgende Beispiel zeigt, wie Sie am Anfang einer Seite ein dynamisches Datums-Steuerelement und am Ende ein weiteres Datums-Steuerelement einfügen, das alle 600 Sekunden aktualisiert wird:
 

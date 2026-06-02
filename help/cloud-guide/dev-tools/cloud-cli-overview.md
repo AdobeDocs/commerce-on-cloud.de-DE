@@ -2,9 +2,13 @@
 title: Cloud-CLI
 description: Erfahren Sie mehr über die Magento-Cloud-CLI und wie sie Ihnen bei der Verwaltung lokaler Entwicklungsumgebungen für Ihr Adobe Commerce on Cloud-Infrastrukturprojekt hilft.
 exl-id: 71a705f2-8672-4125-b539-b7b1621f2f64
-source-git-commit: 82d89f442792baec995dd0be40f2a49cba168f76
+TQID: https://experienceleague.adobe.com/cp-mG1bOtIxmm4bKKFmABa-vrudh-paS7E6x6IlWHmU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: 860
 ht-degree: 0%
 
 ---
@@ -19,12 +23,12 @@ Dieses Tool erweitert die Funktionalität der [[!DNL Cloud Console]](../../get-s
 >
 >Dies ist ein lokales Tool und wird nur auf Unix-basierten Betriebssystemen unterstützt. Windows wird nicht unterstützt. Es kann nicht mit der auf dieser Seite beschriebenen Methode in der Cloud-Umgebung installiert werden (die schreibgeschützt ist). Module können nur über einen der folgenden (Bereitstellungs **Workflows) in der Cloud** Umgebung installiert werden.
 >
->- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
->- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
+>- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
+>- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
 
 **So installieren Sie die `magento-cloud` CLI**:
 
-1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de) über _Schreibzugriff_ verfügt.
+1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html) über _Schreibzugriff_ verfügt.
 
 1. Installieren Sie `magento-cloud` CLI.
 
@@ -137,7 +141,7 @@ Die folgenden Schritte zeigen, wie Sie die CLI- und Git-Befehle synonym zur Verw
 
 1. Wechseln Sie auf Ihrer lokalen Workstation in Ihr Projektverzeichnis.
 
-1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de).
+1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html).
 
 1. Melden Sie sich bei Ihrem Projekt an.
 

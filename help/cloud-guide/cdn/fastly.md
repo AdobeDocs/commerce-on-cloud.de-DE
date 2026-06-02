@@ -3,9 +3,15 @@ title: Fastly Services - Übersicht
 description: Erfahren Sie, wie die Fastly-Services, die in Adobe Commerce zur Cloud-Infrastruktur enthalten sind, Ihnen bei der Optimierung und Sicherung der Inhaltsbereitstellung für Ihre Adobe Commerce-Sites helfen.
 feature: Cloud, Configuration, Iaas, Paas, Cache, Security, Services
 exl-id: 429b6762-0b01-438b-a962-35376306895b
-source-git-commit: 0300930577959631a2331997ebb104381136f240
+TQID: https://experienceleague.adobe.com/Lq2rzR14xlcj5y3ycfAWGHEKAIxboekZX8YtyOJPQXA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: 1637
 ht-degree: 0%
 
 ---
@@ -104,13 +110,13 @@ Während der Projektbereitstellung fügt Adobe Ihr Projekt zum Fastly-Service-Ko
 
 ### Fastly-API-Token ändern
 
-Senden Sie ein Adobe Commerce-Support-Ticket, um eine neue Anmeldedaten für Fastly-API[Token herauszugeben (wenn die Validierung fehlschlägt/abgelaufen ist](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) oder wenn Sie glauben, dass es kompromittiert wurde.
+Senden Sie ein Adobe Commerce-Support-Ticket, um eine neue Anmeldedaten für Fastly-API[Token herauszugeben (wenn die Validierung fehlschlägt/abgelaufen ist](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-when-validating-fastly-credentials) oder wenn Sie glauben, dass es kompromittiert wurde.
 
 Wenn Sie das neue Token erhalten, aktualisieren Sie Ihre Staging- oder Produktionsumgebung, um das neue Token zu verwenden.
 
 **So ändern Sie die Anmeldedaten für das Fastly-API-Token**:
 
-1. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) Anfordern neuer Fastly-API-Anmeldeinformationen.
+1. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Anfordern neuer Fastly-API-Anmeldeinformationen.
 
    Schließen Sie Ihre Adobe Commerce on Cloud Infrastructure-Projekt-ID und die Umgebungen ein, die neue Anmeldeinformationen erfordern.
 
@@ -158,18 +164,18 @@ Der DDOS-Schutz ist in den Fastly CDN-Service integriert. Sobald Sie Fastly Serv
 
 >[!NOTE]
 >
->Der Schutz vor Layer 7-Angriffen wird nicht vom in Adobe Commerce integrierten Fastly CDN-Service abgedeckt. Tipps zum Schutz vor Layer-7-Angriffen finden Sie unter [Überprüfen auf DDoS-](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) und [So blockieren Sie bösartige Angriffe](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in der *Adobe Commerce Knowledge Base*.
+>Der Schutz vor Layer 7-Angriffen wird nicht vom in Adobe Commerce integrierten Fastly CDN-Service abgedeckt. Tipps zum Schutz vor Layer-7-Angriffen finden Sie unter [Überprüfen auf DDoS-](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli) und [So blockieren Sie bösartige Angriffe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in der *Adobe Commerce Knowledge Base*.
 
 <!--Link definitions-->
 
 [Caching with Fastly]: https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly
 
-[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html?lang=de
+[Checking for DDoS attacks]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.html
 
 [Fastly CDN-Modul für Magento 2]: https://github.com/fastly/fastly-magento2
 
 [Fastly Support-Ticket]: https://docs.fastly.com/products/support-description-and-sla#support-requests
 
-[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html?lang=de
+[How to block malicious traffic]: https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html
 
 [Arbeiten mit Domains]: https://docs.fastly.com/en/guides/working-with-domains

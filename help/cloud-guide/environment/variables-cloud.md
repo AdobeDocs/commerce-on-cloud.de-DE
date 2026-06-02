@@ -4,9 +4,14 @@ description: Anzeigen einer Liste der für Adobe Commerce spezifischen Umgebungs
 feature: Cloud, Configuration
 recommendations: noDisplay, catalog
 role: Developer
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 82923b6f-221d-4902-a1b8-5ba6c7b3339a
+TQID: https://experienceleague.adobe.com/Zk52OMqjrB74v9djO1PVOYd3wOS8EbdfL1rnqIdA8B4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: 289
 ht-degree: 0%
 
 ---
@@ -31,7 +36,7 @@ Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisc
 
 >[!WARNING]
 >
->Um Umgebungsvariablen mithilfe der [[!DNL Cloud Console]](../project/overview.md) zu [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=de) hinzuzufügen, müssen Sie dem Variablennamen `env:` voranstellen, wie im folgenden Beispiel:
+>Um Umgebungsvariablen mithilfe der [[!DNL Cloud Console]](../project/overview.md) zu [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html) hinzuzufügen, müssen Sie dem Variablennamen `env:` voranstellen, wie im folgenden Beispiel:
 >
 >![Beispiel für eine Umgebungsvariable](../../assets/set-env-variable-ui.png)
 

@@ -3,11 +3,16 @@ title: Cloud Docker-Paket
 description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud Docker-Paket.
 feature: Cloud, Docker, Release Notes
 recommendations: noDisplay, catalog
-last-substantial-update: 2025-08-07T00:00:00Z
+last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: 95cf4f30-6bce-4bac-8e11-cfe53cac2c70
-source-git-commit: 819b3a70ce88eb40db1ac6521f0b38c9eb115e7b
+TQID: https://experienceleague.adobe.com/H-A-2jStZ7GuPn2oE-OrZWhScp1GsjEUU1NHDQKhRBU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: 4496
 ht-degree: 0%
 
 ---
@@ -345,7 +350,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
       - Hinzugefügte Unterstützung für Elasticsearch 6.8, 7.2, 7.5 und 7.6.<!--MCLOUD-4050, MCLOUD-5855,MCLOUD-5860-->
 
-      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
+      - Es wurde die Möglichkeit hinzugefügt, die Elasticsearch-Container-Konfiguration [](https://developer.adobe.com/commerce/cloud-tools/docker/containers/service#elasticsearch-container) anzupassen, wenn Sie die Docker Compose-Konfigurationsdatei generieren.<!--MCLOUD-3059-->
 
       - Die `--no-es` Option wurde zu den Service-Konfigurationsoptionen für die Generierung der Docker Compose-Konfigurationsdatei hinzugefügt. Verwenden Sie diese Option, um die Elasticsearch-Container-Installation zu überspringen und stattdessen die MySQL-Suche zu verwenden. Diese Option wird nur für Adobe Commerce-Versionen 2.3.5 und früher unterstützt.<!--MCLOUD-3766-->
 
@@ -456,7 +461,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
    - ![neues Symbol](../../assets/new.svg) **Es wurde eine Service-Konfigurationsoption hinzugefügt, um den Datenbank-Port für den Host verfügbar zu machen** - Verwenden Sie die `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>`-Option, um den Datenbank-Port für den Host beim Erstellen der `docker-compose.yml`-Datei verfügbar zu machen: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
-   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) und [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
+   - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) und [](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
 
    - ![neues Symbol](../../assets/new.svg) Die Option `--rm` wurde hinzugefügt, um Befehle für die Build- und Bereitstellungs-Container zu `./bin/magento-docker`. Dadurch wird der Container entfernt, nachdem die Aufgabe abgeschlossen ist.<!--MAGECLOUD-4205-->
 

@@ -5,9 +5,14 @@ role: Developer
 feature: Cloud, Security
 topic: Security
 exl-id: 73af13d8-7085-4ac8-9cfe-9772bc6bc112
-source-git-commit: 9c0b4bea11abb2ce5644556ab3dadd361f8ff449
+TQID: https://experienceleague.adobe.com/-4Ag5M7x3edpbquUy6Rr--rcghGk7r745jKV883IFFA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: 1071
 ht-degree: 0%
 
 ---
@@ -29,7 +34,7 @@ Erstellen Sie auf jedem Computer und Arbeitsbereich ein SSH-Schlüsselpaar, das 
 
 ## Hinzufügen eines öffentlichen SSH-Schlüssels zu Ihrem Konto
 
-Nachdem Sie Ihren öffentlichen SSH-Schlüssel zu Ihrem Adobe Commerce-Konto in der Cloud-Infrastruktur hinzugefügt oder aktualisiert haben[&#x200B; stellen Sie „Alle aktiven Umgebungen erneut bereitstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) auf Ihrem Konto bereit, um den Schlüssel zu installieren.
+Nachdem Sie Ihren öffentlichen SSH-Schlüssel zu Ihrem Adobe Commerce-Konto in der Cloud-Infrastruktur hinzugefügt oder aktualisiert haben[ stellen Sie „Alle aktiven Umgebungen erneut bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-reference#environmentredeploy) auf Ihrem Konto bereit, um den Schlüssel zu installieren.
 
 Sie können SSH-Schlüssel zu Ihrem Konto hinzufügen, indem Sie eine der folgenden Methoden verwenden: Cloud-CLI oder [!DNL Cloud Console].
 
@@ -155,10 +160,10 @@ Je nach Client sind möglicherweise zusätzliche Optionen erforderlich, um die S
 
 Für **Starter-Umgebungen und Pro-Integrationsumgebungen** sollten Sie auch erwägen, [eine `mount`](../application/properties.md#mounts) für den Zugriff auf ein bestimmtes Verzeichnis hinzuzufügen. Sie würden das Einhängeelement zu Ihrer `.magento.app.yaml` Datei hinzufügen. Eine Liste der beschreibbaren Verzeichnisse finden Sie unter [Projektstruktur](../project/file-structure.md). Dieser Bereitstellungspunkt funktioniert nur in diesen Umgebungen.
 
-Wenn Sie für **Pro Staging- und Produktionsumgebungen** keinen SSH-Zugriff auf die Umgebung haben, müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um den sFTP-Zugriff anzufordern, und einen Bereitstellungspunkt für den Zugriff auf den spezifischen Ordner, z. B. `pub/media`.
+Wenn Sie für **Pro Staging- und Produktionsumgebungen** keinen SSH-Zugriff auf die Umgebung haben, müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um den sFTP-Zugriff anzufordern, und einen Bereitstellungspunkt für den Zugriff auf den spezifischen Ordner, z. B. `pub/media`.
 
 >[!NOTE]
->Wenn die sFTP-Verbindung für Pro Staging und Produktion für einen _generischen_ Benutzer vorgesehen ist, der **nicht** zum Cloud-Projekt [&#x200B; muss](../project/user-access.md) müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) mit dem **öffentlichen**-Schlüssel angehängt. **Geben Sie niemals Ihren privaten SSH-Schlüssel an.**
+>Wenn die sFTP-Verbindung für Pro Staging und Produktion für einen _generischen_ Benutzer vorgesehen ist, der **nicht** zum Cloud-Projekt [ muss](../project/user-access.md) müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) mit dem **öffentlichen**-Schlüssel angehängt. **Geben Sie niemals Ihren privaten SSH-Schlüssel an.**
 
 ## SSH-Tunneleffekt
 
@@ -176,7 +181,7 @@ magento-cloud login
 magento-cloud tunnel:list
 ```
 
-Um einen Tunnel zu erstellen, müssen Sie den [Anwendungsnamen“ &#x200B;](../application/properties.md#name). Sie können den Anwendungsnamen mithilfe der CLI überprüfen:
+Um einen Tunnel zu erstellen, müssen Sie den [Anwendungsnamen“ ](../application/properties.md#name). Sie können den Anwendungsnamen mithilfe der CLI überprüfen:
 
 ```bash
 magento-cloud apps

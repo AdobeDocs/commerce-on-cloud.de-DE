@@ -3,9 +3,14 @@ title: Zugriff auf das Commerce Admin Panel
 description: Erfahren Sie, wie Sie auf Ihr Commerce Admin-Bedienfeld zugreifen können.
 recommendations: noDisplay, catalog
 exl-id: 827417b0-9048-44d8-8c82-07befba476c7
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/V3BXuCc9aqT5YuyIS8WAZgUdPAYNhQunAgg2i2FCaOs
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: 361
 ht-degree: 0%
 
 ---
@@ -26,8 +31,8 @@ Nachdem Sie die Kennwortänderungsanfrage gesendet haben, überprüfen Sie Ihre 
 
 >[!TIP]
 >
->Wenn das Zurücksetzen des Kennworts fehlschlägt oder Sie sich nicht beim Admin-Bedienfeld anmelden können, kann ein Benutzer mit Administratorzugriff mithilfe von SSH eine Verbindung zum Projekt herstellen und mithilfe des `admin:user:create` CLI-Befehls einen Admin-Benutzer hinzufügen. Siehe [Erstellen, Bearbeiten oder Entsperren eines Administratorkontos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=de) im _Installationshandbuch_.
+>Wenn das Zurücksetzen des Kennworts fehlschlägt oder Sie sich nicht beim Admin-Bedienfeld anmelden können, kann ein Benutzer mit Administratorzugriff mithilfe von SSH eine Verbindung zum Projekt herstellen und mithilfe des `admin:user:create` CLI-Befehls einen Admin-Benutzer hinzufügen. Siehe [Erstellen, Bearbeiten oder Entsperren eines Administratorkontos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html) im _Installationshandbuch_.
 
 ## Überwachen des Site-Status
 
-Das [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/intro) ist ein proaktives Self-Service-Tool und ein zentrales Repository, das detaillierte Systemeinblicke und Empfehlungen bietet, um die Sicherheit und Bedienbarkeit Ihrer Adobe Commerce-Installation sicherzustellen. Sie bietet rund um die Uhr eine Echtzeit-Leistungsüberwachung, Berichte und Beratung, um potenzielle Probleme zu identifizieren und den Site-Status, die Sicherheit und Anwendungskonfigurationen besser einsehen zu können. Dies trägt dazu bei, die Auflösungszeit zu reduzieren und die Stabilität und Leistung der Site zu verbessern. Sie können auf das Site-Wide Analysis Tool direkt über das [Admin-Bedienfeld“ zugreifen](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access#option-2-logging-in-to-your-site-wide-analysis-tool-dashboard-from-your-stores-admin-panel).
+Das [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) ist ein proaktives Self-Service-Tool und ein zentrales Repository, das detaillierte Systemeinblicke und Empfehlungen bietet, um die Sicherheit und Bedienbarkeit Ihrer Adobe Commerce-Installation sicherzustellen. Sie bietet rund um die Uhr eine Echtzeit-Leistungsüberwachung, Berichte und Beratung, um potenzielle Probleme zu identifizieren und den Site-Status, die Sicherheit und Anwendungskonfigurationen besser einsehen zu können. Dies trägt dazu bei, die Auflösungszeit zu reduzieren und die Stabilität und Leistung der Site zu verbessern. Sie können auf das Site-Wide Analysis Tool direkt über das [Admin-Bedienfeld“ zugreifen](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#option-2-logging-in-to-your-site-wide-analysis-tool-dashboard-from-your-stores-admin-panel).

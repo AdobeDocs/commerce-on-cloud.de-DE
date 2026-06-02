@@ -3,11 +3,15 @@ title: Integrationen - Übersicht
 description: Erfahren Sie mehr über Integrationsoptionen von Drittanbietern für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt.
 role: Developer
 feature: Cloud, Integration
-last-substantial-update: 2024-02-06T00:00:00Z
+last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 97c5f70d-1465-46c9-bb33-98897262c5ef
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/07ozUcb8SWNcyRzgxClhaG5S-cOHqywkYWfke1rJB1g
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: 574
 ht-degree: 0%
 
 ---
@@ -66,7 +70,7 @@ Beispielantwort:
 
 ## Commerce-Webhooks
 
-Sie können Commerce-Webhooks in Ihrem Cloud-Projekt mit der globalen [ENABLE_WEBHOOKS“ &#x200B;](../environment/variables-global.md#enable_webhooks). Commerce-Webhooks senden als Reaktion auf Commerce-generierte Ereignisse Anfragen an einen externen Server. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks) wird diese Funktion ausführlich beschrieben.
+Sie können Commerce-Webhooks in Ihrem Cloud-Projekt mit der globalen [ENABLE_WEBHOOKS“ ](../environment/variables-global.md#enable_webhooks). Commerce-Webhooks senden als Reaktion auf Commerce-generierte Ereignisse Anfragen an einen externen Server. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks) wird diese Funktion ausführlich beschrieben.
 
 ## Allgemeine Webhooks
 

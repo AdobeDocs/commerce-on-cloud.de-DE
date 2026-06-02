@@ -2,9 +2,15 @@
 title: Fastly-Bildoptimierung
 description: Erfahren Sie, wie Sie die Bildbereitstellung optimieren und die Bildverwaltung für die Adobe Commerce-Site vereinfachen können, indem Sie die Bildoptimierung Fastly aktivieren und konfigurieren.
 feature: Cloud, Configuration, Media
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 3457ebb0-dbb4-4cb0-b6ab-837b15dce03e
+TQID: https://experienceleague.adobe.com/n3BJ-fU6SwFrRJGvqpF07cZ1XVTDkXqLRIRv46MQotI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: 1211
 ht-degree: 0%
 
 ---
@@ -66,19 +72,19 @@ Aktivieren Sie Fastly Image Optimization (Fastly IO) über das Admin-Bedienfeld,
 
    ![Überprüfen Sie die Fastly IO-Konfiguration](../../assets/cdn/fastly-io-config-options.png)
 
-   - **Auto WebP?** - Lassen Sie die Standardeinstellung (`Yes`), um Bilder in Browsern, die sie unterstützen, in das WebP-Format zu konvertieren. Wenn Sie die Einstellung in **Nein** ändern, verwendet Fastly den Bilddateityp, anstatt das Bild in das WebP-Format zu konvertieren.
+   - **Auto WebP?** - Lassen Sie die Standardeinstellung (`Yes`) unverändert, um Bilder in Browsern, die sie unterstützen, in das WebP-Format zu konvertieren. Wenn Sie die Einstellung in **Nein** ändern, verwendet Fastly den Bilddateityp, anstatt das Bild in das WebP-Format zu konvertieren.
 
    - **Standard-WebP-Qualität (verlustbehaftet** - Behalten Sie die Standardeinstellung (`85`) bei oder geben Sie den Komprimierungsgrad für verlustbehaftete dateiformatierte Bilder ein. Sie können eine beliebige Ganzzahl zwischen 1 und 100 angeben.
 
-   - **Standard-Steuerelemente für das JPEG** - Lassen Sie die Standardeinstellung (`Auto`) unverändert, oder wählen Sie den JPEG-Typ aus, der bei der Bereitstellung eines Bildes verwendet werden soll. Wenn der Wert auf &quot;_&quot; festgelegt ist_ liefert Fastly Bilder mit einem Ausgabetyp, der dem Eingabetyp entspricht. Wählen Sie _Grundlinie_ aus, um die Bilder Zeile für Zeile anzuzeigen, beginnend von oben links bis unten rechts. Wählen Sie _Progressiv_ aus, um ein verschwommenes Bild anzuzeigen, das beim Laden deutlich wird.
+   - **Standardmäßige Steuerelemente im JPEG-Format** - Lassen Sie die Standardeinstellung (`Auto`) unverändert, oder wählen Sie den JPEG-Typ aus, der bei der Bereitstellung eines Bildes verwendet werden soll. Wenn der Wert auf &quot;_&quot; festgelegt ist_ liefert Fastly Bilder mit einem Ausgabetyp, der dem Eingabetyp entspricht. Wählen Sie _Grundlinie_ aus, um die Bilder Zeile für Zeile anzuzeigen, beginnend von oben links bis unten rechts. Wählen Sie _Progressiv_ aus, um ein verschwommenes Bild anzuzeigen, das beim Laden deutlich wird.
 
-   - **Standard-JPEG-Qualität** - Lassen Sie die Standardeinstellung (`85`), oder geben Sie den Komprimierungsgrad für die Qualität verlustbehafteter Dateiformate ein. Geben Sie eine beliebige Ganzzahl zwischen 1 und 100 an.
+   - **Standardqualität von JPEG** - Lassen Sie die Standardeinstellung (`85`) unverändert oder geben Sie den Komprimierungsgrad für die Qualität verlustbehafteter Dateiformate ein. Geben Sie eine beliebige Ganzzahl zwischen 1 und 100 an.
 
-   - **Hochskalierung zulassen?** - Lassen Sie die Standardeinstellung (`No`) unverändert, oder wählen Sie `Yes` aus, um Bilder zurückzugeben, die größer sind als die ursprüngliche Quelldatei, damit sie den angeforderten Abmessungen entsprechen.
+   - **Hochskalierung zulassen?** - Lassen Sie die Standardeinstellung (`No`) unverändert, oder wählen Sie `Yes` aus, um Bilder zurückzugeben, die größer sind als die ursprüngliche Quelldatei, damit sie in die gewünschten Abmessungen passen.
 
    - **Filter ändern** - Lassen Sie die Standardeinstellung (`Lancsoz3`) unverändert oder wählen Sie eine Alternative aus. Diese Einstellung gibt den Filter an, der zum Bereitstellen eines Bildes in der Größe verwendet wird. Je nach ausgewähltem Filter kann das skalierte Bild eine höhere oder niedrigere Anzahl von Pixeln aufweisen.
 
-      - `Lanczos3` (Standard) - Liefert die beste Bildqualität. Es erhöht die Fähigkeit, Kanten und lineare Merkmale innerhalb eines Bildes zu erkennen, und verwendet _[!DNL sinc]_&#x200B;Resampling, um die bestmögliche Rekonstruktion zu erzielen.
+      - `Lanczos3` (Standard) - Liefert die beste Bildqualität. Es erhöht die Fähigkeit, Kanten und lineare Merkmale innerhalb eines Bildes zu erkennen, und verwendet _[!DNL sinc]_Resampling, um die bestmögliche Rekonstruktion zu erzielen.
       - `Lanczos2` - Verwendet denselben Filter wie `Lancsoz3`, jedoch mit einer weniger genauen Annäherung an die _[!DNL sinc]_-Neuberechnungsfunktion.
       - `Bicubic` - Hat einen natürlichen Scharfzeichnungseffekt, wenn ein Bild kleiner wird.
       - `Bilinear` - Hat einen natürlichen Glättungseffekt, wenn ein Bild größer wird.
@@ -110,7 +116,7 @@ Wenn Sie beispielsweise das JPEG- oder WEBp-Format anstelle von PNG verwenden, k
 
 Je nach ausgewähltem Qualitätsniveau für die Bildoptimierung können Sie visuelle Unterschiede in Bildern wahrnehmen. Beispielsweise werden Alpha-Kanäle/Transparenzen entfernt und durch einen weißen Hintergrund ersetzt, es sei denn, Sie verwenden Deep Image Optimization , die die Hintergrundfarbe Ihres Designs verwendet.
 
-Wenn Sie verlustbehaftete Konvertierung (`WebP Auto? = No`) deaktivieren, ändert Fastly IO nur JPEG-Images für kompatible Browser in das WEBP-Format. Es werden keine anderen Bildtypen geändert. Wenn das Originalbild beispielsweise PNG ist, ist die Ausgabe des Fastly IO-Service PNG.
+Wenn Sie verlustreiche Konvertierung (`WebP Auto? = No`) deaktivieren, ändert Fastly IO für kompatible Browser nur JPEG-Bilder in das WEBP-Format. Es werden keine anderen Bildtypen geändert. Wenn das Originalbild beispielsweise PNG ist, ist die Ausgabe des Fastly IO-Service PNG.
 
 ### Tiefenbildoptimierung
 

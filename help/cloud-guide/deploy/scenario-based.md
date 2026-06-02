@@ -2,9 +2,15 @@
 title: Szenariobasierte Bereitstellung
 description: Erfahren Sie, wie Sie Adobe Commerce in Cloud-Infrastrukturbereitstellungen mithilfe von benutzerdefinierten Konfigurationsdateien anpassen können.
 feature: Cloud, Configuration, Deploy, Build
-source-git-commit: 0d9d3d64cd0ad4792824992af354653f61e4388d
+exl-id: 44c2a73e-4ea2-49a6-86c1-9fa8cfc8b66e
+TQID: https://experienceleague.adobe.com/BttmvnP2iMbN-EAaPR9g2i9mv7fH4REAEwHFTu-2sw0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: 874
 ht-degree: 0%
 
 ---
@@ -40,7 +46,7 @@ hooks:
 
 >[!NOTE]
 >
->Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=de)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
+>Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
 
 ## Schritte des Überprüfungsszenarios
 
@@ -218,7 +224,7 @@ hooks:
 
 >[!TIP]
 >
->Sie können die [Standardszenarien](https://github.com/magento/ece-tools/tree/2002.1/scenario) und [Standardschrittkonfiguration) &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/src/Step) GitHub-Repository von `ece-tools` überprüfen, um zu bestimmen, welche Szenarien und Schritte für die Erstellung, Bereitstellung und Nachbereitstellung Ihres Projekts angepasst werden sollen.
+>Sie können die [Standardszenarien](https://github.com/magento/ece-tools/tree/2002.1/scenario) und [Standardschrittkonfiguration) ](https://github.com/magento/ece-tools/tree/2002.1/src/Step) GitHub-Repository von `ece-tools` überprüfen, um zu bestimmen, welche Szenarien und Schritte für die Erstellung, Bereitstellung und Nachbereitstellung Ihres Projekts angepasst werden sollen.
 
 ## Hinzufügen eines benutzerdefinierten Moduls zum Erweitern von `ece-tools`
 

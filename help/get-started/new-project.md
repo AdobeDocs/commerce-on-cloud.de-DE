@@ -4,9 +4,14 @@ description: Erfahren Sie, wie Sie einen technischen Kundenberater von Adobe fü
 recommendations: noDisplay, catalog
 role: Admin
 exl-id: 77e8c9fb-8c4a-4c98-adbc-e57871c5bdbc
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/GzCPqYxn0-ACS34UfvHypqv6BveTRpbLJNN2jNmCL-E
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: 774
 ht-degree: 0%
 
 ---
@@ -30,9 +35,9 @@ Beispiele für Produktions- und Staging-Domains:
 - `mcprod.your-store.com`
 - `mcstaging.your-store.com`
 
-Weitere [&#x200B; zu mehreren oder eindeutigen Domains finden Sie unter](../cloud-guide/store/multiple-sites.md)Einrichten mehrerer Websites oder Stores _im Handbuch zu_ Commerce in Cloud-Infrastrukturen.
+Weitere [ zu mehreren oder eindeutigen Domains finden Sie unter](../cloud-guide/store/multiple-sites.md)Einrichten mehrerer Websites oder Stores _im Handbuch zu_ Commerce in Cloud-Infrastrukturen.
 
-Siehe [Mehrere Fastly-Konten und zugewiesene Domains](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}, wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Apex und dieselbe Subdomain verknüpft, die auf Ihrer Adobe Commerce-Site verwendet werden.
+Siehe [Mehrere Fastly-Konten und zugewiesene Domains](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly#multiple-fastly-accounts-and-assigned-domains){target="_blank"}, wenn Sie über ein vorhandenes Fastly-Konto verfügen, das denselben Apex und dieselbe Subdomain verknüpft, die auf Ihrer Adobe Commerce-Site verwendet werden.
 
 ## Transaktions-E-Mail-Domain
 

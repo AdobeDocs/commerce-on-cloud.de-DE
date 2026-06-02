@@ -1,9 +1,14 @@
 ---
 title: Beispieldaten
 description: Erfahren Sie, wie Sie Beispieldaten mit Adobe Commerce in der Cloud-Infrastruktur installieren.
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 59e23cfa-d364-4e70-8a86-644c339778cc
+TQID: https://experienceleague.adobe.com/hEowDeOnXfkdlB-GCNRylKYrJLtXITR11-zsveyIA0Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: 205
 ht-degree: 0%
 
 ---
@@ -12,7 +17,7 @@ ht-degree: 0%
 
 Wenn Sie beim Entwickeln Ihres Stores Beispieldaten benötigen, können Sie Beispieldaten installieren. Diese Daten simulieren einen aktiven Adobe Commerce-Store mit Kunden, Produkten und anderen Daten. Diese Beispieldaten funktionieren am besten mit einer neuen Vorlageninstallation von Adobe Commerce auf der Cloud-Infrastruktur.
 
-Installieren Sie als Best Practice Beispieldaten in Entwicklungs- und Integrationsumgebungen. Wenn Sie Beispieldaten in der Staging- oder Produktionsumgebung verwenden, müssen Sie [&#x200B; Informationen &#x200B;](#reset-or-uninstall-sample-data) Produkte vor der Live-Schaltung entfernen.
+Installieren Sie als Best Practice Beispieldaten in Entwicklungs- und Integrationsumgebungen. Wenn Sie Beispieldaten in der Staging- oder Produktionsumgebung verwenden, müssen Sie [ Informationen ](#reset-or-uninstall-sample-data) Produkte vor der Live-Schaltung entfernen.
 
 ## Installieren von Beispieldaten
 

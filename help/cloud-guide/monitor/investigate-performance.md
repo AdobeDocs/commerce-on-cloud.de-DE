@@ -4,9 +4,14 @@ description: Erfahren Sie, wie Sie auf Ihr New Relic-Dashboard zugreifen und Dat
 feature: Cloud, Observability
 topic: Performance
 exl-id: b9d806c4-f659-4e10-8dcb-b320a61de5e1
-source-git-commit: e3a2c8580ad1f27ddd3dc8fc40207bce68ee1c7f
+TQID: https://experienceleague.adobe.com/Ih9Y5JqsurZqdXK-vpPGxVe2erbexdQxAlLpDjCBTCg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: 901
 ht-degree: 0%
 
 ---
@@ -31,7 +36,7 @@ Alle erfassten Daten geben Aufschluss über die Zeit, die mit Aktionen verbracht
 
 >[!TIP]
 >
->Weitere Informationen zur Verwendung dieser Daten zur Fehlerbehebung bei Leistungsproblemen von Anwendungen finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=de) im _Adobe Commerce Help Center_.
+>Weitere Informationen zur Verwendung dieser Daten zur Fehlerbehebung bei Leistungsproblemen von Anwendungen finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html) im _Adobe Commerce Help Center_.
 
 ## Überwachen der Leistung mit verwalteten Warnhinweisen
 
@@ -47,7 +52,7 @@ Adobe bietet die _Warnhinweisrichtlinie für Adobe Commerce_, um Leistungsmetrik
 | MariaDB-Abfragelast | NRI | Profi |
 | Redis-Speicher | NRI | Profi |
 
-Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen einen Warnschwellenwert erzeugt, sendet New Relic Warnbenachrichtigungen, damit Sie das Problem proaktiv beheben können. Unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=de) im _Adobe Commerce-_ finden Sie Details zu Warnschwellen und Schritten zur Fehlerbehebung, um die Probleme zu beheben, die den Warnhinweis ausgelöst haben.
+Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen einen Warnschwellenwert erzeugt, sendet New Relic Warnbenachrichtigungen, damit Sie das Problem proaktiv beheben können. Unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) im _Adobe Commerce-_ finden Sie Details zu Warnschwellen und Schritten zur Fehlerbehebung, um die Probleme zu beheben, die den Warnhinweis ausgelöst haben.
 
 >[!TIP]
 >
@@ -77,7 +82,7 @@ Wenn ein Trigger in der Website-Infrastruktur oder in den Anwendungsbedingungen 
 
      >[!NOTE]
      >
-     >Wenn die Richtlinie _Verwaltete Warnhinweise für Adobe Commerce_ nicht verfügbar ist, finden Sie weitere Informationen unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=de) im _Adobe Commerce-Hilfe-Center_.
+     >Wenn die Richtlinie _Verwaltete Warnhinweise für Adobe Commerce_ nicht verfügbar ist, finden Sie weitere Informationen unter [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) im _Adobe Commerce-Hilfe-Center_.
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Alert conditions]** , um die in der Richtlinie definierten Warnhinweisbedingungen zu überprüfen.
 
@@ -89,7 +94,7 @@ Anstatt einen vorhandenen Warnhinweis zu ändern, können Sie eine Warnhinweisri
 
 >[!TIP]
 >
->Weitere Informationen [&#x200B; Warnhinweisen, Warnhinweisrichtlinien und Workflows finden &#x200B;](https://docs.newrelic.com/docs/alerts/overview/) in der Dokumentation _2&rbrace;New Relicunter „Einführung in Warnhinweise“._
+>Weitere Informationen [ Warnhinweisen, Warnhinweisrichtlinien und Workflows finden ](https://docs.newrelic.com/docs/alerts/overview/) in der Dokumentation _2}New Relicunter „Einführung in Warnhinweise“._
 
 ## Einrichten eines Workflows für Benachrichtigungen
 

@@ -2,16 +2,22 @@
 title: Bereitstellungsprozess
 description: Erfahren Sie, wie die Bereitstellung für Adobe Commerce in Cloud-Infrastrukturprojekten funktioniert.
 feature: Cloud, Build, Deploy, SCD
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 76806381-0ecc-4d76-974a-f203d3bf44da
+TQID: https://experienceleague.adobe.com/mSJOsLfNVGbkSNSrUzJgszxsqc07c-4KFhrJxm5I72U
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: 413
 ht-degree: 0%
 
 ---
 
 # Bereitstellungsprozess
 
-Trigger Der Bereitstellungsprozess beginnt, wenn Sie eine Zusammenführung, einen Push oder eine Synchronisierung Ihrer Umgebung durchführen oder eine [manuelle Neubereitstellung) &#x200B;](../dev-tools/cloud-cli-overview.md#redeploy-the-environment). Der Bereitstellungsprozess dauert seine Zeit. Es gibt jedoch Möglichkeiten, die Bereitstellung zu optimieren, je nachdem, ob Sie eine Live-Site entwickeln und testen oder mit ihr arbeiten. Insbesondere können Sie die „Bereitstellung [&#x200B; statischen Inhalts“ &#x200B;](static-content.md).
+Der Bereitstellungsprozess beginnt, wenn Sie eine Zusammenführung, einen Push oder eine Synchronisierung Ihrer Umgebung durchführen oder eine [manuelle Neubereitstellung) ](../dev-tools/cloud-cli-overview.md#redeploy-the-environment). Der Bereitstellungsprozess dauert seine Zeit. Es gibt jedoch Möglichkeiten, die Bereitstellung zu optimieren, je nachdem, ob Sie eine Live-Site entwickeln und testen oder mit ihr arbeiten. Insbesondere können Sie die „Bereitstellung [ statischen Inhalts“ ](static-content.md).
 
 Es gibt drei verschiedene Phasen des Bereitstellungsprozesses: Erstellung, Bereitstellung und Nachbereitstellung. Jede Phase führt spezifische Aktionen mit begrenzten Ressourcen durch:
 
@@ -21,7 +27,7 @@ Die _build_-Phase stellt Container für die in den Konfigurationsdateien definie
 
 ## ![Bereitstellungsphase](../../assets/status-deploy.png) Bereitstellungsphase
 
-Die _Bereitstellungs_-Phase hält eingehende Anfragen vorübergehend zurück und wechselt die Site in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de). In der Bereitstellungsphase werden die neuen Container verwendet. Nach dem Mounten des Dateisystems werden Netzwerkverbindungen geöffnet, die im Abschnitt `relationships` der `.magento.app.yaml`-Datei definierten Services aktiviert und die in der `.magento.app.yaml`-Datei definierten Bereitstellungs-Hooks ausgeführt. Alles ist _schreibgeschützt_ mit Ausnahme von Verzeichnissen, die in der `.magento.app.yaml`-Datei definiert sind. Standardmäßig umfasst die [`mounts`-Eigenschaft &#x200B;](../application/properties.md#mounts) folgenden Verzeichnisse:
+Die _Bereitstellungs_-Phase hält eingehende Anfragen vorübergehend zurück und wechselt die Site in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html). In der Bereitstellungsphase werden die neuen Container verwendet. Nach dem Mounten des Dateisystems werden Netzwerkverbindungen geöffnet, die im Abschnitt `relationships` der `.magento.app.yaml`-Datei definierten Services aktiviert und die in der `.magento.app.yaml`-Datei definierten Bereitstellungs-Hooks ausgeführt. Alles ist _schreibgeschützt_ mit Ausnahme von Verzeichnissen, die in der `.magento.app.yaml`-Datei definiert sind. Standardmäßig umfasst die [`mounts`-Eigenschaft ](../application/properties.md#mounts) folgenden Verzeichnisse:
 
 - `app/etc` - Enthält die `env.php` und `config.php` Konfigurationsdateien
 - `pub/media` - Enthält alle Mediendaten, wie Produkte oder Kategorien
@@ -30,7 +36,7 @@ Die _Bereitstellungs_-Phase hält eingehende Anfragen vorübergehend zurück und
 
 Alle anderen Ordner haben schreibgeschützte Berechtigungen. Die neue Site wird am Ende der Bereitstellungsphase aktiv, sobald sie aus dem Wartungsmodus wechselt, und gibt den temporären Haltestatus für eingehende Anfragen frei.
 
-In der Bereitstellungsphase werden Kopien der `app/etc/config.php`- und `app/etc/env.php`-Bereitstellungskonfigurationsdateien mit der BAK-Erweiterung gespeichert. Weitere Informationen [&#x200B; Wiederherstellen dieser Dateien finden &#x200B;](../store/store-settings.md#restore-configuration-files) unter „Einstellungen speichern.
+In der Bereitstellungsphase werden Kopien der `app/etc/config.php`- und `app/etc/env.php`-Bereitstellungskonfigurationsdateien mit der BAK-Erweiterung gespeichert. Weitere Informationen [ Wiederherstellen dieser Dateien finden ](../store/store-settings.md#restore-configuration-files) unter „Einstellungen speichern.
 
 ## ![Phase nach der Bereitstellung](../../assets/status-post-deploy.png) Phase nach der Bereitstellung
 

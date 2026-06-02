@@ -3,9 +3,14 @@ title: Benutzerdefinierte VCL zum Blockieren von Anfragen
 description: Blockieren eingehender Anfragen nach IP-Adresse mithilfe einer Edge Access Control List (ACL) mit einem benutzerdefinierten VCL-Snippet.
 feature: Cloud, Configuration, Security
 exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
-source-git-commit: d08ef7d46e3b94ae54ee99aa63de1b267f4e94a0
+TQID: https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: 1026
 ht-degree: 0%
 
 ---
@@ -61,15 +66,15 @@ Bevor Sie einen Ausschnitt basierend auf diesem Beispiel erstellen, überprüfen
 
 - `priority`: Bestimmt, wann der VCL-Snippet ausgeführt wird. Mit der Priorität `5` sofort ausgeführt und überprüft werden, ob eine Admin-Anfrage von einer zulässigen IP-Adresse stammt. Der Ausschnitt wird vor jedem der standardmäßigen Magento VCL-Ausschnitte (`magentomodule_*`) ausgeführt, denen eine Priorität von 50 zugewiesen wurde. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
 
-- `type`: Gibt den Typ des VCL-Ausschnitts an, der die Position des Ausschnitts im generierten VCL-Code bestimmt. In diesem Beispiel verwenden wir `recv`, das den VCL-Code in die `vcl_recv` Unterroutine, unter dem Textbaustein VCL und über allen Objekten einfügt. Eine Liste der Snippet[Typen finden Sie &#x200B;](https://docs.fastly.com/api/config#api-section-snippet) der Snippet-Referenz Fastly VCL .
+- `type`: Gibt den Typ des VCL-Ausschnitts an, der die Position des Ausschnitts im generierten VCL-Code bestimmt. In diesem Beispiel verwenden wir `recv`, das den VCL-Code in die `vcl_recv` Unterroutine, unter dem Textbaustein VCL und über allen Objekten einfügt. Eine Liste der Snippet[Typen finden Sie ](https://docs.fastly.com/api/config#api-section-snippet) der Snippet-Referenz Fastly VCL .
 
 - `content`: Der auszuführende VCL-Code-Ausschnitt, der die Client-IP-Adresse prüft. Wenn sich die IP in der Edge-ACL befindet, wird der Zugriff für die gesamte Website mit einem `403 Forbidden` blockiert. Alle anderen Client-IP-Adressen erhalten Zugriff.
 
 Nachdem Sie den Code für Ihre Umgebung überprüft und aktualisiert haben, verwenden Sie eine der folgenden Methoden, um das benutzerdefinierte VCL-Snippet zu Ihrer Fastly-Service-Konfiguration hinzuzufügen:
 
-- [Fügen Sie das benutzerdefinierte VCL-Snippet von der Admin &#x200B;](#add-the-custom-vcl-snippet). Diese Methode wird empfohlen, wenn Sie auf Admin zugreifen können. (Erfordert [Fastly Version 1.2.58](fastly-configuration.md#upgrade-fastly-module) oder höher.)
+- [Fügen Sie das benutzerdefinierte VCL-Snippet von der Admin ](#add-the-custom-vcl-snippet). Diese Methode wird empfohlen, wenn Sie auf Admin zugreifen können. (Erfordert [Fastly Version 1.2.58](fastly-configuration.md#upgrade-fastly-module) oder höher.)
 
-- Speichern Sie das JSON-Code-Beispiel in einer Datei (z. B. `blocklist.json`) und [&#x200B; Sie es mithilfe der Fastly-API &#x200B;](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Verwenden Sie diese Methode, wenn Sie nicht auf Admin zugreifen können.
+- Speichern Sie das JSON-Code-Beispiel in einer Datei (z. B. `blocklist.json`) und [ Sie es mithilfe der Fastly-API ](fastly-vcl-custom-snippets.md#manage-custom-vcl-snippets-using-the-api). Verwenden Sie diese Methode, wenn Sie nicht auf Admin zugreifen können.
 
 ## Hinzufügen des benutzerdefinierten VCL-Snippets
 

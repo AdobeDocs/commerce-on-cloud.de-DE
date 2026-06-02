@@ -3,9 +3,14 @@ title: Verwalten von Festplattenspeicher
 description: Erfahren Sie, wie Sie den Speicherplatz mithilfe der Befehlszeilenschnittstelle verwalten.
 feature: Cloud, Storage
 exl-id: 1d13dc4e-56eb-4153-a8b1-48d2263ebc4c
-source-git-commit: 45d5a54bfd02fe9e61ca92789689dabf634d4bbe
+TQID: https://experienceleague.adobe.com/645o-d3ZvMtaYOwy0IKwAjSxUyUgkrI36OGLWtZR--g
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: 801
 ht-degree: 0%
 
 ---
@@ -24,7 +29,7 @@ Beispielantwort:
 | storage              | 51200
 ```
 
-Trigger Wenn eine Pro-Produktions- oder Staging-Umgebung 95 % der Speicherkapazität erreicht oder überschreitet, gibt das Cloud Infrastructure Monitoring Tool einen Support-Warnhinweis aus, der Sie über eine automatische Erhöhung der Speicherkapazität informiert.
+Wenn eine Pro-Produktions- oder Staging-Umgebung 95 % der Speicherkapazität erreicht oder überschreitet, gibt das Cloud Infrastructure Monitoring Tool einen Support-Warnhinweis aus, der Sie über eine automatische Erhöhung der Speicherkapazität informiert.
 
 Beispielbenachrichtigung:
 
@@ -132,7 +137,7 @@ Zwei [Konfigurationsdateien](../environment/overview.md) steuern die Zuordnung v
 
 >[!IMPORTANT]
 >
->- Bei Pro-Produktions- und Staging-Umgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um die Speicherplatzzuweisung zu ändern. Eine Vergrößerung der Pro-Produktions- und Staging-Umgebungen kann nur in bestimmten Intervallen erfolgen. Abhängig von Ihrer aktuellen Speicherplatznutzung empfiehlt der Support daher möglicherweise, die Speicherplatzzuweisung um mindestens 10 GB zu erhöhen. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden. Speicher kann nicht neu zugewiesen oder zwischen Ressourcen umverteilt werden. Um mehr Dateispeicherplatz hinzuzufügen, reduzieren Sie den für MySQL zugewiesenen Speicherplatz.
+>- Bei Pro-Produktions- und Staging-Umgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um die Speicherplatzzuweisung zu ändern. Eine Vergrößerung der Pro-Produktions- und Staging-Umgebungen kann nur in bestimmten Intervallen erfolgen. Abhängig von Ihrer aktuellen Speicherplatznutzung empfiehlt der Support daher möglicherweise, die Speicherplatzzuweisung um mindestens 10 GB zu erhöhen. Nach der Zuweisung kann die Speichererhöhung für Pro-Staging und Produktion nicht mehr rückgängig gemacht werden. Speicher kann nicht neu zugewiesen oder zwischen Ressourcen umverteilt werden. Um mehr Dateispeicherplatz hinzuzufügen, reduzieren Sie den für MySQL zugewiesenen Speicherplatz.
 >- Pro-Produktions- und Staging-Umgebungen, die auf AWS gehostet werden, haben eine [obligatorische Abklingzeit von 6 Stunden](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVolume.html) die für Speicherplatzerhöhungen gilt. Nachdem der Speicherplatz auf einer Bereitstellung erhöht wurde, müssen Sie 6 Stunden warten, bevor der Speicherplatz auf dieser Bereitstellung wieder erhöht werden kann.
 
 ### Anwendungsspeicherplatz
@@ -189,7 +194,7 @@ Die `.magento/services.yaml`-Datei steuert den für jeden Dienst verfügbaren Sp
 
 ## Überwachen des Festplattenspeichers
 
-In Pro-Produktionsumgebungen können Sie den Festplattenspeicher und andere Leistungsindikatoren mithilfe der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot; für New Relic überwachen. Weitere Informationen finden Sie unter [Überwachen der Leistung mit verwalteten Warnhinweisen](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Weitere Anleitungen finden Sie unter [Best Practices zum Beheben von Problemen mit der Datenbankleistung](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de).
+In Pro-Produktionsumgebungen können Sie den Festplattenspeicher und andere Leistungsindikatoren mithilfe der Warnmeldungsrichtlinie „Verwaltete Warnhinweise für Adobe Commerce&quot; für New Relic überwachen. Weitere Informationen finden Sie unter [Überwachen der Leistung mit verwalteten Warnhinweisen](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts). Weitere Anleitungen finden Sie unter [Best Practices zum Beheben von Problemen mit der Datenbankleistung](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html).
 
 ## Kein Platz übrig
 

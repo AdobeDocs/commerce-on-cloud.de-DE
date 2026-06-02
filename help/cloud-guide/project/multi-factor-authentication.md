@@ -3,9 +3,15 @@ title: Multi-Faktor-Authentifizierung für SSH-Zugriff aktivieren
 description: Erfahren Sie, wie Sie Authentifizierungsanforderungen für den SSH-Zugriff auf Adobe Commerce in Cloud-Infrastrukturumgebungen verwalten.
 feature: Cloud, Security
 topic: Security
-source-git-commit: 1e789247c12009908eabb6039d951acbdfcc9263
+exl-id: 90458fa8-42b0-4825-948e-56ef7884eb82
+TQID: https://experienceleague.adobe.com/KWGl-ZyF5aKZ-XxOOmL85ip8arBeH-G1pN5ckUdAqNw
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: 1080
 ht-degree: 0%
 
 ---
@@ -18,7 +24,7 @@ Wenn MFA für ein Projekt aktiviert ist, benötigen alle Benutzerkonten mit SSH-
 
 >[!NOTE]
 >
->MFA ist in Cloud-Projekten standardmäßig nicht aktiviert. Der Kontoinhaber für das Adobe Commerce on Cloud-Infrastrukturprojekt muss [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um es zu aktivieren. Wenn MFA aktiviert ist, muss für alle Benutzenden in ihrem Adobe Commerce in der Cloud-Infrastruktur-Konto die Zwei-Faktor-Authentifizierung (TFA) aktiviert sein, damit SSH-Zugriff auf die Projektumgebungen möglich ist.
+>MFA ist in Cloud-Projekten standardmäßig nicht aktiviert. Der Kontoinhaber für das Adobe Commerce on Cloud-Infrastrukturprojekt muss [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um es zu aktivieren. Wenn MFA aktiviert ist, muss für alle Benutzenden in ihrem Adobe Commerce in der Cloud-Infrastruktur-Konto die Zwei-Faktor-Authentifizierung (TFA) aktiviert sein, damit SSH-Zugriff auf die Projektumgebungen möglich ist.
 
 ## Zertifikate für SSH-Zugriff
 
