@@ -69,14 +69,14 @@ SELECT average(cpuPercent) FROM SystemSample FACET hostname, apmApplicationNames
 
 ## Automatische Skalierung aktivieren
 
-Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren oder zu deaktivieren [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
+Um die automatische Skalierung für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren oder zu deaktivieren [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
 
 - **Kontaktgrund**: Infrastrukturänderungsanfrage
 - **Adobe Commerce-Infrastruktur-Kontaktgrund**: Andere Infrastrukturänderungsanfrage
 
 >[!IMPORTANT]
 >
->Die Funktion zur automatischen Skalierung erfasst unerwartete Ereignisse. Selbst wenn die automatische Skalierung aktiviert ist, empfiehlt Adobe, mit dem [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) fortzufahren, wenn Sie ein bevorstehendes Ereignis erwarten.
+>Die Funktion zur automatischen Skalierung erfasst unerwartete Ereignisse. Selbst wenn die automatische Skalierung aktiviert ist, empfiehlt Adobe, mit dem [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) fortzufahren, wenn Sie ein bevorstehendes Ereignis erwarten.
 
 ### Belastungstests
 
