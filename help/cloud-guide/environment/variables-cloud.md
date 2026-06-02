@@ -12,9 +12,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: ab64bb5a3cc159844015072738404274fdea97cd
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 343
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisc
 | `MAGENTO_CLOUD_ROUTES` | Beschreiben Sie die in der Datei `.magento/routes.yaml` definierten Routen. |
 | `MAGENTO_CLOUD_TREE_ID` | Die Baumstruktur-ID für die Anwendung, die der SHA der Baumstruktur in Git entspricht. |
 | `MAGENTO_CLOUD_VARIABLES` | Ein base64-kodiertes JSON-Objekt mit Schlüssel-Wert-Paaren, z. B. `"key":"value"`. |
-| `MAGENTO_CLOUD_LOCKS_DIR` | Stellt den Pfad zum Einhängepunkt für den Anbieter der Sperre in der Cloud-Infrastruktur bereit. Der Sperranbieter verhindert den Start doppelter Cron-Aufträge und Cron-Gruppen. |
+| `MAGENTO_CLOUD_LOCKS_DIR` | Stellt den Pfad zum Einhängepunkt für den Anbieter der Sperre in der Cloud-Infrastruktur bereit. Der Sperranbieter verhindert den Start doppelter Cron-Aufträge und Cron-Gruppen.<br><br>Es werden nur die Anbieter `file` und `db` unterstützt.<br><br>**Pro Produktions- und Staging-**: standardmäßig der `file`. Dieser Wert kann nicht geändert werden.<br><br>**Pro-Integration und Starter**-Umgebungen verwenden nicht die Variable `MAGENTO_CLOUD_LOCKS_DIR` . Der `db`-Anbieter wird standardmäßig angewendet. Sie können den Standardwert ändern, indem Sie die Variable `[LOCK_PROVIDER](variables-deploy.md#lock_provider`-Umgebungsbereitstellung in der `.magento.env.yaml`-Datei aktualisieren. |
 
 >[!WARNING]
 >

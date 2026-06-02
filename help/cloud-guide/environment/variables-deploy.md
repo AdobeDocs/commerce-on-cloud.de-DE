@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: ab64bb5a3cc159844015072738404274fdea97cd
 workflow-type: tm+mt
-source-wordcount: 2551
+source-wordcount: 2575
 ht-degree: 0%
 
 ---
@@ -357,18 +357,18 @@ stage:
 
 ## `LOCK_PROVIDER`
 
-- **default**—`file`
+- **Standard**- In Produktions- und Staging-Umgebungen wird standardmäßig auf `file` gesetzt. Für Pro-Integrations- und Starter-Umgebungen ist standardmäßig `db` festgelegt.
 - **Version**—Adobe Commerce 2.2.5 und höher
 
-Der Sperranbieter verhindert den Start doppelter Cron-Aufträge und Cron-Gruppen. Verwenden Sie den `file`-Anbieter in der Produktionsumgebung. Starterumgebungen und die Pro-Integrationsumgebung verwenden nicht die Variable [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md). `ece-tools` wendet daher automatisch den `db` an.
+Der Sperranbieter verhindert den Start doppelter Cron-Aufträge und Cron-Gruppen. Commerce on Cloud unterstützt nur `file` und `db`.
+
+Für Produktions- und Staging-Umgebungen wird der Standardwert `file` durch [MAGENTO_CLOUD_LOCKS_DIR](variables-cloud.md) festgelegt und kann nicht überschrieben werden. Für Starterumgebungen und die Pro-Integrationsumgebung legt `ece-tools` den `db` automatisch fest. In diesen Umgebungen können Sie die Standardeinstellung auf `file` ändern, um die lokale Leistung zu optimieren und die Architektur der Spiegelproduktion zu optimieren.
 
 ```yaml
 stage:
   deploy:
     LOCK_PROVIDER: "db"
 ```
-
-Siehe [Konfigurieren der Sperre](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/lock-provider.html?lang=de) im _Installationshandbuch_.
 
 ## `MYSQL_USE_SLAVE_CONNECTION`
 
