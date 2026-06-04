@@ -30,11 +30,11 @@ ht-degree: 0%
 
 - **[DDoS Protection](https://docs.fastly.com/products/fastly-ddos-protection)**: Bietet Layer 7 (Application Layer)-DDoS-Schutz über den bestehenden Layer 3- und 4-Schutz hinaus, der in allen [!DNL Adobe Commerce on Cloud Infrastructure]-Projekten enthalten ist. Der DDoS-Schutz-Service absorbiert umfangreiche volumetrische Angriffe und stellt die kontinuierliche Anwendungsverfügbarkeit während verteilter Denial-of-Service (DDoS)-Ereignisse sicher, sodass der Umsatz während Spitzenzeiten des Traffics geschützt ist.
 
-- **[Erweiterte Ratenbegrenzung](https://www.fastly.com/documentation/guides/next-gen-waf/rules/working-with-advanced-rate-limiting-rules/)** - Bietet konfigurierbare Ratenbegrenzungsregeln, die bestimmte URLs, API-Endpunkte und Anwendungsressourcen vor Missbrauch schützen. Der Service zur erweiterten Ratenbegrenzung geht über die [einfache Ratenbegrenzung) hinaus, die über das Fastly CDN-Modul verfügbar ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md), um bestimmte Traffic-Muster und Angriffsvektoren anzusprechen und so Infrastrukturbelastungen und Cloud-Kosten zu reduzieren.
+- **[Erweiterte Ratenbegrenzung](https://www.fastly.com/documentation/guides/next-gen-waf/rules/working-with-advanced-rate-limiting-rules/)** - Bietet konfigurierbare Ratenbegrenzungsregeln, die bestimmte URLs, API-Endpunkte und Anwendungsressourcen vor Missbrauch schützen. Der Service zur erweiterten Ratenbegrenzung geht über die [einfache Ratenbegrenzung) hinaus, die über das Fastly CDN-Modul verfügbar &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md), um bestimmte Traffic-Muster und Angriffsvektoren anzusprechen und so Infrastrukturbelastungen und Cloud-Kosten zu reduzieren.
 
 >[!NOTE]
 >
->[!DNL Advanced Security] Konfigurationen erfordern derzeit die Übermittlung eines Support-Tickets. Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant. Weitere Informationen finden [ unter  [!DNL Advanced Security]](#request-advanced-security)Anfrage“.
+>[!DNL Advanced Security] Konfigurationen erfordern derzeit die Übermittlung eines Support-Tickets. Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant. Weitere Informationen finden [&#x200B; unter  [!DNL Advanced Security]](#request-advanced-security)Anfrage“.
 
 >[!IMPORTANT]
 >
@@ -164,7 +164,7 @@ Die folgenden Szenarien lassen sich am besten mit vorhandenen Schutzmechanismen 
 
 | Szenario | Empfohlener Ansatz |
 |---|---|
-| Eine einzelne IP oder ein kleiner Satz identifizierbarer IPs überflutet Ihre Site mit Anfragen | Blockieren Sie die IPs mithilfe der Commerce Admin- oder Fastly-API. Verwenden Sie integrierte [Layer 3/4-DDoS-Schutz](./fastly.md#ddos-protection) und vorhandene [IP-Blockierungsliste ](./fastly-vcl-blocking.md) VCL-Snippets. |
+| Eine einzelne IP oder ein kleiner Satz identifizierbarer IPs überflutet Ihre Site mit Anfragen | Blockieren Sie die IPs mithilfe der Commerce Admin- oder Fastly-API. Verwenden Sie integrierte [Layer 3/4-DDoS-Schutz](./fastly.md#ddos-protection) und vorhandene [IP-Blockierungsliste &#x200B;](./fastly-vcl-blocking.md) VCL-Snippets. |
 | Sie müssen SQL-Injection, Cross-Site-Scripting (XSS) oder andere OWASP Top 10-Bedrohungen blockieren. | Der enthaltene [WAF-Service](./fastly-waf-service.md) blockiert diese Bedrohungen automatisch. |
 | Ihre DDoS-Angriffsmuster können mit einfachen VCL-Blockierungsregeln gesteuert werden | Verwenden Sie die vorhandenen [benutzerdefinierten VCL-Snippets](./fastly-vcl-custom-snippets.md) die bereits mit Adobe Commerce verfügbar sind. |
 
