@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: e0e1d3994a6b9ceef9e45b55cc9946bc62203ddb
 workflow-type: tm+mt
-source-wordcount: 1637
+source-wordcount: 1667
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Bei der ersten Bereitstellung oder dem Upgrade Ihres Adobe Commerce-Projekts ins
 
 ## Fastly Service-Konto und Anmeldedaten
 
-Adobe Commerce für Cloud-Infrastrukturprojekte erhält kein dediziertes Fastly-Konto. Der Fastly-Service wird in einem zentralen Konto verwaltet, das bei Adobe registriert ist, und das Verwaltungs-Dashboard ist nur für das Cloud-Support-Team zugänglich.
+Adobe Commerce für Cloud-Infrastrukturprojekte erhält kein dediziertes Fastly-Konto. Der Fastly-Service wird in einem zentralen Konto verwaltet, das bei Adobe registriert ist, und der Dashboard-Zugriff ist auf das Cloud-Support-Team beschränkt. Aus diesem Grund kann der Support auf Kundenanfragen keinen Schnellzugriff auf das Dashboard bereitstellen. Verwenden Sie die Adobe Commerce Admin und Ihre umgebungsspezifischen Fastly-Anmeldedaten für unterstützte Fastly-Konfigurations- und -Verwaltungsaufgaben.
 
 Stattdessen verfügt jede Staging- und Produktionsumgebung über eindeutige Fastly-Anmeldeinformationen (API-Token und Service-ID) zum Konfigurieren und Verwalten von Fastly-Services über den Commerce-Administrator. Die Fastly-API ist für die erweiterte Verwaltung des Fastly-Service verfügbar, der die Anmeldeinformationen benötigt, um diese Anfragen zu senden.
 
