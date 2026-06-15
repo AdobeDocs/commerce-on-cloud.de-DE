@@ -1,26 +1,16 @@
 ---
 title: Verwalten des Benutzerzugriffs
-description: Erfahren Sie, wie Sie den Benutzerzugriff auf Adobe Commerce in Cloud-Infrastrukturprojekten und -Umgebungen verwalten.
+description: Erfahren Sie, wie Sie mit der Magento-Cloud-CLI oder der Cloud-Konsole in Adobe Commerce Anwender hinzufügen und Rollen für Cloud-Infrastrukturprojekte und -Umgebungen zuweisen.
 role: Admin
 feature: Cloud, Roles/Permissions
-last-substantial-update: 2023-06-27T00:00:00.000Z
+level: Beginner
+short-description: Hinzufügen von Benutzern und Zuweisen von Projekt- und Umgebungsrollen in der Cloud-Konsole oder CLI.
+last-substantial-update: 2026-06-11T00:00:00Z
 topic: Security
 exl-id: 953593de-f675-49fd-988f-f11306f67fbd
-TQID: https://experienceleague.adobe.com/hoRda1DXcWU5ZfsEnOf0JSe-JbCQy0GkXQ4Tw3HIU0g
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: de324897e87232393f20d95b2867d8a95605fa23
 workflow-type: tm+mt
-source-wordcount: 1518
+source-wordcount: '1690'
 ht-degree: 0%
 
 ---
@@ -37,7 +27,7 @@ Projekt-Viewer können in keiner Umgebung Aufgaben ausführen. Sie können den P
 Der Zugriff auf Umgebungsebene basiert auf dem Umgebungstyp: Produktion, Staging und Entwicklung. Wenn Sie einem Benutzer _Viewer_ Berechtigung für _Entwicklungsumgebungen_ erteilen, können **alle** Entwicklungsumgebungen im Projekt anzeigen. In der folgenden Tabelle werden die Funktionen erläutert, die den einzelnen Berechtigungsebenen gewährt werden:
 
 | Berechtigungsstufe | Zugriff | SSH-Zugriff |
-| ------------------ | ----------- | :----------: |
+| ---------------- | ------ | :--------: |
 | **admin** | Führen Sie Administratoraufgaben aus, z. B. Einstellungen ändern, Push-Code senden, Aufgaben ausführen und Verzweigungen verwalten, einschließlich der Zusammenführung mit der übergeordneten Umgebung | Ja |
 | **Mitwirkender** | Push-Code und Verzweigung in der Umgebung; Einstellungen können nicht geändert oder Aktionen ausgeführt werden | Ja |
 | **Viewer** | Schreibgeschützter Zugriff auf den Umgebungstyp | Nein |
@@ -47,14 +37,10 @@ Der Zugriff auf Umgebungsebene basiert auf dem Umgebungstyp: Produktion, Staging
 
 Sie können Benutzer hinzufügen und Rollen mithilfe der `magento-cloud` CLI oder der [!DNL Cloud Console] zuweisen.
 
->[!BEGINSHADEBOX]
-
-**Voraussetzungen:**
-
-- Ein registrierter Benutzer mit einer Adobe ID. Ein Benutzer muss [sich für ein Adobe-Konto &#x200B;](https://account.adobe.com) und dann sein [Cloud-Konto](https://console.adobecommerce.com) initialisieren, indem er [https://console.adobecommerce.com](https://console.adobecommerce.com) aufruft, bevor er sie einem Cloud-Projekt hinzufügen kann.
-- Ein Benutzer mit der Rolle **Admin** kann keine Benutzer mit der `magento-cloud` CLI verwalten. Nur Benutzer mit der Rolle **Kontoinhaber** können Benutzer verwalten.
-
->[!ENDSHADEBOX]
+>[!PREREQUISITES]
+>
+>- Ein registrierter Benutzer mit einer Adobe ID. Ein Benutzer muss [sich für ein Adobe-](https://account.adobe.com) registrieren und dann sein [Cloud-Konto](https://console.adobecommerce.com) initialisieren, bevor Sie sie einem Cloud-Projekt hinzufügen können.
+>- Ein Benutzer mit der Rolle **Admin** kann keine Benutzer mit der `magento-cloud` CLI verwalten. Nur Benutzer mit der Rolle **Kontoinhaber** können Benutzer verwalten.
 
 ## Verwalten von Benutzern mit der CLI
 
@@ -78,13 +64,13 @@ In den folgenden Beispielen wird die `magento-cloud`-CLI verwendet, um einen Ben
 
    >[!IMPORTANT]
    >
-   >Der/die Benutzende muss über eine Adobe ID verfügen; siehe [Voraussetzungen](#add-users-and-manage-access).
+   >Der/die Benutzende muss über eine Adobe ID verfügen. Siehe Voraussetzungen.
 
 1. Befolgen Sie die Anweisungen: Geben Sie die E-Mail-Adresse des Benutzers an, legen Sie die Rollen vom Typ Projekt und Umgebung fest und fügen Sie den Benutzer hinzu.
 
    > Eingabeaufforderungen im Beispiel
 
-   ```
+   ```text
    Enter the user's email address: alice@example.com
    
    Email address: alice@example.com
@@ -118,7 +104,7 @@ magento-cloud user:get alice@example.com
 
 >Beispielantwort:
 
-```
+```text
 Current role(s) of User (alice@example.com) on Production (project_id):
   Project role: admin
 ```
@@ -145,7 +131,7 @@ Sie können die [[!DNL Cloud Console]](../../get-started/cloud-console.md) verwe
 
 >[!IMPORTANT]
 >
->Der/die Benutzende muss über eine Adobe ID verfügen; siehe [Voraussetzungen](#add-users-and-manage-access).
+>Der/die Benutzende muss über eine Adobe ID verfügen. Siehe Voraussetzungen.
 
 ### Hinzufügen eines Benutzers zum Projekt
 
@@ -159,7 +145,7 @@ Sie können die [[!DNL Cloud Console]](../../get-started/cloud-console.md) verwe
 
 1. Klicken Sie in _Ansicht_ Zugriff **[!UICONTROL Add]** auf.
 
-1. Füllen Sie das _[!UICONTROL Add User]_&#x200B;Formular aus:
+1. Füllen Sie das _[!UICONTROL Add User]_Formular aus:
 
    - Geben Sie die E-Mail-Adresse des Benutzers ein.
 
@@ -177,9 +163,25 @@ Sie können die [[!DNL Cloud Console]](../../get-started/cloud-console.md) verwe
    >
    >Beim Hinzufügen von Benutzenden wird eine Bereitstellung nicht automatisch Trigger.
 
-1. Nachdem Sie Benutzer hinzugefügt haben, stellen Sie alle Umgebungen erneut bereit, um die Änderungen anzuwenden. Beim Hinzufügen von Benutzenden wird eine Bereitstellung nicht automatisch Trigger. Die erneute Bereitstellung ist ein wichtiger Schritt, um sicherzustellen, dass Benutzende über SSH auf eine Umgebung zugreifen oder Administratoraufgaben durchführen können.
+1. Nachdem Sie Benutzer hinzugefügt haben, stellen Sie alle Umgebungen erneut bereit, um die Änderungen anzuwenden.
+
+   Die erneute Bereitstellung stellt sicher, dass Benutzende über SSH auf Umgebungen zugreifen oder Administratoraufgaben ausführen können.
 
 Nachdem Sie den Benutzer hinzugefügt haben, sendet Adobe eine E-Mail an die angegebene Adresse mit Anweisungen für den Zugriff auf das Adobe Commerce on Cloud Infrastructure-Projekt.
+
+### Einladungsstatus
+
+In der [!DNL Cloud Console] kann ein Administrator eine Einladung senden, bevor die Kontoinitialisierung abgeschlossen ist. In diesem Fall zeigt die Zugriffsliste den Benutzer mit einem Status wie [!UICONTROL Invite pending] an. Der Zugriff ist erst vollständig aktiv, wenn das Onboarding abgeschlossen ist.
+
+Je nach Konsolen- und Kontostatus des Benutzers kann ein Benutzer in einem der folgenden Status angezeigt werden:
+
+- **[!UICONTROL Not invited]** - Es ist kein Projektzugriffsdatensatz vorhanden.
+- **[!UICONTROL Invite pending]** - Eine Einladung wurde gesendet, aber die Initialisierung oder Annahme des Kontos ist unvollständig.
+- **[!UICONTROL Active]** - Der Benutzer hat das Onboarding abgeschlossen und verfügt über aktiven Projektzugriff.
+
+>[!NOTE]
+>
+>Der [!DNL Cloud Console] zeigt Einladungsstatus expliziter an als der [!DNL Legacy Cloud Console] (`https://<region-id>.magento.cloud/projects/<project_id>`). Ein sichtbarer Benutzer oder Einladungseintrag bedeutet nicht immer, dass der Benutzer sofort auf alle Umgebungen zugreifen kann. Die Einrichtung des SSH-Schlüssels oder andere Ausbreitungsschritte sind möglicherweise weiterhin erforderlich. Siehe [Anforderungen an die Benutzerauthentifizierung](#user-authentication-requirements).
 
 ## Anforderungen an die Benutzerauthentifizierung
 
@@ -222,7 +224,7 @@ Anweisungen zur Installation der Authentifizierungsanwendung und zur Aktivierung
 
    - Öffnen Sie auf Ihrem Mobilgerät die Authentifizierungsanwendung. Fügen Sie dann den Setup-Code zur Anwendung hinzu.
 
-   - Geben Sie auf der Seite [!UICONTROL **[!UICONTROL TFA set up - Application]**] im Feld **[!UICONTROL Application verification code]** den TFA-Code Ihres Mobilgeräts ein.
+   - Geben Sie auf der Seite **[!UICONTROL TFA set up - Application]** im Feld **[!UICONTROL Application verification code]** den TFA-Code Ihres Mobilgeräts ein.
 
    - Klicken Sie auf **[!UICONTROL Verify and save]**.
 
@@ -244,7 +246,7 @@ Anweisungen zur Installation der Authentifizierungsanwendung und zur Aktivierung
 
      >[!WARNING]
      >
-     >Wenn Sie den Zugriff auf ein Konto bei TFA verlieren und nicht über die Liste der Wiederherstellungs-Codes verfügen, müssen Sie sich an Ihren Projektadministrator wenden oder [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die TFA-Anwendung zurückzusetzen.
+     >Wenn Sie den Zugriff auf ein Konto bei TFA verlieren und nicht über die Liste der Wiederherstellungs-Codes verfügen, müssen Sie sich an Ihren Projektadministrator wenden oder [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um die TFA-Anwendung zurückzusetzen.
 
 1. Klicken Sie nach Abschluss der TFA-Einrichtung auf **Speichern**, um Ihr Konto zu aktualisieren.
 
@@ -291,6 +293,10 @@ Bei Projekten mit aktivierter MFA-Durchsetzung müssen Sie über ein API-Token v
 
 1. Klicken Sie auf **[!UICONTROL Create API token]** und geben Sie einen Namen ein, geben Sie beispielsweise einen Namen an, der mit dem Computerbenutzer oder dem automatisierten Prozess übereinstimmt, der das API-Token verwendet.
 
-   ![API-Token](../../assets/api-token-name.png)
+   ![Registerkarte „Cloud Console API-Token“ mit dem Feld „API-Token-Name erstellen“](../../assets/api-token-name.png)
 
 1. Klicken Sie auf **[!UICONTROL Create API token]**.
+
+## Weitere Hilfe zu diesem Thema
+
+- [Benutzer kann nicht zum Adobe Commerce-Cloud-Projekt hinzugefügt werden](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/unable-add-user-adobe-commerce-cloud-project) — Fehlerbehebung, wenn das Hinzufügen eines Benutzers fehlschlägt.
