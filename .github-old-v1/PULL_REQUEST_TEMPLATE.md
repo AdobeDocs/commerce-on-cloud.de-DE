@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5d64dc2aa4bfe085531eb469e01f0c0b3cd3898e
+source-git-commit: 59646aebb0eb492062380d136edc011930559c34
 workflow-type: tm+mt
-source-wordcount: '15'
-ht-degree: 0%
+source-wordcount: '22'
+ht-degree: 9%
 
 ---
 ## Zweck dieser Pull-Anfrage
@@ -15,17 +15,25 @@ Diese Pull-Anfrage (PR) …
 
 - ...
 
-## Links zum Commerce-Code
+## Weitere Informationen
 
-<!--  OPTIONAL - REMOVE THIS SECTION IF NOT USED.
-If this pull request references a file in a Magento Open Source or Adobe Commerce codebase repository, add the link here. -->
+### Links zum betroffenen Produkt-Code
+
+<!--  OPTIONAL - REMOVE THIS SECTION IF NOT USED. If this pull request references a file in a Magento Open Source or Adobe Commerce codebase repository, add it here. -->
 
 - ...
 
 <!--
 If you are fixing a GitHub issue, using the GitHub keyword format (https://help.github.com/en/articles/closing-issues-using-keywords#closing-an-issue-in-a-different-repository) closes the issue when this pull request is merged. Example: `Fixes #1234`.
 
-`main` is the default branch. Merged pull requests to `main` go live on the site automatically. Any requested changes to content on the `main` branch must be related to the released codebase. Any content related to future releases goes in the `develop` branch.
+`main` is the default branch. Merged pull requests to `main` go live on the site automatically. Any requested changes to content on the `main` branch must be related to the released codebase. Any content related to future releases goes in the corrresponding `2.4.x-develop` branch.
 
-See Contribution guidelines (https://github.com/AdobeDocs/commerce-operations.de-DE/blob/main/contributing.md) for more information.
+See Contribution guidelines (https://github.com/AdobeDocs/commerce-on-cloud.de-DE/blob/main/contributing.md) for more information.
+-->
+
+### Neue Highlights
+
+<!--  _OPTIONAL - REMOVE THIS SECTION IF NOT USED._
+
+If this pull request introduces changes that should be highlighted in the What's New section (https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview#whats-new), see _What's New highlights_ in the Contribution guidelines (https://github.com/AdobeDocs/commerce-on-cloud.de-DE/blob/main/contributing.md#whats-new-highlights).
 -->
