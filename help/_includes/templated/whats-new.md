@@ -1,7 +1,7 @@
 ---
-source-git-commit: a15ae4e0e11a84662c980ad351e32362f14e69e1
+source-git-commit: e0e4b21e76a5c1fa9e146695a183a29ec79e6cc1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '376'
 ht-degree: 2%
 
 ---
@@ -147,28 +147,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Technisch
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/3546f15b4e1d4e192177064c3c72652d8ae7b5cb">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;10. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde ein Sicherheitshinweis zur Referenz <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property">Web-Eigenschaftskonfiguration</a> für Adobe Commerce in der Cloud-Infrastruktur hinzugefügt, um klarzustellen, dass die Standardkonfiguration für die Web-Eigenschaft <code>scripts:false</code> für Medienspeicherorte verwendet, um die Ausführung hochgeladener Dateien zu verhindern.</p>
-</td>
-      <td>
-        Technisches Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/f3fa8339961505f9c8ac2612d7a89e83553eee37">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
