@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 029e44cd82c07d692dbbfacb4573763dbb4b579a
 workflow-type: tm+mt
 source-wordcount: 393
 ht-degree: 0%
@@ -42,7 +42,7 @@ Zu den neuen oder verbesserten Funktionen gehören:
 - Einfache Formulare und Anleitungen zum Hinzufügen von Integrationen
 - Konformität mit den Web Content Accessibility Guidelines (WCAG)
 
-![[!DNL Cloud Console]](../assets/CloudConsole.svg)
+![[!DNL Cloud Console]](../assets/CloudConsole.png)
 
 Die neuen oder verbesserten Funktionen lauten wie folgt:
 
