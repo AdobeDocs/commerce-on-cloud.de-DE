@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3006f8f7b3eb54f44cf2bda06403441d304b4b81
+source-git-commit: 020a2699befa042a37170a638ded9657a72933e8
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -143,6 +143,16 @@ Verwenden Sie die folgenden Anweisungen für die Einrichtung des Services in Pro
 >[!TIP]
 >
 >Bevor Sie mit einem Upgrade oder einem Patch-Vorgang beginnen, erstellen Sie eine aktive Verzweigung aus der Integrationsumgebung und checken Sie die neue Verzweigung auf Ihrer lokalen Workstation aus. Wenn Sie dem Upgrade- oder Patch-Prozess eine Verzweigung zuweisen, vermeiden Sie Konflikte mit laufenden Arbeiten.
+
+## Valkey in New Relic {#valkey-newrelic}
+
+>[!NOTE]
+>
+>New Relic zeigt möglicherweise auch nach der Migration nach Valkey noch Redis
+>
+>Es wird erwartet, dass New Relic den Cache-Service auch nach der Migration der Umgebung zu Valkey weiterhin als Redis bezeichnet.
+>
+>Valkey ist eine Open-Source-Form von Redis, und einige Tools und Integrationen identifizieren den Service weiterhin mit Redis-Namen anstatt einer eindeutigen Valkey-Kennzeichnung. Dies bedeutet nicht unbedingt, dass Redis noch installiert ist.
 
 <!-- Fastly-related snippets begin -->
 
