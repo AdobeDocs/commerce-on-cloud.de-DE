@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: bec442a5b442adafbd23c7c8eac1adbdb7b93b65
 workflow-type: tm+mt
-source-wordcount: 321
+source-wordcount: 328
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [Redis](https://redis.io) ist eine optionale Backend-Cache-Lösung, die das Zend-Framework Zend_Cache_Backend_File ersetzt, das Adobe Commerce standardmäßig verwendet.
 
-Siehe [Konfigurieren von Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=de) im _Konfigurationshandbuch_.
+Siehe [Konfigurieren von Redis](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) im _Handbuch zu Best Practices für Implementierungs-Playbooks_.
 
 {{service-instruction}}
 
