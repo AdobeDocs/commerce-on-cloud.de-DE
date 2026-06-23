@@ -4,9 +4,13 @@ description: Erfahren Sie, wie Sie Cache-Speicheroptionen in der  [!DNL Commerce
 feature: Cloud, Configuration, Cache, SCD
 exl-id: 0f577974-85d7-4972-8f03-856aa6accaae
 TQID: https://experienceleague.adobe.com/ZA0WRB9p4Gpi7kjWxNPS5uCSfaTmrkrqxc4SgC9y9og
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 131
@@ -22,7 +26,7 @@ Die TTL (Time-to-Live) für den Cache für Ihre Medien- und statischen Dateien w
 >
 >Bevor Sie Ihre Produktionsumgebung aktualisieren, müssen Sie die Änderungen in Ihrer Staging-Umgebung testen. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um Hilfe bei der Aktualisierung der Konfiguration in diesen Umgebungen zu erhalten.
 
-1. Geben Sie die TTL-Zeit (in Sekunden) in der [`web`-Eigenschaft ](web-property.md) der `.magento.app.yaml`-Datei an. Sie können den `expires` Schlüssel unter `locations` oder unter `"/media"` und `"/static"` hinzufügen.
+1. Geben Sie die TTL-Zeit (in Sekunden) in der [`web`-Eigenschaft &#x200B;](web-property.md) der `.magento.app.yaml`-Datei an. Sie können den `expires` Schlüssel unter `locations` oder unter `"/media"` und `"/static"` hinzufügen.
 
    Um ein Ablaufen des Cache zu verhindern, verwenden Sie das Schlüssel-Wert-Paar `expires: -1` . Siehe folgendes Beispiel:
 

@@ -5,9 +5,13 @@ role: Developer
 feature: Cloud, Install
 exl-id: d67e8802-8137-451f-b468-8b788afb01ea
 TQID: https://experienceleague.adobe.com/hCfTF-Vl9LLKgUet4hS3JZN3kX7ZF6BDJ4tsYnr44Fs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 688
@@ -91,7 +95,7 @@ Die folgenden Anweisungen verwenden eine Kombination aus `magento-cloud` CLI- un
 
 Nachdem Sie Ihr Projekt geklont und die Konfiguration des Adobe Commerce-Administratorkontos aktualisiert haben, können Sie eine Verzweigung für die Entwicklung erstellen. Wie bereits erwähnt, müssen Sie eine Umgebung mit dem Befehl `magento-cloud environment:branch <branch-name>` oder dem [!DNL Cloud Console] erstellen, damit die Umgebung _aktiv_ wird.
 
-- Erwägen [ zunächst](../architecture/starter-develop-deploy-workflow.md#clone-and-branch) eine Verzweigung für `staging` zu erstellen und dann eine Entwicklungsverzweigung basierend auf der `staging` Verzweigung zu erstellen.
+- Erwägen [&#x200B; zunächst](../architecture/starter-develop-deploy-workflow.md#clone-and-branch) eine Verzweigung für `staging` zu erstellen und dann eine Entwicklungsverzweigung basierend auf der `staging` Verzweigung zu erstellen.
 - Erstellen Sie für [Pro](../architecture/pro-develop-deploy-workflow.md#development-workflow) Entwicklungsverzweigungen basierend auf der `Integration`.
 
 **So erstellen Sie eine**:
