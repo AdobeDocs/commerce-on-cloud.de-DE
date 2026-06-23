@@ -26,7 +26,7 @@ Sie können einen Worker definieren, der unabhängig von der Web-Instanz ausgef�
 
 Worker können nur mit Pro-Staging- und Produktionsumgebungen verwendet werden. Pro-Integrations- und Starter-Umgebungen können die Variable [CRON_CONSUMERS_RUNNER](../environment/variables-deploy.md#cron_consumers_runner) verwenden.
 
-Um einen Worker in Pro-Staging oder Produktion zu konfigurieren, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) und geben Sie die folgenden Informationen ein:
+Um einen Worker in Pro-Staging oder Produktion zu konfigurieren, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) und geben Sie die folgenden Informationen ein:
 
 - Projekt-ID
 - Umgebungs-ID
