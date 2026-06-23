@@ -11,7 +11,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 235
 ht-degree: 0%
@@ -73,3 +73,4 @@ Protokollebenen bestimmen den Detaillierungsgrad von Benachrichtigungsinhalten. 
 - **Kritisch** - Kritische Bedingungen, z. B. eine nicht verfügbare Anwendungskomponente oder eine unerwartete Ausnahme
 - **Warnhinweis** - Sofortmaßnahmen erforderlich - wie z. B. Ausfall einer Website oder Nichtverfügbarkeit der Datenbank -, die Trigger von SMS-Warnhinweisen informieren
 - **Notfall** - System ist nicht verwendbar
+

@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 768
 ht-degree: 0%
@@ -94,3 +94,4 @@ Bei Verwendung der SCD-On-Demand-Strategie ist es hilfreich, den Cache vorab mit
 ### SCD wird übersprungen
 
 Manchmal können Sie die Generierung statischer Inhalte vollständig überspringen. Sie können die Umgebungsvariable [SKIP_SCD](../environment/variables-build.md#skipscd) im globalen Schritt so einstellen, dass andere Konfigurationen im Zusammenhang mit SCD ignoriert werden. Vorhandene Inhalte im `~/pub/static` sind davon nicht betroffen.
+

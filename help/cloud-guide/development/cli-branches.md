@@ -12,7 +12,7 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 688
 ht-degree: 0%
@@ -205,3 +205,4 @@ Wenn Sie eine Umgebung löschen, wird für die Umgebung _inaktiv_ festgelegt. De
 ## Interaktion mit Remote-Umgebungen
 
 Nachdem Sie [SSH-Schlüssel eingerichtet](../development/secure-connections.md) haben, können Sie [eine Verbindung zwischen Ihrem lokalen Arbeitsbereich und einer Remote-Umgebung herstellen](../development/secure-connections.md#connect-to-a-remote-environment) mit Ihren Projekt-Services interagieren und Einstellungen ändern.
+

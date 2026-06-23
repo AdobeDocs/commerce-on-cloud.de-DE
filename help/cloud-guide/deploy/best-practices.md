@@ -18,7 +18,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1979
 ht-degree: 0%
@@ -207,3 +207,4 @@ Bei erfolgreicher Bereitstellung wird der Wartungsmodus entfernt, um einen norma
 Aktivieren Sie die statische Inhaltserstellung mit der `SCD_ON_DEMAND`-Variablen und konfigurieren Sie den [`post_deploy`-Hook](../application/hooks-property.md) sodass der Cache gelöscht und der Cache vorgeladen (erwärmt) wird, _nachdem_ Container beginnt, Verbindungen zu akzeptieren und (_während_ normalen eingehenden Traffics.
 
 Informationen zum Überprüfen von Build- und Bereitstellungsprotokollen finden Sie unter [Protokolle anzeigen](../test/log-locations.md#view-and-manage-logs).
+

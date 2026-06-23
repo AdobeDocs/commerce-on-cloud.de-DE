@@ -17,7 +17,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 1638
 ht-degree: 0%
@@ -286,3 +286,4 @@ Sie können über einen Webbrowser von jedem Speicherort aus auf Ihr Projekt und
    ```
 
 1. Klicken Sie auf **[!UICONTROL Save]**. Dadurch wird die Umgebung erneut bereitgestellt, um die Sicherheits- und Konfigurationseinstellungen zu aktualisieren. Adobe empfiehlt, die Umgebung nach Abschluss der Sicherheitseinstellungen zu testen.
+
