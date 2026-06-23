@@ -4,14 +4,10 @@ description: Erfahren Sie, wie Sie bei der Bereitstellung von Adobe Commerce in 
 feature: Cloud, Deploy, SCD, Themes
 exl-id: c216c5e9-d787-4428-b67a-b6aee814ded5
 TQID: https://experienceleague.adobe.com/wYFZNd42AoVZxdlWWG6Jr-K6FV2XhTdWp-9HFoof4rE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 502
 ht-degree: 0%
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 # Keine Ausfallzeiten bei der Bereitstellung
 
-Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während [_Bereitstellungsphase im_-](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#production-mode) aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Wie lange sich Ihre Produktions-Site im Wartungsmodus befindet, hängt von der Größe der Site, der Anzahl der während der Bereitstellung vorgenommenen Änderungen und der Konfiguration für die Bereitstellung statischer Inhalte ab. Es ist möglich, Ihr Projekt so zu konfigurieren, dass es mit einem **Ausfallzeiteffekt bereitgestellt**.
+Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während [_Bereitstellungsphase im_-](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode) aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Wie lange sich Ihre Produktions-Site im Wartungsmodus befindet, hängt von der Größe der Site, der Anzahl der während der Bereitstellung vorgenommenen Änderungen und der Konfiguration für die Bereitstellung statischer Inhalte ab. Es ist möglich, Ihr Projekt so zu konfigurieren, dass es mit einem **Ausfallzeiteffekt bereitgestellt**.
 
 Während des Bereitstellungsprozesses stehen alle Verbindungen für bis zu 5 Minuten in der Warteschlange, wobei alle aktiven Sitzungen und ausstehenden Aktionen beibehalten werden, z. B. das Hinzufügen zum Warenkorb oder der Checkout. Nach der Bereitstellung wird die Warteschlange freigegeben und die Verbindungen werden ohne Unterbrechung fortgesetzt. Um diese _Verbindung zu Ihrem Vorteil_ halten und die Bereitstellung auf _null_ Ausfallzeiten zu reduzieren, müssen Sie Ihr Projekt so konfigurieren, dass es die effizienteste Bereitstellungsstrategie verwendet.
 
@@ -54,3 +50,4 @@ Sie können den Bereitstellungsprozess beschleunigen, indem Sie die Umgebungsvar
 >[!NOTE]
 >
 >Sie können Ihre Projektkonfiguration für eine optimale Bereitstellung überprüfen, indem Sie [den Assistenten für den Idealzustand ausführen](smart-wizards.md#verifying-an-ideal-configuration).
+

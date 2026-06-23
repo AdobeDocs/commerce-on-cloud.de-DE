@@ -4,18 +4,11 @@ description: Erfahren Sie, wie Sie die anfänglichen Entwicklungs- und Bereitste
 feature: Cloud, Paas
 exl-id: 75d170b6-1ec2-4099-82c8-5c4df3442843
 TQID: https://experienceleague.adobe.com/ohBEYApu-9AJmxBvtoxGxpQcmK67ppeACPl7xNvycsQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
 workflow-type: tm+mt
 source-wordcount: 2168
 ht-degree: 0%
@@ -55,7 +48,7 @@ Sie haben auch einige optionale Schritte, mit denen Sie Ihren Code entwickeln un
 - [Installieren von Beispieldaten](#optional-install-sample-data) in Ihrem Store
 - [Abrufen von Produktionsspeicherdaten](#optional-pull-production-data) bis zu Umgebungen
 
-Bei diesem Prozess wird davon ausgegangen, dass Sie Ihren [lokalen Entwicklerarbeitsbereich“ eingerichtet &#x200B;](../development/overview.md).
+Bei diesem Prozess wird davon ausgegangen, dass Sie Ihren [lokalen Entwicklerarbeitsbereich“ eingerichtet ](../development/overview.md).
 
 ### Klonen und Verzweigen
 
@@ -117,9 +110,9 @@ Wenn Sie bereit sind, Ihren Store zu konfigurieren, pushen Sie den gesamten Code
 Die besten Informationen zu Konfigurationen finden Sie in der Dokumentation zu Adobe Commerce und den installierten Erweiterungen. Im Folgenden finden Sie einige Links und Ideen, die Ihnen bei den ersten Schritten helfen:
 
 - [Best Practices für die Store-](../store/best-practices.md) für bestimmte Best Practices in der Cloud
-- [Standardkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/store-details) für Store-Administratorzugriff, Namen, Sprachen, Währungen, Branding, Sites, Store-Ansichten und mehr
-- [Design](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/content-menu#design-features) für Ihr Aussehen der Site und Stores, einschließlich CSS und Layouts
-- [Systemkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/guide-overview) für Rollen, Tools, Benachrichtigungen und Ihren Verschlüsselungsschlüssel für Ihre Datenbank
+- [Standardkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details) für Store-Administratorzugriff, Namen, Sprachen, Währungen, Branding, Sites, Store-Ansichten und mehr
+- [Design](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu#design-features) für Ihr Aussehen der Site und Stores, einschließlich CSS und Layouts
+- [Systemkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) für Rollen, Tools, Benachrichtigungen und Ihren Verschlüsselungsschlüssel für Ihre Datenbank
 - Erweiterungseinstellungen anhand ihrer Dokumentation
 
 Über die Store-Einstellungen hinaus können Sie mehrere Sites und Stores, konfigurierte Services und mehr weiter konfigurieren. Siehe [Store konfigurieren](../store/overview.md).
@@ -171,13 +164,13 @@ Wenn Sie beim Entwickeln Ihres Stores Beispieldaten benötigen, können Sie Beis
 
 Fügen Sie alle Ihre Produkte, Kataloge, Site-Inhalte usw. direkt zur `production` hinzu. Durch Hinzufügen dieser Daten zur Produktionsumgebung können Sie Ihren Kunden aktualisierte Preise, Coupons, Lagerbestände, Verkaufsankündigungen, Informationen über zukünftige Angebote und mehr bereitstellen. Diese Daten enthalten keine Erweiterungskonfigurationen, die Sie in Ihrer lokalen Entwicklungsverzweigung konfigurieren.
 
-Wenn Sie Funktionen entwickeln, Erweiterungen hinzufügen und Designs entwerfen, ist es hilfreich, mit echten Daten zu arbeiten. Sie können jederzeit aus [&#x200B; Produktionsumgebung einen Datenbank-Dump &#x200B;](../storage/database-dump.md) und diesen bei Bedarf in Ihre Staging- und Integrationsumgebungen pushen.
+Wenn Sie Funktionen entwickeln, Erweiterungen hinzufügen und Designs entwerfen, ist es hilfreich, mit echten Daten zu arbeiten. Sie können jederzeit aus [ Produktionsumgebung einen Datenbank-Dump ](../storage/database-dump.md) und diesen bei Bedarf in Ihre Staging- und Integrationsumgebungen pushen.
 
 So exportieren Sie Produktionsdaten als Testdaten zur Verwendung in Staging- und Integrationsumgebungen:
 
-- [Ausführen der Support Utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) CLI-Befehle (empfohlen) beim Exportieren eines geschützten Backups von Kunden- und Speicherdaten mit Ihrem Adobe Commerce-Verschlüsselungsschlüssel
+- [Ausführen der Support Utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) CLI-Befehle (empfohlen) beim Exportieren eines geschützten Backups von Kunden- und Speicherdaten mit Ihrem Adobe Commerce-Verschlüsselungsschlüssel
 
-- [Datenerfassung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/support#data-collector) Tool zum Generieren und Exportieren von Daten
+- [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) Tool zum Generieren und Exportieren von Daten
 
 Informationen zum Migrieren dieser Daten finden Sie unter [Migrieren und Bereitstellen von statischen Dateien und Daten](../deploy/staging-production.md#migrate-static-files).
 
@@ -185,7 +178,7 @@ Informationen zum Migrieren dieser Daten finden Sie unter [Migrieren und Bereits
 
 >[!NOTE]
 >
->Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[&#x200B; „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
+>Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[ „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
 
 >[!WARNING]
 >
@@ -258,3 +251,4 @@ Alle Cloud-Infrastrukturumgebungen unterstützen eine kontinuierliche Integratio
 - Bereitstellen und Testen in `staging` Umgebung
 
 - Bereitstellen in der `production`
+
