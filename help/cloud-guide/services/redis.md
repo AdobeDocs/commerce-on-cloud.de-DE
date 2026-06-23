@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [Redis](https://redis.io) ist eine optionale Backend-Cache-Lösung, die das Zend-Framework Zend_Cache_Backend_File ersetzt, das Adobe Commerce standardmäßig verwendet.
 
-Siehe [Konfigurieren von Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) im _Handbuch zu Best Practices für Implementierungs-Playbooks_.
+Siehe [Konfigurieren von Redis](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) im _Handbuch zu Best Practices für Implementierungs-Playbooks_.
 
 {{service-instruction}}
 
@@ -141,6 +141,6 @@ Beispielantwort:
 Hilfe bei der Fehlerbehebung bei Redis-Problemen finden Sie in den folgenden Artikeln zum Adobe Commerce-Support:
 
 - [Problem mit verzögerter Admin-Anmeldung oder Checkout neu bearbeiten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
-- [Erweiterte Redis-Cache-Implementierung Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html)
-- [Verwaltete Warnhinweise auf Adobe Commerce: Warnung bei Redis-Speicher](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html)
-- [Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis zu RediS-Speicher](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html)
+- [Erweiterte Redis-Cache-Implementierung Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html?lang=de)
+- [Verwaltete Warnhinweise auf Adobe Commerce: Warnung bei Redis-Speicher](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-warning-alert.html?lang=de)
+- [Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis zu RediS-Speicher](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-redis-memory-critical-alert.html?lang=de)
