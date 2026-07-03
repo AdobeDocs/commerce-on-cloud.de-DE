@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # Einrichten [!DNL RabbitMQ] Services
 
-Das [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html) ist ein System in Adobe Commerce, das es einem [Modul](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) ermöglicht, Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten.
+Das [Message Queue Framework (MQF)](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework.html?lang=de) ist ein System in Adobe Commerce, das es einem [Modul](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#module) ermöglicht, Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten.
 
 Der MQF verwendet [RabbitMQ](https://www.rabbitmq.com/) als Messaging-Broker, der eine skalierbare Plattform für das Senden und Empfangen von Nachrichten bietet. Sie enthält auch einen Mechanismus zum Speichern nicht zugestellter Nachrichten. [!DNL RabbitMQ] basiert auf der Spezifikation des Advanced Message Queuing Protocol (AMQP) 0.9.1.
 
@@ -163,7 +163,7 @@ Um RabbitMQ mit Ihrer PHP-Anwendung zu verbinden, fügen Sie Ihrer Quellstruktur
 
 ## Fehlerbehebung beim [!DNL RabbitMQ]-Service
 
-Siehe [Verbindung zu RabbitMQ in Adobe Commerce Cloud nicht möglich](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27688).
+Siehe [Verbindung zu RabbitMQ in Adobe Commerce Cloud nicht möglich](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27688).
 
 ## Aktualisieren des [!DNL RabbitMQ]
 
@@ -173,4 +173,4 @@ Siehe [Verbindung zu RabbitMQ in Adobe Commerce Cloud nicht möglich](https://ex
 >
 >Stellen Sie nach einer Änderung der Version des RabbitMQ-Service, einschließlich eines Upgrades oder Downgrades, die Umgebung erneut bereit. Während der Bereitstellung führt Adobe Commerce die Einrichtungsaufgaben aus, mit denen die erforderlichen RabbitMQ-Warteschlangen, -Austausche und -Bindungen neu erstellt werden.
 >
->Anweisungen für allgemeine Service-Upgrades finden Sie unter [Ändern der Service-Version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
+>Anweisungen für allgemeine Service-Upgrades finden Sie unter [Ändern der Service-Version](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version).
