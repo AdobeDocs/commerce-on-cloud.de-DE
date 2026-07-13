@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Der <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access">Benutzerzugriff verwalten</a> wurde mit klareren Voraussetzungen, Einladungsstatus der Cloud-Konsole, Anleitungen zur erneuten Bereitstellung und damit zusammenhängender Fehlerbehebung aktualisiert.</p>
+      <td><p>Der <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access">Benutzerzugriff verwalten</a> wurde mit klareren Voraussetzungen, Einladungsstatus der Cloud-Konsole, Anleitungen zur erneuten Bereitstellung und damit zusammenhängender Fehlerbehebung aktualisiert.</p>
 </td>
       <td>
         Feedback
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Das Thema <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Erweiterte Sicherheit</a> wurde mit Informationen zu Einschränkungen und Beobachtbarkeit aktualisiert.</p>
+      <td><p>Das Thema <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/advanced-security">Erweiterte Sicherheit</a> wurde mit Informationen zu Einschränkungen und Beobachtbarkeit aktualisiert.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Klarstellung der standardmäßigen Sperrkonfiguration und der Auswirkungen der <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a>- und <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a>-Umgebungsvariablen auf die Pro- und Starter-Umgebung.</p>
+      <td><p>Klarstellung der standardmäßigen Sperrkonfiguration und der Auswirkungen der <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud"><code>MAGENTO_CLOUD_LOCKS_DIR</code></a>- und <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#lock_provider"><code>LOCK_PROVIDER</code></a>-Umgebungsvariablen auf die Pro- und Starter-Umgebung.</p>
 </td>
       <td>
         Technisch
@@ -89,7 +89,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Elasticsearch-Supportanweisung für On-Premise in der <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Elasticsearch-Supportwarnung</a> wurde entfernt.</p>
+      <td><p>Elasticsearch-Supportanweisung für On-Premise in der <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/opensearch">Elasticsearch-Supportwarnung</a> wurde entfernt.</p>
 </td>
       <td>
         Technisch
