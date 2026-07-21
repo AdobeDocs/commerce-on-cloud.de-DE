@@ -11,7 +11,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: bcac8986e748f6e513d4db22ee7eb7f64bac1a3a
 workflow-type: tm+mt
 source-wordcount: 322
 ht-degree: 0%
@@ -59,4 +59,3 @@ Verwenden Sie die Fastly Edge-Module, um benutzerdefinierten VCL-Code vom Admin 
 1. Nach dem Aktualisieren der Fastly-Service-Konfiguration testen Sie Ihren Adobe Commerce-Store, um sicherzustellen, dass die angegebenen URL-Anfragen für WordPress korrekt umgeleitet werden.
 
 <!-- Last updated from includes: 2025-01-27 17:16:28 -->
-
