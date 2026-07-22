@@ -11,7 +11,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: f1e6c9da5dacb144dc3e1a09885c1a9b11ce54ee
+source-git-commit: 988a098ec800616898a4ad0ab460a09ec64c4fc3
 workflow-type: tm+mt
 source-wordcount: 259
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Valley-Service einrichten
 
-[Valkey](https://valkey.io) ist eine optionale Backend-Cache-Lösung, die den `Zend Framework Zend_Cache_Backend_File` ersetzt, den Adobe Commerce standardmäßig verwendet. Wenn Sie den Standardwert in Commerce ab Version 2.4.9 oder Patch-Versionen nach Version 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und den 2.4.8-p5-Release-Zeilen überschreiben, müssen Sie Valkey verwenden.
+[Valkey](https://valkey.io) ist eine optionale Backend-Cache-Lösung, die den `Zend Framework Zend_Cache_Backend_File` ersetzt, den Adobe Commerce standardmäßig verwendet. Wenn Sie den Standardwert in Commerce ab Version 2.4.9 oder Patch-Versionen nach Version 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und den 2.4.8-p4-Release-Zeilen überschreiben, müssen Sie Valkey verwenden.
 
 Siehe [Konfigurieren von Valkey](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration){target="_blank"} im _Handbuch zu Best Practices für Implementierungswiedergaben_.
 
