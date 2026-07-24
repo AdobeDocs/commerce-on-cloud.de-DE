@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: de2e5072775d032d46f91394ed870768271fa9a1
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: 849
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ Die `.magento.app.yaml`-Datei verwendet Eigenschaften, um die Umgebungsunterstü
 | [`crons`](crons-property.md) | Spezifikationen aktualisieren und Cron-Aufträge planen | — | Nein |
 | [`dependencies`](#dependencies) | Aktivieren zusätzlicher Abhängigkeiten | `php:composer/composer: '2.2.4'` | Nein |
 | [`disk`](#disk) | Definieren der Größe der persistenten Festplatte | `5120` | Ja |
-| [`firewall`](firewall-property.md) | (Nur Starter) Steuern des ausgehenden Traffics | — | Nein |
 | [`hooks`](hooks-property.md) | Anpassen von Shell-Befehlen für die Build-, Bereitstellungs- und Post-Bereitstellungsphase | — | Nein |
 | [`mounts`](#mounts) | Pfade festlegen | Pfade:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Nein |
 | [`name`](#name) | Programmnamen definieren | `mymagento` | Ja |

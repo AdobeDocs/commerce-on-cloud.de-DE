@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: fb61610380b7b60e274ce8c89f7dda41674f1107
 workflow-type: tm+mt
-source-wordcount: 1011
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -107,7 +107,6 @@ Die Produktions- und Staging-Umgebung umfasst die folgenden Technologien. Sie k�
 - Redis-Server
 - Elasticsearch für die Katalogsuche für Adobe Commerce 2.2 bis 2.4.3-p2
 - OpenSearch für die Katalogsuche für Adobe Commerce 2.3.7-p3, 2.4.3-p2 und 2.4.4 und höher
-- Ausgangs-Filter (ausgehende Firewall)
 
 ### Dienste
 
