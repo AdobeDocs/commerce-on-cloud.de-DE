@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
+source-git-commit: 3d3df68ab5e1781974348190b30372c0b8169d1d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -9,12 +9,12 @@ ht-degree: 0%
 
 Diese Site enthält die neueste Entwicklerdokumentation für Commerce in Cloud Infrastructure.
 
-- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
-- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
+- [Handbuch zu Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+- [Erste Schritte mit Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/overview) auf Cloud-Infrastruktur
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
@@ -34,13 +34,13 @@ Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wi
 
 ### Wesentliche Veränderungen durch Adobe Mitarbeiter
 
-Wenn Sie technischer Redakteur/technische Redakteurin, Programm-Manager oder Entwickler(in) des Produkt-Teams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.de-DE` verwenden.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programm-Manager oder Entwickler(in) des Produkt-Teams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs/commerce-on-cloud.en` verwenden.
 
 ## Tools und Einrichtung
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) Dokumenten .
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) Dokumenten .[
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -70,7 +70,7 @@ Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabel
 >**HINWEIS:**
 >
 >- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
->- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
 
 Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
@@ -157,11 +157,11 @@ Führen Sie nach dem Klonen des Repositorys Folgendes aus:
 
 ### Was die Haken tun
 
-- Gestaffelte Bilddateien automatisch erkennen (PNG, JPEG, GIF, SVG)
-- Ausführen von `image_optim` zum Komprimieren und Optimieren von Rasterbildern (PNG, JPEG, GIF)
+- Erkennen gestaffelter Bilddateien (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`) automatisch
+- Führen Sie `image_optim` aus, um Rasterbilder (`.png`, `.jpeg`, `.jpg`, `.gif`) zu komprimieren und zu optimieren
 - Optimierte Bilder automatisch neu inszenieren
 - Sicherstellen, dass alle übergebenen Rasterbilder ordnungsgemäß optimiert sind
-- Überprüfen Sie bereitgestellte SVGs anhand einer Größenbeschränkung und brechen Sie den Commit ab, wenn eine SVG diese überschreitet
+- Überprüfen Sie gestaffelte SVGs auf eine Größenbeschränkung und brechen Sie den Commit ab, wenn eine übergroße SVG von `help/` referenziert wird (andernfalls einfach warnen).
 
 ### Vorteile
 
