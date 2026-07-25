@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7c3f2965f89503cc94a31aabca3d317a9330a4f6
+source-git-commit: 3d3df68ab5e1781974348190b30372c0b8169d1d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -157,11 +157,11 @@ Führen Sie nach dem Klonen des Repositorys Folgendes aus:
 
 ### Was die Haken tun
 
-- Gestaffelte Bilddateien automatisch erkennen (PNG, JPEG, GIF, SVG)
-- Ausführen von `image_optim` zum Komprimieren und Optimieren von Rasterbildern (PNG, JPEG, GIF)
+- Erkennen gestaffelter Bilddateien (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`) automatisch
+- Führen Sie `image_optim` aus, um Rasterbilder (`.png`, `.jpeg`, `.jpg`, `.gif`) zu komprimieren und zu optimieren
 - Optimierte Bilder automatisch neu inszenieren
 - Sicherstellen, dass alle übergebenen Rasterbilder ordnungsgemäß optimiert sind
-- Überprüfen Sie bereitgestellte SVGs anhand einer Größenbeschränkung und brechen Sie den Commit ab, wenn eine SVG diese überschreitet
+- Überprüfen Sie gestaffelte SVGs auf eine Größenbeschränkung und brechen Sie den Commit ab, wenn eine übergroße SVG von `help/` referenziert wird (andernfalls einfach warnen).
 
 ### Vorteile
 
