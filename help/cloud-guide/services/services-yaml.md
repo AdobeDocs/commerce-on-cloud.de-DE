@@ -4,19 +4,13 @@ description: Erfahren Sie, wie Sie Services konfigurieren, die von Adobe Commerc
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
 TQID: https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: ce1afe358fc8596fa6eba1c2cf76a721060164c6
 workflow-type: tm+mt
-source-wordcount: 1136
+source-wordcount: 1186
 ht-degree: 0%
 
 ---
@@ -27,9 +21,13 @@ Die `services.yaml` definiert die Services, die von Adobe Commerce in Cloud-Infr
 
 >[!NOTE]
 >
->Die `.magento/services.yaml` wird lokal im `.magento` des Projekts verwaltet. Die Konfiguration wird nur während des Build-Prozesses aufgerufen, um die erforderlichen Service-Versionen in der Integrationsumgebung zu definieren, und wird entfernt, sobald die Bereitstellung abgeschlossen ist. Sie finden sie daher nicht auf dem Server.
+>Die `.magento/services.yaml` wird lokal im `.magento` des Projekts verwaltet. Während der Bereitstellung verwendet Adobe Commerce in der Cloud-Infrastruktur diese Konfiguration, um unterstützte Services für die Zielumgebung bereitzustellen. Das `.magento` Verzeichnis wird nach der Bereitstellung vom Remote-Server entfernt, sodass Sie in der bereitgestellten Umgebung keine `services.yaml` finden.
 
 Das Bereitstellungsskript verwendet die Konfigurationsdateien im `.magento`, um die Umgebung mit den konfigurierten Services bereitzustellen. Ein Dienst wird für die Anwendung verfügbar, wenn er in der [`relationships`](../application/properties.md#relationships) der `.magento.app.yaml` enthalten ist. Die `services.yaml`-Datei enthält die Werte _type_ und _disk_. Der Diensttyp definiert den Dienst _name_ und _version_.
+
+Die Service-Konfiguration in `.magento/services.yaml` ist getrennt von den PHP- und Composer-Paketabhängigkeiten, die in `composer.json` definiert und in `composer.lock` gesperrt sind.
+
+## Wo Service-Änderungen gelten
 
 Wenn Sie eine Service-Konfiguration ändern, stellt eine -Bereitstellung die Umgebung mit den aktualisierten Services bereit, was sich auf die folgenden Umgebungen auswirkt:
 
@@ -40,36 +38,41 @@ Wenn Sie eine Service-Konfiguration ändern, stellt eine -Bereitstellung die Umg
 
 ## Standard- und unterstützte Services
 
-Die Cloud-Infrastruktur unterstützt und stellt die folgenden Services bereit:
+Adobe Commerce in Cloud-Infrastrukturen unterstützt die folgenden Services, die für Ihr Projekt konfiguriert werden können:
 
 - [ActiveMQ](activemq.md)
 - [MySQL](mysql.md)
+- [Tal](valkey.md)
 - [Redis](redis.md)
 - [RabbitMQ](rabbitmq.md)
 - [Elasticsearch](elasticsearch.md)
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->Sie müssen [RabbitMQ sequenziell zwischen verfügbaren Versionen aktualisieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) Sie können beispielsweise von 3.9 nicht direkt auf 4.1 aktualisieren
+>Sie müssen [RabbitMQ sequenziell zwischen verfügbaren Versionen aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service) Sie können beispielsweise von 3.9 nicht direkt auf 4.1 aktualisieren
 >
 >Nach dem Upgrade auf eine neue Version von RabbitMQ sollten Sie eine vollständige Bereitstellung in Trigger nehmen, um sicherzustellen, dass Ihre benutzerdefinierten Nachrichtenwarteschlangen in RabbitMQ neu erstellt werden.
 
-Sie können Standardversionen und Datenträgerwerte in der aktuellen ([-`services.yaml`) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Das folgende Beispiel zeigt die `mysql`-, `redis`-, `opensearch`- oder `elasticsearch`-, `rabbitmq`- und `activemq-artemis`-Services, die in der `services.yaml`-Konfigurationsdatei definiert sind:
+## Anzeigen konfigurierter Services und Versionen
+
+Sie können beispielhafte Service-Definitionen und Datenträgerwerte in der aktuellen [`services.yaml`-Datei der Vorlage anzeigen](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Die tatsächlichen standardmäßigen und unterstützten Dienstversionen hängen von Ihrer Adobe Commerce-Version und Ihrer aktuellen Cloud-Vorlage ab.
+
+Das folgende Beispiel zeigt Service-Definitionen in der `services.yaml`-Konfigurationsdatei:
 
 ```yaml
 mysql:
-    type: mysql:10.4
+    type: mysql:11.8
     disk: 5120
 
-redis:
-    type: redis:6.2
+cache:
+    type: valkey:9.0
 
 opensearch:
-    type: opensearch:2  # minor version not required; uses latest
+    type: opensearch:3  # minor version not required; uses latest
     disk: 1024
 
 rabbitmq:
-    type: rabbitmq:3.9
+    type: rabbitmq:4.3
     disk: 1024
 
 activemq-artemis:
@@ -142,9 +145,9 @@ In Adobe Commerce in Cloud-Infrastrukturprojekten bestimmen Service[Beziehungen]
 
 Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAGENTO_CLOUD_RELATIONSHIPS`](../environment/variables-cloud.md) Umgebungsvariablen abrufen. Die Konfigurationsdaten umfassen den Dienstnamen, den Typ und die Version sowie alle erforderlichen Verbindungsdetails wie Port-Nummer und Anmeldeinformationen.
 
-**So überprüfen Sie Beziehungen in der lokalen Umgebung**:
+**So überprüfen Sie Beziehungen aus Ihrer lokalen Entwicklungsumgebung**:
 
-1. Zeigen Sie in Ihrer lokalen Umgebung die Beziehungen für die aktive Umgebung an.
+1. Zeigen Sie in Ihrer lokalen Entwicklungsumgebung die Beziehungen für die aktive Umgebung an.
 
    ```bash
    magento-cloud relationships
@@ -160,7 +163,7 @@ Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAG
    ...
            type: 'redis:7.0'
            port: 6379
-   elasticsearch:
+   opensearch:
        -
    ...
            type: 'opensearch:2'
@@ -168,7 +171,7 @@ Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAG
    database:
        -
    ...
-           type: 'mysql:10.6'
+           type: 'mysql:11.8'
            port: 3306
    ```
 
@@ -192,7 +195,7 @@ Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAG
 
 ## Service-Versionen
 
-Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Versionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt und getestet werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
+Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Versionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt und getestet werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
 
 ### Software-EOL-Prüfungen
 
@@ -201,7 +204,7 @@ Während des Bereitstellungsprozesses überprüft das `ece-tools`-Paket die inst
 - Wenn eine Service-Version innerhalb von drei Monaten nach dem Ende der Nutzungsdauer veröffentlicht wird, wird im Bereitstellungsprotokoll eine Benachrichtigung angezeigt.
 - Wenn das Ende der Nutzungsdauer in der Vergangenheit liegt, wird eine Warnmeldung angezeigt.
 
-Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen &#x200B;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Zu OpenSearch migrieren
 
@@ -225,7 +228,7 @@ Sie können die installierte Version des Services aktualisieren, indem Sie die S
 
    ```yaml
    mysql:
-       type: mysql:10.3
+       type: mysql:11.8
        disk: 2048
    ```
 
@@ -233,7 +236,7 @@ Sie können die installierte Version des Services aktualisieren, indem Sie die S
 
    ```yaml
    mysql:
-       type: mysql:10.4
+       type: mysql:12.3
        disk: 5120
    ```
 
@@ -244,7 +247,7 @@ Sie können die installierte Version des Services aktualisieren, indem Sie die S
    ```
 
    ```bash
-   git commit -m "Upgrade MySQL from MariaDB 10.3 to 10.4."
+   git commit -m "Upgrade MySQL from MariaDB 11.8 to 12.3."
    ```
 
    ```bash
