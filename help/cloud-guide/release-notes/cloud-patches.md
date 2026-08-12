@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 898bbc1b96478de6693d7634d4f0cff359ccc12f
+source-git-commit: 643134d5bf2ab03b0c9cace884e9a020a2aebdb7
 workflow-type: tm+mt
-source-wordcount: 3019
+source-wordcount: 3054
 ht-degree: 0%
 
 ---
@@ -44,7 +44,14 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 <!--Add release notes below-->
 
-## v1.1.17 {#latest}
+## v1.1.18 {#latest}
+
+Veröffentlichungsdatum: 11. August 2026
+
+- ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Patch-**: Patches überspringen jetzt Blöcke, die Zielgruppenmodule betreffen, die über `composer.json` `replace` entfernt wurden, und setzen die Anwendung der verbleibenden installierten Teile fort.<!-- MCLOUD-15325 -->
+- ![Fix icon](../../assets/fix.svg) **Sicherheitsverbesserungen**-Die neuesten Sicherheits-Patches angewendet.<!--MCLOUD-15035 -->
+
+## v1.1.17
 
 Veröffentlichungsdatum: 29. Juli 2026
 

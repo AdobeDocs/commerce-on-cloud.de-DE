@@ -14,7 +14,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 898bbc1b96478de6693d7634d4f0cff359ccc12f
+source-git-commit: 0e5b6814a6e081fea4084579fb71f7257ad2bdb7
 workflow-type: tm+mt
 source-wordcount: 220
 ht-degree: 3%
@@ -28,7 +28,7 @@ Diese Versionshinweise enthalten die neuesten Verbesserungen an der Cloud Tools-
 | Versionshinweise | Version | Beschreibung | Source |
 | ----------------- |----------| ---------------------------------------- | --------------------------- |
 | [ECE-Tools-Paket](ece-tools-package.md) | 2002.2.12 | Eine Reihe von Skripten und Tools zur Verwaltung und Bereitstellung von Cloud-Projekten | [`magento/ece-tools`](https://github.com/magento/ece-tools/tree/2002.2.12) |
-| [Cloud-Patches für Commerce](cloud-patches.md) | 1.1.17 | Eine Reihe von Patches, die die Integration aller Adobe Commerce-Versionen in Cloud-Umgebungen verbessern. Dieses Paket enthält Adobe Commerce-Patches und verfügbare Hotfixes, die bei der Bereitstellung von `ece-tools` angewendet werden | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.17) |
+| [Cloud-Patches für Commerce](cloud-patches.md) | 1.1.18 | Eine Reihe von Patches, die die Integration aller Adobe Commerce-Versionen in Cloud-Umgebungen verbessern. Dieses Paket enthält Adobe Commerce-Patches und verfügbare Hotfixes, die bei der Bereitstellung von `ece-tools` angewendet werden | [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches/tree/1.1.18) |
 | [Cloud Docker für Commerce](cloud-docker.md) | 1.4.9 | Funktionen und Konfigurationsdateien für Docker-Images zum Bereitstellen von Adobe Commerce in einer lokalen Cloud-Umgebung | [`magento/magento-cloud-docker`](https://github.com/magento/magento-cloud-docker/tree/1.4.9) |
 | [Cloud-Komponenten von Commerce](cloud-components.md) | 1.1.4 | Erweiterte Adobe Commerce-Kernfunktionen für Sites, die in der Cloud-Infrastruktur bereitgestellt werden | [`magento/magento-cloud-components`](https://github.com/magento/magento-cloud-components/tree/1.1.4) |
 
