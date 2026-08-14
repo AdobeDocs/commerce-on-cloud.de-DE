@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.12. Außer der Versionsnummer wurden keine weiteren Änderungen vorgenommen.</p>
+      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.12. Außer der Versionsnummer wurden keine weiteren Änderungen vorgenommen.</p>
 </td>
       <td>
         Technisch
