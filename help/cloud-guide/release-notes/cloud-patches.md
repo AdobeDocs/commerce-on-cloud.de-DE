@@ -5,10 +5,20 @@ recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 TQID: https://experienceleague.adobe.com/ZN1TwgU2EFiIezQcZZT-CglLQGY1xZcXoi-BslV3sGQ
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
 workflow-type: tm+mt
 source-wordcount: 2969
@@ -28,7 +38,7 @@ Das Paket Cloud-Patches für Commerce ist eine Abhängigkeit für das Paket ECE-
 
 >[!NOTE]
 >
->Anweisungen [ Anwenden von Patches auf ](../development/apply-patches.md) Projekte finden Sie unter „Anwenden von Patches“.
+>Anweisungen [&#x200B; Anwenden von Patches auf &#x200B;](../development/apply-patches.md) Projekte finden Sie unter „Anwenden von Patches“.
 
 Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz: `<major>.<minor>.<patch>`
 
@@ -46,7 +56,7 @@ Veröffentlichungsdatum: 19. August 2026
 Veröffentlichungsdatum: 11. August 2026
 
 - ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Patch-**: Patches überspringen jetzt Blöcke, die Zielgruppenmodule betreffen, die über `composer.json` `replace` entfernt wurden, und setzen die Anwendung der verbleibenden installierten Teile fort.<!-- MCLOUD-15325 -->
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-92 verwiesen ](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-92 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -65,7 +75,7 @@ Veröffentlichungsdatum: 23. Juli 2026
 
 Veröffentlichungsdatum: 14. Juli 2026
 
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-73 verwiesen ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-73 verwiesen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
 
 ## v1.1.14
 
@@ -73,7 +83,7 @@ Veröffentlichungsdatum: 6. Mai 2026
 
 - ![Fix-Symbol](../../assets/fix.svg) **Sichtbarkeit der Patch-Version** - Die Sichtbarkeit der Cloud-Patch-Version in Cloud-Umgebungen wurde korrigiert.<!--MCLOUD-14221 -->
 - ![fix icon](../../assets/fix.svg) **PHPUnit cleanup**—Behobene PHPUnit-Hinweise<!--MCLOUD-14717 -->
-- ![neues Symbol ](../../assets/new.svg)**Kosmetische Korrekturen** - Es wurden kosmetische Verbesserungen hinzugefügt.<!--MCLOUD-14686 -->
+- ![neues Symbol &#x200B;](../../assets/new.svg)**Kosmetische Korrekturen** - Es wurden kosmetische Verbesserungen hinzugefügt.<!--MCLOUD-14686 -->
 
 ## v1.1.13
 
