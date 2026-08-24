@@ -31,14 +31,14 @@ Die automatische Skalierung fügt der Cloud-Infrastruktur automatisch Ressourcen
 
 ## Automatische Skalierung aktivieren
 
-Um die horizontale oder vertikale automatische Skalierung für Ihr [!DNL Adobe Commerce on cloud infrastructure] zu aktivieren oder zu deaktivieren [Senden Sie ein Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
+Um die horizontale oder vertikale automatische Skalierung für Ihr [!DNL Adobe Commerce on cloud infrastructure] zu aktivieren oder zu deaktivieren [Senden Sie ein Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Wählen Sie die folgenden Gründe im Ticket aus:
 
 - **Kontaktgrund**: Infrastrukturänderungsanfrage
 - **Adobe Commerce-Infrastruktur-Kontaktgrund**: Andere Infrastrukturänderungsanfrage
 
 >[!IMPORTANT]
 >
->Die Funktion zur automatischen Skalierung erfasst unerwartete Ereignisse. Selbst wenn die automatische Skalierung aktiviert ist, empfiehlt Adobe, mit dem [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) fortzufahren, wenn Sie ein bevorstehendes Ereignis erwarten.
+>Die Funktion zur automatischen Skalierung erfasst unerwartete Ereignisse. Selbst wenn die automatische Skalierung aktiviert ist, empfiehlt Adobe, mit dem [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) fortzufahren, wenn Sie ein bevorstehendes Ereignis erwarten.
 
 ### Belastungstests
 
