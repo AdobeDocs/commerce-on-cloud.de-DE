@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Sie müssen über einen Authentifizierungsschlüssel verfügen, um auf das Adobe Commerce-Repository zuzugreifen und um Installations- und Aktualisierungsbefehle für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt zu aktivieren. Es gibt zwei Methoden zum Angeben von Composer-Autorisierungsberechtigungen.
 
-- **Authentifizierungsdatei** - Eine Datei, die Ihre Adobe Commerce-[Autorisierungsberechtigungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in Ihrem Stammverzeichnis der Adobe Commerce in der Cloud-Infrastruktur enthält.
+- **Authentifizierungsdatei** - Eine Datei, die Ihre Adobe Commerce-[Autorisierungsberechtigungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in Ihrem Stammverzeichnis der Adobe Commerce in der Cloud-Infrastruktur enthält.
 - **Umgebungsvariable** - Eine Umgebungsvariable, um Authentifizierungsschlüssel in Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt einzurichten, um versehentliches Offenlegen zu verhindern.
 
 >[!BEGINSHADEBOX]

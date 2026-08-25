@@ -57,7 +57,7 @@ Dies erfordert die ECE-Tools-Version 2002.0.12 und höher mit einer aktualisiert
 
 >[!NOTE]
 >
->Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [&#x200B; Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
+>Wenn die `<domain.your.project>/robots.txt` eine `404 error` generiert, [&#x200B; Sie &quot;Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die Umleitung von `/robots.txt` zu `/media/robots.txt` zu entfernen.
 
 ## Umschreiben mit Fastly VCL-Snippet
 

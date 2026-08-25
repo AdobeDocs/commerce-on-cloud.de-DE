@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Variablen-Eigenschaft
 
-Sie können anwendungsbasierte Umgebungsvariablen verwenden, um Store-Konfigurationen anzupassen. Diese Variablen verwenden eine bestimmte Syntax. Siehe [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/override-config-settings) im _Konfigurationshandbuch_.
+Sie können anwendungsbasierte Umgebungsvariablen verwenden, um Store-Konfigurationen anzupassen. Diese Variablen verwenden eine bestimmte Syntax. Siehe [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/paths/override-config-settings) im _Konfigurationshandbuch_.
 
 Die folgenden in der `.magento.app.yaml`-Datei enthaltenen Umgebungsvariablen sind für bestimmte Versionen des [!DNL Commerce]-Programms erforderlich.
 

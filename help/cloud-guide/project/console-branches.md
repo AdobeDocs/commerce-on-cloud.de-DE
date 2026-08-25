@@ -47,7 +47,7 @@ Die Verzweigungsstrategie verwendet einen gängigen Git-Workflow, bei dem Sie Co
 
 Ihr Konto unterstützt eine begrenzte Anzahl von ![aktiven](../../assets/icon-active.png){width="32"} (aktiven) und eine unbegrenzte Anzahl von ![inaktiven](../../assets/icon-inactive.png){width="32"} (inaktiven) Entwicklungszweigen. Verwalten Sie aktive und inaktive Verzweigungen, indem Sie eine Verzweigung nur mit der [!DNL Cloud Console] oder der Cloud-CLI hinzufügen oder löschen. Bevor Sie eine Verzweigung löschen können, deaktivieren Sie die Verzweigung, die in der Liste _Umgebungen_ als &quot;_&quot;_ bleibt. Sie können die Verzweigung später erneut aktivieren oder [die Verzweigung löschen](../dev-tools/cloud-cli-overview.md#) in den Umgebungseinstellungen oder über die Cloud-CLI.
 
-Wenn Sie zusätzliche aktive Umgebungen für die Entwicklung benötigen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ein.
+Wenn Sie zusätzliche aktive Umgebungen für die Entwicklung benötigen, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ein.
 
 **So fügen Sie eine Verzweigung**:
 

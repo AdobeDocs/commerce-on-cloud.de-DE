@@ -202,7 +202,7 @@ Sowohl für Starter- als auch für Pro-Projekte können Sie die Option [!UICONTR
 
 - Rufen Sie für Startprojekte die Projekt-URL auf der Registerkarte [!UICONTROL Domains] im [!DNL Cloud Console] auf, um Ihre Projekt-URL hinzuzufügen.
 
-- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
+- Senden Sie für Pro-Projekte ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die Domain zu Ihrer Cloud-Projektkonfiguration hinzuzufügen. Das Support-Team aktualisiert auch die Adobe Commerce Fastly-Kontokonfiguration, um die Domain hinzuzufügen.
 
 **Verwaltung der Fastly-Domain-Konfiguration über den Administrator**:
 

@@ -32,7 +32,7 @@ Wenn MFA für ein Projekt aktiviert ist, benötigen alle Benutzerkonten mit SSH-
 
 >[!NOTE]
 >
->MFA ist in Cloud-Projekten standardmäßig nicht aktiviert. Der Kontoinhaber für das Adobe Commerce on Cloud-Infrastrukturprojekt muss [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um es zu aktivieren. Wenn MFA aktiviert ist, muss für alle Benutzenden in ihrem Adobe Commerce in der Cloud-Infrastruktur-Konto die Zwei-Faktor-Authentifizierung (TFA) aktiviert sein, damit SSH-Zugriff auf die Projektumgebungen möglich ist.
+>MFA ist in Cloud-Projekten standardmäßig nicht aktiviert. Der Kontoinhaber für das Adobe Commerce on Cloud-Infrastrukturprojekt muss [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um es zu aktivieren. Wenn MFA aktiviert ist, muss für alle Benutzenden in ihrem Adobe Commerce in der Cloud-Infrastruktur-Konto die Zwei-Faktor-Authentifizierung (TFA) aktiviert sein, damit SSH-Zugriff auf die Projektumgebungen möglich ist.
 
 ## Zertifikate für SSH-Zugriff
 
