@@ -6,15 +6,12 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 67bc77da-d7f2-4a92-bc11-aa4673d733c1
 TQID: https://experienceleague.adobe.com/faQLVL7yA4G8uh8VNVpjouJdVPdwio8PdpOh-a-hHyE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 944
+source-wordcount: 946
 ht-degree: 0%
 
 ---
@@ -83,7 +80,7 @@ Siehe [Patches anwenden](../development/apply-patches.md).
 - **default**—`6`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Gibt an[&#x200B; welche GZIP](https://www.gnu.org/software/gzip)-Komprimierungsstufe (`0` zu `9`) beim Komprimieren statischer Inhalte verwendet werden soll; `0` deaktiviert die Komprimierung.
+Gibt an[ welche GZIP](https://www.gnu.org/software/gzip)-Komprimierungsstufe (`0` zu `9`) beim Komprimieren statischer Inhalte verwendet werden soll; `0` deaktiviert die Komprimierung.
 
 ```yaml
 stage:
@@ -193,7 +190,7 @@ stage:
 - **default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 und höher
 
-Passen Sie die [Bereitstellungsstrategie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=de) für statische Inhalte an. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
+Passen Sie die [Bereitstellungsstrategie](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) für statische Inhalte an. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 

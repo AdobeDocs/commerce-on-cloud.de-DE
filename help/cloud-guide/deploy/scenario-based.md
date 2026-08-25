@@ -4,18 +4,13 @@ description: Erfahren Sie, wie Sie Adobe Commerce in Cloud-Infrastrukturbereitst
 feature: Cloud, Configuration, Deploy, Build
 exl-id: 44c2a73e-4ea2-49a6-86c1-9fa8cfc8b66e
 TQID: https://experienceleague.adobe.com/BttmvnP2iMbN-EAaPR9g2i9mv7fH4REAEwHFTu-2sw0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 874
+source-wordcount: 884
 ht-degree: 0%
 
 ---
@@ -51,7 +46,7 @@ hooks:
 
 >[!NOTE]
 >
->Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=de)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
+>Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
 
 ## Schritte des Überprüfungsszenarios
 
@@ -92,9 +87,9 @@ Während der Bereitstellung werden die benutzerdefinierten Szenarien anhand der 
 
   Im Beispiel haben die Szenarien die folgende Priorität:
 
-   1. `vendor/vendor-name/module-name/deploy2.xml`
-   1. `vendor/vendor-name/module-name/deploy.xml`
-   1. `scenario/deploy.xml` (Standard- oder Basisszenario)
+  1. `vendor/vendor-name/module-name/deploy2.xml`
+  1. `vendor/vendor-name/module-name/deploy.xml`
+  1. `scenario/deploy.xml` (Standard- oder Basisszenario)
 
 - Die Schritte im Szenario mit der höchsten Priorität überschreiben Schritte mit demselben Namen in den anderen Szenarien. Der Konfiguration werden neue Schritte hinzugefügt. Dieselben Regeln gelten für mehr als zwei Szenarien, wobei jedes Szenario von rechts nach links priorisiert wird, z. B. (C → B → A).
 
@@ -229,7 +224,7 @@ hooks:
 
 >[!TIP]
 >
->Sie können die [Standardszenarien](https://github.com/magento/ece-tools/tree/2002.1/scenario) und [Standardschrittkonfiguration) &#x200B;](https://github.com/magento/ece-tools/tree/2002.1/src/Step) GitHub-Repository von `ece-tools` überprüfen, um zu bestimmen, welche Szenarien und Schritte für die Erstellung, Bereitstellung und Nachbereitstellung Ihres Projekts angepasst werden sollen.
+>Sie können die [Standardszenarien](https://github.com/magento/ece-tools/tree/2002.1/scenario) und [Standardschrittkonfiguration) ](https://github.com/magento/ece-tools/tree/2002.1/src/Step) GitHub-Repository von `ece-tools` überprüfen, um zu bestimmen, welche Szenarien und Schritte für die Erstellung, Bereitstellung und Nachbereitstellung Ihres Projekts angepasst werden sollen.
 
 ## Hinzufügen eines benutzerdefinierten Moduls zum Erweitern von `ece-tools`
 

@@ -4,18 +4,13 @@ description: Erfahren Sie, wie Sie Store-Konfigurationseinstellungen in allen Ad
 feature: Cloud, Configuration, SCD
 exl-id: 01850a7b-2c03-45e8-8051-b24ae95c5f87
 TQID: https://experienceleague.adobe.com/TF-K8g48q2fnuldOLdnwxjAJrxGzsRJlongd7cRqV9U
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1507
+source-wordcount: 1512
 ht-degree: 0%
 
 ---
@@ -26,14 +21,14 @@ Die Standardkonfigurationen für Ihren Store werden in einem `config.xml` für d
 
 Store-Einstellungen, die auf die Konfigurationen im Abschnitt Admin **Stores** > **Settings** > **Configuration** verweisen, werden je nach Konfigurationstyp in den Bereitstellungskonfigurationsdateien gespeichert:
 
-- `app/etc/config.php` - Konfigurationseinstellungen für Stores, Websites, Module oder Erweiterungen, statische Dateioptimierung und Systemwerte im Zusammenhang mit der Bereitstellung statischer Inhalte. Siehe die [config.php](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-configphp.html?lang=de) im _Konfigurationshandbuch_.
-- `app/etc/env.php` - Werte für systemspezifische Überschreibungen und sensible Einstellungen, die _NOT_ in der Quell-Code-Verwaltung gespeichert werden sollen. Siehe [env.php-Referenz](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/config-reference-envphp.html?lang=de) im _Konfigurationshandbuch_.
+- `app/etc/config.php` - Konfigurationseinstellungen für Stores, Websites, Module oder Erweiterungen, statische Dateioptimierung und Systemwerte im Zusammenhang mit der Bereitstellung statischer Inhalte. Siehe die [config.php](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp) im _Konfigurationshandbuch_.
+- `app/etc/env.php` - Werte für systemspezifische Überschreibungen und sensible Einstellungen, die _NOT_ in der Quell-Code-Verwaltung gespeichert werden sollen. Siehe [env.php-Referenz](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-envphp) im _Konfigurationshandbuch_.
 
 >[!NOTE]
 >
 >Da Adobe Commerce in der Cloud-Infrastruktur nur die Produktions- und Wartungsmodi unterstützt **kann der Abschnitt** Erweitert **>** nicht über Admin aufgerufen werden. Sie müssen über [Umgebungs-Administratorrechte](../project/user-access.md) verfügen, um Konfigurationsverwaltungsaufgaben abzuschließen. Sie können zusätzliche Einstellungen mithilfe von [Umgebungsvariablen](../environment/configure-env-yaml.md) konfigurieren.
 
-Die Konfigurationsverwaltung bietet eine Möglichkeit, mithilfe der Pipeline-Bereitstellung konsistente Speichereinstellungen in Ihren Umgebungen mit minimalen Ausfallzeiten bereitzustellen. Das Adobe Commerce on Cloud Infrastructure-Projekt umfasst den Build-Server, Build- und Bereitstellungsskripte sowie Bereitstellungsumgebungen, die mit Blick auf die [Pipeline-Bereitstellungsstrategie](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) entwickelt wurden.
+Die Konfigurationsverwaltung bietet eine Möglichkeit, mithilfe der Pipeline-Bereitstellung konsistente Speichereinstellungen in Ihren Umgebungen mit minimalen Ausfallzeiten bereitzustellen. Das Adobe Commerce on Cloud Infrastructure-Projekt umfasst den Build-Server, Build- und Bereitstellungsskripte sowie Bereitstellungsumgebungen, die mit Blick auf die [Pipeline-Bereitstellungsstrategie](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/technical-details) entwickelt wurden.
 
 ## Außerkraftsetzungsschema der Konfiguration
 
@@ -47,7 +42,7 @@ Zusammenfassend lässt sich sagen, dass Umgebungsvariablen alle anderen Werte ü
 
 >[!TIP]
 >
->Weitere Informationen [&#x200B; Überschreibungsschema für &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) Pipeline-Bereitstellung finden Sie _Konfigurationsverwaltung_ im Konfigurationshandbuch.
+>Weitere Informationen [ Überschreibungsschema für ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/technical-details) Pipeline-Bereitstellung finden Sie _Konfigurationsverwaltung_ im Konfigurationshandbuch.
 
 Wenn dieselbe Einstellung an mehreren Stellen konfiguriert ist, verwendet die Anwendung die folgende Konfigurationshierarchie, um zu bestimmen, welcher Wert auf die Umgebung angewendet werden soll:
 
@@ -78,9 +73,9 @@ Die Daten, die in die `app/etc/config.php`-Datei „geschrieben _werden_ gesperr
 
 ### Sensible Daten
 
-Alle sensiblen Konfigurationen werden in die `app/etc/env.php`-Datei exportiert, wenn Sie den Befehl `bin/magento app:config:dump` verwenden. Sie können vertrauliche Werte mithilfe des CLI-Befehls festlegen: `bin/magento config:sensitive:set`. Siehe [Sensitive und umgebungsspezifische Einstellungen](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/) im Handbuch _Commerce PHP Extensions_, um zu erfahren, wie Sie Konfigurationseinstellungen als sensibel oder systemspezifisch festlegen.
+Alle sensiblen Konfigurationen werden in die `app/etc/env.php`-Datei exportiert, wenn Sie den Befehl `bin/magento app:config:dump` verwenden. Sie können vertrauliche Werte mithilfe des CLI-Befehls festlegen: `bin/magento config:sensitive:set`. Siehe [Sensitive und umgebungsspezifische Einstellungen](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings) im Handbuch _Commerce PHP Extensions_, um zu erfahren, wie Sie Konfigurationseinstellungen als sensibel oder systemspezifisch festlegen.
 
-Eine Liste der [sensiblen oder systemspezifischen Einstellungen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/config-reference-sens.html?lang=de) finden Sie im _Konfigurationshandbuch_.
+Eine Liste der [sensiblen oder systemspezifischen Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-sens) finden Sie im _Konfigurationshandbuch_.
 
 ### SCD-Leistung
 

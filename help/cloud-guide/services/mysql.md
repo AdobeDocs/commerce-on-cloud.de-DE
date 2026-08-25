@@ -4,19 +4,13 @@ description: Erfahren Sie, wie Sie den MySQL-Service für die persistente Datens
 feature: Cloud, Services, Storage
 exl-id: 37b893ef-43cf-466b-9d18-ee3b80fdf2d8
 TQID: https://experienceleague.adobe.com/xPikS7qhOEhhWDRuUYBJEqL7EUPObzPDxJEZ4xjKkuE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 921
+source-wordcount: 928
 ht-degree: 1%
 
 ---
@@ -25,7 +19,7 @@ ht-degree: 1%
 
 Der `mysql`-Service bietet eine persistente Datenspeicherung basierend auf den [MariaDB](https://mariadb.com/)-Versionen 10.2 bis 10.4, unterstützt die [XtraDB](https://docs.percona.com/percona-xtradb-cluster/8.0/index.html)-Speicher-Engine und implementierte Funktionen aus MySQL 5.6 und 5.7.
 
-Die Neuindizierung auf MariaDB 10.4 dauert im Vergleich zu anderen MariaDB- oder MySQL-Versionen länger. Siehe [Indexer](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=de#indexers) im Handbuch _Best Practices für die_&quot;.
+Die Neuindizierung auf MariaDB 10.4 dauert im Vergleich zu anderen MariaDB- oder MySQL-Versionen länger. Siehe [Indexer](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#indexers) im Handbuch _Best Practices für die_&quot;.
 
 >[!WARNING]
 >
@@ -84,7 +78,7 @@ mysql:
             optimizer_use_condition_selectivity: 1
 ```
 
-Mit dem `properties` im obigen Beispiel werden die standardmäßigen `optimizer` wie [&#x200B; im Handbuch für Best Practices für die Leistung &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html?lang=de#indexers).
+Mit dem `properties` im obigen Beispiel werden die standardmäßigen `optimizer` wie [ im Handbuch für Best Practices für die Leistung ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#indexers).
 
 **MariaDB-Konfigurationsoptionen**:
 
@@ -100,7 +94,7 @@ Mit dem `properties` im obigen Beispiel werden die standardmäßigen `optimizer`
 
 Optional können Sie mehrere Benutzer mit unterschiedlichen Berechtigungen für den Zugriff auf die `main`-Datenbank einrichten.
 
-Standardmäßig gibt es einen Endpunkt mit dem Namen `mysql`, der Administratorzugriff auf die Datenbank hat. Um mehrere Datenbankbenutzer einzurichten, müssen Sie mehrere Endpunkte in der `services.yaml` definieren und die Beziehungen in der `.magento.app.yaml` deklarieren. Für Pro-Staging- und Produktionsumgebungen [Senden Sie ein Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um den zusätzlichen Benutzer anzufordern.
+Standardmäßig gibt es einen Endpunkt mit dem Namen `mysql`, der Administratorzugriff auf die Datenbank hat. Um mehrere Datenbankbenutzer einzurichten, müssen Sie mehrere Endpunkte in der `services.yaml` definieren und die Beziehungen in der `.magento.app.yaml` deklarieren. Für Pro-Staging- und Produktionsumgebungen [Senden Sie ein Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den zusätzlichen Benutzer anzufordern.
 
 Verwenden Sie ein verschachteltes -Array, um die Endpunkte für einen bestimmten Benutzerzugriff zu definieren. Jeder Endpunkt kann Zugriff auf ein oder mehrere Schemas (Datenbanken) und verschiedene Berechtigungsebenen für jedes Schema zuweisen.
 
@@ -224,13 +218,13 @@ Für den direkten Zugriff auf die MariaDB-Datenbank müssen Sie ein SSH verwende
 >
 >Diese Funktion ist nur für Pro-Produktions- und Staging-Cluster verfügbar.
 
-Manchmal müssen Sie eine Verbindung zur sekundären Datenbank herstellen, um die Datenbankleistung zu verbessern oder Probleme mit der Datenbanksperre zu beheben. Wenn diese Konfiguration erforderlich ist, verwenden Sie `"port" : 3304` , um die Verbindung herzustellen. Siehe das Thema [Best Practice zur Konfiguration der MySQL-Slave](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration.html?lang=de)Verbindung im _Implementierungs-Best-Practices_ Handbuch.
+Manchmal müssen Sie eine Verbindung zur sekundären Datenbank herstellen, um die Datenbankleistung zu verbessern oder Probleme mit der Datenbanksperre zu beheben. Wenn diese Konfiguration erforderlich ist, verwenden Sie `"port" : 3304` , um die Verbindung herzustellen. Siehe das Thema [Best Practice zur Konfiguration der MySQL-Slave](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/mysql-configuration)Verbindung im _Implementierungs-Best-Practices_ Handbuch.
 
 ## Fehlerbehebung
 
 In den folgenden Adobe Commerce-Support-Artikeln finden Sie Hilfe bei der Fehlerbehebung bei MySQL-Problemen:
 
-- [Überprüfen langsamer Abfragen und Prozesse MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql.html?lang=de)
-- [Erstellen eines Datenbank-Dump in der Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=de)
-- [Fehlerbehebung beim Datenmigrations-Tool](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
-- [Adobe Commerce-Upgrade: Kompakt auf dynamische Tabellen 2.2.x, 2.3.x auf 2.4.x](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=de)
+- [Überprüfen langsamer Abfragen und Prozesse MySQL](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql)
+- [Erstellen eines Datenbank-Dump in der Cloud](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud)
+- [Fehlerbehebung beim Datenmigrations-Tool](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+- [Adobe Commerce-Upgrade: Kompakt auf dynamische Tabellen 2.2.x, 2.3.x auf 2.4.x](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)

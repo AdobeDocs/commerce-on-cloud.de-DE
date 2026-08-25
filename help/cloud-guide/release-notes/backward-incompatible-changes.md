@@ -5,17 +5,12 @@ feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
 exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
 TQID: https://experienceleague.adobe.com/ekS7f5swOsG2xgXP6ybN6hzwYm2xBbPWvl5oabv7Crc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 823
 ht-degree: 0%
 
 ---
@@ -67,7 +62,7 @@ In früheren ECE-Tools-Versionen konnten Sie die `m2-ece-build` und `m2-ece-depl
 
 ## Änderungen an Cloud-Patches
 
-- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/commerce.html?lang=de) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patch-Konflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie heruntergeladen und Ihrem Projekt manuell hinzugefügt haben.
+- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/commerce) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patch-Konflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie heruntergeladen und Ihrem Projekt manuell hinzugefügt haben.
 
 - **Befehl zum Anwenden von Patches wurde aktualisiert**-Der Befehl zum Anwenden von Patches wurde aus dem `vendor/bin/ece-tools` in das `vendor/bin/ece-patches`-Verzeichnis verschoben. Wenn Sie diesen Befehl verwenden, um Patches manuell anzuwenden, verwenden Sie den neuen Pfad.
 
@@ -83,45 +78,45 @@ In früheren ECE-Tools-Versionen konnten Sie die `m2-ece-build` und `m2-ece-depl
 
 - **Befehlsänderungen von Cloud Docker für Commerce**-
 
-   - **Aktualisieren von Cloud Docker für Commerce-Befehle für Docker-Build-Vorgänge**-Wir haben die Cloud Docker für Commerce-Befehle aus dem `vendor/bin/ece-tools` in das `vendor/bin/ece-docker`-Verzeichnis verschoben. Aktualisieren Sie Ihre Skripte und Befehle, um den neuen Pfad zu verwenden.
+  - **Aktualisieren von Cloud Docker für Commerce-Befehle für Docker-Build-Vorgänge**-Wir haben die Cloud Docker für Commerce-Befehle aus dem `vendor/bin/ece-tools` in das `vendor/bin/ece-docker`-Verzeichnis verschoben. Aktualisieren Sie Ihre Skripte und Befehle, um den neuen Pfad zu verwenden.
 
-     Nach dem Upgrade auf `ece-tools` 2002.1.0 verwenden Sie den folgenden Befehl, um verfügbare `ece-docker` anzuzeigen.
+    Nach dem Upgrade auf `ece-tools` 2002.1.0 verwenden Sie den folgenden Befehl, um verfügbare `ece-docker` anzuzeigen.
 
-     ```bash
-     php ./vendor/bin/ece-docker list
-     ```
+    ```bash
+    php ./vendor/bin/ece-docker list
+    ```
 
-   - **Aktualisieren der Cloud-Docker-**-Wir haben den Pfad zur Befehlsdatei von `./bin/docker` in `./bin/magento-docker` umbenannt. Aktualisieren Sie Ihre Skripte und Befehle, um den neuen Pfad zu verwenden.
+  - **Aktualisieren der Cloud-Docker-**-Wir haben den Pfad zur Befehlsdatei von `./bin/docker` in `./bin/magento-docker` umbenannt. Aktualisieren Sie Ihre Skripte und Befehle, um den neuen Pfad zu verwenden.
 
-   - **Cron-Container ist nicht mehr in der standardmäßigen Docker-Konfiguration enthalten**-Jetzt müssen Sie die `--with-cron`-Option zum `ece-docker build:compose`-Befehl hinzufügen, um den Cron-Container in die Docker-Umgebungskonfiguration aufzunehmen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) im Handbuch _Cloud Docker for Commerce_.
+  - **Cron-Container ist nicht mehr in der standardmäßigen Docker-Konfiguration enthalten**-Jetzt müssen Sie die `--with-cron`-Option zum `ece-docker build:compose`-Befehl hinzufügen, um den Cron-Container in die Docker-Umgebungskonfiguration aufzunehmen. Siehe [Verwalten von Cron-Aufträgen](https://developer.adobe.com/commerce/cloud-tools/docker/configure/manage-cron-jobs) im Handbuch _Cloud Docker for Commerce_.
 
-     Skripte, die zuvor Container mit Cron-Aufträgen generiert haben, sind jetzt ohne den Cron-Container.
+    Skripte, die zuvor Container mit Cron-Aufträgen generiert haben, sind jetzt ohne den Cron-Container.
 
-   - **Verwenden temporärer Container**-In früheren Versionen wurden die von `bin/magento-docker` Befehlsvorgängen erstellten Container nicht entfernt, sodass Sie sie für andere Vorgänge verwenden konnten. Jetzt entfernen die `magento-docker`-Befehle alle Container, die sie nach Abschluss des Befehls erstellen.
+  - **Verwenden temporärer Container**-In früheren Versionen wurden die von `bin/magento-docker` Befehlsvorgängen erstellten Container nicht entfernt, sodass Sie sie für andere Vorgänge verwenden konnten. Jetzt entfernen die `magento-docker`-Befehle alle Container, die sie nach Abschluss des Befehls erstellen.
 
-     Wenn Sie einen durch einen Docker-Compose-Vorgang erstellten Container beibehalten möchten, verwenden Sie den `docker-compose run`-Befehl anstelle des `bin/magento-docker`-Befehls.
+    Wenn Sie einen durch einen Docker-Compose-Vorgang erstellten Container beibehalten möchten, verwenden Sie den `docker-compose run`-Befehl anstelle des `bin/magento-docker`-Befehls.
 
-   - **Ausführen von Hooks nach der Bereitstellung**-Der `cloud-deploy` Befehl führt keine Hooks nach der Bereitstellung mehr aus. Verwenden Sie den neuen `cloud-post-deploy`-Befehl, um nach der Bereitstellung Hooks auszuführen. Aktualisieren Sie Ihre Skripte, um den Befehl zum Ausführen von Hooks nach der Bereitstellung hinzuzufügen.
+  - **Ausführen von Hooks nach der Bereitstellung**-Der `cloud-deploy` Befehl führt keine Hooks nach der Bereitstellung mehr aus. Verwenden Sie den neuen `cloud-post-deploy`-Befehl, um nach der Bereitstellung Hooks auszuführen. Aktualisieren Sie Ihre Skripte, um den Befehl zum Ausführen von Hooks nach der Bereitstellung hinzuzufügen.
 
-     ```shell
-     bin/magento-docker ece-deploy
-     bin/magento-docker ece-post-deploy
-     ```
+    ```shell
+    bin/magento-docker ece-deploy
+    bin/magento-docker ece-post-deploy
+    ```
 
-     Wenn Sie `docker-compose`-Befehle direkt verwenden, führen Sie alternativ den `docker-compose run deploy cloud-post-deploy`-Befehl nach dem Bereitstellungsbefehl aus.
+    Wenn Sie `docker-compose`-Befehle direkt verwenden, führen Sie alternativ den `docker-compose run deploy cloud-post-deploy`-Befehl nach dem Bereitstellungsbefehl aus.
 
 - **Datenbank aktualisieren**-Der Datenbank-Container ist jetzt im `magento-db` persistenten Docker-Volume gespeichert. Wenn Sie die Docker-Umgebung aktualisieren, wird die Datenbank nicht mehr automatisch gelöscht. Verwenden Sie bei Bedarf einen der folgenden Befehle, um ihn manuell zu entfernen.
 
-   - Entfernen Sie den `magento-db`:
+  - Entfernen Sie den `magento-db`:
 
-     ```bash
-     docker volume rm magento-db
-     ```
+    ```bash
+    docker volume rm magento-db
+    ```
 
-   - Entfernen Sie alle zugehörigen Volumes, wenn Sie die Docker-Container herunterfahren:
+  - Entfernen Sie alle zugehörigen Volumes, wenn Sie die Docker-Container herunterfahren:
 
-     ```bash
-     docker-compose down -v
-     ```
+    ```bash
+    docker-compose down -v
+    ```
 
 - **Dateisynchronisierungseinstellungen für Archiv- und Sicherungsdateien überschreiben**-Archiv- und Sicherungsdateien mit den folgenden Erweiterungen werden bei Verwendung von docker-sync oder mutagen nicht mehr synchronisiert: SQL, GZ, ZIP und BZ2. Sie können die standardmäßige Dateisynchronisierung für diese Dateitypen überschreiben, indem Sie die Datei so umbenennen, dass sie mit einer anderen Erweiterung endet. Beispiel: `synchronize-me.zip-backup`

@@ -4,16 +4,12 @@ description: Erfahren Sie, wie Sie das Caching für Ihre Adobe Commerce in Cloud
 feature: Cloud, Cache, Routes
 exl-id: e73c36d6-9a58-45c0-9220-86074c1f46f0
 TQID: https://experienceleague.adobe.com/dCr0px-0XWXIznsg1w8tUnBaAeXvanY1h-mwiu6GfzU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 430
+source-wordcount: 431
 ht-degree: 0%
 
 ---
@@ -139,7 +135,7 @@ Ein Sonderfall liegt vor, wenn der `cookies` den Wert `["*"]` hat. Dieser Wert b
 
 Cookies haben die folgenden Einschränkungen:
 
-- Im System sind maximal **50 Cookies** festgelegt. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. Um die Anzahl der Cookies auf 200 zu erhöhen, wenden Sie den [MDVA-12304-Patch](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=de) mithilfe des [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/tools/quality-patch-tool) an.
+- Im System sind maximal **50 Cookies** festgelegt. Andernfalls löst die Anwendung eine `Unable to send the cookie. Maximum number of cookies would be exceeded` Ausnahme aus. Um die Anzahl der Cookies auf 200 zu erhöhen, wenden Sie den [MDVA-12304-Patch](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) mithilfe des [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/tools/quality-patch-tool) an.
 - Die maximale Cookie-Größe beträgt **4096 Byte**. Andernfalls löst die Anwendung eine `Unable to send the cookie. Size of '%name' is %size bytes` Ausnahme aus.
 
 ### `default_ttl`
