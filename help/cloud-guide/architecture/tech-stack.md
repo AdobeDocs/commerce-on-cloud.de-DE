@@ -21,9 +21,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 413
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale
 
 1. [**Cloud-Infrastruktur**](pro-architecture.md): Wählen Sie entweder Amazon Web Services (AWS) oder Microsoft Azure as a Service (IaaS) als Grundlage für Ihre Adobe Commerce in Cloud Infrastructure Pro-Projekten.
 
-   Adobe analysiert routinemäßig die Nutzung Ihrer Virtual Compute Resource (vCPU) und weist automatisch Ressourcen zu, um Ihre langfristige Nutzung zu optimieren und das Risiko einer Überschreitung Ihrer maximalen jährlichen vCPU-Tagegelder zu minimieren. Wenn Sie für bestimmte Zeiträume einen erhöhten Site-Traffic erwarten, müssen Sie weiterhin ein Support-Ticket öffnen, um [eine temporäre Aktualisierung anzufordern](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=de).
+   Adobe analysiert routinemäßig die Nutzung Ihrer Virtual Compute Resource (vCPU) und weist automatisch Ressourcen zu, um Ihre langfristige Nutzung zu optimieren und das Risiko einer Überschreitung Ihrer maximalen jährlichen vCPU-Tagegelder zu minimieren. Wenn Sie für bestimmte Zeiträume einen erhöhten Site-Traffic erwarten, müssen Sie weiterhin ein Support-Ticket öffnen, um [eine temporäre Aktualisierung anzufordern](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize).
 
 1. [**Platform as a Service**](cloud-architecture.md): Jedes Adobe Commerce on Cloud Infrastructure-Projekt bietet eine Platform as a Service (PaaS)-Integrationsumgebung zum Entwickeln, Testen und Integrieren von Services.
 1. [**Adobe Commerce**](../project/overview.md): Adobe Commerce in der Cloud-Infrastruktur bietet eine vorab bereitgestellte Infrastruktur, die PHP, MySQL (MariaDB), Redis, Message Queue Services ([!DNL RabbitMQ] oder [!DNL ActiveMQ]) und unterstützte Suchmaschinentechnologien umfasst.

@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 874
+source-wordcount: 884
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ hooks:
 
 >[!NOTE]
 >
->Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property.html?lang=de)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
+>Mit der Veröffentlichung von `ece-tools` 2002.1.x gibt es ein neues [Hooks-Konfiguration](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/hooks-property)-Format. Das Legacy-Format `ece-tools` Versionen 2002.0.x wird weiterhin unterstützt. Sie müssen jedoch auf das neue Format aktualisieren, um die szenariobasierte Bereitstellungsfunktion verwenden zu können.
 
 ## Schritte des Überprüfungsszenarios
 
@@ -92,9 +92,9 @@ Während der Bereitstellung werden die benutzerdefinierten Szenarien anhand der 
 
   Im Beispiel haben die Szenarien die folgende Priorität:
 
-   1. `vendor/vendor-name/module-name/deploy2.xml`
-   1. `vendor/vendor-name/module-name/deploy.xml`
-   1. `scenario/deploy.xml` (Standard- oder Basisszenario)
+  1. `vendor/vendor-name/module-name/deploy2.xml`
+  1. `vendor/vendor-name/module-name/deploy.xml`
+  1. `scenario/deploy.xml` (Standard- oder Basisszenario)
 
 - Die Schritte im Szenario mit der höchsten Priorität überschreiben Schritte mit demselben Namen in den anderen Szenarien. Der Konfiguration werden neue Schritte hinzugefügt. Dieselben Regeln gelten für mehr als zwei Szenarien, wobei jedes Szenario von rechts nach links priorisiert wird, z. B. (C → B → A).
 

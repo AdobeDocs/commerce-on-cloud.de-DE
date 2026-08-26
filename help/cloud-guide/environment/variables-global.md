@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 774
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ stage:
 - **default**-_not set_
 - **Version**—Adobe Commerce 2.4.4 und höher
 
-Wenn auf `true` gesetzt, werden Commerce-Webhooks aktiviert. Der Webhook wird über einen externen Endpunkt ausgeführt, z. B. eine App Builder-Laufzeitaktion oder ein Inventarverwaltungssystem eines Drittanbieters. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks) wird diese Funktion ausführlich beschrieben.
+Wenn auf `true` gesetzt, werden Commerce-Webhooks aktiviert. Der Webhook wird über einen externen Endpunkt ausgeführt, z. B. eine App Builder-Laufzeitaktion oder ein Inventarverwaltungssystem eines Drittanbieters. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks/) wird diese Funktion ausführlich beschrieben.
 
 ```yaml
 stage:
@@ -167,8 +167,8 @@ stage:
 ## `SKIP_HTML_MINIFICATION`
 
 - **Standard**:
-   - `true`—für `ece-tools` 2002.0.13 und höher
-   - `false` - für frühere Versionen von `ece-tools`
+  - `true`—für `ece-tools` 2002.0.13 und höher
+  - `false` - für frühere Versionen von `ece-tools`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
 Aktiviert oder deaktiviert das Kopieren von statischen Ansichtsdateien in das `<magento_root>/init/` am Ende des Erstellungsvorgangs. Wenn auf `true` festgelegt, werden die Dateien nicht kopiert und eine HTML-Minimierung ist auf Anfrage verfügbar. Legen Sie diesen Wert auf `true` fest, um Ausfallzeiten bei der Bereitstellung in Staging- und Produktionsumgebungen zu reduzieren.
@@ -189,7 +189,7 @@ stage:
 - **Standard**—_Nicht festgelegt_
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/security/xframe-options.html?lang=de)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
+Verwenden Sie die Variable `X_FRAME_CONFIGURATION` , um die Konfiguration des [`X-Frame-Options`](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/security/xframe-options)-Headers für Ihre Adobe Commerce-Site zu ändern. Diese Konfiguration steuert, wie der Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` rendert. Verwenden Sie eine der folgenden Optionen:
 
 - `DENY` - Die Seite kann nicht in einem Frame angezeigt werden.
 - `SAMEORIGIN`-(Die Standardeinstellung für Adobe Commerce.) Die Seite kann nur in einem Frame angezeigt werden, der auf demselben Ursprung wie die Seite selbst liegt.

@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: 414
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Die _build_-Phase stellt Container für die in den Konfigurationsdateien definie
 
 ## ![Bereitstellungsphase](../../assets/status-deploy.png) Bereitstellungsphase
 
-Die _Bereitstellungs_-Phase hält eingehende Anfragen vorübergehend zurück und wechselt die Site in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de). In der Bereitstellungsphase werden die neuen Container verwendet. Nach dem Mounten des Dateisystems werden Netzwerkverbindungen geöffnet, die im Abschnitt `relationships` der `.magento.app.yaml`-Datei definierten Services aktiviert und die in der `.magento.app.yaml`-Datei definierten Bereitstellungs-Hooks ausgeführt. Alles ist _schreibgeschützt_ mit Ausnahme von Verzeichnissen, die in der `.magento.app.yaml`-Datei definiert sind. Standardmäßig umfasst die [`mounts`-Eigenschaft &#x200B;](../application/properties.md#mounts) folgenden Verzeichnisse:
+Die _Bereitstellungs_-Phase hält eingehende Anfragen vorübergehend zurück und wechselt die Site in den [Wartungsmodus](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/setup/application-modes). In der Bereitstellungsphase werden die neuen Container verwendet. Nach dem Mounten des Dateisystems werden Netzwerkverbindungen geöffnet, die im Abschnitt `relationships` der `.magento.app.yaml`-Datei definierten Services aktiviert und die in der `.magento.app.yaml`-Datei definierten Bereitstellungs-Hooks ausgeführt. Alles ist _schreibgeschützt_ mit Ausnahme von Verzeichnissen, die in der `.magento.app.yaml`-Datei definiert sind. Standardmäßig umfasst die [`mounts`-Eigenschaft &#x200B;](../application/properties.md#mounts) folgenden Verzeichnisse:
 
 - `app/etc` - Enthält die `env.php` und `config.php` Konfigurationsdateien
 - `pub/media` - Enthält alle Mediendaten, wie Produkte oder Kategorien

@@ -14,9 +14,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 90e23f5f38ceeb0e1c48a83e43f942a30aa743b8
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1186
+source-wordcount: 1187
 ht-degree: 0%
 
 ---
@@ -201,7 +201,7 @@ Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAG
 
 ## Service-Versionen
 
-Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Versionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt und getestet werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
+Die Unterstützung der Service-Version und der Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Versionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt und getestet werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
 
 ### Software-EOL-Prüfungen
 

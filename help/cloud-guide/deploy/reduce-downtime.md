@@ -11,16 +11,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 502
+source-wordcount: 503
 ht-degree: 0%
 
 ---
 
 # Keine Ausfallzeiten bei der Bereitstellung
 
-Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während [_Bereitstellungsphase im_-](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#production-mode) aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Wie lange sich Ihre Produktions-Site im Wartungsmodus befindet, hängt von der Größe der Site, der Anzahl der während der Bereitstellung vorgenommenen Änderungen und der Konfiguration für die Bereitstellung statischer Inhalte ab. Es ist möglich, Ihr Projekt so zu konfigurieren, dass es mit einem **Ausfallzeiteffekt bereitgestellt**.
+Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während [_Bereitstellungsphase im_-](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode) aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Wie lange sich Ihre Produktions-Site im Wartungsmodus befindet, hängt von der Größe der Site, der Anzahl der während der Bereitstellung vorgenommenen Änderungen und der Konfiguration für die Bereitstellung statischer Inhalte ab. Es ist möglich, Ihr Projekt so zu konfigurieren, dass es mit einem **Ausfallzeiteffekt bereitgestellt**.
 
 Während des Bereitstellungsprozesses stehen alle Verbindungen für bis zu 5 Minuten in der Warteschlange, wobei alle aktiven Sitzungen und ausstehenden Aktionen beibehalten werden, z. B. das Hinzufügen zum Warenkorb oder der Checkout. Nach der Bereitstellung wird die Warteschlange freigegeben und die Verbindungen werden ohne Unterbrechung fortgesetzt. Um diese _Verbindung zu Ihrem Vorteil_ halten und die Bereitstellung auf _null_ Ausfallzeiten zu reduzieren, müssen Sie Ihr Projekt so konfigurieren, dass es die effizienteste Bereitstellungsstrategie verwendet.
 

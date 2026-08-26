@@ -1,6 +1,6 @@
 ---
 title: Checkliste starten
-description: Überprüfen Sie die Checklisten-Elemente für den Site-Launch.
+description: Überprüfen Sie die Launch-Checkliste für die Adobe Commerce-Cloud-Infrastruktur, um die Konfiguration, Tests und schnelle Einrichtung zu bestätigen, bevor Sie sie in der Produktionsumgebung bereitstellen.
 exl-id: efc97d4a-a9f3-49fa-b977-061282765e90
 TQID: https://experienceleague.adobe.com/-27J2-qKGpa71AJliIomIC7heTbTelOnFf960NODt0E
 product_v2:
@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 285a91916015e03b506195f3cb027c779976fdf0
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1194
 ht-degree: 0%
 
 ---
@@ -85,7 +85,8 @@ Wenn Sie bereit sind, Ihre Site zu starten, müssen Sie die DNS-Konfiguration ak
 
 >[!IMPORTANT]
 >
->Die DNS-Anweisungen in [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**Abschnitt 2.4**) geben an, dass >_ein CNAME-Eintrag nicht neben anderen Daten existieren darf. Mit anderen Worten: Wenn suzy.podunk.xx ein Alias für sue.podunk.xx ist, können Sie nicht auch einen MX-Eintrag für suzy.podunk.edu, einen A-Eintrag oder sogar einen TXT-Eintrag haben._
+>Die DNS-Anweisungen in [RFC1034](https://www.rfc-editor.org/rfc/rfc1912) (**Abschnitt 2.4**) geben Folgendes an:
+>_Ein CNAME-Eintrag darf nicht gleichzeitig mit anderen Daten vorhanden sein. Mit anderen Worten: Wenn suzy.podunk.xx ein Alias für sue.podunk.xx ist, können Sie nicht auch einen MX-Eintrag für suzy.podunk.edu, einen A-Eintrag oder sogar einen TXT-Eintrag haben._
 >
 >Aus diesem Grund sollten DNS-Einträge für Subdomains vom Typ `CNAME` und für Apex-Domains (Root-Domains) vom Typ `A` sein. Wenn Sie diese Regel verwerfen, kann es zu Störungen des E-Mail-Service oder der DNS-Verbreitung kommen, da Sie die Möglichkeit verlieren, andere Datensätze wie MX oder NS hinzuzufügen. Einige DNS-Anbieter umgehen dies möglicherweise, indem sie interne Anpassungen verwenden, aber die Befolgung des Standards gewährleistet Stabilität und Flexibilität (z. B. den Wechsel des DNS-Anbieters).
 
@@ -103,7 +104,7 @@ Wenn Sie bereit sind, Ihre Site zu starten, müssen Sie die DNS-Konfiguration ak
      php bin/magento setup:store-config:set --base-url="https://www.<domain-name>.com/"
      ```
 
-   **HINWEIS**: Sie können die Basis-URL auch über den Administrator aktualisieren. Siehe [Store-URLs](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=de) im _Handbuch zu Adobe Commerce Stores und Kauferlebnissen_.
+   **HINWEIS**: Sie können die Basis-URL auch über den Administrator aktualisieren. Siehe [Store-URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-urls) im _Handbuch zu Adobe Commerce Stores und Kauferlebnissen_.
 
 1. Warten Sie einige Minuten, bis die Site aktualisiert wird.
 
@@ -155,7 +156,7 @@ Sie können auch mit den folgenden Drittanbieteroptionen testen:
 
 - [Entfernen Sie alle Benutzer, die nicht mehr im Adobe Commerce on Cloud-Infrastrukturprojekt vorhanden sind.](../project/user-access.md)
 
-- [Konfigurieren der Zwei-Faktor-Authentifizierung](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication/)
+- [Konfigurieren der Zwei-Faktor-Authentifizierung](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication)
 
 ## Leistungsüberwachung
 

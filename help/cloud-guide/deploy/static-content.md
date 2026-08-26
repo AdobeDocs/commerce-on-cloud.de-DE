@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 768
+source-wordcount: 860
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Das Generieren von statischem Inhalt während der Build-Phase mit minimiertem HT
 Zum Generieren statischer Inhalte ist Zugriff auf Designs und Gebietsschemata erforderlich. Adobe Commerce speichert Designs im Dateisystem, auf das während der Build-Phase zugegriffen werden kann. Adobe Commerce speichert jedoch Gebietsschemata in der Datenbank. Die Datenbank _während_ Erstellungsphase nicht verfügbar. Um den statischen Inhalt während der Build-Phase zu generieren, müssen Sie den `config:dump`-Befehl im `ece-tools`-Paket verwenden, um Gebietsschemata in das Dateisystem zu verschieben. Es liest die Gebietsschemata und speichert sie in der `app/etc/config.php`.
 
 >[!NOTE]
->Nachdem Sie den `config:dump`-Befehl im `ece-tools`-Paket ausgeführt haben, werden die Konfigurationen, die in der `config.php`-Datei abgelegt werden [im Admin-Dashboard gesperrt (grau dargestellt). &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/locked-fields-in-magento-admin) einzige Möglichkeit, diese Konfigurationen in der Admin-Instanz zu aktualisieren, besteht darin, sie lokal aus der Datei zu löschen und das Projekt erneut bereitzustellen.
+>Nachdem Sie den `config:dump`-Befehl im `ece-tools`-Paket ausgeführt haben, werden die Konfigurationen, die in der `config.php`-Datei abgelegt werden [im Admin-Dashboard gesperrt (ausgegraut)](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26879). Die einzige Möglichkeit, diese Konfigurationen in Admin zu aktualisieren, besteht darin, sie lokal aus der Datei zu löschen und das Projekt erneut bereitzustellen.
 >Darüber hinaus sollten Sie jedes Mal, wenn Sie Ihrer Instanz eine neue Store-/Store-Gruppe/-Website hinzufügen, daran denken, den `config:dump`-Befehl auszuführen, um sicherzustellen, dass die Datenbank synchronisiert ist. Sie können auch [welche Konfigurationen ausgegeben werden sollen](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration?lang=en) in der `config.php`-Datei auswählen.
 >Wenn Sie die Konfiguration der Store-/Store-Gruppe/Website aus der `config.php` löschen, da die Felder ausgegraut sind, diesen Schritt jedoch nicht ausführen, werden die neuen Entitäten, die nicht gedumpt wurden, bei der nächsten Bereitstellung aus der Datenbank gelöscht.
 

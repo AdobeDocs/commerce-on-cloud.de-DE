@@ -15,9 +15,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 2168
+source-wordcount: 2170
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Wenn Sie Funktionen entwickeln, Erweiterungen hinzufügen und Designs entwerfen,
 
 So exportieren Sie Produktionsdaten als Testdaten zur Verwendung in Staging- und Integrationsumgebungen:
 
-- [Ausführen der Support Utilities](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) CLI-Befehle (empfohlen) beim Exportieren eines geschützten Backups von Kunden- und Speicherdaten mit Ihrem Adobe Commerce-Verschlüsselungsschlüssel
+- [Ausführen der Support Utilities](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/run-support-utilities) CLI-Befehle (empfohlen) beim Exportieren eines geschützten Backups von Kunden- und Speicherdaten mit Ihrem Adobe Commerce-Verschlüsselungsschlüssel
 
 - [Datenerfassung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/support#data-collector) Tool zum Generieren und Exportieren von Daten
 
@@ -185,7 +185,7 @@ Informationen zum Migrieren dieser Daten finden Sie unter [Migrieren und Bereits
 
 >[!NOTE]
 >
->Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[&#x200B; „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/run-support-utilities.html?lang=de) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
+>Bevor Sie die Daten in eine andere Umgebung verschieben, sollten Sie erwägen, Ihre Daten zu bereinigen. Sie haben verschiedene Möglichkeiten, z. B[&#x200B; „Support-Dienstprogramme verwenden](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/run-support-utilities) oder ein Skript zum Bereinigen von Kundendaten entwickeln.
 
 >[!WARNING]
 >

@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 131
+source-wordcount: 135
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Die TTL (Time-to-Live) für den Cache für Ihre Medien- und statischen Dateien w
 
 >[!NOTE]
 >
->Bevor Sie Ihre Produktionsumgebung aktualisieren, müssen Sie die Änderungen in Ihrer Staging-Umgebung testen. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um Hilfe bei der Aktualisierung der Konfiguration in diesen Umgebungen zu erhalten.
+>Bevor Sie Ihre Produktionsumgebung aktualisieren, müssen Sie die Änderungen in Ihrer Staging-Umgebung testen. [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um Hilfe bei der Aktualisierung der Konfiguration in diesen Umgebungen zu erhalten.
 
 1. Geben Sie die TTL-Zeit (in Sekunden) in der [`web`-Eigenschaft &#x200B;](web-property.md) der `.magento.app.yaml`-Datei an. Sie können den `expires` Schlüssel unter `locations` oder unter `"/media"` und `"/static"` hinzufügen.
 

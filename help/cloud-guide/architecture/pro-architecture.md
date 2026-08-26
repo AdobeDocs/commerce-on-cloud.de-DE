@@ -18,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1587
+source-wordcount: 1619
 ht-degree: 0%
 
 ---
@@ -155,10 +155,10 @@ Die Produktionsumgebung verfügt über drei virtuelle Maschinen (VMs) hinter ein
 
 - **GlusterFS** - Dateiserver zur Verwaltung aller statischen Dateibereitstellungen und Synchronisierung mit vier Verzeichnis-Bereitstellungen:
 
-   - `var`
-   - `pub/media`
-   - `pub/static`
-   - `app/etc`
+  - `var`
+  - `pub/media`
+  - `pub/static`
+  - `app/etc`
 
 - **Redis** - ein Server pro virtuellem Rechner mit nur einem aktiven Server und die beiden anderen als Replikate
 
@@ -225,4 +225,4 @@ Die Größe des Pro-Clusters und _Compute_-Konfigurationen variieren je nach aus
 
 Die redundante Architektur ermöglicht eine Hochskalierung der Adobe-Cloud-Infrastruktur ohne Ausfallzeiten. Beim Hochskalieren rotiert jede der drei Instanzen, um die Kapazität zu aktualisieren, ohne den Site-Betrieb zu beeinträchtigen. Sie können beispielsweise zusätzliche Webserver zu einem vorhandenen Cluster hinzufügen, wenn die Einschränkung auf PHP-Ebene statt auf Datenbankebene erfolgt. Dies bietet _horizontale Skalierung_ um die vertikale Skalierung zu ergänzen, die durch zusätzliche CPUs auf Datenbankebene bereitgestellt wird. Siehe [Skalierte Architektur](scaled-architecture.md).
 
-Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=de) im _Commerce-Hilfezentrum_.
+Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) im _Commerce-Hilfezentrum_.

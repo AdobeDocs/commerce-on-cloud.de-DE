@@ -9,9 +9,9 @@ product_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 910
+source-wordcount: 911
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 [Cloud-Patches für Commerce](https://github.com/magento/magento-cloud-patches) und das [Quality Patches Tool](https://github.com/magento/quality-patches) stellen Patches für Ihre installierte Adobe Commerce-Anwendung bereit.
 
 - Das Paket Cloud-Patches für Commerce stellt erforderliche Patches mit wichtigen Fehlerbehebungen bereit
-- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/versioning-policy.html?lang=de#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
+- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/versioning-policy#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
 
 Siehe [Verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im _Handbuch der Commerce Operations Tools_ um eine vollständige Liste der veröffentlichten Patches zu erhalten.
 
@@ -98,20 +98,20 @@ Magento 2 Enterprise Edition, version 2.3.5.0
 Die Statustabelle enthält die folgenden Arten von Informationen:
 
 - **Typ**:
-   - `Optional`: Alle Patches aus dem Quality Patches Tool und dem Cloud-Patches-Paket sind für Adobe Commerce- und Magento Open Source-Installationen optional. Für Adobe Commerce in der Cloud-Infrastruktur sind alle Patches optional.
-   - `Required`: Alle Patches aus dem Cloud-Paket Patches für Commerce sind für Cloud-Kunden erforderlich.
-   - `Deprecated` - Der einzelne Patch wird als veraltet markiert und wir empfehlen, ihn rückgängig zu machen, wenn Sie ihn angewendet haben. Nachdem Sie einen veralteten Patch rückgängig gemacht haben, wird er nicht mehr in der Statustabelle angezeigt.
-   - `Custom` - Alle Patches aus dem Verzeichnis &#39;m2-hotfixes&#39;.
+  - `Optional`: Alle Patches aus dem Quality Patches Tool und dem Cloud-Patches-Paket sind für Adobe Commerce- und Magento Open Source-Installationen optional. Für Adobe Commerce in der Cloud-Infrastruktur sind alle Patches optional.
+  - `Required`: Alle Patches aus dem Cloud-Paket Patches für Commerce sind für Cloud-Kunden erforderlich.
+  - `Deprecated` - Der einzelne Patch wird als veraltet markiert und wir empfehlen, ihn rückgängig zu machen, wenn Sie ihn angewendet haben. Nachdem Sie einen veralteten Patch rückgängig gemacht haben, wird er nicht mehr in der Statustabelle angezeigt.
+  - `Custom` - Alle Patches aus dem Verzeichnis &#39;m2-hotfixes&#39;.
 
 - **Status**:
-   - `Applied` - Das Patch wurde angewendet.
-   - `Not applied` - Das Patch wurde nicht angewendet.
-   - `N/A` - Der Status des Patches kann aufgrund von Konflikten nicht definiert werden.
+  - `Applied` - Das Patch wurde angewendet.
+  - `Not applied` - Das Patch wurde nicht angewendet.
+  - `N/A` - Der Status des Patches kann aufgrund von Konflikten nicht definiert werden.
 
 - **Details**:
-   - `Affected components` - Die Liste der betroffenen Module.
-   - `Required patches` - Die Liste der erforderlichen Patches (Abhängigkeiten).
-   - `Recommended replacement` - Das Patch, das als Ersatz für einen veralteten Patch empfohlen wird.
+  - `Affected components` - Die Liste der betroffenen Module.
+  - `Required patches` - Die Liste der erforderlichen Patches (Abhängigkeiten).
+  - `Recommended replacement` - Das Patch, das als Ersatz für einen veralteten Patch empfohlen wird.
 
 ## Patch in einer lokalen Umgebung anwenden
 

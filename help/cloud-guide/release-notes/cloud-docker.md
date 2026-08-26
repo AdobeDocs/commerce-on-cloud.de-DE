@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5169e0e93bf44d18ebdce9e0680f80c7cc8be6dc
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
 source-wordcount: 4509
 ht-degree: 0%
@@ -475,7 +475,7 @@ Veröffentlichungsdatum: 5. Februar 2020
 
   - ![neues Symbol](../../assets/new.svg) **Es wurde eine Service-Konfigurationsoption hinzugefügt, um den Datenbank-Port für den Host verfügbar zu machen** - Verwenden Sie die `--expose-db-port= [Fix submitted by Adarsh Manickam from Zilker Technology](https://github.com/magento/magento-cloud-docker/pull/101).<PORT>`-Option, um den Datenbank-Port für den Host beim Erstellen der `docker-compose.yml`-Datei verfügbar zu machen: `bin/ece-docker build:compose --expose-db-port=<PORT>`<!--MAGECLOUD-4454-->
 
-  - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy) und [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
+  - ![neues Symbol](../../assets/new.svg) **neuer Post-Bereitstellungsbefehl**—Zuvor wurden die in der `.magento.app.yaml`-Datei definierten Post-Bereitstellungs-Hooks automatisch ausgeführt, nachdem Sie Adobe Commerce mithilfe des `cloud-deploy`-Befehls in einem Cloud Docker-Container bereitgestellt hatten. Jetzt müssen Sie einen separaten `cloud-post-deploy`-Befehl ausführen, um die Hooks nach der Bereitstellung auszuführen. Siehe die aktualisierten Launch-Anweisungen für [Entwickler](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/) und [&#128279;](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/production-mode)Produktionsmodus.<!--MAGECLOUD-3996-->
 
   - ![neues Symbol](../../assets/new.svg) Die Option `--rm` wurde hinzugefügt, um Befehle für die Build- und Bereitstellungs-Container zu `./bin/magento-docker`. Dadurch wird der Container entfernt, nachdem die Aufgabe abgeschlossen ist.<!--MAGECLOUD-4205-->
 

@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: de2e5072775d032d46f91394ed870768271fa9a1
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 849
+source-wordcount: 857
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ Die minimal empfohlene Festplattengröße beträgt 256 MB. Wenn der Fehler `User
 
 >[!NOTE]
 >
->Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
+>Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
 >
 >Es ist nicht möglich, den Festplattenspeicher in der Staging- oder Produktionsumgebung vorübergehend zu erhöhen. Dieser Vorgang kann nicht rückgängig gemacht werden.
 
@@ -198,7 +198,7 @@ Das Format für das Hinzufügen Ihres Mount zu dieser Liste ist wie folgt:
 
 >[!NOTE]
 >
->Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
+>Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
 
 Sie können die Web-Bereitstellung zugänglich machen, indem Sie es zu dem [`web`](web-property.md) Block von Standorten hinzufügen.
 

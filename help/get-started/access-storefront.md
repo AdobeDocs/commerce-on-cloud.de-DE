@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf das Commerce Admin Panel
-description: Erfahren Sie, wie Sie auf Ihr Commerce Admin-Bedienfeld zugreifen können.
+description: Erfahren Sie, wie Sie den Administratorzugriff auf Ihr Adobe Commerce-Cloud-Infrastrukturprojekt sichern, Ihr Lizenzinhaberkennwort zurücksetzen und sich beim Admin-Bedienfeld anmelden.
 recommendations: noDisplay, catalog
 exl-id: 827417b0-9048-44d8-8c82-07befba476c7
 TQID: https://experienceleague.adobe.com/V3BXuCc9aqT5YuyIS8WAZgUdPAYNhQunAgg2i2FCaOs
@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 285a91916015e03b506195f3cb027c779976fdf0
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: 379
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Nachdem Sie die Kennwortänderungsanfrage gesendet haben, überprüfen Sie Ihre 
 
 >[!TIP]
 >
->Wenn das Zurücksetzen des Kennworts fehlschlägt oder Sie sich nicht beim Admin-Bedienfeld anmelden können, kann ein Benutzer mit Administratorzugriff mithilfe von SSH eine Verbindung zum Projekt herstellen und mithilfe des `admin:user:create` CLI-Befehls einen Admin-Benutzer hinzufügen. Siehe [Erstellen, Bearbeiten oder Entsperren eines Administratorkontos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/admin.html?lang=de) im _Installationshandbuch_.
+>Wenn das Zurücksetzen des Kennworts fehlschlägt oder Sie sich nicht beim Admin-Bedienfeld anmelden können, kann ein Benutzer mit Administratorzugriff mithilfe von SSH eine Verbindung zum Projekt herstellen und mithilfe des `admin:user:create` CLI-Befehls einen Admin-Benutzer hinzufügen. Siehe [Erstellen, Bearbeiten oder Entsperren eines Administratorkontos](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/admin) im _Installationshandbuch_.
 
 ## Überwachen des Site-Status
 

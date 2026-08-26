@@ -16,9 +16,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 2234
+source-wordcount: 2254
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Sie benötigen die Fastly-Anmeldedaten, um Fastly CDN-Services über den Adobe C
 
 Mit Adobe Commerce in der Cloud-Infrastruktur können Sie nicht direkt auf das Fastly Admin Dashboard zugreifen.
 
-Verwenden Sie Adobe Commerce Admin, um die Fastly-Konfiguration für Ihre Umgebungen zu überprüfen und zu aktualisieren. Wenn Sie ein Problem nicht mit den Fastly-Funktionen in Admin beheben können, reichen Sie ein [Adobe Commerce-Support-Ticket ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de).
+Verwenden Sie Adobe Commerce Admin, um die Fastly-Konfiguration für Ihre Umgebungen zu überprüfen und zu aktualisieren. Wenn Sie ein Problem nicht mit den Fastly-Funktionen in Admin beheben können, reichen Sie ein [Adobe Commerce-Support-Ticket ein](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## Abrufen von Fastly-Anmeldedaten
 
@@ -75,9 +75,9 @@ Rufen Sie in Cloud-Starterprojekten die Anmeldeinformationen über die Cloud-Kon
 
 - Überprüfen Sie in der [!DNL Cloud Console] die folgenden Umgebungsvariablen in der [Umgebungskonfiguration](../project/overview.md#configure-environment).
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_API_KEY`
 
-   - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
+  - `CONFIG__DEFAULT__SYSTEM__FULL_PAGE_CACHE__FASTLY__FASTLY_SERVICE_ID`
 
 - Verwenden Sie in der Befehlszeile in Ihrem lokalen Arbeitsbereich die `magento-cloud`-CLI, um Umgebungsvariablen [aufzulisten und zu überprüfen](../environment/variables-cloud.md#viewing-environment-variables) Fastly.
 
@@ -198,12 +198,12 @@ Während des anfänglichen Fastly-Einrichtungsprozesses können Sie die folgende
 
 - Für Pro Staging und Produktion:
 
-   - `mcprod.<your-domain>.com`
-   - `mcstaging.<your-domain>.com`
+  - `mcprod.<your-domain>.com`
+  - `mcstaging.<your-domain>.com`
 
 - Nur für die Erstproduktion:
 
-   - `mcprod.<your-domain>.com`
+  - `mcprod.<your-domain>.com`
 
 Diese standardmäßigen Vorproduktions-URLs sind verfügbar, nachdem Ihr Projekt bereitgestellt wurde. Der Wert für `"your-domain"` ist der Domain-Name, den Sie während des Onboarding-Prozesses angegeben haben.
 
@@ -350,4 +350,4 @@ Nachdem Sie die Fastly-Services auf der Staging-Site überprüft haben, wiederho
 
 >[!TIP]
 >
-> Wenn Sie Probleme mit Fastly-Services in Ihren Adobe Commerce-Umgebungen haben, finden Sie weitere Informationen im [Adobe Commerce Fastly-](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/magento-fastly-troubleshooter).
+> Wenn Sie Probleme mit Fastly-Services in Ihren Adobe Commerce-Umgebungen haben, finden Sie weitere Informationen im [Adobe Commerce Fastly-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-29661).

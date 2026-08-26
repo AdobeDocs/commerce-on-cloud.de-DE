@@ -13,7 +13,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
 source-wordcount: 574
 ht-degree: 0%
@@ -74,7 +74,7 @@ Beispielantwort:
 
 ## Commerce-Webhooks
 
-Sie können Commerce-Webhooks in Ihrem Cloud-Projekt mit der globalen [ENABLE_WEBHOOKS“ &#x200B;](../environment/variables-global.md#enable_webhooks). Commerce-Webhooks senden als Reaktion auf Commerce-generierte Ereignisse Anfragen an einen externen Server. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks) wird diese Funktion ausführlich beschrieben.
+Sie können Commerce-Webhooks in Ihrem Cloud-Projekt mit der globalen [ENABLE_WEBHOOKS“ &#x200B;](../environment/variables-global.md#enable_webhooks). Commerce-Webhooks senden als Reaktion auf Commerce-generierte Ereignisse Anfragen an einen externen Server. Im [_Webhooks-Handbuch_](https://developer.adobe.com/commerce/extensibility/webhooks/) wird diese Funktion ausführlich beschrieben.
 
 ## Allgemeine Webhooks
 

@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1979
+source-wordcount: 1982
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Lesen Sie diese Best Practices und Überlegungen für Ihren Bereitstellungsproze
 
 - **Überprüfen von Service-Versionen und -Beziehungen und der Möglichkeit, eine Verbindung herzustellen**
 
-  Überprüfen Sie, welche Dienste für Ihr Programm verfügbar sind, und stellen Sie sicher, dass Sie die aktuelle, kompatible Version verwenden. Empfohlene Versionen finden Sie [Service](../services/services-yaml.md#service-relationships)Beziehungen und [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)Systemanforderungen im _Installationshandbuch_.
+  Überprüfen Sie, welche Dienste für Ihr Programm verfügbar sind, und stellen Sie sicher, dass Sie die aktuelle, kompatible Version verwenden. Empfohlene Versionen finden Sie [Service](../services/services-yaml.md#service-relationships)Beziehungen und [&#128279;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements)Systemanforderungen im _Installationshandbuch_.
 
 - **Testen Sie lokal und in der Integrationsumgebung, bevor Sie sie in der Staging- und Produktionsumgebung bereitstellen**
 
@@ -95,11 +95,11 @@ Lesen Sie diese Best Practices und Überlegungen für Ihren Bereitstellungsproze
 
   Führen Sie vor der Bereitstellung in der Produktion die folgenden Aufgaben aus:
 
-   - Stellen Sie sicher, dass Sie mit „SSH“ eine Verbindung zu allen drei Knoten in [&#x200B; Produktionsumgebung &#x200B;](../development/secure-connections.md) können.
+  - Stellen Sie sicher, dass Sie mit „SSH“ eine Verbindung zu allen drei Knoten in [&#x200B; Produktionsumgebung &#x200B;](../development/secure-connections.md) können.
 
-   - Stellen Sie sicher, dass die Indexer auf _Planmäßig aktualisieren_ eingestellt sind. Siehe [Indizierungsmodi](https://developer.adobe.com/commerce/php/development/components/indexing/) im _Entwicklerhandbuch für Erweiterungen_.
+  - Stellen Sie sicher, dass die Indexer auf _Planmäßig aktualisieren_ eingestellt sind. Siehe [Indizierungsmodi](https://developer.adobe.com/commerce/php/development/components/indexing/) im _Entwicklerhandbuch für Erweiterungen_.
 
-   - Bereiten Sie die Umgebung vor, indem Sie alle umgebungsspezifischen Variablen im Produktions-Code aktualisieren, die Verfügbarkeit und Kompatibilität der Services überprüfen und alle anderen erforderlichen Konfigurationsänderungen vornehmen.
+  - Bereiten Sie die Umgebung vor, indem Sie alle umgebungsspezifischen Variablen im Produktions-Code aktualisieren, die Verfügbarkeit und Kompatibilität der Services überprüfen und alle anderen erforderlichen Konfigurationsänderungen vornehmen.
 
 - **Überwachen des Bereitstellungsprozesses**
 
@@ -186,13 +186,13 @@ Wenn die `app/etc/config.php`-Datei nicht in der Codebasis vorhanden ist, werden
 
 Es gibt zwei Bereitstellungs-Hooks. Der `pre-deploy.php`-Hook schließt die erforderliche Bereinigung und das Abrufen von Ressourcen und Code ab, die im Build-Hook generiert wurden. Der `php ./vendor/bin/ece-tools deploy`-Hook führt eine Reihe von Befehlen und Skripten aus:
 
-- Wenn Adobe Commerce **nicht installiert** wird mit `bin/magento setup:install` installiert, aktualisiert die Bereitstellungskonfiguration, die `app/etc/env.php` und die Datenbank für Ihre angegebene Umgebung, z. B. Redis und Website-URLs. **Wichtig:** Nach Abschluss der [Erstbereitstellung](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/launch/overview.html?lang=de) während des Setups wurde Adobe Commerce in allen Umgebungen installiert und bereitgestellt.
+- Wenn Adobe Commerce **nicht installiert** wird mit `bin/magento setup:install` installiert, aktualisiert die Bereitstellungskonfiguration, die `app/etc/env.php` und die Datenbank für Ihre angegebene Umgebung, z. B. Redis und Website-URLs. **Wichtig:** Nach Abschluss der [Erstbereitstellung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/launch/overview) während des Setups wurde Adobe Commerce in allen Umgebungen installiert und bereitgestellt.
 
 - Wenn Adobe Commerce **installiert ist** führen Sie alle erforderlichen Upgrades durch. Das Bereitstellungsskript wird `bin/magento setup:upgrade` ausgeführt, um das Datenbankschema und die Daten zu aktualisieren (was nach der Aktualisierung der Erweiterung oder des Kern-Codes erforderlich ist) und auch die Bereitstellungskonfiguration, die `app/etc/env.php` und die Datenbank für Ihre Umgebung zu aktualisieren. Schließlich löscht das Bereitstellungsskript den Adobe Commerce-Cache.
 
 - Das Skript generiert optional statischen Webinhalt mithilfe der `magento setup:static-content:deploy`.
 
-- Verwendet Bereiche (`-s` Flag in Build-Skripten) mit der Standardeinstellung `quick` für die Strategie zur Bereitstellung statischer Inhalte. Sie können die Strategie mithilfe der Umgebungsvariablen [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy) anpassen. Weitere Informationen zu diesen Optionen und Funktionen finden Sie unter [Strategien zur Bereitstellung statischer Dateien](../deploy/static-content.md) und `-s`-Flag für [Statische Ansichtsdateien bereitstellen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
+- Verwendet Bereiche (`-s` Flag in Build-Skripten) mit der Standardeinstellung `quick` für die Strategie zur Bereitstellung statischer Inhalte. Sie können die Strategie mithilfe der Umgebungsvariablen [`SCD_STRATEGY`](../environment/variables-deploy.md#scd_strategy) anpassen. Weitere Informationen zu diesen Optionen und Funktionen finden Sie unter [Strategien zur Bereitstellung statischer Dateien](../deploy/static-content.md) und `-s`-Flag für [Statische Ansichtsdateien bereitstellen](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 >[!NOTE]
 >

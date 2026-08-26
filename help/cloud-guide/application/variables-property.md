@@ -11,16 +11,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 85
+source-wordcount: 86
 ht-degree: 0%
 
 ---
 
 # Variablen-Eigenschaft
 
-Sie können anwendungsbasierte Umgebungsvariablen verwenden, um Store-Konfigurationen anzupassen. Diese Variablen verwenden eine bestimmte Syntax. Siehe [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/paths/override-config-settings.html?lang=de) im _Konfigurationshandbuch_.
+Sie können anwendungsbasierte Umgebungsvariablen verwenden, um Store-Konfigurationen anzupassen. Diese Variablen verwenden eine bestimmte Syntax. Siehe [Konfigurationseinstellungen überschreiben](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/paths/override-config-settings) im _Konfigurationshandbuch_.
 
 Die folgenden in der `.magento.app.yaml`-Datei enthaltenen Umgebungsvariablen sind für bestimmte Versionen des [!DNL Commerce]-Programms erforderlich.
 

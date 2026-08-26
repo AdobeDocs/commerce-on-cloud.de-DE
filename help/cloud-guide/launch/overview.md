@@ -1,6 +1,6 @@
 ---
 title: Site-Launch
-description: Erfahren Sie, wie Sie mit der Vorbereitung des Site-Launches beginnen.
+description: Erfahren Sie, wie Sie sich auf den Site-Launch in der Adobe Commerce-Cloud-Infrastruktur vorbereiten, einschließlich Checklisten, Best Practices sowie Staging- und Produktionstests.
 exl-id: 95abc7aa-ed4d-44f7-96aa-517c646bc00d
 TQID: https://experienceleague.adobe.com/-aWGtM8yXIMPfKihDMD6LS1r2-UIuceyf9X4TTIFTf0
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 285a91916015e03b506195f3cb027c779976fdf0
 workflow-type: tm+mt
-source-wordcount: 966
+source-wordcount: 984
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Als Teil des Abonnements für Adobe Commerce auf Cloud-Infrastruktur stellt Adob
 
 >[!NOTE]
 >
->Wenn Sie Ihr eigenes SSL-Zertifikat mit erweiterter Validierung für Ihr Unternehmen bereitstellen möchten, anstatt das Zertifikat „Let&#39;s Encrypt“ zu verwenden, wenden Sie sich an Ihren CTA oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
+>Wenn Sie Ihr eigenes SSL-Zertifikat mit erweiterter Validierung für Ihr Unternehmen bereitstellen möchten, anstatt das Zertifikat „Let&#39;s Encrypt“ zu verwenden, wenden Sie sich an Ihren CTA oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Einrichten des Sicherheits-Scan-Tools
 

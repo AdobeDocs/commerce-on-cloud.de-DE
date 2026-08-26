@@ -15,24 +15,24 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: 1024
 ht-degree: 0%
 
 ---
 
 # Commerce-Version aktualisieren
 
-Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [&#x200B; Abschnitt &quot;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
+Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [&#x200B; Abschnitt &quot;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
 
 Je nach Umgebungstyp (Entwicklung, Staging oder Produktion) können Ihre Upgrade-Aufgaben Folgendes umfassen:
 
 - Aktualisieren Sie Erweiterungen von Drittanbietern auf die neueste unterstützte Version.
 - Bei Pro-Projekten müssen Sie ein Adobe Commerce-Support-Ticket einreichen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren.
 - Für Entwicklungs-/Integrations-/PR-Verzweigungen:
-   - Aktualisieren Sie die `.magento/services.yaml` mit neuen Versionen für MariaDB (MySQL), OpenSearch, RabbitMQ und Redis, um die Kompatibilität mit neuen Adobe Commerce-Versionen zu gewährleisten.
-   - Aktualisieren Sie die `.magento.app.yaml` Datei mit neuen Einstellungen für Erweiterungspunkte und Umgebungsvariablen.
+  - Aktualisieren Sie die `.magento/services.yaml` mit neuen Versionen für MariaDB (MySQL), OpenSearch, RabbitMQ und Redis, um die Kompatibilität mit neuen Adobe Commerce-Versionen zu gewährleisten.
+  - Aktualisieren Sie die `.magento.app.yaml` Datei mit neuen Einstellungen für Erweiterungspunkte und Umgebungsvariablen.
 
 {{upgrade-tip}}
 
@@ -156,7 +156,7 @@ Lesen Sie die [Service-Versionen](../services/services-yaml.md#service-versions)
 
 1. Überprüfen Sie die aktuell angewendeten Patches:
 
-   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
+   - Wenn im `m2-hotfixes`-Verzeichnis Patches installiert sind, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), und prüfen Sie gemeinsam mit dem Adobe Commerce-Support, welche Patches weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `m2-hotfixes`.
 
    - Wenn [Quality Patches] in der `.magento.env.yaml`-Datei angewendet wurden, überprüfen Sie, ob diese weiterhin auf die neue Version angewendet werden können. Entfernen Sie die nicht zutreffenden Patches aus dem `QUALITY_PATCHES` Abschnitt der `.magento.env.yaml`.
 

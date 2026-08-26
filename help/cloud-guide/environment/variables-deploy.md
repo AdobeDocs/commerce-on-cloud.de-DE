@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f09934f41676922dc4b4001f24ee94062a5e9c0a
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 3035
+source-wordcount: 3049
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ stage:
             database: 11
 ```
 
-Im folgenden Beispiel wird die [Redis-Vorabladefunktion](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache.html?lang=de#redis-preload-feature) verwendet, wie im _Konfigurationshandbuch_ definiert:
+Im folgenden Beispiel wird die [Redis-Vorabladefunktion](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache#redis-preload-feature) verwendet, wie im _Konfigurationshandbuch_ definiert:
 
 ```yaml
 stage:
@@ -109,7 +109,7 @@ stage:
 - **default**—`true`
 - **Version**—Adobe Commerce 2.1.4 und höher
 
-Aktiviert oder deaktiviert [&#x200B; Bereinigung von (statischen &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
+Aktiviert oder deaktiviert [&#x200B; Bereinigung von (statischen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
 
 - **`true`** - Entfernt alle vorhandenen statischen Inhalte, bevor der aktualisierte statische Inhalt bereitgestellt wird.
 - **`false`** - Die Bereitstellung überschreibt nur vorhandene statische Inhaltsdateien, wenn der generierte Inhalt eine neuere Version enthält.
@@ -122,7 +122,7 @@ stage:
     CLEAN_STATIC_FILES: false
 ```
 
-Wenn statische Ansichtsdateien vor der Bereitstellung nicht bereinigt werden, können Probleme auftreten, wenn Sie Aktualisierungen für vorhandene Dateien bereitstellen, ohne die vorherigen Versionen zu entfernen. Aufgrund von [statischen Datei-Fallback](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache)-Regeln können Fallback-Vorgänge die falsche Datei anzeigen, wenn das Verzeichnis mehrere Versionen derselben Datei enthält.
+Wenn statische Ansichtsdateien vor der Bereitstellung nicht bereinigt werden, können Probleme auftreten, wenn Sie Aktualisierungen für vorhandene Dateien bereitstellen, ohne die vorherigen Versionen zu entfernen. Aufgrund von [statischen Datei-Fallback](https://developer.adobe.com/commerce/frontend-core/guide/css/preprocess#clean-static-view-files)-Regeln können Fallback-Vorgänge die falsche Datei anzeigen, wenn das Verzeichnis mehrere Versionen derselben Datei enthält.
 
 ## `CRON_CONSUMERS_RUNNER`
 
@@ -168,7 +168,7 @@ stage:
       consumers: []
 ```
 
-Standardmäßig überschreibt der Bereitstellungsprozess alle Einstellungen in der `env.php`. Siehe [Verwalten von Nachrichtenwarteschlangen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues.html?lang=de) im _Commerce-Konfigurationshandbuch_ für lokale Adobe Commerce.
+Standardmäßig überschreibt der Bereitstellungsprozess alle Einstellungen in der `env.php`. Siehe [Verwalten von Nachrichtenwarteschlangen](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) im _Commerce-Konfigurationshandbuch_ für lokale Adobe Commerce.
 
 ## `CONSUMERS_WAIT_FOR_MAX_MESSAGES`
 
@@ -198,7 +198,7 @@ stage:
 
 >[!WARNING]
 >
->Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und &#x200B;](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/project/overview.html?lang=de#configure-environment).
+>Legen Sie den `CRYPT_KEY` über die [!DNL Cloud Console] statt über die `.magento.env.yaml` fest, um zu vermeiden, dass der Schlüssel im Quell-Code-Repository für Ihre Umgebung verfügbar gemacht wird. Siehe [Festlegen von Umgebungs- und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/overview#configure-environment).
 
 Wenn Sie die Datenbank ohne Installationsvorgang von einer Umgebung in eine andere verschieben, benötigen Sie die entsprechenden kryptografischen Informationen. Adobe Commerce verwendet den im [!DNL Cloud Console] festgelegten Verschlüsselungsschlüsselwert als `crypt/key` Wert in der `env.php`.
 
@@ -467,7 +467,7 @@ stage:
 
 >[!NOTE]
 >
->Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
+>Wenn Sie `\Magento\Framework\Cache\Backend\RemoteSynchronizedCache` als Redis-Backend-Modell angeben, um [L2-Cache](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache) zu aktivieren, generiert `ece-tools` die Cache-Konfiguration automatisch. Ein Beispiel [Konfigurationsdatei](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example) finden Sie im _Adobe Commerce-Konfigurationshandbuch_. Um die generierte Cache-Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
 
 ## `REDIS_USE_SLAVE_CONNECTION`
 
@@ -518,7 +518,7 @@ stage:
   VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Wenn Sie Remote-synchronisierten Cache als Valkey-Backend-Modell angeben, wird [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de) aktiviert, und `ece-tools` generiert die Cache-Konfiguration automatisch. Siehe die [Beispielkonfigurationsdatei](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de#configuration-example). Um die Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
+Wenn Sie Remote-synchronisierten Cache als Valkey-Backend-Modell angeben, wird [L2-Cache](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache) aktiviert, und `ece-tools` generiert die Cache-Konfiguration automatisch. Siehe die [Beispielkonfigurationsdatei](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache#configuration-example). Um die Konfiguration zu überschreiben, verwenden Sie die Bereitstellungsvariable [CACHE_CONFIGURATION](#cache_configuration).
 
 ### Moderne Symfony L2-Cache-Implementierung konfigurieren
 
@@ -530,11 +530,11 @@ stage:
     VALKEY_BACKEND: symfony_l2
 ```
 
-Wenn Sie `symfony_l2` als Valkey-Backend-Modell angeben, wird [L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de){target="_blank"} aktiviert, und `ece-tools` generiert die L2-Cache-Konfiguration automatisch aus Ihren Valkey-Service-Verbindungsdetails, einschließlich eines `default`-Frontends und eines `stale_cache_enabled`-Frontends. Die Definition von `CACHE_CONFIGURATION` ist optional und nur erforderlich, um bestimmte Backend-Optionen anzupassen, z. B. das lokale Cache-Verzeichnis. Siehe [Moderne Symfony L2-Cache](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de#modern-symfony-l2-cache-implementation){target="_blank"} im _Adobe Commerce-Konfigurationshandbuch_ und [Konfigurieren des Symfony L2](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"} im _Implementation Playbook_ für ein Anpassungsbeispiel.
+Wenn Sie `symfony_l2` als Valkey-Backend-Modell angeben, wird [L2-Cache](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache){target="_blank"} aktiviert, und `ece-tools` generiert die L2-Cache-Konfiguration automatisch aus Ihren Valkey-Service-Verbindungsdetails, einschließlich eines `default`-Frontends und eines `stale_cache_enabled`-Frontends. Die Definition von `CACHE_CONFIGURATION` ist optional und nur erforderlich, um bestimmte Backend-Optionen anzupassen, z. B. das lokale Cache-Verzeichnis. Siehe [Moderne Symfony L2-Cache](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache#modern-symfony-l2-cache-implementation){target="_blank"} im _Adobe Commerce-Konfigurationshandbuch_ und [Konfigurieren des Symfony L2](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration#configure-symfony-l2-cache){target="_blank"} im _Implementation Playbook_ für ein Anpassungsbeispiel.
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 umfasst Verbesserungen am Symfony L2-Cache, einschließlich Cache-Tag-Speicherung, Invalidierung und Komprimierung, mit Patch ACP2E-5132, wodurch Datenträger-E/A reduziert, veraltete Cache-Einträge vermieden und Speicher- und Netzwerk-Overhead reduziert werden. Siehe [Verbesserte Leistung und Zuverlässigkeit des Symfony L2](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/level-two-cache.html?lang=de#enhanced-symfony-l2-cache-performance-and-reliability)Cache im _Adobe Commerce-Konfigurationshandbuch_.
+>Adobe Commerce 2.4.9 umfasst Verbesserungen am Symfony L2-Cache, einschließlich Cache-Tag-Speicherung, Invalidierung und Komprimierung, mit Patch ACP2E-5132, wodurch Datenträger-E/A reduziert, veraltete Cache-Einträge vermieden und Speicher- und Netzwerk-Overhead reduziert werden. Siehe [Verbesserte Leistung und Zuverlässigkeit des Symfony L2](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache#enhanced-symfony-l2-cache-performance-and-reliability)Cache im _Adobe Commerce-Konfigurationshandbuch_.
 
 ## `VALKEY_USE_SLAVE_CONNECTION`
 
@@ -669,7 +669,7 @@ stage:
 - **default**—`quick`
 - **Version**—Adobe Commerce 2.2.0 und höher
 
-Ermöglicht die Anpassung der [-Bereitstellungsstrategie &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=de) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment.html?lang=de).
+Ermöglicht die Anpassung der [-Bereitstellungsstrategie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 

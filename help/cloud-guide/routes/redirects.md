@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: 706
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Im Folgenden wird gezeigt, wie Sie mit der `routes.yaml`-Konfigurationsdatei Uml
 
 >[!WARNING]
 >
->Bei Adobe Commerce in Cloud-Infrastrukturprojekten kann die Konfiguration zahlreicher Nicht-Regex-Umleitungen und -Umschreibungen in der `routes.yaml` Leistungsprobleme verursachen. Wenn Ihre `routes.yaml`-Datei 32 KB oder größer ist, leiten Sie Ihre Nicht-Regex-Dateien weiter und schreiben sie auf Fastly um. Siehe [Nicht-Regex-Umleitungen an Fastly statt Nginx (Routen) &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.html?lang=de) _Adobe Commerce-Hilfezentrum_.
+>Bei Adobe Commerce in Cloud-Infrastrukturprojekten kann die Konfiguration zahlreicher Nicht-Regex-Umleitungen und -Umschreibungen in der `routes.yaml` Leistungsprobleme verursachen. Wenn Ihre `routes.yaml`-Datei 32 KB oder größer ist, leiten Sie Ihre Nicht-Regex-Dateien weiter und schreiben sie auf Fastly um. Siehe [Nicht-Regex-Umleitungen an Fastly statt Nginx (Routen) &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes) _Adobe Commerce-Hilfezentrum_.
 
 ## Umleitungen für ganze Routen
 

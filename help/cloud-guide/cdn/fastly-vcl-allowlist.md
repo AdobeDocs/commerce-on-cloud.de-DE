@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2025-01-29
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 873
+source-wordcount: 874
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Der folgende benutzerdefinierte VCL-Code-Ausschnitt (JSON-Format) zeigt die Logi
 }
 ```
 
-Bevor [ein benutzerdefiniertes Snippet erstellen](https://experienceleague.adobe.com/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=de#add-the-custom-vcl-snippet) überprüfen Sie in diesem Beispiel die Werte, um festzustellen, ob Sie Änderungen vornehmen müssen. Geben Sie dann jeden Wert in die entsprechenden Felder ein, z. B. `type` in das Feld Typ `content` in das Feld Inhalt .
+Bevor [ein benutzerdefiniertes Snippet erstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist#add-the-custom-vcl-snippet) überprüfen Sie in diesem Beispiel die Werte, um festzustellen, ob Sie Änderungen vornehmen müssen. Geben Sie dann jeden Wert in die entsprechenden Felder ein, z. B. `type` in das Feld Typ `content` in das Feld Inhalt .
 
 - `name` — Name des VCL-Snippets. In diesem Beispiel `allowlist`.
 

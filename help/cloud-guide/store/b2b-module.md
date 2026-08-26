@@ -9,13 +9,13 @@ product_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 85
+source-wordcount: 86
 ht-degree: 0%
 
 ---
 
 # B2B-Modul aktivieren
 
-Wenn Ihre Kunden Unternehmen sind, können Sie das Adobe Commerce B2B-Modul installieren, um Ihr Adobe Commerce on Cloud Infrastructure Pro-Projekt zu erweitern und so ein Business-to-Business-Modell aufzunehmen. Informationen zum Installieren und Konfigurieren des B2B-Moduls für Adobe Commerce in Cloud-Infrastrukturen finden Sie im [Adobe Commerce B2B-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html?lang=de).
+Wenn Ihre Kunden Unternehmen sind, können Sie das Adobe Commerce B2B-Modul installieren, um Ihr Adobe Commerce on Cloud Infrastructure Pro-Projekt zu erweitern und so ein Business-to-Business-Modell aufzunehmen. Informationen zum Installieren und Konfigurieren des B2B-Moduls für Adobe Commerce in Cloud-Infrastrukturen finden Sie im [Adobe Commerce B2B-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/guide-overview).

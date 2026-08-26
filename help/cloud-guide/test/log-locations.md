@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1287
+source-wordcount: 1369
 ht-degree: 0%
 
 ---
@@ -120,8 +120,8 @@ ssh 1.ent-project-environment-id@ssh.region.magento.cloud "cat var/log/cron.log"
 >[!TIP]
 >
 >Für Pro Staging- und Pro-Produktionsumgebungen sind automatische Protokollrotation, -komprimierung und -entfernung für Protokolldateien mit festem Dateinamen aktiviert. Jeder Protokolldateityp hat ein rotierendes Muster und eine rotierende Lebensdauer.
->Alle Details zur Protokollrotation der Umgebung und zur Lebensdauer komprimierter Protokolle finden Sie in: `/etc/logrotate.conf` und `/etc/logrotate.d/<various>`.
->Bei Pro-Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um Änderungen an der Protokollrotationskonfiguration anzufordern.
+>Ausführliche Informationen zur Protokollrotation der Umgebung und zur Lebensdauer komprimierter Protokolle finden Sie in: `/etc/logrotate.conf` und `/etc/logrotate.d/<various>`.
+>Für Pro Staging- und Pro-Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um Änderungen an der Protokollrotationskonfiguration anzufordern.
 
 >[!TIP]
 >
@@ -232,7 +232,7 @@ title: The configured state is not ideal
 type: warning
 ```
 
-Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html?lang=de).
+Die meisten Fehlermeldungen enthalten eine Beschreibung und empfohlene Maßnahmen. Verwenden Sie die [Fehlermeldungsreferenz für ECE-Tools](../dev-tools/error-reference.md), um den Fehlercode für weitere Anleitungen zu suchen. Weitere Anleitungen finden Sie in der Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-29640).
 
 ## Anwendungsprotokolle
 

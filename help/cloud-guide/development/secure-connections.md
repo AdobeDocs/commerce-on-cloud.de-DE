@@ -14,9 +14,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 1071
+source-wordcount: 1079
 ht-degree: 0%
 
 ---
@@ -164,10 +164,10 @@ Je nach Client sind möglicherweise zusätzliche Optionen erforderlich, um die S
 
 Für **Starter-Umgebungen und Pro-Integrationsumgebungen** sollten Sie auch erwägen, [eine `mount`](../application/properties.md#mounts) für den Zugriff auf ein bestimmtes Verzeichnis hinzuzufügen. Sie würden das Einhängeelement zu Ihrer `.magento.app.yaml` Datei hinzufügen. Eine Liste der beschreibbaren Verzeichnisse finden Sie unter [Projektstruktur](../project/file-structure.md). Dieser Bereitstellungspunkt funktioniert nur in diesen Umgebungen.
 
-Wenn Sie für **Pro Staging- und Produktionsumgebungen** keinen SSH-Zugriff auf die Umgebung haben, müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket), um den sFTP-Zugriff anzufordern, und einen Bereitstellungspunkt für den Zugriff auf den spezifischen Ordner, z. B. `pub/media`.
+Wenn Sie für **Pro Staging- und Produktionsumgebungen** keinen SSH-Zugriff auf die Umgebung haben, müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den sFTP-Zugriff anzufordern, und einen Bereitstellungspunkt für den Zugriff auf den spezifischen Ordner, z. B. `pub/media`.
 
 >[!NOTE]
->Wenn die sFTP-Verbindung für Pro Staging und Produktion für einen _generischen_ Benutzer vorgesehen ist, der **nicht** zum Cloud-Projekt [&#x200B; muss](../project/user-access.md) müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) mit dem **öffentlichen**-Schlüssel angehängt. **Geben Sie niemals Ihren privaten SSH-Schlüssel an.**
+>Wenn die sFTP-Verbindung für Pro Staging und Produktion für einen _generischen_ Benutzer vorgesehen ist, der **nicht** zum Cloud-Projekt [&#x200B; muss](../project/user-access.md) müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit dem **öffentlichen**-Schlüssel angehängt. **Geben Sie niemals Ihren privaten SSH-Schlüssel an.**
 
 ## SSH-Tunneleffekt
 

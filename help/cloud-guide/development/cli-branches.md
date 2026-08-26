@@ -12,9 +12,9 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 688
+source-wordcount: 689
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Die folgenden Anweisungen verwenden eine Kombination aus `magento-cloud` CLI- un
 
 **So klonen Sie ein Projekt `master` eine Umgebung**:
 
-1. Melden Sie sich bei Ihrer lokalen Workstation mit einem Konto [Dateisystemeigentümer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de) an.
+1. Melden Sie sich bei Ihrer lokalen Workstation mit einem Konto [Dateisystemeigentümer](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) an.
 
 1. Wechseln Sie zum Verzeichnis Webserver oder virtueller Host _docroot_.
 

@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 987
+source-wordcount: 990
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Der WAF-Service bietet die folgenden Vorteile:
 - **Standard-WAF-Richtlinie**: Die standardmäßige WAF-Richtlinie, die von Fastly konfiguriert und gepflegt wird, bietet eine Sammlung von Sicherheitsregeln, die darauf zugeschnitten sind, Ihre Adobe Commerce-Web-Anwendungen vor einer Vielzahl von Angriffen zu schützen, einschließlich Injektions-Angriffen, böswilligen Eingaben, Cross-Site-Scripting, Datenexfiltration, HTTP-Protokollverletzungen und anderen [OWASP Top Ten](https://owasp.org/www-project-top-ten/)-Sicherheitsbedrohungen.
 - **WAF-Onboarding und -Aktivierung** - Adobe stellt die standardmäßige WAF-Richtlinie innerhalb von 2 bis 3 Wochen nach der endgültigen Bereitstellung in Ihrer Produktionsumgebung bereit und aktiviert sie.
 - **Support für Betrieb und Wartung**—
-   - Adobe und Schnelle Einrichtung und Verwaltung Ihrer Protokolle, Regeln und Warnhinweise für den WAF-Service.
-   - Adobe löst Support-Tickets für Kunden im Zusammenhang mit Problemen mit dem WAF-Service aus, die legitimen Traffic als Probleme der Priorität 1 blockieren.
-   - Automatisierte Upgrades der WAF Service-Version gewährleisten eine sofortige Abdeckung neuer oder sich entwickelnder Exploits. Siehe [Wartung und Upgrades für WAF](#waf-maintenance-and-updates).
+  - Adobe und Schnelle Einrichtung und Verwaltung Ihrer Protokolle, Regeln und Warnhinweise für den WAF-Service.
+  - Adobe löst Support-Tickets für Kunden im Zusammenhang mit Problemen mit dem WAF-Service aus, die legitimen Traffic als Probleme der Priorität 1 blockieren.
+  - Automatisierte Upgrades der WAF Service-Version gewährleisten eine sofortige Abdeckung neuer oder sich entwickelnder Exploits. Siehe [Wartung und Upgrades für WAF](#waf-maintenance-and-updates).
 
 >[!TIP]
 >
@@ -68,7 +68,7 @@ Wenn der WAF-Service aktiviert ist, prüft er den gesamten Web- und Admin-Traffi
 
 Sie können diese Fehlerantwortseite über den Administrator anpassen. Siehe [Anpassen der WAF-](fastly-custom-response.md#customize-the-waf-error-page).
 
-Wenn Ihre Adobe Commerce-Adminseite oder Storefront als Antwort auf eine rechtmäßige URL-Anfrage eine `403 Forbidden` Fehlerseite zurückgibt, senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case). Kopieren Sie die Referenz-ID aus der Fehlerantwortseite und fügen Sie sie in die Ticketbeschreibung ein.
+Wenn Ihre Adobe Commerce-Adminseite oder Storefront als Antwort auf eine rechtmäßige URL-Anfrage eine `403 Forbidden` Fehlerseite zurückgibt, senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case). Kopieren Sie die Referenz-ID aus der Fehlerantwortseite und fügen Sie sie in die Ticketbeschreibung ein.
 
 Informationen zur Identifizierung der WAF-Antwort für eine bestimmte Anfrage mithilfe von New Relic finden Sie unter:
 
@@ -90,7 +90,7 @@ Wenn Sie feststellen, dass der WAF legitime Anfragen blockiert, sind diese häuf
 Der standardmäßige WAF-Service, der von Fastly unterstützt wird, unterstützt die folgenden Funktionen nicht:
 
 - Schutz vor Malware oder Bot-Schutz - Erwägen Sie [&#x200B; Verwendung von &#x200B;](./fastly-vcl-allowlist.md) oder Drittanbieterdiensten.
-- Ratenbegrenzung - Siehe [Ratenbegrenzung](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in der Fastly-Dokumentation oder [Ratenbegrenzung](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting/) im Sicherheitsabschnitt _Commerce Web API_.
+- Ratenbegrenzung - Siehe [Ratenbegrenzung](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) in der Fastly-Dokumentation oder [Ratenbegrenzung](https://developer.adobe.com/commerce/webapi/get-started/rate-limiting) im Sicherheitsabschnitt _Commerce Web API_.
 - Konfigurieren eines Protokollierungsendpunkts für den Kunden - Siehe [PrivateLink-](../development/privatelink-service.md)) als Alternative.
 
 Mit dem WAF-Service können Sie Traffic basierend auf IP-Adressen blockieren oder zulassen. Sie können Ihrem Fastly-Service Zugriffssteuerungslisten (ACL) und benutzerdefinierte VCL-Snippets hinzufügen, um die IP-Adressen und die VCL-Logik zum Blockieren oder Zulassen von Traffic anzugeben. Siehe [Benutzerdefinierte Fastly-VCL-Snippets](fastly-vcl-custom-snippets.md).

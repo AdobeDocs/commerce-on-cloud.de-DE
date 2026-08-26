@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
 workflow-type: tm+mt
-source-wordcount: 860
+source-wordcount: 862
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Dieses Tool erweitert die Funktionalität der [[!DNL Cloud Console]](../../get-s
 
 **So installieren Sie die `magento-cloud` CLI**:
 
-1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de) über _Schreibzugriff_ verfügt.
+1. Ändern Sie auf Ihrer _lokalen Workstation_ in das Verzeichnis, in dem Sie das Cloud-Projekt klonen möchten und in dem der [Dateisystembesitzer](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions) über _Schreibzugriff_ verfügt.
 
 1. Installieren Sie `magento-cloud` CLI.
 
@@ -148,7 +148,7 @@ Die folgenden Schritte zeigen, wie Sie die CLI- und Git-Befehle synonym zur Verw
 
 1. Wechseln Sie auf Ihrer lokalen Workstation in Ihr Projektverzeichnis.
 
-1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions.html?lang=de).
+1. Wechseln Sie zum [Dateisystembesitzer](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
 
 1. Melden Sie sich bei Ihrem Projekt an.
 
