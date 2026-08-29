@@ -232,5 +232,5 @@ In den folgenden Adobe Commerce-Support-Artikeln finden Sie Hilfe bei der Fehler
 
 - [Überprüfen langsamer Abfragen und Prozesse MySQL](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql)
 - [Erstellen eines Datenbank-Dump in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud)
-- [Fehlerbehebung beim Datenmigrations-Tool](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+- [Fehlerbehebung beim Datenmigrations-Tool](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
 - [Adobe Commerce-Upgrade: Kompakt auf dynamische Tabellen 2.2.x, 2.3.x auf 2.4.x](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade)
