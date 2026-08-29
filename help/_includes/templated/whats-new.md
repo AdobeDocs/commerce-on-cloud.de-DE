@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.13.</p>
+      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.13.</p>
 </td>
       <td>
         Technisch
@@ -31,7 +31,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-on-cloud.en/commit/0ac31574952505e92744535f861591abcdd8ac56">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Verfügbarkeit <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling">vertikalen automatischen Skalierung</a> für Adobe Commerce in Cloud-Infrastrukturen hinzugefügt.</p>
+      <td><p>Verfügbarkeit <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/autoscaling#vertical-auto-scaling">vertikalen automatischen Skalierung</a> für Adobe Commerce in Cloud-Infrastrukturen hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -53,7 +53,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.12. Außer der Versionsnummer wurden keine weiteren Änderungen vorgenommen.</p>
+      <td><p>Aktualisierung <a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/ece-tools-cli-reference">CLI-Referenz</a> nach der Veröffentlichung von ECE-Tools, v2002.2.12. Außer der Versionsnummer wurden keine weiteren Änderungen vorgenommen.</p>
 </td>
       <td>
         Technisch
