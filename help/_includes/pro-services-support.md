@@ -11,7 +11,7 @@ ht-degree: 0%
 
 Gehen Sie wie folgt vor, um ein Pro-Service-Upgrade in der Staging- oder Produktionsumgebung anzufordern und abzuschließen:
 
-1. **Um (Services[ nur in `Staging` und `Production` Umgebungen zu installieren ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) zu aktualisieren** senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. **Um (Services[&#x200B; nur in `Staging` und `Production` Umgebungen zu installieren &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) zu aktualisieren** senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
    Geben Sie im Ticket die erforderlichen Service-Änderungen an, schließen Sie die aktualisierten `.magento.app.yaml`- und `.magento/services.yaml`-Dateien ein und notieren Sie sich die PHP-Zielversion.
 
