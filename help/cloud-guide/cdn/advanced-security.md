@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Advanced Security] Konfigurationen erfordern derzeit die Übermittlung eines Support-Tickets. Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant. Weitere Informationen finden [ unter  [!DNL Advanced Security]](#request-advanced-security)Anfrage“.
+>[!DNL Advanced Security] Konfigurationen erfordern derzeit die Übermittlung eines Support-Tickets. Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant. Weitere Informationen finden [&#x200B; unter  [!DNL Advanced Security]](#request-advanced-security)Anfrage“.
 
 >[!IMPORTANT]
 >
@@ -164,7 +164,7 @@ Die folgenden Szenarien lassen sich am besten mit vorhandenen Schutzmechanismen 
 
 | Szenario | Empfohlener Ansatz |
 |---|---|
-| Eine einzelne IP oder ein kleiner Satz identifizierbarer IPs überflutet Ihre Site mit Anfragen | Blockieren Sie die IPs mithilfe der Commerce Admin- oder Fastly-API. Verwenden Sie integrierte [Layer 3/4-DDoS-Schutz](./fastly.md#ddos-protection) und vorhandene [IP-Blockierungsliste ](./fastly-vcl-blocking.md) VCL-Snippets. |
+| Eine einzelne IP oder ein kleiner Satz identifizierbarer IPs überflutet Ihre Site mit Anfragen | Blockieren Sie die IPs mithilfe der Commerce Admin- oder Fastly-API. Verwenden Sie integrierte [Layer 3/4-DDoS-Schutz](./fastly.md#ddos-protection) und vorhandene [IP-Blockierungsliste &#x200B;](./fastly-vcl-blocking.md) VCL-Snippets. |
 | Sie müssen SQL-Injection, Cross-Site-Scripting (XSS) oder andere OWASP Top 10-Bedrohungen blockieren. | Der enthaltene [WAF-Service](./fastly-waf-service.md) blockiert diese Bedrohungen automatisch. |
 | Ihre DDoS-Angriffsmuster können mit einfachen VCL-Blockierungsregeln gesteuert werden | Verwenden Sie die vorhandenen [benutzerdefinierten VCL-Snippets](./fastly-vcl-custom-snippets.md) die bereits mit Adobe Commerce verfügbar sind. |
 

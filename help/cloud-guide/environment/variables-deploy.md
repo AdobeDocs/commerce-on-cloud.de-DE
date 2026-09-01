@@ -6,10 +6,16 @@ recommendations: noDisplay, catalog
 role: Developer
 exl-id: 980ec809-8c68-450a-9db5-29c5674daa16
 TQID: https://experienceleague.adobe.com/TNuUxXzCiXnKefww0DmKbjfJygEz2HFG-0PjCsCy2nA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
 source-wordcount: 3106
@@ -19,7 +25,7 @@ ht-degree: 0%
 
 # Variablen bereitstellen
 
-Die folgenden _deploy_-Variablen steuern Aktionen in der Bereitstellungsphase und können Werte von den (globalen [) ](variables-global.md) und überschreiben. Fügen Sie diese Variablen in den `deploy` Schritt der `.magento.env.yaml` ein:
+Die folgenden _deploy_-Variablen steuern Aktionen in der Bereitstellungsphase und können Werte von den (globalen [) &#x200B;](variables-global.md) und überschreiben. Fügen Sie diese Variablen in den `deploy` Schritt der `.magento.env.yaml` ein:
 
 ```yaml
 stage:
@@ -42,7 +48,7 @@ Bearbeiten Sie für Adobe Commerce in der Cloud-Infrastruktur `app/etc/env.php` 
 
 Verwenden Sie `VALKEY_BACKEND` oder `REDIS_BACKEND`, um den unterstützten Cache oder die L2-Implementierung für die exakte Adobe Commerce-Version auszuwählen. Verwenden Sie `CACHE_CONFIGURATION`, um Optionen wie Verbindungsversuche, Lesetimeouts, Cache-Präfixe oder Vorabladeschlüssel anzupassen.
 
-Die unterstützte Kombination aus Backend und Cache-Service hängt von der Commerce-Version und der Patch-Ebene ab. Redis wird für Adobe Commerce 2.4.9 oder für Patch-Versionen nach 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und 2.4.8-p4 nicht unterstützt. Verwenden Sie Valkey für Versionen, [ die (](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)) dies erfordern.
+Die unterstützte Kombination aus Backend und Cache-Service hängt von der Commerce-Version und der Patch-Ebene ab. Redis wird für Adobe Commerce 2.4.9 oder für Patch-Versionen nach 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und 2.4.8-p4 nicht unterstützt. Verwenden Sie Valkey für Versionen, [&#x200B; die (](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)) dies erfordern.
 
 >[!NOTE]
 >
@@ -119,7 +125,7 @@ stage:
 
 - **default**—`true`
 
-Aktiviert oder deaktiviert [ Bereinigung von (statischen ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
+Aktiviert oder deaktiviert [&#x200B; Bereinigung von (statischen &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment)), die während der Build- oder Bereitstellungsphase generiert wurde. Verwenden Sie den Standardwert _true_ in der Entwicklungsumgebung als Best Practice.
 
 - **`true`** - Entfernt alle vorhandenen statischen Inhalte, bevor der aktualisierte statische Inhalt bereitgestellt wird.
 - **`false`** - Die Bereitstellung überschreibt nur vorhandene statische Inhaltsdateien, wenn der generierte Inhalt eine neuere Version enthält.
@@ -204,7 +210,7 @@ stage:
 
 >[!WARNING]
 >
->Um zu vermeiden, dass der Schlüssel im Quell-Code-Repository verfügbar gemacht wird, legen Sie den `CRYPT_KEY`-Wert über die [!DNL Cloud Console] anstelle der `.magento.env.yaml` fest. Siehe [Festlegen von Umgebungs- und ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment).
+>Um zu vermeiden, dass der Schlüssel im Quell-Code-Repository verfügbar gemacht wird, legen Sie den `CRYPT_KEY`-Wert über die [!DNL Cloud Console] anstelle der `.magento.env.yaml` fest. Siehe [Festlegen von Umgebungs- und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment).
 
 Wenn Sie die Datenbank ohne Installationsvorgang von einer Umgebung in eine andere verschieben, benötigen Sie die entsprechenden kryptografischen Informationen. Adobe Commerce verwendet den im [!DNL Cloud Console] festgelegten Verschlüsselungsschlüsselwert als `crypt/key` Wert in der `env.php`.
 
@@ -586,7 +592,7 @@ stage:
 
 - **default**—`4`
 
-Gibt an[ welche ](https://www.gnu.org/software/gzip) (`0` bis `9`) beim Komprimieren statischer Inhalte verwendet werden soll. Setzen Sie ihn auf `0`, um die Komprimierung zu deaktivieren.
+Gibt an[&#x200B; welche &#x200B;](https://www.gnu.org/software/gzip) (`0` bis `9`) beim Komprimieren statischer Inhalte verwendet werden soll. Setzen Sie ihn auf `0`, um die Komprimierung zu deaktivieren.
 
 ```yaml
 stage:
@@ -666,7 +672,7 @@ stage:
 
 - **default**—`quick`
 
-Ermöglicht die Anpassung der [-Bereitstellungsstrategie ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
+Ermöglicht die Anpassung der [-Bereitstellungsstrategie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy) statische Inhalte. Siehe [Bereitstellen von statischen Ansichtsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment).
 
 Verwenden Sie diese Optionen _nur_ wenn Sie mehr als ein Gebietsschema haben:
 

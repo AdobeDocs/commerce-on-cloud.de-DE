@@ -4,10 +4,18 @@ description: Erfahren Sie, wie Sie Fastly Caching, VCL-Snippets und die Web Appl
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 TQID: https://experienceleague.adobe.com/sDx6n5Qgt1lI3-3FDzhUR-JyKgI59woXmoVHSjKFT9w
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
 source-wordcount: 2216
@@ -107,11 +115,11 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    ![Erweitern Sie auf Fastly](../../assets/cdn/fastly-menu.png)
 
-1. Entfernen Sie im Abschnitt _[!UICONTROL Caching Application]_die Auswahl aus der **[!UICONTROL Use system value]**und wählen Sie dann **[!UICONTROL Fastly CDN]**aus der Dropdown-Liste aus.
+1. Entfernen Sie im Abschnitt _[!UICONTROL Caching Application]_&#x200B;die Auswahl aus der **[!UICONTROL Use system value]**&#x200B;und wählen Sie dann **[!UICONTROL Fastly CDN]**&#x200B;aus der Dropdown-Liste aus.
 
    ![Schnell wählen](../../assets/cdn/fastly-enable-admin.png)
 
-1. Erweitern Sie **[!UICONTROL Fastly Configuration]** und [ Sie „Zwischenspeicheroptionen auswählen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
+1. Erweitern Sie **[!UICONTROL Fastly Configuration]** und [&#x200B; Sie „Zwischenspeicheroptionen auswählen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
 
 1. Klicken Sie nach dem Konfigurieren der Caching-Optionen oben auf der Seite auf **[!UICONTROL Save Config]** .
 
@@ -129,7 +137,7 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    >[!NOTE]
    >
-   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die von [ bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
+   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die von [&#x200B; bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
 
 1. Klicken Sie auf **[!UICONTROL Test credentials]**.
 
@@ -153,7 +161,7 @@ Laden Sie nach dem Aktivieren des Fastly-Moduls den Standard[VCL-Code](https://g
 
 **Hochladen der Fastly-VCL**:
 
-1. Klicken Sie im Abschnitt _[!UICONTROL Fastly Configuration]_auf **[!UICONTROL Upload VCL to Fastly]**, wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie im Abschnitt _[!UICONTROL Fastly Configuration]_&#x200B;auf **[!UICONTROL Upload VCL to Fastly]**, wie in der folgenden Abbildung dargestellt.
 
    ![Laden Sie eine Magento-VCL in Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
 
@@ -301,7 +309,7 @@ Wenn die Kopfzeilen nicht die richtigen Werte aufweisen, finden Sie unter [Beheb
 ## Upgrade des Fastly-Moduls
 
 Fastly aktualisiert das Fastly CDN für Magento 2-Modul, um Probleme zu beheben, die Leistung zu steigern und neue Funktionen bereitzustellen.
-Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [ Version ](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
+Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [&#x200B; Version &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
 
 Die neuesten Informationen zu Modulversionen und -aktualisierungen finden Sie in den [Versionshinweisen für das Fastly CDN for Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md) auf GitHub.
 
