@@ -5,15 +5,11 @@ feature: Cloud, Build, Configuration, Deploy, SCD
 role: Developer
 exl-id: f39c73fc-351a-41ed-9e74-2c3f14871246
 TQID: https://experienceleague.adobe.com/Ub0FWkUN9uOVzLhVbNbPhUV5kj808ODlbjVrRDDA-4E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: c754e69243236bbf862ea636261c6d2a6cae9eb7
 workflow-type: tm+mt
 source-wordcount: 706
 ht-degree: 0%
@@ -33,14 +29,14 @@ Die `.magento.env.yaml`-Datei verwendet Umgebungsvariablen, um die Verwaltung vo
 Die `.magento.env.yaml`-Datei enthält zwei Abschnitte: `stage` und `log`. Im Abschnitt `stage` werden Aktionen gesteuert, die während der Phasen des [Cloud-Bereitstellungsprozesses](../deploy/process.md) auftreten.
 
 - `stage` - Verwenden Sie den Abschnitt Phase , um bestimmte Aktionen für die folgenden Bereitstellungsphasen zu definieren:
-   - `global` - Steuert Aktionen sowohl in der Erstellungs-, der Bereitstellungs- als auch in der Nachbereitstellungsphase. Sie können diese Einstellungen in den Abschnitten Erstellen, Bereitstellen und Nach der Bereitstellung überschreiben.
-   - `build` - Steuert Aktionen nur in der Erstellungsphase. Wenn Sie in diesem Abschnitt keine Einstellungen angeben, verwendet die Build-Phase Einstellungen aus dem Abschnitt Global .
-   - `deploy` - Steuert Aktionen nur in der Bereitstellungsphase. Wenn Sie in diesem Abschnitt keine Einstellungen angeben, verwendet die Bereitstellungsphase Einstellungen aus dem Abschnitt „Global“.
-   - `post-deploy` - Steuert Aktionen _nach_ Bereitstellung der Anwendung und _danach_ beginnt der Container Verbindungen zu akzeptieren.
+  - `global` - Steuert Aktionen sowohl in der Erstellungs-, der Bereitstellungs- als auch in der Nachbereitstellungsphase. Sie können diese Einstellungen in den Abschnitten Erstellen, Bereitstellen und Nach der Bereitstellung überschreiben.
+  - `build` - Steuert Aktionen nur in der Erstellungsphase. Wenn Sie in diesem Abschnitt keine Einstellungen angeben, verwendet die Build-Phase Einstellungen aus dem Abschnitt Global .
+  - `deploy` - Steuert Aktionen nur in der Bereitstellungsphase. Wenn Sie in diesem Abschnitt keine Einstellungen angeben, verwendet die Bereitstellungsphase Einstellungen aus dem Abschnitt „Global“.
+  - `post-deploy` - Steuert Aktionen _nach_ Bereitstellung der Anwendung und _danach_ beginnt der Container Verbindungen zu akzeptieren.
 - `log` - Im Abschnitt „Protokoll“ können Sie [Benachrichtigungen](set-up-notifications.md) einschließlich Benachrichtigungstypen und Detaillierungsgrad konfigurieren.
-   - `slack` - Konfigurieren Sie eine Nachricht, die an einen Slack-Bot gesendet werden soll.
-   - `email` - Konfigurieren Sie eine E-Mail, die an einen oder mehrere E-Mail-Empfänger gesendet werden soll.
-   - [Protokollhandler](log-handlers.md): Konfigurieren Sie Meldungen zu Hardware- und Softwareanwendungen, die an einen Remote-Protokollierungsserver gesendet werden.
+  - `slack` - Konfigurieren Sie eine Nachricht, die an einen Slack-Bot gesendet werden soll.
+  - `email` - Konfigurieren Sie eine E-Mail, die an einen oder mehrere E-Mail-Empfänger gesendet werden soll.
+  - [Protokollhandler](log-handlers.md): Konfigurieren Sie Meldungen zu Hardware- und Softwareanwendungen, die an einen Remote-Protokollierungsserver gesendet werden.
 
 ### Umgebungsvariablen
 
@@ -172,7 +168,7 @@ Wenn Sie die Konfigurationsverwaltung nach dem Speichern der Konfigurationen akt
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
 ```
 
 >Verschieben Sie nach der Aktivierung der Konfigurationsverwaltung die SCD_*-Variablen in den Build-Schritt:
@@ -182,10 +178,9 @@ Wenn Sie die Konfigurationsverwaltung nach dem Speichern der Konfigurationen akt
     CRON_CONSUMERS_RUNNER:
       cron_run: true
       consumers: []
-    REDIS_USE_SLAVE_CONNECTION: 1
+    MYSQL_USE_SLAVE_CONNECTION: 1
   build:
     SCD_STRATEGY: compact
     SCD_MATRIX:
       ...
 ```
-

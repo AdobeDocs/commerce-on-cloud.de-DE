@@ -4,16 +4,12 @@ description: Erfahren Sie, wie Sie mithilfe von intelligenten Assistenten bewert
 feature: Cloud, Build, Deploy, SCD
 exl-id: a9f042cd-861f-4b1c-b80f-2569f12bcde8
 TQID: https://experienceleague.adobe.com/hgBYQsTM3WkX2p9SJ4UeWM1IGRwiPOUTwWBEwSnPq5A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 326
+source-wordcount: 328
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 Die intelligenten Assistenten können Ihnen dabei helfen festzustellen, ob Ihre Cloud-Konfiguration den Best Practices entspricht. Die verfügbaren Assistenten unterstützen die folgenden Konfigurationen:
 
 - Idealer Status für minimale Bereitstellungsausfälle
-- Konfiguration des Lastenausgleichs für Datenbank und Redis
+- Lastenausgleichskonfiguration für Datenbank und Redis oder Valley
 - Statische Inhaltsbereitstellung (SCD) für die On-Demand-Phase, die Build-Phase oder die Bereitstellungsphase
 
 Jeder der Smart Wizard-Befehle liefert eine Überprüfungsantwort und, falls zutreffend, eine Empfehlung für die korrekte Konfiguration.

@@ -4,16 +4,12 @@ description: Erfahren Sie, wie Sie die Cloud-Infrastrukturumgebung konfigurieren
 feature: Cloud, Configuration, Services, Iaas, Paas
 exl-id: 305380b0-1920-4037-a1db-80e72c6af333
 TQID: https://experienceleague.adobe.com/mFjzrTN6R7LC3e9ADnzzulcWAwun4k-g3aCjc9Bo3gQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 284
+source-wordcount: 286
 ht-degree: 0%
 
 ---
@@ -29,14 +25,14 @@ Mit den folgenden Konfigurationsdateien können Sie Anwendungseinstellungen, Rou
 | [Anwendung](../application/configure-app-yaml.md) | `.magento.app.yaml` | Definiert, wie Adobe Commerce erstellt und bereitgestellt wird, einschließlich Services, Hooks und Cron-Aufträgen. |
 | [Umgebung](configure-env-yaml.md) | `.magento.env.yaml` | Zentralisiert die Verwaltung von Build- und Bereitstellungsaktionen in allen Ihren Umgebungen, einschließlich Pro Staging und Produktion, mithilfe von Umgebungsvariablen. |
 | [Routen](../routes/routes-yaml.md) | `.magento/routes.yaml` | Konfigurieren Sie das Caching, Umleitungen und serverseitige Includes. |
-| [Service](../services/services-yaml.md) | `.magento/services.yaml` | Definiert die Services, die Adobe Commerce nach Name und Version verwendet. Diese Datei kann beispielsweise Versionen von MariaDB, PHP Extensions, Redis, RabbitMQ und Elasticsearch oder OpenSearch enthalten. Öffnen Sie ein Support-Ticket, um diese Änderungen in die Pro Plan Staging- und Produktionsumgebungen zu übertragen. |
+| [Service](../services/services-yaml.md) | `.magento/services.yaml` | Definiert die Services, die Adobe Commerce nach Name und Version verwendet. Diese Datei kann beispielsweise Versionen von MariaDB, PHP Extensions, Redis oder Valkey, RabbitMQ und Elasticsearch oder OpenSearch enthalten. Öffnen Sie ein Support-Ticket, um diese Änderungen in die Pro Plan Staging- und Produktionsumgebungen zu übertragen. |
 | [PHP-Einstellungen](../application/php-settings.md#configure-php) | `php.ini` | Eine optionale Datei , die dem Projekt hinzugefügt werden kann. Die in dieser Datei enthaltenen Einstellungen werden an die Einstellungen angehängt, die von der Cloud-Infrastruktur verwaltet werden. |
 
 {style="table-layout:auto"}
 
 ## Konfigurationsaktualisierungen für Pro-Umgebungen
 
-Für Adobe Commerce in Cloud Infrastructure Pro Staging- und Produktionsumgebungen können Sie viele Konfigurationsoptionen in Ihrer lokalen Entwicklungsumgebung aktualisieren und die Änderungen übernehmen, um sie auf diese Umgebungen anzuwenden. Sie müssen jedoch [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die folgenden Konfigurationsoptionen zu aktualisieren:
+Für Adobe Commerce in Cloud Infrastructure Pro Staging- und Produktionsumgebungen können Sie viele Konfigurationsoptionen in Ihrer lokalen Entwicklungsumgebung aktualisieren und die Änderungen übernehmen, um sie auf diese Umgebungen anzuwenden. Sie müssen jedoch [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die folgenden Konfigurationsoptionen zu aktualisieren:
 
 - Installieren oder Aktualisieren von Diensten in der `.magento/services.yaml`.
 - Ändern Sie die Konfiguration für die `mounts`- und `disk` in der `.magento.app.yaml`.
