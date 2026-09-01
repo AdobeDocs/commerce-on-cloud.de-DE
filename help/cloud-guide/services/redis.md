@@ -4,10 +4,16 @@ description: Erfahren Sie, wie Sie Redis als Backend-Cache-Lösung für Adobe Co
 feature: Cloud, Cache, Services
 exl-id: be6f2462-0878-47e3-b906-ebdd4aa319f2
 TQID: https://experienceleague.adobe.com/Q3w1Y1sRuQSwqmbxGfEBavrvHe0ecI9qWJjsfVc2yPU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: df2792f9d653c4561e4e40cbc71499095f63ff71
 workflow-type: tm+mt
 source-wordcount: 710
@@ -136,7 +142,7 @@ Weitere Informationen zu Service-Beziehungen finden Sie unter [Konfigurieren von
 
 ## Anpassen der Redis-Konfiguration
 
-Empfehlungen zu Cache-, Sitzungs-, L2- und Replikatverbindungen finden Sie unter [Best Practices für die Konfiguration von Valkey- und ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)-Services im _Handbuch zu Best Practices für Implementierungsplaybooks_.
+Empfehlungen zu Cache-, Sitzungs-, L2- und Replikatverbindungen finden Sie unter [Best Practices für die Konfiguration von Valkey- und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)-Services im _Handbuch zu Best Practices für Implementierungsplaybooks_.
 
 ## Verwenden der Redis-CLI
 
