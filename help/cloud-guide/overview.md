@@ -3,21 +3,13 @@ title: Commerce auf Cloud-Infrastruktur
 description: Erfahren Sie mehr über das Erstellen, Bereitstellen und Verwalten von Adobe Commerce in Cloud Infrastructure, einer sicheren Platform as a Service (PaaS), die in allen Regionen von AWS und Azure gehostet wird.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
 TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2026-08-28
-source-git-commit: d5d947f9858ab15e2e5daed7848163846580f883
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+last-update: 2026-09-01
+source-git-commit: 0f88ef7d75bc2a02eb7988dc815071c5894a4662
 workflow-type: tm+mt
 source-wordcount: 356
 ht-degree: 0%
@@ -37,7 +29,7 @@ Adobe Commerce on Cloud Infrastructure bietet eine automatisierte Hosting-Plattf
 
 >[!NOTE]
 >
->Weitere Informationen zur Sicherheit finden Sie unter [Checkliste für den Sicherheitsstart](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Weitere Informationen zur Sicherheit finden Sie unter [Checkliste für den Sicherheitsstart](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Sehen Sie sich den [Technologie-Stack](architecture/tech-stack.md) im Detail an oder erfahren Sie mehr über bestimmte Funktionen und unterstützte Produkte in [Cloud-Architektur für Commerce](architecture/cloud-architecture.md).
 
@@ -74,7 +66,7 @@ Das Handbuch zu Commerce in Cloud-Infrastrukturen setzt voraus, dass Sie über G
 
 - [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer-Site) - Entwickeln, Anpassen, Integrieren, Erweitern und Verwenden erweiterter Funktionen
 
-- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
+- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
