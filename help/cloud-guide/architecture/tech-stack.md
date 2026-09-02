@@ -21,9 +21,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: 415
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale
    Adobe analysiert routinemäßig die Nutzung Ihrer Virtual Compute Resource (vCPU) und weist automatisch Ressourcen zu, um Ihre langfristige Nutzung zu optimieren und das Risiko einer Überschreitung Ihrer maximalen jährlichen vCPU-Tagegelder zu minimieren. Wenn Sie für bestimmte Zeiträume einen erhöhten Site-Traffic erwarten, müssen Sie weiterhin ein Support-Ticket öffnen, um [eine temporäre Aktualisierung anzufordern](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize).
 
 1. [**Platform as a Service**](cloud-architecture.md): Jedes Adobe Commerce on Cloud Infrastructure-Projekt bietet eine Platform as a Service (PaaS)-Integrationsumgebung zum Entwickeln, Testen und Integrieren von Services.
-1. [**Adobe Commerce**](../project/overview.md): Adobe Commerce in der Cloud-Infrastruktur bietet eine vorab bereitgestellte Infrastruktur, die PHP, MySQL (MariaDB), Redis, Message Queue Services ([!DNL RabbitMQ] oder [!DNL ActiveMQ]) und unterstützte Suchmaschinentechnologien umfasst.
+1. [**Adobe Commerce**](../project/overview.md): Adobe Commerce on Cloud Infrastructure bietet eine vorab bereitgestellte Infrastruktur, die PHP, MySQL (MariaDB), Redis oder Valkey, Message Queue Services ([!DNL RabbitMQ] oder [!DNL ActiveMQ]) und unterstützte Suchmaschinentechnologien umfasst.
 1. [**Leistungs-Tools**](../monitor/new-relic-service.md): Mit den Leistungs-Tools von New Relic können Sie Anwendungen und Infrastrukturen debuggen, überwachen und verwalten, indem Sie Daten aus Ihrer Adobe Commerce in Cloud-Infrastrukturprojekten erfassen, analysieren und anzeigen.
 1. [**Content Delivery Network (CDN), Web Application Firewall ([!DNL WAF]) und Image Optimization (IO)**](../cdn/fastly.md):
 

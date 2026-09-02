@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fb61610380b7b60e274ce8c89f7dda41674f1107
+source-git-commit: 8465292300c871aaa85e57cbb25e7ae5358bcd2f
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -104,13 +104,12 @@ Die Produktions- und Staging-Umgebung umfasst die folgenden Technologien. Sie k�
 
 - Fastly für HTTP-Caching und CDN
 - Nginx-Webserver, der mit PHP-FPM spricht, eine Instanz mit mehreren Workern
-- Redis-Server
-- Elasticsearch für die Katalogsuche für Adobe Commerce 2.2 bis 2.4.3-p2
-- OpenSearch für die Katalogsuche für Adobe Commerce 2.3.7-p3, 2.4.3-p2 und 2.4.4 und höher
+- Redis- oder Valley-Server
+- OpenSearch für die Katalogsuche für Adobe Commerce 2.4.4 und höher
 
 ### Dienste
 
-Adobe Commerce in Cloud-Infrastrukturen unterstützt derzeit die folgenden Services: PHP, MySQL (MariaDB), Elasticsearch (Adobe Commerce 2.2 bis 2.4.3-p2), OpenSearch (2.3.7-p3, 2.4.3-p2, 2.4.4 und höher), Redis und [!DNL RabbitMQ].
+Adobe Commerce on Cloud Infrastructure unterstützt derzeit die folgenden Services: PHP, MySQL (MariaDB), OpenSearch (2.4.4 und höher), Redis oder Valkey und [!DNL RabbitMQ].
 
 Jeder Service wird in einem separaten, sicheren Container ausgeführt. Container werden im Projekt gemeinsam verwaltet. Einige Services sind standardmäßig, z. B. die folgenden:
 
@@ -130,7 +129,7 @@ Adobe Commerce in der Cloud-Infrastruktur verwendet das Debian GNU/Linux-Betrieb
 
 - [MySQL](../services/mysql.md)
 
-- [Redis](../services/redis.md)
+- [Redis](../services/redis.md) oder [Valkey](../services/valkey.md)
 
 - [RabbitMQ](../services/rabbitmq.md)
 

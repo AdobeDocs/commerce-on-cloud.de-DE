@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
 workflow-type: tm+mt
-source-wordcount: 473
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ In der folgenden Tabelle werden die in einem Cloud-Projekt enthaltenen Dateien b
 | Datei | Beschreibung |
 | ------------------------- | ------------ |
 | `/.magento/routes.yaml` | Konfigurationsdatei, die `www` zur Apex-Domain und `php` Anwendung umleitet, um HTTP bereitzustellen. Siehe [Konfigurieren von Routen](../routes/routes-yaml.md). |
-| `/.magento/services.yaml` | Eine Konfigurationsdatei, die eine MySQL-Instanz (MariaDB), Redis und OpenSearch oder Elasticsearch definiert. Siehe [Konfigurieren von Services](../services/services-yaml.md). |
+| `/.magento/services.yaml` | Eine Konfigurationsdatei, die eine MySQL-Instanz (MariaDB), Redis oder Valkey und OpenSearch oder Elasticsearch definiert. Siehe [Konfigurieren von Services](../services/services-yaml.md). |
 | `/app` | Der `code` Ordner wird für benutzerdefinierte Module verwendet. Der Ordner `design` wird für [benutzerdefinierte Designs“ &#x200B;](../store/custom-theme.md). Der Ordner `etc` enthält Konfigurationsdateien für das Programm. |
 | `/m2-hotfixes` | Wird für benutzerdefinierte Patches verwendet. |
 | `/update` | Ein vom Support-Modul verwendeter Service-Ordner. |

@@ -11,9 +11,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 330a8bbd9298a28b5c007f4a79f684ce7adca9ff
 workflow-type: tm+mt
-source-wordcount: 857
+source-wordcount: 858
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Die `.magento.app.yaml`-Datei verwendet Eigenschaften, um die Umgebungsunterstü
 | [`hooks`](hooks-property.md) | Anpassen von Shell-Befehlen für die Build-, Bereitstellungs- und Post-Bereitstellungsphase | — | Nein |
 | [`mounts`](#mounts) | Pfade festlegen | Pfade:<ul><li>`"var": "shared:files/var"`</li><li>`"app/etc": "shared:files/etc"`</li><li>`"pub/media": "shared:files/media"`</li><li>`"pub/static": "shared:files/static"`</li></ul> | Nein |
 | [`name`](#name) | Programmnamen definieren | `mymagento` | Ja |
-| [`relationships`](#relationships) | Zuordnen von Diensten | Dienste:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Nein |
+| [`relationships`](#relationships) | Zuordnen von Diensten | Dienste:<ul><li>`database: "mysql:mysql"`</li><li>`redis: "redis:redis"` oder `valkey: "cache:valkey"`</li><li>`opensearch: "opensearch:opensearch"`</li></ul> | Nein |
 | [`runtime`](#runtime) | Die Laufzeiteigenschaft enthält Erweiterungen, die für die [!DNL Commerce] erforderlich sind. | Erweiterungen:<ul><li>`xsl`</li><li>`newrelic`</li><li>`sodium`</li></ul> | Ja |
 | [`type`](#type-and-build) | Festlegen des Bild-Basis-Containers | `php:8.3` | Ja |
 | [`variables`](variables-property.md) | Anwenden einer Umgebungsvariablen auf eine bestimmte Commerce-Version | — | Nein |

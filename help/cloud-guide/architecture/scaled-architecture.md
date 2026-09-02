@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+source-git-commit: 2defc3f82cdada4e9576721ae7a7b3dd25a84adc
 workflow-type: tm+mt
-source-wordcount: 828
+source-wordcount: 807
 ht-degree: 0%
 
 ---
@@ -36,27 +36,27 @@ Früher bestand die Pro-Architektur aus drei Knoten, von denen jeder einen volls
 
 ### Service-Ebene
 
-Es gibt drei Service-Knoten für Datenspeicherung, Cache und Services: **OpenSearch** oder **Elasticsearch**, **MariaDB**, **Redis** und mehr. Wenn sich die Servicestufe der Kapazität nähert, besteht die einzige Möglichkeit zur Skalierung darin, die Servergröße zu erhöhen, z. B. die Steigerung der Leistung und des Speichers von CPU. Die Kapazität ist auf die Größe des verfügbaren Knotens beschränkt. Da der Datenbank-Cluster für hohe Verfügbarkeit ausgelegt ist, können Sie mit den verwendeten Technologien nicht horizontal zuverlässig skalieren.
+Jeder der drei Dienstknoten führt denselben Satz von Diensten aus: **OpenSearch** oder **Elasticsearch** für die Suche, **MariaDB** für die Datenbank und **Redis** oder **Valkey** für das Caching, unter anderem. Wenn sich die Servicestufe der Kapazität nähert, können Sie nur vertikal skalieren, indem Sie die Servergröße (CPU und Speicher) erhöhen. Die Kapazität ist auf die größte verfügbare Knotengröße beschränkt. Da der Datenbank-Cluster für hohe Verfügbarkeit ausgelegt ist, können Sie die Datenbankknoten nicht zuverlässig mit den verwendeten Technologien skalieren.
 
 ![Skalierung der Service-Ebene](../../assets/scaling-service.png)
 
 Betrachten wir ein Beispiel, bei dem der Service-Knoten-Instanztyp _m5.2xlarge_ mit 32 GB RAM ist. Ein Dienst wie die Datenbank beansprucht eine beträchtliche Menge an Arbeitsspeicher (30 GB). Durch die Skalierung auf die nächste verfügbare Instanzgröße _m5.4xlarge_ steht 64 GB RAM zur Verfügung, wodurch der Arbeitsspeicher verdoppelt und die wachsenden Anforderungen der Datenbank erfüllt werden können.
 
-Sie können die Leistung der Service-Ebene weiter optimieren, indem Sie Traffic basierend auf dem Knotentyp weiterleiten. Standardmäßig ist der Datenbankknoten vom Web-Traffic getrennt. Beispielsweise können Sie Webtraffic auf dem Datenbankknoten bereitstellen.
+Sie können die Leistung der Service-Ebene weiter optimieren, indem Sie Traffic basierend auf dem Knotentyp weiterleiten. Standardmäßig ist der Datenbankknoten vom Web-Traffic getrennt. Sie können beispielsweise Webtraffic auf dem Datenbankknoten bereitstellen.
 
 ### Web-Stufe
 
-Es gibt drei Web-Knoten für die Verarbeitung von Anfragen und Webtraffic: **php-fpm** und **NGINX**. Zusätzlich zur vertikalen Skalierung durch Erhöhung der Leistung und des Speichers kann die Web-Ebene horizontal skaliert werden, indem Webserver zu einem vorhandenen Cluster hinzugefügt werden, wenn sie auf PHP-Ebene eingeschränkt werden. Unter [Automatische Skalierung](autoscaling.md) erfahren Sie, wie die Web-Knoten automatisch skaliert werden.
+Es gibt drei Web-Knoten für die Verarbeitung von Anfragen und Webtraffic: **php-fpm** und **NGINX**. Zusätzlich zur vertikalen Skalierung durch Erhöhung der Leistung und des Speichers kann die Web-Ebene horizontal skaliert werden, indem Webserver zu einem vorhandenen Cluster hinzugefügt werden, wenn sie auf PHP-Ebene eingeschränkt werden. Informationen zur automatischen Skalierung der Web-Knoten finden Sie unter [Automatische Skalierung](autoscaling.md).
 
 ![Web-Stufen-Skalierung](../../assets/scaling-web.png)
 
-Dies ergänzt die vertikale Skalierung, die von der Service-Ebene bereitgestellt wird. Während die Service-Ebene in Größe und Leistung skaliert wird, um einer wachsenden Datenbank- und Service-Nutzung Rechnung zu tragen, skaliert die Web-Ebene in Größe, Leistung und Instanzen, um einer Zunahme von Prozessanfragen und höheren Traffic-Anforderungen gerecht zu werden.
+Dies ergänzt die vertikale Skalierung, die von der Service-Ebene bereitgestellt wird. Wenn die Service-Ebene skaliert wird, um eine wachsende Datenbank zu berücksichtigen, wird die Web-Ebene skaliert, um einen Anstieg der Anfragen und des Traffics zu bewältigen.
 
-Betrachten wir ein Beispiel, bei dem der Web-Knoten-Instanztyp _C5.2xlarge mit acht CPUs und 16 GB RAM_ ist. Die Anzahl der Anfragen an die Website ist stark gestiegen. Sie können einen C5.2xlarge-Knoten hinzufügen, um den Anstieg der php-fpm-Prozesse zu bewältigen, oder Sie können jeden Instanztyp in _C5.4xlarge mit 16 CPU und 32 GB RAM_ ändern. Durch Hinzufügen eines Knotens wird das Risiko unzureichender Spitzenkapazitäten reduziert.
+Betrachten wir ein Beispiel, bei dem der Web-Knoten-Instanztyp _C5.2xlarge mit acht CPUs und 16 GB RAM_ ist. Die Anzahl der Anfragen an die Website ist stark gestiegen. Um den Anstieg der php-fpm-Prozesse zu bewältigen, können Sie einen C5.2xlarge-Knoten hinzufügen oder jeden Instanztyp auf _C5.4xlarge mit 16 CPU und 32 GB RAM_ ändern. Durch Hinzufügen eines Knotens wird das Risiko unzureichender Spitzenkapazitäten reduziert.
 
 ## Projektstruktur
 
-Pro-Projekte mit der skalierten Architektur verfügen über mindestens sechs Knoten.
+Pro-Projekte mit der skalierten Architektur verfügen über sechs Knoten.
 
 - 3 Web-Knoten c5.2xlarge (8 CPU, 16 GB RAM)
 
@@ -114,7 +114,6 @@ project-id@server-id:~$
 
 ### Speicherorte protokollieren
 
-Die Protokollspeicherorte variieren je nach Knoten geringfügig. Ein Datenbankprotokoll, z. B. das **MySQL-Fehlerprotokoll**, ist beispielsweise auf einem Dienstknoten (`/var/log/mysql/mysql-error.log`) verfügbar, nicht jedoch auf einem Webknoten.
+Die Protokollspeicherorte variieren je nach Knoten geringfügig. Das **MySQL-Fehlerprotokoll** (`/var/log/mysql/mysql-error.log`) ist beispielsweise auf einem Service-Knoten verfügbar, nicht jedoch auf einem Web-Knoten.
 
 Jedes Pro-Konto enthält den [New Relic Logs-Service](../monitor/new-relic-service.md), der sich automatisch mit Protokolldaten aus der Anwendung verbindet, um eine dynamische Protokollverwaltung zu ermöglichen. In der Anwendung &quot;New Relic-Protokolle“ werden aggregierte Protokolldaten aus allen Knoten angezeigt, sodass Sie Leistungsprobleme auf bestimmten Knoten über ein einziges Dashboard beheben können.
-

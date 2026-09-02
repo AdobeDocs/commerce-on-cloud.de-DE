@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 50c653aa6f78056f3fa8fe300fd224693a4460b0
 workflow-type: tm+mt
-source-wordcount: 1369
+source-wordcount: 1371
 ht-degree: 0%
 
 ---
@@ -283,6 +283,7 @@ Wenn Sie beispielsweise einen benutzerdefinierten Pfad erstellen, um Protokolle 
 Da jeder Service in einem separaten Container ausgeführt wird, sind die Service-Protokolle nicht in der Integrationsumgebung verfügbar. Adobe Commerce in der Cloud-Infrastruktur bietet nur in der Integrationsumgebung Zugriff auf den Webserver-Container. Die folgenden Speicherorte für Service-Protokolle sind für die Pro-Produktions- und Staging-Umgebungen vorgesehen:
 
 - **Redis-Protokoll**: `/var/log/platform/<project-ID>*/redis-server-<project-ID>*.log`
+- **Valkey-Protokoll**: `/var/log/platform/<project-ID>*/valkey-server-<project-ID>*.log`
 - **Elasticsearch-Protokoll**: `/var/log/elasticsearch/elasticsearch.log`
 - **Java Garbage Collection Log**: `/var/log/elasticsearch/gc.log`
 - **Mail-Protokoll**: `/var/log/mail.log`

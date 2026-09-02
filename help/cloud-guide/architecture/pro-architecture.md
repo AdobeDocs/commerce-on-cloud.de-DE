@@ -1,6 +1,6 @@
 ---
 title: Pro Architektur
-description: Erfahren Sie mehr über die von der Pro-Architektur unterstützten Umgebungen.
+description: Erfahren Sie mehr über die Architektur der Pro-Umgebung, einschließlich Master-, Integrations-, Staging- und Produktionsumgebungen sowie Cluster-Skalierung und Backups.
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
 exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
@@ -18,9 +18,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
 workflow-type: tm+mt
-source-wordcount: 1619
+source-wordcount: 1621
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Die folgende Tabelle fasst die Unterschiede zwischen Umgebungen zusammen:
 | Umfasst New Relic-Service | Nein | APM | APM + NRI |
 | Automatische Sicherungen | Nein | Ja | Ja |
 
+**APM** bezieht sich auf die Überwachung der Leistung [!DNL New Relic's] Anwendung.
+
 >[!NOTE]
 >
 >Adobe stellt das Cloud Docker für Commerce-Tool zur Bereitstellung in einer lokalen Cloud Docker-Umgebung bereit, damit Sie Adobe Commerce-Projekte entwickeln und testen können. Siehe [Docker-](../dev-tools/cloud-docker.md).
@@ -64,7 +66,7 @@ Bei Pro-Projekten bietet die `master`-Verzweigung eine aktive PaaS-Umgebung für
 
 - Erstellen **&#x200B;**&#x200B;keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
 
-- Verwenden Sie die `master` nicht für Entwicklungs-, UAT- oder Leistungstests
+- Verwenden Sie die `master` nicht für Entwicklungs-, Benutzerakzeptanztests (UAT) oder Leistungstests
 
 ### Integrationsumgebung
 
@@ -99,11 +101,11 @@ Um die Anzahl der Produkte im Katalog zu überprüfen, führen Sie die folgende 
 
 - Die Architektur der Integrationsumgebung stimmt nicht mit der Staging- und Produktionsarchitektur überein
 
-- Verwenden Sie die `integration`-Umgebung nicht für Entwicklungstests, Leistungstests oder Benutzerakzeptanztests (UAT)
+- Verwenden Sie die `integration`-Umgebung nicht für Entwicklungstests, Leistungstests oder UAT.
 
 - Verwenden Sie die `integration`-Umgebung nicht zum Testen von B2B auf Adobe Commerce-Funktionen
 
-- Sie können die Datenbank nicht in der Integrationsumgebung von der Produktions- oder Staging-Datenbank aus wiederherstellen
+- Sie können die Datenbank nicht in der Integrationsumgebung aus der Produktions- oder Staging-Datenbank wiederherstellen
 
 {{enhanced-integration-envs}}
 
@@ -160,11 +162,9 @@ Die Produktionsumgebung verfügt über drei virtuelle Maschinen (VMs) hinter ein
   - `pub/static`
   - `app/etc`
 
-- **Redis** - ein Server pro virtuellem Rechner mit nur einem aktiven Server und die beiden anderen als Replikate
+- **Redis** oder **Valkey** - ein Server pro virtuellem Rechner mit nur einem aktiven Server und die beiden anderen als Replikate.
 
-- **Elasticsearch** - Suchen Sie nach Adobe Commerce in Cloud Infrastructure 2.2 bis 2.4.3-p2
-
-- **OpenSearch** - Suchen Sie nach Adobe Commerce in Cloud-Infrastruktur 2.3.7-p3, 2.4.3-p2, 2.4.4 und höher
+- **OpenSearch**: Suchen nach Adobe Commerce in Cloud-Infrastruktur 2.4.4 und höher
 
 - **Galera** - Datenbank-Cluster mit einer MariaDB MySQL-Datenbank pro Knoten mit einer Einstellung zum automatischen Inkrementieren von drei für eindeutige IDs in jeder Datenbank
 
@@ -191,7 +191,7 @@ Adobe Commerce in Cloud-Infrastrukturen verwenden eine Hochverfügbarkeitsarchit
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [&#x200B; Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
+>Die bereitgestellten Volumes enthalten oder beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [&#x200B; Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
 
 {{pro-backups}}
 
@@ -213,11 +213,11 @@ Adobe behält automatische Sicherungen gemäß der folgenden Datenaufbewahrungsr
 | Wochen 8 bis 12 | Eine Sicherung alle zwei Wochen |
 | &#x200B;3. bis 5. Monat | Ein Backup pro Monat |
 
-Diese Richtlinie kann je nach Cloud-Infrastrukturplan variieren.
+Diese Richtlinie variiert je nach Cloud-Infrastrukturplan.
 
 ### Recovery Time Objective
 
-RTO hängt von der Größe des Speichers ab. Bei großen EBS-Volumes dauert die Wiederherstellung länger. Die Wiederherstellungszeiten können je nach Größe der Datenbank variieren. Weitere Informationen erhalten Sie von Ihrem Adobe Customer Success Manager.
+RTO hängt von der Größe des Speichers ab. Bei großen EBS-Volumes dauert die Wiederherstellung länger. Die Wiederherstellungszeiten hängen von der Größe der Datenbank ab. Weitere Informationen erhalten Sie von Ihrem Adobe Customer Success Manager.
 
 ## Pro Cluster-Skalierung
 

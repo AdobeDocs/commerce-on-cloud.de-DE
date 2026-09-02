@@ -13,9 +13,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 862
+source-wordcount: 859
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Dieses Tool erweitert die Funktionalität der [[!DNL Cloud Console]](../../get-s
 
 >[!NOTE]
 >
->Dies ist ein lokales Tool und wird nur auf Unix-basierten Betriebssystemen unterstützt. Windows wird nicht unterstützt. Es kann nicht mit der auf dieser Seite beschriebenen Methode in der Cloud-Umgebung installiert werden (die schreibgeschützt ist). Module können nur über einen der folgenden (Bereitstellungs **Workflows) in der Cloud** Umgebung installiert werden.
+>Dieses lokale Tool wird nur auf Unix-basierten Betriebssystemen unterstützt. Windows wird nicht unterstützt. Es kann nicht mit der auf dieser Seite beschriebenen Methode in der Cloud-Umgebung installiert werden (die schreibgeschützt ist). Module können nur über einen der folgenden (Bereitstellungs **Workflows) in der Cloud** Umgebung installiert werden.
 >
 >- [Pro-Bereitstellungs-Workflow](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow)
 >- [Workflow „Bereitstellung starten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow)
@@ -43,7 +43,7 @@ Dieses Tool erweitert die Funktionalität der [[!DNL Cloud Console]](../../get-s
    curl -sS https://accounts.magento.cloud/cli/installer | php
    ```
 
-1. Fügen Sie `magento-cloud` CLI zum Bash-Profil hinzu.
+1. Fügen Sie die `magento-cloud` CLI zum Bash-Profil hinzu.
 
    ```bash
    export PATH=$PATH:$HOME/.magento-cloud/bin
@@ -105,7 +105,11 @@ magento-cloud environment:list
 
 ### Umgebung erneut bereitstellen
 
-Trigger einer erneuten Bereitstellung ohne Verwendung einer Push-Benachrichtigung. Überprüfen und bestätigen Sie die Umgebung für die erneute Bereitstellung. Verwenden Sie die erneute Bereitstellung nicht, wenn sich ein Build in einem ausstehenden Status befindet.
+Trigger einer erneuten Bereitstellung ohne Verwendung einer Push-Benachrichtigung. Überprüfen und bestätigen Sie die Umgebung für die erneute Bereitstellung.
+
+>[!CAUTION]
+>
+>Verwenden Sie die erneute Bereitstellung nicht, wenn sich ein Build in einem ausstehenden Status befindet.
 
 ```bash
 magento-cloud environment:redeploy
@@ -121,7 +125,7 @@ Are you sure you want to redeploy the environment <environment-name>? [Y/n]
 
 ## Git-Befehle
 
-Möglicherweise stellen Sie fest, dass einige dieser Befehle Git-Befehlen ähneln. Die `magento-cloud`-Befehle stellen eine direkte Verbindung zum Git-basierten Cloud-Projekt mit zusätzlichen Funktionen her. Wenn Sie eine Verzweigung erstellen, ohne die `magento-cloud` CLI zu verwenden, wird sie nicht „aktiviert“ und wird nicht automatisch erstellt, wenn Sie Änderungen in die Remote-Umgebung pushen. Der `magento-cloud` CLI-Befehl umfasst die Aktivierung.
+Einige dieser Befehle ähneln den Git-Befehlen. Die `magento-cloud`-Befehle stellen eine direkte Verbindung zum Git-basierten Cloud-Projekt mit zusätzlichen Funktionen her. Wenn Sie eine Verzweigung erstellen, ohne die `magento-cloud` CLI zu verwenden, wird sie nicht „aktiviert“ und wird nicht automatisch erstellt, wenn Sie Änderungen in die Remote-Umgebung pushen. Der `magento-cloud` CLI-Befehl umfasst die Aktivierung.
 
 Um eine Verzweigung zu erstellen, verwenden Sie den Befehl `magento-cloud` , damit die Verzweigung aktiviert wird.
 
@@ -190,7 +194,7 @@ Die folgenden Schritte zeigen, wie Sie die CLI- und Git-Befehle synonym zur Verw
    >
    >Sie können eine Umgebungsverzweigung mithilfe der `magento-cloud environment:branch <environment-name> <parent-environment-ID>`-Befehlssyntax erstellen. Es kann einige Zeit dauern, bis eine Umgebungsverzweigung erstellt und aktiviert wird.
 
-1. Verwenden Sie die Umgebungs-ID, um aktualisierten Code an Ihren lokalen Computer zu übertragen. Dies ist nicht erforderlich, wenn die Verzweigung „Umgebung“ neu ist.
+1. Verwenden Sie die Umgebungs-ID, um aktualisierten Code in Ihre lokale Umgebung zu ziehen. Dieser Schritt ist nicht erforderlich, wenn die Verzweigung „Umgebung“ neu ist.
 
    ```bash
    git pull origin <environment-ID>

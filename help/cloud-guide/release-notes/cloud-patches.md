@@ -1,6 +1,6 @@
 ---
 title: Cloud-Patches für Commerce
-description: Hier finden Sie eine Liste der neuesten Verbesserungen am Cloud-Patches-Paket.
+description: Erfahren Sie mehr über die neuesten Verbesserungen am Cloud-Patches für Commerce-Paket, einschließlich Sicherheitskorrekturen, Cache-Verbesserungen und Aktualisierungen der Patch-Zuverlässigkeit.
 recommendations: noDisplay, catalog
 last-substantial-update: 2025-08-07T00:00:00.000Z
 exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
@@ -19,9 +19,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 58dbe1e1135c77d7061deec91246f1657b6e91c6
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 2969
+source-wordcount: 2978
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ Veröffentlichungsdatum: 29. Juli 2021
 
 - **Es wurde ein Problem behoben, das durch die Anwendung des Patches für die B2B-**-Navigation verursacht wurde. Mit dieser Fehlerbehebung wird ein `Undefined offset` behoben, der nach dem Wechsel der Store-Ansicht auf der Suchseite angezeigt wird.<!--MCLOUD-5287-->
 
-- **PayPal Checkout-Patch** - Behebt ein Problem mit Adobe Commerce 2.3.7 bei PayPal Express, bei dem der zuvor aufgegebene Bestellpreis angezeigt wird.<!--MC-42674-->
+- **PayPal Checkout-Patch**: Behebt ein Problem mit Adobe Commerce 2.3.7 bei PayPal Express, bei dem der zuvor aufgegebene Bestellpreis angezeigt wird.<!--MC-42674-->
 
 - **Unterstützung der Patch-Kategorie** - Es wurde Unterstützung für die Verarbeitung von Patch-Kategorien und Ursprungsquellen hinzugefügt, die Qualitäts-Patches zugewiesen wurden. Mit diesen Kategorien können Kunden Filter und Sortierung verwenden, um Patches schneller zu finden, wenn sie das [Quality Patches Tool](https://github.com/magento/quality-patches) und das Site-Wide Analysis Tool (SWAT) verwenden. <!--MC-38577-->
 

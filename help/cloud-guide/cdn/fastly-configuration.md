@@ -1,6 +1,6 @@
 ---
 title: Fastly-Services konfigurieren
-description: Erfahren Sie, wie Sie Fastly Services für Ihr Adobe Commerce-Projekt einrichten und konfigurieren.
+description: Erfahren Sie, wie Sie Fastly Caching, VCL-Snippets und die Web Application Firewall (WAF) für Ihre Staging- und Produktionsumgebungen einrichten, konfigurieren und testen.
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
 TQID: https://experienceleague.adobe.com/sDx6n5Qgt1lI3-3FDzhUR-JyKgI59woXmoVHSjKFT9w
@@ -16,9 +16,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
 workflow-type: tm+mt
-source-wordcount: 2254
+source-wordcount: 2216
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Fastly arbeitet mit Varnish zusammen, um schnelle Caching-Funktionen und ein Con
 >
 >Fastly ist in Integrationsumgebungen nicht verfügbar.
 
-Führen Sie die folgenden Schritte aus, um Fastly früh in Ihrem Site-Entwicklungsprozess zu aktivieren, zu konfigurieren und zu testen, um einen sicheren Zugriff auf Ihre Site zu ermöglichen.
+Führen Sie die folgenden Schritte aus, um Fastly in den frühen Phasen des Site-Entwicklungsprozesses zu aktivieren, zu konfigurieren und zu testen, um einen sicheren Zugriff auf Ihre Site zu ermöglichen.
 
 - Schnelle Anmeldedaten für Staging- und Produktionsumgebungen
 - Schnelles CDN-Caching aktivieren
@@ -69,7 +69,7 @@ Die Fastly Service-ID und das API-Token für Ihre Staging- und Produktionsumgebu
 
    Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
 
-**Abrufen von Anmeldeinformationen für Cloud-Starter-Projekte**:
+**Abrufen von Anmeldeinformationen für Cloud Starter-Projekte**:
 
 Rufen Sie in Cloud-Starterprojekten die Anmeldeinformationen über die Cloud-Konsole oder die Cloud-CLI ab:
 
@@ -111,27 +111,27 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
 {{admin-login-step}}
 
-1. Klicken Sie auf **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **System** und erweitern Sie **Vollständiger Seitencache**.
+1. Klicken Sie auf **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** und erweitern Sie **[!UICONTROL Full Page Cache]**.
 
    ![Erweitern Sie auf Fastly](../../assets/cdn/fastly-menu.png)
 
-1. Entfernen Sie im Abschnitt _Caching_ die Auswahl aus **Systemwert verwenden** und wählen Sie dann **Fastly CDN** aus der Dropdown-Liste aus.
+1. Entfernen Sie im Abschnitt _[!UICONTROL Caching Application]_&#x200B;die Auswahl aus der **[!UICONTROL Use system value]**&#x200B;und wählen Sie dann **[!UICONTROL Fastly CDN]**&#x200B;aus der Dropdown-Liste aus.
 
    ![Schnell wählen](../../assets/cdn/fastly-enable-admin.png)
 
-1. Erweitern Sie **Fastly Configuration** und wählen [Caching-Optionen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
+1. Erweitern Sie **[!UICONTROL Fastly Configuration]** und [&#x200B; Sie „Zwischenspeicheroptionen auswählen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
 
-1. Klicken Sie nach dem Konfigurieren der Caching **Optionen oben** der Seite auf „Konfiguration speichern“.
+1. Klicken Sie nach dem Konfigurieren der Caching-Optionen oben auf der Seite auf **[!UICONTROL Save Config]** .
 
 1. Löschen Sie den Cache gemäß der Benachrichtigung.
 
-1. Fahren Sie mit der Konfiguration von Fastly fort, indem Sie zurück zu **Stores** > **Einstellungen** > **Konfiguration** > **Erweitert** > **System** > **Fastly Configuration**.
+1. Fahren Sie mit der Konfiguration von Fastly fort, indem Sie zurück zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Fastly Configuration]** gehen.
 
 ### Testen von Fastly-Anmeldedaten
 
-1. Navigieren Sie in der Admin **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **System** > **Fastly Configuration**.
+1. Navigieren Sie im Admin zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Fastly Configuration]**.
 
-1. Fügen Sie bei Bedarf die Werte **Fastly-Service** ID und **API-Token** für Ihre Projektumgebung hinzu.
+1. Fügen Sie bei Bedarf die **[!UICONTROL Fastly service ID]** und **[!UICONTROL API token]** Werte für Ihre Projektumgebung hinzu.
 
    ![Fastly Anmeldedaten-Administrator](../../assets/cdn/fastly-credentials-admin-ui.png)
 
@@ -139,9 +139,9 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
    >
    >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die von [&#x200B; bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
 
-1. Klicken Sie **Testanmeldeinformationen**.
+1. Klicken Sie auf **[!UICONTROL Test credentials]**.
 
-1. Wenn der Test erfolgreich ist, klicken Sie **Konfiguration speichern** und löschen Sie dann den Cache.
+1. Wenn der Test erfolgreich ist, klicken Sie auf **[!UICONTROL Save Config]** und löschen Sie dann den Cache.
 
    Wenn der Test fehlschlägt, stellen Sie sicher, dass die richtigen Werte für Service-ID und API-Token mit den Anmeldeinformationen für die aktuelle Umgebung übereinstimmen.
 
@@ -161,7 +161,7 @@ Laden Sie nach dem Aktivieren des Fastly-Moduls den Standard[VCL-Code](https://g
 
 **Hochladen der Fastly-VCL**:
 
-1. Klicken Sie im Abschnitt _Fastly_ auf **VCL in Fastly hochladen** wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie im Abschnitt _[!UICONTROL Fastly Configuration]_&#x200B;auf **[!UICONTROL Upload VCL to Fastly]**, wie in der folgenden Abbildung dargestellt.
 
    ![Laden Sie eine Magento-VCL in Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
 
@@ -190,7 +190,7 @@ Für diese Automatisierung müssen Sie die DNS-Konfiguration für Ihre Site aktu
 >
 >Wenn Sie über eine nicht aktive Produktions-Domain verfügen, verwenden Sie die CNAME-Einträge der ACME-Herausforderung für die Domain-Validierung. Durch frühzeitiges Hinzufügen der Einträge zu Ihrer DNS-Konfiguration kann Adobe das SSL-/TLS-Zertifikat mit den richtigen Domains bereitstellen, bevor die Site gestartet wird. Bevor Sie mit der Produktion beginnen, müssen Sie diese Platzhalterdatensätze durch die von Adobe bereitgestellten CNAME-Datensätze ersetzen.
 
-Nach Abschluss der Domain-Validierung stellt Adobe das TLS/SSL-Zertifikat für die Verschlüsselung bereit und lädt es in Live-Staging- oder Produktionsumgebungen hoch. Dieser Vorgang kann bis zu 12 Stunden dauern. Adobe empfiehlt, die DNS-Konfigurationsaktualisierungen mehrere Tage im Voraus abzuschließen, um Verzögerungen bei der Site-Entwicklung und dem Site-Launch zu vermeiden.
+Nach Abschluss der Domain-Validierung stellt Adobe das TLS/SSL-Zertifikat für die Verschlüsselung bereit und lädt es in Live-Staging- oder Produktionsumgebungen hoch. Dieser Vorgang kann bis zu 12 Stunden dauern. Adobe empfiehlt, die DNS-Konfigurationsaktualisierungen mehrere Tage im Voraus abzuschließen, um Verzögerungen bei der Site-Entwicklung und beim Start zu vermeiden.
 
 ## DNS-Konfiguration mit Entwicklungseinstellungen aktualisieren
 
@@ -297,7 +297,7 @@ Nachdem Sie die Änderungen an der DNS-Konfiguration vorgenommen haben, verwende
    curl -vo /dev/null -H Fastly-Debug:1 --resolve <live-URL-hostname>:443:<live-IP-address>
    ```
 
-1. Überprüfen Sie in der Antwort die [Kopfzeilen](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers), um sicherzustellen, dass Fastly funktioniert. Beispielsweise sollten in der Antwort die folgenden eindeutigen Kopfzeilen angezeigt werden:
+1. Überprüfen Sie in der Antwort die [Kopfzeilen](fastly-troubleshooting.md#check-cache-hit-and-miss-response-headers), um sicherzustellen, dass Fastly funktioniert. Siehe beispielsweise die folgenden eindeutigen Kopfzeilen in der Antwort:
 
    ```http
    < Fastly-Magento-VCL-Uploaded: 1.2.228

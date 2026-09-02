@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: df2792f9d653c4561e4e40cbc71499095f63ff71
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: 710
 ht-degree: 0%
 
 ---
@@ -27,126 +27,187 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und 2.4.8-p4 nicht unterstützt. Verwenden Sie Valley für die Cache-Konfiguration, bei der Redis nicht unterstützt wird. Siehe [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) für unterstützte Cache-Services nach Version.
+>Redis-Cache wird nicht unterstützt für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und 2.4.8-p4. Verwenden Sie [Valkey](valkey.md) für die Cache-Konfiguration, bei der Redis nicht unterstützt wird. Siehe [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) für unterstützte Cache-Services nach Version.
 
 {{service-instruction}}
 
-**So aktivieren Sie Redis**:
+## Redis aktivieren
 
-1. Fügen Sie den erforderlichen Namen und den erforderlichen Typ zur `.magento/services.yaml` hinzu.
+Um Redis zu aktivieren, aktualisieren Sie die folgenden Dateien:
 
-   ```yaml
-   myredis:
-       type: redis:<version>
-   ```
+- `.magento/services.yaml`
+- `.magento.app.yaml`
 
-   Um Ihre eigene Redis-Konfiguration bereitzustellen, fügen Sie einen `core_config` Schlüssel in Ihrer `.magento/services.yaml` hinzu:
+### Konfigurieren des Service
 
-   ```yaml
-   cache:
-       type: redis:<version>
-   ```
+Fügen Sie `.magento/services.yaml` die Definition des Redis-Dienstes hinzu. Ersetzen Sie `<version>` durch eine Redis-Version, die von Ihrer Adobe Commerce-Version und der aktuellen Cloud-Vorlage unterstützt wird.
 
-1. Konfigurieren Sie die Beziehungen in der `.magento.app.yaml`.
+```yaml
+cache:
+  type: redis:<version>
+```
 
-   ```yaml
-   runtime:
-       extensions:
-           - redis
-   
-   relationships:
-       redis: "redis:redis"
-   ```
+Beispiel: Für eine Commerce-Version und eine Cloud-Vorlage, die Redis 7.2 unterstützen:
 
-1. Code-Änderungen hinzufügen, übertragen und per Push übertragen.
+```yaml
+cache:
+  type: redis:7.2
+```
 
-   ```bash
-   git add .magento/services.yaml .magento.app.yaml && git commit -m "Enable redis service" && git push origin <branch-name>
-   ```
+Die Beispielversion ist nicht universell. Die tatsächlichen standardmäßigen und unterstützten Dienstversionen hängen von Ihrer Adobe Commerce-Version, der Patch-Ebene und der aktuellen Cloud-Vorlage ab. Überprüfen Sie die unterstützte Kombination in [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) und der aktuellen Projektvorlage.
 
-1. [Überprüfen Sie die Service-Beziehungen](services-yaml.md#service-relationships).
+### Konfigurieren der Service-Beziehung
+
+Konfigurieren Sie `.magento.app.yaml` die Beziehung zwischen der Anwendung und dem Redis-Service:
+
+```yaml
+runtime:
+  extensions:
+    - redis
+
+relationships:
+  redis: "cache:redis"
+```
+
+Der Beziehungsschlüssel `redis` ist der Name, der von der Anwendung für den Zugriff auf den Service verwendet wird. Der Wert `cache:redis` besteht aus der Service-ID (`cache`) und dem Service-Typ (`redis`), die in `.magento/services.yaml` definiert sind.
+
+### Übertragen und Bereitstellen der Änderungen
+
+Fügen Sie die Konfigurationsänderungen hinzu, übertragen Sie sie und übertragen Sie sie:
+
+```terminal
+git add .magento/services.yaml .magento.app.yaml
+git commit -m "Enable Redis service"
+git push origin <branch-name>
+```
+
+Stellen Sie nach Abschluss der Bereitstellung sicher, dass die Redis-Service-Beziehung verfügbar ist.
 
 {{service-change-tip}}
 
+## Überprüfen der Service-Beziehung
+
+Führen Sie nach der Bereitstellung der Konfiguration den folgenden Befehl aus einem Anwendungs-Container aus, um das decodierte `MAGENTO_CLOUD_RELATIONSHIPS`-Objekt anzuzeigen:
+
+SSH verwenden, um eine Verbindung zur Remote-Cloud-Umgebung herzustellen, und dann ausführen:
+
+```terminal
+echo "$MAGENTO_CLOUD_RELATIONSHIPS" | base64 -d | json_pp
+```
+
+Der Befehl zeigt alle konfigurierten Dienstbeziehungen an. Suchen Sie die `redis`, um die Redis-Verbindungsdetails zu identifizieren.
+
+Das folgende gekürzte Beispiel zeigt die `redis`. Es ist kein universelles Schema.
+
+```json
+{
+   "database" : [
+      {
+         "host" : "database.internal",
+         "port" : 3306,
+         "path" : "main",
+         "scheme" : "mysql"
+      }
+   ],
+   "opensearch" : [
+      {
+         "host" : "opensearch.internal",
+         "port" : 9200,
+         "path" : null,
+         "scheme" : "http"
+      }
+   ],
+   "redis" : [
+      {
+         "host" : "redis.internal",
+         "port" : 6379,
+         "path" : null,
+         "scheme" : "redis"
+      }
+   ]
+}
+```
+
+Die Ausgabe variiert je nach Umgebung und Service-Konfiguration. Hartcodieren Sie in diesem Beispiel keine Hostnamen, Ports, IP-Adressen, Cluster-Namen, Service-Versionen, Benutzernamen oder Kennwörter. Verwenden Sie die von `MAGENTO_CLOUD_RELATIONSHIPS` in der Zielumgebung zurückgegebenen Werte.
+
+Wenn `jq` verfügbar ist, verwenden Sie den folgenden Befehl, um nur die Redis-Beziehung anzuzeigen:
+
+```terminal
+printf '%s' "$MAGENTO_CLOUD_RELATIONSHIPS" \
+  | base64 -d \
+  | jq '{redis: .redis}'
+```
+
+Weitere Informationen zu Service-Beziehungen finden Sie unter [Konfigurieren von Services](services-yaml.md).
+
 ## Anpassen der Redis-Konfiguration
 
-Einzelheiten zum Anpassen der Redis-Konfiguration finden Sie unter [Konfigurieren von Redis](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) im _Handbuch für Best Practices für Implementierungs-Playbooks_.
+Empfehlungen zu Cache-, Sitzungs-, L2- und Replikatverbindungen finden Sie unter [Best Practices für die Konfiguration von Valkey- und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)-Services im _Handbuch zu Best Practices für Implementierungsplaybooks_.
 
 ## Verwenden der Redis-CLI
 
-Wenn Ihre Redis-Beziehung `redis` heißt, können Sie mit dem `redis-cli`-Tool darauf zugreifen.
+Wenn Ihre Redis-Beziehung `redis` heißt, verwenden Sie den Host und Port, die von `MAGENTO_CLOUD_RELATIONSHIPS` zurückgegeben werden, um eine Verbindung zu Redis herzustellen.
 
-1. Verwenden Sie SSH, um eine Verbindung zur Integrationsumgebung herzustellen, in der Redis installiert und konfiguriert ist.
+Stellen Sie eine Verbindung zur -Umgebung her, in der Redis installiert und konfiguriert ist, und führen Sie den folgenden Befehl aus:
 
-1. Öffnen Sie einen SSH-Tunnel zu einem Host.
-
-   ```bash
-   redis-cli -h redis.internal
-   ```
-
-## Installierte Redis-Version abrufen
-
-Verwenden Sie den folgenden Befehl, um die Redis-Version in einer Integrationsumgebung zu installieren:
-
-```bash
-redis-cli -h redis.internal info | grep version
+```terminal
+redis-cli -h <host> -p <port>
 ```
 
-Beispielantwort:
+**Beispiel**
 
+```terminal
+redis-cli -h redis.internal -p 6379
 ```
-redis_version:7.0.5
-gcc_version:8.3.0
+
+## Abrufen der installierten Redis-Version
+
+>[!BEGINTABS]
+
+>[!TAB Integrationsumgebung]
+
+Verwenden Sie in einer Integrationsumgebung den Host und Port, die von der `redis` Beziehung zurückgegeben werden, um Folgendes auszuführen:
+
+```terminal
+redis-cli -h <host> -p <port> info | grep version
 ```
 
-### Redis zu Pro-Staging und Produktion
+**Beispielantwort**
 
-Um die Redis-Version in einer Staging- oder Produktionsumgebung zu installieren, verwenden Sie den `redis-server`:
+```text
+redis_version:<installed-version>
+gcc_version:<gcc-version>
+```
 
-```bash
+Die Versions- und Build-Details variieren je nach Umgebung. Behandeln Sie eine angezeigte Beispielversion nicht als erforderliche Version oder Universaldienstversion.
+
+>[!TAB Pro Staging und Produktion]
+
+Führen Sie in Pro-Staging- und Produktionsumgebungen Folgendes aus:
+
+```terminal
 redis-server -v
 ```
 
-```
-Redis server v=7.0.5 ...
-```
+**Beispielantwort**
 
-Verwenden Sie den folgenden Befehl, um die Redis-Konfiguration in einer Pro Staging- oder Produktionsumgebung zu installieren:
-
-```bash
-echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+```text
+Redis server v=<installed-version> ...
 ```
 
-Beispielantwort:
+Die Versions- und Build-Details variieren je nach Umgebung. Behandeln Sie eine angezeigte Beispielversion nicht als erforderliche Version oder Universaldienstversion.
 
-```json
-"redis" : [
-    {
-        "cluster" : "project-master-123abc4",
-        "fragment" : null,
-        "host" : "redis.internal",
-        "host_mapped" : false,
-        "hostname" : "oblahblahblahblahe.redis.service._.magentosite.cloud",
-        "ip" : "169.254.10.10",
-        "password" : null,
-        "path" : null,
-        "port" : 6379,
-        "public" : false,
-        "query" : {},
-        "rel" : "redis",
-        "scheme" : "redis",
-        "service" : "redis",
-        "type" : "redis:7.0.5",
-        "username" : null
-    }
-]
-```
+>[!ENDTABS]
 
 ## Fehlerbehebung für Redis
 
 Hilfe bei der Fehlerbehebung bei Redis-Problemen finden Sie in den folgenden Artikeln zum Adobe Commerce-Support:
 
-- [Problem mit verzögerter Admin-Anmeldung oder Checkout neu bearbeiten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.html)
-- [Erweiterte Redis-Cache-Implementierung Adobe Commerce 2.3.5+](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)
 - [Verwaltete Warnhinweise auf Adobe Commerce: Warnung bei Redis-Speicher](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
 - [Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis zu RediS-Speicher](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
+
+### Referenz zur Cache-Bereinigung von Fehlern auf einem Valley-konfigurierten Cache
+
+Ein Fehler bei der Cache-Bereinigung vor der Bereitstellung kann die Fehlercode-`[107]` (`clean-redis-cache`) und eine `Connection to Redis` anzeigen, selbst wenn der `cache`-Service als Valkey konfiguriert ist. `ece-tools` verwendet diesen veralteten Redis-orientierten Fehlercode und diese Nachricht für den Cache-Bereinigungsschritt, unabhängig davon, welcher Service die `cache`-Beziehung unterstützt, sodass der Wortlaut nicht anzeigt, dass Redis installiert ist.
+
+Wenn der zugrunde liegende Fehler ein DNS-Fehler ist, z. B. `Name or service not known` für den Beziehungshost, wurde der Bereitstellungsschritt ausgeführt, bevor die Service-Beziehung verfügbar war, oder der Beziehungsname in `.magento.app.yaml` stimmt nicht mit der Service-ID in `.magento/services.yaml` überein. Siehe [Überprüfen der Service-Beziehung](#verify-the-service-relationship).

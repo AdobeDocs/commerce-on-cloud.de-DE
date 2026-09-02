@@ -1,6 +1,6 @@
 ---
 title: Commerce auf Cloud-Infrastruktur
-description: Erfahren Sie mehr über die Erstellung, Bereitstellung und Verwaltung von Commerce in Cloud-Infrastrukturen.
+description: Erfahren Sie mehr über das Erstellen, Bereitstellen und Verwalten von Adobe Commerce in Cloud Infrastructure, einer sicheren Platform as a Service (PaaS), die in allen Regionen von AWS und Azure gehostet wird.
 exl-id: a37d0403-df14-4bb9-8cc4-25436560ba0c
 TQID: https://experienceleague.adobe.com/-sgz85xapPKNipyFVB4yMrLilEku3ff5IJg3OddymsA
 product_v2:
@@ -17,18 +17,18 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 last-update: 2026-08-28
-source-git-commit: 646dc40e0fe48293665e15b01a0f581adae3568d
+source-git-commit: d5d947f9858ab15e2e5daed7848163846580f883
 workflow-type: tm+mt
-source-wordcount: 324
-ht-degree: 3%
+source-wordcount: 356
+ht-degree: 0%
 
 ---
 
 # Commerce auf Cloud-Infrastruktur
 
-Adobe Commerce on Cloud Infrastructure bietet eine automatisierte Hosting-Plattform mit einem **Self-Service**-Ansatz für das Erstellen, Bereitstellen und Verwalten Ihrer [!DNL Commerce]-Anwendung in einer Cloud-nativen Umgebung. Adobe Commerce on Cloud Infrastructure verfügt über zusätzliche Funktionen, die es von den On-Premise-Plattformen Adobe Commerce und Magento Open Source unterscheiden:
+Adobe Commerce on Cloud Infrastructure bietet eine automatisierte Hosting-Plattform mit einem **Self-Service**-Ansatz für das Erstellen, Bereitstellen und Verwalten Ihrer [!DNL Commerce]-Anwendung in einer Cloud-nativen Umgebung. Adobe Commerce on Cloud Infrastructure verfügt über zusätzliche Funktionen, die es von den On-Premise-Plattformen Adobe Commerce und Magento Open Source unterscheidet:
 
-- Eine vorab bereitgestellte Infrastruktur, die PHP, MySQL (MariaDB), Redis, Message Queue Services ([!DNL RabbitMQ] oder [!DNL ActiveMQ]) und unterstützte Suchmaschinentechnologien umfasst.
+- Eine vorab bereitgestellte Infrastruktur, die PHP, MySQL (MariaDB), Redis oder Valkey, Message Queue Services ([!DNL RabbitMQ] oder [!DNL ActiveMQ]) und unterstützte Suchmaschinentechnologien umfasst.
 - Git-basierter Workflow mit automatischer Erstellung und Bereitstellung für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung jedes Mal, wenn Sie Code-Änderungen in eine Platform as a Service (PaaS)-Umgebung pushen.
 - Hochgradig anpassbare Umgebungskonfigurationsdateien und Befehlszeilenschnittstellen-Tools (Command-Line Interface, CLI) verwalten und bereitstellen.
 - Amazon Web Services (AWS)-Hosting, das eine skalierbare und sichere Umgebung für Online-Vertrieb und -Einzelhandel bietet.
@@ -58,7 +58,7 @@ In den folgenden Abschnitten finden Sie Details zu den verschiedenen Regionen vo
 
 >[!NOTE]
 >
-> Nur lokal in China und Russland.
+> Adobe Commerce on Cloud Infrastructure ist in China und Russland nicht verfügbar. In diesen Ländern werden nur lokale Bereitstellungen unterstützt.
 
 ## Azure-Regionen
 
@@ -66,7 +66,7 @@ In den folgenden Abschnitten finden Sie Details zu den verschiedenen Regionen vo
 
 >[!NOTE]
 >
-> Nur lokal in China und Russland. Alle Händler, für die Integrationsumgebungen erforderlich sind, müssen US-Regionen verwenden.
+> In China und Russland werden nur lokale Bereitstellungen unterstützt. Alle Händler, für die Integrationsumgebungen erforderlich sind, müssen US-Regionen verwenden.
 
 ## Dokumentation zu Adobe Commerce
 
