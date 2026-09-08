@@ -22,7 +22,7 @@ Traffic Insights soll Ihnen bei der Lösung von drei häufigen Problemen helfen:
 - **Laden von Such-Bots und Crawler** - Eine Suchmaschine oder KI-Crawler, die einen unverhältnismäßig hohen Anteil an Anfragen erzeugt und die Cache-Effizienz und die Ursprungslast beeinträchtigt. Finden Sie heraus, welche benannten Bots am aktivsten sind und was genau sie abrufen.
 - **Bösartige Skripte und Scraper** — Abkratzung, Berechtigungsfüllung, Kartentests, Erstellung gefälschter Konten oder Missbrauch der Ebene 7. Aufdecken der Fastly WAF-Signale der nächsten Generation und der IPs, Subnetze und Länder hinter verdächtigem Traffic.
 
-In jedem Fall identifiziert die App das *, was und* des Traffics. Bewerkstelligen Sie diese Informationen mit Fastly VCL-Regeln, Bildoptimierung, Cache-Optimierung, Ratenbegrenzung oder dem Adobe Add[on „Erweiterte ](../../cdn/advanced-security.md)&quot; in Ihrer Commerce- und Fastly-Konfiguration. Das [Playbook für Ermittlungen](investigation-playbook.md) behandelt jede dieser Fragen.
+In jedem Fall identifiziert die App das *, was und* des Traffics. Bewerkstelligen Sie diese Informationen mit Fastly VCL-Regeln, Bildoptimierung, Cache-Optimierung, Ratenbegrenzung oder dem Adobe Add[on „Erweiterte &#x200B;](../../cdn/advanced-security.md)&quot; in Ihrer Commerce- und Fastly-Konfiguration. Das [Playbook für Ermittlungen](investigation-playbook.md) behandelt jede dieser Fragen.
 
 ## Zugriff auf die App
 
