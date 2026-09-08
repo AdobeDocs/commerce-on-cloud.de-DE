@@ -3,9 +3,9 @@ title: Adobe Commerce Advanced Security
 description: Erfahren Sie, wie Advanced Security die Bot-Verwaltung, erweiterte Ratenbegrenzung und den Layer 7 DDoS-Schutz zu Adobe Commerce in der Cloud-Infrastruktur hinzufügt.
 feature: Cloud, Configuration, Security
 exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
-source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
+source-git-commit: 6bab2df0240c8b74a455de73fbf7a7645a46e904
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Advanced Security] ist ein Produkt, das mit [!DNL Adobe Commerce on Cloud Infrastructure] zusammenarbeitet, um Ihren Online-Store schnell, verfügbar und sicher zu halten. Diese Funktionen können dazu beitragen, den Umsatz zu schützen, Ausfallzeiten zu reduzieren und das Vertrauen der Kunden bei Spitzen-Traffic-Ereignissen und automatisierten Angriffen aufrechtzuerhalten.
 
-[!DNL Adobe Commerce on Cloud Infrastructure] umfasst einen integrierten [Layer 3- und 4-DDoS-](./fastly.md#ddos-protection) und eine [Web Application Firewall (WAF)](./fastly-waf-service.md). Unter dem [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility) sind die Erkennung von Layer 7-DDoS, der Bot-Schutz und das proaktive Sperren von IP-Adressen Händlerpflichten, auf die [!DNL Adobe Commerce Advanced Security] eingehen soll.
+>[!TIP]
+>
+>Verwenden Sie die [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md)-App in New Relic, um Ihren Fastly-Traffic und Ihre Bot-Muster zu analysieren und festzustellen, ob erweiterte Sicherheit für Sie geeignet ist.
+
+[!DNL Adobe Commerce on Cloud Infrastructure] umfasst einen integrierten [Layer 3- und 4-DDoS-](./fastly.md#ddos-protection) und eine [Web Application Firewall (WAF)](./fastly-waf-service.md). Unter dem [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) sind die Erkennung von Layer 7-DDoS, der Bot-Schutz und das proaktive Sperren von IP-Adressen Händlerpflichten, auf die [!DNL Adobe Commerce Advanced Security] eingehen soll.
 
 [!DNL Advanced Security] erweitert den Schutz der Storefront durch Fastly-gestützte Edge-Sicherheitsfunktionen, die Bot-Management, erweiterte Ratenbegrenzung und Layer 7 DDoS-Schutz als Teil einer einheitlichen Edge-Plattform bieten, die Skalierung, Leistung und Sicherheit am Netzwerk-Edge kombiniert.
 
@@ -34,7 +38,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Advanced Security] Konfigurationen erfordern derzeit die Übermittlung eines Support-Tickets. Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant. Weitere Informationen finden [&#x200B; unter  [!DNL Advanced Security]](#request-advanced-security)Anfrage“.
+>[!DNL Advanced Security] Konfigurationen erfordern derzeit die Übermittlung eines Support-Tickets. Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant. Weitere Informationen finden [ unter  [!DNL Advanced Security]](#request-advanced-security)Anfrage“.
 
 >[!IMPORTANT]
 >
@@ -42,7 +46,7 @@ ht-degree: 0%
 >
 >Bis zum Ende des 3. Quartals 2026 können Kundinnen und Kunden die Regeln für die Bot-Verwaltung nicht direkt ändern oder verwalten.
 >
->Wenn Sie Regeln hinzufügen, ändern oder anpassen möchten, wenden Sie sich über ein -Support[Ticket an den Adobe Commerce-Support](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support). Das Support-Team wird die angeforderten Änderungen implementieren.
+>Wenn Sie Regeln hinzufügen, ändern oder anpassen möchten, wenden Sie sich über ein -Support[Ticket an den Adobe Commerce-Support](https://experienceleague.adobe.com/home?support-tab=home#support). Das Support-Team wird die angeforderten Änderungen implementieren.
 >
 >Ab dem 4. Quartal 2026 soll Fastly eine Add-on-Funktion veröffentlichen, mit der Kunden Bot-Management-Regeln im Admin-Panel von Commerce verwalten können.
 
@@ -164,7 +168,7 @@ Die folgenden Szenarien lassen sich am besten mit vorhandenen Schutzmechanismen 
 
 | Szenario | Empfohlener Ansatz |
 |---|---|
-| Eine einzelne IP oder ein kleiner Satz identifizierbarer IPs überflutet Ihre Site mit Anfragen | Blockieren Sie die IPs mithilfe der Commerce Admin- oder Fastly-API. Verwenden Sie integrierte [Layer 3/4-DDoS-Schutz](./fastly.md#ddos-protection) und vorhandene [IP-Blockierungsliste &#x200B;](./fastly-vcl-blocking.md) VCL-Snippets. |
+| Eine einzelne IP oder ein kleiner Satz identifizierbarer IPs überflutet Ihre Site mit Anfragen | Blockieren Sie die IPs mithilfe der Commerce Admin- oder Fastly-API. Verwenden Sie integrierte [Layer 3/4-DDoS-Schutz](./fastly.md#ddos-protection) und vorhandene [IP-Blockierungsliste ](./fastly-vcl-blocking.md) VCL-Snippets. |
 | Sie müssen SQL-Injection, Cross-Site-Scripting (XSS) oder andere OWASP Top 10-Bedrohungen blockieren. | Der enthaltene [WAF-Service](./fastly-waf-service.md) blockiert diese Bedrohungen automatisch. |
 | Ihre DDoS-Angriffsmuster können mit einfachen VCL-Blockierungsregeln gesteuert werden | Verwenden Sie die vorhandenen [benutzerdefinierten VCL-Snippets](./fastly-vcl-custom-snippets.md) die bereits mit Adobe Commerce verfügbar sind. |
 
@@ -216,7 +220,7 @@ Die folgenden Szenarien lassen sich am besten mit alternativen Schutzmaßnahmen 
 - **Compliance-Tools** - PCI-Scanning, SOC-Compliance-Reporting und Tools für die Prüfung von Vorschriften.
 - **Härtung auf Anwendungsebene** - Token-basierte API-Authentifizierung, Normalisierung von Abfrageparametern und Entwurf einer Caching-Strategie.
 
-Einen vollständigen Überblick über die Zuständigkeiten für Adobe und die Kundensicherheit finden Sie unter [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility).
+Einen vollständigen Überblick über die Zuständigkeiten für Adobe und die Kundensicherheit finden Sie unter [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
 
 ## Häufige Angriffsmuster und Schutzmechanismen
 
@@ -254,7 +258,7 @@ Das folgende WAF-Verhalten gilt für alle [!DNL Adobe Commerce on Cloud Infrastr
 
 1. Wenden Sie sich an Ihr Adobe-Kundenbetreuerteam oder den Adobe-Vertriebsmitarbeiter, um die [!DNL Advanced Security] für Ihr Projekt zu besprechen.
 
-1. Nach dem Kauf von [!DNL Advanced Security] [ein Adobe Commerce Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um [!DNL Advanced Security] Aktivierung anzufordern. Geben Sie Ihre [!DNL Adobe Commerce on Cloud Infrastructure] Projekt-ID und die Umgebungen an, die aktiviert werden müssen (z. B. Produktion und Staging).
+1. Nach dem Kauf von [!DNL Advanced Security] [ein Adobe Commerce Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um [!DNL Advanced Security] Aktivierung anzufordern. Geben Sie Ihre [!DNL Adobe Commerce on Cloud Infrastructure] Projekt-ID und die Umgebungen an, die aktiviert werden müssen (z. B. Produktion und Staging).
 
 1. Adobe aktiviert [!DNL Advanced Security] für Ihren Fastly-Service und konfiguriert die anfänglichen Schutzrichtlinien. Die Aktivierung wird in der Regel innerhalb weniger Werktage nach der Ticketübermittlung abgeschlossen.
 
@@ -262,7 +266,7 @@ Das folgende WAF-Verhalten gilt für alle [!DNL Adobe Commerce on Cloud Infrastr
 
 >[!NOTE]
 >
->Konfigurationsänderungen an [!DNL Advanced Security] erfordern derzeit [Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant.
+>Konfigurationsänderungen an [!DNL Advanced Security] erfordern derzeit [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket). Die Self-Service-Konfiguration über die Admin-Benutzeroberfläche ist für eine zukünftige Version geplant.
 
 ## Einschränkungen
 
