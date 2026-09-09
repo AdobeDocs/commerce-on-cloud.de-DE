@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+source-git-commit: 86a182b19d49cb7abd91a716f6f403cd44ecc0ae
 workflow-type: tm+mt
-source-wordcount: 3631
+source-wordcount: 3685
 ht-degree: 0%
 
 ---
@@ -40,11 +40,19 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v2002.2.13 {#latest}
+## v2002.2.14 {#latest}
+
+Veröffentlichungsdatum: 8. September 2026
+
+- ![fix icon](../../assets/fix.svg) **Valkey 8.5 Funktionstestabdeckung**—Verbesserte Abdeckung für Symfony L2 Cache-Konfiguration.<!-- MCLOUD-15487 -->
+- ![Fix icon](../../assets/fix.svg) **Verbesserungen beim Caching** - Es wurde ein Problem mit der Isolierung des Seitencache behoben.<!-- MCLOUD-15509 -->
+- ![Fix icon](../../assets/fix.svg) **Redis- und Valkey-Verbesserungen** - Verbesserte `REDIS_BACKEND`- und `VALKEY_BACKEND` zur Unterstützung sowohl älterer als auch moderner (Symfony Cache, 2.4.9+) Redis- und Valkey-Cache-Konfigurationen.<!-- MCLOUD-15546 -->
+
+## v2002.2.13
 
 Veröffentlichungsdatum: 19. August 2026
 
-- ![Fix icon](../../assets/fix.svg) **Caching-Verbesserungen** Verbesserte Unterstützung des Symfony_l2-Cache für Redis- und Valkey-Slave-Verbindungen und behobene damit verbundene Cache-, Tag-Index-, Preload- und statische Bereitstellungsprobleme..<!-- MCLOUD-15433 -->
+- ![Fix icon](../../assets/fix.svg) **Caching-Verbesserungen**—Verbesserte Unterstützung des Symfony_l2-Cache für Redis- und Valkey-Slave-Verbindungen und Behebung der zugehörigen Cache-, Tag-Index-, Preload- und statischen Bereitstellungsprobleme..<!-- MCLOUD-15433 -->
 
 ## v2002.2.12
 

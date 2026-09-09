@@ -3,9 +3,9 @@ title: Adobe Commerce Advanced Security
 description: Erfahren Sie, wie Advanced Security die Bot-Verwaltung, erweiterte Ratenbegrenzung und den Layer 7 DDoS-Schutz zu Adobe Commerce in der Cloud-Infrastruktur hinzufügt.
 feature: Cloud, Configuration, Security
 exl-id: 7aeb189f-be69-45d5-8163-4748424083c0
-source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
+source-git-commit: 6bab2df0240c8b74a455de73fbf7a7645a46e904
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # [!DNL Adobe Commerce Advanced Security]
 
 [!DNL Adobe Commerce Advanced Security] ist ein Produkt, das mit [!DNL Adobe Commerce on Cloud Infrastructure] zusammenarbeitet, um Ihren Online-Store schnell, verfügbar und sicher zu halten. Diese Funktionen können dazu beitragen, den Umsatz zu schützen, Ausfallzeiten zu reduzieren und das Vertrauen der Kunden bei Spitzen-Traffic-Ereignissen und automatisierten Angriffen aufrechtzuerhalten.
+
+>[!TIP]
+>
+>Verwenden Sie die [Adobe Commerce Traffic Insights](../monitor/traffic-insights/overview.md)-App in New Relic, um Ihren Fastly-Traffic und Ihre Bot-Muster zu analysieren und festzustellen, ob erweiterte Sicherheit für Sie geeignet ist.
 
 [!DNL Adobe Commerce on Cloud Infrastructure] umfasst einen integrierten [Layer 3- und 4-DDoS-](./fastly.md#ddos-protection) und eine [Web Application Firewall (WAF)](./fastly-waf-service.md). Unter dem [Modell der gemeinsamen Verantwortung](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility) sind die Erkennung von Layer 7-DDoS, der Bot-Schutz und das proaktive Sperren von IP-Adressen Händlerpflichten, auf die [!DNL Adobe Commerce Advanced Security] eingehen soll.
 
