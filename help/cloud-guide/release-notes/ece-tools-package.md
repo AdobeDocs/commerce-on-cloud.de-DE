@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 86a182b19d49cb7abd91a716f6f403cd44ecc0ae
+source-git-commit: 9e21b435447f7b87b1105f9d435314b5a3efb072
 workflow-type: tm+mt
-source-wordcount: 3685
+source-wordcount: 3676
 ht-degree: 0%
 
 ---
@@ -461,7 +461,7 @@ Veröffentlichungsdatum: 6. Februar 2020
 
   - ![neues Symbol](../../assets/new.svg) **Separates Paket für Cloud Docker für Commerce hinzugefügt** - Docker-Paket vom `ece-tools`-Paket entkoppelt, um die Code-Qualität zu erhalten und unabhängige Versionen bereitzustellen. Aktualisierungen und Fehlerbehebungen im Zusammenhang mit `ece-tools` werden über das [magento-cloud-docker](https://github.com/magento/magento-cloud-docker) GitHub-Repository verwaltet.<!--MAGECLOUD-2927-->
 
-  - ![neues Symbol](../../assets/new.svg) **Aktualisierte Patch-Funktionen** - Die Patch-Funktion wurde aus dem Paket ECE-Tools in ein separates Paket [magento-cloud-patches](https://github.com/magento/magento-cloud-patches) verschoben. Während der Bereitstellung verwendet `ece-tools` das neue Paket, um Patches anzuwenden. Siehe [Versionshinweise zu Cloud-Patches](cloud-patches.md).<!--MAGECLOUD-4567-->
+  - ![neues Symbol](../../assets/new.svg) **Aktualisierte Patch-Funktionen** - Die Patch-Funktion wurde aus dem Paket ECE-Tools in ein separates Paket `magento-cloud-patches` verschoben. Während der Bereitstellung verwendet `ece-tools` das neue Paket, um Patches anzuwenden. Siehe [Versionshinweise zu Cloud-Patches](cloud-patches.md).<!--MAGECLOUD-4567-->
 
   - ![neues Symbol](../../assets/new.svg) **Aktualisierte Composer-Abhängigkeiten** - Die `composer.json` für Adobe Commerce in der Cloud-Infrastruktur wurde durch eine Abhängigkeit für das `magento/magento-cloud-docker`-Paket aktualisiert. Jetzt enthält `ece-tools` Abhängigkeiten für alle Pakete im [`Cloud Tools Suite for Commerce`](cloud-tools-suite.md). Diese Pakete werden bei der Installation oder Aktualisierung von `ece-tools` automatisch installiert und aktualisiert.
 

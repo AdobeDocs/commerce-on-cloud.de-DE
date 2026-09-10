@@ -19,16 +19,20 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 9e10bdbdc726a85bea99a9b5f23d9211ac09c661
+source-git-commit: 1195121d2c83da858744839e82e14bd423ea5528
 workflow-type: tm+mt
-source-wordcount: 3043
+source-wordcount: 3067
 ht-degree: 0%
 
 ---
 
 # Cloud-Patches für Commerce
 
-Das [Cloud Patches](https://github.com/magento/magento-cloud-patches)-Paket enthält eine Reihe erforderlicher Patches, die die Integration aller Adobe Commerce-Versionen in Cloud-Umgebungen verbessern und die schnelle Bereitstellung wichtiger Fehlerbehebungen unterstützen.
+Das `magento/magento-cloud-patches` Composer-Paket enthält eine Reihe erforderlicher Patches, die die Integration aller Adobe Commerce-Versionen mit Cloud-Umgebungen verbessern und die schnelle Bereitstellung wichtiger Fehlerbehebungen unterstützen. Adobe verteilt dieses Paket über das Commerce Composer-Repository unter `repo.magento.com`.
+
+>[!NOTE]
+>
+>Ab Version 1.1.15 verteilt Adobe das `magento/magento-cloud-patches` ausschließlich über das Commerce Composer-Repository unter `repo.magento.com`. Sie müssen über die Berechtigung Adobe Commerce EE verfügen, dieses Paket herunterzuladen.
 
 Das Paket Cloud-Patches für Commerce ist eine Abhängigkeit für das Paket ECE-Tools und wird installiert und aktualisiert, wenn Sie das Paket ECE-Tools installieren oder aktualisieren. Sie können Cloud-Patches für Commerce auch als eigenständiges Paket verwenden und verwalten, um Patches auf ein Adobe Commerce-Projekt anzuwenden, das sich nicht auf der Cloud-Plattform befindet. In diesen Versionshinweisen werden die neuesten Verbesserungen an diesem Paket beschrieben.
 
@@ -68,7 +72,7 @@ Veröffentlichungsdatum: 19. August 2026
 Veröffentlichungsdatum: 11. August 2026
 
 - ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Patch-**: Patches überspringen jetzt Blöcke, die Zielgruppenmodule betreffen, die über `composer.json` `replace` entfernt wurden, und setzen die Anwendung der verbleibenden installierten Teile fort.<!-- MCLOUD-15325 -->
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-92 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-92 verwiesen &#x200B;](https://helpx.adobe.com/de/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -141,7 +145,7 @@ Veröffentlichungsdatum: 3. Juni 2025
 
 Veröffentlichungsdatum: 5. Mai 2025
 
-- ![neues Symbol](../../assets/new.svg) **Aktualisierter Patch für Commerce 2.4.4 auf 2.4.8** - Dies ist ein aktualisierter Patch für [CVE-2025-24434](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27148), der in Version 1.1.7 veröffentlicht wurde<!-- MCLOUD-13619 -->
+- ![neues Symbol](../../assets/new.svg) **Patch für Commerce 2.4.4 auf 2.4.8 aktualisiert** - Dieses Update überarbeitet den Patch für [CVE-2025-24434](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27148), der in Version 1.1.7 veröffentlicht wurde<!-- MCLOUD-13619 -->
 
 ## v1.1.6
 
@@ -271,7 +275,7 @@ Kritischer Patch für Adobe Commerce 2.3.3-p1 und neuere Versionen:
 
 Patches wurden aktualisiert, um eine **kritische** Sicherheitslücke zu beheben, die zu einer nicht authentifizierten Ausführung von Remote-Code führt.<!-- MCLOUD-8479 -->
 
-Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/de/security/products/magento/apsb22-12.html).
 
 ## v1.0.15
 
@@ -288,7 +292,7 @@ Kritischer Patch für Adobe Commerce 2.3.3-p1 und neuere Versionen:
 
 Es wurde ein Patch hinzugefügt, um eine **kritische** Sicherheitslücke zu beheben, die zu einer nicht authentifizierten Ausführung von Remote-Code führte.<!-- MCLOUD-8461 -->
 
-Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/security/products/magento/apsb22-12.html).
+Siehe [Adobe-Sicherheitsbulletin APSB22-12](https://helpx.adobe.com/de/security/products/magento/apsb22-12.html).
 
 ## v1.0.13
 
@@ -444,7 +448,7 @@ Diese Version umfasst die folgenden Patches und wichtigen Fehlerbehebungen:
 
 Veröffentlichungsdatum: 14. November 2019
 
-Diese Version ist die erste Version des [`magento/magento-cloud-patches`](https://github.com/magento/magento-cloud-patches)-Pakets, das eine neue Abhängigkeit für die `ece-tools`-Paketversion 2002.0.22 oder höher darstellt.
+Diese Version ist die erste Version des `magento/magento-cloud-patches`-Pakets, das eine neue Abhängigkeit für die `ece-tools`-Paketversion 2002.0.22 oder höher darstellt.
 
 Diese Version umfasst die folgenden Patches und wichtigen Fehlerbehebungen:
 
