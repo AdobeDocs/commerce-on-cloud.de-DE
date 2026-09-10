@@ -21,15 +21,15 @@ ht-degree: 0%
 Das `magento/magento-cloud-patches` Composer-Paket (siehe [Versionshinweise zu Cloud Patches für Commerce](../release-notes/cloud-patches.md)) und das [Quality Patches Tool](https://github.com/magento/quality-patches) stellen Patches für Ihr installiertes Adobe Commerce-Programm bereit.
 
 - Das Paket Cloud-Patches für Commerce stellt erforderliche Patches mit wichtigen Fehlerbehebungen bereit
-- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
+- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/versioning-policy#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
 
-Eine vollständige Liste der veröffentlichten Patches finden Sie unter [Verfügbare Patches](https://experienceleague.adobe.com/en/tools/commerce-quality-patches) im _Handbuch der Commerce Operations Tools_.
+Eine vollständige Liste der veröffentlichten Patches finden Sie unter [Verfügbare Patches](https://experienceleague.adobe.com/de/tools/commerce-quality-patches) im _Handbuch der Commerce Operations Tools_.
 
 Beide Pakete verbessern die Integration aller Adobe Commerce-Versionen in Cloud-Umgebungen und unterstützen die schnelle Bereitstellung wichtiger, optionaler und benutzerdefinierter Fehlerbehebungen. Sie können diese Pakete verwenden, um allgemeine Informationen über alle individuellen Patches, die für Commerce verfügbar sind, anzuwenden, wiederherzustellen und anzuzeigen.
 
 >[!TIP]
 >
->Sie können das [Quality Patches Tool](https://experienceleague.adobe.com/en/tools/commerce-quality-patches) und Cloud-Patches für Commerce als unabhängige Pakete für Magento Open Source- und Adobe Commerce-Projekte verwenden. Adobe empfiehlt die Verwendung des Quality Patches Tools für Nicht-Cloud-Projekte.
+>Sie können das [Quality Patches Tool](https://experienceleague.adobe.com/de/tools/commerce-quality-patches) und Cloud-Patches für Commerce als unabhängige Pakete für Magento Open Source- und Adobe Commerce-Projekte verwenden. Adobe empfiehlt die Verwendung des Quality Patches Tools für Nicht-Cloud-Projekte.
 
 Wenn Sie Änderungen in der Remote-Umgebung bereitstellen, verwendet das `ece-tools`-Paket `magento/magento-cloud-patches` und `magento/quality-patches`, um nach ausstehenden Patches zu suchen, und wendet sie automatisch in der folgenden Reihenfolge an:
 
