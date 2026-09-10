@@ -3,23 +3,19 @@ title: '[!DNL ECE-Tools]'
 description: Erfahren Sie mehr über das  [!DNL ECE-Tools] -Paket und wie es bei der Verwaltung und Bereitstellung von Adobe Commerce hilft.
 exl-id: 15d762ef-bca7-480b-b719-caf131dc9180
 TQID: https://experienceleague.adobe.com/YMuy2Ta0Ylkewxb2EhQgpZG8WW8bG4kFzrCXm0A7rX0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 32426a82db5a81306c1dcc670a8268a9f5959874
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: 449
 ht-degree: 0%
 
 ---
 
 # ECE-Tools-Paket
 
-Das [!DNL ECE-Tools] Paket besteht aus einer Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung der [!DNL Commerce] Anwendung entwickelt wurden. Das `ece-tools` vereinfacht viele Prozesse, z. B. die Verwaltung von Cron-Aufträgen, die Überprüfung der Projektkonfiguration und die Anwendung von Adobe-Patches und Hotfixes. Sie können das [Open-Source-Code-Repository  [!DNL ECE-Tools]  GitHub anzeigen und zu ihm &#x200B;](https://github.com/magento/ece-tools).
+Das [!DNL ECE-Tools] Paket besteht aus einer Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung der [!DNL Commerce] Anwendung entwickelt wurden. Das `ece-tools` vereinfacht viele Prozesse, z. B. die Verwaltung von Cron-Aufträgen, die Überprüfung der Projektkonfiguration und die Anwendung von Adobe-Patches und Hotfixes. Sie können das [Open-Source-Code-Repository  [!DNL ECE-Tools]  GitHub anzeigen und zu ihm ](https://github.com/magento/ece-tools).
 
 {{ece-tools-package}}
 
@@ -101,5 +97,5 @@ Siehe [Versionshinweise für ECE-Tools](../release-notes/cloud-tools-suite.md).
 
 ## Adobe-Patches und benutzerdefinierte Patches
 
-Das `ece-tools`-Paket enthält eine Abhängigkeit für das Paket [magento/magento-cloud-patches](https://github.com/magento/magento-cloud-patches), das Adobe-Patches und Hotfixes bereitstellt, die die Integration aller Adobe Commerce-Versionen mit Cloud-Umgebungen verbessern und die schnelle Bereitstellung wichtiger Fehlerbehebungen unterstützen. „stellt auch benutzerdefinierte Patches bereit, die Sie Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt hinzufügen. Siehe [Patches anwenden](../development/apply-patches.md).
+Das `ece-tools`-Paket enthält eine Abhängigkeit für das `magento/magento-cloud-patches` Composer-Paket (siehe [Versionshinweise zu Cloud-Patches für Commerce](../release-notes/cloud-patches.md)), das Adobe-Patches und Hotfixes bereitstellt, die die Integration aller Adobe Commerce-Versionen mit Cloud-Umgebungen verbessern und die schnelle Bereitstellung wichtiger Fehlerbehebungen unterstützen. Das Paket stellt auch benutzerdefinierte Patches bereit, die Sie Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt hinzufügen. Siehe [Patches anwenden](../development/apply-patches.md).
 
