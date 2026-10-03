@@ -18,7 +18,7 @@ Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
-Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
@@ -40,7 +40,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programm-Manager oder Ent
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) Dokumenten .
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction) Dokumenten .
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
