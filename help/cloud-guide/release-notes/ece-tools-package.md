@@ -7,29 +7,34 @@ exl-id: 3cbfe698-d75d-4a16-877a-52c214595344
 TQID: https://experienceleague.adobe.com/pa4D-RsauRtCBS7puKWVBQtA37-Mcv9IZG4lah41l1U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 9e21b435447f7b87b1105f9d435314b5a3efb072
+    internal-label: Data management
+source-git-commit: a0962ad43c0f496dbd687460ef1d4dbd0da4dacb
 workflow-type: tm+mt
-source-wordcount: 3676
+source-wordcount: '3715'
 ht-degree: 0%
-
 ---
-
 # ECE-Tools - Versionshinweise
 
 Das Paket [ece-tools](https://github.com/magento/ece-tools) besteht aus einer Reihe von Skripten und Tools zur Verwaltung und Bereitstellung von Cloud-Projekten. In diesen Versionshinweisen werden die neuesten Verbesserungen an diesem Paket beschrieben, das Teil der [Cloud-Tools-Suite für Commerce](cloud-tools-suite.md) ist.
 
 >[!NOTE]
 >
->Informationen [&#x200B; Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter &#x200B;](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
+>Informationen [ Aktualisierung auf die neueste Version des `ece-tools`-Pakets finden Sie unter ](../dev-tools/update-package.md)Aktualisieren der ECE-Tools“.
 
 Das `ece-tools`-Paket verwendet die folgende Versionssequenz: `200<major>.<minor>.<patch>`
 
@@ -40,7 +45,14 @@ Die Versionshinweise umfassen Folgendes:
 
 <!--Add release notes below-->
 
-## v2002.2.14 {#latest}
+## v2002.2.15 {#latest}
+
+Veröffentlichungsdatum: 8. Oktober 2026
+
+- ![neues Symbol](../../assets/new.svg) **Funktionstests für Services**-Hinzugefügt Magento 2.4.10 Funktionstestabdeckung für ActiveMQ Artemis, OpenSearch, RabbitMQ, MariaDB und Valkey.<!-- MCLOUD-15399 -->
+- ![fix icon](../../assets/fix.svg) **EOL validator**-Updated End of Life (EOL) services dates for OpenSearch.<!-- MCLOUD-15384 -->
+
+## v2002.2.14
 
 Veröffentlichungsdatum: 8. September 2026
 
@@ -214,7 +226,7 @@ Veröffentlichungsdatum: 10. März 2023
 
 Veröffentlichungsdatum: 27. Oktober 2022
 
-- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben &#x200B;](https://developer.adobe.com/app-builder/docs/intro_and_overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
+- ![neues Symbol](../../assets/new.svg) **Es wurde Unterstützung für Adobe I/O Events für Adobe Commerce hinzugefügt**. Erweiterungsentwickler können jetzt das [Adobe I/O Events](https://developer.adobe.com/events/docs/)-Framework verwenden, um Commerce-Ereignisinformationen von Cloud-Instanzen an ihre Programme zu senden, die für [Adobe App Builder geschrieben ](https://developer.adobe.com/app-builder/docs/intro_and_overview/). Adobe I/O Events für Adobe Commerce befindet sich in der Partnervorschau.<!-- CEXT-932 -->
 - ![neues Symbol](../../assets/new.svg) **Validator für OPcache-Konfiguration** - Es wurde ein Validator hinzugefügt, um die OPcache-Konfiguration auf ausgeschlossene Pfade zu überprüfen.<!-- MCLOUD-9485 -->
 - ![Fix icon](../../assets/fix.svg) **Es wurde ein Problem mit der GraphQL-Cache-** behoben. Jetzt behält ECE-Tools den GraphQL-`id_salt` in `cache` Konfiguration in der `app/etc/env.php`.<!-- MCLOUD-9486 -->
 
@@ -399,7 +411,7 @@ Veröffentlichungsdatum: 25. Juni 2020
 
 - ![neues Symbol](../../assets/new.svg) **Aktualisierungen von Umgebungsvariablen**—
 
-  - ![neues Symbol](../../assets/new.svg) Die Variable **SCD_USE_BALER** wurde hinzugefügt, um das Ballenmodul für die JavaScript-Bündelung während des Build-Prozesses von Adobe Commerce in der Cloud-Infrastruktur zu aktivieren. Weitere Informationen finden Sie in der Beschreibung der [&#x200B; im Abschnitt &#x200B;](../environment/variables-build.md#scd_use_baler)Build-Variablen<!-- MCLOUD-3456, MCLOUD-3457-->
+  - ![neues Symbol](../../assets/new.svg) Die Variable **SCD_USE_BALER** wurde hinzugefügt, um das Ballenmodul für die JavaScript-Bündelung während des Build-Prozesses von Adobe Commerce in der Cloud-Infrastruktur zu aktivieren. Weitere Informationen finden Sie in der Beschreibung der [ im Abschnitt ](../environment/variables-build.md#scd_use_baler)Build-Variablen<!-- MCLOUD-3456, MCLOUD-3457-->
 
   - ![neues Symbol](../../assets/new.svg) Die Umgebungsvariable **REDIS_BACKEND** wurde hinzugefügt, um das Redis-Backend-Modell für den Redis-Cache für Adobe Commerce 2.3.5 oder höher zu konfigurieren. Weitere Informationen finden Sie in der Beschreibung der Variablen [Variablen bereitstellen](../environment/variables-deploy.md#redis_backend).<!--MCLOUD-5721, MCLOUD-5865-->
 
