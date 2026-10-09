@@ -3,22 +3,29 @@ title: Bitbucket-Integration
 description: Erfahren Sie, wie Sie Ihr Adobe Commerce in ein Cloud-Infrastrukturprojekt mit Bitbucket integrieren.
 feature: Cloud, Integration
 exl-id: 903c3064-1821-4f86-a468-4f0ccefb9b77
-TQID: https://experienceleague.adobe.com/S4fSM5ytzpoB1FWMTIlICGHeBPx7LC7CeBt6YzqzXk8
+TQID: 'https://experienceleague.adobe.com/S4fSM5ytzpoB1FWMTIlICGHeBPx7LC7CeBt6YzqzXk8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1057
+source-wordcount: '1057'
 ht-degree: 0%
-
 ---
-
 # Bitbucket-Integration
 
 Sie können Ihr Bitbucket-Repository so konfigurieren, dass automatisch eine Umgebung erstellt und bereitgestellt wird, wenn Sie Code-Änderungen per Push übertragen. Diese Integration synchronisiert Ihr Bitbucket-Repository mit Ihrem Adobe Commerce in einem Cloud-Infrastrukturkonto.
@@ -179,7 +186,7 @@ Um Ereignisse - z. B. eine Push-Benachrichtigung - mit Ihrem Cloud Git-Server zu
 
 1. Überprüfen Sie den Webhook, bevor Sie fortfahren.
 
-   Wenn der Hook aktiv ist, überspringen Sie die verbleibenden Schritte und [&#x200B; Sie die Integration &#x200B;](#test-the-integration). Der Hook sollte einen Namen ähnlich **&quot;Adobe Commerce on Cloud Infrastructure &lt;project_id>&quot;** und ein Hook-URL-Format ähnlich `https://<zone>.magento.cloud/api/projects/<project_id>/integrations/<id>/hook` haben.
+   Wenn der Hook aktiv ist, überspringen Sie die verbleibenden Schritte und [ Sie die Integration ](#test-the-integration). Der Hook sollte einen Namen ähnlich **&quot;Adobe Commerce on Cloud Infrastructure &lt;project_id>&quot;** und ein Hook-URL-Format ähnlich `https://<zone>.magento.cloud/api/projects/<project_id>/integrations/<id>/hook` haben.
 
 1. Klicken Sie **Webhook hinzufügen**.
 

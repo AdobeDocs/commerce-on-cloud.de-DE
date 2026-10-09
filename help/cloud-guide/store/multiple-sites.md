@@ -3,22 +3,31 @@ title: Einrichten mehrerer Websites oder Stores
 description: Erfahren Sie, wie Sie mehrere Websites oder Stores für Adobe Commerce in der Cloud-Infrastruktur konfigurieren.
 feature: Cloud, Configuration, Routes, Site Navigation
 exl-id: 773d8d64-d235-4c2b-87e9-aadbf8471b2c
-TQID: https://experienceleague.adobe.com/532nrO6XkiqiNDfRMT6gZ4mVRqlv5PszegPJLuemmyc
+TQID: 'https://experienceleague.adobe.com/532nrO6XkiqiNDfRMT6gZ4mVRqlv5PszegPJLuemmyc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 1783ae9f-7157-5aeb-a915-91e260301e46
+    internal-label: Routes
+  - id: 48c59cc5-3c2e-5df1-8756-f5c139a28932
+    internal-label: Site Navigation
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1105
+source-wordcount: '1105'
 ht-degree: 0%
-
 ---
-
 # Einrichten mehrerer Websites oder Stores
 
 Sie können Adobe Commerce so konfigurieren, dass es über mehrere Websites oder Stores verfügt, z. B. über einen englischen Store, einen französischen Store und einen deutschen Store. Siehe [Grundlegendes zu Websites, Stores und Store-Ansichten](best-practices.md#store-views).
@@ -45,7 +54,7 @@ https://store.com/second/
 
 >[!TIP]
 >
->Um eine Store-Ansicht zur Site-Basis-URL hinzuzufügen, müssen Sie nicht mehrere Verzeichnisse erstellen. Siehe [Hinzufügen des Store-Codes zur Basis-URL](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) im _Konfigurationshandbuch_.
+>Um eine Store-Ansicht zur Site-Basis-URL hinzuzufügen, müssen Sie nicht mehrere Verzeichnisse erstellen. Siehe [Hinzufügen des Store-Codes zur Basis-URL](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) im _Konfigurationshandbuch_.
 
 ## Hinzufügen von Domains
 
@@ -55,15 +64,15 @@ Der Prozess zum Hinzufügen einer Domain hängt vom Typ des Cloud-Kontos ab:
 
 - Für Pro-Staging und Produktion
 
-  Fügen Sie die neue Domain zu Fastly hinzu, siehe [Domains verwalten](../cdn/fastly-custom-cache-configuration.md#manage-domains) oder öffnen Sie ein Support-Ticket, um Hilfe anzufordern. Darüber hinaus müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um anzufordern, dass einem Cluster neue Domains hinzugefügt werden.
+  Fügen Sie die neue Domain zu Fastly hinzu, siehe [Domains verwalten](../cdn/fastly-custom-cache-configuration.md#manage-domains) oder öffnen Sie ein Support-Ticket, um Hilfe anzufordern. Darüber hinaus müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um anzufordern, dass einem Cluster neue Domains hinzugefügt werden.
 
 - Nur für die Erstproduktion
 
-  Fügen Sie die neue Domain zu Fastly hinzu, siehe [Verwalten von Domains](../cdn/fastly-custom-cache-configuration.md#manage-domains) oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um Hilfe zu erhalten. Darüber hinaus müssen Sie die neue Domain zur Registerkarte **Domains** im [!DNL Cloud Console] hinzufügen: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
+  Fügen Sie die neue Domain zu Fastly hinzu, siehe [Verwalten von Domains](../cdn/fastly-custom-cache-configuration.md#manage-domains) oder [Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um Hilfe zu erhalten. Darüber hinaus müssen Sie die neue Domain zur Registerkarte **Domains** im [!DNL Cloud Console] hinzufügen: `https://<zone>.magento.cloud/projects/<project-ID>/edit`
 
 ## Konfigurieren der lokalen Installation
 
-Informationen zum Konfigurieren Ihrer lokalen Installation für die Verwendung mehrerer Stores finden Sie [Mehrere Websites oder Stores](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/multi-sites/ms-overview) im _Konfigurationshandbuch_.
+Informationen zum Konfigurieren Ihrer lokalen Installation für die Verwendung mehrerer Stores finden Sie [Mehrere Websites oder Stores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-overview) im _Konfigurationshandbuch_.
 
 Nachdem Sie die lokale Installation erfolgreich erstellt und getestet haben, um mehrere Stores zu verwenden, müssen Sie Ihre Integrationsumgebung vorbereiten:
 
@@ -222,7 +231,7 @@ Wo die Routen-Konfiguration definiert, wie die URLs verarbeitet werden, definier
 
 ### Einrichten von Websites, Stores und Store-Ansichten
 
-Richten Sie in der _Admin_-Benutzeroberfläche Ihre Adobe Commerce-**Websites**, **Stores** und **Store-Ansichten** ein. Siehe [Einrichten mehrerer Websites, Stores und Store-Ansichten in der Admin](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) im _Konfigurationshandbuch_.
+Richten Sie in der _Admin_-Benutzeroberfläche Ihre Adobe Commerce-**Websites**, **Stores** und **Store-Ansichten** ein. Siehe [Einrichten mehrerer Websites, Stores und Store-Ansichten in der Admin](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/multi-sites/ms-admin) im _Konfigurationshandbuch_.
 
 Es ist wichtig, denselben Namen und Code Ihrer Websites, Stores und Store-Ansichten von Ihrem Administrator zu verwenden, wenn Sie Ihre lokale Installation einrichten. Sie benötigen diese Werte, wenn Sie die `magento-vars.php` aktualisieren.
 

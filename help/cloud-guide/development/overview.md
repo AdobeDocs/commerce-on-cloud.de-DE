@@ -6,23 +6,30 @@ feature: Cloud, Install
 topic: Development
 last-substantial-update: 2024-02-06T00:00:00.000Z
 exl-id: 14fb0b41-1c3a-4abc-8726-cea16ab00ba8
-TQID: https://experienceleague.adobe.com/VrOBK4bPYTxzRz10ZaHYDOdISw0lSl6WPAHcnEI1J-w
+TQID: 'https://experienceleague.adobe.com/VrOBK4bPYTxzRz10ZaHYDOdISw0lSl6WPAHcnEI1J-w'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Data collection
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 580
+source-wordcount: '580'
 ht-degree: 0%
-
 ---
-
 # Entwicklungsübersicht
 
 Adobe Commerce in Remote-Umgebungen der Cloud **Infrastruktur sind schreibgeschützt** einschließlich aller Starter-Umgebungen und aller Pro-Integrations-, Staging- und Produktionsumgebungen. In einer lokalen Entwicklungsumgebung können Sie Code schreiben und testen, bevor Sie ihn in eine Integrationsumgebung pushen, um weitere Tests durchzuführen und ihn in der Staging- und Produktionsumgebung bereitzustellen.
@@ -47,7 +54,7 @@ Composer installiert die erforderlichen Bibliotheken und Abhängigkeiten für Ih
 
 {style="table-layout:auto"}
 
-Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch &#x200B;](../deploy/process.md#build-phase-build-phase).
+Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch ](../deploy/process.md#build-phase-build-phase).
 
 ### Cloud-Metapaket
 
@@ -69,7 +76,7 @@ Die Hauptpakete dieses Metapakets sind die folgenden:
 - **Vendor/magento/product-enterprise-edition**: Dieses Metapaket erfordert Anwendungskomponenten, einschließlich Module, Frameworks, Designs und mehr.
 - **provider/fastly2/magento2**: Dieses Modul verwaltet das Fastly CDN und die Services für die Pro Staging- und Produktions- und Starter-Produktionsumgebungen. Siehe [Fastly Services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
 - **Vendor/magento/module-paypal-on-boarding** - Dieses Modul ermöglicht den PayPal-Bezahlungs-Gateway-Checkout durch die Verbindung mit Ihrem PayPal-Händlerkonto. Siehe [PayPal-Onboarding-Tool](../store/paypal.md).
-- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die &#x200B;](../monitor/operational-telemetry.md) (Operational Telemetry).
+- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die ](../monitor/operational-telemetry.md) (Operational Telemetry).
 
 >[!TIP]
 >

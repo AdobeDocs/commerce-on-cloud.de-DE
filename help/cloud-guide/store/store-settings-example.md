@@ -1,20 +1,26 @@
 ---
 title: Beispiel für die Verwaltung systemspezifischer Einstellungen
 description: Sehen Sie sich ein Beispiel für das Verwalten und Synchronisieren der Store-Konfigurationseinstellungen in allen Adobe Commerce in Cloud-Infrastrukturumgebungen an.
-hidefromtoc: true
-source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
+hidefromtoc: 'yes'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 0%
-
 ---
-
 
 # Beispiel für die Verwaltung systemspezifischer Einstellungen
 
 Dieses Beispiel zeigt, wie Sie die Konfigurationsverwaltung verwenden, um die Speichereinstellungen in allen Umgebungen konsistent zu halten.
 
-Im Beispiel wird das folgende in „Store[Einstellungen“ definierte Verfahren &#x200B;](store-settings.md):
+Im Beispiel wird das folgende in „Store[Einstellungen“ definierte Verfahren ](store-settings.md):
 
 1. Geben Sie Ihre Konfigurationen in den Store-Admin Ihrer Integrationsumgebung ein.
 1. Erstellen Sie eine `config.php` Datei und übertragen Sie sie auf Ihre lokale Workstation.
@@ -56,7 +62,7 @@ In der Integrationsumgebung können Sie sich beim Administrator anmelden, um die
    ![Ändern des Gebietsschemas](../../assets/locale-options.png)
 
 1. Klicken Sie **Konfiguration speichern**.
-1. Wenn Sie dazu aufgefordert werden[&#x200B; leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
+1. Wenn Sie dazu aufgefordert werden[ leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 1. Melden Sie sich bei der Administratorin bzw. dem Administrator ab.
 
 ## Werte exportieren und config.php auf Ihr lokales System übertragen
@@ -159,7 +165,7 @@ So fügen Sie Konfigurationswerte in der Integrationsumgebung „Admin“ hinzu.
 1. Erweitern Sie im rechten Bereich **JavaScript-Einstellungen**.
 1. Klicken Sie in **Liste &quot;JavaScript-** zusammenführen **auf Ja**.
 1. Klicken Sie **Konfiguration speichern**.
-1. Wenn Sie dazu aufgefordert werden[&#x200B; leeren Sie den Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management).
+1. Wenn Sie dazu aufgefordert werden[ leeren Sie den Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management).
 1. Melden Sie sich bei der Administratorin bzw. dem Administrator ab.
 
 Wenn Sie den Dump-Befehl erneut ausführen, wird die neue Konfiguration an die Datei angehängt.

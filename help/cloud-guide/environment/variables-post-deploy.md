@@ -5,23 +5,31 @@ feature: Cloud, Configuration, Cache
 recommendations: noDisplay, catalog
 role: Developer
 exl-id: 42523ff9-d8ca-470a-ac7b-d2ce21edd830
-TQID: https://experienceleague.adobe.com/w60X0FgUZr-ff1cJJmo5y8frgYW5MlR0pyBy8tTFfSg
+TQID: 'https://experienceleague.adobe.com/w60X0FgUZr-ff1cJJmo5y8frgYW5MlR0pyBy8tTFfSg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: '516'
 ht-degree: 0%
-
 ---
-
 # Variablen nach der Bereitstellung
 
-Die folgenden _nach der Bereitstellung_ Variablen steuern Aktionen in der Phase nach der Bereitstellung und können Werte von den „globalen Variablen[&#x200B; erben und &#x200B;](variables-global.md). Fügen Sie diese Variablen in den `post-deploy` Schritt der `.magento.env.yaml` ein:
+Die folgenden _nach der Bereitstellung_ Variablen steuern Aktionen in der Phase nach der Bereitstellung und können Werte von den „globalen Variablen[ erben und ](variables-global.md). Fügen Sie diese Variablen in den `post-deploy` Schritt der `.magento.env.yaml` ein:
 
 ```yaml
 stage:
@@ -104,54 +112,54 @@ Passen Sie die Liste der Seiten an, die zum Vorausfüllen des Cache im `post_dep
   <entity_type>:<pattern|url|product_sku>:<store_id|store_code>
   ```
 
-   - `entity_type`: Mögliche Varianten `category`, `cms-page`, `product`, `store-page`
-   - `pattern|url|product_sku`: Filtern Sie die URLs mit einem `regexp` oder einem `url` mit exakter Übereinstimmung oder verwenden Sie ein Sternchen (\*) für alle Seiten. Produkt-SKU für den Entitätstyp des `product` verwenden
-   - `store_id|store_code`: Verwenden Sie die ID oder den Code des Stores oder ein Sternchen (\*) für alle Stores, können Sie mehrere Store-IDs oder Codes getrennt mit `|` übergeben
+  - `entity_type`: Mögliche Varianten `category`, `cms-page`, `product`, `store-page`
+  - `pattern|url|product_sku`: Filtern Sie die URLs mit einem `regexp` oder einem `url` mit exakter Übereinstimmung oder verwenden Sie ein Sternchen (\*) für alle Seiten. Produkt-SKU für den Entitätstyp des `product` verwenden
+  - `store_id|store_code`: Verwenden Sie die ID oder den Code des Stores oder ein Sternchen (\*) für alle Stores, können Sie mehrere Store-IDs oder Codes getrennt mit `|` übergeben
 
   Im folgenden Beispiel werden basierend auf diesen Kriterien `category` und `cms-page` Entitätstypen zwischengespeichert:
-   - Alle Kategorieseiten für Store mit ID `1`
-   - Alle Kategorieseiten für Stores mit Code `store1` und `store2`
-   - Kategorieseiten-`cars` für Store mit Code-`store_en`
-   - CMS-`contact` für alle Stores
-   - cms-`contact` für Stores mit der ID `1` und `2`
-   - Jede Kategorieseite, die `car_` enthält und mit `html` für den Store mit der ID 2 endet
-   - Jede Kategorieseite, die `tires_` für das Speichern mit Code `store_gb` enthält
+  - Alle Kategorieseiten für Store mit ID `1`
+  - Alle Kategorieseiten für Stores mit Code `store1` und `store2`
+  - Kategorieseiten-`cars` für Store mit Code-`store_en`
+  - CMS-`contact` für alle Stores
+  - cms-`contact` für Stores mit der ID `1` und `2`
+  - Jede Kategorieseite, die `car_` enthält und mit `html` für den Store mit der ID 2 endet
+  - Jede Kategorieseite, die `tires_` für das Speichern mit Code `store_gb` enthält
 
-     ```yaml
-     stage:
-       post-deploy:
-         WARM_UP_PAGES:
-           - "category:*:1"
-           - "category:*:store1|store2"
-           - "category:cars:store_en"
-           - "cms-page:contact:*"
-           - "cms-page:contact:1|2"
-           - "category:|car_.*?\\.html$|:2"
-           - "category:|tires_.*|:store_gb"
-     ```
+    ```yaml
+    stage:
+      post-deploy:
+        WARM_UP_PAGES:
+          - "category:*:1"
+          - "category:*:store1|store2"
+          - "category:cars:store_en"
+          - "cms-page:contact:*"
+          - "cms-page:contact:1|2"
+          - "category:|car_.*?\\.html$|:2"
+          - "category:|tires_.*|:store_gb"
+    ```
 
   Im folgenden Beispiel wird für den Entitätstyp &quot;`product`&quot; basierend auf diesen Kriterien zwischengespeichert:
-   - Alle Produkte für alle Stores (programmgesteuert auf 100 pro Store begrenzt, um Leistungsprobleme zu vermeiden)
-   - Alle Produkte für Store `store1`
-   - Produkte mit `sku1` für alle Geschäfte
-   - Produkte mit `sku1` für Geschäfte mit Code `store1` und `store2`
-   - Produkte mit `sku1`, `sku2` und `sku3` für Geschäfte mit Code `store1` und `store2`
+  - Alle Produkte für alle Stores (programmgesteuert auf 100 pro Store begrenzt, um Leistungsprobleme zu vermeiden)
+  - Alle Produkte für Store `store1`
+  - Produkte mit `sku1` für alle Geschäfte
+  - Produkte mit `sku1` für Geschäfte mit Code `store1` und `store2`
+  - Produkte mit `sku1`, `sku2` und `sku3` für Geschäfte mit Code `store1` und `store2`
 
-     ```yaml
-     stage:
-       post-deploy:
-         WARM_UP_PAGES:
-           - "product:*:*"
-           - "product:*:store1"
-           - "product:sku1:*"
-           - "product:sku1:store1|store2"
-           - "product:sku1|sku2|sku3:store1|store2"
-     ```
+    ```yaml
+    stage:
+      post-deploy:
+        WARM_UP_PAGES:
+          - "product:*:*"
+          - "product:*:store1"
+          - "product:sku1:*"
+          - "product:sku1:store1|store2"
+          - "product:sku1|sku2|sku3:store1|store2"
+    ```
 
   Im folgenden Beispiel wird für den Entitätstyp &quot;`store-page`&quot; basierend auf diesen Kriterien zwischengespeichert:
-   - `/contact-us` für alle Stores
-   - `/contact-us` für Store mit ID `1`
-   - `/contact-us` für Stores mit Code `code1` und `code2`
+  - `/contact-us` für alle Stores
+  - `/contact-us` für Store mit ID `1`
+  - `/contact-us` für Stores mit Code `code1` und `code2`
 
   ```yaml
         stage:

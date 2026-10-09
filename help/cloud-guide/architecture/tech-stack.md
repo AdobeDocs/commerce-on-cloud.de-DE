@@ -3,31 +3,45 @@ title: Technologie-Stack
 description: Weitere Informationen finden Sie im Technologie-Stack, der die Commerce on Cloud-Infrastruktur bildet.
 feature: Cloud, Iaas, Paas
 exl-id: 3fac1ab7-6440-4bf9-8169-9fadf51d70dd
-TQID: https://experienceleague.adobe.com/2-uZdx1Oi-3LQUK-L7rC4kZWYcYobEhnVcUDNwOHpFs
+TQID: 'https://experienceleague.adobe.com/2-uZdx1Oi-3LQUK-L7rC4kZWYcYobEhnVcUDNwOHpFs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
 subfeature_v2:
   - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
   - id: f2261633-201d-46c5-8a66-999e70527a83
+    internal-label: PCI
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d85c65f2c8c6fdb0ce016e894dd10d882525cc38
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 415
+source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # Technologie-Stack
 
 Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale Ebenen vor, wie unten dargestellt:
@@ -36,7 +50,7 @@ Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale
 
 1. [**Cloud-Infrastruktur**](pro-architecture.md): Wählen Sie entweder Amazon Web Services (AWS) oder Microsoft Azure as a Service (IaaS) als Grundlage für Ihre Adobe Commerce in Cloud Infrastructure Pro-Projekten.
 
-   Adobe analysiert routinemäßig die Nutzung Ihrer Virtual Compute Resource (vCPU) und weist automatisch Ressourcen zu, um Ihre langfristige Nutzung zu optimieren und das Risiko einer Überschreitung Ihrer maximalen jährlichen vCPU-Tagegelder zu minimieren. Wenn Sie für bestimmte Zeiträume einen erhöhten Site-Traffic erwarten, müssen Sie weiterhin ein Support-Ticket öffnen, um [eine temporäre Aktualisierung anzufordern](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize).
+   Adobe analysiert routinemäßig die Nutzung Ihrer Virtual Compute Resource (vCPU) und weist automatisch Ressourcen zu, um Ihre langfristige Nutzung zu optimieren und das Risiko einer Überschreitung Ihrer maximalen jährlichen vCPU-Tagegelder zu minimieren. Wenn Sie für bestimmte Zeiträume einen erhöhten Site-Traffic erwarten, müssen Sie weiterhin ein Support-Ticket öffnen, um [eine temporäre Aktualisierung anzufordern](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize).
 
 1. [**Platform as a Service**](cloud-architecture.md): Jedes Adobe Commerce on Cloud Infrastructure-Projekt bietet eine Platform as a Service (PaaS)-Integrationsumgebung zum Entwickeln, Testen und Integrieren von Services.
 1. [**Adobe Commerce**](../project/overview.md): Adobe Commerce on Cloud Infrastructure bietet eine vorab bereitgestellte Infrastruktur, die PHP, MySQL (MariaDB), Redis oder Valkey, Message Queue Services ([!DNL RabbitMQ] oder [!DNL ActiveMQ]) und unterstützte Suchmaschinentechnologien umfasst.
@@ -49,5 +63,5 @@ Stellen Sie sich Adobe Commerce in der Cloud-Infrastruktur als fünf funktionale
 
 Monolithische Anwendungen sind ressourcenintensiv, schwer skalierbar und schnell zu bedienen. Mit der Cloud-Infrastruktur erhalten Commerce-Kunden beispiellosen Zugriff auf SaaS-basierte Microservices, die reich, intelligent und leistungsstark sind. Siehe [Unterstützte Software und Services](cloud-architecture.md#supported-software-and-services).
 
-Verwenden Sie das [Commerce-Handbuch „Erste &#x200B;](../../get-started/overview.md)&quot;, um Ihr neues Cloud-Programm einzurichten und mit der Verwaltung Ihres [!DNL Commerce]-Programms in einer Cloud-nativen Umgebung zu beginnen.
+Verwenden Sie das [Commerce-Handbuch „Erste ](../../get-started/overview.md)&quot;, um Ihr neues Cloud-Programm einzurichten und mit der Verwaltung Ihres [!DNL Commerce]-Programms in einer Cloud-nativen Umgebung zu beginnen.
 

@@ -1,23 +1,32 @@
 ---
 title: Hooks-Eigenschaft
-description: Siehe Beispiele zum Konfigurieren der Hooks-Eigenschaft in der Konfigurationsdatei  [!DNL Commerce] .application.
+description: Siehe Beispiele zum Konfigurieren der Hooks-Eigenschaft in der Konfigurationsdatei der [!DNL Commerce].
 feature: Cloud, Configuration, Build, Deploy
 exl-id: 56b7045c-fba5-43f1-b43e-4d438b8e0568
-TQID: https://experienceleague.adobe.com/Yc8fn-As9OmhlpQvb-M2gWRs20g5MQz7JtBG4cRQAV0
+TQID: 'https://experienceleague.adobe.com/Yc8fn-As9OmhlpQvb-M2gWRs20g5MQz7JtBG4cRQAV0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 318
+source-wordcount: '319'
 ht-degree: 0%
-
 ---
-
 # Hooks-Eigenschaft
 
 Verwenden Sie den Abschnitt `hooks` , um Shell-Befehle während der Build-, Bereitstellungs- und Nachbereitstellungsphasen auszuführen:
@@ -26,7 +35,7 @@ Verwenden Sie den Abschnitt `hooks` , um Shell-Befehle während der Build-, Bere
 
 - **`deploy`**: Ausführen von Befehlen _nach_ Verpacken und Bereitstellen der Anwendung. An dieser Stelle können Sie auf andere Dienste zugreifen. Da der standardmäßige `php ./vendor/bin/ece-tools`-Befehl das `app/etc` an den richtigen Speicherort kopiert, müssen Sie (_)_ Bereitstellungsbefehl benutzerdefinierte Befehle hinzufügen, um Fehler bei benutzerdefinierten Befehlen zu vermeiden.
 
-- **`post_deploy`** - Führt Befehle aus _nachdem_ Anwendung bereitgestellt wurde und _danach_ beginnt der Container Verbindungen zu akzeptieren. Der `post_deploy`-Hook löscht den Cache und lädt den Cache vorab (erwärmt). Sie können die Liste der Seiten mithilfe der `WARM_UP_PAGES` Variable im [Phase nach der Bereitstellung“ &#x200B;](../environment/variables-post-deploy.md). Dies ist zwar nicht erforderlich, funktioniert aber zusammen mit der Umgebungsvariablen `SCD_ON_DEMAND` .
+- **`post_deploy`** - Führt Befehle aus _nachdem_ Anwendung bereitgestellt wurde und _danach_ beginnt der Container Verbindungen zu akzeptieren. Der `post_deploy`-Hook löscht den Cache und lädt den Cache vorab (erwärmt). Sie können die Liste der Seiten mithilfe der `WARM_UP_PAGES` Variable im [Phase nach der Bereitstellung“ ](../environment/variables-post-deploy.md). Dies ist zwar nicht erforderlich, funktioniert aber zusammen mit der Umgebungsvariablen `SCD_ON_DEMAND` .
 
 Das folgende Beispiel zeigt die Standardkonfiguration in der `.magento.app.yaml`. Fügen Sie CLI-Befehle unter den Abschnitten `build`, `deploy` oder `post_deploy` (_)_ `ece-tools` Befehl hinzu:
 

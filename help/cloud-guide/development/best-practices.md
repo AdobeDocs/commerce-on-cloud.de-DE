@@ -3,21 +3,29 @@ title: Best Practices für die Aktualisierung Ihres Projekts
 description: Hier finden Sie eine Liste mit Best Practices für die Aktualisierung Ihrer Projektdateien.
 feature: Cloud, Best Practices, Upgrade
 exl-id: 64f92739-9170-4cbf-90ef-aab6593a37ca
-TQID: https://experienceleague.adobe.com/Nnr9fNMT210WTnaLTWyRM-YCWRXrZuOv0m-EZYpzKVw
+TQID: 'https://experienceleague.adobe.com/Nnr9fNMT210WTnaLTWyRM-YCWRXrZuOv0m-EZYpzKVw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die Aktualisierung Ihres Projekts
 
 Befolgen Sie die Best Practices für Builds und die Bereitstellung und verwenden Sie den [Upgrades und Patches](../development/commerce-version.md), um Ihre Anwendung zu aktualisieren. Befolgen Sie die folgenden Richtlinien, um Ihre Upgrade- und Post-Upgrade-Arbeiten zu planen:
@@ -58,10 +66,10 @@ Befolgen Sie die Best Practices für Builds und die Bereitstellung und verwenden
 
   - Verwenden Sie SSH, um sich beim Remote-Server anzumelden und Folgendes zu überprüfen:
 
-    - Überprüfen Sie den Indexerstatus und indizieren Sie ihn nach Bedarf neu. Siehe [Indexer verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers) im _Konfigurationshandbuch_.
+    - Überprüfen Sie den Indexerstatus und indizieren Sie ihn nach Bedarf neu. Siehe [Indexer verwalten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) im _Konfigurationshandbuch_.
 
     - Überprüfen Sie die `cron` und die `cron_schedule` in der Adobe Commerce-Datenbank, um den Cron-Status zu überprüfen, und führen Sie Cron-Aufträge bei Bedarf erneut aus.
-      Siehe [Protokollierung](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#logging) im _Konfigurationshandbuch_.
+      Siehe [Protokollierung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#logging) im _Konfigurationshandbuch_.
 
   - Führen Sie nach dem Upgrade Benutzerakzeptanztests für Staging- und Produktionsumgebungen durch und beheben Sie alle Probleme im Zusammenhang mit Upgrades von Drittanbietern und benutzerdefinierten Erweiterungen.
 
@@ -75,8 +83,8 @@ Führen Sie das Upgrade-Kompatibilitäts-Tool (UCT) im Rahmen Ihrer Analyse vor 
 
 Details zur Einrichtung und Verwendung finden Sie unter:
 
-- [Überblick über das Upgrade-Kompatibilitäts-Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)
-- [Ausführen des Kompatibilitäts-Tools für Aktualisierungen](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
+- [Überblick über das Upgrade-Kompatibilitäts-Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview)
+- [Ausführen des Kompatibilitäts-Tools für Aktualisierungen](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run)
 
-Für Cloud-Händler, die das Site-Wide Analysis Tool verwenden, können Sie auch UCT über das Dashboard Trigger und den HTML-Bericht direkt aus dem Widget herunterladen. Siehe Integrieren des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).
+Für Cloud-Händler, die das Site-Wide Analysis Tool verwenden, können Sie auch UCT über das Dashboard Trigger und den HTML-Bericht direkt aus dem Widget herunterladen. Siehe Integrieren des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool).
 

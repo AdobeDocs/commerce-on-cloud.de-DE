@@ -3,25 +3,33 @@ title: Konfigurieren von Services
 description: Erfahren Sie, wie Sie Services konfigurieren, die von Adobe Commerce in Cloud-Infrastrukturen wie MySQL, Redis und Elasticsearch verwendet werden.
 feature: Cloud, Configuration, Services
 exl-id: ddf44b7c-e4ae-48f0-97a9-a219e6012492
-TQID: https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg
+last-update: 2026-09-01T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/qvCjqNc8E9QGme-zM42vMg-kb1WjwTlWUqjbm-NI2bg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2026-09-01
-source-git-commit: 205287e813ec7358273f95df87189b9b663679f5
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1176
+source-wordcount: '1176'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren von Services
 
 Die `services.yaml` definiert die Services, die von Adobe Commerce in Cloud-Infrastrukturen wie MySQL, Redis oder Valkey sowie Elasticsearch oder OpenSearch unterstützt und verwendet werden. Sie müssen keine externen Dienstleister abonnieren.
@@ -55,7 +63,7 @@ Adobe Commerce in Cloud-Infrastrukturen unterstützt die folgenden Services, die
 - [OpenSearch](opensearch.md)
 
 >[!NOTE]
->[Aktualisieren Sie RabbitMQ sequenziell zwischen verfügbaren Versionen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Aktualisieren Sie beispielsweise nicht von 3.9 direkt auf 4.1.
+>[Aktualisieren Sie RabbitMQ sequenziell zwischen verfügbaren Versionen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq#upgrading-the-rabbitmq-service). Aktualisieren Sie beispielsweise nicht von 3.9 direkt auf 4.1.
 >
 >Um sicherzustellen, dass Ihre benutzerdefinierten Nachrichtenwarteschlangen nach dem Upgrade auf eine neue Version in RabbitMQ neu erstellt werden, erstellen Sie einen Trigger für eine vollständige Bereitstellung.
 
@@ -201,7 +209,7 @@ Sie können die Konfigurationsdaten für alle Service-Beziehungen aus der [`$MAG
 
 ## Service-Versionen
 
-Versionen, die in der Cloud-Infrastruktur bereitgestellt und getestet wurden, bestimmen die Service-Version und Kompatibilitätsunterstützung für Adobe Commerce in der Cloud-Infrastruktur, die sich manchmal von den Versionen unterscheiden, die von lokalen Adobe Commerce-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
+Versionen, die in der Cloud-Infrastruktur bereitgestellt und getestet wurden, bestimmen die Service-Version und Kompatibilitätsunterstützung für Adobe Commerce in der Cloud-Infrastruktur, die sich manchmal von den Versionen unterscheiden, die von lokalen Adobe Commerce-Bereitstellungen unterstützt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) im _Installationshandbuch_ für eine Liste der Abhängigkeiten von Drittanbieterprogrammen, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
 
 ### Software-EOL-Prüfungen
 
@@ -210,7 +218,7 @@ Während des Bereitstellungsprozesses überprüft das `ece-tools`-Paket die inst
 - Wenn eine Service-Version innerhalb von drei Monaten nach dem Ende der Nutzungsdauer veröffentlicht wird, wird im Bereitstellungsprotokoll eine Benachrichtigung angezeigt.
 - Wenn das Ende der Nutzungsdauer in der Vergangenheit liegt, wird eine Warnmeldung angezeigt.
 
-Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen &#x200B;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Zu OpenSearch migrieren
 

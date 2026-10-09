@@ -3,33 +3,39 @@ title: Patches anwenden
 description: Erfahren Sie, wie Sie erforderliche, optionale und benutzerdefinierte Patches mithilfe der ECE-Tools und des Quality Patches Tools auf ein Adobe Commerce on Cloud Infrastructure-Projekt anwenden.
 feature: Cloud, Upgrade
 exl-id: 923c1e43-45da-450f-bdfc-de84a901400d
-TQID: https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc
+TQID: 'https://experienceleague.adobe.com/SyS-AIRHp0LW7Z4JwZw2FNtbvy9FVzISUID12MjlMrc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 8b6f9dbc2010ec0afe5904490a2f6d6a22ad2b39
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 922
+source-wordcount: '922'
 ht-degree: 0%
-
 ---
-
 # Patches anwenden
 
 Das `magento/magento-cloud-patches` Composer-Paket (siehe [Versionshinweise zu Cloud Patches für Commerce](../release-notes/cloud-patches.md)) und das [Quality Patches Tool](https://github.com/magento/quality-patches) stellen Patches für Ihr installiertes Adobe Commerce-Programm bereit.
 
 - Das Paket Cloud-Patches für Commerce stellt erforderliche Patches mit wichtigen Fehlerbehebungen bereit
-- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/versioning-policy#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
+- Qualitäts-Patches bieten optionale Qualitätskorrekturen mit geringer Auswirkung wie [einzelne Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy#individual-patch) die keine abwärtsinkompatiblen Änderungen enthalten
 
-Eine vollständige Liste der veröffentlichten Patches finden Sie unter [Verfügbare Patches](https://experienceleague.adobe.com/de/tools/commerce-quality-patches) im _Handbuch der Commerce Operations Tools_.
+Eine vollständige Liste der veröffentlichten Patches finden Sie unter [Verfügbare Patches](https://experienceleague.adobe.com/en/tools/commerce-quality-patches) im _Handbuch der Commerce Operations Tools_.
 
 Beide Pakete verbessern die Integration aller Adobe Commerce-Versionen in Cloud-Umgebungen und unterstützen die schnelle Bereitstellung wichtiger, optionaler und benutzerdefinierter Fehlerbehebungen. Sie können diese Pakete verwenden, um allgemeine Informationen über alle individuellen Patches, die für Commerce verfügbar sind, anzuwenden, wiederherzustellen und anzuzeigen.
 
 >[!TIP]
 >
->Sie können das [Quality Patches Tool](https://experienceleague.adobe.com/de/tools/commerce-quality-patches) und Cloud-Patches für Commerce als unabhängige Pakete für Magento Open Source- und Adobe Commerce-Projekte verwenden. Adobe empfiehlt die Verwendung des Quality Patches Tools für Nicht-Cloud-Projekte.
+>Sie können das [Quality Patches Tool](https://experienceleague.adobe.com/en/tools/commerce-quality-patches) und Cloud-Patches für Commerce als unabhängige Pakete für Magento Open Source- und Adobe Commerce-Projekte verwenden. Adobe empfiehlt die Verwendung des Quality Patches Tools für Nicht-Cloud-Projekte.
 
 Wenn Sie Änderungen in der Remote-Umgebung bereitstellen, verwendet das `ece-tools`-Paket `magento/magento-cloud-patches` und `magento/quality-patches`, um nach ausstehenden Patches zu suchen, und wendet sie automatisch in der folgenden Reihenfolge an:
 

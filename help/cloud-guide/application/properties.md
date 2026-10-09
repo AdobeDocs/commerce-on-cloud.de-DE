@@ -1,23 +1,36 @@
 ---
 title: Eigenschaften
-description: Verwenden Sie die Eigenschaftenliste als Verweis, wenn Sie die  [!DNL Commerce]  für den Build und die Bereitstellung in der Cloud-Infrastruktur konfigurieren.
+description: Verwenden Sie die Eigenschaftenliste als Referenz, wenn Sie die [!DNL Commerce] für die Erstellung und Bereitstellung in der Cloud-Infrastruktur konfigurieren.
 feature: Cloud, Configuration, Build, Deploy, Roles/Permissions, Storage
 exl-id: 32bd1f64-43d6-48a3-84b7-bea22f125bb0
-TQID: https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y
+TQID: 'https://experienceleague.adobe.com/5HoI8DnJqL6pyBZRt3u-jVlQvhP1UGqN70B9fq2c9-Y'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 330a8bbd9298a28b5c007f4a79f684ce7adca9ff
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 858
+source-wordcount: '859'
 ht-degree: 0%
-
 ---
-
 # Eigenschaften für die Anwendungskonfiguration
 
 Die `.magento.app.yaml`-Datei verwendet Eigenschaften, um die Umgebungsunterstützung für das [!DNL Commerce]-Programm zu verwalten.
@@ -98,7 +111,7 @@ hooks:
         composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
 ```
 
-Weitere Informationen [&#x200B; Composer finden Sie &#x200B;](../development/overview.md#required-packages)Erforderliche Pakete“.
+Weitere Informationen [ Composer finden Sie ](../development/overview.md#required-packages)Erforderliche Pakete“.
 
 ## `dependencies`
 
@@ -147,7 +160,7 @@ Die minimal empfohlene Festplattengröße beträgt 256 MB. Wenn der Fehler `User
 
 >[!NOTE]
 >
->Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
+>Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
 >
 >Es ist nicht möglich, den Festplattenspeicher in der Staging- oder Produktionsumgebung vorübergehend zu erhöhen. Dieser Vorgang kann nicht rückgängig gemacht werden.
 
@@ -198,7 +211,7 @@ Das Format für das Hinzufügen Ihres Mount zu dieser Liste ist wie folgt:
 
 >[!NOTE]
 >
->Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
+>Für Pro-Staging- und Produktionsumgebungen müssen Sie [ein Adobe Commerce-Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um die `mounts`- und `disk` für Ihr Programm zu aktualisieren. Geben Sie beim Senden des Tickets die erforderlichen Konfigurationsänderungen an und fügen Sie eine aktualisierte Version Ihrer `.magento.app.yaml`-Datei hinzu.
 
 Sie können die Web-Bereitstellung zugänglich machen, indem Sie es zu dem [`web`](web-property.md) Block von Standorten hinzufügen.
 

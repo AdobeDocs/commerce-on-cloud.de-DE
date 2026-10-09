@@ -3,26 +3,33 @@ title: Einrichten des ActiveMQ-Service
 description: Erfahren Sie, wie Sie den ActiveMQ Artemis-Service aktivieren, um Nachrichtenwarteschlangen für Adobe Commerce in der Cloud-Infrastruktur zu verwalten.
 feature: Cloud, Services
 exl-id: 39eb03a7-3345-4db9-88fa-dd7c422228f9
-TQID: https://experienceleague.adobe.com/YYGonI3614QouFjVftfShC1Mq7IJB7YcrxynBt6AnuY
+TQID: 'https://experienceleague.adobe.com/YYGonI3614QouFjVftfShC1Mq7IJB7YcrxynBt6AnuY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Implementation
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 632
+source-wordcount: '632'
 ht-degree: 0%
-
 ---
-
 # Einrichten [!DNL ActiveMQ] Services
 
-Das [Message Queue Framework (MQF)](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) ist ein System in Adobe Commerce, das es einem [Modul](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#module) ermöglicht, Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten.
+Das [Message Queue Framework (MQF)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) ist ein System in Adobe Commerce, das es einem [Modul](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#module) ermöglicht, Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten.
 
 Der MQF kann [ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) als Messaging-Broker verwenden, der eine skalierbare Plattform für das Senden und Empfangen von Nachrichten bietet. Sie enthält auch einen Mechanismus zum Speichern nicht zugestellter Nachrichten. [!DNL ActiveMQ Artemis] unterstützt das STOMP-Protokoll (Streaming Text Oriented Messaging Protocol) für Messaging.
 
@@ -97,7 +104,7 @@ Zum Debuggen können Sie eine direkte Verbindung zu einer Service-Instanz auf ei
    magento-cloud ssh
    ```
 
-1. Rufen Sie die ActiveMQ-Verbindungsdetails und Anmeldedaten aus der [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships)-Variablen ab:
+1. Rufen Sie die ActiveMQ-Verbindungsdetails und Anmeldedaten aus der Variablen [$MAGENTO_CLOUD_RELATIONSHIPS](../application/properties.md#relationships) ab:
 
    ```bash
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
@@ -142,7 +149,7 @@ Zum Debuggen können Sie eine direkte Verbindung zu einer Service-Instanz auf ei
    >
    >ActiveMQ Artemis verwendet Port 61616 für STOMP-Messaging und Port 8161 für die Web-Konsole.
 
-1. Solange die Sitzung geöffnet ist, können Sie auf die ActiveMQ Artemis-Web-Konsole unter `http://localhost:8161` zugreifen, indem Sie den Benutzernamen und das Kennwort aus der Variablen MAGENTO_CLOUD_RELATIONSHIPS verwenden.
+1. Während der Sitzung können Sie unter auf die ActiveMQ Artemis-Web-Konsole zugreifen. Verwenden Sie dazu `http://localhost:8161` den Benutzernamen und das Kennwort aus der Variablen MAGENTO_CLOUD_RELATIONSHIPS .
 
 ### Verbindung mit der Anwendung herstellen
 

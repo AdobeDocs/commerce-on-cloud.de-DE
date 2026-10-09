@@ -3,21 +3,27 @@ title: Konfigurieren von Routen
 description: Erfahren Sie, wie Sie die Routen für eingehende HTTPS-Anfragen für die Adobe Commerce in Cloud-Infrastrukturumgebungen definieren.
 feature: Cloud, Configuration, Routes
 exl-id: f0d6eefa-1122-4753-8a7c-1fa0c77590f0
-TQID: https://experienceleague.adobe.com/4EUSHNE6YAfXk4e7ooGRjZiICgHueLKrEA-tDskIPl0
+TQID: 'https://experienceleague.adobe.com/4EUSHNE6YAfXk4e7ooGRjZiICgHueLKrEA-tDskIPl0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 1783ae9f-7157-5aeb-a915-91e260301e46
+    internal-label: Routes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren von Routen
 
 Die `routes.yaml` im `.magento/routes.yaml` definiert Routen für Ihre Adobe Commerce in Cloud-Infrastrukturintegrations-, Staging- und Produktionsumgebungen. Routen bestimmen, wie die Anwendung eingehende HTTP- und HTTPS-Anfragen verarbeitet.
@@ -176,7 +182,7 @@ Bereitstellen aller Seiten über TLS. Für diese Konfiguration müssen Sie mithi
       upstream: "mymagento:http"
   ```
 
-- Aktivieren Sie für Staging- und Produktionsumgebungen die Option [TLS bei Fastly erzwingen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls) über die Admin-Benutzeroberfläche. Wenn Sie diese Option verwenden, übernimmt Fastly die Umleitung zu HTTPS, sodass Sie die `routes.yaml` nicht aktualisieren müssen.
+- Aktivieren Sie für Staging- und Produktionsumgebungen die Option [TLS bei Fastly erzwingen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls) über die Admin-Benutzeroberfläche. Wenn Sie diese Option verwenden, übernimmt Fastly die Umleitung zu HTTPS, sodass Sie die `routes.yaml` nicht aktualisieren müssen.
 
 ## Routenoptionen
 
@@ -323,7 +329,7 @@ Magento Cloud Routes:
 
 ## Umleitungen und Caching
 
-Wie unter [Umleitungen](redirects.md) ausführlicher erläutert, können Sie komplexe Umleitungsregeln wie _partielle Umleitungen_ verwalten und Regeln für routenbasierte [Caching) &#x200B;](caching.md):
+Wie unter [Umleitungen](redirects.md) ausführlicher erläutert, können Sie komplexe Umleitungsregeln wie _partielle Umleitungen_ verwalten und Regeln für routenbasierte [Caching) ](caching.md):
 
 ```yaml
 https://www.{default}/:

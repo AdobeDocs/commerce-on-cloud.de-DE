@@ -3,25 +3,33 @@ title: Erste Schritte mit benutzerdefinierten VCL-Snippets
 description: Erfahren Sie mehr über die Verwendung von Sprachcodeausschnitten in Varnish Control, um die Fastly-Service-Konfiguration für Adobe Commerce anzupassen.
 feature: Cloud, Configuration, Services
 exl-id: 90f0bea6-4365-4657-94e9-92a0fd1145fd
-TQID: https://experienceleague.adobe.com/1grH8E6w-CgPS2ANraTxdM1NZ6Jjb8G4i7tgSswcuJE
+last-update: 2025-08-20T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/1grH8E6w-CgPS2ANraTxdM1NZ6Jjb8G4i7tgSswcuJE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-last-update: 2025-08-20
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+    internal-label: Optimization
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 2179
+source-wordcount: '2179'
 ht-degree: 0%
-
 ---
-
 # Erste Schritte mit benutzerdefinierter VCL
 
 Fastly unterstützt eine angepasste Version der Varnish Configuration Language (VCL), um die Fastly-Service-Konfiguration an Ihre Anforderungen anzupassen.
@@ -123,7 +131,7 @@ Die folgenden Beispiele zeigen, wie Sie benutzerdefinierte VCL-Snippets vom Admi
 
 ## Snippets, die im Commerce-Admin nicht angezeigt/geändert werden können
 
-Einige Snippets können nicht direkt in der Admin von Commerce angezeigt oder geändert werden. Beispiel: [dynamische Snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Im Abschnitt Benutzerdefinierte VCL-Snippets werden keine Snippets angezeigt, die vom Cloud-Support-Team direkt zum [Fastly-Management-Dashboard“ hinzugefügt &#x200B;](fastly.md#fastly-service-account-and-credentials).
+Einige Snippets können nicht direkt in der Admin von Commerce angezeigt oder geändert werden. Beispiel: [dynamische Snippets](https://docs.fastly.com/en/guides/using-dynamic-vcl-snippets). Im Abschnitt Benutzerdefinierte VCL-Snippets werden keine Snippets angezeigt, die vom Cloud-Support-Team direkt zum [Fastly-Management-Dashboard“ hinzugefügt ](fastly.md#fastly-service-account-and-credentials).
 
 
 **So beobachten Sie die vom Cloud-Support-Team hinzugefügten Snippets:**
@@ -258,7 +266,7 @@ Die Werte umfassen:
 
 - `dynamic` - Gibt an, ob es sich um einen [regulären Ausschnitt](https://docs.fastly.com/en/guides/about-vcl-snippets) oder einen [dynamischen Ausschnitt](https://docs.fastly.com/guides/vcl-snippets/using-dynamic-vcl-snippets) handelt.
 
-- `type` () - Gibt den Ort an, an dem das erzeugte Snippet eingefügt werden soll, z. B. `init` (über den Unterprogrammen) und `recv` (innerhalb der Unterprogramme). Informationen zu [&#x200B; Werten finden Sie unter &#x200B;](https://docs.fastly.com/api/config#snippet)Fastly VCL-Snippet-Objektwerte .
+- `type` () - Gibt den Ort an, an dem das erzeugte Snippet eingefügt werden soll, z. B. `init` (über den Unterprogrammen) und `recv` (innerhalb der Unterprogramme). Informationen zu [ Werten finden Sie unter ](https://docs.fastly.com/api/config#snippet)Fastly VCL-Snippet-Objektwerte .
 
 - `priority` - Ein Wert von `1` bis `100`, der bestimmt, wann der benutzerdefinierte VCL-Code ausgeführt wird. Benutzerdefinierte VCL-Ausschnitte mit niedrigeren Werten werden zuerst ausgeführt.
 

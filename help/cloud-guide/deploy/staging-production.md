@@ -3,28 +3,47 @@ title: Bereitstellung für Staging und Produktion
 description: Erfahren Sie, wie Sie Ihren Adobe Commerce auf Cloud-Infrastruktur-Code in den Staging- und Produktionsumgebungen bereitstellen, um ihn weiter zu testen.
 feature: Cloud, Console, Deploy, SCD, Storage
 exl-id: 1cfeb472-c6ec-44ff-9b32-516ffa1b30d2
-TQID: https://experienceleague.adobe.com/SJZ2BuPEe6QsgkPyODiZx6118qd6vxh72r3nVuPrLnM
+TQID: 'https://experienceleague.adobe.com/SJZ2BuPEe6QsgkPyODiZx6118qd6vxh72r3nVuPrLnM'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
 subfeature_v2:
   - id: b01a71b7-d17a-42b2-a9ac-af4b8d9d2ef5
+    internal-label: 2FA
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d863fc70609dcc66d21eb95e709db80e29114714
+    internal-label: Implementation
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1374
+source-wordcount: '1374'
 ht-degree: 0%
-
 ---
-
 # Bereitstellung für Staging und Produktion
 
 Der Prozess für die Bereitstellung und das Go-Live beginnt mit der Entwicklung, setzt die Staging-Phase fort und endet mit der Live-Schaltung in der Produktion. Adobe bietet eine End-to-End-Umgebungslösung, um konsistente Konfigurationen zu gewährleisten. Jede Umgebung unterstützt den direkten URL-Zugriff auf die Storefront sowie den Admin- und SSH-Zugriff für CLI-Befehle.
@@ -35,7 +54,7 @@ Wenn Sie bereit sind, Ihren Store bereitzustellen, müssen Sie die Bereitstellun
 >
 >Adobe empfiehlt, vor der Bereitstellung ein [Backup](../storage/snapshots.md) der Umgebung zu erstellen.
 
-Außerdem können Sie &quot;[&#x200B; mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
+Außerdem können Sie &quot;[ mit New Relic verfolgen“ aktivieren](../monitor/track-deployments.md) um Bereitstellungsereignisse zu überwachen und bei der Leistungsanalyse zwischen Bereitstellungen zu helfen.
 
 ## Starter-Bereitstellungsfluss
 
@@ -51,7 +70,7 @@ Ausführliche Informationen zum Prozess finden Sie unter [Workflow für Entwickl
 
 ## Bereitstellen von Code für das Staging
 
-Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) &#x200B;](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
+Die Staging-Umgebung bietet eine produktionsnahe Umgebung mit einer Datenbank, einem Webserver und allen Services, einschließlich Fastly und New Relic. Sie können vollständig über die [[!DNL Cloud Console]](../project/overview.md) oder (Cloud-CLI[Befehle) ](../dev-tools/cloud-cli-overview.md) eine Terminal-Anwendung übertragen, zusammenführen und bereitstellen.
 
 ### Bereitstellen von Code mit dem [!DNL Cloud Console]
 
@@ -155,7 +174,7 @@ Die Cloud-CLI stellt Befehle zum Bereitstellen von Code bereit. Sie benötigen S
 
 ## Statische Dateien migrieren
 
-[Statische Dateien](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary) werden in `mounts` gespeichert. Es gibt zwei Methoden zum Migrieren von Dateien von einem Quell-Bereitstellungs-Speicherort, wie z. B. Ihrer lokalen Umgebung, zu einem Ziel-Bereitstellungs-Speicherort. Bei beiden Methoden wird das Dienstprogramm `rsync` verwendet, Adobe empfiehlt jedoch die Verwendung der `magento-cloud` CLI zum Verschieben von Dateien zwischen der lokalen und der Remote-Umgebung. Außerdem empfiehlt Adobe die Verwendung der `rsync`-Methode beim Verschieben von Dateien von einer Remote-Quelle an einen anderen Remote-Speicherort.
+[Statische Dateien](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary) werden in `mounts` gespeichert. Es gibt zwei Methoden zum Migrieren von Dateien von einem Quell-Bereitstellungs-Speicherort, wie z. B. Ihrer lokalen Umgebung, zu einem Ziel-Bereitstellungs-Speicherort. Bei beiden Methoden wird das Dienstprogramm `rsync` verwendet, Adobe empfiehlt jedoch die Verwendung der `magento-cloud` CLI zum Verschieben von Dateien zwischen der lokalen und der Remote-Umgebung. Außerdem empfiehlt Adobe die Verwendung der `rsync`-Methode beim Verschieben von Dateien von einer Remote-Quelle an einen anderen Remote-Speicherort.
 
 ### Migrieren von Dateien mithilfe der CLI
 

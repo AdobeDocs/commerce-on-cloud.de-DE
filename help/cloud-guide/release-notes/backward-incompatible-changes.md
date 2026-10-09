@@ -4,22 +4,29 @@ description: Erfahren Sie mehr über die Abwärtskompatibilität beim Upgrade vo
 feature: Cloud, Release Notes
 recommendations: noDisplay, catalog
 exl-id: 3f3c1036-bfd0-4c70-8309-6c5e442134cd
-TQID: https://experienceleague.adobe.com/ekS7f5swOsG2xgXP6ybN6hzwYm2xBbPWvl5oabv7Crc
+TQID: 'https://experienceleague.adobe.com/ekS7f5swOsG2xgXP6ybN6hzwYm2xBbPWvl5oabv7Crc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 823
+source-wordcount: '823'
 ht-degree: 0%
-
 ---
-
 # Abwärtsinkompatible Änderungen
 
 Abwärtsinkompatible Änderungen erfordern möglicherweise, dass Sie die Cloud-Konfiguration und Prozesse für bestehende Cloud-Projekte anpassen, wenn Sie auf die neueste Version des `ece-tools`-Pakets oder andere Cloud-Tools-Pakete für Commerce aktualisieren.
@@ -67,7 +74,7 @@ In früheren ECE-Tools-Versionen konnten Sie die `m2-ece-build` und `m2-ece-depl
 
 ## Änderungen an Cloud-Patches
 
-- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/commerce) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patch-Konflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie heruntergeladen und Ihrem Projekt manuell hinzugefügt haben.
+- **Heruntergeladene Patches entfernen**-Das `magento/magento-cloud-patches` Paket bündelt alle auf der Seite „Software[Downloads“ verfügbaren Patches ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/commerce) und wendet sie automatisch bei der Bereitstellung in der Cloud an. Um Patch-Konflikte nach einem Upgrade auf ECE-Tools 2002.1.0 oder höher zu vermeiden, entfernen Sie alle von Adobe bereitgestellten Patches, die Sie heruntergeladen und Ihrem Projekt manuell hinzugefügt haben.
 
 - **Befehl zum Anwenden von Patches wurde aktualisiert**-Der Befehl zum Anwenden von Patches wurde aus dem `vendor/bin/ece-tools` in das `vendor/bin/ece-patches`-Verzeichnis verschoben. Wenn Sie diesen Befehl verwenden, um Patches manuell anzuwenden, verwenden Sie den neuen Pfad.
 

@@ -3,13 +3,22 @@ title: Adobe Commerce Traffic Insights
 description: Erfahren Sie mehr über das Tool Adobe Commerce Traffic Insights und wie Sie damit den Traffic in Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt besser verstehen können.
 feature: Cloud, Observability
 role: Admin
-source-git-commit: 119c9415abd22221e3ae785445d537f0609eba14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Traffic-Erkenntnisse
 
 Adobe Commerce Traffic Insights ist eine New Relic One-App, die [!DNL Adobe Commerce on Cloud Infrastructure] Fastly CDN-Traffic visualisiert. Er liest die Fastly CDN-Zugriffsprotokoll-Zeilen, die bereits als `Log`-Ereignisse in New Relic bereitgestellt werden, und rendert einen kuratierten Satz von Diagrammen, die sich auf ein von Ihnen ausgewähltes New Relic-Konto und den Plattformzeitbereich beziehen. Dadurch wird der Edge-Traffic eines Stores visualisiert, ohne dass NRQL, die Abfragesprache von New Relic, manuell geschrieben wird.
@@ -22,7 +31,7 @@ Traffic Insights soll Ihnen bei der Lösung von drei häufigen Problemen helfen:
 - **Laden von Such-Bots und Crawler** - Eine Suchmaschine oder KI-Crawler, die einen unverhältnismäßig hohen Anteil an Anfragen erzeugt und die Cache-Effizienz und die Ursprungslast beeinträchtigt. Finden Sie heraus, welche benannten Bots am aktivsten sind und was genau sie abrufen.
 - **Bösartige Skripte und Scraper** — Abkratzung, Berechtigungsfüllung, Kartentests, Erstellung gefälschter Konten oder Missbrauch der Ebene 7. Aufdecken der Fastly WAF-Signale der nächsten Generation und der IPs, Subnetze und Länder hinter verdächtigem Traffic.
 
-In jedem Fall identifiziert die App das *, was und* des Traffics. Bewerkstelligen Sie diese Informationen mit Fastly VCL-Regeln, Bildoptimierung, Cache-Optimierung, Ratenbegrenzung oder dem Adobe Add[on „Erweiterte &#x200B;](../../cdn/advanced-security.md)&quot; in Ihrer Commerce- und Fastly-Konfiguration. Das [Playbook für Ermittlungen](investigation-playbook.md) behandelt jede dieser Fragen.
+In jedem Fall identifiziert die App das *, was und* des Traffics. Bewerkstelligen Sie diese Informationen mit Fastly VCL-Regeln, Bildoptimierung, Cache-Optimierung, Ratenbegrenzung oder dem Adobe Add[on „Erweiterte ](../../cdn/advanced-security.md)&quot; in Ihrer Commerce- und Fastly-Konfiguration. Das [Playbook für Ermittlungen](investigation-playbook.md) behandelt jede dieser Fragen.
 
 ## Zugriff auf die App
 

@@ -3,19 +3,27 @@ title: Statusbenachrichtigungen
 description: Erfahren Sie, wie Sie Slack-, E-Mail- und PagerDuty-Benachrichtigungen für die Speicherplatznutzung in Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt konfigurieren.
 feature: Cloud, Observability, Integration
 exl-id: 5a7f37e9-e8f9-4b6b-b628-60dcaa60cc64
-TQID: https://experienceleague.adobe.com/Tt4zWTqehO4SLsimUv3IE5VvjJ1OwAA27tT9Mot24FU
+TQID: 'https://experienceleague.adobe.com/Tt4zWTqehO4SLsimUv3IE5VvjJ1OwAA27tT9Mot24FU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 386
+source-wordcount: '386'
 ht-degree: 0%
-
 ---
-
 # Statusbenachrichtigungen
 
 Adobe Commerce on Cloud Infrastructure überwacht die Speicherplatznutzung auf allen Anwendungen und Services in Ihrer Starter-Umgebung oder Ihrer Pro-Integrationsumgebung. Ein Datenbankdatenträger, dem der Speicherplatz ausgeht, kann zu Datenbeschädigungen führen. Die Konsistenzprüfung erfolgt alle 5 Minuten und kann Sie per E-Mail oder über einen anderen externen Service benachrichtigen. Es gibt drei Warnungen bei geringem Festplattenspeicher für Konsistenzbenachrichtigungen:
@@ -26,7 +34,7 @@ Adobe Commerce on Cloud Infrastructure überwacht die Speicherplatznutzung auf a
 
 >[!NOTE]
 >
->In Pro-Produktionsumgebungen können Sie die Warnmeldungsrichtlinie Managed Warnhinweise for Adobe Commerce für New Relic verwenden, um den Festplattenspeicher zu überwachen. Siehe [Überwachen der Leistung mit verwalteten &#x200B;](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts)&quot;.
+>In Pro-Produktionsumgebungen können Sie die Warnmeldungsrichtlinie Managed Warnhinweise for Adobe Commerce für New Relic verwenden, um den Festplattenspeicher zu überwachen. Siehe [Überwachen der Leistung mit verwalteten ](../monitor/investigate-performance.md#monitor-performance-with-managed-alerts)&quot;.
 
 ## E-Mail-Benachrichtigungen
 
@@ -38,7 +46,7 @@ magento-cloud integration:add --type health.email --from-address you@example.com
 
 ## Slack-Kanalbenachrichtigungen
 
-Slack ist ein externer Service, der interaktive Apps namens Bots verwendet, um Nachrichten in einem Chatraum zu posten. Bevor Sie Statusbenachrichtigungen in Slack erhalten können, müssen Sie einen benutzerdefinierten [Bot-Benutzer](https://api.slack.com/bot-users) für Ihre Slack-Gruppe erstellen. Nachdem Sie den Bot-Benutzer für Ihren Kanal oder Ihre Kanäle konfiguriert haben, speichern Sie das von [&#x200B; bereitgestellte &#x200B;](https://api.slack.com/docs/token-types#bot)Bot-Token“, um Ihre Integration zu registrieren. Im folgenden Beispiel werden Integritätsbenachrichtigungen in einem Slack-Kanal registriert:
+Slack ist ein externer Service, der interaktive Apps namens Bots verwendet, um Nachrichten in einem Chatraum zu posten. Bevor Sie Statusbenachrichtigungen in Slack erhalten können, müssen Sie einen benutzerdefinierten [Bot-Benutzer](https://api.slack.com/bot-users) für Ihre Slack-Gruppe erstellen. Nachdem Sie den Bot-Benutzer für Ihren Kanal oder Ihre Kanäle konfiguriert haben, speichern Sie das von [ bereitgestellte ](https://api.slack.com/docs/token-types#bot)Bot-Token“, um Ihre Integration zu registrieren. Im folgenden Beispiel werden Integritätsbenachrichtigungen in einem Slack-Kanal registriert:
 
 ```bash
 magento-cloud integration:add --type health.slack --token SLACK_BOT_TOKEN --channel '#slack-channel-name'

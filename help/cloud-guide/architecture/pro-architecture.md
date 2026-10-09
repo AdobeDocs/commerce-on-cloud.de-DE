@@ -4,27 +4,39 @@ description: Erfahren Sie mehr über die Architektur der Pro-Umgebung, einschlie
 feature: Cloud, Auto Scaling, Iaas, Paas, Storage
 topic: Architecture
 exl-id: a6eb562b-1b97-4285-a271-989d9fddc4f9
-TQID: https://experienceleague.adobe.com/Es-cmVlUrzd4xMf9unOJD-Z-h0OvL-ycoullKVO-yRA
+TQID: 'https://experienceleague.adobe.com/Es-cmVlUrzd4xMf9unOJD-Z-h0OvL-ycoullKVO-yRA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
 subfeature_v2:
   - id: db6b6496-d1b5-4ad4-9e18-dea78dae3aa8
+    internal-label: Auto Scaling
   - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: bdc2bedd2696e7dde0ffb55f846a8bced2dbd25d
+    internal-label: Customer experience
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1621
+source-wordcount: '1621'
 ht-degree: 0%
-
 ---
-
 # Pro Architektur
 
 Ihre Adobe Commerce on Cloud Infrastructure Pro-Architektur unterstützt mehrere Umgebungen, die Sie zum Entwickeln, Testen und Starten Ihres Stores verwenden können.
@@ -64,7 +76,7 @@ Bei Pro-Projekten bietet die `master`-Verzweigung eine aktive PaaS-Umgebung für
 
 **Einschränkungen:**
 
-- Erstellen **&#x200B;**&#x200B;keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
+- Erstellen **** keine Verzweigung basierend auf der `master`. Verwenden Sie die Integrationsumgebung, um aktive Verzweigungen für die Entwicklung zu erstellen.
 
 - Verwenden Sie die `master` nicht für Entwicklungs-, Benutzerakzeptanztests (UAT) oder Leistungstests
 
@@ -191,7 +203,7 @@ Adobe Commerce in Cloud-Infrastrukturen verwenden eine Hochverfügbarkeitsarchit
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten oder beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [&#x200B; Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
+>Die bereitgestellten Volumes enthalten oder beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `app/`. Die anderen Dateien werden durch den Build- [ Bereitstellungsprozess erstellt/generiert](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen außerdem Ihr Git-Repository auf verbleibende Dateien überprüfen.
 
 {{pro-backups}}
 
@@ -225,4 +237,4 @@ Die Größe des Pro-Clusters und _Compute_-Konfigurationen variieren je nach aus
 
 Die redundante Architektur ermöglicht eine Hochskalierung der Adobe-Cloud-Infrastruktur ohne Ausfallzeiten. Beim Hochskalieren rotiert jede der drei Instanzen, um die Kapazität zu aktualisieren, ohne den Site-Betrieb zu beeinträchtigen. Sie können beispielsweise zusätzliche Webserver zu einem vorhandenen Cluster hinzufügen, wenn die Einschränkung auf PHP-Ebene statt auf Datenbankebene erfolgt. Dies bietet _horizontale Skalierung_ um die vertikale Skalierung zu ergänzen, die durch zusätzliche CPUs auf Datenbankebene bereitgestellt wird. Siehe [Skalierte Architektur](scaled-architecture.md).
 
-Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) im _Commerce-Hilfezentrum_.
+Wenn Sie aus einem Ereignis oder einem anderen Grund einen signifikanten Traffic-Anstieg erwarten, können Sie eine temporäre Kapazitätssteigerung anfordern. Siehe [Anfordern einer temporären ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) im _Commerce-Hilfezentrum_.

@@ -3,21 +3,30 @@ title: Umgebungsvariablen
 description: Anzeigen einer Liste der für Adobe Commerce spezifischen Umgebungsvariablen in der Cloud-Infrastruktur.
 feature: Cloud, Build, Configuration, Deploy
 exl-id: 38b2cdc2-1a98-48bd-90b2-13ef179da26f
-TQID: https://experienceleague.adobe.com/qRdv72nxgkwRjRz0lXqs33rSmZKc3akq2W0pJK4CM7k
+TQID: 'https://experienceleague.adobe.com/qRdv72nxgkwRjRz0lXqs33rSmZKc3akq2W0pJK4CM7k'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: fd3ef8201c368f889344452e334976070a6c7157
+    internal-label: Developer
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 266
+source-wordcount: '266'
 ht-degree: 0%
-
 ---
-
 # Umgebungsvariablen
 
 Mit Adobe Commerce in der Cloud-Infrastruktur können Sie Umgebungsvariablen zuweisen, um Konfigurationsoptionen zu überschreiben. Das `ece-tools` legt Werte in der `env.php` anhand von Werten aus [Cloud-Variablen](variables-cloud.md), in der [!DNL Cloud Console] festgelegten Variablen und der `.magento.env.yaml`-Konfigurationsdatei fest.
@@ -29,10 +38,10 @@ Zu den Arten von Umgebungsvariablen gehören:
 - [ADMIN](variables-admin.md) - Variablen überschreiben Projekt-ADMIN-Variablen
 - [MAGENTO_CLOUD](variables-cloud.md) - Cloud-Infrastrukturspezifische Variablen
 - In der `.magento.env.yaml` verwendete Variablen:
-   - [Global](variables-global.md) - Variablen wirken sich auf die Phasen der Erstellung, Bereitstellung und Nachbereitstellung aus
-   - [Build](variables-build.md) - Variablen steuern Buildaktionen
-   - [Bereitstellen](variables-deploy.md) - Variablen steuern Bereitstellungsaktionen
-   - [Nach der Bereitstellung](variables-post-deploy.md) - Variablen steuern Aktionen nach der Bereitstellung
+  - [Global](variables-global.md) - Variablen wirken sich auf die Phasen der Erstellung, Bereitstellung und Nachbereitstellung aus
+  - [Build](variables-build.md) - Variablen steuern Buildaktionen
+  - [Bereitstellen](variables-deploy.md) - Variablen steuern Bereitstellungsaktionen
+  - [Nach der Bereitstellung](variables-post-deploy.md) - Variablen steuern Aktionen nach der Bereitstellung
 
 Variablen sind _hierarchisch_ was bedeutet, dass eine Variable von der übergeordneten Umgebung übernommen wird, wenn sie nicht überschrieben wird.
 

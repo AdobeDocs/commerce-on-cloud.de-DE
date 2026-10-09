@@ -3,27 +3,39 @@ title: Privater Link-Service
 description: Erfahren Sie, wie Sie mit dem PrivateLink-Service eine sichere Verbindung zwischen einer privaten Cloud und der Adobe Commerce-Cloud-Plattform in derselben Region herstellen.
 feature: Cloud, Iaas, Security
 exl-id: 13a7899f-9eb5-4c84-b4c9-993c39d611cc
-TQID: https://experienceleague.adobe.com/AxpzTY-Nb7UoKhW-wzAOuWLm5O7XS4OFxjSaIfFUR-I
+TQID: 'https://experienceleague.adobe.com/AxpzTY-Nb7UoKhW-wzAOuWLm5O7XS4OFxjSaIfFUR-I'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+subfeature_v2:
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 52e52563cfe435f28ab153f737b537ebb476ab92
+    internal-label: Administration
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1799
+source-wordcount: '1799'
 ht-degree: 0%
-
 ---
-
 # Privater Link-Service
 
 Adobe Commerce in der Cloud-Infrastruktur unterstützt die Integration mit dem Service [AWS PrivateLink](https://aws.amazon.com/privatelink/) oder [Azure Private Link](https://learn.microsoft.com/en-us/azure/private-link/). Sie können PrivateLink verwenden, um eine sichere private Kommunikation zwischen Adobe Commerce in Cloud-Infrastrukturumgebungen mit Services und Anwendungen herzustellen, die auf externen Systemen gehostet werden. Sowohl auf die Adobe Commerce-Anwendung als auch auf externe Systeme muss über Virtual Private Cloud (VPC)-Endpunkte zugegriffen werden können, die auf derselben Cloud-Plattform (AWS oder Azure) in derselben Cloud-Region konfiguriert sind.
@@ -51,7 +63,7 @@ Die PrivateLink-Service-Integration für Adobe Commerce in Cloud-Infrastrukturpr
 - Die Adobe Commerce-Unterstützung deckt keine Fehlerbehebung bei AWS PrivateLink-Problemen über die anfängliche Aktivierung hinaus ab.
 - Kunden tragen die Kosten für die Verwaltung ihrer eigenen VPC.
 - **HTTPS-Protokoll (Port 443)-Unterstützung durch Plattform:**
-  - **Privater Azure-Link**: Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um in der Cloud-Infrastruktur eine Verbindung zu Adobe Commerce herzustellen, da der [&#x200B; „Fastly-Ursprungs-Cloaking“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly).
+  - **Privater Azure-Link**: Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um in der Cloud-Infrastruktur eine Verbindung zu Adobe Commerce herzustellen, da der [ „Fastly-Ursprungs-Cloaking“ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
   - **AWS PrivateLink**: Verbindungen mit dem HTTPS-Protokoll (Port 443) werden unterstützt.
 - PrivateDNS ist nicht verfügbar.
 
@@ -219,7 +231,7 @@ Sie können die Telnet-Anwendung verwenden, um die Verbindung zum VPC-Endpunktdi
 
 ## PrivateLink-Konfiguration ändern
 
-[Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um eine vorhandene PrivateLink-Konfiguration zu ändern. Sie können beispielsweise Änderungen wie die folgenden anfordern:
+[Senden eines Adobe Commerce-Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um eine vorhandene PrivateLink-Konfiguration zu ändern. Sie können beispielsweise Änderungen wie die folgenden anfordern:
 
 - Entfernen Sie die PrivateLink-Verbindung aus der Adobe Commerce in der Cloud-Infrastruktur der Pro-Produktions- oder Staging-Umgebung.
 - Ändern Sie die Kontonummer der Cloud-Plattform des Kunden für den Zugriff auf den Adobe-Endpunktdienst.
