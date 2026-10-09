@@ -3,25 +3,31 @@ title: Spam für Verweise blockieren
 description: Blockieren Sie Empfehlungs-Spam auf Ihrer Site mit dem Fastly Edge-Wörterbuch und einem benutzerdefinierten VCL-Snippet.
 feature: Cloud, Configuration, Security
 exl-id: 4ed47a71-7fee-4f37-a7da-3e30052004df
-TQID: https://experienceleague.adobe.com/Ssuym1h44Jr5-yJxD7adItpPIx-tDWR9b3sRyijXzEA
+last-update: 2025-01-29T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/Ssuym1h44Jr5-yJxD7adItpPIx-tDWR9b3sRyijXzEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2025-01-29
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 725
+source-wordcount: '725'
 ht-degree: 0%
-
 ---
-
 # Spam für Verweise blockieren
 
 Das folgende Beispiel zeigt, wie Sie [Fastly Edge Dictionary](https://docs.fastly.com/guides/edge-dictionaries/working-with-dictionaries-using-the-api) mit einem benutzerdefinierten VCL-Snippet konfigurieren, um Empfehlungs-Spam aus Ihrem Adobe Commerce auf der Cloud-Infrastruktur-Site zu blockieren.
@@ -92,7 +98,7 @@ Bevor Sie einen Ausschnitt basierend auf diesem Beispiel erstellen, überprüfen
 
 - `dynamic` - Wert 0 zeigt einen [regulären Ausschnitt](https://docs.fastly.com/en/guides/using-regular-vcl-snippets) an, der für die Fastly-Konfiguration in die versionierte VCL hochgeladen werden soll.
 
-- `priority` - Bestimmt, wann der VCL-Snippet ausgeführt wird. Die Priorität `5` darin, diesen Code-Ausschnitt auszuführen, bevor einem der standardmäßigen Magento VCL-Ausschnitte (`magentomodule_*`) eine Priorität von 50 zugewiesen wird. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
+- `priority` - Bestimmt, wann der VCL-Snippet ausgeführt wird. Die Priorität ist `5`, diesen Code-Ausschnitt auszuführen, bevor einem der standardmäßigen Magento-VCL-Ausschnitte (`magentomodule_*`) eine Priorität von 50 zugewiesen wird. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
 
 - `type` - Gibt einen Speicherort an, an dem der Ausschnitt in die VCL-Version eingefügt werden soll. In diesem Beispiel ist der VCL-Ausschnitt ein `recv`. Wenn der Ausschnitt in die VCL-Version eingefügt wird, wird er der `vcl_recv`-Unterroutine, unterhalb des standardmäßigen Fastly-VCL-Codes und über allen Objekten hinzugefügt.
 

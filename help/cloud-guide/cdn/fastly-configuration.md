@@ -3,26 +3,43 @@ title: Fastly-Services konfigurieren
 description: Erfahren Sie, wie Sie Fastly Caching, VCL-Snippets und die Web Application Firewall (WAF) für Ihre Staging- und Produktionsumgebungen einrichten, konfigurieren und testen.
 feature: Cloud, Configuration, Iaas, Cache, Security
 exl-id: f9ce1e8b-4e9f-488e-8a4d-f866567c41d8
-TQID: https://experienceleague.adobe.com/sDx6n5Qgt1lI3-3FDzhUR-JyKgI59woXmoVHSjKFT9w
+TQID: 'https://experienceleague.adobe.com/sDx6n5Qgt1lI3-3FDzhUR-JyKgI59woXmoVHSjKFT9w'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 60adcf7e68659eb76895208cec80a93ddf690a2e
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 2216
+source-wordcount: '2216'
 ht-degree: 0%
-
 ---
-
 # Fastly-Services konfigurieren
 
 Fastly ist für Adobe Commerce in Staging- und Produktionsumgebungen der Cloud-Infrastruktur erforderlich.
@@ -103,7 +120,7 @@ Wenn Ihr API-Token jemals öffentlich freigegeben oder an ein Support-Ticket ang
 
 Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und zu konfigurieren:
 
-- Die neueste Version des Moduls [Fastly CDN for Magento 2](fastly.md#fastly-cdn-module-for-magento-2) wird in den Staging- und Produktionsumgebungen installiert. Siehe [Schnelles Upgrade](#upgrade-the-fastly-module).
+- Die neueste Version des [Fastly CDN for Magento 2 -Moduls](fastly.md#fastly-cdn-module-for-magento-2) wird in den Staging- und Produktionsumgebungen installiert. Siehe [Schnelles Upgrade](#upgrade-the-fastly-module).
 
 - [Fastly-Anmeldedaten](#get-fastly-credentials) für Adobe Commerce in Staging- und Produktionsumgebungen der Cloud-Infrastruktur
 
@@ -163,7 +180,7 @@ Laden Sie nach dem Aktivieren des Fastly-Moduls den Standard[VCL-Code](https://g
 
 1. Klicken Sie im Abschnitt _[!UICONTROL Fastly Configuration]_&#x200B;auf **[!UICONTROL Upload VCL to Fastly]**, wie in der folgenden Abbildung dargestellt.
 
-   ![Laden Sie eine Magento-VCL in Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
+   ![Laden Sie einen Magento VCL auf Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
 
 1. Aktualisieren Sie nach Abschluss des Uploads den Cache entsprechend der Benachrichtigung oben auf der Seite.
 
@@ -311,7 +328,7 @@ Wenn die Kopfzeilen nicht die richtigen Werte aufweisen, finden Sie unter [Beheb
 Fastly aktualisiert das Fastly CDN für Magento 2-Modul, um Probleme zu beheben, die Leistung zu steigern und neue Funktionen bereitzustellen.
 Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [&#x200B; Version &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
 
-Die neuesten Informationen zu Modulversionen und -aktualisierungen finden Sie in den [Versionshinweisen für das Fastly CDN for Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md) auf GitHub.
+Die neuesten Informationen zu Modulversionen und Aktualisierungen finden Sie in den [Versionshinweisen für das Fastly CDN für das Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md) auf GitHub.
 
 Nachdem Sie das Modul aktualisiert haben, müssen Sie den VCL-Code hochladen, um die Änderungen auf die Fastly-Service-Konfiguration anzuwenden.
 

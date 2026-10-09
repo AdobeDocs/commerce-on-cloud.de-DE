@@ -3,25 +3,31 @@ title: Benutzerdefinierte VCL zum Blockieren von Anfragen
 description: Blockieren eingehender Anfragen nach IP-Adresse mithilfe einer Edge Access Control List (ACL) mit einem benutzerdefinierten VCL-Snippet.
 feature: Cloud, Configuration, Security
 exl-id: eb21c166-21ae-4404-85d9-c3a26137f82c
-TQID: https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg
+last-update: 2025-01-29T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/AhSqQYill1D5hYn06pkQXnUsIW-0pc6k51OZwHA8Qtg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2025-01-29
-source-git-commit: b9272078492b9240c8a4bee6216dd4987d95794f
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1026
+source-wordcount: '1026'
 ht-degree: 0%
-
 ---
-
 # Benutzerdefinierte VCL zum Blockieren von Anfragen
 
 Sie können das Fastly CDN-Modul für Magento 2 verwenden, um eine Edge-ACL mit einer Liste von IP-Adressen zu erstellen, die Sie blockieren möchten. Anschließend können Sie diese Liste mit einem VCL-Code-Ausschnitt verwenden, um eingehende Anfragen zu blockieren. Der Code prüft die IP-Adresse der eingehenden Anfrage. Wenn es mit einer in der ACL-Liste enthaltenen IP-Adresse übereinstimmt, blockiert Fastly den Zugriff der Anfrage auf Ihre Site und gibt eine `403 Forbidden error` zurück. Alle anderen Client-IP-Adressen erhalten Zugriff.
@@ -51,7 +57,7 @@ Sie referenzieren die Edge-ACL anhand des Namens in Ihrem VCL-Code.
 
 >[!NOTE]
 >
->Dieses Beispiel zeigt erfahrenen Benutzern, wie sie ein VCL-Codefragment erstellen, um benutzerdefinierte Blockierungsregeln zu konfigurieren, die in den Fastly-Service hochgeladen werden. Sie können eine Blockierungsliste oder Zulassungsliste vom Adobe Commerce-Administrator basierend auf dem Land konfigurieren, indem Sie die Funktion [Blockierung](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) verwenden, die im Modul Fastly CDN for Magento 2 verfügbar ist.
+>Dieses Beispiel zeigt erfahrenen Benutzern, wie sie ein VCL-Codefragment erstellen, um benutzerdefinierte Blockierungsregeln zu konfigurieren, die in den Fastly-Service hochgeladen werden. Sie können eine Blockierungsliste oder Zulassungsliste basierend auf dem Land vom Adobe Commerce-Administrator mithilfe der Funktion [Blockierung](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) konfigurieren, die im Modul Fastly CDN for Magento 2 verfügbar ist.
 
 Nachdem Sie die Edge-ACL definiert haben, können Sie sie verwenden, um das VCL-Snippet zu erstellen und den Zugriff auf die in der ACL angegebenen IP-Adressen zu blockieren. Sie können denselben VCL-Ausschnitt sowohl in der Staging- als auch in der Produktionsumgebung verwenden, müssen den Ausschnitt jedoch separat in jede Umgebung hochladen.
 
@@ -71,7 +77,7 @@ Bevor Sie einen Ausschnitt basierend auf diesem Beispiel erstellen, überprüfen
 
 - `name`: Name für den VCL-Code-Ausschnitt. In diesem Beispiel haben wir den Namen `blocklist` verwendet.
 
-- `priority`: Bestimmt, wann der VCL-Snippet ausgeführt wird. Mit der Priorität `5` sofort ausgeführt und überprüft werden, ob eine Admin-Anfrage von einer zulässigen IP-Adresse stammt. Der Ausschnitt wird vor jedem der standardmäßigen Magento VCL-Ausschnitte (`magentomodule_*`) ausgeführt, denen eine Priorität von 50 zugewiesen wurde. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
+- `priority`: Bestimmt, wann der VCL-Snippet ausgeführt wird. Mit der Priorität `5` sofort ausgeführt und überprüft werden, ob eine Admin-Anfrage von einer zulässigen IP-Adresse stammt. Das Snippet wird vor jedem der standardmäßigen Magento VCL-Snippets (`magentomodule_*`) ausgeführt, denen eine Priorität von 50 zugewiesen wurde. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
 
 - `type`: Gibt den Typ des VCL-Ausschnitts an, der die Position des Ausschnitts im generierten VCL-Code bestimmt. In diesem Beispiel verwenden wir `recv`, das den VCL-Code in die `vcl_recv` Unterroutine, unter dem Textbaustein VCL und über allen Objekten einfügt. Eine Liste der Snippet[Typen finden Sie &#x200B;](https://docs.fastly.com/api/config#api-section-snippet) der Snippet-Referenz Fastly VCL .
 

@@ -3,25 +3,31 @@ title: Benutzerdefinierte VCL zum Zulassen von Anfragen
 description: Filtern Sie eingehende Anfragen und erlauben Sie den Zugriff nach IP-Adresse für Adobe Commerce-Sites durch mit einer Fastly Edge ACL-Liste und einem benutzerdefinierten VCL-Snippet.
 feature: Cloud, Configuration, Security
 exl-id: 836779b5-5029-4a21-ad77-0c82ebbbcdd5
-TQID: https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY
+last-update: 2026-08-25T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/szgjjm841ttfcCwULGf3lBNSRhixIhMPfmoYILbNGKY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2026-08-25
-source-git-commit: ccff84c55425e8e4f91812b54f5e6ccf9a700104
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 874
+source-wordcount: '874'
 ht-degree: 0%
-
 ---
-
 # Benutzerdefinierte VCL zum Zulassen von Anfragen
 
 Sie können eine Fastly Edge ACL-Liste mit einem benutzerdefinierten VCL-Code-Fragment verwenden, um eingehende Anfragen zu filtern und den Zugriff nach IP-Adresse zuzulassen. Die ACL-Liste gibt die zuzulassen IP-Adressen an.
@@ -91,7 +97,7 @@ Bevor [ein benutzerdefiniertes Snippet erstellen](https://experienceleague.adobe
 
 - `name` — Name des VCL-Snippets. In diesem Beispiel `allowlist`.
 
-- `priority` - Bestimmt, wann der VCL-Snippet ausgeführt wird. Die Priorität besteht darin, sofort `5` auszuführen und zu überprüfen, ob eine Admin-Anfrage von einer zulässigen IP-Adresse kommt. Der Ausschnitt wird vor jedem der standardmäßigen Magento VCL-Ausschnitte (`magentomodule_*`) ausgeführt, denen eine Priorität von 50 zugewiesen wurde. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
+- `priority` - Bestimmt, wann der VCL-Snippet ausgeführt wird. Die Priorität besteht darin, sofort `5` auszuführen und zu überprüfen, ob eine Admin-Anfrage von einer zulässigen IP-Adresse kommt. Das Snippet wird vor jedem der standardmäßigen Magento VCL-Snippets (`magentomodule_*`) ausgeführt, denen eine Priorität von 50 zugewiesen wurde. Legen Sie die Priorität für jeden benutzerdefinierten Ausschnitt auf einen Wert von über oder unter 50 fest, je nachdem, wann der Ausschnitt ausgeführt werden soll. Snippets mit Zahlen niedrigerer Priorität werden zuerst ausgeführt.
 
 - `type` - Gibt einen Speicherort an, an dem der Ausschnitt in den versionierten VCL-Code eingefügt werden soll. Dieser VCL ist ein `recv` Snippet-Typ, der den Snippet-Code unterhalb des standardmäßigen Fastly-VCL-Codes und über allen Objekten zur `vcl_recv`-Unterroutine hinzufügt.
 

@@ -3,26 +3,35 @@ title: Commerce-Version aktualisieren
 description: Erfahren Sie, wie Sie die Adobe Commerce-Version in der Cloud-Infrastrukturumgebung aktualisieren.
 feature: Cloud, Upgrade
 exl-id: 0cc070cf-ab25-4269-b18c-b2680b895c17
-TQID: https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs
+last-update: 2026-09-01T00:00:00.000Z
+TQID: 'https://experienceleague.adobe.com/XCHw9c0bX8UE8LLmFOYjMFRLTaIk8sT57dESptRTUXs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-last-update: 2026-09-01
-source-git-commit: 205287e813ec7358273f95df87189b9b663679f5
+    internal-label: Security
+source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
 workflow-type: tm+mt
-source-wordcount: 1050
+source-wordcount: '1050'
 ht-degree: 0%
-
 ---
-
 # Commerce-Version aktualisieren
 
 Sie können die Adobe Commerce-Code-Basis auf eine neuere Version aktualisieren. Lesen Sie vor dem Upgrade der Umgebung [&#x200B; Abschnitt &quot;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements)&quot; im _Installationshandbuch_, um die neuesten Anforderungen an die Softwareversion zu ermitteln.
