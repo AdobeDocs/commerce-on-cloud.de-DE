@@ -132,11 +132,11 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    ![Erweitern Sie auf Fastly](../../assets/cdn/fastly-menu.png)
 
-1. Entfernen Sie im Abschnitt _[!UICONTROL Caching Application]_die Auswahl aus der **[!UICONTROL Use system value]**und wählen Sie dann **[!UICONTROL Fastly CDN]**aus der Dropdown-Liste aus.
+1. Entfernen Sie im Abschnitt _[!UICONTROL Caching Application]_&#x200B;die Auswahl aus der **[!UICONTROL Use system value]**&#x200B;und wählen Sie dann **[!UICONTROL Fastly CDN]**&#x200B;aus der Dropdown-Liste aus.
 
    ![Schnell wählen](../../assets/cdn/fastly-enable-admin.png)
 
-1. Erweitern Sie **[!UICONTROL Fastly Configuration]** und [ Sie „Zwischenspeicheroptionen auswählen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
+1. Erweitern Sie **[!UICONTROL Fastly Configuration]** und [&#x200B; Sie „Zwischenspeicheroptionen auswählen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/CONFIGURATION.md#configure-the-module).
 
 1. Klicken Sie nach dem Konfigurieren der Caching-Optionen oben auf der Seite auf **[!UICONTROL Save Config]** .
 
@@ -154,7 +154,7 @@ Sie benötigen die folgenden Komponenten, um Fastly-Services zu aktivieren und z
 
    >[!NOTE]
    >
-   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die von [ bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
+   >Wählen Sie nicht den Link aus, um das Fastly-API-Token zu erstellen. Verwenden Sie stattdessen die von [&#x200B; bereitgestellten „Fastly-Anmeldeinformationen (Service-ID und API-Token](#get-fastly-credentials).
 
 1. Klicken Sie auf **[!UICONTROL Test credentials]**.
 
@@ -178,7 +178,7 @@ Laden Sie nach dem Aktivieren des Fastly-Moduls den Standard[VCL-Code](https://g
 
 **Hochladen der Fastly-VCL**:
 
-1. Klicken Sie im Abschnitt _[!UICONTROL Fastly Configuration]_auf **[!UICONTROL Upload VCL to Fastly]**, wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie im Abschnitt _[!UICONTROL Fastly Configuration]_&#x200B;auf **[!UICONTROL Upload VCL to Fastly]**, wie in der folgenden Abbildung dargestellt.
 
    ![Laden Sie einen Magento VCL auf Fastly hoch](../../assets/cdn/fastly-upload-vcl-admin.png)
 
@@ -326,7 +326,7 @@ Wenn die Kopfzeilen nicht die richtigen Werte aufweisen, finden Sie unter [Beheb
 ## Upgrade des Fastly-Moduls
 
 Fastly aktualisiert das Fastly CDN für Magento 2-Modul, um Probleme zu beheben, die Leistung zu steigern und neue Funktionen bereitzustellen.
-Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [ Version ](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
+Adobe empfiehlt, das Fastly-Modul in Ihren Staging- und Produktionsumgebungen auf die [&#x200B; Version &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/VERSION) aktualisieren.
 
 Die neuesten Informationen zu Modulversionen und Aktualisierungen finden Sie in den [Versionshinweisen für das Fastly CDN für das Magento2-Modul](https://github.com/fastly/fastly-magento2/blob/master/Release-Notes.md) auf GitHub.
 

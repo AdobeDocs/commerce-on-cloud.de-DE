@@ -74,7 +74,7 @@ Fügen Sie in [Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cl
 - **name:** `ADMIN_URL`
 - **Wert:** Ihre neue Admin-URL (z. B. `magento_A8v10`)
 
-- Detaillierte Anweisungen finden Sie unter [Hinzufügen von ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment) oder [Umgebungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin) in unserer Entwicklerdokumentation.
+- Detaillierte Anweisungen finden Sie unter [Hinzufügen von &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-environment) oder [Umgebungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin) in unserer Entwicklerdokumentation.
 
 ##### Admin-URL im [!DNL Cloud Console] festlegen
 

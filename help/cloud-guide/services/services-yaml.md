@@ -218,7 +218,7 @@ Während des Bereitstellungsprozesses überprüft das `ece-tools`-Paket die inst
 - Wenn eine Service-Version innerhalb von drei Monaten nach dem Ende der Nutzungsdauer veröffentlicht wird, wird im Bereitstellungsprotokoll eine Benachrichtigung angezeigt.
 - Wenn das Ende der Nutzungsdauer in der Vergangenheit liegt, wird eine Warnmeldung angezeigt.
 
-Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen ](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Um die Speichersicherheit aufrechtzuerhalten, aktualisieren Sie installierte Softwareversionen, bevor sie das Ende der Nutzungsdauer erreichen. Die EOL-Daten können in der `eol.yaml`-Datei [ece-tools“ eingesehen &#x200B;](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 ### Zu OpenSearch migrieren
 

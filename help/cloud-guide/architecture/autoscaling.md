@@ -51,7 +51,7 @@ Adobe ermöglicht zunächst die automatische Skalierung in Ihrem Cloud-Projekt _
 
 ## Horizontale automatische Skalierung
 
-Diese Funktion ist derzeit nur für Projekte verfügbar, die mit einer [skalierten Architektur“ konfiguriert ](scaled-architecture.md).
+Diese Funktion ist derzeit nur für Projekte verfügbar, die mit einer [skalierten Architektur“ konfiguriert &#x200B;](scaled-architecture.md).
 
 Die horizontale automatische Skalierung fügt Webserver-Knoten für Projekte mit skalierter Architektur hinzu oder entfernt sie. Alternativ dazu [vertikale automatische Skalierung](#vertical-auto-scaling) wird die CPU-Kapazität vorhandener Knoten so angepasst, dass Änderungen im Bedarf berücksichtigt werden.
 

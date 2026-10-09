@@ -63,7 +63,7 @@ Die PrivateLink-Service-Integration für Adobe Commerce in Cloud-Infrastrukturpr
 - Die Adobe Commerce-Unterstützung deckt keine Fehlerbehebung bei AWS PrivateLink-Problemen über die anfängliche Aktivierung hinaus ab.
 - Kunden tragen die Kosten für die Verwaltung ihrer eigenen VPC.
 - **HTTPS-Protokoll (Port 443)-Unterstützung durch Plattform:**
-  - **Privater Azure-Link**: Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um in der Cloud-Infrastruktur eine Verbindung zu Adobe Commerce herzustellen, da der [ „Fastly-Ursprungs-Cloaking“ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
+  - **Privater Azure-Link**: Sie können das HTTPS-Protokoll (Port 443) nicht verwenden, um in der Cloud-Infrastruktur eine Verbindung zu Adobe Commerce herzustellen, da der [&#x200B; „Fastly-Ursprungs-Cloaking“ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
   - **AWS PrivateLink**: Verbindungen mit dem HTTPS-Protokoll (Port 443) werden unterstützt.
 - PrivateDNS ist nicht verfügbar.
 

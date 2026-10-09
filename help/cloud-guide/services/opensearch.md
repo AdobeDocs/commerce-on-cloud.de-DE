@@ -201,7 +201,7 @@ Optional können Sie Plug-ins für OpenSearch hinzufügen, indem Sie den `config
 
 >[!NOTE]
 >
->Dies gilt nur für Integrations- und Starter-Umgebungen. Um die Plug-ins in einem Pro Staging- oder Produktions-Cluster zu installieren[ senden Sie eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+>Dies gilt nur für Integrations- und Starter-Umgebungen. Um die Plug-ins in einem Pro Staging- oder Produktions-Cluster zu installieren[&#x200B; senden Sie eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 
 ```yaml

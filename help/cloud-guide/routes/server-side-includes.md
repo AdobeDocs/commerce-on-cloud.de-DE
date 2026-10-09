@@ -45,7 +45,7 @@ Sie können SSI für jede Route in Ihrem `.magento/routes.yaml` aktivieren oder 
             enabled: true
 ```
 
-Mit SSI können Sie in Ihre HTML-Antwort-Anweisungen einfügen, die bewirken, dass der Server Teile der HTML ausfüllt und dabei alle vorhandenen (Caching[Konfigurationen ](caching.md).
+Mit SSI können Sie in Ihre HTML-Antwort-Anweisungen einfügen, die bewirken, dass der Server Teile der HTML ausfüllt und dabei alle vorhandenen (Caching[Konfigurationen &#x200B;](caching.md).
 
 Das folgende Beispiel zeigt, wie Sie am Anfang einer Seite ein dynamisches Datums-Steuerelement und am Ende ein weiteres Datums-Steuerelement einfügen, das alle 600 Sekunden aktualisiert wird:
 

@@ -63,7 +63,7 @@ cache:
   type: valkey:8.0
 ```
 
-Die Beispielversion ist nicht universell. Die tatsächlichen standardmäßigen und unterstützten Dienstversionen hängen von Ihrer Adobe Commerce-Version und Ihrer aktuellen Cloud-Vorlage ab. Verwendet die in der aktuellen Projektvorlage angegebene Version. Weitere Informationen finden [ unter ](services-yaml.md#service-versions) von Diensten .
+Die Beispielversion ist nicht universell. Die tatsächlichen standardmäßigen und unterstützten Dienstversionen hängen von Ihrer Adobe Commerce-Version und Ihrer aktuellen Cloud-Vorlage ab. Verwendet die in der aktuellen Projektvorlage angegebene Version. Weitere Informationen finden [&#x200B; unter &#x200B;](services-yaml.md#service-versions) von Diensten .
 
 >[!WARNING]
 >
@@ -110,7 +110,7 @@ git push origin <branch-name>
 
 ## Anpassen der Valley-Konfiguration
 
-Empfehlungen zu Cache-, Sitzungs-, L2- und Replikatverbindungen finden Sie unter [Best Practices für die Konfiguration von Valkey- und ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)-Services im _Handbuch zu Best Practices für Implementierungsplaybooks_.
+Empfehlungen zu Cache-, Sitzungs-, L2- und Replikatverbindungen finden Sie unter [Best Practices für die Konfiguration von Valkey- und &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration)-Services im _Handbuch zu Best Practices für Implementierungsplaybooks_.
 
 ## Überprüfen der Service-Beziehung
 

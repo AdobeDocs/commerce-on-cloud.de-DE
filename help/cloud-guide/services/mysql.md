@@ -94,7 +94,7 @@ mysql:
             optimizer_use_condition_selectivity: 1
 ```
 
-Mit dem `properties` im obigen Beispiel werden die standardmäßigen `optimizer` wie [ im Handbuch für Best Practices für die Leistung ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#indexers).
+Mit dem `properties` im obigen Beispiel werden die standardmäßigen `optimizer` wie [&#x200B; im Handbuch für Best Practices für die Leistung &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#indexers).
 
 **MariaDB-Konfigurationsoptionen**:
 

@@ -51,4 +51,4 @@ Zu den Datenquellen für Adobe Commerce gehören:
 - **Infrastruktur** - Prozess- und Host-Metriken wie CPU, Speicher, Netzwerke
 - **Logging** - Protokolle für CDN, APM und Anwendungs-Server
 
-Protokolldaten tragen zu einem großen Teil zur Aufnahme bei. Erfahren Sie[ wie Sie Protokolldaten anzeigen und analysieren ](log-management.md#view-and-analyze-log-data) mit Ihrem Adobe-Support-Mitarbeiter eine Strategie für die Datenaufnahme und -speicherung erarbeiten. Weitere Informationen zum [Verwalten der Datenaufnahme](https://docs.newrelic.com/docs/data-apis/manage-data/manage-data-coming-new-relic/) finden Sie in der _Dokumentation zu New Relic_.
+Protokolldaten tragen zu einem großen Teil zur Aufnahme bei. Erfahren Sie[&#x200B; wie Sie Protokolldaten anzeigen und analysieren &#x200B;](log-management.md#view-and-analyze-log-data) mit Ihrem Adobe-Support-Mitarbeiter eine Strategie für die Datenaufnahme und -speicherung erarbeiten. Weitere Informationen zum [Verwalten der Datenaufnahme](https://docs.newrelic.com/docs/data-apis/manage-data/manage-data-coming-new-relic/) finden Sie in der _Dokumentation zu New Relic_.
