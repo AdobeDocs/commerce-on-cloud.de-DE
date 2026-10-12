@@ -3,7 +3,6 @@ source-git-commit: 0df07e865c3c4fc4ac14483972643eafa8814726
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%
-
 ---
 # Include file for deleting custom VCL for Fastly
 
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 1. Klicken Sie in _Spalte_ Aktion“ auf das Papierkorbsymbol neben dem zu löschenden Snippet.
 
-1. Klicken Sie im nächsten modalen Fenster auf **DELETE** aktivieren Sie eine neue Version.
+1. Klicken Sie im nächsten modalen Fenster auf **DELETE** und aktivieren Sie eine neue Version.
 
 >[!WARNING]
 >
