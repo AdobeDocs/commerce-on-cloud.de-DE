@@ -50,7 +50,7 @@ Das Paket Cloud-Patches für Commerce ist eine Abhängigkeit für das Paket ECE-
 
 >[!NOTE]
 >
->Anweisungen [ Anwenden von Patches auf ](../development/apply-patches.md) Projekte finden Sie unter „Anwenden von Patches“.
+>Anweisungen [&#x200B; Anwenden von Patches auf &#x200B;](../development/apply-patches.md) Projekte finden Sie unter „Anwenden von Patches“.
 
 Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz: `<major>.<minor>.<patch>`
 
@@ -60,19 +60,19 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 Veröffentlichungsdatum: 13. Oktober 2026
 
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-153 verwiesen ](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-153 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
 
 ## v1.1.21
 
 Veröffentlichungsdatum: 8. September 2026
 
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-146 verwiesen ](https://helpx.adobe.com/security/products/magento/apsb26-146.html).<!--MCLOUD-15587 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-146 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-146.html).<!--MCLOUD-15587 -->
 
 ## v1.1.20
 
 Veröffentlichungsdatum: 8. September 2026
 
-- ![Fix icon](../../assets/fix.svg) **Sicherheitsverbesserungen**—Enthaltene Unterstützung für die isolierten Sicherheits-Patches vom September 2026, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-138 verwiesen ](https://helpx.adobe.com/security/products/magento/apsb26-138.html).<!-- MCLOUD-15053 -->
+- ![Fix icon](../../assets/fix.svg) **Sicherheitsverbesserungen**—Enthaltene Unterstützung für die isolierten Sicherheits-Patches vom September 2026, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-138 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-138.html).<!-- MCLOUD-15053 -->
 
 ## v1.1.19
 
@@ -86,7 +86,7 @@ Veröffentlichungsdatum: 19. August 2026
 Veröffentlichungsdatum: 11. August 2026
 
 - ![Fix-Symbol](../../assets/fix.svg) **Verbesserte Patch-**: Patches überspringen jetzt Blöcke, die Zielgruppenmodule betreffen, die über `composer.json` `replace` entfernt wurden, und setzen die Anwendung der verbleibenden installierten Teile fort.<!-- MCLOUD-15325 -->
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-92 verwiesen ](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-92 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-92.html).<!--MCLOUD-15035 -->
 
 ## v1.1.17
 
@@ -105,7 +105,7 @@ Veröffentlichungsdatum: 23. Juli 2026
 
 Veröffentlichungsdatum: 14. Juli 2026
 
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-73 verwiesen ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-73 verwiesen &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-37421).<!--MCLOUD-15066 -->
 
 ## v1.1.14
 
@@ -113,7 +113,7 @@ Veröffentlichungsdatum: 6. Mai 2026
 
 - ![Fix-Symbol](../../assets/fix.svg) **Sichtbarkeit der Patch-Version** - Die Sichtbarkeit der Cloud-Patch-Version in Cloud-Umgebungen wurde korrigiert.<!--MCLOUD-14221 -->
 - ![fix icon](../../assets/fix.svg) **PHPUnit cleanup**—Behobene PHPUnit-Hinweise<!--MCLOUD-14717 -->
-- ![neues Symbol ](../../assets/new.svg)**Kosmetische Korrekturen** - Es wurden kosmetische Verbesserungen hinzugefügt.<!--MCLOUD-14686 -->
+- ![neues Symbol &#x200B;](../../assets/new.svg)**Kosmetische Korrekturen** - Es wurden kosmetische Verbesserungen hinzugefügt.<!--MCLOUD-14686 -->
 
 ## v1.1.13
 
