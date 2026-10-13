@@ -54,7 +54,7 @@ Composer installiert die erforderlichen Bibliotheken und Abhängigkeiten für Ih
 
 {style="table-layout:auto"}
 
-Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch ](../deploy/process.md#build-phase-build-phase).
+Nachdem Sie den aktualisierten Code hinzugefügt, übertragen und gepusht haben, führt der Bereitstellungsprozess den `composer install`-Befehl während der Build[Phase automatisch &#x200B;](../deploy/process.md#build-phase-build-phase).
 
 ### Cloud-Metapaket
 
@@ -75,7 +75,7 @@ Die Hauptpakete dieses Metapakets sind die folgenden:
 - **Vendor/magento/ece-tools**: Das `ece-tools`-Paket ist mit Adobe Commerce Version 2.1.4 und höher kompatibel und bietet zahlreiche Funktionen, mit denen Sie Ihr Adobe Commerce in Cloud-Infrastrukturprojekt verwalten können. Es enthält Skripte und Adobe Commerce-Befehle für die Cloud-Infrastruktur, die Sie bei der Verwaltung Ihres Codes und der automatischen Erstellung und Bereitstellung Ihrer Projekte unterstützen. Siehe [`ece-tools` Paket - Übersicht](../dev-tools/package-overview.md).
 - **Vendor/magento/product-enterprise-edition**: Dieses Metapaket erfordert Anwendungskomponenten, einschließlich Module, Frameworks, Designs und mehr.
 - **provider/fastly2/magento2**: Dieses Modul verwaltet das Fastly CDN und die Services für die Pro Staging- und Produktions- und Starter-Produktionsumgebungen. Siehe [Fastly Services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
-- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die ](../monitor/operational-telemetry.md) (Operational Telemetry).
+- **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die &#x200B;](../monitor/operational-telemetry.md) (Operational Telemetry).
 
 >[!TIP]
 >
