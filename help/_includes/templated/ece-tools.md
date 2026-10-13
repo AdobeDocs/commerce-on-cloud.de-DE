@@ -1,13 +1,12 @@
 ---
-source-git-commit: 205287e813ec7358273f95df87189b9b663679f5
+source-git-commit: 74cb44aaa4a1c178561bfd1ac7b40c0f3ceb7551
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 7%
-
 ---
 # ECE-Tools
 
-**Version**: 2002.2.14
+**Version**: 2002.2.15
 
 Diese Referenz enthält 34 Befehle, die über das `ece-tools` Befehlszeilen-Tool verfügbar sind.
 Die anfängliche Liste wird automatisch mit dem Befehl `ece-tools list` unter Adobe Commerce in der Cloud-Infrastruktur generiert.
@@ -540,7 +539,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 ece-tools cron:enable
 ```
 
-Aktiviert Magento Cron-Prozesse.
+Aktiviert Magento-Cron-Prozesse.
 
 ### Optionen
 
