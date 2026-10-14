@@ -7,25 +7,33 @@ exl-id: a4454ebc-72a4-42c1-b591-6237c97fe913
 TQID: https://experienceleague.adobe.com/ZN1TwgU2EFiIezQcZZT-CglLQGY1xZcXoi-BslV3sGQ
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 1195121d2c83da858744839e82e14bd423ea5528
+    internal-label: Security
+source-git-commit: 6f7a0fb23a3b479c766f82273658d4404707a171
 workflow-type: tm+mt
-source-wordcount: 3067
+source-wordcount: '3097'
 ht-degree: 0%
-
 ---
-
 # Cloud-Patches für Commerce
 
 Das `magento/magento-cloud-patches` Composer-Paket enthält eine Reihe erforderlicher Patches, die die Integration aller Adobe Commerce-Versionen mit Cloud-Umgebungen verbessern und die schnelle Bereitstellung wichtiger Fehlerbehebungen unterstützen. Adobe verteilt dieses Paket über das Commerce Composer-Repository unter `repo.magento.com`.
@@ -48,7 +56,13 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 <!--Add release notes below-->
 
-## v1.1.21 {#latest}
+## v1.1.22 {#latest}
+
+Veröffentlichungsdatum: 13. Oktober 2026
+
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-153 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
+
+## v1.1.21
 
 Veröffentlichungsdatum: 8. September 2026
 
@@ -394,7 +408,7 @@ Veröffentlichungsdatum: 12. Mai 2020
 
 - **Verbesserung der Site** - Behebt ein Leistungsproblem mit der `Magento\Framework\App\DeploymentConfig\Reader::load`, bei dem es in regelmäßigen Abständen zu langen Ladezeiten kam, die die Site-Leistung beeinträchtigten. <!--MCLOUD-5650-->
 
-- Die Patch-Zuweisung für Zahlungsmethoden-Patches wurde aktualisiert, um die Zahlungsmodule anstelle des Magento-Basispakets (magento/magento2-base) auszuwählen, sodass die Zahlungsmodule nur angewendet werden, wenn die Zahlungsmodule vorhanden sind.<!--MCLOUD-5666-->
+- Die Patch-Zuweisung für Zahlungsmethoden-Patches wurde aktualisiert, um die Zahlungsmodule anstelle des Magento-Basispakets (magento/magento2-base) zu verwenden. Dadurch werden die Zahlungsmodule nur angewendet, wenn die Zahlungsmodule vorhanden sind.<!--MCLOUD-5666-->
 
 - Patches wurden aus Gründen der Kompatibilität mit Magento Open Source aktualisiert.<!--MCLOUD-5701-->
 

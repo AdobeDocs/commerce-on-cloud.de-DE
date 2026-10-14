@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: f25bd014c1b6f546d3395db1691128b3e63bfa85
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Entwicklungsübersicht
@@ -75,7 +75,6 @@ Die Hauptpakete dieses Metapakets sind die folgenden:
 - **Vendor/magento/ece-tools**: Das `ece-tools`-Paket ist mit Adobe Commerce Version 2.1.4 und höher kompatibel und bietet zahlreiche Funktionen, mit denen Sie Ihr Adobe Commerce in Cloud-Infrastrukturprojekt verwalten können. Es enthält Skripte und Adobe Commerce-Befehle für die Cloud-Infrastruktur, die Sie bei der Verwaltung Ihres Codes und der automatischen Erstellung und Bereitstellung Ihrer Projekte unterstützen. Siehe [`ece-tools` Paket - Übersicht](../dev-tools/package-overview.md).
 - **Vendor/magento/product-enterprise-edition**: Dieses Metapaket erfordert Anwendungskomponenten, einschließlich Module, Frameworks, Designs und mehr.
 - **provider/fastly2/magento2**: Dieses Modul verwaltet das Fastly CDN und die Services für die Pro Staging- und Produktions- und Starter-Produktionsumgebungen. Siehe [Fastly Services](/help/cloud-guide/cdn/fastly.md#fastly-cdn-module-for-magento-2).
-- **Vendor/magento/module-paypal-on-boarding** - Dieses Modul ermöglicht den PayPal-Bezahlungs-Gateway-Checkout durch die Verbindung mit Ihrem PayPal-Händlerkonto. Siehe [PayPal-Onboarding-Tool](../store/paypal.md).
 - **provider/aem/rum**: Dieses Modul verwaltet das Datenerfassungs[Tool für die &#x200B;](../monitor/operational-telemetry.md) (Operational Telemetry).
 
 >[!TIP]
