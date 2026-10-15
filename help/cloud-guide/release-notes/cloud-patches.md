@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 6f7a0fb23a3b479c766f82273658d4404707a171
+source-git-commit: df46dbad973a1042e02fccc47c3fc17227a453a5
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3098'
 ht-degree: 0%
 ---
 # Cloud-Patches für Commerce
@@ -60,7 +60,7 @@ Das `magento/magento-cloud-patches`-Paket verwendet die folgende Versionssequenz
 
 Veröffentlichungsdatum: 13. Oktober 2026
 
-- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-153 verwiesen &#x200B;](https://helpx.adobe.com/security/products/magento/apsb26-153.html).<!--MCLOUD-15727 -->
+- ![Fehlerbehebungssymbol](../../assets/fix.svg) **Sicherheitsverbesserungen**—Die Sicherheitskorrekturen angewendet, auf die in [Adobe Commerce-Sicherheitsupdate APSB26-153 verwiesen &#x200B;](https://www.adobe.com/trust/security/products/commerce/apsb26-153.html).<!--MCLOUD-15727 -->
 
 ## v1.1.21
 
@@ -408,7 +408,7 @@ Veröffentlichungsdatum: 12. Mai 2020
 
 - **Verbesserung der Site** - Behebt ein Leistungsproblem mit der `Magento\Framework\App\DeploymentConfig\Reader::load`, bei dem es in regelmäßigen Abständen zu langen Ladezeiten kam, die die Site-Leistung beeinträchtigten. <!--MCLOUD-5650-->
 
-- Die Patch-Zuweisung für Zahlungsmethoden-Patches wurde aktualisiert, um die Zahlungsmodule anstelle des Magento-Basispakets (magento/magento2-base) zu verwenden. Dadurch werden die Zahlungsmodule nur angewendet, wenn die Zahlungsmodule vorhanden sind.<!--MCLOUD-5666-->
+- Die Patch-Zuweisung für Zahlungsmethoden-Patches wurde aktualisiert, um die Zahlungsmodule anstelle des Magento-Basispakets (magento/magento2-base) auszuwählen, sodass die Zahlungsmodule nur angewendet werden, wenn die Zahlungsmodule vorhanden sind.<!--MCLOUD-5666-->
 
 - Patches wurden aus Gründen der Kompatibilität mit Magento Open Source aktualisiert.<!--MCLOUD-5701-->
 
