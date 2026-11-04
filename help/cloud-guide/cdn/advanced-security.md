@@ -18,9 +18,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: e6e0bd8e116b2f0b93557b6aeb2aac7cbb8e1d8a
+source-git-commit: 800e5c27d4d0879bafd32101fd70ec0f00f1880c
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2599'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Advanced Security]
@@ -57,11 +57,11 @@ ht-degree: 0%
 >
 >**Aktuelle Einschränkungen**
 >
->Bis zum Ende des 3. Quartals 2026 können Kundinnen und Kunden die Regeln für die Bot-Verwaltung nicht direkt ändern oder verwalten.
+>Derzeit können Kundinnen und Kunden Bot-Management-Regeln nicht direkt ändern oder verwalten.
 >
 >Wenn Sie Regeln hinzufügen, ändern oder anpassen möchten, wenden Sie sich über ein -Support[Ticket an den Adobe Commerce-Support](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support). Das Support-Team wird die angeforderten Änderungen implementieren.
 >
->Ab dem 4. Quartal 2026 soll Fastly eine Add-on-Funktion veröffentlichen, mit der Kunden Bot-Management-Regeln im Admin-Panel von Commerce verwalten können.
+>Ab dem 1. Quartal 2027 soll Fastly eine Add-on-Funktion veröffentlichen, mit der Kunden Bot-Management-Regeln in Commerce Admin verwalten können.
 
 ## Standardregeln und -schutz
 
@@ -174,6 +174,12 @@ Die folgenden Szenarien lassen sich am besten mit [!DNL Advanced Security] umgeh
 | Bestimmte URLs oder API-Endpunkte sind Ziel umfangreicher verteilter Traffics, die nicht von IP-Adressen blockiert werden können | Die erweiterte Ratenbegrenzung bietet granulare Steuerelemente für bestimmte Endpunkte und Traffic-Muster |
 | Sie möchten KI-Crawler und -Abrufprogramme verwalten, die auf Ihre Storefront-Inhalte zugreifen | Bot Management umfasst konfigurierbare Richtlinien zur Erkennung und Durchsetzung von KI-Bots |
 | Sie benötigen eine von Adobe unterstützte Edge-Sicherheitslösung, die in Ihr bestehendes Fastly CDN integriert ist | [!DNL Advanced Security] läuft auf derselben Fastly Edge-Plattform, die bereits Ihre Storefront bedient |
+
+#### Anleitungen für Headless-Implementierungen
+
+Wenn Ihre Adobe Commerce-Site eine Headless-Implementierung verwendet, bei der die Storefront nicht die standardmäßige Adobe Commerce-Storefront ist und über einen separaten Storefront-Anbieter gehostet oder bereitgestellt wird, sollten Sie überlegen, wo der betroffene Traffic bereitgestellt wird, bevor Sie eine Bot-Schutzlösung auswählen.
+
+Wenn die Bot- oder Crawler-Aktivität für den Traffic der Storefront hauptsächlich auf Frontend-Storefront-Seiten wie Produktdetailseiten (PDPs), Produktlistenseiten (PLPs) oder Kategorieseiten abzielt, wenden Sie sich an Ihren Storefront-Anbieter, um die für diese Storefront verfügbaren Bot-Verwaltungs- oder Sicherheitsfunktionen zu bewerten.
 
 ### Verwendung vorhandener Schutzmechanismen
 
