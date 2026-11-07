@@ -57,7 +57,7 @@ Zum Hinzufügen von [!DNL Xdebug] empfiehlt Adobe die Arbeit in [einer Entwicklu
 
 Sie können [!DNL Xdebug] direkt für alle Starter-Umgebungen und Pro-Integrationsumgebungen aktivieren. Dieser Konfigurationsschritt ist für Pro-Produktions- und Staging-Umgebungen nicht erforderlich. Siehe [Debugging für Pro-Staging und Produktion](#debug-for-pro-staging-and-production).
 
->[!VIDEO](https://video.tv.adobe.com/v/3437407?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505683?captions=ger&learn=on)
 
 Um [!DNL Xdebug] für Ihr Projekt zu aktivieren, fügen Sie `xdebug` zum Abschnitt `runtime:extensions` der `.magento.app.yaml` hinzu.
 
@@ -97,7 +97,7 @@ Bei der Bereitstellung in Starter- und Pro-Integrationsumgebungen ist [!DNL Xdeb
 
 ### Konfigurieren des PhpStorm-Servers
 
->[!VIDEO](https://video.tv.adobe.com/v/3437409?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505701?captions=ger&learn=on)
 
 Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sein, dass sie ordnungsgemäß mit [!DNL Xdebug] funktioniert.
 
@@ -137,7 +137,7 @@ Die [PhpStorm](https://www.jetbrains.com/phpstorm/)-IDE muss so konfiguriert sei
 
 Dadurch verfügt die Anwendung über die richtigen Debug-Einstellungen, um die Anfrage aus der Adobe Commerce-Anwendung zu verarbeiten.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437426?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505746?captions=ger&learn=on)
 
 1. Öffnen Sie die PHPStorm-Anwendung und klicken Sie oben rechts im Bildschirm auf **[!UICONTROL Add Configuration]** .
 
@@ -154,7 +154,7 @@ Dadurch verfügt die Anwendung über die richtigen Debug-Einstellungen, um die A
 
 ### Einrichten der Port-Weiterleitung
 
->[!VIDEO](https://video.tv.adobe.com/v/3437410?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505692?captions=ger&learn=on)
 
 Ordnen Sie die `XDEBUG` Verbindung vom Server Ihrem lokalen System zu. Um jede Art von Debugging durchzuführen, müssen Sie Port 9000 von Ihrem Adobe Commerce auf dem Cloud-Infrastrukturserver an Ihren lokalen Computer weiterleiten. Siehe einen der folgenden Abschnitte:
 
@@ -323,7 +323,7 @@ Sie benötigen Folgendes:
 
 Dies ist eine Demonstration der verwendeten Konfigurationen sowie eine Demonstration des GET-Parameters zum Starten einer Remote-Debugging-Sitzung.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437417?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3505724?captions=ger&learn=on)
 
 1. Remote-Debugging aktivieren; besuchen Sie die Website im Browser und fügen Sie Folgendes an die URL an, wobei `KEY` Wert für `xdebug_key` ist.
 
