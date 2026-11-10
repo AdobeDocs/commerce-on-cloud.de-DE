@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-last-update: 2026-11-03
-source-git-commit: 7513318f6851aefc6a71d7c9b60b6431d5a00cb4
+last-update: 2026-11-09
+source-git-commit: df29f8e45e03c90870918b186a36664c034d6543
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '352'
 ht-degree: 0%
 ---
 # Commerce auf Cloud-Infrastruktur
@@ -43,7 +43,7 @@ Adobe Commerce on Cloud Infrastructure bietet eine automatisierte Hosting-Plattf
 
 >[!NOTE]
 >
->Weitere Informationen zur Sicherheit finden Sie unter [Checkliste für den Sicherheitsstart](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
+>Weitere Informationen zur Sicherheit finden Sie unter [Checkliste für den Sicherheitsstart](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist#security-configuration).
 
 Sehen Sie sich den [Technologie-Stack](architecture/tech-stack.md) im Detail an oder erfahren Sie mehr über bestimmte Funktionen und unterstützte Produkte in [Cloud-Architektur für Commerce](architecture/cloud-architecture.md).
 
@@ -80,7 +80,7 @@ Das Handbuch zu Commerce in Cloud-Infrastrukturen setzt voraus, dass Sie über G
 
 - [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs/) (Adobe Developer-Site) - Entwickeln, Anpassen, Integrieren, Erweitern und Verwenden erweiterter Funktionen
 
-- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
+- [Dokumentation zu Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce) (Adobe Experience League) - Planen, Implementieren, Betreiben, Aktualisieren und Verwalten Ihrer [!DNL Commerce]
 
 {{$include /help/_includes/templated/whats-new.md}}
 
